@@ -2,16 +2,452 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Opening Player...</title>
-    <script>
-        location.replace("/player" + location.search + location.hash);
-    </script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="referrer" content="no-referrer">
+    <title>FanCode Player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        html, body { width:100%; height:100%; background:#000; overflow:hidden; font-family:'Inter',sans-serif; }
+        .player-shell { position:absolute; inset:0; background:#000; }
+        .video-area { position:absolute; inset:0; background:#000; cursor:pointer; }
+        #video { position:absolute; inset:0; width:100%!important; height:100%!important; object-fit:contain; background:#000; display:block; }
+
+        #back-btn {
+            position:fixed; top:14px; left:14px; z-index:9999;
+            background:rgba(0,0,0,0.55); border:1px solid rgba(255,255,255,0.12);
+            color:rgba(255,255,255,0.9); padding:7px 15px; border-radius:8px;
+            font-size:12px; font-weight:700; cursor:pointer; text-decoration:none;
+            backdrop-filter:blur(8px); transition:0.2s;
+        }
+        #back-btn:hover { background:rgba(0,0,0,0.8); }
+
+        /* Bottom bar */
+        .bottom-bar {
+            position:absolute; bottom:16px; left:50%; transform:translateX(-50%);
+            z-index:30; width:calc(100% - 28px); max-width:860px;
+            display:flex; flex-direction:column; gap:8px;
+            transition:opacity 0.4s, transform 0.4s;
+        }
+        .hide-controls .bottom-bar { opacity:0; transform:translateX(-50%) translateY(16px); pointer-events:none; }
+
+        /* Progress */
+        .progress-track { width:100%; height:20px; display:flex; align-items:center; cursor:pointer; padding:6px 0; }
+        .progress-rail { width:100%; height:3px; background:rgba(255,255,255,0.2); border-radius:99px; position:relative; transition:height 0.12s; }
+        .progress-track:hover .progress-rail { height:5px; }
+        .progress-filled { position:absolute; left:0; top:0; height:100%; background:#fff; border-radius:99px; pointer-events:none; }
+        .progress-thumb { position:absolute; top:50%; width:12px; height:12px; background:#fff; border-radius:50%; transform:translate(-50%,-50%) scale(0); pointer-events:none; box-shadow:0 2px 8px rgba(0,0,0,0.4); transition:transform 0.12s; }
+        .progress-track:hover .progress-thumb { transform:translate(-50%,-50%) scale(1); }
+
+        /* Controls pill */
+        .pill-bar {
+            width:100%; background:rgba(28,28,32,0.85); backdrop-filter:blur(40px) saturate(180%);
+            border:1px solid rgba(255,255,255,0.08); border-radius:22px;
+            padding:6px 10px; display:flex; align-items:center; gap:3px;
+            box-shadow:0 8px 32px rgba(0,0,0,0.4);
+        }
+        .ctrl-btn { background:none; border:none; width:38px; height:38px; display:grid; place-items:center; cursor:pointer; color:rgba(255,255,255,0.9); border-radius:50%; transition:all 0.12s; }
+        .ctrl-btn:hover { background:rgba(255,255,255,0.1); }
+        .ctrl-btn:active { transform:scale(0.9); }
+        .ctrl-btn svg { width:20px; height:20px; }
+        .time-label { font-size:11px; font-weight:600; color:rgba(255,255,255,0.65); font-variant-numeric:tabular-nums; padding:0 6px; user-select:none; }
+        .spacer { flex:1; }
+
+        /* Quality menu */
+        .menu-wrap { position:relative; }
+        .quality-popup {
+            position:absolute; bottom:calc(100% + 10px); right:0;
+            background:rgba(28,28,32,0.95); backdrop-filter:blur(40px);
+            border:1px solid rgba(255,255,255,0.08); border-radius:16px;
+            padding:5px; min-width:110px; z-index:40;
+            box-shadow:0 12px 40px rgba(0,0,0,0.5);
+            transform-origin:bottom right; transition:all 0.2s;
+            opacity:0; pointer-events:none; transform:scale(0.85);
+        }
+        .quality-popup.open { opacity:1; pointer-events:auto; transform:scale(1); }
+        .q-item {
+            padding:9px 14px; border-radius:10px; cursor:pointer; font-size:13px; font-weight:600;
+            color:rgba(255,255,255,0.55); transition:all 0.1s; display:flex; align-items:center; justify-content:space-between;
+        }
+        .q-item:hover { background:rgba(255,255,255,0.08); color:#fff; }
+        .q-item.active { color:#fff; background:rgba(255,255,255,0.08); }
+        .q-item.active::after { content:'✓'; font-size:13px; margin-left:6px; }
+
+        /* Center flash */
+        .center-flash { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; z-index:15; pointer-events:none; opacity:0; transition:opacity 0.2s; }
+        .center-flash.show { opacity:1; }
+        .center-circle { width:66px; height:66px; background:rgba(0,0,0,0.4); backdrop-filter:blur(16px); border-radius:50%; display:grid; place-items:center; transform:scale(0.6); transition:transform 0.3s cubic-bezier(0.34,1.56,0.64,1); }
+        .center-flash.show .center-circle { transform:scale(1); }
+        .center-circle svg { width:28px; height:28px; color:#fff; }
+
+        /* Loading */
+        #loading { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:#000; z-index:100; transition:opacity 0.3s; }
+        #loading.hidden { opacity:0; pointer-events:none; }
+        .spinner { width:40px; height:40px; border:3px solid rgba(255,255,255,0.1); border-top-color:#6366f1; border-radius:50%; animation:spin 0.8s linear infinite; }
+        @keyframes spin { to{transform:rotate(360deg)} }
+        #error-msg { position:fixed; bottom:18px; left:50%; transform:translateX(-50%); background:rgba(239,68,68,0.9); color:#fff; padding:7px 16px; border-radius:8px; font-size:12px; display:none; z-index:200; }
+        .hidden { display:none!important; }
+
+        @media(max-width:640px) { .ctrl-btn{width:34px;height:34px} .ctrl-btn svg{width:18px;height:18px} .pill-bar{padding:5px 7px;border-radius:18px} .bottom-bar{bottom:10px;width:calc(100%-14px)} }
+    </style>
 </head>
 <body>
-    <a id="fallback" href="/player">Open player</a>
+    <div id="loading"><div class="spinner"></div></div>
+    <a href="index.html" id="back-btn">← Back</a>
+
+    <div class="player-shell">
+        <div id="video-area" class="video-area">
+            <video id="video" autoplay muted playsinline referrerpolicy="no-referrer"></video>
+
+            <div id="center-flash" class="center-flash">
+                <div class="center-circle">
+                    <svg id="c-play" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    <svg id="c-pause" fill="currentColor" viewBox="0 0 24 24" class="hidden"><rect x="6" y="4" width="4" height="16" rx="1.5"/><rect x="14" y="4" width="4" height="16" rx="1.5"/></svg>
+                </div>
+            </div>
+
+            <div id="bottom-bar" class="bottom-bar">
+                <div id="prog-track" class="progress-track">
+                    <div class="progress-rail">
+                        <div id="prog-filled" class="progress-filled" style="width:0"></div>
+                        <div id="prog-thumb" class="progress-thumb" style="left:0"></div>
+                    </div>
+                </div>
+                <div class="pill-bar">
+                    <button id="play-btn" class="ctrl-btn" title="Play/Pause">
+                        <svg id="i-play" fill="currentColor" viewBox="0 0 24 24" class="hidden"><path d="M8 5v14l11-7z"/></svg>
+                        <svg id="i-pause" fill="currentColor" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16" rx="1.5"/><rect x="14" y="4" width="4" height="16" rx="1.5"/></svg>
+                    </button>
+                    <button id="mute-btn" class="ctrl-btn" title="Mute (M)">
+                        <svg id="i-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+                        <svg id="i-unmuted" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="hidden"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 010 7.07"/><path d="M19.07 4.93a10 10 0 010 14.14"/></svg>
+                    </button>
+                    <span class="time-label"><span id="cur-time">0:00</span></span>
+                    <div class="spacer"></div>
+                    <div class="menu-wrap">
+                        <button id="q-btn" class="ctrl-btn" title="Quality">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                        </button>
+                        <div id="q-menu" class="quality-popup"></div>
+                    </div>
+                    <button id="fs-btn" class="ctrl-btn" title="Fullscreen">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="error-msg"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script>
-        document.getElementById("fallback").href = "/player" + location.search + location.hash;
+    (function() {
+        var API = "https://raw.githubusercontent.com/drmlive/fancode-live-events/main/fancode.json";
+        var params = new URLSearchParams(location.search);
+        var matchId = params.get("id") || "";
+        var reqRes = params.get("r") || "1080p";
+
+        function cleanStreamUrl(value) {
+            return String(value || "").trim().replace(/[,\s]+$/g, "");
+        }
+
+        var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
+        var streamUrl = "";
+        var availableQualities = [];
+        var currentRes = "";
+
+        var video = document.getElementById("video");
+        var $loading = document.getElementById("loading");
+        var $error = document.getElementById("error-msg");
+        var videoArea = document.getElementById("video-area");
+        var hlsInstance = null;
+        var isDragging = false, controlsTimer = null, isQMenuOpen = false;
+
+        function showError(msg) { $error.textContent=msg; $error.style.display="block"; setTimeout(function(){$error.style.display="none"},6000); }
+        function hideLoading() { $loading.classList.add("hidden"); setTimeout(function(){$loading.style.display="none"},300); }
+        function showLoading() { $loading.style.display="flex"; $loading.classList.remove("hidden"); }
+
+        function decodeHex(hex) {
+            if (!hex) return "";
+            var str = "";
+            for (var i = 0; i < hex.length; i += 2) {
+                str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
+            }
+            return str;
+        }
+
+        function parseMatchQualities(m) {
+            var standardRes = ["1080p", "720p", "540p", "480p", "360p", "240p"];
+            var baseStream = m.dai_url || m.adfree_url || m.stream_url || "";
+
+            // Check DRM
+            var cdn = m.STREAMING_CDN || {};
+            if (cdn.is_drm && cdn.drm && cdn.drm.clearkey) {
+                var parts = cdn.drm.clearkey.split(":");
+                var kid = parts[0], key = parts[1];
+                var url = cdn.Primary_Playback_URL || baseStream || "";
+                if (url) {
+                    location.replace("shaka_player.html?mpd=" + encodeURIComponent(url) + "&kid=" + encodeURIComponent(kid) + "&key=" + encodeURIComponent(key));
+                    return [];
+                }
+            }
+
+            // Check hex
+            var hexData = m.google_m3u8_hex || m.m3u8_hex || m.hex || "";
+            if (hexData) {
+                var text = decodeHex(hexData);
+                var lines = text.split("\n");
+                var list = [];
+                for (var i = 0; i < lines.length; i++) {
+                    if (lines[i].includes("RESOLUTION=")) {
+                        var resPart = lines[i].split("RESOLUTION=")[1].split(",")[0];
+                        var height = resPart.split("x")[1];
+                        var streamUrl = (lines[i+1] || "").trim();
+                        if (streamUrl && !streamUrl.startsWith("http") && baseStream) {
+                            try {
+                                var baseUrl = new URL(baseStream);
+                                var pathDir = baseUrl.pathname.substring(0, baseUrl.pathname.lastIndexOf("/") + 1);
+                                streamUrl = baseUrl.origin + pathDir + streamUrl;
+                            } catch (_) {}
+                        }
+                        if (streamUrl && streamUrl.startsWith("http")) {
+                            list.push({ res: height + "p", url: streamUrl });
+                        }
+                    }
+                }
+                if (list.length > 0) return list;
+            }
+
+            // Fallback to baseStream
+            if (baseStream && baseStream.startsWith("http")) {
+                var list = [];
+                standardRes.forEach(function(r) {
+                    var qUrl = baseStream;
+                    if (qUrl.includes(".m3u8")) {
+                        qUrl = qUrl.replace(/(index__|\/)(\d+p|\d+)\.m3u8/i, "$1" + r + ".m3u8");
+                    } else if (qUrl.includes("1080p")) {
+                        qUrl = qUrl.replace(/1080p/g, r);
+                    }
+                    list.push({ res: r, url: qUrl });
+                });
+                return list;
+            }
+            return [];
+        }
+
+        function playStream(url) {
+            showLoading();
+            if (hlsInstance) { hlsInstance.destroy(); hlsInstance = null; }
+
+            var isNativeHls = !!video.canPlayType("application/vnd.apple.mpegurl");
+
+            if (isNativeHls) {
+                video.src = url;
+                video.play().catch(function(){});
+                video.addEventListener("loadedmetadata", function() {
+                    hideLoading();
+                    video.play().catch(function(){});
+                    buildQMenu();
+                }, { once: true });
+            } else if (window.Hls && Hls.isSupported()) {
+                hlsInstance = new Hls({
+                    enableWorker: true,
+                    lowLatencyMode: true,
+                    xhrSetup: function(xhr) { xhr.withCredentials = false; }
+                });
+                hlsInstance.loadSource(url);
+                hlsInstance.attachMedia(video);
+
+                hlsInstance.on(Hls.Events.MANIFEST_PARSED, function() {
+                    hideLoading();
+                    buildQMenu();
+                    video.play().catch(function(){});
+                });
+                hlsInstance.on(Hls.Events.FRAG_LOADED, function() {
+                    hideLoading();
+                });
+                hlsInstance.on(Hls.Events.ERROR, function(ev, data) {
+                    if (data.fatal) {
+                        if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
+                            hlsInstance.startLoad();
+                        } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
+                            hlsInstance.recoverMediaError();
+                        } else {
+                            hideLoading();
+                            showError("Stream error. Retrying...");
+                            setTimeout(function(){ if(hlsInstance) hlsInstance.startLoad(); }, 3000);
+                        }
+                    }
+                });
+            } else {
+                hideLoading(); showError("HLS not supported in this browser.");
+            }
+        }
+
+        if (matchId) {
+            showLoading();
+            fetch(API, { cache: "no-store" })
+                .then(function(r) { return r.json(); })
+                .then(function(data) {
+                    var matches = data.matches || [];
+                    var m = matches.find(function(x) { return String(x.match_id).toLowerCase() === String(matchId).toLowerCase(); });
+                    if (!m) {
+                        hideLoading();
+                        showError("Match not found: " + matchId);
+                        return;
+                    }
+                    var title = (m.team_1 && m.team_2) ? (m.team_1 + " vs " + m.team_2) : (m.match_name || m.title || "FanCode Player");
+                    document.title = title + " · FanCode Player";
+
+                    availableQualities = parseMatchQualities(m);
+                    if (!availableQualities.length) {
+                        hideLoading();
+                        showError("Stream offline or unavailable.");
+                        return;
+                    }
+
+                    var resOrder = { "1080p": 6, "720p": 5, "540p": 4, "480p": 3, "360p": 2, "240p": 1 };
+                    availableQualities.sort(function(a, b) {
+                        return (resOrder[b.res] || parseInt(b.res) || 0) - (resOrder[a.res] || parseInt(a.res) || 0);
+                    });
+
+                    var chosen = availableQualities.find(function(x) {
+                        return x.res.toLowerCase() === reqRes.toLowerCase() || x.res.replace("p","") === reqRes.replace("p","");
+                    }) || availableQualities[0];
+
+                    currentRes = chosen.res;
+                    playStream(chosen.url);
+                })
+                .catch(function(e) {
+                    hideLoading();
+                    showError("Could not load match data. Please reload.");
+                });
+        } else if (rawUrl) {
+            playStream(rawUrl);
+        } else {
+            hideLoading();
+            showError("No stream URL or match ID provided.");
+        }
+
+        // --- Controls ---
+        var playBtn = document.getElementById("play-btn");
+        var iPlay = document.getElementById("i-play"), iPause = document.getElementById("i-pause");
+        var muteBtn = document.getElementById("mute-btn");
+        var iMuted = document.getElementById("i-muted"), iUnmuted = document.getElementById("i-unmuted");
+        var cFlash = document.getElementById("center-flash"), cPlay = document.getElementById("c-play"), cPause = document.getElementById("c-pause");
+        var progTrack = document.getElementById("prog-track"), progFilled = document.getElementById("prog-filled"), progThumb = document.getElementById("prog-thumb");
+        var curTime = document.getElementById("cur-time");
+        var qBtn = document.getElementById("q-btn"), qMenu = document.getElementById("q-menu");
+        var fsBtn = document.getElementById("fs-btn");
+
+        function togglePlay() { if(video.paused) video.play(); else video.pause(); }
+        function updatePlayIcons() {
+            var playing = !video.paused;
+            iPlay.classList.toggle("hidden", playing); iPause.classList.toggle("hidden", !playing);
+            cPlay.classList.toggle("hidden", playing); cPause.classList.toggle("hidden", !playing);
+            cFlash.classList.add("show"); setTimeout(function(){cFlash.classList.remove("show")},300);
+            resetAutoHide();
+        }
+        function updateMuteIcons() {
+            var m = video.muted || video.volume === 0;
+            iMuted.classList.toggle("hidden", !m); iUnmuted.classList.toggle("hidden", m);
+        }
+        function fmtTime(t) { if(!t||!isFinite(t)) return "0:00"; var h=Math.floor(t/3600),m=Math.floor(t%3600/60),s=Math.floor(t%60); return h>0 ? h+":"+String(m).padStart(2,"0")+":"+String(s).padStart(2,"0") : m+":"+String(s).padStart(2,"0"); }
+
+        playBtn.onclick = togglePlay;
+        videoArea.addEventListener("click", function(e) { if(e.target.closest(".ctrl-btn")||e.target.closest(".quality-popup")||e.target.closest("#back-btn")) return; togglePlay(); });
+        video.addEventListener("play", updatePlayIcons);
+        video.addEventListener("pause", updatePlayIcons);
+        video.addEventListener("volumechange", updateMuteIcons);
+        video.addEventListener("timeupdate", function() { if(isDragging) return; if(video.duration){ var p=video.currentTime/video.duration*100; progFilled.style.width=p+"%"; progThumb.style.left=p+"%"; curTime.textContent=fmtTime(video.currentTime); } });
+        muteBtn.onclick = function(e) { e.stopPropagation(); video.muted=!video.muted; if(!video.muted&&video.volume===0) video.volume=0.5; };
+
+        // Keyboard
+        document.addEventListener("keydown", function(e) {
+            if(e.key===" ") { e.preventDefault(); togglePlay(); }
+            if(e.key==="m"||e.key==="M") { e.preventDefault(); video.muted=!video.muted; }
+            if(e.key==="Escape"&&document.fullscreenElement) document.exitFullscreen();
+        });
+
+        // Progress drag
+        progTrack.addEventListener("mousedown", startDrag);
+        progTrack.addEventListener("touchstart", startDrag, {passive:false});
+        document.addEventListener("mousemove", onDrag); document.addEventListener("touchmove", onDrag, {passive:false});
+        document.addEventListener("mouseup", endDrag); document.addEventListener("touchend", endDrag);
+        function startDrag(e) { e.preventDefault(); isDragging=true; videoArea.classList.remove("hide-controls"); seekTo(e); }
+        function onDrag(e) { if(!isDragging) return; e.preventDefault(); seekTo(e); }
+        function endDrag() { if(!isDragging) return; isDragging=false; resetAutoHide(); }
+        function seekTo(e) {
+            var r=progTrack.getBoundingClientRect(), x=e.touches?e.touches[0].clientX:e.clientX;
+            var p=Math.max(0,Math.min(1,(x-r.left)/r.width));
+            progFilled.style.width=p*100+"%"; progThumb.style.left=p*100+"%";
+            if(video.duration) { video.currentTime=p*video.duration; curTime.textContent=fmtTime(video.currentTime); }
+        }
+
+        // Auto-hide controls
+        videoArea.addEventListener("mousemove", resetAutoHide);
+        videoArea.addEventListener("touchstart", resetAutoHide, {passive:true});
+        function resetAutoHide() {
+            videoArea.classList.remove("hide-controls");
+            clearTimeout(controlsTimer);
+            if(!video.paused&&!isDragging&&!isQMenuOpen) controlsTimer=setTimeout(function(){videoArea.classList.add("hide-controls")},3000);
+        }
+
+        // Fullscreen
+        fsBtn.onclick = function() { if(!document.fullscreenElement){document.documentElement.requestFullscreen();} else{document.exitFullscreen();} resetAutoHide(); };
+        video.addEventListener("dblclick", function() { if(!document.fullscreenElement){document.documentElement.requestFullscreen();} else{document.exitFullscreen();} });
+
+        // Quality menu
+        qBtn.addEventListener("click", function(e) { e.stopPropagation(); qMenu.classList.toggle("open"); isQMenuOpen=qMenu.classList.contains("open"); resetAutoHide(); });
+        document.addEventListener("click", function(e) { if(isQMenuOpen&&!qMenu.contains(e.target)&&e.target!==qBtn) { qMenu.classList.remove("open"); isQMenuOpen=false; } });
+
+        function buildQMenu(activeLevel) {
+            qMenu.innerHTML = "";
+            if (availableQualities.length > 0) {
+                availableQualities.forEach(function(item) {
+                    var div = document.createElement("div");
+                    div.className = "q-item" + (item.res === currentRes ? " active" : "");
+                    div.textContent = item.res;
+                    div.onclick = function(e) {
+                        e.stopPropagation();
+                        if (item.res !== currentRes) {
+                            currentRes = item.res;
+                            playStream(item.url);
+                        }
+                        qMenu.classList.remove("open");
+                        isQMenuOpen = false;
+                        buildQMenu();
+                    };
+                    qMenu.appendChild(div);
+                });
+                return;
+            }
+
+            var items = [{name:"Auto", level:-1}];
+            if (hlsInstance && hlsInstance.levels.length > 0) {
+                hlsInstance.levels.forEach(function(l,i) {
+                    var label = l.height + "p";
+                    if (l.bitrate) label += " (" + (l.bitrate/1000000).toFixed(1) + " Mbps)";
+                    items.push({name:label, level:i});
+                });
+            }
+            items.forEach(function(item) {
+                var div = document.createElement("div");
+                div.className = "q-item" + (item.level === activeLevel ? " active" : "");
+                div.textContent = item.name;
+                div.onclick = function(e) {
+                    e.stopPropagation();
+                    if (hlsInstance && item.level >= -1) hlsInstance.currentLevel = item.level;
+                    qMenu.classList.remove("open"); isQMenuOpen = false;
+                    buildQMenu(item.level);
+                };
+                qMenu.appendChild(div);
+            });
+        }
+
+        // Unmute on click
+        document.addEventListener("click", function unmute() { video.muted=false; document.removeEventListener("click",unmute); }, {once:true});
+    })();
     </script>
 </body>
 </html>

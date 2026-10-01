@@ -97,7 +97,7 @@
 
     <div class="player-shell">
         <div id="video-area" class="video-area">
-            <video id="video" autoplay playsinline referrerpolicy="no-referrer"></video>
+            <video id="video" autoplay muted playsinline referrerpolicy="no-referrer"></video>
 
             <div id="center-flash" class="center-flash">
                 <div class="center-circle">
@@ -142,13 +142,19 @@
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script>
     (function() {
+        var API = "https://raw.githubusercontent.com/drmlive/fancode-live-events/main/fancode.json";
         var params = new URLSearchParams(location.search);
+        var matchId = params.get("id") || "";
+        var reqRes = params.get("r") || "1080p";
+
         function cleanStreamUrl(value) {
             return String(value || "").trim().replace(/[,\s]+$/g, "");
         }
 
         var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
         var streamUrl = "";
+        var availableQualities = [];
+        var currentRes = "";
 
         var video = document.getElementById("video");
         var $loading = document.getElementById("loading");
@@ -159,50 +165,168 @@
 
         function showError(msg) { $error.textContent=msg; $error.style.display="block"; setTimeout(function(){$error.style.display="none"},6000); }
         function hideLoading() { $loading.classList.add("hidden"); setTimeout(function(){$loading.style.display="none"},300); }
+        function showLoading() { $loading.style.display="flex"; $loading.classList.remove("hidden"); }
 
-        if (!rawUrl) { hideLoading(); showError("No stream URL provided."); return; }
+        function decodeHex(hex) {
+            if (!hex) return "";
+            var str = "";
+            for (var i = 0; i < hex.length; i += 2) {
+                str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
+            }
+            return str;
+        }
 
-        streamUrl = rawUrl; // Direct stream like speedsters!
-        var isNativeHls = !!video.canPlayType("application/vnd.apple.mpegurl");
+        function parseMatchQualities(m) {
+            var standardRes = ["1080p", "720p", "540p", "480p", "360p", "240p"];
+            var baseStream = m.dai_url || m.adfree_url || m.stream_url || "";
 
-        if (isNativeHls) {
-            // Direct playback with 0 proxy and 0 Cloudflare requests!
-            video.src = rawUrl;
-            video.addEventListener("loadedmetadata", function() {
-                hideLoading();
-                video.play().catch(function(){});
-                buildQMenu(-1);
-            }, { once: true });
-        } else if (window.Hls && Hls.isSupported()) {
-            if (hlsInstance) { hlsInstance.destroy(); hlsInstance = null; }
-            hlsInstance = new Hls({
-                enableWorker: true,
-                lowLatencyMode: true,
-                xhrSetup: function(xhr) { xhr.withCredentials = false; }
-            });
-            hlsInstance.loadSource(streamUrl);
-            hlsInstance.attachMedia(video);
+            // Check DRM
+            var cdn = m.STREAMING_CDN || {};
+            if (cdn.is_drm && cdn.drm && cdn.drm.clearkey) {
+                var parts = cdn.drm.clearkey.split(":");
+                var kid = parts[0], key = parts[1];
+                var url = cdn.Primary_Playback_URL || baseStream || "";
+                if (url) {
+                    location.replace("shaka_player.html?mpd=" + encodeURIComponent(url) + "&kid=" + encodeURIComponent(kid) + "&key=" + encodeURIComponent(key));
+                    return [];
+                }
+            }
 
-            hlsInstance.on(Hls.Events.MANIFEST_PARSED, function() {
-                hideLoading();
-                buildQMenu(-1);
-                video.play().catch(function(){});
-            });
-            hlsInstance.on(Hls.Events.LEVEL_SWITCHED, function(ev, data) { buildQMenu(data.level); });
-            hlsInstance.on(Hls.Events.ERROR, function(ev, data) {
-                if (data.fatal) {
-                    if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
-                        hlsInstance.startLoad();
-                    } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
-                        hlsInstance.recoverMediaError();
-                    } else {
-                        hideLoading();
-                        showError("Stream error. Please reload or try another stream.");
+            // Check hex
+            var hexData = m.google_m3u8_hex || m.m3u8_hex || m.hex || "";
+            if (hexData) {
+                var text = decodeHex(hexData);
+                var lines = text.split("\n");
+                var list = [];
+                for (var i = 0; i < lines.length; i++) {
+                    if (lines[i].includes("RESOLUTION=")) {
+                        var resPart = lines[i].split("RESOLUTION=")[1].split(",")[0];
+                        var height = resPart.split("x")[1];
+                        var streamUrl = (lines[i+1] || "").trim();
+                        if (streamUrl && !streamUrl.startsWith("http") && baseStream) {
+                            try {
+                                var baseUrl = new URL(baseStream);
+                                var pathDir = baseUrl.pathname.substring(0, baseUrl.pathname.lastIndexOf("/") + 1);
+                                streamUrl = baseUrl.origin + pathDir + streamUrl;
+                            } catch (_) {}
+                        }
+                        if (streamUrl && streamUrl.startsWith("http")) {
+                            list.push({ res: height + "p", url: streamUrl });
+                        }
                     }
                 }
-            });
+                if (list.length > 0) return list;
+            }
+
+            // Fallback to baseStream
+            if (baseStream && baseStream.startsWith("http")) {
+                var list = [];
+                standardRes.forEach(function(r) {
+                    var qUrl = baseStream;
+                    if (qUrl.includes(".m3u8")) {
+                        qUrl = qUrl.replace(/(index__|\/)(\d+p|\d+)\.m3u8/i, "$1" + r + ".m3u8");
+                    } else if (qUrl.includes("1080p")) {
+                        qUrl = qUrl.replace(/1080p/g, r);
+                    }
+                    list.push({ res: r, url: qUrl });
+                });
+                return list;
+            }
+            return [];
+        }
+
+        function playStream(url) {
+            showLoading();
+            if (hlsInstance) { hlsInstance.destroy(); hlsInstance = null; }
+
+            var isNativeHls = !!video.canPlayType("application/vnd.apple.mpegurl");
+
+            if (isNativeHls) {
+                video.src = url;
+                video.play().catch(function(){});
+                video.addEventListener("loadedmetadata", function() {
+                    hideLoading();
+                    video.play().catch(function(){});
+                    buildQMenu();
+                }, { once: true });
+            } else if (window.Hls && Hls.isSupported()) {
+                hlsInstance = new Hls({
+                    enableWorker: true,
+                    lowLatencyMode: true,
+                    xhrSetup: function(xhr) { xhr.withCredentials = false; }
+                });
+                hlsInstance.loadSource(url);
+                hlsInstance.attachMedia(video);
+
+                hlsInstance.on(Hls.Events.MANIFEST_PARSED, function() {
+                    hideLoading();
+                    buildQMenu();
+                    video.play().catch(function(){});
+                });
+                hlsInstance.on(Hls.Events.FRAG_LOADED, function() {
+                    hideLoading();
+                });
+                hlsInstance.on(Hls.Events.ERROR, function(ev, data) {
+                    if (data.fatal) {
+                        if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
+                            hlsInstance.startLoad();
+                        } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
+                            hlsInstance.recoverMediaError();
+                        } else {
+                            hideLoading();
+                            showError("Stream error. Retrying...");
+                            setTimeout(function(){ if(hlsInstance) hlsInstance.startLoad(); }, 3000);
+                        }
+                    }
+                });
+            } else {
+                hideLoading(); showError("HLS not supported in this browser.");
+            }
+        }
+
+        if (matchId) {
+            showLoading();
+            fetch(API, { cache: "no-store" })
+                .then(function(r) { return r.json(); })
+                .then(function(data) {
+                    var matches = data.matches || [];
+                    var m = matches.find(function(x) { return String(x.match_id).toLowerCase() === String(matchId).toLowerCase(); });
+                    if (!m) {
+                        hideLoading();
+                        showError("Match not found: " + matchId);
+                        return;
+                    }
+                    var title = (m.team_1 && m.team_2) ? (m.team_1 + " vs " + m.team_2) : (m.match_name || m.title || "FanCode Player");
+                    document.title = title + " · FanCode Player";
+
+                    availableQualities = parseMatchQualities(m);
+                    if (!availableQualities.length) {
+                        hideLoading();
+                        showError("Stream offline or unavailable.");
+                        return;
+                    }
+
+                    var resOrder = { "1080p": 6, "720p": 5, "540p": 4, "480p": 3, "360p": 2, "240p": 1 };
+                    availableQualities.sort(function(a, b) {
+                        return (resOrder[b.res] || parseInt(b.res) || 0) - (resOrder[a.res] || parseInt(a.res) || 0);
+                    });
+
+                    var chosen = availableQualities.find(function(x) {
+                        return x.res.toLowerCase() === reqRes.toLowerCase() || x.res.replace("p","") === reqRes.replace("p","");
+                    }) || availableQualities[0];
+
+                    currentRes = chosen.res;
+                    playStream(chosen.url);
+                })
+                .catch(function(e) {
+                    hideLoading();
+                    showError("Could not load match data. Please reload.");
+                });
+        } else if (rawUrl) {
+            playStream(rawUrl);
         } else {
-            hideLoading(); showError("HLS not supported.");
+            hideLoading();
+            showError("No stream URL or match ID provided.");
         }
 
         // --- Controls ---
@@ -279,6 +403,26 @@
 
         function buildQMenu(activeLevel) {
             qMenu.innerHTML = "";
+            if (availableQualities.length > 0) {
+                availableQualities.forEach(function(item) {
+                    var div = document.createElement("div");
+                    div.className = "q-item" + (item.res === currentRes ? " active" : "");
+                    div.textContent = item.res;
+                    div.onclick = function(e) {
+                        e.stopPropagation();
+                        if (item.res !== currentRes) {
+                            currentRes = item.res;
+                            playStream(item.url);
+                        }
+                        qMenu.classList.remove("open");
+                        isQMenuOpen = false;
+                        buildQMenu();
+                    };
+                    qMenu.appendChild(div);
+                });
+                return;
+            }
+
             var items = [{name:"Auto", level:-1}];
             if (hlsInstance && hlsInstance.levels.length > 0) {
                 hlsInstance.levels.forEach(function(l,i) {

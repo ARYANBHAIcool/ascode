@@ -126,15 +126,24 @@
                         <h2 id="player-title" class="mt-2 text-base sm:text-lg font-semibold text-slate-100 truncate"></h2>
                     </div>
 
-                    <div class="flex items-center gap-2 shrink-0">
-                        <button type="button" id="btn-share-match" class="border border-indigo-700 hover:border-indigo-500 text-indigo-400 hover:text-indigo-200 rounded-lg px-3 sm:px-4 py-2 transition-all flex items-center gap-2 font-medium text-sm bg-indigo-950/40">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div class="flex items-center gap-2 shrink-0 flex-wrap sm:flex-nowrap">
+                        <a href="https://t.me/aryanstreams" target="_blank" rel="noreferrer" class="border border-[#2AABEE] hover:bg-[#2AABEE] text-[#2AABEE] hover:text-white rounded-lg px-2.5 sm:px-3 py-2 transition-all flex items-center gap-1.5 font-bold text-xs bg-[#2AABEE]/10 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M21.944 4.667a1.45 1.45 0 0 0-1.63-.252L3.41 11.07c-.94.37-.91 1.71.047 2.038l4.253 1.456 1.626 5.081c.292.913 1.46 1.18 2.12.486l2.44-2.565 4.364 3.176c.827.602 2.006.129 2.205-.876l2.284-13.608a1.45 1.45 0 0 0-.805-1.591ZM8.18 13.29l8.307-5.113c.385-.237.781.283.452.594l-6.86 6.49-.268 2.793-1.03-3.224a1.25 1.25 0 0 0-.601-1.54Z"/>
+                            </svg>
+                            Telegram
+                        </a>
+                        <a id="btn-full-player" href="player.html" target="_blank" class="border border-slate-700 hover:border-slate-400 text-slate-300 hover:text-white rounded-lg px-2.5 sm:px-3 py-2 transition-all flex items-center gap-1.5 font-bold text-xs bg-slate-900/60 shrink-0">
+                            ⛶ Full Player
+                        </a>
+                        <button type="button" id="btn-share-match" class="border border-indigo-700 hover:border-indigo-500 text-indigo-400 hover:text-indigo-200 rounded-lg px-2.5 sm:px-3 py-2 transition-all flex items-center gap-1.5 font-medium text-xs bg-indigo-950/40">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 10.742l4.636-2.318M8.684 13.258l4.636 2.318m6-4.576a3 3 0 11-6 0 3 3 0 016 0zm-6-5.736a3 3 0 11-6 0 3 3 0 016 0zm0 11.472a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>
-                            Share Link
+                            Share
                         </button>
-                        <button type="button" id="close-player" onclick="closePlayer()" class="border border-slate-700 hover:border-white hover:text-white text-slate-300 rounded-lg px-3 sm:px-4 py-2 transition-all flex items-center gap-2 font-medium text-sm bg-slate-900/60">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <button type="button" id="close-player" onclick="closePlayer()" class="border border-slate-700 hover:border-white hover:text-white text-slate-300 rounded-lg px-2.5 sm:px-3 py-2 transition-all flex items-center gap-1.5 font-medium text-xs bg-slate-900/60">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                             </svg>
                             Close
@@ -198,7 +207,7 @@
         let allMatches = [], currentFilter = "ALL", currentMatch = null, currentQuality = null;
         let selectedStreamUrl = "", selectedRawUrl = "", hlsInstance = null;
 
-        function esc(s) { return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+        function esc(s) { return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;"); }
 
         function dedup(arr) {
             const seen = new Set();
@@ -308,8 +317,12 @@
             return [];
         }
 
-        window.openQuality = function(index, title, event) {
-            const m = allMatches[index];
+        window.openQuality = function(matchId) {
+            const m = allMatches.find(x => String(x.match_id).toLowerCase() === String(matchId).toLowerCase());
+            if (!m) {
+                alert("Match details not found.");
+                return;
+            }
             currentMatch = m; // Track current match
             const qualities = parseQualities(m);
             const list = document.getElementById("quality-list");
@@ -317,15 +330,23 @@
 
             if (qualities.length === 0) { alert("Stream not currently available"); return; }
 
+            let displayTitle = (m.team_1 && m.team_2) ? `${m.team_1} vs ${m.team_2}` : (m.match_name || m.title || "Live Match");
             // Store details for player modal header
-            document.getElementById("player-title").textContent = title;
-            document.getElementById("player-event").textContent = event || m.event_name;
+            document.getElementById("player-title").textContent = displayTitle;
+            document.getElementById("player-event").textContent = m.event_name || m.title || "";
+
+            const btnFull = document.getElementById("btn-full-player");
+            if (btnFull) btnFull.href = "player.html?id=" + encodeURIComponent(m.match_id);
 
             // If only 1 quality level (like DRM or static fallback)
             if (qualities.length === 1) {
                 handleQualitySelect(qualities[0]);
                 return;
             }
+
+            // Sort qualities highest resolution first (1080p -> 720p -> 540p -> 480p -> 360p -> 240p)
+            const resOrder = { "1080p": 6, "720p": 5, "540p": 4, "480p": 3, "360p": 2, "240p": 1 };
+            qualities.sort((a, b) => (resOrder[b.res] || parseInt(b.res) || 0) - (resOrder[a.res] || parseInt(a.res) || 0));
 
             qualities.forEach(q => {
                 const btn = document.createElement("button");
@@ -364,6 +385,9 @@
                 newUrl.searchParams.set("id", currentMatch.match_id);
                 newUrl.searchParams.set("r", q.res.replace("p", ""));
                 window.history.replaceState(null, "", newUrl.toString());
+
+                const btnFull = document.getElementById("btn-full-player");
+                if (btnFull) btnFull.href = "player.html?id=" + encodeURIComponent(currentMatch.match_id) + "&r=" + encodeURIComponent(q.res.replace("p", ""));
             }
 
             if (q.isDrm) {
@@ -372,7 +396,7 @@
             } else {
                 selectedRawUrl = q.url;
                 selectedStreamUrl = q.url; // Direct stream like speedsters!
-                showTelegramModal();
+                launchPlayer(selectedStreamUrl);
             }
         }
 
@@ -456,6 +480,7 @@
 
             if (video.canPlayType("application/vnd.apple.mpegurl")) {
                 video.src = streamSrc;
+                video.play().catch(() => {});
                 video.addEventListener("loadedmetadata", playVideo, { once: true });
                 return;
             }
@@ -526,28 +551,28 @@
             const params = new URLSearchParams(location.search);
             const shareId = params.get("id");
             const shareRes = params.get("r");
-            console.log("Deep link check:", { shareId, shareRes, allMatchesCount: allMatches.length });
             if (shareId) {
-                const matchIndex = allMatches.findIndex(m => String(m.match_id).toLowerCase() === shareId.toLowerCase());
-                console.log("Found match index:", matchIndex);
-                if (matchIndex !== -1) {
-                    const m = allMatches[matchIndex];
+                const m = allMatches.find(x => String(x.match_id).toLowerCase() === shareId.toLowerCase());
+                if (m) {
                     const qualities = parseQualities(m);
-                    console.log("Qualities found:", qualities);
                     if (qualities.length > 0) {
                         currentMatch = m;
                         if (shareRes) {
                             const q = qualities.find(x => x.res.toLowerCase() === shareRes.toLowerCase() || x.res.replace("p","") === shareRes.replace("p",""));
-                            console.log("Matched quality:", q);
                             if (q) {
                                 currentQuality = q;
                                 selectedRawUrl = q.url;
-                                selectedStreamUrl = q.url; // Direct stream like speedsters!
+                                selectedStreamUrl = q.url;
+                                let displayTitle = (m.team_1 && m.team_2) ? `${m.team_1} vs ${m.team_2}` : (m.match_name || m.title || "Live Match");
+                                document.getElementById("player-title").textContent = displayTitle;
+                                document.getElementById("player-event").textContent = m.event_name || m.title || "";
+                                const btnFull = document.getElementById("btn-full-player");
+                                if (btnFull) btnFull.href = "player.html?id=" + encodeURIComponent(m.match_id) + "&r=" + encodeURIComponent(q.res.replace("p", ""));
                                 launchPlayer(selectedStreamUrl);
                                 return;
                             }
                         }
-                        openQuality(matchIndex, m.title, m.event_name);
+                        openQuality(m.match_id);
                     }
                 }
             }
@@ -573,7 +598,7 @@
             });
         };
 
-        function renderCard(m, globalIndex) {
+        function renderCard(m) {
             const hasStreamUrl = hasStream(m);
             const isLive = (m.status||"").toUpperCase() === "LIVE" && hasStreamUrl;
             const isEnded = (m.status||"").toUpperCase() === "LIVE" && !hasStreamUrl;
@@ -593,13 +618,13 @@
                     : '<span class="inline-flex items-center text-[10px] font-bold text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded-full border border-slate-700/40">UPCOMING</span>';
 
             const btn = isLive
-                ? `<button class="w-full bg-red-600 hover:bg-red-700 text-white py-2 rounded-lg text-xs font-bold transition transform active:scale-95" onclick="openQuality(${globalIndex}, '${esc(displayTitle)}', '${esc(m.event_name)}')">▶ WATCH LIVE</button>`
+                ? `<button class="w-full bg-red-600 hover:bg-red-700 text-white py-2 rounded-lg text-xs font-bold transition transform active:scale-95 shadow-md shadow-red-900/30" onclick="openQuality('${esc(m.match_id)}')">▶ WATCH LIVE</button>`
                 : isEnded
                     ? '<button class="w-full bg-slate-800/60 text-slate-500 py-2 rounded-lg text-xs font-bold cursor-not-allowed border border-slate-800" disabled>🏁 Stream Ended</button>'
                     : '<button class="w-full bg-slate-800/60 text-slate-500 py-2 rounded-lg text-xs font-bold cursor-not-allowed border border-slate-800" disabled>⏳ Not Live Yet</button>';
 
             return `
-                <div class="match-card rounded-xl overflow-hidden shadow-lg flex flex-col">
+                <div class="match-card rounded-xl overflow-hidden shadow-lg flex flex-col ${isLive ? 'cursor-pointer hover:border-red-500/50 transition duration-200' : ''}" ${isLive ? `onclick="if(!event.target.closest('button')) openQuality('${esc(m.match_id)}');"` : ''}>
                     <img class="w-full aspect-[16/9] object-cover bg-slate-950" src="${esc(img)}" loading="lazy" onerror="this.src='${FALLBACK_IMG}'" alt="">
                     <div class="p-4 flex-grow flex flex-col justify-between gap-4">
                         <div>
@@ -634,12 +659,12 @@
             
             if (live.length > 0) {
                 ls.classList.remove("hidden");
-                document.getElementById("live-grid").innerHTML = live.map(m => renderCard(m, allMatches.indexOf(m))).join("");
+                document.getElementById("live-grid").innerHTML = live.map(m => renderCard(m)).join("");
             } else ls.classList.add("hidden");
 
             if (upcoming.length > 0) {
                 us.classList.remove("hidden");
-                document.getElementById("upcoming-grid").innerHTML = upcoming.map(m => renderCard(m, allMatches.indexOf(m))).join("");
+                document.getElementById("upcoming-grid").innerHTML = upcoming.map(m => renderCard(m)).join("");
             } else us.classList.add("hidden");
 
             document.querySelectorAll(".filter-btn").forEach(b => {
