@@ -202,20 +202,38 @@
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script>
     (function() {
-        const API = "https://raw.githubusercontent.com/drmlive/fancode-live-events/main/fancode.json";
+        const M3U_API = "https://raw.githubusercontent.com/doctor-8trange/zyphx8/refs/heads/main/data/fancode.m3u";
+        const JSON_API = "https://raw.githubusercontent.com/drmlive/fancode-live-events/main/fancode.json";
         const FALLBACK_IMG = "https://www.fancode.com/skillup-uploads/cms-media/Cricket_Fallback_Old_match-card.jpg";
         let allMatches = [], currentFilter = "ALL", currentMatch = null, currentQuality = null;
         let selectedStreamUrl = "", selectedRawUrl = "", hlsInstance = null;
 
         function esc(s) { return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;"); }
 
+        function cleanStreamUrl(value) {
+            return String(value || "").trim().split("|")[0].trim().replace(/[,\s]+$/g, "");
+        }
+
         function dedup(arr) {
             const seen = new Set();
             return arr.filter(m => { 
-                const k = m.match_id + "_" + (m.language || ""); 
+                const baseId = String(m.match_id || "").split("_")[0].toLowerCase();
+                const k = baseId + "_" + (m.language || ""); 
                 if(seen.has(k)) return false; 
                 seen.add(k); 
                 return true; 
+            });
+        }
+
+        function findMatchById(id) {
+            if (!id) return null;
+            const target = String(id).trim().toLowerCase();
+            const targetBase = target.split("_")[0];
+            return allMatches.find(m => {
+                const cur = String(m.match_id || "").trim().toLowerCase();
+                if (cur === target) return true;
+                const curBase = cur.split("_")[0];
+                return curBase === targetBase || cur === targetBase || curBase === target;
             });
         }
 
@@ -235,13 +253,13 @@
         // Parsing stream qualities and resolutions
         function parseQualities(m) {
             const standardRes = ["1080p", "720p", "540p", "480p", "360p", "240p"];
-            const baseStream = m.dai_url || m.adfree_url || m.stream_url || "";
+            const baseStream = cleanStreamUrl(m.dai_url || m.adfree_url || m.stream_url || "");
 
             // 1. Check DRM first
             const cdn = m.STREAMING_CDN || {};
             if (cdn.is_drm && cdn.drm && cdn.drm.clearkey) {
                 const [kid, key] = cdn.drm.clearkey.split(":");
-                const url = cdn.Primary_Playback_URL || baseStream || "";
+                const url = cleanStreamUrl(cdn.Primary_Playback_URL || baseStream || "");
                 if (url) {
                     return [{ 
                         res: "DRM Stream", 
@@ -261,7 +279,7 @@
                     if (lines[i].includes("RESOLUTION=")) {
                         const resPart = lines[i].split("RESOLUTION=")[1].split(",")[0];
                         const height = resPart.split("x")[1];
-                        let streamUrl = (lines[i+1] || "").trim();
+                        let streamUrl = cleanStreamUrl(lines[i+1] || "");
                         // Resolve relative URLs if needed
                         if (streamUrl && !streamUrl.startsWith("http") && baseStream) {
                             try {
@@ -278,8 +296,11 @@
                 if (qualities.length > 0) return qualities;
             }
 
-            // 3. Fallback to baseStream (dai_url / adfree_url) with standard resolutions
+            // 3. Fallback to baseStream (dai_url / adfree_url) with standard resolutions or master playlist
             if (baseStream && baseStream.startsWith("http")) {
+                if (baseStream.toLowerCase().includes("index.m3u8")) {
+                    return [{ res: "Auto (Master)", url: baseStream, isHd: true }];
+                }
                 const qualities = [];
                 standardRes.forEach(r => {
                     let qUrl = baseStream;
@@ -301,7 +322,7 @@
                     if (lines[i].includes("RESOLUTION=")) {
                         const resPart = lines[i].split("RESOLUTION=")[1].split(",")[0];
                         const height = resPart.split("x")[1];
-                        const streamUrl = (lines[i+1] || "").trim();
+                        const streamUrl = cleanStreamUrl(lines[i+1] || "");
                         if (streamUrl && streamUrl.startsWith("http")) {
                             qualities.push({ res: height + "p", url: streamUrl, isHd: parseInt(height) >= 720 });
                         }
@@ -310,7 +331,7 @@
                 if (qualities.length > 0) return qualities;
             }
 
-            const fallbackUrl = cdn.Primary_Playback_URL || m.stream_url;
+            const fallbackUrl = cleanStreamUrl(cdn.Primary_Playback_URL || m.stream_url);
             if (fallbackUrl && fallbackUrl.startsWith("http")) {
                 return [{ res: "Auto", url: fallbackUrl, isHd: false }];
             }
@@ -318,7 +339,7 @@
         }
 
         window.openQuality = function(matchId) {
-            const m = allMatches.find(x => String(x.match_id).toLowerCase() === String(matchId).toLowerCase());
+            const m = findMatchById(matchId);
             if (!m) {
                 alert("Match details not found.");
                 return;
@@ -552,7 +573,7 @@
             const shareId = params.get("id");
             const shareRes = params.get("r");
             if (shareId) {
-                const m = allMatches.find(x => String(x.match_id).toLowerCase() === shareId.toLowerCase());
+                const m = findMatchById(shareId);
                 if (m) {
                     const qualities = parseQualities(m);
                     if (qualities.length > 0) {
@@ -682,31 +703,115 @@
             c.addEventListener("click", e => { if (e.target.classList.contains("filter-btn")) render(e.target.dataset.filter); });
         }
 
-        function loadData() {
-            fetch(API, { cache: "no-store" }).then(r => r.json()).then(data => {
+        async function fetchM3uMatches() {
+            try {
+                const res = await fetch(M3U_API, { cache: "no-store" });
+                if (!res.ok) return [];
+                const text = await res.text();
+                const lines = text.split("\n");
+                const list = [];
+                let cur = null;
+                for (let rawLine of lines) {
+                    const line = rawLine.trim();
+                    if (line.startsWith("#EXTINF:")) {
+                        cur = {};
+                        const idMatch = line.match(/tvg-id="([^"]+)"/i);
+                        cur.match_id = idMatch ? idMatch[1] : "";
+                        const nameMatch = line.match(/tvg-name="([^"]+)"/i);
+                        cur.match_name = nameMatch ? nameMatch[1] : "";
+                        cur.title = cur.match_name;
+                        const logoMatch = line.match(/tvg-logo="([^"]+)"/i);
+                        cur.src = logoMatch ? logoMatch[1] : "";
+                        const langMatch = line.match(/tvg-language="([^"]+)"/i);
+                        cur.language = langMatch ? langMatch[1] : "English";
+                        const groupMatch = line.match(/group-title="([^"]+)"/i);
+                        cur.event_category = groupMatch ? groupMatch[1] : "Sports";
+                        cur.event_name = cur.event_category;
+                        const commaSplit = line.split(",");
+                        if (commaSplit.length > 1 && !cur.title) {
+                            cur.title = commaSplit[commaSplit.length - 1].trim();
+                            cur.match_name = cur.title;
+                        }
+                    } else if (line.startsWith("http") && cur) {
+                        const streamUrl = cleanStreamUrl(line);
+                        cur.stream_url = streamUrl;
+                        cur.dai_url = streamUrl;
+                        cur.adfree_url = streamUrl;
+                        cur.status = "LIVE";
+                        if (cur.match_id) {
+                            list.push(cur);
+                        }
+                        cur = null;
+                    }
+                }
+                return list;
+            } catch (e) {
+                console.warn("M3U fetch failed:", e);
+                return [];
+            }
+        }
+
+        async function fetchJsonMatches() {
+            try {
+                const res = await fetch(JSON_API, { cache: "no-store" });
+                if (!res.ok) return [];
+                const data = await res.json();
+                return data.matches || [];
+            } catch (e) {
+                console.warn("JSON fetch failed:", e);
+                return [];
+            }
+        }
+
+        async function fetchAllMatches() {
+            const [m3uResult, jsonResult] = await Promise.allSettled([
+                fetchM3uMatches(),
+                fetchJsonMatches()
+            ]);
+            const m3uMatches = m3uResult.status === "fulfilled" ? m3uResult.value : [];
+            const jsonMatches = jsonResult.status === "fulfilled" ? jsonResult.value : [];
+
+            // Combine both sources: M3U matches (active proxy streams) + JSON matches
+            const combined = [...m3uMatches];
+            const seenIds = new Set(m3uMatches.map(m => String(m.match_id).split("_")[0].toLowerCase()));
+
+            for (const jm of jsonMatches) {
+                const baseId = String(jm.match_id || "").split("_")[0].toLowerCase();
+                if (!seenIds.has(baseId)) {
+                    combined.push(jm);
+                    seenIds.add(baseId);
+                }
+            }
+            return combined;
+        }
+
+        async function loadData() {
+            try {
+                const matches = await fetchAllMatches();
                 document.getElementById("loader").style.display = "none";
-                allMatches = dedup(data.matches || []);
+                allMatches = dedup(matches);
                 const lc = allMatches.filter(m => (m.status||"").toUpperCase() === "LIVE" && hasStream(m)).length;
                 document.getElementById("live-count").textContent = lc;
                 buildFilters(allMatches);
                 render("ALL");
                 checkDeepLink();
-            }).catch(() => {
+            } catch (err) {
                 document.getElementById("loader").innerHTML = '<p class="text-red-500 font-semibold">Failed to load matches. Please refresh to retry.</p>';
-            });
+            }
         }
 
         loadData();
 
-        // Auto-refresh every 5 min
-        setInterval(() => {
-            fetch(API, { cache: "no-store" }).then(r => r.json()).then(data => {
-                allMatches = dedup(data.matches || []);
+        // Auto-refresh every 3 min
+        setInterval(async () => {
+            try {
+                const matches = await fetchAllMatches();
+                allMatches = dedup(matches);
                 const lc = allMatches.filter(m => (m.status||"").toUpperCase() === "LIVE" && hasStream(m)).length;
                 document.getElementById("live-count").textContent = lc;
                 render(currentFilter);
-            }).catch(() => {});
-        }, 5 * 60 * 1000);
+            } catch (e) {}
+        }, 3 * 60 * 1000);
     })();
     </script>
 </body>

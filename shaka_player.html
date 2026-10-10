@@ -53,7 +53,7 @@
     (function() {
         var params = new URLSearchParams(location.search || location.hash.replace('#',''));
         function cleanStreamUrl(value) {
-            return String(value || "").trim().replace(/[,\s]+$/g, "");
+            return String(value || "").trim().split("|")[0].trim().replace(/[,\s]+$/g, "");
         }
 
         var rawMpd = cleanStreamUrl(params.get('mpd') || '');

@@ -142,13 +142,14 @@
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script>
     (function() {
-        var API = "https://raw.githubusercontent.com/drmlive/fancode-live-events/main/fancode.json";
+        var M3U_API = "https://raw.githubusercontent.com/doctor-8trange/zyphx8/refs/heads/main/data/fancode.m3u";
+        var JSON_API = "https://raw.githubusercontent.com/drmlive/fancode-live-events/main/fancode.json";
         var params = new URLSearchParams(location.search);
         var matchId = params.get("id") || "";
         var reqRes = params.get("r") || "1080p";
 
         function cleanStreamUrl(value) {
-            return String(value || "").trim().replace(/[,\s]+$/g, "");
+            return String(value || "").trim().split("|")[0].trim().replace(/[,\s]+$/g, "");
         }
 
         var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
@@ -178,14 +179,14 @@
 
         function parseMatchQualities(m) {
             var standardRes = ["1080p", "720p", "540p", "480p", "360p", "240p"];
-            var baseStream = m.dai_url || m.adfree_url || m.stream_url || "";
+            var baseStream = cleanStreamUrl(m.dai_url || m.adfree_url || m.stream_url || "");
 
             // Check DRM
             var cdn = m.STREAMING_CDN || {};
             if (cdn.is_drm && cdn.drm && cdn.drm.clearkey) {
                 var parts = cdn.drm.clearkey.split(":");
                 var kid = parts[0], key = parts[1];
-                var url = cdn.Primary_Playback_URL || baseStream || "";
+                var url = cleanStreamUrl(cdn.Primary_Playback_URL || baseStream || "");
                 if (url) {
                     location.replace("shaka_player.html?mpd=" + encodeURIComponent(url) + "&kid=" + encodeURIComponent(kid) + "&key=" + encodeURIComponent(key));
                     return [];
@@ -202,7 +203,7 @@
                     if (lines[i].includes("RESOLUTION=")) {
                         var resPart = lines[i].split("RESOLUTION=")[1].split(",")[0];
                         var height = resPart.split("x")[1];
-                        var streamUrl = (lines[i+1] || "").trim();
+                        var streamUrl = cleanStreamUrl(lines[i+1] || "");
                         if (streamUrl && !streamUrl.startsWith("http") && baseStream) {
                             try {
                                 var baseUrl = new URL(baseStream);
@@ -218,8 +219,11 @@
                 if (list.length > 0) return list;
             }
 
-            // Fallback to baseStream
+            // Check master playlist (.m3u8 with adaptive multi-bitrate) or baseStream
             if (baseStream && baseStream.startsWith("http")) {
+                if (baseStream.toLowerCase().includes("index.m3u8")) {
+                    return [{ res: "Auto", url: baseStream }];
+                }
                 var list = [];
                 standardRes.forEach(function(r) {
                     var qUrl = baseStream;
@@ -284,13 +288,90 @@
             }
         }
 
+        function fetchM3uMatches() {
+            return fetch(M3U_API, { cache: "no-store" })
+                .then(function(r) { return r.ok ? r.text() : ""; })
+                .then(function(text) {
+                    if (!text) return [];
+                    var lines = text.split("\n");
+                    var list = [];
+                    var cur = null;
+                    for (var i = 0; i < lines.length; i++) {
+                        var line = lines[i].trim();
+                        if (line.startsWith("#EXTINF:")) {
+                            cur = {};
+                            var idMatch = line.match(/tvg-id="([^"]+)"/i);
+                            cur.match_id = idMatch ? idMatch[1] : "";
+                            var nameMatch = line.match(/tvg-name="([^"]+)"/i);
+                            cur.match_name = nameMatch ? nameMatch[1] : "";
+                            cur.title = cur.match_name;
+                            var comma = line.split(",");
+                            if (comma.length > 1 && !cur.title) cur.title = comma[comma.length - 1].trim();
+                            var logoMatch = line.match(/tvg-logo="([^"]+)"/i);
+                            cur.src = logoMatch ? logoMatch[1] : "";
+                            var langMatch = line.match(/tvg-language="([^"]+)"/i);
+                            cur.language = langMatch ? langMatch[1] : "English";
+                        } else if (line.startsWith("http") && cur) {
+                            var streamUrl = cleanStreamUrl(line);
+                            cur.stream_url = streamUrl;
+                            cur.dai_url = streamUrl;
+                            cur.adfree_url = streamUrl;
+                            cur.status = "LIVE";
+                            if (cur.match_id) list.push(cur);
+                            cur = null;
+                        }
+                    }
+                    return list;
+                })
+                .catch(function() { return []; });
+        }
+
+        function fetchJsonMatches() {
+            return fetch(JSON_API, { cache: "no-store" })
+                .then(function(r) { return r.ok ? r.json() : { matches: [] }; })
+                .then(function(data) { return data.matches || []; })
+                .catch(function() { return []; });
+        }
+
+        function fetchAllMatches() {
+            return Promise.all([fetchM3uMatches(), fetchJsonMatches()])
+                .then(function(results) {
+                    var m3uMatches = results[0] || [];
+                    var jsonMatches = results[1] || [];
+                    var combined = [].concat(m3uMatches);
+                    var seen = {};
+                    m3uMatches.forEach(function(m) {
+                        var base = String(m.match_id || "").split("_")[0].toLowerCase();
+                        seen[base] = true;
+                    });
+                    jsonMatches.forEach(function(m) {
+                        var base = String(m.match_id || "").split("_")[0].toLowerCase();
+                        if (!seen[base]) {
+                            combined.push(m);
+                            seen[base] = true;
+                        }
+                    });
+                    return combined;
+                });
+        }
+
+        function findMatch(matches, id) {
+            if (!id || !matches.length) return null;
+            var target = String(id).trim().toLowerCase();
+            var targetBase = target.split("_")[0];
+            return matches.find(function(m) {
+                var cur = String(m.match_id || "").trim().toLowerCase();
+                if (cur === target) return true;
+                var curBase = cur.split("_")[0];
+                return curBase === targetBase || cur === targetBase || curBase === target;
+            });
+        }
+
         if (matchId) {
             showLoading();
-            fetch(API, { cache: "no-store" })
-                .then(function(r) { return r.json(); })
-                .then(function(data) {
-                    var matches = data.matches || [];
-                    var m = matches.find(function(x) { return String(x.match_id).toLowerCase() === String(matchId).toLowerCase(); });
+            fetchAllMatches()
+                .then(function(matches) {
+                    var m = findMatch(matches, matchId);
                     if (!m) {
                         hideLoading();
                         showError("Match not found: " + matchId);
@@ -403,7 +484,7 @@
 
         function buildQMenu(activeLevel) {
             qMenu.innerHTML = "";
-            if (availableQualities.length > 0) {
+            if (availableQualities.length > 1) {
                 availableQualities.forEach(function(item) {
                     var div = document.createElement("div");
                     div.className = "q-item" + (item.res === currentRes ? " active" : "");
