@@ -298,17 +298,16 @@
 
             // 3. Fallback to baseStream (dai_url / adfree_url) with standard resolutions or master playlist
             if (baseStream && baseStream.startsWith("http")) {
-                if (baseStream.toLowerCase().includes("index.m3u8")) {
-                    return [{ res: "Auto (Master)", url: baseStream, isHd: true }];
-                }
                 const qualities = [];
+                const isMaster = baseStream.toLowerCase().includes("index.m3u8");
                 standardRes.forEach(r => {
                     let qUrl = baseStream;
-                    if (qUrl.includes(".m3u8")) {
+                    if (!isMaster && qUrl.includes(".m3u8")) {
                         qUrl = qUrl.replace(/(index__|\/)(\d+p|\d+)\.m3u8/i, "$1" + r + ".m3u8");
                     }
-                    qualities.push({ res: r, url: qUrl, isHd: parseInt(r) >= 720 });
+                    qualities.push({ res: r, url: qUrl, isHd: parseInt(r) >= 720, targetRes: r });
                 });
+                qualities.push({ res: "Auto", url: baseStream, isHd: true, targetRes: "Auto" });
                 return qualities;
             }
 
@@ -324,7 +323,7 @@
                         const height = resPart.split("x")[1];
                         const streamUrl = cleanStreamUrl(lines[i+1] || "");
                         if (streamUrl && streamUrl.startsWith("http")) {
-                            qualities.push({ res: height + "p", url: streamUrl, isHd: parseInt(height) >= 720 });
+                            qualities.push({ res: height + "p", url: streamUrl, isHd: parseInt(height) >= 720, targetRes: height + "p" });
                         }
                     }
                 }
@@ -333,7 +332,7 @@
 
             const fallbackUrl = cleanStreamUrl(cdn.Primary_Playback_URL || m.stream_url);
             if (fallbackUrl && fallbackUrl.startsWith("http")) {
-                return [{ res: "Auto", url: fallbackUrl, isHd: false }];
+                return [{ res: "Auto", url: fallbackUrl, isHd: false, targetRes: "Auto" }];
             }
             return [];
         }
@@ -354,13 +353,13 @@
             let displayTitle = (m.team_1 && m.team_2) ? `${m.team_1} vs ${m.team_2}` : (m.match_name || m.title || "Live Match");
             // Store details for player modal header
             document.getElementById("player-title").textContent = displayTitle;
-            document.getElementById("player-event").textContent = m.event_name || m.title || "";
+            document.getElementById("player-event").textContent = m.event_name || m.tournament || m.event_category || m.title || "";
 
             const btnFull = document.getElementById("btn-full-player");
             if (btnFull) btnFull.href = "player.html?id=" + encodeURIComponent(m.match_id);
 
-            // If only 1 quality level (like DRM or static fallback)
-            if (qualities.length === 1) {
+            // Only bypass modal for direct DRM redirects
+            if (qualities.length === 1 && qualities[0].isDrm) {
                 handleQualitySelect(qualities[0]);
                 return;
             }
@@ -514,7 +513,18 @@
                 });
                 hlsInstance.loadSource(streamSrc);
                 hlsInstance.attachMedia(video);
-                hlsInstance.on(Hls.Events.MANIFEST_PARSED, playVideo);
+                hlsInstance.on(Hls.Events.MANIFEST_PARSED, function() {
+                    if (currentQuality && currentQuality.targetRes && currentQuality.targetRes !== "Auto" && hlsInstance.levels && hlsInstance.levels.length > 0) {
+                        const targetH = parseInt(currentQuality.targetRes);
+                        if (targetH) {
+                            const idx = hlsInstance.levels.findIndex(l => l.height === targetH);
+                            if (idx !== -1) {
+                                hlsInstance.currentLevel = idx;
+                            }
+                        }
+                    }
+                    playVideo();
+                });
                 hlsInstance.on(Hls.Events.FRAG_LOADED, function() {
                     started = true;
                     clearTimeout(loadTimeout);
@@ -651,17 +661,17 @@
                         <div>
                             <div class="flex items-center justify-between gap-2 mb-2">
                                 ${badge}
-                                <span class="text-[10px] font-bold text-indigo-400 uppercase tracking-wider">${esc(m.event_category || 'Sports')}</span>
+                                <span class="text-[10px] font-bold text-indigo-400 uppercase tracking-wider">${esc(m.event_category || m.category || 'Sports')}</span>
                             </div>
                             <h3 class="text-sm font-bold text-white line-clamp-2 mb-1.5 leading-snug">${esc(displayTitle)}</h3>
-                            <p class="text-[11px] text-slate-400 truncate">${esc(m.event_name)}</p>
+                            <p class="text-[11px] text-slate-400 truncate">${esc(m.event_name || m.tournament || m.event_category || 'Live Sports')}</p>
                         </div>
                         <div>
                             <div class="text-[11px] text-slate-400 mb-3 flex items-center gap-1.5">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
-                                🕐 ${esc(m.startTime || 'TBA')}
+                                🕐 ${esc(m.startTime || (isLive ? 'Live Now' : 'Starting Soon'))}
                             </div>
                             ${btn}
                         </div>
@@ -705,7 +715,7 @@
 
         async function fetchM3uMatches() {
             try {
-                const res = await fetch(M3U_API, { cache: "no-store" });
+                const res = await fetch(M3U_API + "?t=" + Date.now(), { cache: "no-store" });
                 if (!res.ok) return [];
                 const text = await res.text();
                 const lines = text.split("\n");
@@ -753,7 +763,7 @@
 
         async function fetchJsonMatches() {
             try {
-                const res = await fetch(JSON_API, { cache: "no-store" });
+                const res = await fetch(JSON_API + "?t=" + Date.now(), { cache: "no-store" });
                 if (!res.ok) return [];
                 const data = await res.json();
                 return data.matches || [];
@@ -773,13 +783,21 @@
 
             // Combine both sources: M3U matches (active proxy streams) + JSON matches
             const combined = [...m3uMatches];
-            const seenIds = new Set(m3uMatches.map(m => String(m.match_id).split("_")[0].toLowerCase()));
+            const m3uMap = new Map();
+            m3uMatches.forEach(m => m3uMap.set(String(m.match_id).split("_")[0].toLowerCase(), m));
 
             for (const jm of jsonMatches) {
                 const baseId = String(jm.match_id || "").split("_")[0].toLowerCase();
-                if (!seenIds.has(baseId)) {
+                if (m3uMap.has(baseId)) {
+                    const existing = m3uMap.get(baseId);
+                    if (!existing.startTime && jm.startTime) existing.startTime = jm.startTime;
+                    if (!existing.team_1 && jm.team_1) existing.team_1 = jm.team_1;
+                    if (!existing.team_2 && jm.team_2) existing.team_2 = jm.team_2;
+                    if (!existing.event_name && (jm.event_name || jm.tournament)) existing.event_name = jm.event_name || jm.tournament;
+                    if (jm.STREAMING_CDN && !existing.STREAMING_CDN) existing.STREAMING_CDN = jm.STREAMING_CDN;
+                    if (jm.google_m3u8_hex && !existing.google_m3u8_hex) existing.google_m3u8_hex = jm.google_m3u8_hex;
+                } else {
                     combined.push(jm);
-                    seenIds.add(baseId);
                 }
             }
             return combined;
@@ -802,7 +820,7 @@
 
         loadData();
 
-        // Auto-refresh every 3 min
+        // Auto-refresh matches every 60s to keep upcoming & live matches updated seamlessly
         setInterval(async () => {
             try {
                 const matches = await fetchAllMatches();
@@ -811,7 +829,7 @@
                 document.getElementById("live-count").textContent = lc;
                 render(currentFilter);
             } catch (e) {}
-        }, 3 * 60 * 1000);
+        }, 60 * 1000);
     })();
     </script>
 </body>

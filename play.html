@@ -221,25 +221,24 @@
 
             // Check master playlist (.m3u8 with adaptive multi-bitrate) or baseStream
             if (baseStream && baseStream.startsWith("http")) {
-                if (baseStream.toLowerCase().includes("index.m3u8")) {
-                    return [{ res: "Auto", url: baseStream }];
-                }
+                var isMaster = baseStream.toLowerCase().includes("index.m3u8");
                 var list = [];
                 standardRes.forEach(function(r) {
                     var qUrl = baseStream;
-                    if (qUrl.includes(".m3u8")) {
+                    if (!isMaster && qUrl.includes(".m3u8")) {
                         qUrl = qUrl.replace(/(index__|\/)(\d+p|\d+)\.m3u8/i, "$1" + r + ".m3u8");
-                    } else if (qUrl.includes("1080p")) {
+                    } else if (!isMaster && qUrl.includes("1080p")) {
                         qUrl = qUrl.replace(/1080p/g, r);
                     }
-                    list.push({ res: r, url: qUrl });
+                    list.push({ res: r, url: qUrl, targetRes: r });
                 });
+                list.push({ res: "Auto", url: baseStream, targetRes: "Auto" });
                 return list;
             }
             return [];
         }
 
-        function playStream(url) {
+        function playStream(url, targetRes) {
             showLoading();
             if (hlsInstance) { hlsInstance.destroy(); hlsInstance = null; }
 
@@ -264,8 +263,21 @@
 
                 hlsInstance.on(Hls.Events.MANIFEST_PARSED, function() {
                     hideLoading();
+                    var desired = targetRes || reqRes;
+                    if (desired && desired !== "Auto" && hlsInstance.levels && hlsInstance.levels.length > 0) {
+                        var targetH = parseInt(desired);
+                        if (targetH) {
+                            var idx = hlsInstance.levels.findIndex(function(l) { return l.height === targetH; });
+                            if (idx !== -1) {
+                                hlsInstance.currentLevel = idx;
+                            }
+                        }
+                    }
                     buildQMenu();
                     video.play().catch(function(){});
+                });
+                hlsInstance.on(Hls.Events.LEVEL_SWITCHED, function() {
+                    buildQMenu();
                 });
                 hlsInstance.on(Hls.Events.FRAG_LOADED, function() {
                     hideLoading();
@@ -289,7 +301,7 @@
         }
 
         function fetchM3uMatches() {
-            return fetch(M3U_API, { cache: "no-store" })
+            return fetch(M3U_API + "?t=" + Date.now(), { cache: "no-store" })
                 .then(function(r) { return r.ok ? r.text() : ""; })
                 .then(function(text) {
                     if (!text) return [];
@@ -327,7 +339,7 @@
         }
 
         function fetchJsonMatches() {
-            return fetch(JSON_API, { cache: "no-store" })
+            return fetch(JSON_API + "?t=" + Date.now(), { cache: "no-store" })
                 .then(function(r) { return r.ok ? r.json() : { matches: [] }; })
                 .then(function(data) { return data.matches || []; })
                 .catch(function() { return []; });
@@ -339,16 +351,23 @@
                     var m3uMatches = results[0] || [];
                     var jsonMatches = results[1] || [];
                     var combined = [].concat(m3uMatches);
-                    var seen = {};
+                    var m3uMap = {};
                     m3uMatches.forEach(function(m) {
                         var base = String(m.match_id || "").split("_")[0].toLowerCase();
-                        seen[base] = true;
+                        m3uMap[base] = m;
                     });
-                    jsonMatches.forEach(function(m) {
-                        var base = String(m.match_id || "").split("_")[0].toLowerCase();
-                        if (!seen[base]) {
-                            combined.push(m);
-                            seen[base] = true;
+                    jsonMatches.forEach(function(jm) {
+                        var base = String(jm.match_id || "").split("_")[0].toLowerCase();
+                        if (m3uMap[base]) {
+                            var existing = m3uMap[base];
+                            if (!existing.startTime && jm.startTime) existing.startTime = jm.startTime;
+                            if (!existing.team_1 && jm.team_1) existing.team_1 = jm.team_1;
+                            if (!existing.team_2 && jm.team_2) existing.team_2 = jm.team_2;
+                            if (!existing.event_name && (jm.event_name || jm.tournament)) existing.event_name = jm.event_name || jm.tournament;
+                            if (jm.STREAMING_CDN && !existing.STREAMING_CDN) existing.STREAMING_CDN = jm.STREAMING_CDN;
+                            if (jm.google_m3u8_hex && !existing.google_m3u8_hex) existing.google_m3u8_hex = jm.google_m3u8_hex;
+                        } else {
+                            combined.push(jm);
                         }
                     });
                     return combined;
@@ -387,7 +406,7 @@
                         return;
                     }
 
-                    var resOrder = { "1080p": 6, "720p": 5, "540p": 4, "480p": 3, "360p": 2, "240p": 1 };
+                    var resOrder = { "1080p": 6, "720p": 5, "540p": 4, "480p": 3, "360p": 2, "240p": 1, "Auto": 0 };
                     availableQualities.sort(function(a, b) {
                         return (resOrder[b.res] || parseInt(b.res) || 0) - (resOrder[a.res] || parseInt(a.res) || 0);
                     });
@@ -397,7 +416,7 @@
                     }) || availableQualities[0];
 
                     currentRes = chosen.res;
-                    playStream(chosen.url);
+                    playStream(chosen.url, chosen.targetRes || chosen.res);
                 })
                 .catch(function(e) {
                     hideLoading();
@@ -482,19 +501,26 @@
         qBtn.addEventListener("click", function(e) { e.stopPropagation(); qMenu.classList.toggle("open"); isQMenuOpen=qMenu.classList.contains("open"); resetAutoHide(); });
         document.addEventListener("click", function(e) { if(isQMenuOpen&&!qMenu.contains(e.target)&&e.target!==qBtn) { qMenu.classList.remove("open"); isQMenuOpen=false; } });
 
-        function buildQMenu(activeLevel) {
+        function buildQMenu() {
             qMenu.innerHTML = "";
-            if (availableQualities.length > 1) {
-                availableQualities.forEach(function(item) {
+            if (hlsInstance && hlsInstance.levels && hlsInstance.levels.length > 1) {
+                var curLvl = hlsInstance.currentLevel; // -1 is Auto
+                var items = [{ name: "Auto", level: -1, height: 99999 }];
+                hlsInstance.levels.forEach(function(l, i) {
+                    var label = (l.height ? l.height + "p" : "Level " + (i + 1));
+                    items.push({ name: label, level: i, height: l.height || 0 });
+                });
+
+                items.sort(function(a, b) { return b.height - a.height; });
+
+                items.forEach(function(item) {
                     var div = document.createElement("div");
-                    div.className = "q-item" + (item.res === currentRes ? " active" : "");
-                    div.textContent = item.res;
+                    var isActive = (item.level === hlsInstance.currentLevel);
+                    div.className = "q-item" + (isActive ? " active" : "");
+                    div.textContent = item.name;
                     div.onclick = function(e) {
                         e.stopPropagation();
-                        if (item.res !== currentRes) {
-                            currentRes = item.res;
-                            playStream(item.url);
-                        }
+                        hlsInstance.currentLevel = item.level;
                         qMenu.classList.remove("open");
                         isQMenuOpen = false;
                         buildQMenu();
@@ -504,26 +530,26 @@
                 return;
             }
 
-            var items = [{name:"Auto", level:-1}];
-            if (hlsInstance && hlsInstance.levels.length > 0) {
-                hlsInstance.levels.forEach(function(l,i) {
-                    var label = l.height + "p";
-                    if (l.bitrate) label += " (" + (l.bitrate/1000000).toFixed(1) + " Mbps)";
-                    items.push({name:label, level:i});
+            if (availableQualities.length > 1) {
+                availableQualities.forEach(function(item) {
+                    var div = document.createElement("div");
+                    div.className = "q-item" + (item.res === currentRes ? " active" : "");
+                    div.textContent = item.res;
+                    div.onclick = function(e) {
+                        e.stopPropagation();
+                        if (item.res !== currentRes) {
+                            currentRes = item.res;
+                            reqRes = item.res;
+                            playStream(item.url, item.targetRes || item.res);
+                        }
+                        qMenu.classList.remove("open");
+                        isQMenuOpen = false;
+                        buildQMenu();
+                    };
+                    qMenu.appendChild(div);
                 });
+                return;
             }
-            items.forEach(function(item) {
-                var div = document.createElement("div");
-                div.className = "q-item" + (item.level === activeLevel ? " active" : "");
-                div.textContent = item.name;
-                div.onclick = function(e) {
-                    e.stopPropagation();
-                    if (hlsInstance && item.level >= -1) hlsInstance.currentLevel = item.level;
-                    qMenu.classList.remove("open"); isQMenuOpen = false;
-                    buildQMenu(item.level);
-                };
-                qMenu.appendChild(div);
-            });
         }
 
         // Unmute on click
