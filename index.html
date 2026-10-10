@@ -281,13 +281,8 @@
             // 2. Prioritize baseStream (dai_url / adfree_url / stream_url proxy)
             if (baseStream && baseStream.startsWith("http")) {
                 const qualities = [];
-                const isMaster = baseStream.toLowerCase().includes("index.m3u8");
                 standardRes.forEach(r => {
-                    let qUrl = baseStream;
-                    if (!isMaster && qUrl.includes(".m3u8")) {
-                        qUrl = qUrl.replace(/(index__|\/)(\d+p|\d+)\.m3u8/i, "$1" + r + ".m3u8");
-                    }
-                    qualities.push({ res: r, url: qUrl, isHd: parseInt(r) >= 720, targetRes: r });
+                    qualities.push({ res: r, url: baseStream, isHd: parseInt(r) >= 720, targetRes: r });
                 });
                 qualities.push({ res: "Auto", url: baseStream, isHd: true, targetRes: "Auto" });
                 return qualities;
