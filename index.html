@@ -223,6 +223,25 @@
             return String(value || "").trim().split("|")[0].trim().replace(/[,\s]+$/g, "");
         }
 
+        function proxyStreamUrl(raw) {
+            if (!raw) return "";
+            var cleaned = cleanStreamUrl(raw);
+            if (cleaned.startsWith("/proxy") || cleaned.includes("aurastreams.pages.dev/proxy")) return cleaned;
+            if (
+                cleaned.includes("fancode.com") ||
+                cleaned.includes("aiv-cdn.net") ||
+                cleaned.includes("aiv-cdn.com") ||
+                cleaned.includes("in-mc-flive") ||
+                cleaned.includes("in-mc-plive") ||
+                cleaned.includes("akamaized.net") ||
+                cleaned.includes("akamaihd.net") ||
+                cleaned.includes("dai-fancode.pages.dev")
+            ) {
+                return "/proxy?url=" + encodeURIComponent(cleaned);
+            }
+            return cleaned;
+        }
+
         function dedup(arr) {
             const seen = new Set();
             return arr.filter(m => { 
@@ -503,7 +522,7 @@
                 }, 150);
             }
 
-            const streamSrc = selectedRawUrl || url;
+            const streamSrc = proxyStreamUrl(selectedRawUrl || url);
             let selectedLevel = -1;
             const reqRes = (currentQuality && currentQuality.targetRes) ? currentQuality.targetRes : "Auto";
 
