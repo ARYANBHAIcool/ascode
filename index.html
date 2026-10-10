@@ -524,26 +524,21 @@
                     const targetIdx = findLevelIndex(hlsInstance.levels, reqRes);
                     if (targetIdx !== -1) {
                         selectedLevel = targetIdx;
-                        hlsInstance.startLevel = targetIdx;
                         hlsInstance.currentLevel = targetIdx;
-                        hlsInstance.loadLevel = targetIdx;
-                        hlsInstance.autoLevelCapping = targetIdx;
                         updateModalQualityBadge(hlsInstance.levels[targetIdx].height + "p");
                     } else {
                         selectedLevel = -1;
-                        hlsInstance.startLevel = -1;
                         hlsInstance.currentLevel = -1;
-                        hlsInstance.autoLevelCapping = -1;
                         updateModalQualityBadge("Auto");
                     }
                     buildModalQualityMenu();
                     playVideo();
                 });
                 hlsInstance.on(Hls.Events.LEVEL_SWITCHED, function(ev, data) {
-                    if (selectedLevel !== -1 && data.level !== selectedLevel) {
-                        hlsInstance.currentLevel = selectedLevel;
-                        hlsInstance.loadLevel = selectedLevel;
-                        hlsInstance.autoLevelCapping = selectedLevel;
+                    if (hlsInstance.currentLevel === -1) {
+                        updateModalQualityBadge("Auto");
+                    } else if (hlsInstance.levels && hlsInstance.levels[data.level]) {
+                        updateModalQualityBadge(hlsInstance.levels[data.level].height + "p");
                     }
                     buildModalQualityMenu();
                 });
@@ -637,13 +632,10 @@
                     e.stopPropagation();
                     if (item.level === -1) {
                         hlsInstance.currentLevel = -1;
-                        hlsInstance.autoLevelCapping = -1;
                         updateModalQualityBadge("Auto");
                         if (currentQuality) currentQuality.targetRes = "Auto";
                     } else {
                         hlsInstance.currentLevel = item.level;
-                        hlsInstance.loadLevel = item.level;
-                        hlsInstance.autoLevelCapping = item.level;
                         updateModalQualityBadge(item.name);
                         if (currentQuality) currentQuality.targetRes = item.name;
                     }

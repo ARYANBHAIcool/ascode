@@ -283,25 +283,15 @@
                     var targetIdx = findLevelIndex(hlsInstance.levels, desired);
                     if (targetIdx !== -1) {
                         selectedLevel = targetIdx;
-                        hlsInstance.startLevel = targetIdx;
                         hlsInstance.currentLevel = targetIdx;
-                        hlsInstance.loadLevel = targetIdx;
-                        hlsInstance.autoLevelCapping = targetIdx;
                     } else {
                         selectedLevel = -1;
-                        hlsInstance.startLevel = -1;
                         hlsInstance.currentLevel = -1;
-                        hlsInstance.autoLevelCapping = -1;
                     }
                     buildQMenu();
                     video.play().catch(function(){});
                 });
                 hlsInstance.on(Hls.Events.LEVEL_SWITCHED, function(ev, data) {
-                    if (selectedLevel !== -1 && data.level !== selectedLevel) {
-                        hlsInstance.currentLevel = selectedLevel;
-                        hlsInstance.loadLevel = selectedLevel;
-                        hlsInstance.autoLevelCapping = selectedLevel;
-                    }
                     buildQMenu();
                 });
                 hlsInstance.on(Hls.Events.FRAG_LOADED, function() {
@@ -560,12 +550,9 @@
                         if (item.level === -1) {
                             selectedLevel = -1;
                             hlsInstance.currentLevel = -1;
-                            hlsInstance.autoLevelCapping = -1;
                         } else {
                             selectedLevel = item.level;
                             hlsInstance.currentLevel = item.level;
-                            hlsInstance.loadLevel = item.level;
-                            hlsInstance.autoLevelCapping = item.level;
                         }
                         qMenu.classList.remove("open");
                         isQMenuOpen = false;
