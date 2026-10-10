@@ -146,7 +146,7 @@
         var JSON_API = "https://raw.githubusercontent.com/drmlive/fancode-live-events/main/fancode.json";
         var params = new URLSearchParams(location.search);
         var matchId = params.get("id") || "";
-        var reqRes = params.get("r") || "1080p";
+        var reqRes = params.get("r") || "Auto";
 
         function cleanStreamUrl(value) {
             return String(value || "").trim().split("|")[0].trim().replace(/[,\s]+$/g, "");
@@ -156,6 +156,7 @@
         var streamUrl = "";
         var availableQualities = [];
         var currentRes = "";
+        var selectedLevel = -1;
 
         var video = document.getElementById("video");
         var $loading = document.getElementById("loading");
@@ -177,6 +178,27 @@
             return str;
         }
 
+        function findLevelIndex(levels, targetRes) {
+            if (!targetRes || targetRes === "Auto" || targetRes === "auto") return -1;
+            var targetH = parseInt(String(targetRes).replace("p", ""));
+            if (!targetH || isNaN(targetH)) return -1;
+            if (!levels || !levels.length) return -1;
+
+            var exact = levels.findIndex(function(l) { return l.height === targetH; });
+            if (exact !== -1) return exact;
+
+            var closest = 0;
+            var minDiff = Math.abs((levels[0].height || 0) - targetH);
+            for (var i = 1; i < levels.length; i++) {
+                const diff = Math.abs((levels[i].height || 0) - targetH);
+                if (diff < minDiff) {
+                    minDiff = diff;
+                    closest = i;
+                }
+            }
+            return closest;
+        }
+
         function parseMatchQualities(m) {
             var standardRes = ["1080p", "720p", "540p", "480p", "360p", "240p"];
             var baseStream = cleanStreamUrl(m.dai_url || m.adfree_url || m.stream_url || "");
@@ -193,7 +215,24 @@
                 }
             }
 
-            // Check hex
+            // Prioritize baseStream (dai_url / adfree_url / stream_url proxy)
+            if (baseStream && baseStream.startsWith("http")) {
+                var isMaster = baseStream.toLowerCase().includes("index.m3u8");
+                var list = [];
+                standardRes.forEach(function(r) {
+                    var qUrl = baseStream;
+                    if (!isMaster && qUrl.includes(".m3u8")) {
+                        qUrl = qUrl.replace(/(index__|\/)(\d+p|\d+)\.m3u8/i, "$1" + r + ".m3u8");
+                    } else if (!isMaster && qUrl.includes("1080p")) {
+                        qUrl = qUrl.replace(/1080p/g, r);
+                    }
+                    list.push({ res: r, url: qUrl, targetRes: r });
+                });
+                list.push({ res: "Auto", url: baseStream, targetRes: "Auto" });
+                return list;
+            }
+
+            // Check hex fallback
             var hexData = m.google_m3u8_hex || m.m3u8_hex || m.hex || "";
             if (hexData) {
                 var text = decodeHex(hexData);
@@ -212,28 +251,14 @@
                             } catch (_) {}
                         }
                         if (streamUrl && streamUrl.startsWith("http")) {
-                            list.push({ res: height + "p", url: streamUrl });
+                            list.push({ res: height + "p", url: streamUrl, targetRes: height + "p" });
                         }
                     }
                 }
-                if (list.length > 0) return list;
-            }
-
-            // Check master playlist (.m3u8 with adaptive multi-bitrate) or baseStream
-            if (baseStream && baseStream.startsWith("http")) {
-                var isMaster = baseStream.toLowerCase().includes("index.m3u8");
-                var list = [];
-                standardRes.forEach(function(r) {
-                    var qUrl = baseStream;
-                    if (!isMaster && qUrl.includes(".m3u8")) {
-                        qUrl = qUrl.replace(/(index__|\/)(\d+p|\d+)\.m3u8/i, "$1" + r + ".m3u8");
-                    } else if (!isMaster && qUrl.includes("1080p")) {
-                        qUrl = qUrl.replace(/1080p/g, r);
-                    }
-                    list.push({ res: r, url: qUrl, targetRes: r });
-                });
-                list.push({ res: "Auto", url: baseStream, targetRes: "Auto" });
-                return list;
+                if (list.length > 0) {
+                    list.push({ res: "Auto", url: list[0].url, targetRes: "Auto" });
+                    return list;
+                }
             }
             return [];
         }
@@ -242,17 +267,9 @@
             showLoading();
             if (hlsInstance) { hlsInstance.destroy(); hlsInstance = null; }
 
-            var isNativeHls = !!video.canPlayType("application/vnd.apple.mpegurl");
+            var desired = targetRes || reqRes || "Auto";
 
-            if (isNativeHls) {
-                video.src = url;
-                video.play().catch(function(){});
-                video.addEventListener("loadedmetadata", function() {
-                    hideLoading();
-                    video.play().catch(function(){});
-                    buildQMenu();
-                }, { once: true });
-            } else if (window.Hls && Hls.isSupported()) {
+            if (window.Hls && Hls.isSupported()) {
                 hlsInstance = new Hls({
                     enableWorker: true,
                     lowLatencyMode: true,
@@ -263,20 +280,28 @@
 
                 hlsInstance.on(Hls.Events.MANIFEST_PARSED, function() {
                     hideLoading();
-                    var desired = targetRes || reqRes;
-                    if (desired && desired !== "Auto" && hlsInstance.levels && hlsInstance.levels.length > 0) {
-                        var targetH = parseInt(desired);
-                        if (targetH) {
-                            var idx = hlsInstance.levels.findIndex(function(l) { return l.height === targetH; });
-                            if (idx !== -1) {
-                                hlsInstance.currentLevel = idx;
-                            }
-                        }
+                    var targetIdx = findLevelIndex(hlsInstance.levels, desired);
+                    if (targetIdx !== -1) {
+                        selectedLevel = targetIdx;
+                        hlsInstance.startLevel = targetIdx;
+                        hlsInstance.currentLevel = targetIdx;
+                        hlsInstance.loadLevel = targetIdx;
+                        hlsInstance.autoLevelCapping = targetIdx;
+                    } else {
+                        selectedLevel = -1;
+                        hlsInstance.startLevel = -1;
+                        hlsInstance.currentLevel = -1;
+                        hlsInstance.autoLevelCapping = -1;
                     }
                     buildQMenu();
                     video.play().catch(function(){});
                 });
-                hlsInstance.on(Hls.Events.LEVEL_SWITCHED, function() {
+                hlsInstance.on(Hls.Events.LEVEL_SWITCHED, function(ev, data) {
+                    if (selectedLevel !== -1 && data.level !== selectedLevel) {
+                        hlsInstance.currentLevel = selectedLevel;
+                        hlsInstance.loadLevel = selectedLevel;
+                        hlsInstance.autoLevelCapping = selectedLevel;
+                    }
                     buildQMenu();
                 });
                 hlsInstance.on(Hls.Events.FRAG_LOADED, function() {
@@ -295,9 +320,22 @@
                         }
                     }
                 });
-            } else {
-                hideLoading(); showError("HLS not supported in this browser.");
+                return;
             }
+
+            if (video.canPlayType("application/vnd.apple.mpegurl")) {
+                video.src = url;
+                video.play().catch(function(){});
+                video.addEventListener("loadedmetadata", function() {
+                    hideLoading();
+                    video.play().catch(function(){});
+                    buildQMenu();
+                }, { once: true });
+                return;
+            }
+
+            hideLoading();
+            showError("HLS not supported in this browser.");
         }
 
         function fetchM3uMatches() {
@@ -413,7 +451,7 @@
 
                     var chosen = availableQualities.find(function(x) {
                         return x.res.toLowerCase() === reqRes.toLowerCase() || x.res.replace("p","") === reqRes.replace("p","");
-                    }) || availableQualities[0];
+                    }) || availableQualities.find(function(x) { return x.res.toLowerCase() === "auto"; }) || availableQualities[0];
 
                     currentRes = chosen.res;
                     playStream(chosen.url, chosen.targetRes || chosen.res);
@@ -504,7 +542,6 @@
         function buildQMenu() {
             qMenu.innerHTML = "";
             if (hlsInstance && hlsInstance.levels && hlsInstance.levels.length > 1) {
-                var curLvl = hlsInstance.currentLevel; // -1 is Auto
                 var items = [{ name: "Auto", level: -1, height: 99999 }];
                 hlsInstance.levels.forEach(function(l, i) {
                     var label = (l.height ? l.height + "p" : "Level " + (i + 1));
@@ -515,12 +552,21 @@
 
                 items.forEach(function(item) {
                     var div = document.createElement("div");
-                    var isActive = (item.level === hlsInstance.currentLevel);
+                    var isActive = (item.level === selectedLevel);
                     div.className = "q-item" + (isActive ? " active" : "");
                     div.textContent = item.name;
                     div.onclick = function(e) {
                         e.stopPropagation();
-                        hlsInstance.currentLevel = item.level;
+                        if (item.level === -1) {
+                            selectedLevel = -1;
+                            hlsInstance.currentLevel = -1;
+                            hlsInstance.autoLevelCapping = -1;
+                        } else {
+                            selectedLevel = item.level;
+                            hlsInstance.currentLevel = item.level;
+                            hlsInstance.loadLevel = item.level;
+                            hlsInstance.autoLevelCapping = item.level;
+                        }
                         qMenu.classList.remove("open");
                         isQMenuOpen = false;
                         buildQMenu();

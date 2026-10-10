@@ -136,6 +136,15 @@
                         <a id="btn-full-player" href="player.html" target="_blank" class="border border-slate-700 hover:border-slate-400 text-slate-300 hover:text-white rounded-lg px-2.5 sm:px-3 py-2 transition-all flex items-center gap-1.5 font-bold text-xs bg-slate-900/60 shrink-0">
                             ⛶ Full Player
                         </a>
+                        <div class="relative inline-block text-left" id="modal-quality-wrapper">
+                            <button type="button" id="btn-modal-quality" class="border border-slate-700 hover:border-indigo-400 text-slate-200 hover:text-white rounded-lg px-2.5 sm:px-3 py-2 transition-all flex items-center gap-1.5 font-bold text-xs bg-slate-900/60 shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                                </svg>
+                                <span id="current-quality-label">Auto</span>
+                            </button>
+                            <div id="modal-quality-dropdown" class="hidden absolute right-0 mt-2 w-32 rounded-lg bg-slate-800 border border-slate-700 shadow-2xl py-1 z-50"></div>
+                        </div>
                         <button type="button" id="btn-share-match" class="border border-indigo-700 hover:border-indigo-500 text-indigo-400 hover:text-indigo-200 rounded-lg px-2.5 sm:px-3 py-2 transition-all flex items-center gap-1.5 font-medium text-xs bg-indigo-950/40">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 10.742l4.636-2.318M8.684 13.258l4.636 2.318m6-4.576a3 3 0 11-6 0 3 3 0 016 0zm-6-5.736a3 3 0 11-6 0 3 3 0 016 0zm0 11.472a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -269,7 +278,22 @@
                 }
             }
 
-            // 2. Check google_m3u8_hex / m3u8_hex
+            // 2. Prioritize baseStream (dai_url / adfree_url / stream_url proxy)
+            if (baseStream && baseStream.startsWith("http")) {
+                const qualities = [];
+                const isMaster = baseStream.toLowerCase().includes("index.m3u8");
+                standardRes.forEach(r => {
+                    let qUrl = baseStream;
+                    if (!isMaster && qUrl.includes(".m3u8")) {
+                        qUrl = qUrl.replace(/(index__|\/)(\d+p|\d+)\.m3u8/i, "$1" + r + ".m3u8");
+                    }
+                    qualities.push({ res: r, url: qUrl, isHd: parseInt(r) >= 720, targetRes: r });
+                });
+                qualities.push({ res: "Auto", url: baseStream, isHd: true, targetRes: "Auto" });
+                return qualities;
+            }
+
+            // 3. Check google_m3u8_hex / m3u8_hex fallback
             const hexData = m.google_m3u8_hex || m.m3u8_hex || m.hex || "";
             if (hexData) {
                 const text = decodeHex(hexData);
@@ -289,26 +313,14 @@
                             } catch (_) {}
                         }
                         if (streamUrl && streamUrl.startsWith("http")) {
-                            qualities.push({ res: height + "p", url: streamUrl, isHd: parseInt(height) >= 720 });
+                            qualities.push({ res: height + "p", url: streamUrl, isHd: parseInt(height) >= 720, targetRes: height + "p" });
                         }
                     }
                 }
-                if (qualities.length > 0) return qualities;
-            }
-
-            // 3. Fallback to baseStream (dai_url / adfree_url) with standard resolutions or master playlist
-            if (baseStream && baseStream.startsWith("http")) {
-                const qualities = [];
-                const isMaster = baseStream.toLowerCase().includes("index.m3u8");
-                standardRes.forEach(r => {
-                    let qUrl = baseStream;
-                    if (!isMaster && qUrl.includes(".m3u8")) {
-                        qUrl = qUrl.replace(/(index__|\/)(\d+p|\d+)\.m3u8/i, "$1" + r + ".m3u8");
-                    }
-                    qualities.push({ res: r, url: qUrl, isHd: parseInt(r) >= 720, targetRes: r });
-                });
-                qualities.push({ res: "Auto", url: baseStream, isHd: true, targetRes: "Auto" });
-                return qualities;
+                if (qualities.length > 0) {
+                    qualities.push({ res: "Auto", url: qualities[0].url, isHd: true, targetRes: "Auto" });
+                    return qualities;
+                }
             }
 
             // 4. Check auto_streams
@@ -497,13 +509,8 @@
             }
 
             const streamSrc = selectedRawUrl || url;
-
-            if (video.canPlayType("application/vnd.apple.mpegurl")) {
-                video.src = streamSrc;
-                video.play().catch(() => {});
-                video.addEventListener("loadedmetadata", playVideo, { once: true });
-                return;
-            }
+            let selectedLevel = -1;
+            const reqRes = (currentQuality && currentQuality.targetRes) ? currentQuality.targetRes : "Auto";
 
             if (window.Hls && Hls.isSupported()) {
                 hlsInstance = new Hls({
@@ -514,16 +521,31 @@
                 hlsInstance.loadSource(streamSrc);
                 hlsInstance.attachMedia(video);
                 hlsInstance.on(Hls.Events.MANIFEST_PARSED, function() {
-                    if (currentQuality && currentQuality.targetRes && currentQuality.targetRes !== "Auto" && hlsInstance.levels && hlsInstance.levels.length > 0) {
-                        const targetH = parseInt(currentQuality.targetRes);
-                        if (targetH) {
-                            const idx = hlsInstance.levels.findIndex(l => l.height === targetH);
-                            if (idx !== -1) {
-                                hlsInstance.currentLevel = idx;
-                            }
-                        }
+                    const targetIdx = findLevelIndex(hlsInstance.levels, reqRes);
+                    if (targetIdx !== -1) {
+                        selectedLevel = targetIdx;
+                        hlsInstance.startLevel = targetIdx;
+                        hlsInstance.currentLevel = targetIdx;
+                        hlsInstance.loadLevel = targetIdx;
+                        hlsInstance.autoLevelCapping = targetIdx;
+                        updateModalQualityBadge(hlsInstance.levels[targetIdx].height + "p");
+                    } else {
+                        selectedLevel = -1;
+                        hlsInstance.startLevel = -1;
+                        hlsInstance.currentLevel = -1;
+                        hlsInstance.autoLevelCapping = -1;
+                        updateModalQualityBadge("Auto");
                     }
+                    buildModalQualityMenu();
                     playVideo();
+                });
+                hlsInstance.on(Hls.Events.LEVEL_SWITCHED, function(ev, data) {
+                    if (selectedLevel !== -1 && data.level !== selectedLevel) {
+                        hlsInstance.currentLevel = selectedLevel;
+                        hlsInstance.loadLevel = selectedLevel;
+                        hlsInstance.autoLevelCapping = selectedLevel;
+                    }
+                    buildModalQualityMenu();
                 });
                 hlsInstance.on(Hls.Events.FRAG_LOADED, function() {
                     started = true;
@@ -552,10 +574,101 @@
                 return;
             }
 
+            if (video.canPlayType("application/vnd.apple.mpegurl")) {
+                video.src = streamSrc;
+                video.play().catch(() => {});
+                video.addEventListener("loadedmetadata", playVideo, { once: true });
+                return;
+            }
+
             clearTimeout(loadTimeout);
             msg.textContent = "Your browser does not support HLS streaming.";
             msg.classList.remove("hidden");
         }
+
+        function findLevelIndex(levels, targetRes) {
+            if (!targetRes || targetRes === "Auto" || targetRes === "auto") return -1;
+            const targetH = parseInt(String(targetRes).replace("p", ""));
+            if (!targetH || isNaN(targetH)) return -1;
+            if (!levels || !levels.length) return -1;
+
+            const exact = levels.findIndex(l => l.height === targetH);
+            if (exact !== -1) return exact;
+
+            let closest = 0;
+            let minDiff = Math.abs((levels[0].height || 0) - targetH);
+            for (let i = 1; i < levels.length; i++) {
+                const diff = Math.abs((levels[i].height || 0) - targetH);
+                if (diff < minDiff) {
+                    minDiff = diff;
+                    closest = i;
+                }
+            }
+            return closest;
+        }
+
+        function updateModalQualityBadge(txt) {
+            const el = document.getElementById("current-quality-label");
+            if (el) el.textContent = txt;
+        }
+
+        function buildModalQualityMenu() {
+            const menu = document.getElementById("modal-quality-dropdown");
+            if (!menu) return;
+            menu.innerHTML = "";
+            if (!hlsInstance || !hlsInstance.levels || hlsInstance.levels.length <= 1) {
+                return;
+            }
+            const items = [{ name: "Auto", level: -1, height: 99999 }];
+            hlsInstance.levels.forEach((l, i) => {
+                const label = (l.height ? l.height + "p" : "Level " + (i + 1));
+                items.push({ name: label, level: i, height: l.height || 0 });
+            });
+            items.sort((a, b) => b.height - a.height);
+
+            items.forEach(item => {
+                const btn = document.createElement("button");
+                btn.type = "button";
+                const isActive = (item.level === hlsInstance.currentLevel);
+                btn.className = "w-full text-left px-3 py-1.5 text-xs font-semibold flex items-center justify-between transition " + 
+                    (isActive ? "text-indigo-400 bg-slate-700/60 font-bold" : "text-slate-200 hover:bg-slate-700/40");
+                btn.innerHTML = '<span>' + esc(item.name) + '</span>' + (isActive ? '<span class="text-indigo-400 font-bold">✓</span>' : '');
+                btn.onclick = (e) => {
+                    e.stopPropagation();
+                    if (item.level === -1) {
+                        hlsInstance.currentLevel = -1;
+                        hlsInstance.autoLevelCapping = -1;
+                        updateModalQualityBadge("Auto");
+                        if (currentQuality) currentQuality.targetRes = "Auto";
+                    } else {
+                        hlsInstance.currentLevel = item.level;
+                        hlsInstance.loadLevel = item.level;
+                        hlsInstance.autoLevelCapping = item.level;
+                        updateModalQualityBadge(item.name);
+                        if (currentQuality) currentQuality.targetRes = item.name;
+                    }
+                    menu.classList.add("hidden");
+                    buildModalQualityMenu();
+                };
+                menu.appendChild(btn);
+            });
+        }
+
+        const btnModalQ = document.getElementById("btn-modal-quality");
+        if (btnModalQ) {
+            btnModalQ.onclick = function(e) {
+                e.stopPropagation();
+                const menu = document.getElementById("modal-quality-dropdown");
+                if (menu) menu.classList.toggle("hidden");
+            };
+        }
+        document.addEventListener("click", function(e) {
+            const wrap = document.getElementById("modal-quality-wrapper");
+            const menu = document.getElementById("modal-quality-dropdown");
+            if (wrap && menu && !wrap.contains(e.target)) {
+                menu.classList.add("hidden");
+            }
+        });
 
         window.retryPlayer = function() {
             if (selectedStreamUrl) launchPlayer(selectedStreamUrl);
