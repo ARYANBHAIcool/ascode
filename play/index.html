@@ -152,25 +152,6 @@
             return String(value || "").trim().split("|")[0].trim().replace(/[,\s]+$/g, "");
         }
 
-        function proxyStreamUrl(raw) {
-            if (!raw) return "";
-            var cleaned = cleanStreamUrl(raw);
-            if (cleaned.startsWith("/proxy") || cleaned.includes("aurastreams.pages.dev/proxy")) return cleaned;
-            if (
-                cleaned.includes("fancode.com") ||
-                cleaned.includes("aiv-cdn.net") ||
-                cleaned.includes("aiv-cdn.com") ||
-                cleaned.includes("in-mc-flive") ||
-                cleaned.includes("in-mc-plive") ||
-                cleaned.includes("akamaized.net") ||
-                cleaned.includes("akamaihd.net") ||
-                cleaned.includes("dai-fancode.pages.dev")
-            ) {
-                return "/proxy?url=" + encodeURIComponent(cleaned);
-            }
-            return cleaned;
-        }
-
         var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
         var streamUrl = "";
         var availableQualities = [];
@@ -280,7 +261,6 @@
             if (hlsInstance) { hlsInstance.destroy(); hlsInstance = null; }
 
             var desired = targetRes || reqRes || "Auto";
-            var finalSrc = proxyStreamUrl(url);
 
             if (window.Hls && Hls.isSupported()) {
                 hlsInstance = new Hls({
@@ -288,7 +268,7 @@
                     lowLatencyMode: true,
                     xhrSetup: function(xhr) { xhr.withCredentials = false; }
                 });
-                hlsInstance.loadSource(finalSrc);
+                hlsInstance.loadSource(url);
                 hlsInstance.attachMedia(video);
 
                 hlsInstance.on(Hls.Events.MANIFEST_PARSED, function() {
