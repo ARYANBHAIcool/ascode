@@ -199,6 +199,48 @@
             return closest;
         }
 
+        function extractM3u8Qualities(text, baseStream) {
+            if (!text) return [];
+            var lines = text.split("\n");
+            var list = [];
+            var seen = {};
+            for (var i = 0; i < lines.length; i++) {
+                if (lines[i].includes("RESOLUTION=")) {
+                    var resPart = lines[i].split("RESOLUTION=")[1].split(",")[0];
+                    var height = resPart.split("x")[1];
+                    var nextLine = "";
+                    for (var j = i + 1; j < lines.length; j++) {
+                        var candidate = lines[j].trim();
+                        if (candidate && !candidate.startsWith("#")) {
+                            nextLine = candidate;
+                            break;
+                        }
+                    }
+                    var streamUrl = cleanStreamUrl(nextLine);
+                    if (streamUrl && !streamUrl.startsWith("http") && baseStream) {
+                        try {
+                            var baseUrl = new URL(baseStream);
+                            var pathDir = baseUrl.pathname.substring(0, baseUrl.pathname.lastIndexOf("/") + 1);
+                            streamUrl = baseUrl.origin + pathDir + streamUrl;
+                        } catch (_) {}
+                    }
+                    var resLabel = height + "p";
+                    if (streamUrl && streamUrl.startsWith("http") && !seen[resLabel]) {
+                        seen[resLabel] = true;
+                        list.push({ res: resLabel, url: streamUrl, targetRes: resLabel });
+                    }
+                }
+            }
+            return list;
+        }
+
+        function isUrlNotExpired(url) {
+            var m = String(url || "").match(/Expires=(\d+)/i);
+            if (!m) return true;
+            var exp = parseInt(m[1], 10);
+            return !exp || (exp * 1000 > Date.now() + 60000);
+        }
+
         function parseMatchQualities(m) {
             var standardRes = ["1080p", "720p", "540p", "480p", "360p", "240p"];
             var baseStream = cleanStreamUrl(m.dai_url || m.adfree_url || m.stream_url || "");
@@ -215,54 +257,58 @@
                 }
             }
 
-            // Prioritize baseStream (dai_url / adfree_url / stream_url proxy)
+            // Check google_m3u8_hex / m3u8_hex AND resolved M3U master playlist
+            var hexData = m.google_m3u8_hex || m.m3u8_hex || m.hex || "";
+            var hexQualities = hexData ? extractM3u8Qualities(decodeHex(hexData), cleanStreamUrl(m.json_dai_url || baseStream)) : [];
+            var m3uQualities = m.master_m3u8 ? extractM3u8Qualities(m.master_m3u8, baseStream) : [];
+
+            var useHexPrimary = hexQualities.length > 0 && isUrlNotExpired(hexQualities[0].url);
+            var primaryList = useHexPrimary ? hexQualities : (m3uQualities.length > 0 ? m3uQualities : hexQualities);
+            var secondaryList = useHexPrimary ? m3uQualities : hexQualities;
+
+            if (primaryList.length > 0) {
+                primaryList.forEach(function(q) {
+                    var alt = secondaryList.find(function(s) { return s.res === q.res; });
+                    if (alt && alt.url !== q.url) q.fallbackUrl = alt.url;
+                });
+                return primaryList;
+            }
+
+            // Fallback to baseStream
             if (baseStream && baseStream.startsWith("http")) {
                 var list = [];
                 standardRes.forEach(function(r) {
-                    list.push({ res: r, url: baseStream, targetRes: r });
-                });
-                list.push({ res: "Auto", url: baseStream, targetRes: "Auto" });
-                return list;
-            }
-
-            // Check hex fallback
-            var hexData = m.google_m3u8_hex || m.m3u8_hex || m.hex || "";
-            if (hexData) {
-                var text = decodeHex(hexData);
-                var lines = text.split("\n");
-                var list = [];
-                for (var i = 0; i < lines.length; i++) {
-                    if (lines[i].includes("RESOLUTION=")) {
-                        var resPart = lines[i].split("RESOLUTION=")[1].split(",")[0];
-                        var height = resPart.split("x")[1];
-                        var streamUrl = cleanStreamUrl(lines[i+1] || "");
-                        if (streamUrl && !streamUrl.startsWith("http") && baseStream) {
-                            try {
-                                var baseUrl = new URL(baseStream);
-                                var pathDir = baseUrl.pathname.substring(0, baseUrl.pathname.lastIndexOf("/") + 1);
-                                streamUrl = baseUrl.origin + pathDir + streamUrl;
-                            } catch (_) {}
-                        }
-                        if (streamUrl && streamUrl.startsWith("http")) {
-                            list.push({ res: height + "p", url: streamUrl, targetRes: height + "p" });
-                        }
+                    var qUrl = baseStream;
+                    if (/(\d+p\d*|\d+)\.m3u8/i.test(qUrl)) {
+                        qUrl = qUrl.replace(/(index__|\/)(\d+p\d*|\d+)\.m3u8/i, "$1" + r + ".m3u8");
                     }
-                }
-                if (list.length > 0) {
-                    list.push({ res: "Auto", url: list[0].url, targetRes: "Auto" });
-                    return list;
-                }
+                    list.push({ res: r, url: qUrl, targetRes: r });
+                });
+                return list;
             }
             return [];
         }
 
-        function playStream(url, targetRes) {
+        function playStream(url, targetRes, fallbackUrl) {
             showLoading();
             if (hlsInstance) { hlsInstance.destroy(); hlsInstance = null; }
 
             var desired = targetRes || reqRes || "Auto";
+            var isNativeHls = !!video.canPlayType("application/vnd.apple.mpegurl");
+
+            if (isNativeHls) {
+                video.src = url;
+                video.play().catch(function(){});
+                video.addEventListener("loadedmetadata", function() {
+                    hideLoading();
+                    video.play().catch(function(){});
+                    buildQMenu();
+                }, { once: true });
+                return;
+            }
 
             if (window.Hls && Hls.isSupported()) {
+                var triedFallback = false;
                 hlsInstance = new Hls({
                     enableWorker: true,
                     lowLatencyMode: true,
@@ -273,13 +319,12 @@
 
                 hlsInstance.on(Hls.Events.MANIFEST_PARSED, function() {
                     hideLoading();
-                    var targetIdx = findLevelIndex(hlsInstance.levels, desired);
-                    if (targetIdx !== -1) {
-                        selectedLevel = targetIdx;
-                        hlsInstance.currentLevel = targetIdx;
-                    } else {
-                        selectedLevel = -1;
-                        hlsInstance.currentLevel = -1;
+                    if (hlsInstance.levels && hlsInstance.levels.length > 1 && desired !== "Auto") {
+                        var targetIdx = findLevelIndex(hlsInstance.levels, desired);
+                        if (targetIdx !== -1) {
+                            selectedLevel = targetIdx;
+                            hlsInstance.currentLevel = targetIdx;
+                        }
                     }
                     buildQMenu();
                     video.play().catch(function(){});
@@ -293,7 +338,13 @@
                 hlsInstance.on(Hls.Events.ERROR, function(ev, data) {
                     if (data.fatal) {
                         if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
-                            hlsInstance.startLoad();
+                            if (!triedFallback && fallbackUrl && url !== fallbackUrl) {
+                                triedFallback = true;
+                                hlsInstance.loadSource(fallbackUrl);
+                                hlsInstance.startLoad();
+                            } else {
+                                hlsInstance.startLoad();
+                            }
                         } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
                             hlsInstance.recoverMediaError();
                         } else {
@@ -303,17 +354,6 @@
                         }
                     }
                 });
-                return;
-            }
-
-            if (video.canPlayType("application/vnd.apple.mpegurl")) {
-                video.src = url;
-                video.play().catch(function(){});
-                video.addEventListener("loadedmetadata", function() {
-                    hideLoading();
-                    video.play().catch(function(){});
-                    buildQMenu();
-                }, { once: true });
                 return;
             }
 
@@ -354,7 +394,20 @@
                             cur = null;
                         }
                     }
-                    return list;
+                    return Promise.all(list.map(function(item) {
+                        if (item.stream_url && item.stream_url.includes(".m3u8")) {
+                            return fetch(item.stream_url, { cache: "no-store" })
+                                .then(function(r) { return r.ok ? r.text() : ""; })
+                                .then(function(mText) {
+                                    if (mText && mText.includes("#EXT-X-STREAM-INF")) {
+                                        item.master_m3u8 = mText;
+                                    }
+                                    return item;
+                                })
+                                .catch(function() { return item; });
+                        }
+                        return Promise.resolve(item);
+                    }));
                 })
                 .catch(function() { return []; });
         }
@@ -387,6 +440,7 @@
                             if (!existing.event_name && (jm.event_name || jm.tournament)) existing.event_name = jm.event_name || jm.tournament;
                             if (jm.STREAMING_CDN && !existing.STREAMING_CDN) existing.STREAMING_CDN = jm.STREAMING_CDN;
                             if (jm.google_m3u8_hex && !existing.google_m3u8_hex) existing.google_m3u8_hex = jm.google_m3u8_hex;
+                            if ((jm.dai_url || jm.adfree_url) && !existing.json_dai_url) existing.json_dai_url = jm.dai_url || jm.adfree_url;
                         } else {
                             combined.push(jm);
                         }
@@ -434,10 +488,10 @@
 
                     var chosen = availableQualities.find(function(x) {
                         return x.res.toLowerCase() === reqRes.toLowerCase() || x.res.replace("p","") === reqRes.replace("p","");
-                    }) || availableQualities.find(function(x) { return x.res.toLowerCase() === "auto"; }) || availableQualities[0];
+                    }) || availableQualities[0];
 
                     currentRes = chosen.res;
-                    playStream(chosen.url, chosen.targetRes || chosen.res);
+                    playStream(chosen.url, chosen.targetRes || chosen.res, chosen.fallbackUrl);
                 })
                 .catch(function(e) {
                     hideLoading();
@@ -524,6 +578,27 @@
 
         function buildQMenu() {
             qMenu.innerHTML = "";
+            if (availableQualities.length > 0) {
+                availableQualities.forEach(function(item) {
+                    var div = document.createElement("div");
+                    div.className = "q-item" + (item.res === currentRes ? " active" : "");
+                    div.textContent = item.res;
+                    div.onclick = function(e) {
+                        e.stopPropagation();
+                        if (item.res !== currentRes) {
+                            currentRes = item.res;
+                            reqRes = item.res;
+                            playStream(item.url, item.targetRes || item.res, item.fallbackUrl);
+                        }
+                        qMenu.classList.remove("open");
+                        isQMenuOpen = false;
+                        buildQMenu();
+                    };
+                    qMenu.appendChild(div);
+                });
+                return;
+            }
+
             if (hlsInstance && hlsInstance.levels && hlsInstance.levels.length > 1) {
                 var items = [{ name: "Auto", level: -1, height: 99999 }];
                 hlsInstance.levels.forEach(function(l, i) {
@@ -546,27 +621,6 @@
                         } else {
                             selectedLevel = item.level;
                             hlsInstance.currentLevel = item.level;
-                        }
-                        qMenu.classList.remove("open");
-                        isQMenuOpen = false;
-                        buildQMenu();
-                    };
-                    qMenu.appendChild(div);
-                });
-                return;
-            }
-
-            if (availableQualities.length > 1) {
-                availableQualities.forEach(function(item) {
-                    var div = document.createElement("div");
-                    div.className = "q-item" + (item.res === currentRes ? " active" : "");
-                    div.textContent = item.res;
-                    div.onclick = function(e) {
-                        e.stopPropagation();
-                        if (item.res !== currentRes) {
-                            currentRes = item.res;
-                            reqRes = item.res;
-                            playStream(item.url, item.targetRes || item.res);
                         }
                         qMenu.classList.remove("open");
                         isQMenuOpen = false;

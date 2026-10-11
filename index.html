@@ -259,6 +259,48 @@
             return Boolean(m.dai_url || m.adfree_url || m.stream_url || m.google_m3u8_hex || m.m3u8_hex || (m.STREAMING_CDN && m.STREAMING_CDN.Primary_Playback_URL));
         }
 
+        function extractM3u8Qualities(text, baseStream) {
+            if (!text) return [];
+            const lines = text.split("\n");
+            const qualities = [];
+            const seen = new Set();
+            for (let i = 0; i < lines.length; i++) {
+                if (lines[i].includes("RESOLUTION=")) {
+                    const resPart = lines[i].split("RESOLUTION=")[1].split(",")[0];
+                    const height = resPart.split("x")[1];
+                    let nextLine = "";
+                    for (let j = i + 1; j < lines.length; j++) {
+                        const candidate = lines[j].trim();
+                        if (candidate && !candidate.startsWith("#")) {
+                            nextLine = candidate;
+                            break;
+                        }
+                    }
+                    let streamUrl = cleanStreamUrl(nextLine);
+                    if (streamUrl && !streamUrl.startsWith("http") && baseStream) {
+                        try {
+                            const baseUrl = new URL(baseStream);
+                            const pathDir = baseUrl.pathname.substring(0, baseUrl.pathname.lastIndexOf("/") + 1);
+                            streamUrl = baseUrl.origin + pathDir + streamUrl;
+                        } catch (_) {}
+                    }
+                    const resLabel = height + "p";
+                    if (streamUrl && streamUrl.startsWith("http") && !seen.has(resLabel)) {
+                        seen.add(resLabel);
+                        qualities.push({ res: resLabel, url: streamUrl, isHd: parseInt(height) >= 720, targetRes: resLabel });
+                    }
+                }
+            }
+            return qualities;
+        }
+
+        function isUrlNotExpired(url) {
+            const m = String(url || "").match(/Expires=(\d+)/i);
+            if (!m) return true;
+            const exp = parseInt(m[1], 10);
+            return !exp || (exp * 1000 > Date.now() + 60000);
+        }
+
         // Parsing stream qualities and resolutions
         function parseQualities(m) {
             const standardRes = ["1080p", "720p", "540p", "480p", "360p", "240p"];
@@ -278,62 +320,40 @@
                 }
             }
 
-            // 2. Prioritize baseStream (dai_url / adfree_url / stream_url proxy)
+            // 2. Check google_m3u8_hex / m3u8_hex AND resolved M3U master playlist
+            const hexData = m.google_m3u8_hex || m.m3u8_hex || m.hex || "";
+            const hexQualities = hexData ? extractM3u8Qualities(decodeHex(hexData), cleanStreamUrl(m.json_dai_url || baseStream)) : [];
+            const m3uQualities = m.master_m3u8 ? extractM3u8Qualities(m.master_m3u8, baseStream) : [];
+
+            const useHexPrimary = hexQualities.length > 0 && isUrlNotExpired(hexQualities[0].url);
+            const primaryList = useHexPrimary ? hexQualities : (m3uQualities.length > 0 ? m3uQualities : hexQualities);
+            const secondaryList = useHexPrimary ? m3uQualities : hexQualities;
+
+            if (primaryList.length > 0) {
+                primaryList.forEach(q => {
+                    const alt = secondaryList.find(s => s.res === q.res);
+                    if (alt && alt.url !== q.url) q.fallbackUrl = alt.url;
+                });
+                return primaryList;
+            }
+
+            // 3. Fallback to baseStream (dai_url / adfree_url) with standard resolutions
             if (baseStream && baseStream.startsWith("http")) {
                 const qualities = [];
                 standardRes.forEach(r => {
-                    qualities.push({ res: r, url: baseStream, isHd: parseInt(r) >= 720, targetRes: r });
-                });
-                qualities.push({ res: "Auto", url: baseStream, isHd: true, targetRes: "Auto" });
-                return qualities;
-            }
-
-            // 3. Check google_m3u8_hex / m3u8_hex fallback
-            const hexData = m.google_m3u8_hex || m.m3u8_hex || m.hex || "";
-            if (hexData) {
-                const text = decodeHex(hexData);
-                const lines = text.split("\n");
-                const qualities = [];
-                for (let i = 0; i < lines.length; i++) {
-                    if (lines[i].includes("RESOLUTION=")) {
-                        const resPart = lines[i].split("RESOLUTION=")[1].split(",")[0];
-                        const height = resPart.split("x")[1];
-                        let streamUrl = cleanStreamUrl(lines[i+1] || "");
-                        // Resolve relative URLs if needed
-                        if (streamUrl && !streamUrl.startsWith("http") && baseStream) {
-                            try {
-                                const baseUrl = new URL(baseStream);
-                                const pathDir = baseUrl.pathname.substring(0, baseUrl.pathname.lastIndexOf("/") + 1);
-                                streamUrl = baseUrl.origin + pathDir + streamUrl;
-                            } catch (_) {}
-                        }
-                        if (streamUrl && streamUrl.startsWith("http")) {
-                            qualities.push({ res: height + "p", url: streamUrl, isHd: parseInt(height) >= 720, targetRes: height + "p" });
-                        }
+                    let qUrl = baseStream;
+                    if (/(\d+p\d*|\d+)\.m3u8/i.test(qUrl)) {
+                        qUrl = qUrl.replace(/(index__|\/)(\d+p\d*|\d+)\.m3u8/i, "$1" + r + ".m3u8");
                     }
-                }
-                if (qualities.length > 0) {
-                    qualities.push({ res: "Auto", url: qualities[0].url, isHd: true, targetRes: "Auto" });
-                    return qualities;
-                }
+                    qualities.push({ res: r, url: qUrl, isHd: parseInt(r) >= 720, targetRes: r });
+                });
+                return qualities;
             }
 
             // 4. Check auto_streams
             const autoStreams = m.auto_streams;
             if (autoStreams && autoStreams.length > 0 && autoStreams[0].auto) {
-                const text = autoStreams[0].auto;
-                const lines = text.split("\n");
-                const qualities = [];
-                for (let i = 0; i < lines.length; i++) {
-                    if (lines[i].includes("RESOLUTION=")) {
-                        const resPart = lines[i].split("RESOLUTION=")[1].split(",")[0];
-                        const height = resPart.split("x")[1];
-                        const streamUrl = cleanStreamUrl(lines[i+1] || "");
-                        if (streamUrl && streamUrl.startsWith("http")) {
-                            qualities.push({ res: height + "p", url: streamUrl, isHd: parseInt(height) >= 720, targetRes: height + "p" });
-                        }
-                    }
-                }
+                const qualities = extractM3u8Qualities(autoStreams[0].auto, baseStream);
                 if (qualities.length > 0) return qualities;
             }
 
@@ -503,11 +523,20 @@
                 }, 150);
             }
 
-            const streamSrc = selectedRawUrl || url;
-            let selectedLevel = -1;
-            const reqRes = (currentQuality && currentQuality.targetRes) ? currentQuality.targetRes : "Auto";
+            const streamSrc = url || selectedRawUrl;
+            const reqRes = (currentQuality && currentQuality.res) ? currentQuality.res : "Auto";
+            updateModalQualityBadge(reqRes);
+            buildModalQualityMenu();
+
+            if (video.canPlayType("application/vnd.apple.mpegurl")) {
+                video.src = streamSrc;
+                video.play().catch(() => {});
+                video.addEventListener("loadedmetadata", playVideo, { once: true });
+                return;
+            }
 
             if (window.Hls && Hls.isSupported()) {
+                let triedFallback = false;
                 hlsInstance = new Hls({
                     enableWorker: true,
                     lowLatencyMode: true,
@@ -516,26 +545,12 @@
                 hlsInstance.loadSource(streamSrc);
                 hlsInstance.attachMedia(video);
                 hlsInstance.on(Hls.Events.MANIFEST_PARSED, function() {
-                    const targetIdx = findLevelIndex(hlsInstance.levels, reqRes);
-                    if (targetIdx !== -1) {
-                        selectedLevel = targetIdx;
-                        hlsInstance.currentLevel = targetIdx;
-                        updateModalQualityBadge(hlsInstance.levels[targetIdx].height + "p");
-                    } else {
-                        selectedLevel = -1;
-                        hlsInstance.currentLevel = -1;
-                        updateModalQualityBadge("Auto");
+                    if (hlsInstance.levels && hlsInstance.levels.length > 1 && reqRes !== "Auto") {
+                        const targetIdx = findLevelIndex(hlsInstance.levels, reqRes);
+                        if (targetIdx !== -1) hlsInstance.currentLevel = targetIdx;
                     }
                     buildModalQualityMenu();
                     playVideo();
-                });
-                hlsInstance.on(Hls.Events.LEVEL_SWITCHED, function(ev, data) {
-                    if (hlsInstance.currentLevel === -1) {
-                        updateModalQualityBadge("Auto");
-                    } else if (hlsInstance.levels && hlsInstance.levels[data.level]) {
-                        updateModalQualityBadge(hlsInstance.levels[data.level].height + "p");
-                    }
-                    buildModalQualityMenu();
                 });
                 hlsInstance.on(Hls.Events.FRAG_LOADED, function() {
                     started = true;
@@ -546,7 +561,15 @@
                     if (data.fatal) {
                         switch (data.type) {
                             case Hls.ErrorTypes.NETWORK_ERROR:
-                                hlsInstance.startLoad();
+                                if (!triedFallback && currentQuality && currentQuality.fallbackUrl && streamSrc !== currentQuality.fallbackUrl) {
+                                    triedFallback = true;
+                                    selectedRawUrl = currentQuality.fallbackUrl;
+                                    selectedStreamUrl = currentQuality.fallbackUrl;
+                                    hlsInstance.loadSource(currentQuality.fallbackUrl);
+                                    hlsInstance.startLoad();
+                                } else {
+                                    hlsInstance.startLoad();
+                                }
                                 break;
                             case Hls.ErrorTypes.MEDIA_ERROR:
                                 hlsInstance.recoverMediaError();
@@ -561,13 +584,6 @@
                         }
                     }
                 });
-                return;
-            }
-
-            if (video.canPlayType("application/vnd.apple.mpegurl")) {
-                video.src = streamSrc;
-                video.play().catch(() => {});
-                video.addEventListener("loadedmetadata", playVideo, { once: true });
                 return;
             }
 
@@ -606,39 +622,31 @@
             const menu = document.getElementById("modal-quality-dropdown");
             if (!menu) return;
             menu.innerHTML = "";
-            if (!hlsInstance || !hlsInstance.levels || hlsInstance.levels.length <= 1) {
+
+            const matchQualities = currentMatch ? parseQualities(currentMatch) : [];
+            if (matchQualities.length > 0) {
+                const resOrder = { "1080p": 6, "720p": 5, "540p": 4, "480p": 3, "360p": 2, "240p": 1 };
+                matchQualities.sort((a, b) => (resOrder[b.res] || parseInt(b.res) || 0) - (resOrder[a.res] || parseInt(a.res) || 0));
+                const activeRes = currentQuality ? currentQuality.res : "";
+
+                matchQualities.forEach(item => {
+                    const btn = document.createElement("button");
+                    btn.type = "button";
+                    const isActive = (item.res === activeRes);
+                    btn.className = "w-full text-left px-3 py-1.5 text-xs font-semibold flex items-center justify-between transition " + 
+                        (isActive ? "text-indigo-400 bg-slate-700/60 font-bold" : "text-slate-200 hover:bg-slate-700/40");
+                    btn.innerHTML = '<span>' + esc(item.res) + '</span>' + (isActive ? '<span class="text-indigo-400 font-bold">✓</span>' : '');
+                    btn.onclick = (e) => {
+                        e.stopPropagation();
+                        menu.classList.add("hidden");
+                        if (item.res !== activeRes) {
+                            handleQualitySelect(item);
+                        }
+                    };
+                    menu.appendChild(btn);
+                });
                 return;
             }
-            const items = [{ name: "Auto", level: -1, height: 99999 }];
-            hlsInstance.levels.forEach((l, i) => {
-                const label = (l.height ? l.height + "p" : "Level " + (i + 1));
-                items.push({ name: label, level: i, height: l.height || 0 });
-            });
-            items.sort((a, b) => b.height - a.height);
-
-            items.forEach(item => {
-                const btn = document.createElement("button");
-                btn.type = "button";
-                const isActive = (item.level === hlsInstance.currentLevel);
-                btn.className = "w-full text-left px-3 py-1.5 text-xs font-semibold flex items-center justify-between transition " + 
-                    (isActive ? "text-indigo-400 bg-slate-700/60 font-bold" : "text-slate-200 hover:bg-slate-700/40");
-                btn.innerHTML = '<span>' + esc(item.name) + '</span>' + (isActive ? '<span class="text-indigo-400 font-bold">✓</span>' : '');
-                btn.onclick = (e) => {
-                    e.stopPropagation();
-                    if (item.level === -1) {
-                        hlsInstance.currentLevel = -1;
-                        updateModalQualityBadge("Auto");
-                        if (currentQuality) currentQuality.targetRes = "Auto";
-                    } else {
-                        hlsInstance.currentLevel = item.level;
-                        updateModalQualityBadge(item.name);
-                        if (currentQuality) currentQuality.targetRes = item.name;
-                    }
-                    menu.classList.add("hidden");
-                    buildModalQualityMenu();
-                };
-                menu.appendChild(btn);
-            });
         }
 
         const btnModalQ = document.getElementById("btn-modal-quality");
@@ -854,6 +862,19 @@
                         cur = null;
                     }
                 }
+                await Promise.allSettled(list.map(async (item) => {
+                    if (item.stream_url && item.stream_url.includes(".m3u8")) {
+                        try {
+                            const r = await fetch(item.stream_url, { cache: "no-store" });
+                            if (r.ok) {
+                                const mText = await r.text();
+                                if (mText && mText.includes("#EXT-X-STREAM-INF")) {
+                                    item.master_m3u8 = mText;
+                                }
+                            }
+                        } catch (_) {}
+                    }
+                }));
                 return list;
             } catch (e) {
                 console.warn("M3U fetch failed:", e);
@@ -896,6 +917,7 @@
                     if (!existing.event_name && (jm.event_name || jm.tournament)) existing.event_name = jm.event_name || jm.tournament;
                     if (jm.STREAMING_CDN && !existing.STREAMING_CDN) existing.STREAMING_CDN = jm.STREAMING_CDN;
                     if (jm.google_m3u8_hex && !existing.google_m3u8_hex) existing.google_m3u8_hex = jm.google_m3u8_hex;
+                    if ((jm.dai_url || jm.adfree_url) && !existing.json_dai_url) existing.json_dai_url = jm.dai_url || jm.adfree_url;
                 } else {
                     combined.push(jm);
                 }
