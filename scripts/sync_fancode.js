@@ -145,7 +145,7 @@ async function syncFanCode() {
     // Generate data/fancode.m3u
     let m3uOutput = '#EXTM3U\n';
     m3uOutput += '# Written and Directed by ✨ A R Y A N ✨\n';
-    m3uOutput += '# Join us on Telegram: https://t.me/aryantv_official\n';
+    m3uOutput += '# Join us on Telegram: https://t.me/aryanstreams\n';
     m3uOutput += `#DATE:- ${timestamp} IST\n\n`;
 
     let liveCount = 0;
@@ -167,7 +167,7 @@ async function syncFanCode() {
     // Generate data/fancode.json
     const jsonOutput = {
         Author: 'ARYAN',
-        Telegram: 'https://t.me/aryantv_official',
+        Telegram: 'https://t.me/aryanstreams',
         name: 'Aryan FanCode Live Stream API',
         last_updated: `${timestamp} IST`,
         headers: {
