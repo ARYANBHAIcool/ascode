@@ -1,13 +1,13 @@
 {
   "Author": "ARYAN",
-  "Telegram": "https://t.me/aryantv_official",
+  "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/16/2026, 11:53:07 PM IST",
+  "last_updated": "10/17/2026, 12:08:19 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 40,
+  "total_matches": 39,
   "live_matches": 5,
   "matches": [
     {
@@ -23,16 +23,6 @@
       "team_1": "Australia Champions",
       "team_2": "West Indies Champions",
       "event_name": "World Championship of Legends, 2026"
-    },
-    {
-      "match_id": "4250182",
-      "match_name": "Bay Blazers Vs All Stars Cardinals",
-      "title": "Bay Blazers Vs All Stars Cardinals",
-      "src": "https://images.fancode.com/aig/match/v1792163955512/4250182_CASACARDS_SPORTY_APP.png",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250182_english_hls_e8bb0f1b2a45431_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE"
     },
     {
       "match_id": "4250192",
@@ -53,6 +43,20 @@
       "event_category": "Cricket",
       "stream_url": "https://dai-fancode.pages.dev/mumbai/4250183_english_hls_602d86487669871_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE"
+    },
+    {
+      "match_id": "4247653",
+      "match_name": "Deportivo De La Coruna Vs Levante",
+      "title": "Deportivo De La Coruna Vs Levante",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247653_53004_COR_LET_FC-Web.png",
+      "language": "English",
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247653_english_hls_106ad8d14935645_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "12:30:00 AM 17-10-2026",
+      "team_1": "Deportivo de La Coruna",
+      "team_2": "Levante",
+      "event_name": "LALIGA 2026-27"
     },
     {
       "match_id": "4249994",
@@ -89,18 +93,6 @@
       "event_name": "ICC CWC League 2 Oman, 2026",
       "language": "English",
       "startTime": "11:00:00 AM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4247653,
-      "title": "Deportivo de La Coruna vs Levante (LALIGA 2026-27)",
-      "match_name": "Deportivo de La Coruna vs Levante",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247653_53004_COR_LET_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "12:30:00 AM 17-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
