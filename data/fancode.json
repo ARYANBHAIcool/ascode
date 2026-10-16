@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryantv_official",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/16/2026, 10:37:42 PM IST",
+  "last_updated": "10/16/2026, 11:31:59 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 5,
+  "live_matches": 3,
   "matches": [
     {
       "match_id": "4249229",
@@ -25,16 +25,6 @@
       "event_name": "World Championship of Legends, 2026"
     },
     {
-      "match_id": "4250191",
-      "match_name": "Hurricanes Women Vs Southern Strikers Women",
-      "title": "Hurricanes Women Vs Southern Strikers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250191_53114_HR-W_SS-W_fc-web.jpg",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250191_english_hls_e1377b8a5962128_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE"
-    },
-    {
       "match_id": "4250182",
       "match_name": "Bay Blazers Vs All Stars Cardinals",
       "title": "Bay Blazers Vs All Stars Cardinals",
@@ -45,32 +35,14 @@
       "status": "LIVE"
     },
     {
-      "match_id": "4250145",
-      "match_name": "Qf   Court 1",
-      "title": "Qf   Court 1",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/badminton_FC-W.png",
+      "match_id": "4250192",
+      "match_name": "Atlanta Fire Women Vs Seattle Thunders Women",
+      "title": "Atlanta Fire Women Vs Seattle Thunders Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250192_53114_AF-W_ST-W_fc-web.jpg",
       "language": "English",
-      "event_category": "Badminton",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250145_english_hls_b4d5fa2fe710474_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "03:30:00 PM 16-10-2026",
-      "team_1": "QF - Court 1",
-      "team_2": "Denmark",
-      "event_name": "BWF Super 750 - Denmark Open 2026"
-    },
-    {
-      "match_id": "4250146",
-      "match_name": "Qf   Court 2",
-      "title": "Qf   Court 2",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/badminton_FC-W.png",
-      "language": "English",
-      "event_category": "Badminton",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250146_english_hls_84b788f22822967_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "03:30:00 PM 16-10-2026",
-      "team_1": "QF - Court 2",
-      "team_2": "Denmark",
-      "event_name": "BWF Super 750 - Denmark Open 2026"
+      "event_category": "Cricket",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250192_english_hls_f9aa34d4e918169_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE"
     },
     {
       "match_id": 4249283,
@@ -97,6 +69,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4250183,
+      "title": "Space City Cowboys vs Atlanta Lightning (Atlanta Open T20 2026)",
+      "match_name": "Space City Cowboys vs Atlanta Lightning",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "Atlanta Open T20 2026",
+      "language": "English",
+      "startTime": "11:45:00 PM 16-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249694,
       "title": "Bangladesh vs Zimbabwe (Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026)",
       "match_name": "Bangladesh vs Zimbabwe",
@@ -109,26 +93,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250192,
-      "title": "Atlanta Fire Women vs Seattle Thunders Women (Atlanta Open Women's T20 2026)",
-      "match_name": "Atlanta Fire Women vs Seattle Thunders Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250192_53114_AF-W_ST-W_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "Atlanta Open Women's T20 2026",
+      "match_id": 4249994,
+      "title": "Leganes vs Cordoba (LALIGA Hypermotion 2026-27)",
+      "match_name": "Leganes vs Cordoba",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249994_53017_LEG_CDB_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA Hypermotion 2026-27",
       "language": "English",
-      "startTime": "11:30:00 PM 16-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250183,
-      "title": "Space City Cowboys vs Atlanta Lightning (Atlanta Open T20 2026)",
-      "match_name": "Space City Cowboys vs Atlanta Lightning",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "Atlanta Open T20 2026",
-      "language": "English",
-      "startTime": "11:45:00 PM 16-10-2026",
+      "startTime": "12:00:00 AM 17-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -265,14 +237,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249994,
-      "title": "Leganes vs Cordoba (LALIGA Hypermotion 2026-27)",
-      "match_name": "Leganes vs Cordoba",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249994_53017_LEG_CDB_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA Hypermotion 2026-27",
+      "match_id": 4250228,
+      "title": "Darmstadt CC vs Koln CC (GSL Championship 2026)",
+      "match_name": "Darmstadt CC vs Koln CC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250228_53117_DCC_KCC_fc-web.jpg",
+      "event_category": "Cricket",
+      "event_name": "GSL Championship 2026",
       "language": "English",
-      "startTime": "12:00:00 AM 17-10-2026",
+      "startTime": "06:00:00 PM 17-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -285,18 +257,6 @@
       "event_name": "LALIGA 2026-27",
       "language": "English",
       "startTime": "05:30:00 PM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250228,
-      "title": "Darmstadt CC vs Koln CC (GSL Championship 2026)",
-      "match_name": "Darmstadt CC vs Koln CC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250228_53117_DCC_KCC_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "GSL Championship 2026",
-      "language": "English",
-      "startTime": "06:00:00 PM 17-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -469,6 +429,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249996,
+      "title": "Las Palmas vs Castellón (LALIGA Hypermotion 2026-27)",
+      "match_name": "Las Palmas vs Castellón",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249996_53017_LAP_CAS_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA Hypermotion 2026-27",
+      "language": "English",
+      "startTime": "12:30:00 AM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4248849,
       "title": "ATP Masters - Rolex Shanghai Masters vs Shanghai, China (ATP Masters - Rolex Shanghai Masters)",
       "match_name": "ATP Masters - Rolex Shanghai Masters",
@@ -482,6 +454,30 @@
     },
     {
       "match_id": 4248850,
+      "title": "ATP Masters - Rolex Shanghai Masters vs Shanghai, China (ATP Masters - Rolex Shanghai Masters)",
+      "match_name": "ATP Masters - Rolex Shanghai Masters",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Shanghai_Web-match-card.png",
+      "event_category": "Tennis",
+      "event_name": "ATP Masters - Rolex Shanghai Masters",
+      "language": "English",
+      "startTime": "01:30:00 PM 17-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4248851,
+      "title": "ATP Masters - Rolex Shanghai Masters vs Shanghai, China (ATP Masters - Rolex Shanghai Masters)",
+      "match_name": "ATP Masters - Rolex Shanghai Masters",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Shanghai_Web-match-card.png",
+      "event_category": "Tennis",
+      "event_name": "ATP Masters - Rolex Shanghai Masters",
+      "language": "English",
+      "startTime": "01:30:00 PM 17-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4248852,
       "title": "ATP Masters - Rolex Shanghai Masters vs Shanghai, China (ATP Masters - Rolex Shanghai Masters)",
       "match_name": "ATP Masters - Rolex Shanghai Masters",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/Shanghai_Web-match-card.png",
