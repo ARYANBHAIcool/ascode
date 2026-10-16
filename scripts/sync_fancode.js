@@ -142,6 +142,39 @@ async function syncFanCode() {
         return false;
     }
 
+    const m3uFile = path.join(dataDir, 'fancode.m3u');
+    const jsonFile = path.join(dataDir, 'fancode.json');
+
+    function getMatchesSignature(matches) {
+        return matches
+            .filter(m => m.stream_url)
+            .map(m => `${m.match_id}|${m.stream_url}|${m.match_name || m.title || ''}`)
+            .sort()
+            .join('\n');
+    }
+
+    let hasChanged = true;
+    if (fs.existsSync(jsonFile) && fs.existsSync(m3uFile)) {
+        try {
+            const oldData = JSON.parse(fs.readFileSync(jsonFile, 'utf8'));
+            const oldSig = getMatchesSignature(oldData.matches || []);
+            const newSig = getMatchesSignature(allMatches);
+
+            // Heartbeat: If unchanged but file hasn't been refreshed for > 6 hours, allow update
+            const hoursSince = (Date.now() - fs.statSync(m3uFile).mtimeMs) / (1000 * 60 * 60);
+            if (oldSig === newSig && hoursSince < 6) {
+                hasChanged = false;
+            }
+        } catch (e) {
+            hasChanged = true;
+        }
+    }
+
+    if (!hasChanged) {
+        console.log('⚡ FanCode streams & matches are unchanged. Keeping existing playlist (no dummy commit).');
+        return true;
+    }
+
     // Generate data/fancode.m3u
     let m3uOutput = '#EXTM3U\n';
     m3uOutput += '# Written and Directed by ✨ A R Y A N ✨\n';
@@ -160,7 +193,6 @@ async function syncFanCode() {
         m3uOutput += `${m.stream_url}\n`;
     });
 
-    const m3uFile = path.join(dataDir, 'fancode.m3u');
     fs.writeFileSync(m3uFile, m3uOutput, 'utf8');
     console.log(`✅ Saved ${liveCount} live streams to ${m3uFile}`);
 
@@ -179,7 +211,6 @@ async function syncFanCode() {
         matches: allMatches
     };
 
-    const jsonFile = path.join(dataDir, 'fancode.json');
     fs.writeFileSync(jsonFile, JSON.stringify(jsonOutput, null, 2), 'utf8');
     console.log(`✅ Saved ${allMatches.length} total matches to ${jsonFile}`);
 

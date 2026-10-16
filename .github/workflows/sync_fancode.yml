@@ -2,9 +2,8 @@ name: Auto-Sync FanCode Feeds
 
 on:
   schedule:
-    # 7-minute staggered schedules matching doctor-8trange cadence
-    - cron: '*/7 * * * *'
-    - cron: '4,11,18,25,32,39,46,53 * * * *'
+    # 20-minute schedule: only commits on actual stream/match changes (~15-35 commits/day like doctor-8trange)
+    - cron: '*/20 * * * *'
   workflow_dispatch:
   repository_dispatch:
     types: [sync-fancode, refresh, ping]
