@@ -211,8 +211,10 @@
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script>
     (function() {
-        const M3U_API = "https://raw.githubusercontent.com/doctor-8trange/zyphx8/refs/heads/main/data/fancode.m3u";
-        const JSON_API = "https://raw.githubusercontent.com/drmlive/fancode-live-events/main/fancode.json";
+        const M3U_API = "https://raw.githubusercontent.com/ARYANBHAIcool/ascode/main/data/fancode.m3u";
+        const JSON_API = "https://raw.githubusercontent.com/ARYANBHAIcool/ascode/main/data/fancode.json";
+        const BACKUP_M3U_API = "https://raw.githubusercontent.com/doctor-8trange/zyphx8/refs/heads/main/data/fancode.m3u";
+        const BACKUP_JSON_API = "https://raw.githubusercontent.com/drmlive/fancode-live-events/main/fancode.json";
         const FALLBACK_IMG = "https://www.fancode.com/skillup-uploads/cms-media/Cricket_Fallback_Old_match-card.jpg";
         let allMatches = [], currentFilter = "ALL", currentMatch = null, currentQuality = null;
         let selectedStreamUrl = "", selectedRawUrl = "", hlsInstance = null;
@@ -823,7 +825,13 @@
 
         async function fetchM3uMatches() {
             try {
-                const res = await fetch(M3U_API + "?t=" + Date.now(), { cache: "no-store" });
+                let res = await fetch(M3U_API + "?t=" + Date.now(), { cache: "no-store" });
+                if (!res.ok) {
+                    res = await fetch("./data/fancode.m3u?t=" + Date.now(), { cache: "no-store" });
+                }
+                if (!res.ok && typeof BACKUP_M3U_API !== "undefined") {
+                    res = await fetch(BACKUP_M3U_API + "?t=" + Date.now(), { cache: "no-store" });
+                }
                 if (!res.ok) return [];
                 const text = await res.text();
                 const lines = text.split("\n");
@@ -884,7 +892,13 @@
 
         async function fetchJsonMatches() {
             try {
-                const res = await fetch(JSON_API + "?t=" + Date.now(), { cache: "no-store" });
+                let res = await fetch(JSON_API + "?t=" + Date.now(), { cache: "no-store" });
+                if (!res.ok) {
+                    res = await fetch("./data/fancode.json?t=" + Date.now(), { cache: "no-store" });
+                }
+                if (!res.ok && typeof BACKUP_JSON_API !== "undefined") {
+                    res = await fetch(BACKUP_JSON_API + "?t=" + Date.now(), { cache: "no-store" });
+                }
                 if (!res.ok) return [];
                 const data = await res.json();
                 return data.matches || [];
