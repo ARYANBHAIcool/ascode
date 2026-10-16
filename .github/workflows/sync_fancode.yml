@@ -1,0 +1,57 @@
+name: Auto-Sync FanCode Feeds
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+    - cron: '3,13,23,33,43,53 * * * *'
+  workflow_dispatch:
+  repository_dispatch:
+    types: [sync-fancode, refresh, ping]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Run FanCode Sync
+        run: node scripts/sync_fancode.js
+
+      - name: Commit & Push Changes
+        shell: bash
+        run: |
+          git config --global user.name "ARYANBHAIcool"
+          git config --global user.email "kingaryan69and@gmail.com"
+
+          git fetch origin main
+          git rebase -X theirs origin/main || git rebase --abort || true
+
+          git add data/fancode.m3u data/fancode.json
+
+          if ! git diff --staged --quiet; then
+            TIMESTAMP=$(date -u +"%d/%m/%Y, %I:%M:%S %p UTC")
+            git commit -m "📡 refreshed playlist @ ${TIMESTAMP} • Catch the thrill live! ⚡" || true
+            for attempt in 1 2 3; do
+              if git push origin main; then
+                echo "Successfully pushed on attempt $attempt"
+                break
+              fi
+              echo "Push attempt $attempt failed, rebasing..."
+              git fetch origin main
+              git rebase -X theirs origin/main || git rebase --abort || true
+              sleep 2
+            done
+          else
+            echo "Feeds are already completely up to date."
+          fi
