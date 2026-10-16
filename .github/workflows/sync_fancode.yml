@@ -1,9 +1,9 @@
 name: Auto-Sync FanCode Feeds
 
 on:
-  schedule:
-    - cron: '*/10 * * * *'
-    - cron: '3,13,23,33,43,53 * * * *'
+    # 7-minute staggered schedules matching doctor-8trange cadence
+    - cron: '*/7 * * * *'
+    - cron: '4,11,18,25,32,39,46,53 * * * *'
   workflow_dispatch:
   repository_dispatch:
     types: [sync-fancode, refresh, ping]
