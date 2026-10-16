@@ -1,6 +1,7 @@
 name: Auto-Sync FanCode Feeds
 
 on:
+  schedule:
     # 7-minute staggered schedules matching doctor-8trange cadence
     - cron: '*/7 * * * *'
     - cron: '4,11,18,25,32,39,46,53 * * * *'
