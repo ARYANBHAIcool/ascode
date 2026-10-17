@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/17/2026, 6:00:01 AM IST",
+  "last_updated": "10/17/2026, 10:25:59 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 3,
+  "live_matches": 4,
   "matches": [
     {
       "match_id": "4249283",
@@ -25,32 +25,46 @@
       "event_name": "One Day Cup, 2026/27"
     },
     {
-      "match_id": "4249794",
-      "match_name": "Perth Scorchers Women Vs Hobart Hurricanes Women",
-      "title": "Perth Scorchers Women Vs Hobart Hurricanes Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249794_53097_HB-W_PS-W_FC-Web_1791883788804.png",
+      "match_id": "4249796",
+      "match_name": "Act Meteors Vs Melbourne Stars Women",
+      "title": "Act Meteors Vs Melbourne Stars Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249796_53097_AM-W_MS-W_FC-Web_1791883788082.png",
       "language": "English",
       "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249794_english_hls_f01fbec89441977_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249796_english_hls_252ecbda1018000_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE",
-      "startTime": "04:30:00 AM 17-10-2026",
-      "team_1": "Perth Scorchers Women",
-      "team_2": "Hobart Hurricanes Women",
+      "startTime": "09:00:00 AM 17-10-2026",
+      "team_1": "ACT Meteors",
+      "team_2": "Melbourne Stars Women",
       "event_name": "T20 Spring Challenge, 2026"
     },
     {
-      "match_id": "4249795",
-      "match_name": "Melbourne Renegades Women Vs Sydney Thunder Women",
-      "title": "Melbourne Renegades Women Vs Sydney Thunder Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249795_53097_ST-W_MR-W_FC-Web_1791883788801.png",
+      "match_id": "4249797",
+      "match_name": "Adelaide Strikers Women Vs Sydney Sixers Women",
+      "title": "Adelaide Strikers Women Vs Sydney Sixers Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249797_53097_SS-W_AS-W_FC-Web_1791883788114.png",
       "language": "English",
       "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249795_english_hls_70b11d093078068_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249797_english_hls_7bf58d06b754922_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE",
-      "startTime": "04:30:00 AM 17-10-2026",
-      "team_1": "Melbourne Renegades Women",
-      "team_2": "Sydney Thunder Women",
+      "startTime": "09:00:00 AM 17-10-2026",
+      "team_1": "Adelaide Strikers Women",
+      "team_2": "Sydney Sixers Women",
       "event_name": "T20 Spring Challenge, 2026"
+    },
+    {
+      "match_id": "4249835",
+      "match_name": "Auckland Vs Melbourne City",
+      "title": "Auckland Vs Melbourne City",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249835_53101_AFC_MLC_fc-Web_1791982771900.jpg",
+      "language": "English",
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249835_english_hls_083505468c45123_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "09:30:00 AM 17-10-2026",
+      "team_1": "Auckland",
+      "team_2": "Melbourne City",
+      "event_name": "A-League 2026-27"
     },
     {
       "match_id": 4250117,
@@ -73,30 +87,6 @@
       "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026",
       "language": "English",
       "startTime": "05:00:00 PM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249796,
-      "title": "ACT Meteors vs Melbourne Stars Women (T20 Spring Challenge, 2026)",
-      "match_name": "ACT Meteors vs Melbourne Stars Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249796_53097_AM-W_MS-W_FC-Web_1791883788082.png",
-      "event_category": "Cricket",
-      "event_name": "T20 Spring Challenge, 2026",
-      "language": "English",
-      "startTime": "09:00:00 AM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249797,
-      "title": "Sydney Sixers Women vs Adelaide Strikers Women (T20 Spring Challenge, 2026)",
-      "match_name": "Sydney Sixers Women vs Adelaide Strikers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249797_53097_SS-W_AS-W_FC-Web_1791883788114.png",
-      "event_category": "Cricket",
-      "event_name": "T20 Spring Challenge, 2026",
-      "language": "English",
-      "startTime": "09:00:00 AM 17-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -161,18 +151,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249595,
-      "title": "Watford F.C. vs Charlton Athletic F.C (EFL Championship 2026-27)",
-      "match_name": "Watford F.C. vs Charlton Athletic F.C",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249595_52993_WAT_CHL_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "EFL Championship 2026-27",
-      "language": "English",
-      "startTime": "05:00:00 PM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250193,
       "title": "Hurricanes Women vs Seattle Thunders Women (Atlanta Open Women's T20 2026)",
       "match_name": "Hurricanes Women vs Seattle Thunders Women",
@@ -181,18 +159,6 @@
       "event_name": "Atlanta Open Women's T20 2026",
       "language": "English",
       "startTime": "07:00:00 PM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4247654,
-      "title": "RCD Espanyol vs Atletico de Madrid (LALIGA 2026-27)",
-      "match_name": "RCD Espanyol vs Atletico de Madrid",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247654_53004_ESL_ATM_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "05:30:00 PM 17-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -221,6 +187,30 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249595,
+      "title": "Watford F.C. vs Charlton Athletic F.C (EFL Championship 2026-27)",
+      "match_name": "Watford F.C. vs Charlton Athletic F.C",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249595_52993_WAT_CHL_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "EFL Championship 2026-27",
+      "language": "English",
+      "startTime": "05:00:00 PM 17-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4247654,
+      "title": "RCD Espanyol vs Atletico de Madrid (LALIGA 2026-27)",
+      "match_name": "RCD Espanyol vs Atletico de Madrid",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247654_53004_ESL_ATM_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA 2026-27",
+      "language": "English",
+      "startTime": "05:30:00 PM 17-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249596,
       "title": "Norwich City F.C. vs Portsmouth F.C. (EFL Championship 2026-27)",
       "match_name": "Norwich City F.C. vs Portsmouth F.C.",
@@ -245,18 +235,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4247656,
-      "title": "Real Betis vs FC Barcelona (LALIGA 2026-27)",
-      "match_name": "Real Betis vs FC Barcelona",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247656_53004_RB_BAR_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "10:00:00 PM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250194,
       "title": "Atlanta Fire Women vs Southern Strikers Women (Atlanta Open Women's T20 2026)",
       "match_name": "Atlanta Fire Women vs Southern Strikers Women",
@@ -265,6 +243,18 @@
       "event_name": "Atlanta Open Women's T20 2026",
       "language": "English",
       "startTime": "11:30:00 PM 17-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4247656,
+      "title": "Real Betis vs FC Barcelona (LALIGA 2026-27)",
+      "match_name": "Real Betis vs FC Barcelona",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247656_53004_RB_BAR_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA 2026-27",
+      "language": "English",
+      "startTime": "10:00:00 PM 17-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -293,6 +283,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249798,
+      "title": "Melbourne Renegades Women vs Hobart Hurricanes Women (T20 Spring Challenge, 2026)",
+      "match_name": "Melbourne Renegades Women vs Hobart Hurricanes Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249798_53097_MR-W_HB-W_FC-Web_1791883788092.png",
+      "event_category": "Cricket",
+      "event_name": "T20 Spring Challenge, 2026",
+      "language": "English",
+      "startTime": "04:30:00 AM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249193,
       "title": "Arsenal Women vs Birmingham City F.C. Women (Barclays Women's Super League 2026-27)",
       "match_name": "Arsenal Women vs Birmingham City F.C. Women",
@@ -317,18 +319,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249798,
-      "title": "Melbourne Renegades Women vs Hobart Hurricanes Women (T20 Spring Challenge, 2026)",
-      "match_name": "Melbourne Renegades Women vs Hobart Hurricanes Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249798_53097_MR-W_HB-W_FC-Web_1791883788092.png",
-      "event_category": "Cricket",
-      "event_name": "T20 Spring Challenge, 2026",
-      "language": "English",
-      "startTime": "04:30:00 AM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4249996,
       "title": "Las Palmas vs Castellón (LALIGA Hypermotion 2026-27)",
       "match_name": "Las Palmas vs Castellón",
@@ -337,78 +327,6 @@
       "event_name": "LALIGA Hypermotion 2026-27",
       "language": "English",
       "startTime": "12:30:00 AM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249835,
-      "title": "Auckland vs Melbourne City (A-League 2026-27)",
-      "match_name": "Auckland vs Melbourne City",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249835_53101_AFC_MLC_fc-Web_1791982771900.jpg",
-      "event_category": "Football",
-      "event_name": "A-League 2026-27",
-      "language": "English",
-      "startTime": "09:30:00 AM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4248851,
-      "title": "Stadium Court vs Shanghai, China (ATP Masters - Rolex Shanghai Masters)",
-      "match_name": "Stadium Court",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Shanghai_Web-match-card.png",
-      "event_category": "Tennis",
-      "event_name": "ATP Masters - Rolex Shanghai Masters",
-      "language": "English",
-      "startTime": "11:30:00 AM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249836,
-      "title": "Macarthur vs Perth Glory (A-League 2026-27)",
-      "match_name": "Macarthur vs Perth Glory",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249836_53101_MAC_PG_fc-Web_1791982773863.jpg",
-      "event_category": "Football",
-      "event_name": "A-League 2026-27",
-      "language": "English",
-      "startTime": "11:30:00 AM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250147,
-      "title": "Semi-Final vs Denmark (BWF Super 750 - Denmark Open 2026)",
-      "match_name": "Semi-Final",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/badminton_FC-W.png",
-      "event_category": "Badminton",
-      "event_name": "BWF Super 750 - Denmark Open 2026",
-      "language": "English",
-      "startTime": "12:30:00 PM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4248850,
-      "title": "Men's Semi-Final vs Shanghai, China (ATP Masters - Rolex Shanghai Masters)",
-      "match_name": "Men's Semi-Final",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Zverev-vs-Alejandro_Web-match-card.png",
-      "event_category": "Tennis",
-      "event_name": "ATP Masters - Rolex Shanghai Masters",
-      "language": "English",
-      "startTime": "02:00:00 PM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249837,
-      "title": "Central Coast Mariners vs Newcastle Jets (A-League 2026-27)",
-      "match_name": "Central Coast Mariners vs Newcastle Jets",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249837_53101_CCM_NJ_fc-Web_1791982771819.jpg",
-      "event_category": "Football",
-      "event_name": "A-League 2026-27",
-      "language": "English",
-      "startTime": "02:10:00 PM 17-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -485,6 +403,66 @@
       "stream_url": ""
     },
     {
+      "match_id": 4248851,
+      "title": "Stadium Court vs Shanghai, China (ATP Masters - Rolex Shanghai Masters)",
+      "match_name": "Stadium Court",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Shanghai_Web-match-card.png",
+      "event_category": "Tennis",
+      "event_name": "ATP Masters - Rolex Shanghai Masters",
+      "language": "English",
+      "startTime": "11:30:00 AM 17-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249836,
+      "title": "Macarthur vs Perth Glory (A-League 2026-27)",
+      "match_name": "Macarthur vs Perth Glory",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249836_53101_MAC_PG_fc-Web_1791982773863.jpg",
+      "event_category": "Football",
+      "event_name": "A-League 2026-27",
+      "language": "English",
+      "startTime": "11:30:00 AM 17-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250147,
+      "title": "Semi-Final vs Denmark (BWF Super 750 - Denmark Open 2026)",
+      "match_name": "Semi-Final",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/badminton_FC-W.png",
+      "event_category": "Badminton",
+      "event_name": "BWF Super 750 - Denmark Open 2026",
+      "language": "English",
+      "startTime": "12:30:00 PM 17-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4248850,
+      "title": "Men's Semi-Final vs Shanghai, China (ATP Masters - Rolex Shanghai Masters)",
+      "match_name": "Men's Semi-Final",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Zverev-vs-Alejandro_Web-match-card.png",
+      "event_category": "Tennis",
+      "event_name": "ATP Masters - Rolex Shanghai Masters",
+      "language": "English",
+      "startTime": "02:00:00 PM 17-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249837,
+      "title": "Central Coast Mariners vs Newcastle Jets (A-League 2026-27)",
+      "match_name": "Central Coast Mariners vs Newcastle Jets",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249837_53101_CCM_NJ_fc-Web_1791982771819.jpg",
+      "event_category": "Football",
+      "event_name": "A-League 2026-27",
+      "language": "English",
+      "startTime": "02:10:00 PM 17-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249801,
       "title": "Sydney Sixers Women vs Melbourne Stars Women (T20 Spring Challenge, 2026)",
       "match_name": "Sydney Sixers Women vs Melbourne Stars Women",
@@ -493,6 +471,30 @@
       "event_name": "T20 Spring Challenge, 2026",
       "language": "English",
       "startTime": "01:30:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250231,
+      "title": "TBC vs TBC (GSL Championship 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "GSL Championship 2026",
+      "language": "English",
+      "startTime": "02:30:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249838,
+      "title": "Wellington Phoenix vs Melbourne Victory (A-League 2026-27)",
+      "match_name": "Wellington Phoenix vs Melbourne Victory",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249838_53101_WEL_MLV_fc-Web_1791982771932.jpg",
+      "event_category": "Football",
+      "event_name": "A-League 2026-27",
+      "language": "English",
+      "startTime": "07:30:00 AM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
