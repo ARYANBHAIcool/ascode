@@ -2,7 +2,7 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/17/2026, 7:24:15 PM IST",
+  "last_updated": "10/17/2026, 7:44:16 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -39,20 +39,6 @@
       "event_name": "Jersey tour of Uganda A 2026"
     },
     {
-      "match_id": "4250228",
-      "match_name": "Darmstadt Cc Vs Koln Cc",
-      "title": "Darmstadt Cc Vs Koln Cc",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250228_53117_DCC_KCC_fc-web.jpg",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250228_english_hls_a8cabfb74758870_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "06:00:00 PM 17-10-2026",
-      "team_1": "Darmstadt CC",
-      "team_2": "Koln CC",
-      "event_name": "GSL Championship 2026"
-    },
-    {
       "match_id": "4250184",
       "match_name": "Prime Raider Gladiators Vs Bay Blazers",
       "title": "Prime Raider Gladiators Vs Bay Blazers",
@@ -60,20 +46,16 @@
       "language": "English",
       "event_category": "Cricket",
       "stream_url": "https://dai-fancode.pages.dev/mumbai/4250184_english_hls_6e682a91aa711_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "07:30:00 PM 17-10-2026",
-      "team_1": "Prime Raider Gladiators",
-      "team_2": "Bay Blazers",
-      "event_name": "Atlanta Open T20 2026"
+      "status": "LIVE"
     },
     {
-      "match_id": "4247654",
-      "match_name": "Rcd Espanyol Vs Atletico De Madrid",
-      "title": "Rcd Espanyol Vs Atletico De Madrid",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247654_53004_ESL_ATM_FC-Web.png",
+      "match_id": "4250193",
+      "match_name": "Hurricanes Women Vs Seattle Thunders Women",
+      "title": "Hurricanes Women Vs Seattle Thunders Women",
+      "src": "https://images.fancode.com/aig/match/v1792240672389/4250193_CASACARDS_SPORTY_APP.png",
       "language": "English",
-      "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247654_english_hls_1d793785a64913_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "event_category": "Cricket",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250193_english_hls_1bafff515c65468_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE"
     },
     {
@@ -143,16 +125,14 @@
       "event_name": "BWF Super 750 - Denmark Open 2026"
     },
     {
-      "match_id": 4250193,
-      "title": "Hurricanes Women vs Seattle Thunders Women (Atlanta Open Women's T20 2026)",
-      "match_name": "Hurricanes Women vs Seattle Thunders Women",
-      "src": "https://images.fancode.com/aig/match/v1792240672389/4250193_CASACARDS_APP.png",
-      "event_category": "Cricket",
-      "event_name": "Atlanta Open Women's T20 2026",
+      "match_id": "4247654",
+      "match_name": "Rcd Espanyol Vs Atletico De Madrid",
+      "title": "Rcd Espanyol Vs Atletico De Madrid",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247654_53004_ESL_ATM_FC-Web.png",
       "language": "English",
-      "startTime": "07:45:00 PM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247654_english_hls_1d793785a64913_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE"
     },
     {
       "match_id": 4250229,
@@ -335,18 +315,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250232,
-      "title": "TBC vs TBC (GSL Championship 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "GSL Championship 2026",
-      "language": "English",
-      "startTime": "04:30:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4249230,
       "title": "England Champions vs West Indies Champions (World Championship of Legends, 2026)",
       "match_name": "England Champions vs West Indies Champions",
@@ -355,6 +323,18 @@
       "event_name": "World Championship of Legends, 2026",
       "language": "English",
       "startTime": "09:00:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250232,
+      "title": "TBC vs TBC (GSL Championship 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "GSL Championship 2026",
+      "language": "English",
+      "startTime": "04:30:00 PM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -499,6 +479,18 @@
       "event_name": "A-League 2026-27",
       "language": "English",
       "startTime": "07:30:00 AM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250195,
+      "title": "TBC vs TBC (Atlanta Open Women's T20 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "Atlanta Open Women's T20 2026",
+      "language": "English",
+      "startTime": "11:00:00 PM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
