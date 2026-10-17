@@ -117,16 +117,16 @@
       "stream_url": ""
     },
     {
-      "match_id": "4250230_ENG",
-      "title": "GSL Championship 2026 [English]",
-      "match_name": "Darmstadt CC vs ICA Berlin [English]",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250222_53117_ICAB_DCC_fc-web.jpg",
+      "match_id": 4249798,
+      "title": "Melbourne Renegades Women vs Hobart Hurricanes Women (T20 Spring Challenge, 2026)",
+      "match_name": "Melbourne Renegades Women vs Hobart Hurricanes Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249798_53097_MR-W_HB-W_FC-Web_1791883788092.png",
       "event_category": "Cricket",
-      "event_name": "GSL Championship 2026",
+      "event_name": "T20 Spring Challenge, 2026",
       "language": "English",
-      "startTime": "12:30:00 PM 18-10-2026",
-      "status": "LIVE",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250230_english_hls_e1ba38cd8e53180_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/"
+      "startTime": "04:30:00 AM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
     },
     {
       "match_id": "4249996",
@@ -435,7 +435,7 @@
       "event_category": "Cricket",
       "event_name": "GSL Championship 2026",
       "language": "English",
-      "startTime": "05:00:00 AM 19-10-2026",
+      "startTime": "08:00:00 AM 19-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
