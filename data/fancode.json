@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/17/2026, 8:04:14 PM IST",
+  "last_updated": "10/17/2026, 8:24:16 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 39,
-  "live_matches": 10,
+  "total_matches": 40,
+  "live_matches": 8,
   "matches": [
     {
       "match_id": "4249694",
@@ -23,20 +23,6 @@
       "team_1": "Zimbabwe",
       "team_2": "Bangladesh",
       "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026"
-    },
-    {
-      "match_id": "4250211",
-      "match_name": "Uganda A Vs Jersey",
-      "title": "Uganda A Vs Jersey",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Jersey-tour-of-Uganda-A-2026_Web_1080_x_810.jpg",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250211_english_hls_2090dd13c831581_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "12:30:00 PM 17-10-2026",
-      "team_1": "Uganda A",
-      "team_2": "Jersey",
-      "event_name": "Jersey tour of Uganda A 2026"
     },
     {
       "match_id": "4250184",
@@ -123,18 +109,6 @@
       "team_1": "Semi-Final",
       "team_2": "Denmark",
       "event_name": "BWF Super 750 - Denmark Open 2026"
-    },
-    {
-      "match_id": "4249193_ENG",
-      "title": "Barclays Women's Super League 2026-27 [English]",
-      "match_name": "Arsenal Women vs Birmingham City F.C. Women [English]",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249193_53038_ARS-W_BIR-W_fc-web_1791063400607.jpg",
-      "event_category": "Football",
-      "event_name": "Barclays Women's Super League 2026-27",
-      "language": "English",
-      "startTime": "05:15:00 PM 17-10-2026",
-      "status": "LIVE",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249193_english_hls_cd9dc0f84b20122_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/"
     },
     {
       "match_id": 4249782,
@@ -353,6 +327,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4247648,
+      "title": "RC Celta vs Deportivo Alaves (LALIGA 2026-27)",
+      "match_name": "RC Celta vs Deportivo Alaves",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247648_53004_CEV_ALA_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA 2026-27",
+      "language": "English",
+      "startTime": "07:45:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249196,
       "title": "Chelsea F.C. Women vs Tottenham Hotspur Women (Barclays Women's Super League 2026-27)",
       "match_name": "Chelsea F.C. Women vs Tottenham Hotspur Women",
@@ -373,18 +359,6 @@
       "event_name": "Barclays Women's Super League 2026-27",
       "language": "English",
       "startTime": "04:30:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4247648,
-      "title": "RC Celta vs Deportivo Alaves (LALIGA 2026-27)",
-      "match_name": "RC Celta vs Deportivo Alaves",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247648_53004_CEV_ALA_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "07:45:00 PM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -461,6 +435,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4250195,
+      "title": "TBC vs TBC (Atlanta Open Women's T20 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "Atlanta Open Women's T20 2026",
+      "language": "English",
+      "startTime": "11:00:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249838,
       "title": "Wellington Phoenix vs Melbourne Victory (A-League 2026-27)",
       "match_name": "Wellington Phoenix vs Melbourne Victory",
@@ -473,14 +459,38 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250195,
-      "title": "TBC vs TBC (Atlanta Open Women's T20 2026)",
+      "match_id": 4250186,
+      "title": "TBC vs TBC (Atlanta Open T20 2026)",
       "match_name": "TBC vs TBC",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
       "event_category": "Cricket",
-      "event_name": "Atlanta Open Women's T20 2026",
+      "event_name": "Atlanta Open T20 2026",
       "language": "English",
-      "startTime": "11:00:00 PM 18-10-2026",
+      "startTime": "11:45:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4248853,
+      "title": "ATP Masters - Rolex Shanghai Masters vs Shanghai, China (ATP Masters - Rolex Shanghai Masters)",
+      "match_name": "ATP Masters - Rolex Shanghai Masters",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Shanghai_Web-match-card.png",
+      "event_category": "Tennis",
+      "event_name": "ATP Masters - Rolex Shanghai Masters",
+      "language": "English",
+      "startTime": "01:30:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4248854,
+      "title": "ATP Masters - Rolex Shanghai Masters vs Shanghai, China (ATP Masters - Rolex Shanghai Masters)",
+      "match_name": "ATP Masters - Rolex Shanghai Masters",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Shanghai_Web-match-card.png",
+      "event_category": "Tennis",
+      "event_name": "ATP Masters - Rolex Shanghai Masters",
+      "language": "English",
+      "startTime": "01:30:00 PM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
