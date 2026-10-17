@@ -17,12 +17,8 @@
       "src": "https://www.fancode.com/skillup-uploads/cms-media/AUS-vs-SA-test_Web-match-card.png",
       "language": "English",
       "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250212_english_hls_caf8bc89be97545_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "12:30:00 PM 18-10-2026",
-      "team_1": "Uganda A",
-      "team_2": "Jersey",
-      "event_name": "Jersey tour of Uganda A 2026"
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250185_english_hls_a509ae280421361_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE"
     },
     {
       "match_id": 4249782,
@@ -54,13 +50,9 @@
       "title": "Uganda A Vs Jersey",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/Jersey-tour-of-Uganda-A-2026_Web_1080_x_810.jpg",
       "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250212_english_hls_caf8bc89be97545_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "12:30:00 PM 18-10-2026",
-      "team_1": "Uganda A",
-      "team_2": "Jersey",
-      "event_name": "Jersey tour of Uganda A 2026"
+      "startTime": "12:30:00 AM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
     },
     {
       "match_id": 4249798,
@@ -70,7 +62,7 @@
       "event_category": "Cricket",
       "event_name": "T20 Spring Challenge, 2026",
       "language": "English",
-      "startTime": "09:00:00 AM 18-10-2026",
+      "startTime": "12:30:00 AM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -152,7 +144,7 @@
       "match_name": "TBC vs TBC",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
       "event_category": "Cricket",
-      "event_name": "T20 Spring Challenge, 2026",
+      "event_name": "GSL Championship 2026",
       "language": "English",
       "startTime": "02:30:00 PM 18-10-2026",
       "status": "UPCOMING",
@@ -176,9 +168,9 @@
       "match_name": "TBC vs TBC",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
       "event_category": "Cricket",
-      "event_name": "Jersey tour of Uganda A 2026",
+      "event_name": "Sheffield Shield, 2026/27",
       "language": "English",
-      "startTime": "12:30:00 PM 18-10-2026",
+      "startTime": "08:00:00 AM 19-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
