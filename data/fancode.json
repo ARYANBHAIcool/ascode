@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/17/2026, 2:26:52 PM IST",
+  "last_updated": "10/17/2026, 5:36:38 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 6,
+  "live_matches": 9,
   "matches": [
     {
       "match_id": "4250117",
@@ -25,6 +25,20 @@
       "event_name": "ICC CWC League 2 Oman, 2026"
     },
     {
+      "match_id": "4249694",
+      "match_name": "Zimbabwe Vs Bangladesh",
+      "title": "Zimbabwe Vs Bangladesh",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249694_53089_BAN_ZIM_FC-WEB_1792056447852.jpg",
+      "language": "English",
+      "event_category": "Cricket",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249694_english_hls_c370ab317921311_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "05:00:00 PM 17-10-2026",
+      "team_1": "Zimbabwe",
+      "team_2": "Bangladesh",
+      "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026"
+    },
+    {
       "match_id": "4250211",
       "match_name": "Uganda A Vs Jersey",
       "title": "Uganda A Vs Jersey",
@@ -39,18 +53,56 @@
       "event_name": "Jersey tour of Uganda A 2026"
     },
     {
-      "match_id": "4250226",
-      "match_name": "Darmstadt Cc Vs Thcc Rot Gelb Hamburg",
-      "title": "Darmstadt Cc Vs Thcc Rot Gelb Hamburg",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250226_53117_DCC_THCC_fc-web.jpg",
+      "match_id": "4250227",
+      "match_name": "Tsv Malmsheim Vs Ica Berlin",
+      "title": "Tsv Malmsheim Vs Ica Berlin",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250227_53117_TSV_ICAB_fc-web.jpg",
       "language": "English",
       "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250226_english_hls_65168f40f945063_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250227_english_hls_c19e9aa30628633_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE",
-      "startTime": "02:00:00 PM 17-10-2026",
-      "team_1": "Darmstadt CC",
-      "team_2": "THCC Rot-Gelb Hamburg",
+      "startTime": "04:00:00 PM 17-10-2026",
+      "team_1": "TSV Malmsheim",
+      "team_2": "ICA Berlin",
       "event_name": "GSL Championship 2026"
+    },
+    {
+      "match_id": "4249595",
+      "match_name": "Watford F.c. Vs Charlton Athletic F.c",
+      "title": "Watford F.c. Vs Charlton Athletic F.c",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249595_52993_WAT_CHL_fc-web.jpg",
+      "language": "English",
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249595_english_hls_22fe776c662481_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "05:00:00 PM 17-10-2026",
+      "team_1": "Watford F.C.",
+      "team_2": "Charlton Athletic F.C",
+      "event_name": "EFL Championship 2026-27"
+    },
+    {
+      "match_id": "4247654",
+      "match_name": "Rcd Espanyol Vs Atletico De Madrid",
+      "title": "Rcd Espanyol Vs Atletico De Madrid",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247654_53004_ESL_ATM_FC-Web.png",
+      "language": "English",
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247654_english_hls_1d793785a64913_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE"
+    },
+    {
+      "match_id": "4249193",
+      "match_name": "Arsenal Women Vs Birmingham City F.c. Women",
+      "title": "Arsenal Women Vs Birmingham City F.c. Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249193_53038_ARS-W_BIR-W_fc-web_1791063400607.jpg",
+      "language": "English",
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249193_english_hls_cd9dc0f84b20122_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "05:15:00 PM 17-10-2026",
+      "team_1": "Arsenal Women",
+      "team_2": "Birmingham City F.C. Women",
+      "event_name": "Barclays Women's Super League 2026-27"
     },
     {
       "match_id": "4250147",
@@ -68,55 +120,17 @@
     },
     {
       "match_id": "4248850",
-      "match_name": "Zverev Vs Davidovich Fokina",
-      "title": "Zverev Vs Davidovich Fokina",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Zverev-vs-Alejandro_Web-match-card.png",
+      "match_name": "Jodar Vs Medvedev",
+      "title": "Jodar Vs Medvedev",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Medvedev-vs-Rafael-Jodar_web.png",
       "language": "English",
       "event_category": "Tennis",
       "stream_url": "https://dai-fancode.pages.dev/mumbai/4248850_english_hls_afb00f47fc75782_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE",
       "startTime": "02:00:00 PM 17-10-2026",
-      "team_1": "Zverev vs Davidovich Fokina",
+      "team_1": "Jodar vs Medvedev",
       "team_2": "Shanghai, China",
       "event_name": "ATP Masters - Rolex Shanghai Masters"
-    },
-    {
-      "match_id": "4249837",
-      "match_name": "Central Coast Mariners Vs Newcastle Jets",
-      "title": "Central Coast Mariners Vs Newcastle Jets",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249837_53101_CCM_NJ_fc-Web_1792223292109.jpg",
-      "language": "English",
-      "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249837_english_hls_2ec3b96d3e34507_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "02:10:00 PM 17-10-2026",
-      "team_1": "Central Coast Mariners",
-      "team_2": "Newcastle Jets",
-      "event_name": "A-League 2026-27"
-    },
-    {
-      "match_id": 4249694,
-      "title": "Bangladesh vs Zimbabwe (Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026)",
-      "match_name": "Bangladesh vs Zimbabwe",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249694_53089_BAN_ZIM_FC-WEB_1792056447852.jpg",
-      "event_category": "Cricket",
-      "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026",
-      "language": "English",
-      "startTime": "05:00:00 PM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250227,
-      "title": "TSV Malmsheim vs ICA Berlin (GSL Championship 2026)",
-      "match_name": "TSV Malmsheim vs ICA Berlin",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250227_53117_TSV_ICAB_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "GSL Championship 2026",
-      "language": "English",
-      "startTime": "04:00:00 PM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
     },
     {
       "match_id": 4250228,
@@ -127,6 +141,30 @@
       "event_name": "GSL Championship 2026",
       "language": "English",
       "startTime": "06:00:00 PM 17-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249782,
+      "title": "South Africa vs Australia (Australia tour of South Africa, 2026)",
+      "match_name": "South Africa vs Australia",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/AUS-vs-SA-test_Web-match-card.png",
+      "event_category": "Cricket",
+      "event_name": "Australia tour of South Africa, 2026",
+      "language": "English",
+      "startTime": "01:30:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250161,
+      "title": "Australia Women vs New Zealand Women (New Zealand Women tour of Australia, 2026)",
+      "match_name": "Australia Women vs New Zealand Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Australia-vs-New-Zealand-T20I-Series-old-match-card.png",
+      "event_category": "Cricket",
+      "event_name": "New Zealand Women tour of Australia, 2026",
+      "language": "English",
+      "startTime": "01:45:00 PM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -144,9 +182,9 @@
     },
     {
       "match_id": 4250184,
-      "title": "TBC vs TBC (Atlanta Open T20 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "title": "Prime Raider Gladiators vs Bay Blazers (Atlanta Open T20 2026)",
+      "match_name": "Prime Raider Gladiators vs Bay Blazers",
+      "src": "https://images.fancode.com/aig/match/v1792229081213/4250184_CASACARDS_APP.png",
       "event_category": "Cricket",
       "event_name": "Atlanta Open T20 2026",
       "language": "English",
@@ -167,30 +205,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249595,
-      "title": "Watford F.C. vs Charlton Athletic F.C (EFL Championship 2026-27)",
-      "match_name": "Watford F.C. vs Charlton Athletic F.C",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249595_52993_WAT_CHL_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "EFL Championship 2026-27",
-      "language": "English",
-      "startTime": "05:00:00 PM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4247654,
-      "title": "RCD Espanyol vs Atletico de Madrid (LALIGA 2026-27)",
-      "match_name": "RCD Espanyol vs Atletico de Madrid",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247654_53004_ESL_ATM_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "05:30:00 PM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250194,
       "title": "Atlanta Fire Women vs Southern Strikers Women (Atlanta Open Women's T20 2026)",
       "match_name": "Atlanta Fire Women vs Southern Strikers Women",
@@ -199,6 +213,18 @@
       "event_name": "Atlanta Open Women's T20 2026",
       "language": "English",
       "startTime": "11:30:00 PM 17-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250185,
+      "title": "Atlanta Fire vs Atlanta Lightning (Atlanta Open T20 2026)",
+      "match_name": "Atlanta Fire vs Atlanta Lightning",
+      "src": "https://images.fancode.com/aig/match/v1792229167696/4250185_CASACARDS_APP.png",
+      "event_category": "Cricket",
+      "event_name": "Atlanta Open T20 2026",
+      "language": "English",
+      "startTime": "11:45:00 PM 17-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -223,18 +249,6 @@
       "event_name": "LALIGA 2026-27",
       "language": "English",
       "startTime": "07:45:00 PM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250185,
-      "title": "TBC vs TBC (Atlanta Open T20 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "Atlanta Open T20 2026",
-      "language": "English",
-      "startTime": "11:45:00 PM 17-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -275,30 +289,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249782,
-      "title": "South Africa vs Australia (Australia tour of South Africa, 2026)",
-      "match_name": "South Africa vs Australia",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/AUS-vs-SA-test_Web-match-card.png",
-      "event_category": "Cricket",
-      "event_name": "Australia tour of South Africa, 2026",
-      "language": "English",
-      "startTime": "01:30:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250161,
-      "title": "Australia Women vs New Zealand Women (New Zealand Women tour of Australia, 2026)",
-      "match_name": "Australia Women vs New Zealand Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Australia-vs-New-Zealand-T20I-Series-old-match-card.png",
-      "event_category": "Cricket",
-      "event_name": "New Zealand Women tour of Australia, 2026",
-      "language": "English",
-      "startTime": "01:45:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4249799,
       "title": "Brisbane Heat Women vs Adelaide Strikers Women (T20 Spring Challenge, 2026)",
       "match_name": "Brisbane Heat Women vs Adelaide Strikers Women",
@@ -323,14 +313,26 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249193,
-      "title": "Arsenal Women vs Birmingham City F.C. Women (Barclays Women's Super League 2026-27)",
-      "match_name": "Arsenal Women vs Birmingham City F.C. Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249193_53038_ARS-W_BIR-W_fc-web_1791063400607.jpg",
-      "event_category": "Football",
-      "event_name": "Barclays Women's Super League 2026-27",
+      "match_id": 4250212,
+      "title": "Uganda A vs Jersey (Jersey tour of Uganda A 2026)",
+      "match_name": "Uganda A vs Jersey",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Jersey-tour-of-Uganda-A-2026_Web_1080_x_810.jpg",
+      "event_category": "Cricket",
+      "event_name": "Jersey tour of Uganda A 2026",
       "language": "English",
-      "startTime": "05:15:00 PM 17-10-2026",
+      "startTime": "12:30:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250230,
+      "title": "TBC vs TBC (GSL Championship 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "GSL Championship 2026",
+      "language": "English",
+      "startTime": "12:30:00 PM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -355,30 +357,6 @@
       "event_name": "LALIGA Hypermotion 2026-27",
       "language": "English",
       "startTime": "12:30:00 AM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250212,
-      "title": "Uganda A vs Jersey (Jersey tour of Uganda A 2026)",
-      "match_name": "Uganda A vs Jersey",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Jersey-tour-of-Uganda-A-2026_Web_1080_x_810.jpg",
-      "event_category": "Cricket",
-      "event_name": "Jersey tour of Uganda A 2026",
-      "language": "English",
-      "startTime": "12:30:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250230,
-      "title": "TBC vs TBC (GSL Championship 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "GSL Championship 2026",
-      "language": "English",
-      "startTime": "12:30:00 PM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -419,6 +397,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249230,
+      "title": "England Champions vs West Indies Champions (World Championship of Legends, 2026)",
+      "match_name": "England Champions vs West Indies Champions",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/WCL_web-match-card.png",
+      "event_category": "Cricket",
+      "event_name": "World Championship of Legends, 2026",
+      "language": "English",
+      "startTime": "09:00:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4247657,
       "title": "CA Osasuna vs Racing Club de Santander (LALIGA 2026-27)",
       "match_name": "CA Osasuna vs Racing Club de Santander",
@@ -431,18 +421,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249230,
-      "title": "England Champions vs West Indies Champions (World Championship of Legends, 2026)",
-      "match_name": "England Champions vs West Indies Champions",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "World Championship of Legends, 2026",
-      "language": "English",
-      "startTime": "09:00:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250233,
       "title": "TBC vs TBC (GSL Championship 2026)",
       "match_name": "TBC vs TBC",
@@ -451,18 +429,6 @@
       "event_name": "GSL Championship 2026",
       "language": "English",
       "startTime": "06:30:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249838,
-      "title": "Wellington Phoenix vs Melbourne Victory (A-League 2026-27)",
-      "match_name": "Wellington Phoenix vs Melbourne Victory",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249838_53101_WEL_MLV_fc-Web_1792223292037.jpg",
-      "event_category": "Football",
-      "event_name": "A-League 2026-27",
-      "language": "English",
-      "startTime": "07:30:00 AM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -499,6 +465,42 @@
       "event_name": "LALIGA 2026-27",
       "language": "English",
       "startTime": "07:45:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249194,
+      "title": "Aston Villa Women vs Liverpool Women (Barclays Women's Super League 2026-27)",
+      "match_name": "Aston Villa Women vs Liverpool Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249194_53038_AST-W_LIV-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "Barclays Women's Super League 2026-27",
+      "language": "English",
+      "startTime": "06:30:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249195,
+      "title": "Charlton Athletic F.C Women vs Manchester United Women (Barclays Women's Super League 2026-27)",
+      "match_name": "Charlton Athletic F.C Women vs Manchester United Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249195_53038_CHL-W_MUN-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "Barclays Women's Super League 2026-27",
+      "language": "English",
+      "startTime": "06:30:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249198,
+      "title": "London City Lionesses vs Everton Women (Barclays Women's Super League 2026-27)",
+      "match_name": "London City Lionesses vs Everton Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249198_53038_LCL_EVE-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "Barclays Women's Super League 2026-27",
+      "language": "English",
+      "startTime": "06:30:00 PM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }

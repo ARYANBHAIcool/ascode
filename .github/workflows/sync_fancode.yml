@@ -2,8 +2,9 @@ name: Auto-Sync FanCode Feeds
 
 on:
   schedule:
-    # 20-minute schedule: only commits on actual stream/match changes (~15-35 commits/day like doctor-8trange)
-    - cron: '*/20 * * * *'
+    # Staggered schedules to avoid GitHub Actions runner queue stalls; change-gated commits prevent spam
+    - cron: '*/10 * * * *'
+    - cron: '4,14,24,34,44,54 * * * *'
   workflow_dispatch:
   repository_dispatch:
     types: [sync-fancode, refresh, ping]

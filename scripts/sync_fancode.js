@@ -228,7 +228,7 @@ async function main() {
         const timestamp = new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' });
         try {
             try {
-                execSync('git pull --rebase ascode main', { cwd: root, stdio: 'ignore' });
+                execSync('git fetch ascode main && (git rebase -X theirs ascode/main || git rebase --abort)', { cwd: root, stdio: 'ignore' });
             } catch (e) {}
 
             execSync('git add data/fancode.m3u data/fancode.json', { cwd: root });
@@ -241,14 +241,22 @@ async function main() {
                 try {
                     execSync('git push ascode main', { stdio: 'inherit', cwd: root });
                 } catch (e) {
-                    console.warn('Push to ascode failed:', e.message);
+                    try {
+                        execSync('git fetch ascode main && git rebase -X theirs ascode/main && git push ascode main', { cwd: root, stdio: 'ignore' });
+                    } catch (e2) {
+                        console.warn('Push to ascode failed:', e.message);
+                    }
                 }
 
                 console.log('🚀 Pushing to origin remote (aryanstreamss)...');
                 try {
                     execSync('git push origin main', { stdio: 'inherit', cwd: root });
                 } catch (e) {
-                    console.warn('Push to origin failed:', e.message);
+                    try {
+                        execSync('git fetch origin main && git rebase -X theirs origin/main && git push origin main', { cwd: root, stdio: 'ignore' });
+                    } catch (e2) {
+                        console.warn('Push to origin failed:', e.message);
+                    }
                 }
 
                 console.log('✨ ascode FanCode feed successfully committed and pushed!');
