@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/18/2026, 3:56:16 AM IST",
+  "last_updated": "10/17/2026, 11:44:35 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 1,
+  "live_matches": 5,
   "matches": [
     {
       "match_id": "4250185",
@@ -18,6 +18,26 @@
       "language": "English",
       "event_category": "Cricket",
       "stream_url": "https://dai-fancode.pages.dev/mumbai/4250185_english_hls_a509ae280421361_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE"
+    },
+    {
+      "match_id": "4250194",
+      "match_name": "Atlanta Fire Women Vs Southern Strikers Women",
+      "title": "Atlanta Fire Women Vs Southern Strikers Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250194_53114_AF-W_SS-W_fc-web.jpg",
+      "language": "English",
+      "event_category": "Cricket",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250194_english_hls_68a180ec8219959_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE"
+    },
+    {
+      "match_id": "4247656",
+      "match_name": "Real Betis Vs Fc Barcelona",
+      "title": "Real Betis Vs Fc Barcelona",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247656_53004_RB_BAR_FC-Web.png",
+      "language": "English",
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247656_english_hls_79ab3598bc32108_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE"
     },
     {
@@ -48,10 +68,24 @@
       "event_name": "New Zealand Women tour of Australia, 2026"
     },
     {
-      "match_id": "4250185",
-      "match_name": "Atlanta Fire Vs Atlanta Lightning",
-      "title": "Atlanta Fire Vs Atlanta Lightning",
-      "src": "https://images.fancode.com/aig/match/v1792229167696/4250185_CASACARDS_SPORTY_APP.png",
+      "match_id": 4247655,
+      "title": "Valencia CF vs Athletic Club (LALIGA 2026-27)",
+      "match_name": "Valencia CF vs Athletic Club",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247655_53004_VAL_ATH_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA Hypermotion 2026-27",
+      "language": "English",
+      "startTime": "12:30:00 AM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249996,
+      "title": "Las Palmas vs Castellón (LALIGA Hypermotion 2026-27)",
+      "match_name": "Las Palmas vs Castellón",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249996_53017_LAP_CAS_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA 2026-27",
       "language": "English",
       "event_category": "Cricket",
       "stream_url": "https://dai-fancode.pages.dev/mumbai/4250212_english_hls_caf8bc89be97545_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
@@ -142,10 +176,10 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249799,
-      "title": "Brisbane Heat Women vs Adelaide Strikers Women (T20 Spring Challenge, 2026)",
-      "match_name": "Brisbane Heat Women vs Adelaide Strikers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249799_53097_BH-W_AS-W_FC-Web_1791883788852.png",
+      "match_id": 4249798,
+      "title": "Melbourne Renegades Women vs Hobart Hurricanes Women (T20 Spring Challenge, 2026)",
+      "match_name": "Melbourne Renegades Women vs Hobart Hurricanes Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249798_53097_MR-W_HB-W_FC-Web_1791883788092.png",
       "event_category": "Cricket",
       "event_name": "T20 Spring Challenge, 2026",
       "language": "English",
@@ -162,18 +196,6 @@
       "event_name": "Sheffield Shield, 2026/27",
       "language": "English",
       "startTime": "05:00:00 AM 19-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249800,
-      "title": "Sydney Thunder Women vs Perth Scorchers Women (T20 Spring Challenge, 2026)",
-      "match_name": "Sydney Thunder Women vs Perth Scorchers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249800_53097_ST-W_PS-W_FC-Web_1791883788884.png",
-      "event_category": "Cricket",
-      "event_name": "Sheffield Shield, 2026/27",
-      "language": "English",
-      "startTime": "05:30:00 AM 19-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -250,18 +272,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4247657,
-      "title": "CA Osasuna vs Racing Club de Santander (LALIGA 2026-27)",
-      "match_name": "CA Osasuna vs Racing Club de Santander",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247657_53004_OSN_RAC_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "05:30:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4247648,
       "title": "RC Celta vs Deportivo Alaves (LALIGA 2026-27)",
       "match_name": "RC Celta vs Deportivo Alaves",
@@ -270,18 +280,6 @@
       "event_name": "LALIGA 2026-27",
       "language": "English",
       "startTime": "07:45:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250232,
-      "title": "TBC vs TBC (GSL Championship 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "GSL Championship 2026",
-      "language": "English",
-      "startTime": "11:00:00 AM 19-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -298,36 +296,12 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250195,
-      "title": "TBC vs TBC (Atlanta Open Women's T20 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "Atlanta Open Women's T20 2026",
-      "language": "English",
-      "startTime": "11:00:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250186,
-      "title": "TBC vs TBC (Atlanta Open T20 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "Atlanta Open T20 2026",
-      "language": "English",
-      "startTime": "11:45:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249665,
-      "title": "Tasmania vs Victoria (Sheffield Shield, 2026/27)",
-      "match_name": "Tasmania vs Victoria",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249665_53087_TAS_VCT_FC-WEB_1791295173197.jpg",
-      "event_category": "Cricket",
-      "event_name": "Sheffield Shield, 2026/27",
+      "match_id": 4247651,
+      "title": "Real Madrid vs Sevilla FC (LALIGA 2026-27)",
+      "match_name": "Real Madrid vs Sevilla FC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247651_53004_RM_SEV_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA 2026-27",
       "language": "English",
       "startTime": "11:00:00 PM 18-10-2026",
       "status": "UPCOMING",
@@ -486,6 +460,18 @@
       "event_name": "Barclays Women's Super League 2026-27",
       "language": "English",
       "startTime": "06:30:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250195,
+      "title": "TBC vs TBC (Atlanta Open Women's T20 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "Atlanta Open Women's T20 2026",
+      "language": "English",
+      "startTime": "11:00:00 PM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
