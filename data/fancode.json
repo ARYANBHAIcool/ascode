@@ -2,7 +2,7 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/17/2026, 9:44:22 PM IST",
+  "last_updated": "10/17/2026, 10:04:23 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -59,16 +59,6 @@
       "event_name": "GSL Championship 2026"
     },
     {
-      "match_id": "4247652",
-      "match_name": "Villarreal Cf Vs Elche Cf",
-      "title": "Villarreal Cf Vs Elche Cf",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247652_53004_VIL_ELC_FC-Web.png",
-      "language": "English",
-      "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247652_english_hls_b8a9b1b87365621_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE"
-    },
-    {
       "match_id": "4247656",
       "match_name": "Real Betis Vs Fc Barcelona",
       "title": "Real Betis Vs Fc Barcelona",
@@ -77,20 +67,6 @@
       "event_category": "Football",
       "stream_url": "https://dai-fancode.pages.dev/mumbai/4247656_english_hls_79ab3598bc32108_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE"
-    },
-    {
-      "match_id": "4249995",
-      "match_name": "Eibar Vs Rcd Mallorca",
-      "title": "Eibar Vs Rcd Mallorca",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249995_53017_EIB_MRC_FC-Web.png",
-      "language": "English",
-      "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249995_english_hls_d29c6a2bb331564_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "07:35:00 PM 17-10-2026",
-      "team_1": "Eibar",
-      "team_2": "RCD Mallorca",
-      "event_name": "LALIGA Hypermotion 2026-27"
     },
     {
       "match_id": "4250147",
@@ -105,6 +81,28 @@
       "team_1": "Semi-Final",
       "team_2": "Denmark",
       "event_name": "BWF Super 750 - Denmark Open 2026"
+    },
+    {
+      "match_id": "4247652",
+      "match_name": "Villarreal Cf Vs Elche Cf",
+      "title": "Villarreal Cf Vs Elche Cf",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247652_53004_VIL_ELC_FC-Web.png",
+      "language": "English",
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247652_english_hls_b8a9b1b87365621_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE"
+    },
+    {
+      "match_id": "4249995_ENG",
+      "title": "LALIGA Hypermotion 2026-27 [English]",
+      "match_name": "Eibar vs RCD Mallorca [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249995_53017_EIB_MRC_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA Hypermotion 2026-27",
+      "language": "English",
+      "startTime": "07:35:00 PM 17-10-2026",
+      "status": "LIVE",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249995_english_hls_d29c6a2bb331564_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/"
     },
     {
       "match_id": 4249782,
@@ -227,18 +225,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249801,
-      "title": "Sydney Sixers Women vs Melbourne Stars Women (T20 Spring Challenge, 2026)",
-      "match_name": "Sydney Sixers Women vs Melbourne Stars Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249801_53097_SS-W_MS-W_FC-Web_1791883788158.png",
-      "event_category": "Cricket",
-      "event_name": "T20 Spring Challenge, 2026",
-      "language": "English",
-      "startTime": "01:30:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4249230,
       "title": "England Champions vs West Indies Champions (World Championship of Legends, 2026)",
       "match_name": "England Champions vs West Indies Champions",
@@ -247,6 +233,18 @@
       "event_name": "World Championship of Legends, 2026",
       "language": "English",
       "startTime": "09:00:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249801,
+      "title": "Sydney Sixers Women vs Melbourne Stars Women (T20 Spring Challenge, 2026)",
+      "match_name": "Sydney Sixers Women vs Melbourne Stars Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249801_53097_SS-W_MS-W_FC-Web_1791883788158.png",
+      "event_category": "Cricket",
+      "event_name": "T20 Spring Challenge, 2026",
+      "language": "English",
+      "startTime": "01:30:00 PM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
