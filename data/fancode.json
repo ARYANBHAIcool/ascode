@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/17/2026, 11:04:25 PM IST",
+  "last_updated": "10/17/2026, 11:24:28 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 4,
+  "live_matches": 3,
   "matches": [
     {
       "match_id": "4249694",
@@ -32,16 +32,6 @@
       "language": "English",
       "event_category": "Cricket",
       "stream_url": "https://dai-fancode.pages.dev/mumbai/4250184_english_hls_6e682a91aa711_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE"
-    },
-    {
-      "match_id": "4250193",
-      "match_name": "Hurricanes Women Vs Seattle Thunders Women",
-      "title": "Hurricanes Women Vs Seattle Thunders Women",
-      "src": "https://images.fancode.com/aig/match/v1792240672389/4250193_CASACARDS_SPORTY_APP.png",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250193_english_hls_1bafff515c65468_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE"
     },
     {
@@ -115,6 +105,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249230,
+      "title": "England Champions vs West Indies Champions (World Championship of Legends, 2026)",
+      "match_name": "England Champions vs West Indies Champions",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/WCL_web-match-card.png",
+      "event_category": "Cricket",
+      "event_name": "World Championship of Legends, 2026",
+      "language": "English",
+      "startTime": "09:00:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4247655,
       "title": "Valencia CF vs Athletic Club (LALIGA 2026-27)",
       "match_name": "Valencia CF vs Athletic Club",
@@ -147,18 +149,6 @@
       "event_name": "T20 Spring Challenge, 2026",
       "language": "English",
       "startTime": "09:00:00 AM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249230,
-      "title": "England Champions vs West Indies Champions (World Championship of Legends, 2026)",
-      "match_name": "England Champions vs West Indies Champions",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/WCL_web-match-card.png",
-      "event_category": "Cricket",
-      "event_name": "World Championship of Legends, 2026",
-      "language": "English",
-      "startTime": "09:00:00 PM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -235,18 +225,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249996,
-      "title": "Las Palmas vs Castellón (LALIGA Hypermotion 2026-27)",
-      "match_name": "Las Palmas vs Castellón",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249996_53017_LAP_CAS_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA Hypermotion 2026-27",
-      "language": "English",
-      "startTime": "12:30:00 AM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250233,
       "title": "TBC vs TBC (GSL Championship 2026)",
       "match_name": "TBC vs TBC",
@@ -255,6 +233,18 @@
       "event_name": "GSL Championship 2026",
       "language": "English",
       "startTime": "06:30:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249996,
+      "title": "Las Palmas vs Castellón (LALIGA Hypermotion 2026-27)",
+      "match_name": "Las Palmas vs Castellón",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249996_53017_LAP_CAS_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA Hypermotion 2026-27",
+      "language": "English",
+      "startTime": "12:30:00 AM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -403,6 +393,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249665,
+      "title": "Tasmania vs Victoria (Sheffield Shield, 2026/27)",
+      "match_name": "Tasmania vs Victoria",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249665_53087_TAS_VCT_FC-WEB_1791295173197.jpg",
+      "event_category": "Cricket",
+      "event_name": "Sheffield Shield, 2026/27",
+      "language": "English",
+      "startTime": "05:00:00 AM 19-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249838,
       "title": "Wellington Phoenix vs Melbourne Victory (A-League 2026-27)",
       "match_name": "Wellington Phoenix vs Melbourne Victory",
@@ -415,14 +417,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249665,
-      "title": "Tasmania vs Victoria (Sheffield Shield, 2026/27)",
-      "match_name": "Tasmania vs Victoria",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249665_53087_TAS_VCT_FC-WEB_1791295173197.jpg",
+      "match_id": 4249666,
+      "title": "South Australia vs Queensland (Sheffield Shield, 2026/27)",
+      "match_name": "South Australia vs Queensland",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249666_53087_SAU_QUN_FC-WEB_1791299735359.jpg",
       "event_category": "Cricket",
       "event_name": "Sheffield Shield, 2026/27",
       "language": "English",
-      "startTime": "05:00:00 AM 19-10-2026",
+      "startTime": "05:30:00 AM 19-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -475,14 +477,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249666,
-      "title": "South Australia vs Queensland (Sheffield Shield, 2026/27)",
-      "match_name": "South Australia vs Queensland",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249666_53087_SAU_QUN_FC-WEB_1791299735359.jpg",
-      "event_category": "Cricket",
-      "event_name": "Sheffield Shield, 2026/27",
+      "match_id": 4250148,
+      "title": "Finals vs Denmark (BWF Super 750 - Denmark Open 2026)",
+      "match_name": "Finals",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/badminton_FC-W.png",
+      "event_category": "Badminton",
+      "event_name": "BWF Super 750 - Denmark Open 2026",
       "language": "English",
-      "startTime": "05:30:00 AM 19-10-2026",
+      "startTime": "03:30:00 PM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
