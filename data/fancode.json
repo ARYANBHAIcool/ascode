@@ -31,12 +31,18 @@
       "src": "https://www.fancode.com/skillup-uploads/cms-media/AUS-vs-SA-test_Web-match-card.png",
       "language": "English",
       "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249798_english_hls_709c1fbb024496_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "04:30:00 AM 18-10-2026",
-      "team_1": "Hobart Hurricanes Women",
-      "team_2": "Melbourne Renegades Women",
-      "event_name": "T20 Spring Challenge, 2026"
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250184_english_hls_6e682a91aa711_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE"
+    },
+    {
+      "match_id": "4250185",
+      "match_name": "Atlanta Fire Vs Atlanta Lightning",
+      "title": "Atlanta Fire Vs Atlanta Lightning",
+      "src": "https://images.fancode.com/aig/match/v1792229167696/4250185_CASACARDS_SPORTY_APP.png",
+      "language": "English",
+      "event_category": "Cricket",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250185_english_hls_a509ae280421361_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE"
     },
     {
       "match_id": 4249782,
@@ -253,18 +259,6 @@
       "event_name": "GSL Championship 2026",
       "language": "English",
       "startTime": "08:00:00 AM 19-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4247657,
-      "title": "CA Osasuna vs Racing Club de Santander (LALIGA 2026-27)",
-      "match_name": "CA Osasuna vs Racing Club de Santander",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247657_53004_OSN_RAC_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "05:30:00 PM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -581,14 +575,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249754,
-      "title": "Uganda vs Zambia (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
-      "match_name": "Uganda vs Zambia",
+      "match_id": 4250474,
+      "title": "Sharjah vs Dubai (Emirates D20, 2026)",
+      "match_name": "Sharjah vs Dubai",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
       "event_category": "Cricket",
-      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
+      "event_name": "Emirates D20, 2026",
       "language": "English",
-      "startTime": "02:30:00 PM 20-10-2026",
+      "startTime": "06:00:00 PM 19-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
