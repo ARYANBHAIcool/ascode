@@ -2,12 +2,12 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/17/2026, 7:44:16 PM IST",
+  "last_updated": "10/17/2026, 8:04:14 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 40,
+  "total_matches": 39,
   "live_matches": 10,
   "matches": [
     {
@@ -59,6 +59,20 @@
       "status": "LIVE"
     },
     {
+      "match_id": "4250229",
+      "match_name": "Tsv Malmsheim Vs Thcc Rot Gelb Hamburg",
+      "title": "Tsv Malmsheim Vs Thcc Rot Gelb Hamburg",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250229_53117_TSV_THCC_fc-web.jpg",
+      "language": "English",
+      "event_category": "Cricket",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250229_english_hls_6d519fe2a710378_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "08:00:00 PM 17-10-2026",
+      "team_1": "TSV Malmsheim",
+      "team_2": "THCC Rot-Gelb Hamburg",
+      "event_name": "GSL Championship 2026"
+    },
+    {
       "match_id": "4249596",
       "match_name": "Norwich City F.c. Vs Portsmouth F.c.",
       "title": "Norwich City F.c. Vs Portsmouth F.c.",
@@ -81,20 +95,6 @@
       "event_category": "Football",
       "stream_url": "https://dai-fancode.pages.dev/mumbai/4247652_english_hls_b8a9b1b87365621_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE"
-    },
-    {
-      "match_id": "4249193",
-      "match_name": "Arsenal Women Vs Birmingham City F.c. Women",
-      "title": "Arsenal Women Vs Birmingham City F.c. Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249193_53038_ARS-W_BIR-W_fc-web_1791063400607.jpg",
-      "language": "English",
-      "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249193_english_hls_cd9dc0f84b20122_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "05:15:00 PM 17-10-2026",
-      "team_1": "Arsenal Women",
-      "team_2": "Birmingham City F.C. Women",
-      "event_name": "Barclays Women's Super League 2026-27"
     },
     {
       "match_id": "4249995",
@@ -125,26 +125,16 @@
       "event_name": "BWF Super 750 - Denmark Open 2026"
     },
     {
-      "match_id": "4247654",
-      "match_name": "Rcd Espanyol Vs Atletico De Madrid",
-      "title": "Rcd Espanyol Vs Atletico De Madrid",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247654_53004_ESL_ATM_FC-Web.png",
-      "language": "English",
+      "match_id": "4249193_ENG",
+      "title": "Barclays Women's Super League 2026-27 [English]",
+      "match_name": "Arsenal Women vs Birmingham City F.C. Women [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249193_53038_ARS-W_BIR-W_fc-web_1791063400607.jpg",
       "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247654_english_hls_1d793785a64913_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE"
-    },
-    {
-      "match_id": 4250229,
-      "title": "TSV Malmsheim vs THCC Rot-Gelb Hamburg (GSL Championship 2026)",
-      "match_name": "TSV Malmsheim vs THCC Rot-Gelb Hamburg",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250229_53117_TSV_THCC_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "GSL Championship 2026",
+      "event_name": "Barclays Women's Super League 2026-27",
       "language": "English",
-      "startTime": "08:00:00 PM 17-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
+      "startTime": "05:15:00 PM 17-10-2026",
+      "status": "LIVE",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249193_english_hls_cd9dc0f84b20122_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/"
     },
     {
       "match_id": 4249782,
