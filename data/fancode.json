@@ -2,42 +2,14 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/17/2026, 11:44:35 PM IST",
+  "last_updated": "10/18/2026, 1:54:09 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 5,
+  "live_matches": 4,
   "matches": [
-    {
-      "match_id": "4249665",
-      "match_name": "Tasmania Vs Victoria",
-      "title": "Tasmania Vs Victoria",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249665_53087_TAS_VCT_FC-WEB_1791295173197.jpg",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249665_english_hls_910773056359591_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "05:00:00 AM 19-10-2026",
-      "team_1": "Tasmania",
-      "team_2": "Victoria",
-      "event_name": "Sheffield Shield, 2026/27"
-    },
-    {
-      "match_id": "4249666",
-      "match_name": "South Australia Vs Queensland",
-      "title": "South Australia Vs Queensland",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249666_53087_SAU_QUN_FC-WEB_1791299735359.jpg",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249666_english_hls_b5f24432ee17869_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "05:30:00 AM 19-10-2026",
-      "team_1": "South Australia",
-      "team_2": "Queensland",
-      "event_name": "Sheffield Shield, 2026/27"
-    },
     {
       "match_id": "4250185",
       "match_name": "Atlanta Fire Vs Atlanta Lightning",
@@ -59,46 +31,28 @@
       "status": "LIVE"
     },
     {
-      "match_id": "4247656",
-      "match_name": "Real Betis Vs Fc Barcelona",
-      "title": "Real Betis Vs Fc Barcelona",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247656_53004_RB_BAR_FC-Web.png",
+      "match_id": "4247655",
+      "match_name": "Valencia Cf Vs Athletic Club",
+      "title": "Valencia Cf Vs Athletic Club",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247655_53004_VAL_ATH_FC-Web.png",
       "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249667_english_hls_27a33faf8092749_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "08:00:00 AM 19-10-2026",
-      "team_1": "New South Wales",
-      "team_2": "Western Australia",
-      "event_name": "Sheffield Shield, 2026/27"
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247655_english_hls_4ff4987e5f35919_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE"
     },
     {
-      "match_id": "4249803",
-      "match_name": "Sydney Thunder Women Vs Sydney Sixers Women",
-      "title": "Sydney Thunder Women Vs Sydney Sixers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Semiinal2web.png",
+      "match_id": "4249996",
+      "match_name": "Las Palmas Vs Castellón",
+      "title": "Las Palmas Vs Castellón",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249996_53017_LAP_CAS_FC-Web.png",
       "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249803_english_hls_92b4be285d73803_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249996_english_hls_a8e78e5a1f3532_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE",
-      "startTime": "09:00:00 AM 20-10-2026",
-      "team_1": "Sydney Thunder Women",
-      "team_2": "Sydney Sixers Women",
-      "event_name": "T20 Spring Challenge, 2026"
-    },
-    {
-      "match_id": "4249608",
-      "match_name": "Day 2   World Feed",
-      "title": "Day 2   World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-Web_1792392838118.png",
-      "language": "English",
-      "event_category": "Tennis",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249608_english_hls_a2345ca73095655_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "12:00:00 PM 20-10-2026",
-      "team_1": "Day 2 - World Feed",
-      "team_2": "Almaty, Kazakhstan",
-      "event_name": "ATP 250 - Almaty Open 2026"
+      "startTime": "12:30:00 AM 18-10-2026",
+      "team_1": "Las Palmas",
+      "team_2": "Castellón",
+      "event_name": "LALIGA Hypermotion 2026-27"
     },
     {
       "match_id": 4249782,
@@ -131,18 +85,6 @@
       "src": "https://www.fancode.com/skillup-uploads/cms-media/4247655_53004_VAL_ATH_FC-Web.png",
       "event_category": "Football",
       "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "12:30:00 AM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249996,
-      "title": "Las Palmas vs Castellón (LALIGA Hypermotion 2026-27)",
-      "match_name": "Las Palmas vs Castellón",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249996_53017_LAP_CAS_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA Hypermotion 2026-27",
       "language": "English",
       "startTime": "12:30:00 AM 18-10-2026",
       "status": "UPCOMING",
@@ -257,6 +199,30 @@
       "stream_url": ""
     },
     {
+      "match_id": 4247649,
+      "title": "Malaga vs Real Sociedad (LALIGA 2026-27)",
+      "match_name": "Malaga vs Real Sociedad",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247649_53004_MAG_RS_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA 2026-27",
+      "language": "English",
+      "startTime": "10:00:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250195,
+      "title": "TBC vs TBC (Atlanta Open Women's T20 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "Atlanta Open Women's T20 2026",
+      "language": "English",
+      "startTime": "11:00:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249196,
       "title": "Chelsea F.C. Women vs Tottenham Hotspur Women (Barclays Women's Super League 2026-27)",
       "match_name": "Chelsea F.C. Women vs Tottenham Hotspur Women",
@@ -281,14 +247,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4247649,
-      "title": "Malaga vs Real Sociedad (LALIGA 2026-27)",
-      "match_name": "Malaga vs Real Sociedad",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247649_53004_MAG_RS_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
+      "match_id": 4250186,
+      "title": "TBC vs TBC (Atlanta Open T20 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "Atlanta Open T20 2026",
       "language": "English",
-      "startTime": "10:00:00 PM 18-10-2026",
+      "startTime": "11:45:00 PM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -329,18 +295,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250195,
-      "title": "TBC vs TBC (Atlanta Open Women's T20 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "Atlanta Open Women's T20 2026",
-      "language": "English",
-      "startTime": "11:00:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4249199,
       "title": "Manchester City Women vs Brighton and Hove Albion Women (Barclays Women's Super League 2026-27)",
       "match_name": "Manchester City Women vs Brighton and Hove Albion Women",
@@ -361,18 +315,6 @@
       "event_name": "LALIGA Hypermotion 2026-27",
       "language": "English",
       "startTime": "07:45:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250186,
-      "title": "TBC vs TBC (Atlanta Open T20 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "Atlanta Open T20 2026",
-      "language": "English",
-      "startTime": "11:45:00 PM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -401,18 +343,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249838,
-      "title": "Wellington Phoenix vs Melbourne Victory (A-League 2026-27)",
-      "match_name": "Wellington Phoenix vs Melbourne Victory",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249838_53101_WEL_MLV_fc-Web_1792223292037.jpg",
-      "event_category": "Football",
-      "event_name": "A-League 2026-27",
-      "language": "English",
-      "startTime": "07:30:00 AM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4249666,
       "title": "South Australia vs Queensland (Sheffield Shield, 2026/27)",
       "match_name": "South Australia vs Queensland",
@@ -421,6 +351,18 @@
       "event_name": "Sheffield Shield, 2026/27",
       "language": "English",
       "startTime": "05:30:00 AM 19-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249838,
+      "title": "Wellington Phoenix vs Melbourne Victory (A-League 2026-27)",
+      "match_name": "Wellington Phoenix vs Melbourne Victory",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249838_53101_WEL_MLV_fc-Web_1792223292037.jpg",
+      "event_category": "Football",
+      "event_name": "A-League 2026-27",
+      "language": "English",
+      "startTime": "07:30:00 AM 18-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -473,22 +415,22 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250479,
-      "title": "Ajman vs Abu Dhabi (Emirates D20, 2026)",
-      "match_name": "Ajman vs Abu Dhabi",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250479_53130_AJM_ABD_fc-web_1792412930149.jpg",
+      "match_id": 4249667,
+      "title": "Western Australia vs New South Wales (Sheffield Shield, 2026/27)",
+      "match_name": "Western Australia vs New South Wales",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249667_53087_WAU_NSW_FC-WEB_1791299730396.jpg",
       "event_category": "Cricket",
-      "event_name": "Emirates D20, 2026",
+      "event_name": "Sheffield Shield, 2026/27",
       "language": "English",
-      "startTime": "10:00:00 PM 21-10-2026",
+      "startTime": "08:00:00 AM 19-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
     {
-      "match_id": 4250153,
-      "title": "Court 1 - Round 32 vs France (BWF Super 750 - French Open 2026)",
-      "match_name": "Court 1 - Round 32",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Default_Badminton-old.jpg",
+      "match_id": 4250148,
+      "title": "Finals vs Denmark (BWF Super 750 - Denmark Open 2026)",
+      "match_name": "Finals",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/badminton_FC-W.png",
       "event_category": "Badminton",
       "event_name": "BWF Super 750 - French Open 2026",
       "language": "English",
@@ -649,6 +591,30 @@
       "event_name": "ATP 250 - BNP Paribas Fortis European Open",
       "language": "English",
       "startTime": "03:30:00 PM 22-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250118,
+      "title": "Oman vs Nepal (ICC CWC League 2 Oman, 2026)",
+      "match_name": "Oman vs Nepal",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250118_53106_OMA_NEP_fc-web.png",
+      "event_category": "Cricket",
+      "event_name": "ICC CWC League 2 Oman, 2026",
+      "language": "English",
+      "startTime": "11:00:00 AM 19-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249695,
+      "title": "Afghanistan vs Zimbabwe (Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026)",
+      "match_name": "Afghanistan vs Zimbabwe",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249695_53089_AFG_ZIM_FC-Web_1792056447809.jpg",
+      "event_category": "Cricket",
+      "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026",
+      "language": "English",
+      "startTime": "05:00:00 PM 19-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
