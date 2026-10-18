@@ -2,7 +2,7 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/18/2026, 6:56:53 PM IST",
+  "last_updated": "10/18/2026, 7:01:58 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -70,20 +70,6 @@
       "startTime": "04:30:00 PM 18-10-2026",
       "team_1": "Chelsea F.C. Women",
       "team_2": "Tottenham Hotspur Women",
-      "event_name": "Barclays Women's Super League 2026-27"
-    },
-    {
-      "match_id": "4249197",
-      "match_name": "Crystal Palace Women Vs West Ham United Women",
-      "title": "Crystal Palace Women Vs West Ham United Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249197_53038_CP-W_WHU-W_fc-app.jpg",
-      "language": "English",
-      "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249197_english_hls_d2d502908f38300_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "04:30:00 PM 18-10-2026",
-      "team_1": "Crystal Palace Women",
-      "team_2": "West Ham United Women",
       "event_name": "Barclays Women's Super League 2026-27"
     },
     {
@@ -157,6 +143,18 @@
       "event_name": "BWF Super 750 - Denmark Open 2026"
     },
     {
+      "match_id": "4249197_ENG",
+      "title": "Barclays Women's Super League 2026-27 [English]",
+      "match_name": "Crystal Palace Women vs West Ham United Women [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249197_53038_CP-W_WHU-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "Barclays Women's Super League 2026-27",
+      "language": "English",
+      "startTime": "04:30:00 PM 18-10-2026",
+      "status": "LIVE",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249197_english_hls_d2d502908f38300_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/"
+    },
+    {
       "match_id": 4249230,
       "title": "England Champions vs West Indies Champions (World Championship of Legends, 2026)",
       "match_name": "England Champions vs West Indies Champions",
@@ -193,26 +191,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249799,
-      "title": "Brisbane Heat Women vs Adelaide Strikers Women (T20 Spring Challenge, 2026)",
-      "match_name": "Brisbane Heat Women vs Adelaide Strikers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249799_53097_BH-W_AS-W_FC-Web_1791883788852.png",
+      "match_id": 4249666,
+      "title": "South Australia vs Queensland (Sheffield Shield, 2026/27)",
+      "match_name": "South Australia vs Queensland",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249666_53087_SAU_QUN_FC-WEB_1791299735359.jpg",
       "event_category": "Cricket",
       "event_name": "Sheffield Shield, 2026/27",
       "language": "English",
-      "startTime": "05:00:00 AM 19-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249800,
-      "title": "Sydney Thunder Women vs Perth Scorchers Women (T20 Spring Challenge, 2026)",
-      "match_name": "Sydney Thunder Women vs Perth Scorchers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249800_53097_ST-W_PS-W_FC-Web_1791883788884.png",
-      "event_category": "Cricket",
-      "event_name": "T20 Spring Challenge, 2026",
-      "language": "English",
-      "startTime": "09:00:00 AM 18-10-2026",
+      "startTime": "05:30:00 AM 19-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -337,18 +323,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250148,
-      "title": "Finals vs Denmark (BWF Super 750 - Denmark Open 2026)",
-      "match_name": "Finals",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/badminton_FC-W.png",
-      "event_category": "Badminton",
-      "event_name": "BWF Super 750 - Denmark Open 2026",
-      "language": "English",
-      "startTime": "03:30:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250475,
       "title": "Emirates Red vs Abu Dhabi (Emirates D20, 2026)",
       "match_name": "Emirates Red vs Abu Dhabi",
@@ -438,21 +412,9 @@
       "match_name": "TBC vs TBC",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
       "event_category": "Cricket",
-      "event_name": "Emirates D20, 2026",
+      "event_name": "T20 Spring Challenge, 2026",
       "language": "English",
-      "startTime": "10:00:00 PM 19-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249665,
-      "title": "Tasmania vs Victoria (Sheffield Shield, 2026/27)",
-      "match_name": "Tasmania vs Victoria",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249665_53087_TAS_VCT_FC-WEB_1791295173197.jpg",
-      "event_category": "Cricket",
-      "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026",
-      "language": "English",
-      "startTime": "05:00:00 AM 19-10-2026",
+      "startTime": "04:30:00 AM 20-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -462,9 +424,9 @@
       "match_name": "TBC vs TBC",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
       "event_category": "Cricket",
-      "event_name": "Sheffield Shield, 2026/27",
+      "event_name": "T20 Spring Challenge, 2026",
       "language": "English",
-      "startTime": "05:30:00 AM 19-10-2026",
+      "startTime": "09:00:00 AM 20-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -476,7 +438,19 @@
       "event_category": "Cricket",
       "event_name": "New Zealand Women tour of Australia, 2026",
       "language": "English",
-      "startTime": "01:30:00 PM 18-10-2026",
+      "startTime": "01:45:00 PM 20-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249754,
+      "title": "Uganda vs Zambia (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
+      "match_name": "Uganda vs Zambia",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
+      "language": "English",
+      "startTime": "02:30:00 PM 20-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
