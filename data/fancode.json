@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/18/2026, 7:24:31 PM IST",
+  "last_updated": "10/18/2026, 7:44:26 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 11,
+  "live_matches": 12,
   "matches": [
     {
       "match_id": "4249694",
@@ -101,16 +101,6 @@
       "event_name": "GSL Championship 2026"
     },
     {
-      "match_id": "4247657",
-      "match_name": "Ca Osasuna Vs Racing Club De Santander",
-      "title": "Ca Osasuna Vs Racing Club De Santander",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247657_53004_OSN_RAC_FC-Web.png",
-      "language": "English",
-      "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247657_english_hls_84f99ae22f28550_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE"
-    },
-    {
       "match_id": "4247648",
       "match_name": "Rc Celta Vs Deportivo Alaves",
       "title": "Rc Celta Vs Deportivo Alaves",
@@ -119,20 +109,6 @@
       "event_category": "Football",
       "stream_url": "https://dai-fancode.pages.dev/mumbai/4247648_english_hls_5a63da381191948_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE"
-    },
-    {
-      "match_id": "4249196",
-      "match_name": "Chelsea F.c. Women Vs Tottenham Hotspur Women",
-      "title": "Chelsea F.c. Women Vs Tottenham Hotspur Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249196_53038_CHE-W_TOT-W_fc-app.jpg",
-      "language": "English",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "12:30:00 AM 18-10-2026",
-      "team_1": "Las Palmas",
-      "team_2": "Castellón",
-      "event_name": "LALIGA Hypermotion 2026-27"
     },
     {
       "match_id": "4249194",
@@ -191,14 +167,54 @@
       "event_name": "Barclays Women's Super League 2026-27"
     },
     {
+      "match_id": "4249997",
+      "match_name": "Granada Vs Cadiz",
+      "title": "Granada Vs Cadiz",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249997_53017_GRD_CDZ_FC-Web.png",
+      "language": "English",
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249997_english_hls_4933934dc860702_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "07:45:00 PM 18-10-2026",
+      "team_1": "Granada",
+      "team_2": "Cadiz",
+      "event_name": "LALIGA Hypermotion 2026-27"
+    },
+    {
       "match_id": "4250148",
       "match_name": "Finals",
       "title": "Finals",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/badminton_FC-W.png",
       "language": "English",
-      "startTime": "12:30:00 AM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
+      "event_category": "Badminton",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250148_english_hls_17a60093f284463_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "03:30:00 PM 18-10-2026",
+      "team_1": "Finals",
+      "team_2": "Denmark",
+      "event_name": "BWF Super 750 - Denmark Open 2026"
+    },
+    {
+      "match_id": "4247657",
+      "match_name": "Ca Osasuna Vs Racing Club De Santander",
+      "title": "Ca Osasuna Vs Racing Club De Santander",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247657_53004_OSN_RAC_FC-Web.png",
+      "language": "English",
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247657_english_hls_84f99ae22f28550_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE"
+    },
+    {
+      "match_id": "4249196_ENG",
+      "title": "Barclays Women's Super League 2026-27 [English]",
+      "match_name": "Chelsea F.C. Women vs Tottenham Hotspur Women [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249196_53038_CHE-W_TOT-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "Barclays Women's Super League 2026-27",
+      "language": "English",
+      "startTime": "04:30:00 PM 18-10-2026",
+      "status": "LIVE",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249196_english_hls_f8c78325e154246_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/"
     },
     {
       "match_id": 4249230,
@@ -213,14 +229,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249798,
-      "title": "Melbourne Renegades Women vs Hobart Hurricanes Women (T20 Spring Challenge, 2026)",
-      "match_name": "Melbourne Renegades Women vs Hobart Hurricanes Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249798_53097_MR-W_HB-W_FC-Web_1791883788092.png",
+      "match_id": 4249665,
+      "title": "Tasmania vs Victoria (Sheffield Shield, 2026/27)",
+      "match_name": "Tasmania vs Victoria",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249665_53087_TAS_VCT_FC-WEB_1791295173197.jpg",
       "event_category": "Cricket",
-      "event_name": "T20 Spring Challenge, 2026",
+      "event_name": "Sheffield Shield, 2026/27",
       "language": "English",
-      "startTime": "04:30:00 AM 18-10-2026",
+      "startTime": "05:00:00 AM 19-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -297,22 +313,10 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249997,
-      "title": "Granada vs Cadiz (LALIGA Hypermotion 2026-27)",
-      "match_name": "Granada vs Cadiz",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249997_53017_GRD_CDZ_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA Hypermotion 2026-27",
-      "language": "English",
-      "startTime": "07:45:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250195,
       "title": "Seattle Thunders Women vs Hurricanes Women (Atlanta Open Women's T20 2026)",
       "match_name": "Seattle Thunders Women vs Hurricanes Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "src": "https://images.fancode.com/aig/match/v1792331212633/4250195_CASACARDS_APP.png",
       "event_category": "Cricket",
       "event_name": "Atlanta Open Women's T20 2026",
       "language": "English",
@@ -322,13 +326,25 @@
     },
     {
       "match_id": 4250186,
-      "title": "TBC vs TBC (Atlanta Open T20 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "title": "Atlanta Fire vs Prime Raider Gladiators (Atlanta Open T20 2026)",
+      "match_name": "Atlanta Fire vs Prime Raider Gladiators",
+      "src": "https://images.fancode.com/aig/match/v1792331158328/4250186_CASACARDS_APP.png",
       "event_category": "Cricket",
       "event_name": "Atlanta Open T20 2026",
       "language": "English",
       "startTime": "11:45:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249695,
+      "title": "Afghanistan vs Zimbabwe (Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026)",
+      "match_name": "Afghanistan vs Zimbabwe",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249695_53089_AFG_ZIM_FC-Web_1792056447809.jpg",
+      "event_category": "Cricket",
+      "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026",
+      "language": "English",
+      "startTime": "05:00:00 PM 19-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -341,18 +357,6 @@
       "event_name": "LALIGA 2026-27",
       "language": "English",
       "startTime": "10:00:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249695,
-      "title": "Afghanistan vs Zimbabwe (Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026)",
-      "match_name": "Afghanistan vs Zimbabwe",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249695_53089_AFG_ZIM_FC-Web_1792056447809.jpg",
-      "event_category": "Cricket",
-      "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026",
-      "language": "English",
-      "startTime": "05:00:00 AM 19-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -513,14 +517,38 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250475,
-      "title": "Emirates Red vs Abu Dhabi (Emirates D20, 2026)",
-      "match_name": "Emirates Red vs Abu Dhabi",
+      "match_id": 4250476,
+      "title": "Ajman vs Emirates Blues (Emirates D20, 2026)",
+      "match_name": "Ajman vs Emirates Blues",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
       "event_category": "Cricket",
       "event_name": "Emirates D20, 2026",
       "language": "English",
-      "startTime": "10:00:00 PM 19-10-2026",
+      "startTime": "06:00:00 PM 20-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249755,
+      "title": "Lesotho vs Mozambique (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
+      "match_name": "Lesotho vs Mozambique",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
+      "language": "English",
+      "startTime": "06:30:00 PM 20-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249756,
+      "title": "Nigeria vs Gambia (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
+      "match_name": "Nigeria vs Gambia",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
+      "language": "English",
+      "startTime": "06:30:00 PM 20-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
