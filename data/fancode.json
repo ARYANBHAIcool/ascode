@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/18/2026, 6:35:24 PM IST",
+  "last_updated": "10/18/2026, 6:44:46 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 40,
-  "live_matches": 11,
+  "total_matches": 39,
+  "live_matches": 10,
   "matches": [
     {
       "match_id": "4249782",
@@ -37,20 +37,6 @@
       "team_1": "Uganda A",
       "team_2": "Jersey",
       "event_name": "Jersey tour of Uganda A 2026"
-    },
-    {
-      "match_id": "4250232",
-      "match_name": "Ica Berlin Vs Koln Cc",
-      "title": "Ica Berlin Vs Koln Cc",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250225_53117_KCC_ICAB_fc-web.jpg",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250232_english_hls_467285ebf827547_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "04:30:00 PM 18-10-2026",
-      "team_1": "ICA Berlin",
-      "team_2": "Koln CC",
-      "event_name": "GSL Championship 2026"
     },
     {
       "match_id": "4250233",
