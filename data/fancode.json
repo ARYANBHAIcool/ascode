@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/18/2026, 10:05:19 PM IST",
+  "last_updated": "10/18/2026, 10:22:25 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 3,
+  "live_matches": 2,
   "matches": [
     {
       "match_id": "4249230",
@@ -32,16 +32,6 @@
       "language": "English",
       "event_category": "Football",
       "stream_url": "https://dai-fancode.pages.dev/mumbai/4247649_english_hls_92f423f1fd24942_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE"
-    },
-    {
-      "match_id": "4247648",
-      "match_name": "Rc Celta Vs Deportivo Alaves",
-      "title": "Rc Celta Vs Deportivo Alaves",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247648_53004_CEV_ALA_FC-Web.png",
-      "language": "English",
-      "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247648_english_hls_5a63da381191948_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE"
     },
     {
@@ -105,18 +95,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249695,
-      "title": "Afghanistan vs Zimbabwe (Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026)",
-      "match_name": "Afghanistan vs Zimbabwe",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249695_53089_AFG_ZIM_FC-Web_1792056447809.jpg",
-      "event_category": "Cricket",
-      "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026",
-      "language": "English",
-      "startTime": "05:00:00 PM 19-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250195,
       "title": "Seattle Thunders Women vs Hurricanes Women (Atlanta Open Women's T20 2026)",
       "match_name": "Seattle Thunders Women vs Hurricanes Women",
@@ -125,6 +103,18 @@
       "event_name": "Atlanta Open Women's T20 2026",
       "language": "English",
       "startTime": "11:00:00 PM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249695,
+      "title": "Afghanistan vs Zimbabwe (Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026)",
+      "match_name": "Afghanistan vs Zimbabwe",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249695_53089_AFG_ZIM_FC-Web_1792056447809.jpg",
+      "event_category": "Cricket",
+      "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026",
+      "language": "English",
+      "startTime": "05:00:00 PM 19-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -485,6 +475,18 @@
       "event_name": "Emirates D20, 2026",
       "language": "English",
       "startTime": "06:00:00 PM 21-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250153,
+      "title": "Court 1 - Round 32 vs France (BWF Super 750 - French Open 2026)",
+      "match_name": "Court 1 - Round 32",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Default_Badminton-old.jpg",
+      "event_category": "Badminton",
+      "event_name": "BWF Super 750 - French Open 2026",
+      "language": "English",
+      "startTime": "01:30:00 PM 21-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
