@@ -2,28 +2,14 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/19/2026, 12:19:14 AM IST",
+  "last_updated": "10/19/2026, 2:35:22 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 4,
+  "live_matches": 2,
   "matches": [
-    {
-      "match_id": "4249782",
-      "match_name": "South Africa Vs Australia",
-      "title": "South Africa Vs Australia",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/AUS-vs-SA-test_Web-match-card.png",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249801_english_hls_5ad2cef28346232_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "09:00:00 PM 18-10-2026",
-      "team_1": "England Champions",
-      "team_2": "West Indies Champions",
-      "event_name": "World Championship of Legends, 2026"
-    },
     {
       "match_id": "4250186",
       "match_name": "Atlanta Fire Vs Prime Raider Gladiators",
@@ -42,16 +28,6 @@
       "language": "English",
       "event_category": "Football",
       "stream_url": "https://dai-fancode.pages.dev/mumbai/4247651_english_hls_95466c9aa842282_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE"
-    },
-    {
-      "match_id": "4247649",
-      "match_name": "Malaga Vs Real Sociedad",
-      "title": "Malaga Vs Real Sociedad",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247649_53004_MAG_RS_FC-Web.png",
-      "language": "English",
-      "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247649_english_hls_92f423f1fd24942_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE"
     },
     {
@@ -440,11 +416,23 @@
     },
     {
       "match_id": 4249802,
-      "title": "TBC vs TBC (T20 Spring Challenge, 2026)",
-      "match_name": "TBC vs TBC",
+      "title": "Adelaide Strikers Women vs Perth Scorchers Women (T20 Spring Challenge, 2026)",
+      "match_name": "Adelaide Strikers Women vs Perth Scorchers Women",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
       "event_category": "Cricket",
-      "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026",
+      "event_name": "T20 Spring Challenge, 2026",
+      "language": "English",
+      "startTime": "04:30:00 AM 20-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249607,
+      "title": "ATP 250 - Almaty Open 2026 vs Almaty, Kazakhstan (ATP 250 - Almaty Open 2026)",
+      "match_name": "ATP 250 - Almaty Open 2026",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Default_Tennis-old.jpg",
+      "event_category": "Tennis",
+      "event_name": "ATP 250 - Almaty Open 2026",
       "language": "English",
       "startTime": "05:00:00 PM 19-10-2026",
       "status": "UPCOMING",
@@ -463,21 +451,9 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249802,
-      "title": "TBC vs TBC (T20 Spring Challenge, 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "T20 Spring Challenge, 2026",
-      "language": "English",
-      "startTime": "04:30:00 AM 20-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4249803,
-      "title": "TBC vs TBC (T20 Spring Challenge, 2026)",
-      "match_name": "TBC vs TBC",
+      "title": "Sydney Thunder Women vs Sydney Sixers Women (T20 Spring Challenge, 2026)",
+      "match_name": "Sydney Thunder Women vs Sydney Sixers Women",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
       "event_category": "Cricket",
       "event_name": "T20 Spring Challenge, 2026",
@@ -723,6 +699,30 @@
       "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
       "language": "English",
       "startTime": "06:30:00 PM 21-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249609,
+      "title": "ATP 250 - Almaty Open 2026 vs Almaty, Kazakhstan (ATP 250 - Almaty Open 2026)",
+      "match_name": "ATP 250 - Almaty Open 2026",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Default_Tennis-old.jpg",
+      "event_category": "Tennis",
+      "event_name": "ATP 250 - Almaty Open 2026",
+      "language": "English",
+      "startTime": "03:30:00 PM 21-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249616,
+      "title": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026 vs Lyon, France (ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026)",
+      "match_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Grand-Prix-Auvergne-Rhone-Alpes_fc-web.jpg",
+      "event_category": "Tennis",
+      "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026",
+      "language": "English",
+      "startTime": "03:30:00 PM 21-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
