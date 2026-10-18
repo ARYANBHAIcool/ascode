@@ -2,7 +2,7 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/18/2026, 4:04:19 PM IST",
+  "last_updated": "10/18/2026, 3:24:20 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -53,12 +53,38 @@
       "event_name": "Jersey tour of Uganda A 2026"
     },
     {
-      "match_id": 4249798,
-      "title": "Melbourne Renegades Women vs Hobart Hurricanes Women (T20 Spring Challenge, 2026)",
-      "match_name": "Melbourne Renegades Women vs Hobart Hurricanes Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249798_53097_MR-W_HB-W_FC-Web_1791883788092.png",
+      "match_id": "4250148",
+      "match_name": "Finals",
+      "title": "Finals",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/badminton_FC-W.png",
+      "language": "English",
+      "event_category": "Badminton",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250148_english_hls_17a60093f284463_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "03:30:00 PM 18-10-2026",
+      "team_1": "Finals",
+      "team_2": "Denmark",
+      "event_name": "BWF Super 750 - Denmark Open 2026"
+    },
+    {
+      "match_id": 4249230,
+      "title": "England Champions vs West Indies Champions (World Championship of Legends, 2026)",
+      "match_name": "England Champions vs West Indies Champions",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/WCL_web-match-card.png",
       "event_category": "Cricket",
-      "event_name": "T20 Spring Challenge, 2026",
+      "event_name": "World Championship of Legends, 2026",
+      "language": "English",
+      "startTime": "12:30:00 AM 18-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249996,
+      "title": "Las Palmas vs Castellón (LALIGA Hypermotion 2026-27)",
+      "match_name": "Las Palmas vs Castellón",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249996_53017_LAP_CAS_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA Hypermotion 2026-27",
       "language": "English",
       "startTime": "04:30:00 AM 18-10-2026",
       "status": "UPCOMING",
