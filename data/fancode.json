@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/18/2026, 7:04:23 PM IST",
+  "last_updated": "10/18/2026, 7:24:31 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 10,
+  "live_matches": 11,
   "matches": [
     {
       "match_id": "4249782",
@@ -56,6 +56,16 @@
       "language": "English",
       "event_category": "Football",
       "stream_url": "https://dai-fancode.pages.dev/mumbai/4247657_english_hls_84f99ae22f28550_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE"
+    },
+    {
+      "match_id": "4247648",
+      "match_name": "Rc Celta Vs Deportivo Alaves",
+      "title": "Rc Celta Vs Deportivo Alaves",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247648_53004_CEV_ALA_FC-Web.png",
+      "language": "English",
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247648_english_hls_5a63da381191948_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE"
     },
     {
@@ -143,12 +153,12 @@
       "event_name": "BWF Super 750 - Denmark Open 2026"
     },
     {
-      "match_id": 4249666,
-      "title": "South Australia vs Queensland (Sheffield Shield, 2026/27)",
-      "match_name": "South Australia vs Queensland",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249666_53087_SAU_QUN_FC-WEB_1791299735359.jpg",
+      "match_id": 4249230,
+      "title": "England Champions vs West Indies Champions (World Championship of Legends, 2026)",
+      "match_name": "England Champions vs West Indies Champions",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/WCL_web-match-card.png",
       "event_category": "Cricket",
-      "event_name": "Sheffield Shield, 2026/27",
+      "event_name": "World Championship of Legends, 2026",
       "language": "English",
       "startTime": "09:00:00 PM 18-10-2026",
       "status": "UPCOMING",
@@ -172,7 +182,7 @@
       "match_name": "South Australia vs Queensland",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/4249666_53087_SAU_QUN_FC-WEB_1791299735359.jpg",
       "event_category": "Cricket",
-      "event_name": "T20 Spring Challenge, 2026",
+      "event_name": "Sheffield Shield, 2026/27",
       "language": "English",
       "startTime": "04:30:00 AM 18-10-2026",
       "status": "UPCOMING",
@@ -227,18 +237,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4247648,
-      "title": "RC Celta vs Deportivo Alaves (LALIGA 2026-27)",
-      "match_name": "RC Celta vs Deportivo Alaves",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247648_53004_CEV_ALA_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "07:45:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4249997,
       "title": "Granada vs Cadiz (LALIGA Hypermotion 2026-27)",
       "match_name": "Granada vs Cadiz",
@@ -252,8 +250,8 @@
     },
     {
       "match_id": 4250195,
-      "title": "TBC vs TBC (Atlanta Open Women's T20 2026)",
-      "match_name": "TBC vs TBC",
+      "title": "Seattle Thunders Women vs Hurricanes Women (Atlanta Open Women's T20 2026)",
+      "match_name": "Seattle Thunders Women vs Hurricanes Women",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
       "event_category": "Cricket",
       "event_name": "Atlanta Open Women's T20 2026",
@@ -287,50 +285,26 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250195,
-      "title": "TBC vs TBC (Atlanta Open Women's T20 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "match_id": 4249695,
+      "title": "Afghanistan vs Zimbabwe (Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026)",
+      "match_name": "Afghanistan vs Zimbabwe",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249695_53089_AFG_ZIM_FC-Web_1792056447809.jpg",
       "event_category": "Cricket",
-      "event_name": "Atlanta Open Women's T20 2026",
-      "language": "English",
-      "startTime": "11:00:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249666,
-      "title": "South Australia vs Queensland (Sheffield Shield, 2026/27)",
-      "match_name": "South Australia vs Queensland",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249666_53087_SAU_QUN_FC-WEB_1791299735359.jpg",
-      "event_category": "Cricket",
-      "event_name": "Atlanta Open T20 2026",
-      "language": "English",
-      "startTime": "11:45:00 PM 18-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249665,
-      "title": "Tasmania vs Victoria (Sheffield Shield, 2026/27)",
-      "match_name": "Tasmania vs Victoria",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249665_53087_TAS_VCT_FC-WEB_1791295173197.jpg",
-      "event_category": "Cricket",
-      "event_name": "Sheffield Shield, 2026/27",
-      "language": "English",
-      "startTime": "12:30:00 AM 19-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249196,
-      "title": "Chelsea F.C. Women vs Tottenham Hotspur Women (Barclays Women's Super League 2026-27)",
-      "match_name": "Chelsea F.C. Women vs Tottenham Hotspur Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249196_53038_CHE-W_TOT-W_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "Barclays Women's Super League 2026-27",
+      "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026",
       "language": "English",
       "startTime": "05:00:00 AM 19-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4247651,
+      "title": "Real Madrid vs Sevilla FC (LALIGA 2026-27)",
+      "match_name": "Real Madrid vs Sevilla FC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247651_53004_RM_SEV_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA 2026-27",
+      "language": "English",
+      "startTime": "12:30:00 AM 19-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
