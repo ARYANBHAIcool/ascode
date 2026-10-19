@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/19/2026, 11:40:41 AM IST",
+  "last_updated": "10/19/2026, 12:00:14 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 4,
+  "live_matches": 5,
   "matches": [
     {
       "match_id": "4249665",
@@ -65,6 +65,20 @@
       "team_1": "Nepal",
       "team_2": "Oman",
       "event_name": "ICC CWC League 2 Oman, 2026"
+    },
+    {
+      "match_id": "4249607",
+      "match_name": "World Feed",
+      "title": "World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Default_Tennis-old.jpg",
+      "language": "English",
+      "event_category": "Tennis",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249607_english_hls_4fed40e0cb31361_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "12:00:00 PM 19-10-2026",
+      "team_1": "World Feed",
+      "team_2": "Almaty, Kazakhstan",
+      "event_name": "ATP 250 - Almaty Open 2026"
     },
     {
       "match_id": 4249782,
@@ -429,18 +443,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249607,
-      "title": "World Feed vs Almaty, Kazakhstan (ATP 250 - Almaty Open 2026)",
-      "match_name": "World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Default_Tennis-old.jpg",
-      "event_category": "Tennis",
-      "event_name": "ATP 250 - Almaty Open 2026",
-      "language": "English",
-      "startTime": "12:00:00 PM 19-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4249803,
       "title": "Sydney Thunder Women vs Sydney Sixers Women (T20 Spring Challenge, 2026)",
       "match_name": "Sydney Thunder Women vs Sydney Sixers Women",
@@ -465,6 +467,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249754,
+      "title": "Uganda vs Zambia (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
+      "match_name": "Uganda vs Zambia",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
+      "language": "English",
+      "startTime": "02:30:00 PM 20-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249621,
       "title": "World Feed vs Brussels, Belgium (ATP 250 - BNP Paribas Fortis European Open)",
       "match_name": "World Feed",
@@ -485,18 +499,6 @@
       "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026",
       "language": "English",
       "startTime": "06:30:00 PM 19-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249754,
-      "title": "Uganda vs Zambia (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
-      "match_name": "Uganda vs Zambia",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
-      "language": "English",
-      "startTime": "02:30:00 PM 20-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
