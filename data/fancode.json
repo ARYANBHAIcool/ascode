@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/19/2026, 7:24:19 PM IST",
+  "last_updated": "10/19/2026, 8:12:08 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 7,
+  "live_matches": 6,
   "matches": [
     {
       "match_id": "4249782",
@@ -23,20 +23,6 @@
       "team_1": "South Africa",
       "team_2": "Australia",
       "event_name": "Australia tour of South Africa, 2026"
-    },
-    {
-      "match_id": "4250118",
-      "match_name": "Nepal Vs Oman",
-      "title": "Nepal Vs Oman",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250118_53106_OMA_NEP_fc-App.png",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250118_english_hls_18e6f9f0c62934_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "11:00:00 AM 19-10-2026",
-      "team_1": "Nepal",
-      "team_2": "Oman",
-      "event_name": "ICC CWC League 2 Oman, 2026"
     },
     {
       "match_id": "4249695",
@@ -109,6 +95,18 @@
       "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026"
     },
     {
+      "match_id": 4250118,
+      "title": "Nepal vs Oman (ICC CWC League 2 Oman, 2026)",
+      "match_name": "Nepal vs Oman",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250118_53106_OMA_NEP_fc-web.png",
+      "event_category": "Cricket",
+      "event_name": "ICC CWC League 2 Oman, 2026",
+      "language": "English",
+      "startTime": "11:00:00 AM 19-10-2026",
+      "status": "PAUSED",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249665,
       "title": "Tasmania vs Victoria (Sheffield Shield, 2026/27)",
       "match_name": "Tasmania vs Victoria",
@@ -157,18 +155,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250162,
-      "title": "Australia Women vs New Zealand Women (New Zealand Women tour of Australia, 2026)",
-      "match_name": "Australia Women vs New Zealand Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Australia-vs-New-ZealandT20I-Series-old-match-card.png",
-      "event_category": "Cricket",
-      "event_name": "New Zealand Women tour of Australia, 2026",
-      "language": "English",
-      "startTime": "01:45:00 PM 20-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250213,
       "title": "Al-Fayha FC vs Al-Ahli Saudi FC (Roshn Saudi League 2026-2027)",
       "match_name": "Al-Fayha FC vs Al-Ahli Saudi FC",
@@ -181,14 +167,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250214,
-      "title": "Al Hilal SFC vs Al-Hazem FC (Roshn Saudi League 2026-2027)",
-      "match_name": "Al Hilal SFC vs Al-Hazem FC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250214_53025_AHS_HAZ_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "Roshn Saudi League 2026-2027",
+      "match_id": 4250162,
+      "title": "Australia Women vs New Zealand Women (New Zealand Women tour of Australia, 2026)",
+      "match_name": "Australia Women vs New Zealand Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Australia-vs-New-ZealandT20I-Series-old-match-card.png",
+      "event_category": "Cricket",
+      "event_name": "New Zealand Women tour of Australia, 2026",
       "language": "English",
-      "startTime": "11:30:00 PM 19-10-2026",
+      "startTime": "01:45:00 PM 20-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -205,6 +191,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4250214,
+      "title": "Al Hilal SFC vs Al-Hazem FC (Roshn Saudi League 2026-2027)",
+      "match_name": "Al Hilal SFC vs Al-Hazem FC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250214_53025_AHS_HAZ_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "Roshn Saudi League 2026-2027",
+      "language": "English",
+      "startTime": "11:30:00 PM 19-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4247650,
       "title": "Getafe CF vs Rayo Vallecano (LALIGA 2026-27)",
       "match_name": "Getafe CF vs Rayo Vallecano",
@@ -217,18 +215,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249803,
-      "title": "Sydney Thunder Women vs Sydney Sixers Women (T20 Spring Challenge, 2026)",
-      "match_name": "Sydney Thunder Women vs Sydney Sixers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "T20 Spring Challenge, 2026",
-      "language": "English",
-      "startTime": "09:00:00 AM 20-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250476,
       "title": "Ajman vs Emirates Blues (Emirates D20, 2026)",
       "match_name": "Ajman vs Emirates Blues",
@@ -237,6 +223,18 @@
       "event_name": "Emirates D20, 2026",
       "language": "English",
       "startTime": "06:00:00 PM 20-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249803,
+      "title": "Sydney Thunder Women vs Sydney Sixers Women (T20 Spring Challenge, 2026)",
+      "match_name": "Sydney Thunder Women vs Sydney Sixers Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "T20 Spring Challenge, 2026",
+      "language": "English",
+      "startTime": "09:00:00 AM 20-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
