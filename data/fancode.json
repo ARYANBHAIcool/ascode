@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/19/2026, 4:49:32 AM IST",
+  "last_updated": "10/19/2026, 6:54:32 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 1,
+  "live_matches": 2,
   "matches": [
     {
       "match_id": "4249665",
@@ -25,16 +25,18 @@
       "event_name": "Sheffield Shield, 2026/27"
     },
     {
-      "match_id": 4249666,
-      "title": "South Australia vs Queensland (Sheffield Shield, 2026/27)",
-      "match_name": "South Australia vs Queensland",
+      "match_id": "4249666",
+      "match_name": "South Australia Vs Queensland",
+      "title": "South Australia Vs Queensland",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/4249666_53087_SAU_QUN_FC-WEB_1791299735359.jpg",
-      "event_category": "Cricket",
-      "event_name": "Sheffield Shield, 2026/27",
       "language": "English",
+      "event_category": "Cricket",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249666_english_hls_b5f24432ee54422_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
       "startTime": "05:30:00 AM 19-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
+      "team_1": "South Australia",
+      "team_2": "Queensland",
+      "event_name": "Sheffield Shield, 2026/27"
     },
     {
       "match_id": 4249782,
@@ -157,6 +159,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249803,
+      "title": "Sydney Thunder Women vs Sydney Sixers Women (T20 Spring Challenge, 2026)",
+      "match_name": "Sydney Thunder Women vs Sydney Sixers Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "T20 Spring Challenge, 2026",
+      "language": "English",
+      "startTime": "09:00:00 AM 20-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249607,
       "title": "ATP 250 - Almaty Open 2026 vs Almaty, Kazakhstan (ATP 250 - Almaty Open 2026)",
       "match_name": "ATP 250 - Almaty Open 2026",
@@ -189,18 +203,6 @@
       "event_name": "ATP 250 - BNP Paribas Fortis European Open",
       "language": "English",
       "startTime": "03:30:00 PM 19-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249803,
-      "title": "Sydney Thunder Women vs Sydney Sixers Women (T20 Spring Challenge, 2026)",
-      "match_name": "Sydney Thunder Women vs Sydney Sixers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "T20 Spring Challenge, 2026",
-      "language": "English",
-      "startTime": "09:00:00 AM 20-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
