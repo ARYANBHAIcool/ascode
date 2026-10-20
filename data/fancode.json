@@ -2,28 +2,14 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/21/2026, 2:16:54 AM IST",
+  "last_updated": "10/21/2026, 3:13:22 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 2,
+  "live_matches": 1,
   "matches": [
-    {
-      "match_id": "4249999",
-      "match_name": "Gillingham Vs Port Vale F.c.",
-      "title": "Gillingham Vs Port Vale F.c.",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Mini_Match_Card-2.png",
-      "language": "English",
-      "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249999_english_hls_0c9f05fc2d26812_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "12:30:00 AM 21-10-2026",
-      "team_1": "Gillingham",
-      "team_2": "Port Vale F.C.",
-      "event_name": "League Two 2026-27"
-    },
     {
       "match_id": "4249615",
       "match_name": "Day 2   World Feed",
@@ -491,6 +477,18 @@
       "event_name": "Emirates D20, 2026",
       "language": "English",
       "startTime": "06:00:00 PM 23-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250156,
+      "title": "Court 1 - QF vs France (BWF Super 750 - French Open 2026)",
+      "match_name": "Court 1 - QF",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Yonex-French-Open-2026_FC-WEB.jpg",
+      "event_category": "Badminton",
+      "event_name": "BWF Super 750 - French Open 2026",
+      "language": "English",
+      "startTime": "01:00:00 PM 23-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
