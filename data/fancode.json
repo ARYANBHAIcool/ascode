@@ -2,69 +2,27 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/20/2026, 11:31:25 PM IST",
+  "last_updated": "10/21/2026, 2:16:54 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 5,
+  "live_matches": 2,
   "matches": [
     {
-      "match_id": "4250477",
-      "match_name": "Sharjah Vs Emirates Red",
-      "title": "Sharjah Vs Emirates Red",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250477_53130_EMR_SHA_fc-web_1792412929341.jpg",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250477_english_hls_1a72e2062b55236_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "10:00:00 PM 20-10-2026",
-      "team_1": "Sharjah",
-      "team_2": "Emirates Red",
-      "event_name": "Emirates D20, 2026"
-    },
-    {
-      "match_id": "4250216",
-      "match_name": "Al Ettifaq Vs Al Ittihad",
-      "title": "Al Ettifaq Vs Al Ittihad",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250216_53025_ETT_ITT_FC-Web.png",
+      "match_id": "4249999",
+      "match_name": "Gillingham Vs Port Vale F.c.",
+      "title": "Gillingham Vs Port Vale F.c.",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Mini_Match_Card-2.png",
       "language": "English",
       "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250216_english_hls_667def4df736640_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249999_english_hls_0c9f05fc2d26812_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE",
-      "startTime": "11:30:00 PM 20-10-2026",
-      "team_1": "Al-Ettifaq",
-      "team_2": "Al-Ittihad",
-      "event_name": "Roshn Saudi League 2026-2027"
-    },
-    {
-      "match_id": "4250217",
-      "match_name": "Al Nassr Fc Vs Neom Sc",
-      "title": "Al Nassr Fc Vs Neom Sc",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250217_53025_ANF_NEOM_FC-Web.png",
-      "language": "English",
-      "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250217_english_hls_90a5e6e7cf68957_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "11:30:00 PM 20-10-2026",
-      "team_1": "Al-Nassr FC",
-      "team_2": "Neom SC",
-      "event_name": "Roshn Saudi League 2026-2027"
-    },
-    {
-      "match_id": "4249622",
-      "match_name": "Day 2   World Feed",
-      "title": "Day 2   World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/BNP-Paribas-Fortis-European-Open_fc-web.jpg",
-      "language": "English",
-      "event_category": "Tennis",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249622_english_hls_8342648ba261_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "03:00:00 PM 20-10-2026",
-      "team_1": "Day 2 - World Feed",
-      "team_2": "Brussels, Belgium",
-      "event_name": "ATP 250 - BNP Paribas Fortis European Open"
+      "startTime": "12:30:00 AM 21-10-2026",
+      "team_1": "Gillingham",
+      "team_2": "Port Vale F.C.",
+      "event_name": "League Two 2026-27"
     },
     {
       "match_id": "4249615",
@@ -165,18 +123,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249804,
-      "title": "Sydney Sixers Women vs Perth Scorchers Women (T20 Spring Challenge, 2026)",
-      "match_name": "Sydney Sixers Women vs Perth Scorchers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "T20 Spring Challenge, 2026",
-      "language": "English",
-      "startTime": "08:30:00 AM 21-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250479,
       "title": "Ajman vs Abu Dhabi (Emirates D20, 2026)",
       "match_name": "Ajman vs Abu Dhabi",
@@ -185,6 +131,18 @@
       "event_name": "Emirates D20, 2026",
       "language": "English",
       "startTime": "10:00:00 PM 21-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249804,
+      "title": "Sydney Sixers Women vs Perth Scorchers Women (T20 Spring Challenge, 2026)",
+      "match_name": "Sydney Sixers Women vs Perth Scorchers Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "T20 Spring Challenge, 2026",
+      "language": "English",
+      "startTime": "08:30:00 AM 21-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -225,18 +183,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249999,
-      "title": "Gillingham vs Port Vale F.C. (League Two 2026-27)",
-      "match_name": "Gillingham vs Port Vale F.C.",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Mini_Match_Card-2.png",
-      "event_category": "Football",
-      "event_name": "League Two 2026-27",
-      "language": "English",
-      "startTime": "12:30:00 AM 21-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4247624,
       "title": "Levante vs Athletic Club (LALIGA 2026-27)",
       "match_name": "Levante vs Athletic Club",
@@ -269,18 +215,6 @@
       "event_name": "BWF Super 750 - French Open 2026",
       "language": "English",
       "startTime": "01:30:00 PM 21-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249805,
-      "title": "Reading vs Leyton Orient (League One 2026-27)",
-      "match_name": "Reading vs Leyton Orient",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Football-old-copy.jpg",
-      "event_category": "Football",
-      "event_name": "League One 2026-27",
-      "language": "English",
-      "startTime": "12:30:00 AM 22-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -381,6 +315,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4250481,
+      "title": "Sharjah vs Abu Dhabi (Emirates D20, 2026)",
+      "match_name": "Sharjah vs Abu Dhabi",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250481_53130_SHA_ABD_fc-web_1792412929288.jpg",
+      "event_category": "Cricket",
+      "event_name": "Emirates D20, 2026",
+      "language": "English",
+      "startTime": "10:00:00 PM 22-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249610,
       "title": "ATP 250 - Almaty Open 2026 vs Almaty, Kazakhstan (ATP 250 - Almaty Open 2026)",
       "match_name": "ATP 250 - Almaty Open 2026",
@@ -441,18 +387,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250481,
-      "title": "Sharjah vs Abu Dhabi (Emirates D20, 2026)",
-      "match_name": "Sharjah vs Abu Dhabi",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250481_53130_SHA_ABD_fc-web_1792412929288.jpg",
-      "event_category": "Cricket",
-      "event_name": "Emirates D20, 2026",
-      "language": "English",
-      "startTime": "10:00:00 PM 22-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250218,
       "title": "Al-Fateh SC vs Al-Shabab FC (Roshn Saudi League 2026-2027)",
       "match_name": "Al-Fateh SC vs Al-Shabab FC",
@@ -509,6 +443,54 @@
       "event_name": "F1 ACADEMY AUSTIN 2026",
       "language": "English",
       "startTime": "03:00:00 AM 23-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249760,
+      "title": "Nigeria vs Mozambique (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
+      "match_name": "Nigeria vs Mozambique",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249760_53093_NGR_MOZ_FC-Web_1792493253330.png",
+      "event_category": "Cricket",
+      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
+      "language": "English",
+      "startTime": "02:00:00 PM 23-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249761,
+      "title": "Zambia vs Lesotho (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
+      "match_name": "Zambia vs Lesotho",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249761_53093_ZAM_LES_FC-Web_1792493252664.png",
+      "event_category": "Cricket",
+      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
+      "language": "English",
+      "startTime": "02:00:00 PM 23-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249697,
+      "title": "TBC vs TBC (Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026",
+      "language": "English",
+      "startTime": "05:00:00 PM 23-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250482,
+      "title": "Ajman vs Sharjah (Emirates D20, 2026)",
+      "match_name": "Ajman vs Sharjah",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250482_53130_AJM_SHA_fc-web_1792412929295.jpg",
+      "event_category": "Cricket",
+      "event_name": "Emirates D20, 2026",
+      "language": "English",
+      "startTime": "06:00:00 PM 23-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
