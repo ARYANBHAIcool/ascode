@@ -2,7 +2,7 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/21/2026, 3:13:22 AM IST",
+  "last_updated": "10/21/2026, 4:58:09 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -11,18 +11,18 @@
   "live_matches": 1,
   "matches": [
     {
-      "match_id": "4249615",
-      "match_name": "Day 2   World Feed",
-      "title": "Day 2   World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Grand-Prix-Auvergne-Rhone-Alpes_fc-web.jpg",
+      "match_id": "4249665",
+      "match_name": "Tasmania Vs Victoria",
+      "title": "Tasmania Vs Victoria",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249665_53087_TAS_VCT_FC-WEB_1791295173197.jpg",
       "language": "English",
-      "event_category": "Tennis",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249615_english_hls_d47039c54e87886_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "event_category": "Cricket",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249665_english_hls_910773056354556_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE",
-      "startTime": "05:30:00 PM 20-10-2026",
-      "team_1": "Day 2 - World Feed",
-      "team_2": "Lyon, France",
-      "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026"
+      "startTime": "05:00:00 AM 19-10-2026",
+      "team_1": "Tasmania",
+      "team_2": "Victoria",
+      "event_name": "Sheffield Shield, 2026/27"
     },
     {
       "match_id": 4249782,
@@ -33,18 +33,6 @@
       "event_name": "Australia tour of South Africa, 2026",
       "language": "English",
       "startTime": "01:30:00 PM 18-10-2026",
-      "status": "PAUSED",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249665,
-      "title": "Tasmania vs Victoria (Sheffield Shield, 2026/27)",
-      "match_name": "Tasmania vs Victoria",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249665_53087_TAS_VCT_FC-WEB_1791295173197.jpg",
-      "event_category": "Cricket",
-      "event_name": "Sheffield Shield, 2026/27",
-      "language": "English",
-      "startTime": "05:00:00 AM 19-10-2026",
       "status": "PAUSED",
       "stream_url": ""
     },
@@ -97,18 +85,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250336,
-      "title": "Kenya vs Denmark (ICC CWC Challenge League A 2026)",
-      "match_name": "Kenya vs Denmark",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png",
-      "event_category": "Cricket",
-      "event_name": "ICC CWC Challenge League A 2026",
-      "language": "English",
-      "startTime": "12:15:00 PM 21-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250479,
       "title": "Ajman vs Abu Dhabi (Emirates D20, 2026)",
       "match_name": "Ajman vs Abu Dhabi",
@@ -117,6 +93,18 @@
       "event_name": "Emirates D20, 2026",
       "language": "English",
       "startTime": "10:00:00 PM 21-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250336,
+      "title": "Kenya vs Denmark (ICC CWC Challenge League A 2026)",
+      "match_name": "Kenya vs Denmark",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png",
+      "event_category": "Cricket",
+      "event_name": "ICC CWC Challenge League A 2026",
+      "language": "English",
+      "startTime": "12:15:00 PM 21-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -484,6 +472,18 @@
       "match_id": 4250156,
       "title": "Court 1 - QF vs France (BWF Super 750 - French Open 2026)",
       "match_name": "Court 1 - QF",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Yonex-French-Open-2026_FC-WEB.jpg",
+      "event_category": "Badminton",
+      "event_name": "BWF Super 750 - French Open 2026",
+      "language": "English",
+      "startTime": "01:00:00 PM 23-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250157,
+      "title": "Court 2 - QF vs France (BWF Super 750 - French Open 2026)",
+      "match_name": "Court 2 - QF",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/Yonex-French-Open-2026_FC-WEB.jpg",
       "event_category": "Badminton",
       "event_name": "BWF Super 750 - French Open 2026",
