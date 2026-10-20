@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/20/2026, 5:39:21 PM IST",
+  "last_updated": "10/20/2026, 5:47:32 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 5,
+  "live_matches": 4,
   "matches": [
     {
       "match_id": "4249782",
@@ -65,18 +65,6 @@
       "team_1": "Day 2 - World Feed",
       "team_2": "Lyon, France",
       "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026"
-    },
-    {
-      "match_id": "4249754_ENG",
-      "title": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026 [English]",
-      "match_name": "Uganda vs Zambia [English]",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249754_53093_UGA_ZAM_FC-Web_1792493253272.png",
-      "event_category": "Cricket",
-      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
-      "language": "English",
-      "startTime": "02:00:00 PM 20-10-2026",
-      "status": "LIVE",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249754_english_hls_b4548ca71283450_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/"
     },
     {
       "match_id": 4250476,
@@ -495,6 +483,18 @@
       "event_name": "BWF Super 750 - French Open 2026",
       "language": "English",
       "startTime": "03:30:00 PM 22-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250481,
+      "title": "Sharjah vs Abu Dhabi (Emirates D20, 2026)",
+      "match_name": "Sharjah vs Abu Dhabi",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250481_53130_SHA_ABD_fc-web_1792412929288.jpg",
+      "event_category": "Cricket",
+      "event_name": "Emirates D20, 2026",
+      "language": "English",
+      "startTime": "10:00:00 PM 22-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
