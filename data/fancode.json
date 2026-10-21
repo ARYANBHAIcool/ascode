@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/21/2026, 5:40:37 AM IST",
+  "last_updated": "10/21/2026, 10:25:53 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 2,
+  "live_matches": 3,
   "matches": [
     {
       "match_id": "4249665",
@@ -25,18 +25,32 @@
       "event_name": "Sheffield Shield, 2026/27"
     },
     {
-      "match_id": "4249666",
-      "match_name": "South Australia Vs Queensland",
-      "title": "South Australia Vs Queensland",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249666_53087_SAU_QUN_FC-WEB_1791299735359.jpg",
+      "match_id": "4249667",
+      "match_name": "New South Wales Vs Western Australia",
+      "title": "New South Wales Vs Western Australia",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249667_53087_WAU_NSW_FC-WEB_1791299730396.jpg",
       "language": "English",
       "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249666_english_hls_b5f24432ee90707_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249667_english_hls_27a33faf8098479_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE",
-      "startTime": "05:30:00 AM 19-10-2026",
-      "team_1": "South Australia",
-      "team_2": "Queensland",
+      "startTime": "08:00:00 AM 19-10-2026",
+      "team_1": "New South Wales",
+      "team_2": "Western Australia",
       "event_name": "Sheffield Shield, 2026/27"
+    },
+    {
+      "match_id": "4249804",
+      "match_name": "Sydney Sixers Women Vs Perth Scorchers Women",
+      "title": "Sydney Sixers Women Vs Perth Scorchers Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249804_53097_SS-W_PS-W_FC-Web.png",
+      "language": "English",
+      "event_category": "Cricket",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249804_english_hls_a62996220890342_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "08:30:00 AM 21-10-2026",
+      "team_1": "Sydney Sixers Women",
+      "team_2": "Perth Scorchers Women",
+      "event_name": "T20 Spring Challenge, 2026"
     },
     {
       "match_id": 4249782,
@@ -47,18 +61,6 @@
       "event_name": "Australia tour of South Africa, 2026",
       "language": "English",
       "startTime": "01:30:00 PM 18-10-2026",
-      "status": "PAUSED",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249667,
-      "title": "New South Wales vs Western Australia (Sheffield Shield, 2026/27)",
-      "match_name": "New South Wales vs Western Australia",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249667_53087_WAU_NSW_FC-WEB_1791299730396.jpg",
-      "event_category": "Cricket",
-      "event_name": "Sheffield Shield, 2026/27",
-      "language": "English",
-      "startTime": "08:00:00 AM 19-10-2026",
       "status": "PAUSED",
       "stream_url": ""
     },
@@ -107,18 +109,6 @@
       "event_name": "ICC CWC Challenge League A 2026",
       "language": "English",
       "startTime": "12:15:00 PM 21-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249804,
-      "title": "Sydney Sixers Women vs Perth Scorchers Women (T20 Spring Challenge, 2026)",
-      "match_name": "Sydney Sixers Women vs Perth Scorchers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "T20 Spring Challenge, 2026",
-      "language": "English",
-      "startTime": "08:30:00 AM 21-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -183,54 +173,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250153,
-      "title": "Court 1 - Round 32 vs France (BWF Super 750 - French Open 2026)",
-      "match_name": "Court 1 - Round 32",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Yonex-French-Open-2026_FC-WEB.jpg",
-      "event_category": "Badminton",
-      "event_name": "BWF Super 750 - French Open 2026",
-      "language": "English",
-      "startTime": "01:30:00 PM 21-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249609,
-      "title": "ATP 250 - Almaty Open 2026 vs Almaty, Kazakhstan (ATP 250 - Almaty Open 2026)",
-      "match_name": "ATP 250 - Almaty Open 2026",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-Web_1792479545067.png",
-      "event_category": "Tennis",
-      "event_name": "ATP 250 - Almaty Open 2026",
-      "language": "English",
-      "startTime": "03:30:00 PM 21-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249616,
-      "title": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026 vs Lyon, France (ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026)",
-      "match_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Grand-Prix-Auvergne-Rhone-Alpes_fc-web.jpg",
-      "event_category": "Tennis",
-      "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026",
-      "language": "English",
-      "startTime": "03:30:00 PM 21-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249623,
-      "title": "ATP 250 - BNP Paribas Fortis European Open vs Brussels, Belgium (ATP 250 - BNP Paribas Fortis European Open)",
-      "match_name": "ATP 250 - BNP Paribas Fortis European Open",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/BNP-Paribas-Fortis-European-Open_fc-web.jpg",
-      "event_category": "Tennis",
-      "event_name": "ATP 250 - BNP Paribas Fortis European Open",
-      "language": "English",
-      "startTime": "03:30:00 PM 21-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250337,
       "title": "Papua New Guinea vs Jersey (ICC CWC Challenge League A 2026)",
       "match_name": "Papua New Guinea vs Jersey",
@@ -279,6 +221,54 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249609,
+      "title": "Day 3 - World Feed vs Almaty, Kazakhstan (ATP 250 - Almaty Open 2026)",
+      "match_name": "Day 3 - World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-Web_1792479545067.png",
+      "event_category": "Tennis",
+      "event_name": "ATP 250 - Almaty Open 2026",
+      "language": "English",
+      "startTime": "12:00:00 PM 21-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250153,
+      "title": "Court 1 - Round 32 vs France (BWF Super 750 - French Open 2026)",
+      "match_name": "Court 1 - Round 32",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Yonex-French-Open-2026_FC-WEB.jpg",
+      "event_category": "Badminton",
+      "event_name": "BWF Super 750 - French Open 2026",
+      "language": "English",
+      "startTime": "01:30:00 PM 21-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249623,
+      "title": "Day 3 - World Feed vs Brussels, Belgium (ATP 250 - BNP Paribas Fortis European Open)",
+      "match_name": "Day 3 - World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/BNP-Paribas-Fortis-European-Open_fc-web.jpg",
+      "event_category": "Tennis",
+      "event_name": "ATP 250 - BNP Paribas Fortis European Open",
+      "language": "English",
+      "startTime": "03:30:00 PM 21-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249616,
+      "title": "Day 3 - World Feed vs Lyon, France (ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026)",
+      "match_name": "Day 3 - World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Grand-Prix-Auvergne-Rhone-Alpes_fc-web.jpg",
+      "event_category": "Tennis",
+      "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026",
+      "language": "English",
+      "startTime": "05:30:00 PM 21-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4250480,
       "title": "Emirates Red vs Dubai (Emirates D20, 2026)",
       "match_name": "Emirates Red vs Dubai",
@@ -299,6 +289,18 @@
       "event_name": "Emirates D20, 2026",
       "language": "English",
       "startTime": "10:00:00 PM 22-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250218,
+      "title": "Al-Fateh SC vs Al-Shabab FC (Roshn Saudi League 2026-2027)",
+      "match_name": "Al-Fateh SC vs Al-Shabab FC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250218_53025_AFF_ASF_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "Roshn Saudi League 2026-2027",
+      "language": "English",
+      "startTime": "08:15:00 PM 22-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -359,18 +361,6 @@
       "event_name": "BWF Super 750 - French Open 2026",
       "language": "English",
       "startTime": "03:30:00 PM 22-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250218,
-      "title": "Al-Fateh SC vs Al-Shabab FC (Roshn Saudi League 2026-2027)",
-      "match_name": "Al-Fateh SC vs Al-Shabab FC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250218_53025_AFF_ASF_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "Roshn Saudi League 2026-2027",
-      "language": "English",
-      "startTime": "08:15:00 PM 22-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -491,6 +481,18 @@
       "event_name": "BWF Super 750 - French Open 2026",
       "language": "English",
       "startTime": "01:00:00 PM 23-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249762,
+      "title": "Gambia vs Uganda (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
+      "match_name": "Gambia vs Uganda",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249762_53093_GAM_UGA_FC-Web_1792493253257.png",
+      "event_category": "Cricket",
+      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
+      "language": "English",
+      "startTime": "06:20:00 PM 23-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
