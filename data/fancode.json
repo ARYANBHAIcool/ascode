@@ -2,28 +2,14 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/21/2026, 8:41:07 PM IST",
+  "last_updated": "10/21/2026, 11:24:04 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 8,
+  "live_matches": 6,
   "matches": [
-    {
-      "match_id": "4249782",
-      "match_name": "South Africa Vs Australia",
-      "title": "South Africa Vs Australia",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/AUS-vs-SA-test_Web-match-card.png",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249782_english_hls_bf21f9fa2f28565_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "01:30:00 PM 18-10-2026",
-      "team_1": "South Africa",
-      "team_2": "Australia",
-      "event_name": "Australia tour of South Africa, 2026"
-    },
     {
       "match_id": "4249696",
       "match_name": "Bangladesh Vs Afghanistan",
@@ -39,46 +25,28 @@
       "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026"
     },
     {
-      "match_id": "4250478",
-      "match_name": "Dubai Vs Emirates Blues",
-      "title": "Dubai Vs Emirates Blues",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250478_53130_EMB_DUB_fc-web_1792412930104.jpg",
+      "match_id": "4250479",
+      "match_name": "Ajman Vs Abu Dhabi",
+      "title": "Ajman Vs Abu Dhabi",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250479_53130_AJM_ABD_fc-web_1792412930149.jpg",
       "language": "English",
       "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250478_english_hls_f696d741098031_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250479_english_hls_9167fee39a54643_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE",
-      "startTime": "06:00:00 PM 21-10-2026",
-      "team_1": "Dubai",
-      "team_2": "Emirates Blues",
+      "startTime": "10:00:00 PM 21-10-2026",
+      "team_1": "Ajman",
+      "team_2": "Abu Dhabi",
       "event_name": "Emirates D20, 2026"
     },
     {
-      "match_id": "4249759",
-      "match_name": "Zambia Vs Nigeria",
-      "title": "Zambia Vs Nigeria",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249759_53093_ZAM_NGR_FC-Web_1792493252671.png",
+      "match_id": "4247624",
+      "match_name": "Levante Vs Athletic Club",
+      "title": "Levante Vs Athletic Club",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247624_53004_LET_ATH_FC-Web.png",
       "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249759_english_hls_f29d7378369507_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "06:20:00 PM 21-10-2026",
-      "team_1": "Zambia",
-      "team_2": "Nigeria",
-      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026"
-    },
-    {
-      "match_id": "4249609",
-      "match_name": "Day 3   World Feed",
-      "title": "Day 3   World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-Web_1792479545067.png",
-      "language": "English",
-      "event_category": "Tennis",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249609_english_hls_8f2b2f331567116_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "12:00:00 PM 21-10-2026",
-      "team_1": "Day 3 - World Feed",
-      "team_2": "Almaty, Kazakhstan",
-      "event_name": "ATP 250 - Almaty Open 2026"
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247624_english_hls_536bf453ca76649_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE"
     },
     {
       "match_id": "4250153",
@@ -123,6 +91,18 @@
       "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026"
     },
     {
+      "match_id": 4249782,
+      "title": "South Africa vs Australia (Australia tour of South Africa, 2026)",
+      "match_name": "South Africa vs Australia",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/AUS-vs-SA-test_Web-match-card.png",
+      "event_category": "Cricket",
+      "event_name": "Australia tour of South Africa, 2026",
+      "language": "English",
+      "startTime": "01:30:00 PM 18-10-2026",
+      "status": "PAUSED",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249665,
       "title": "Tasmania vs Victoria (Sheffield Shield, 2026/27)",
       "match_name": "Tasmania vs Victoria",
@@ -144,18 +124,6 @@
       "language": "English",
       "startTime": "08:00:00 AM 19-10-2026",
       "status": "PAUSED",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250479,
-      "title": "Ajman vs Abu Dhabi (Emirates D20, 2026)",
-      "match_name": "Ajman vs Abu Dhabi",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250479_53130_AJM_ABD_fc-web_1792412930149.jpg",
-      "event_category": "Cricket",
-      "event_name": "Emirates D20, 2026",
-      "language": "English",
-      "startTime": "10:00:00 PM 21-10-2026",
-      "status": "UPCOMING",
       "stream_url": ""
     },
     {
@@ -219,14 +187,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4247624,
-      "title": "Levante vs Athletic Club (LALIGA 2026-27)",
-      "match_name": "Levante vs Athletic Club",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247624_53004_LET_ATH_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
+      "match_id": 4250481,
+      "title": "Sharjah vs Abu Dhabi (Emirates D20, 2026)",
+      "match_name": "Sharjah vs Abu Dhabi",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250481_53130_SHA_ABD_fc-web_1792412929288.jpg",
+      "event_category": "Cricket",
+      "event_name": "Emirates D20, 2026",
       "language": "English",
-      "startTime": "11:30:00 PM 21-10-2026",
+      "startTime": "10:00:00 PM 22-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -239,18 +207,6 @@
       "event_name": "League One 2026-27",
       "language": "English",
       "startTime": "12:30:00 AM 22-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250481,
-      "title": "Sharjah vs Abu Dhabi (Emirates D20, 2026)",
-      "match_name": "Sharjah vs Abu Dhabi",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250481_53130_SHA_ABD_fc-web_1792412929288.jpg",
-      "event_category": "Cricket",
-      "event_name": "Emirates D20, 2026",
-      "language": "English",
-      "startTime": "10:00:00 PM 22-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -503,6 +459,42 @@
       "event_name": "ATP 250 - Almaty Open 2026",
       "language": "English",
       "startTime": "03:30:00 PM 23-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249618,
+      "title": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026 vs Lyon, France (ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026)",
+      "match_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Grand-Prix-Auvergne-Rhone-Alpes_fc-web.jpg",
+      "event_category": "Tennis",
+      "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026",
+      "language": "English",
+      "startTime": "03:30:00 PM 23-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249625,
+      "title": "ATP 250 - BNP Paribas Fortis European Open vs Brussels, Belgium (ATP 250 - BNP Paribas Fortis European Open)",
+      "match_name": "ATP 250 - BNP Paribas Fortis European Open",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/BNP-Paribas-Fortis-European-Open_fc-web.jpg",
+      "event_category": "Tennis",
+      "event_name": "ATP 250 - BNP Paribas Fortis European Open",
+      "language": "English",
+      "startTime": "03:30:00 PM 23-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250483,
+      "title": "Emirates Blues vs Abu Dhabi (Emirates D20, 2026)",
+      "match_name": "Emirates Blues vs Abu Dhabi",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250483_53130_EMB_ABD_fc-web_1792412930142.jpg",
+      "event_category": "Cricket",
+      "event_name": "Emirates D20, 2026",
+      "language": "English",
+      "startTime": "10:00:00 PM 23-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
