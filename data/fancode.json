@@ -2,42 +2,14 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/22/2026, 2:44:20 AM IST",
+  "last_updated": "10/22/2026, 4:04:12 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 2,
+  "live_matches": 0,
   "matches": [
-    {
-      "match_id": "4249805",
-      "match_name": "Reading Vs Leyton Orient",
-      "title": "Reading Vs Leyton Orient",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Football-old-copy.jpg",
-      "language": "English",
-      "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249805_english_hls_ba646578b745190_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "12:30:00 AM 22-10-2026",
-      "team_1": "Reading",
-      "team_2": "Leyton Orient",
-      "event_name": "League One 2026-27"
-    },
-    {
-      "match_id": "4249616",
-      "match_name": "Day 3   World Feed",
-      "title": "Day 3   World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Grand-Prix-Auvergne-Rhone-Alpes_fc-web.jpg",
-      "language": "English",
-      "event_category": "Tennis",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249616_english_hls_1cfc6b5feb21323_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "05:30:00 PM 21-10-2026",
-      "team_1": "Day 3 - World Feed",
-      "team_2": "Lyon, France",
-      "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026"
-    },
     {
       "match_id": 4249782,
       "title": "South Africa vs Australia (Australia tour of South Africa, 2026)",
@@ -491,6 +463,30 @@
       "event_name": "LALIGA Hypermotion 2026-27",
       "language": "English",
       "startTime": "12:00:00 AM 24-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250352,
+      "title": "Day 2 - World Feed vs Port Royal Golf Course - Southampton, Bermuda (Butterfield Bermuda Championship 2026)",
+      "match_name": "Day 2 - World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Butterfield-bermuda-golf_Web-match-card.png",
+      "event_category": "Golf",
+      "event_name": "Butterfield Bermuda Championship 2026",
+      "language": "English",
+      "startTime": "09:30:00 PM 23-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249285,
+      "title": "Tasmania vs Victoria (One Day Cup, 2026/27)",
+      "match_name": "Tasmania vs Victoria",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249285_53072_TAS_VCT_FC-Web.jpg",
+      "event_category": "Cricket",
+      "event_name": "One Day Cup, 2026/27",
+      "language": "English",
+      "startTime": "05:00:00 AM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
