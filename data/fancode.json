@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/21/2026, 10:25:53 AM IST",
+  "last_updated": "10/21/2026, 12:31:42 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 3,
+  "live_matches": 4,
   "matches": [
     {
       "match_id": "4249665",
@@ -39,18 +39,32 @@
       "event_name": "Sheffield Shield, 2026/27"
     },
     {
-      "match_id": "4249804",
-      "match_name": "Sydney Sixers Women Vs Perth Scorchers Women",
-      "title": "Sydney Sixers Women Vs Perth Scorchers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249804_53097_SS-W_PS-W_FC-Web.png",
+      "match_id": "4249609",
+      "match_name": "Day 3   World Feed",
+      "title": "Day 3   World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-Web_1792479545067.png",
+      "language": "English",
+      "event_category": "Tennis",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249609_english_hls_8f2b2f331567116_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "12:00:00 PM 21-10-2026",
+      "team_1": "Day 3 - World Feed",
+      "team_2": "Almaty, Kazakhstan",
+      "event_name": "ATP 250 - Almaty Open 2026"
+    },
+    {
+      "match_id": "4250336",
+      "match_name": "Kenya Vs Denmark",
+      "title": "Kenya Vs Denmark",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png",
       "language": "English",
       "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249804_english_hls_a62996220890342_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250336_english_hls_3e3f7ed4433143_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE",
-      "startTime": "08:30:00 AM 21-10-2026",
-      "team_1": "Sydney Sixers Women",
-      "team_2": "Perth Scorchers Women",
-      "event_name": "T20 Spring Challenge, 2026"
+      "startTime": "12:15:00 PM 21-10-2026",
+      "team_1": "Kenya",
+      "team_2": "Denmark",
+      "event_name": "ICC CWC Challenge League A 2026"
     },
     {
       "match_id": 4249782,
@@ -97,18 +111,6 @@
       "event_name": "Emirates D20, 2026",
       "language": "English",
       "startTime": "10:00:00 PM 21-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250336,
-      "title": "Kenya vs Denmark (ICC CWC Challenge League A 2026)",
-      "match_name": "Kenya vs Denmark",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png",
-      "event_category": "Cricket",
-      "event_name": "ICC CWC Challenge League A 2026",
-      "language": "English",
-      "startTime": "12:15:00 PM 21-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -161,18 +163,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249805,
-      "title": "Reading vs Leyton Orient (League One 2026-27)",
-      "match_name": "Reading vs Leyton Orient",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Football-old-copy.jpg",
-      "event_category": "Football",
-      "event_name": "League One 2026-27",
-      "language": "English",
-      "startTime": "12:30:00 AM 22-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250337,
       "title": "Papua New Guinea vs Jersey (ICC CWC Challenge League A 2026)",
       "match_name": "Papua New Guinea vs Jersey",
@@ -193,6 +183,18 @@
       "event_name": "ICC CWC Challenge League A 2026",
       "language": "English",
       "startTime": "12:15:00 PM 22-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249805,
+      "title": "Reading vs Leyton Orient (League One 2026-27)",
+      "match_name": "Reading vs Leyton Orient",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Football-old-copy.jpg",
+      "event_category": "Football",
+      "event_name": "League One 2026-27",
+      "language": "English",
+      "startTime": "12:30:00 AM 22-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -221,14 +223,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249609,
-      "title": "Day 3 - World Feed vs Almaty, Kazakhstan (ATP 250 - Almaty Open 2026)",
-      "match_name": "Day 3 - World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-Web_1792479545067.png",
-      "event_category": "Tennis",
-      "event_name": "ATP 250 - Almaty Open 2026",
+      "match_id": 4250480,
+      "title": "Emirates Red vs Dubai (Emirates D20, 2026)",
+      "match_name": "Emirates Red vs Dubai",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250480_53130_EMR_DUB_fc-web_1792412929376.jpg",
+      "event_category": "Cricket",
+      "event_name": "Emirates D20, 2026",
       "language": "English",
-      "startTime": "12:00:00 PM 21-10-2026",
+      "startTime": "06:00:00 PM 22-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -265,18 +267,6 @@
       "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026",
       "language": "English",
       "startTime": "05:30:00 PM 21-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250480,
-      "title": "Emirates Red vs Dubai (Emirates D20, 2026)",
-      "match_name": "Emirates Red vs Dubai",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250480_53130_EMR_DUB_fc-web_1792412929376.jpg",
-      "event_category": "Cricket",
-      "event_name": "Emirates D20, 2026",
-      "language": "English",
-      "startTime": "06:00:00 PM 22-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -397,6 +387,18 @@
       "event_name": "F1 ACADEMY AUSTIN 2026",
       "language": "English",
       "startTime": "10:55:00 PM 22-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 139978,
+      "title": "Day 1 vs Phillip Island (GRAND PRIX OF AUSTRALIA 2026)",
+      "match_name": "Australia GP",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Grand-Prix-of-Australiaold-match-card.png",
+      "event_category": "MotoGP",
+      "event_name": "GRAND PRIX OF AUSTRALIA 2026",
+      "language": "English",
+      "startTime": "03:30:00 AM 23-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
