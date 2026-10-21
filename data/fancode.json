@@ -2,7 +2,7 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/21/2026, 11:24:04 PM IST",
+  "last_updated": "10/22/2026, 12:50:41 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -10,20 +10,6 @@
   "total_matches": 40,
   "live_matches": 6,
   "matches": [
-    {
-      "match_id": "4249696",
-      "match_name": "Bangladesh Vs Afghanistan",
-      "title": "Bangladesh Vs Afghanistan",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249696_53089_AFG_BAN_FC-WEB_1792056448070.jpg",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249696_english_hls_d51b02bd8369074_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "05:00:00 PM 21-10-2026",
-      "team_1": "Bangladesh",
-      "team_2": "Afghanistan",
-      "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026"
-    },
     {
       "match_id": "4250479",
       "match_name": "Ajman Vs Abu Dhabi",
@@ -49,18 +35,18 @@
       "status": "LIVE"
     },
     {
-      "match_id": "4250153",
-      "match_name": "Court 1   Round 32",
-      "title": "Court 1   Round 32",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Yonex-French-Open-2026_FC-WEB.jpg",
+      "match_id": "4249805",
+      "match_name": "Reading Vs Leyton Orient",
+      "title": "Reading Vs Leyton Orient",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Football-old-copy.jpg",
       "language": "English",
-      "event_category": "Badminton",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250153_english_hls_0f4905838a44655_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249805_english_hls_ba646578b745190_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE",
-      "startTime": "01:30:00 PM 21-10-2026",
-      "team_1": "Court 1 - Round 32",
-      "team_2": "France",
-      "event_name": "BWF Super 750 - French Open 2026"
+      "startTime": "12:30:00 AM 22-10-2026",
+      "team_1": "Reading",
+      "team_2": "Leyton Orient",
+      "event_name": "League One 2026-27"
     },
     {
       "match_id": "4249623",
@@ -89,6 +75,18 @@
       "team_1": "Day 3 - World Feed",
       "team_2": "Lyon, France",
       "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026"
+    },
+    {
+      "match_id": "4249696_ENG",
+      "title": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026 [English]",
+      "match_name": "Bangladesh vs Afghanistan [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249696_53089_AFG_BAN_FC-WEB_1792056448070.jpg",
+      "event_category": "Cricket",
+      "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026",
+      "language": "English",
+      "startTime": "05:00:00 PM 21-10-2026",
+      "status": "LIVE",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249696_english_hls_d51b02bd8369074_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/"
     },
     {
       "match_id": 4249782,
@@ -195,18 +193,6 @@
       "event_name": "Emirates D20, 2026",
       "language": "English",
       "startTime": "10:00:00 PM 22-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249805,
-      "title": "Reading vs Leyton Orient (League One 2026-27)",
-      "match_name": "Reading vs Leyton Orient",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Football-old-copy.jpg",
-      "event_category": "Football",
-      "event_name": "League One 2026-27",
-      "language": "English",
-      "startTime": "12:30:00 AM 22-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -368,8 +354,8 @@
     },
     {
       "match_id": 4249697,
-      "title": "TBC vs TBC (Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026)",
-      "match_name": "TBC vs TBC",
+      "title": "Afghanistan vs Zimbabwe (Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026)",
+      "match_name": "Afghanistan vs Zimbabwe",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
       "event_category": "Cricket",
       "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026",
@@ -495,6 +481,18 @@
       "event_name": "Emirates D20, 2026",
       "language": "English",
       "startTime": "10:00:00 PM 23-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250267,
+      "title": "Al-Ittihad vs Diriyah (Roshn Saudi League 2026-2027)",
+      "match_name": "Al-Ittihad vs Diriyah",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250267_53025_ITT_DIR_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "Roshn Saudi League 2026-2027",
+      "language": "English",
+      "startTime": "09:00:00 PM 23-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
