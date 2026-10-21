@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/21/2026, 3:32:11 PM IST",
+  "last_updated": "10/21/2026, 6:23:33 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 8,
+  "live_matches": 9,
   "matches": [
     {
       "match_id": "4249782",
@@ -25,20 +25,6 @@
       "event_name": "Australia tour of South Africa, 2026"
     },
     {
-      "match_id": "4249667",
-      "match_name": "New South Wales Vs Western Australia",
-      "title": "New South Wales Vs Western Australia",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249667_53087_WAU_NSW_FC-WEB_1791299730396.jpg",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249667_english_hls_27a33faf8098479_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "08:00:00 AM 19-10-2026",
-      "team_1": "New South Wales",
-      "team_2": "Western Australia",
-      "event_name": "Sheffield Shield, 2026/27"
-    },
-    {
       "match_id": "4250336",
       "match_name": "Kenya Vs Denmark",
       "title": "Kenya Vs Denmark",
@@ -53,31 +39,45 @@
       "event_name": "ICC CWC Challenge League A 2026"
     },
     {
-      "match_id": "4249757",
-      "match_name": "Mozambique Vs Gambia",
-      "title": "Mozambique Vs Gambia",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249757_53093_MOZ_GAM_FC-Web_1792493253316.png",
+      "match_id": "4249696",
+      "match_name": "Bangladesh Vs Afghanistan",
+      "title": "Bangladesh Vs Afghanistan",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249696_53089_AFG_BAN_FC-WEB_1792056448070.jpg",
       "language": "English",
       "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249757_english_hls_f87c87a08265245_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249696_english_hls_d51b02bd8369074_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE",
-      "startTime": "02:00:00 PM 21-10-2026",
-      "team_1": "Mozambique",
-      "team_2": "Gambia",
-      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026"
+      "startTime": "05:00:00 PM 21-10-2026",
+      "team_1": "Bangladesh",
+      "team_2": "Afghanistan",
+      "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026"
     },
     {
-      "match_id": "4249758",
-      "match_name": "Lesotho Vs Uganda",
-      "title": "Lesotho Vs Uganda",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249758_53093_LES_UGA_FC-Web_1792493252675.png",
+      "match_id": "4250478",
+      "match_name": "Dubai Vs Emirates Blues",
+      "title": "Dubai Vs Emirates Blues",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250478_53130_EMB_DUB_fc-web_1792412930104.jpg",
       "language": "English",
       "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249758_english_hls_aafda7ac1d7327_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250478_english_hls_f696d741098031_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE",
-      "startTime": "02:00:00 PM 21-10-2026",
-      "team_1": "Lesotho",
-      "team_2": "Uganda",
+      "startTime": "06:00:00 PM 21-10-2026",
+      "team_1": "Dubai",
+      "team_2": "Emirates Blues",
+      "event_name": "Emirates D20, 2026"
+    },
+    {
+      "match_id": "4249759",
+      "match_name": "Zambia Vs Nigeria",
+      "title": "Zambia Vs Nigeria",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249759_53093_ZAM_NGR_FC-Web_1792493252671.png",
+      "language": "English",
+      "event_category": "Cricket",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249759_english_hls_f29d7378369507_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "06:20:00 PM 21-10-2026",
+      "team_1": "Zambia",
+      "team_2": "Nigeria",
       "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026"
     },
     {
@@ -123,6 +123,20 @@
       "event_name": "ATP 250 - BNP Paribas Fortis European Open"
     },
     {
+      "match_id": "4249616",
+      "match_name": "Day 3   World Feed",
+      "title": "Day 3   World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Grand-Prix-Auvergne-Rhone-Alpes_fc-web.jpg",
+      "language": "English",
+      "event_category": "Tennis",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249616_english_hls_1cfc6b5feb21323_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "05:30:00 PM 21-10-2026",
+      "team_1": "Day 3 - World Feed",
+      "team_2": "Lyon, France",
+      "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026"
+    },
+    {
       "match_id": 4249665,
       "title": "Tasmania vs Victoria (Sheffield Shield, 2026/27)",
       "match_name": "Tasmania vs Victoria",
@@ -135,27 +149,15 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249696,
-      "title": "Afghanistan vs Bangladesh (Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026)",
-      "match_name": "Afghanistan vs Bangladesh",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249696_53089_AFG_BAN_FC-WEB_1792056448070.jpg",
+      "match_id": 4249667,
+      "title": "New South Wales vs Western Australia (Sheffield Shield, 2026/27)",
+      "match_name": "New South Wales vs Western Australia",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249667_53087_WAU_NSW_FC-WEB_1791299730396.jpg",
       "event_category": "Cricket",
-      "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026",
+      "event_name": "Sheffield Shield, 2026/27",
       "language": "English",
-      "startTime": "05:00:00 PM 21-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250478,
-      "title": "Emirates Blues vs Dubai (Emirates D20, 2026)",
-      "match_name": "Emirates Blues vs Dubai",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250478_53130_EMB_DUB_fc-web_1792412930104.jpg",
-      "event_category": "Cricket",
-      "event_name": "Emirates D20, 2026",
-      "language": "English",
-      "startTime": "06:00:00 PM 21-10-2026",
-      "status": "UPCOMING",
+      "startTime": "08:00:00 AM 19-10-2026",
+      "status": "PAUSED",
       "stream_url": ""
     },
     {
@@ -195,30 +197,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249759,
-      "title": "Zambia vs Nigeria (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
-      "match_name": "Zambia vs Nigeria",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249759_53093_ZAM_NGR_FC-Web_1792493252671.png",
-      "event_category": "Cricket",
-      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
-      "language": "English",
-      "startTime": "06:20:00 PM 21-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4247624,
-      "title": "Levante vs Athletic Club (LALIGA 2026-27)",
-      "match_name": "Levante vs Athletic Club",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247624_53004_LET_ATH_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "11:30:00 PM 21-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250331,
       "title": "Namibia vs Ireland (Ireland tour of Namibia, 2026)",
       "match_name": "Namibia vs Ireland",
@@ -243,14 +221,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249805,
-      "title": "Reading vs Leyton Orient (League One 2026-27)",
-      "match_name": "Reading vs Leyton Orient",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Football-old-copy.jpg",
+      "match_id": 4247624,
+      "title": "Levante vs Athletic Club (LALIGA 2026-27)",
+      "match_name": "Levante vs Athletic Club",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247624_53004_LET_ATH_FC-Web.png",
       "event_category": "Football",
-      "event_name": "League One 2026-27",
+      "event_name": "LALIGA 2026-27",
       "language": "English",
-      "startTime": "12:30:00 AM 22-10-2026",
+      "startTime": "11:30:00 PM 21-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -267,14 +245,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249616,
-      "title": "Day 3 - World Feed vs Lyon, France (ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026)",
-      "match_name": "Day 3 - World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Grand-Prix-Auvergne-Rhone-Alpes_fc-web.jpg",
-      "event_category": "Tennis",
-      "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026",
+      "match_id": 4249805,
+      "title": "Reading vs Leyton Orient (League One 2026-27)",
+      "match_name": "Reading vs Leyton Orient",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Football-old-copy.jpg",
+      "event_category": "Football",
+      "event_name": "League One 2026-27",
       "language": "English",
-      "startTime": "05:30:00 PM 21-10-2026",
+      "startTime": "12:30:00 AM 22-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -299,6 +277,18 @@
       "event_name": "Roshn Saudi League 2026-2027",
       "language": "English",
       "startTime": "08:15:00 PM 22-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250219,
+      "title": "Al-Ahli Saudi FC vs Al Khaleej FC (Roshn Saudi League 2026-2027)",
+      "match_name": "Al-Ahli Saudi FC vs Al Khaleej FC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250219_53025_AAS_AKH_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "Roshn Saudi League 2026-2027",
+      "language": "English",
+      "startTime": "11:30:00 PM 22-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -359,18 +349,6 @@
       "event_name": "BWF Super 750 - French Open 2026",
       "language": "English",
       "startTime": "03:30:00 PM 22-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250219,
-      "title": "Al-Ahli Saudi FC vs Al Khaleej FC (Roshn Saudi League 2026-2027)",
-      "match_name": "Al-Ahli Saudi FC vs Al Khaleej FC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250219_53025_AAS_AKH_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "Roshn Saudi League 2026-2027",
-      "language": "English",
-      "startTime": "11:30:00 PM 22-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -503,6 +481,30 @@
       "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
       "language": "English",
       "startTime": "06:20:00 PM 23-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249840,
+      "title": "Brisbane Roar vs Perth Glory (A-League 2026-27)",
+      "match_name": "Brisbane Roar vs Perth Glory",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249840_53101_BRB_PG_fc-Web_1792223292186.jpg",
+      "event_category": "Football",
+      "event_name": "A-League 2026-27",
+      "language": "English",
+      "startTime": "02:30:00 PM 23-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250266,
+      "title": "Al Faisaly Saudi vs Al-Nassr FC (Roshn Saudi League 2026-2027)",
+      "match_name": "Al Faisaly Saudi vs Al-Nassr FC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250266_53025_ALF_ANF_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "Roshn Saudi League 2026-2027",
+      "language": "English",
+      "startTime": "07:00:00 PM 23-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
