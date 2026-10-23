@@ -2,28 +2,14 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/23/2026, 4:22:51 AM IST",
+  "last_updated": "10/23/2026, 11:40:08 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 1,
+  "live_matches": 0,
   "matches": [
-    {
-      "match_id": "139978",
-      "match_name": "Day 1",
-      "title": "Day 1",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Grand-Prix-of-Australiaold-match-card.png",
-      "language": "English",
-      "event_category": "MotoGP",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/139978_english_hls_907152588e45860_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "03:30:00 AM 23-10-2026",
-      "team_1": "Day 1",
-      "team_2": "Phillip Island",
-      "event_name": "GRAND PRIX OF AUSTRALIA 2026"
-    },
     {
       "match_id": 4249697,
       "title": "Afghanistan vs Zimbabwe (Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026)",
@@ -57,6 +43,18 @@
       "event_name": "Emirates D20, 2026",
       "language": "English",
       "startTime": "10:00:00 PM 23-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249285,
+      "title": "Tasmania vs Victoria (One Day Cup, 2026/27)",
+      "match_name": "Tasmania vs Victoria",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249285_53072_TAS_VCT_FC-Web.jpg",
+      "event_category": "Cricket",
+      "event_name": "One Day Cup, 2026/27",
+      "language": "English",
+      "startTime": "05:00:00 AM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -121,18 +119,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249285,
-      "title": "Tasmania vs Victoria (One Day Cup, 2026/27)",
-      "match_name": "Tasmania vs Victoria",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249285_53072_TAS_VCT_FC-Web.jpg",
-      "event_category": "Cricket",
-      "event_name": "One Day Cup, 2026/27",
-      "language": "English",
-      "startTime": "05:00:00 AM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250219,
       "title": "Al-Ahli Saudi FC vs Al Khaleej FC (Roshn Saudi League 2026-2027)",
       "match_name": "Al-Ahli Saudi FC vs Al Khaleej FC",
@@ -181,6 +167,42 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249282,
+      "title": "Western Australia vs New South Wales (One Day Cup, 2026/27)",
+      "match_name": "Western Australia vs New South Wales",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249282_53072_WAU_NSW_FC-Web.jpg",
+      "event_category": "Cricket",
+      "event_name": "One Day Cup, 2026/27",
+      "language": "English",
+      "startTime": "11:30:00 AM 24-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250339,
+      "title": "Denmark vs Kuwait (ICC CWC Challenge League A 2026)",
+      "match_name": "Denmark vs Kuwait",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png",
+      "event_category": "Cricket",
+      "event_name": "ICC CWC Challenge League A 2026",
+      "language": "English",
+      "startTime": "12:15:00 PM 24-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250340,
+      "title": "Qatar vs Kenya (ICC CWC Challenge League A 2026)",
+      "match_name": "Qatar vs Kenya",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png",
+      "event_category": "Cricket",
+      "event_name": "ICC CWC Challenge League A 2026",
+      "language": "English",
+      "startTime": "12:15:00 PM 24-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4250107,
       "title": "Granada vs Real Valladolid (LALIGA Hypermotion 2026-27)",
       "match_name": "Granada vs Real Valladolid",
@@ -201,6 +223,30 @@
       "event_name": "ATP 250 - Almaty Open 2026",
       "language": "English",
       "startTime": "12:00:00 PM 23-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250332,
+      "title": "Namibia vs Ireland (Ireland tour of Namibia, 2026)",
+      "match_name": "Namibia vs Ireland",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Namibia-vs-Ireland_fc-web.jpg",
+      "event_category": "Cricket",
+      "event_name": "Ireland tour of Namibia, 2026",
+      "language": "English",
+      "startTime": "01:30:00 PM 24-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249763,
+      "title": "Uganda vs Mozambique (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
+      "match_name": "Uganda vs Mozambique",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249763_53093_UGA_MOZ_FC-Web_1792493252645.png",
+      "event_category": "Cricket",
+      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
+      "language": "English",
+      "startTime": "02:00:00 PM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -277,18 +323,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249282,
-      "title": "Western Australia vs New South Wales (One Day Cup, 2026/27)",
-      "match_name": "Western Australia vs New South Wales",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249282_53072_WAU_NSW_FC-Web.jpg",
-      "event_category": "Cricket",
-      "event_name": "One Day Cup, 2026/27",
-      "language": "English",
-      "startTime": "11:30:00 AM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 139502,
       "title": "Practice 1 vs Circuit of the Americas (F1 MSC CRUISES UNITED STATES GRAND PRIX 2026)",
       "match_name": "Practice 1",
@@ -301,26 +335,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250339,
-      "title": "Denmark vs Kuwait (ICC CWC Challenge League A 2026)",
-      "match_name": "Denmark vs Kuwait",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png",
+      "match_id": 4250484,
+      "title": "Dubai vs Abu Dhabi (Emirates D20, 2026)",
+      "match_name": "Dubai vs Abu Dhabi",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250484_53130_DUB_ABD_fc-web_1792412929330.jpg",
       "event_category": "Cricket",
-      "event_name": "ICC CWC Challenge League A 2026",
+      "event_name": "Emirates D20, 2026",
       "language": "English",
-      "startTime": "12:15:00 PM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250340,
-      "title": "Qatar vs Kenya (ICC CWC Challenge League A 2026)",
-      "match_name": "Qatar vs Kenya",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png",
-      "event_category": "Cricket",
-      "event_name": "ICC CWC Challenge League A 2026",
-      "language": "English",
-      "startTime": "12:15:00 PM 24-10-2026",
+      "startTime": "06:00:00 PM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -349,18 +371,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250332,
-      "title": "Namibia vs Ireland (Ireland tour of Namibia, 2026)",
-      "match_name": "Namibia vs Ireland",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Namibia-vs-Ireland_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "Ireland tour of Namibia, 2026",
-      "language": "English",
-      "startTime": "01:30:00 PM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250507,
       "title": "Opening Race vs Austin (F1 ACADEMY AUSTIN 2026)",
       "match_name": "Opening Race",
@@ -369,54 +379,6 @@
       "event_name": "F1 ACADEMY AUSTIN 2026",
       "language": "English",
       "startTime": "04:20:00 AM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249763,
-      "title": "Uganda vs Mozambique (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
-      "match_name": "Uganda vs Mozambique",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249763_53093_UGA_MOZ_FC-Web_1792493252645.png",
-      "event_category": "Cricket",
-      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
-      "language": "English",
-      "startTime": "02:00:00 PM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249841,
-      "title": "Newcastle Jets vs Macarthur (A-League 2026-27)",
-      "match_name": "Newcastle Jets vs Macarthur",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249841_53101_NJ_MAC_fc-Web_1792223292297.jpg",
-      "event_category": "Football",
-      "event_name": "A-League 2026-27",
-      "language": "English",
-      "startTime": "09:30:00 AM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250484,
-      "title": "Dubai vs Abu Dhabi (Emirates D20, 2026)",
-      "match_name": "Dubai vs Abu Dhabi",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250484_53130_DUB_ABD_fc-web_1792412929330.jpg",
-      "event_category": "Cricket",
-      "event_name": "Emirates D20, 2026",
-      "language": "English",
-      "startTime": "06:00:00 PM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249842,
-      "title": "Western Sydney Wanderers vs Auckland (A-League 2026-27)",
-      "match_name": "Western Sydney Wanderers vs Auckland",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249842_53101_SYW_AFC_fc-Web_1792223292033.jpg",
-      "event_category": "Football",
-      "event_name": "A-League 2026-27",
-      "language": "English",
-      "startTime": "11:30:00 AM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -433,6 +395,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249841,
+      "title": "Newcastle Jets vs Macarthur (A-League 2026-27)",
+      "match_name": "Newcastle Jets vs Macarthur",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249841_53101_NJ_MAC_fc-Web_1792223292297.jpg",
+      "event_category": "Football",
+      "event_name": "A-League 2026-27",
+      "language": "English",
+      "startTime": "09:30:00 AM 24-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4247665,
       "title": "Rayo Vallecano vs Elche CF (LALIGA 2026-27)",
       "match_name": "Rayo Vallecano vs Elche CF",
@@ -441,18 +415,6 @@
       "event_name": "LALIGA 2026-27",
       "language": "English",
       "startTime": "05:30:00 PM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250158,
-      "title": "Semi-Final vs France (BWF Super 750 - French Open 2026)",
-      "match_name": "Semi-Final",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Yonex-French-Open-2026_FC-WEB.jpg",
-      "event_category": "Badminton",
-      "event_name": "BWF Super 750 - French Open 2026",
-      "language": "English",
-      "startTime": "01:00:00 PM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -481,6 +443,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249842,
+      "title": "Western Sydney Wanderers vs Auckland (A-League 2026-27)",
+      "match_name": "Western Sydney Wanderers vs Auckland",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249842_53101_SYW_AFC_fc-Web_1792223292033.jpg",
+      "event_category": "Football",
+      "event_name": "A-League 2026-27",
+      "language": "English",
+      "startTime": "11:30:00 AM 24-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249200,
       "title": "Tottenham Hotspur Women vs Arsenal Women (Barclays Women's Super League 2026-27)",
       "match_name": "Tottenham Hotspur Women vs Arsenal Women",
@@ -489,6 +463,30 @@
       "event_name": "Barclays Women's Super League 2026-27",
       "language": "English",
       "startTime": "05:15:00 PM 24-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250158,
+      "title": "Semi-Final vs France (BWF Super 750 - French Open 2026)",
+      "match_name": "Semi-Final",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Yonex-French-Open-2026_FC-WEB.jpg",
+      "event_category": "Badminton",
+      "event_name": "BWF Super 750 - French Open 2026",
+      "language": "English",
+      "startTime": "01:00:00 PM 24-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249599,
+      "title": "Preston North End F.C. vs West Bromwich Albion F.C. (EFL Championship 2026-27)",
+      "match_name": "Preston North End F.C. vs West Bromwich Albion F.C.",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249599_52993_PST_WBA_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "EFL Championship 2026-27",
+      "language": "English",
+      "startTime": "07:30:00 PM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
