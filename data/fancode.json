@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/24/2026, 3:53:14 AM IST",
+  "last_updated": "10/24/2026, 4:34:20 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 2,
+  "live_matches": 3,
   "matches": [
     {
       "match_id": "4249618",
@@ -37,6 +37,20 @@
       "team_1": "Day 2",
       "team_2": "Phillip Island",
       "event_name": "GRAND PRIX OF AUSTRALIA 2026"
+    },
+    {
+      "match_id": "4250507",
+      "match_name": "Opening Race",
+      "title": "Opening Race",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/F2_Canada_web_1792770153782.jpg",
+      "language": "English",
+      "event_category": "Motorsports",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250507_english_hls_44cd9f0fb737145_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "04:20:00 AM 24-10-2026",
+      "team_1": "Opening Race",
+      "team_2": "Austin",
+      "event_name": "F1 ACADEMY AUSTIN 2026"
     },
     {
       "match_id": 4249285,
@@ -135,18 +149,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249598,
-      "title": "Charlton Athletic F.C vs Norwich City F.C. (EFL Championship 2026-27)",
-      "match_name": "Charlton Athletic F.C vs Norwich City F.C.",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249598_52993_CHL_NOR_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "EFL Championship 2026-27",
-      "language": "English",
-      "startTime": "05:00:00 PM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4249764,
       "title": "Gambia vs Zambia (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
       "match_name": "Gambia vs Zambia",
@@ -167,6 +169,18 @@
       "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
       "language": "English",
       "startTime": "06:20:00 PM 24-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249598,
+      "title": "Charlton Athletic F.C vs Norwich City F.C. (EFL Championship 2026-27)",
+      "match_name": "Charlton Athletic F.C vs Norwich City F.C.",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249598_52993_CHL_NOR_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "EFL Championship 2026-27",
+      "language": "English",
+      "startTime": "05:00:00 PM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -219,30 +233,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249200,
-      "title": "Tottenham Hotspur Women vs Arsenal Women (Barclays Women's Super League 2026-27)",
-      "match_name": "Tottenham Hotspur Women vs Arsenal Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249200_53038_TOT-W_ARS-W_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "Barclays Women's Super League 2026-27",
-      "language": "English",
-      "startTime": "05:15:00 PM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250507,
-      "title": "Opening Race vs Austin (F1 ACADEMY AUSTIN 2026)",
-      "match_name": "Opening Race",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/F2_Canada_web_1792770153782.jpg",
-      "event_category": "Motorsports",
-      "event_name": "F1 ACADEMY AUSTIN 2026",
-      "language": "English",
-      "startTime": "04:20:00 AM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4247659,
       "title": "Atletico de Madrid vs Deportivo de La Coruna (LALIGA 2026-27)",
       "match_name": "Atletico de Madrid vs Deportivo de La Coruna",
@@ -251,6 +241,18 @@
       "event_name": "LALIGA 2026-27",
       "language": "English",
       "startTime": "12:30:00 AM 25-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249200,
+      "title": "Tottenham Hotspur Women vs Arsenal Women (Barclays Women's Super League 2026-27)",
+      "match_name": "Tottenham Hotspur Women vs Arsenal Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249200_53038_TOT-W_ARS-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "Barclays Women's Super League 2026-27",
+      "language": "English",
+      "startTime": "05:15:00 PM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -375,18 +377,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250353,
-      "title": "Day 3 - World Feed vs Port Royal Golf Course - Southampton, Bermuda (Butterfield Bermuda Championship 2026)",
-      "match_name": "Day 3 - World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Butterfield-bermuda-golf_Web-match-card.png",
-      "event_category": "Golf",
-      "event_name": "Butterfield Bermuda Championship 2026",
-      "language": "English",
-      "startTime": "09:30:00 PM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250516,
       "title": "United Arab Emirates vs Netherlands (ICC CWC League 2 UAE, 2026)",
       "match_name": "United Arab Emirates vs Netherlands",
@@ -395,6 +385,18 @@
       "event_name": "ICC CWC League 2 UAE, 2026",
       "language": "English",
       "startTime": "11:00:00 AM 25-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250353,
+      "title": "Day 3 - World Feed vs Port Royal Golf Course - Southampton, Bermuda (Butterfield Bermuda Championship 2026)",
+      "match_name": "Day 3 - World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Butterfield-bermuda-golf_Web-match-card.png",
+      "event_category": "Golf",
+      "event_name": "Butterfield Bermuda Championship 2026",
+      "language": "English",
+      "startTime": "09:30:00 PM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
