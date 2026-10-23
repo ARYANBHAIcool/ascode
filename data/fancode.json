@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/23/2026, 5:14:30 PM IST",
+  "last_updated": "10/23/2026, 8:40:21 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 4,
+  "live_matches": 8,
   "matches": [
     {
       "match_id": "4249697",
@@ -23,6 +23,34 @@
       "team_1": "Zimbabwe",
       "team_2": "Afghanistan",
       "event_name": "Afghanistan, Bangladesh & Zimbabwe Tri Series, 2026"
+    },
+    {
+      "match_id": "4250482",
+      "match_name": "Ajman Vs Sharjah",
+      "title": "Ajman Vs Sharjah",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250482_53130_AJM_SHA_fc-web_1792412929295.jpg",
+      "language": "English",
+      "event_category": "Cricket",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250482_english_hls_5de76197b666269_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "06:00:00 PM 23-10-2026",
+      "team_1": "Ajman",
+      "team_2": "Sharjah",
+      "event_name": "Emirates D20, 2026"
+    },
+    {
+      "match_id": "4250266",
+      "match_name": "Al Faisaly Saudi Vs Al Nassr Fc",
+      "title": "Al Faisaly Saudi Vs Al Nassr Fc",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250266_53025_ALF_ANF_FC-Web.png",
+      "language": "English",
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250266_english_hls_ade98728f479014_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "07:00:00 PM 23-10-2026",
+      "team_1": "Al Faisaly Saudi",
+      "team_2": "Al-Nassr FC",
+      "event_name": "Roshn Saudi League 2026-2027"
     },
     {
       "match_id": "4249611",
@@ -67,16 +95,32 @@
       "event_name": "BWF Super 750 - French Open 2026"
     },
     {
-      "match_id": 4250482,
-      "title": "Ajman vs Sharjah (Emirates D20, 2026)",
-      "match_name": "Ajman vs Sharjah",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250482_53130_AJM_SHA_fc-web_1792412929295.jpg",
-      "event_category": "Cricket",
-      "event_name": "Emirates D20, 2026",
+      "match_id": "4249618",
+      "match_name": "Day 5   World Feed",
+      "title": "Day 5   World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Grand-Prix-Auvergne-Rhone-Alpes_fc-web.jpg",
       "language": "English",
-      "startTime": "06:00:00 PM 23-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
+      "event_category": "Tennis",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249618_english_hls_bd306a0e4442012_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "05:30:00 PM 23-10-2026",
+      "team_1": "Day 5 - World Feed",
+      "team_2": "Lyon, France",
+      "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026"
+    },
+    {
+      "match_id": "4249625",
+      "match_name": "Day 5   World Feed",
+      "title": "Day 5   World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/BNP-Paribas-Fortis-European-Open_fc-web.jpg",
+      "language": "English",
+      "event_category": "Tennis",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249625_english_hls_536367850459177_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "05:30:00 PM 23-10-2026",
+      "team_1": "Day 5 - World Feed",
+      "team_2": "Brussels, Belgium",
+      "event_name": "ATP 250 - BNP Paribas Fortis European Open"
     },
     {
       "match_id": 4250483,
@@ -139,6 +183,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4250267,
+      "title": "Al-Ittihad vs Diriyah (Roshn Saudi League 2026-2027)",
+      "match_name": "Al-Ittihad vs Diriyah",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250267_53025_ITT_DIR_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "Roshn Saudi League 2026-2027",
+      "language": "English",
+      "startTime": "09:00:00 PM 23-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4250332,
       "title": "Namibia vs Ireland (Ireland tour of Namibia, 2026)",
       "match_name": "Namibia vs Ireland",
@@ -151,38 +207,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249762,
-      "title": "Gambia vs Uganda (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
-      "match_name": "Gambia vs Uganda",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249762_53093_GAM_UGA_FC-Web_1792493253257.png",
+      "match_id": 4250484,
+      "title": "Dubai vs Abu Dhabi (Emirates D20, 2026)",
+      "match_name": "Dubai vs Abu Dhabi",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250484_53130_DUB_ABD_fc-web_1792412929330.jpg",
       "event_category": "Cricket",
-      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
+      "event_name": "Emirates D20, 2026",
       "language": "English",
-      "startTime": "06:20:00 PM 23-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250266,
-      "title": "Al Faisaly Saudi vs Al-Nassr FC (Roshn Saudi League 2026-2027)",
-      "match_name": "Al Faisaly Saudi vs Al-Nassr FC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250266_53025_ALF_ANF_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "Roshn Saudi League 2026-2027",
-      "language": "English",
-      "startTime": "07:00:00 PM 23-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250267,
-      "title": "Al-Ittihad vs Diriyah (Roshn Saudi League 2026-2027)",
-      "match_name": "Al-Ittihad vs Diriyah",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250267_53025_ITT_DIR_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "Roshn Saudi League 2026-2027",
-      "language": "English",
-      "startTime": "09:00:00 PM 23-10-2026",
+      "startTime": "06:00:00 PM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -235,30 +267,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250107,
-      "title": "Granada vs Real Valladolid (LALIGA Hypermotion 2026-27)",
-      "match_name": "Granada vs Real Valladolid",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250107_53017_GRD_VLD_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA Hypermotion 2026-27",
-      "language": "English",
-      "startTime": "12:00:00 AM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250484,
-      "title": "Dubai vs Abu Dhabi (Emirates D20, 2026)",
-      "match_name": "Dubai vs Abu Dhabi",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250484_53130_DUB_ABD_fc-web_1792412929330.jpg",
-      "event_category": "Cricket",
-      "event_name": "Emirates D20, 2026",
-      "language": "English",
-      "startTime": "06:00:00 PM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4249763,
       "title": "Uganda vs Mozambique (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
       "match_name": "Uganda vs Mozambique",
@@ -271,26 +279,26 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249618,
-      "title": "Day 5 - World Feed vs Lyon, France (ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026)",
-      "match_name": "Day 5 - World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Grand-Prix-Auvergne-Rhone-Alpes_fc-web.jpg",
-      "event_category": "Tennis",
-      "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026",
+      "match_id": 4250107,
+      "title": "Granada vs Real Valladolid (LALIGA Hypermotion 2026-27)",
+      "match_name": "Granada vs Real Valladolid",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250107_53017_GRD_VLD_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA Hypermotion 2026-27",
       "language": "English",
-      "startTime": "05:30:00 PM 23-10-2026",
+      "startTime": "12:00:00 AM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
     {
-      "match_id": 4249625,
-      "title": "Day 5 - World Feed vs Brussels, Belgium (ATP 250 - BNP Paribas Fortis European Open)",
-      "match_name": "Day 5 - World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/BNP-Paribas-Fortis-European-Open_fc-web.jpg",
-      "event_category": "Tennis",
-      "event_name": "ATP 250 - BNP Paribas Fortis European Open",
+      "match_id": 4250485,
+      "title": "Emirates Red vs Ajman (Emirates D20, 2026)",
+      "match_name": "Emirates Red vs Ajman",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250485_53130_EMR_AJM_fc-web_1792412929328.jpg",
+      "event_category": "Cricket",
+      "event_name": "Emirates D20, 2026",
       "language": "English",
-      "startTime": "05:30:00 PM 23-10-2026",
+      "startTime": "10:00:00 PM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -303,6 +311,18 @@
       "event_name": "EFL Championship 2026-27",
       "language": "English",
       "startTime": "05:00:00 PM 24-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250352,
+      "title": "Day 2 - World Feed vs Port Royal Golf Course - Southampton, Bermuda (Butterfield Bermuda Championship 2026)",
+      "match_name": "Day 2 - World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Butterfield-bermuda-golf_Web-match-card.png",
+      "event_category": "Golf",
+      "event_name": "Butterfield Bermuda Championship 2026",
+      "language": "English",
+      "startTime": "09:30:00 PM 23-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -343,18 +363,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250485,
-      "title": "Emirates Red vs Ajman (Emirates D20, 2026)",
-      "match_name": "Emirates Red vs Ajman",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250485_53130_EMR_AJM_fc-web_1792412929328.jpg",
-      "event_category": "Cricket",
-      "event_name": "Emirates D20, 2026",
-      "language": "English",
-      "startTime": "10:00:00 PM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4249599,
       "title": "Preston North End F.C. vs West Bromwich Albion F.C. (EFL Championship 2026-27)",
       "match_name": "Preston North End F.C. vs West Bromwich Albion F.C.",
@@ -363,6 +371,18 @@
       "event_name": "EFL Championship 2026-27",
       "language": "English",
       "startTime": "07:30:00 PM 24-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4247658,
+      "title": "Racing Club de Santander vs RCD Espanyol (LALIGA 2026-27)",
+      "match_name": "Racing Club de Santander vs RCD Espanyol",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247658_53004_RAC_ESL_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA 2026-27",
+      "language": "English",
+      "startTime": "07:45:00 PM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -379,24 +399,24 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250352,
-      "title": "Day 2 - World Feed vs Port Royal Golf Course - Southampton, Bermuda (Butterfield Bermuda Championship 2026)",
-      "match_name": "Day 2 - World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Butterfield-bermuda-golf_Web-match-card.png",
-      "event_category": "Golf",
-      "event_name": "Butterfield Bermuda Championship 2026",
+      "match_id": 4247661,
+      "title": "Valencia CF vs Villarreal CF (LALIGA 2026-27)",
+      "match_name": "Valencia CF vs Villarreal CF",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247661_53004_VAL_VIL_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA 2026-27",
       "language": "English",
-      "startTime": "09:30:00 PM 23-10-2026",
+      "startTime": "10:00:00 PM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
     {
-      "match_id": 4247658,
-      "title": "Racing Club de Santander vs RCD Espanyol (LALIGA 2026-27)",
-      "match_name": "Racing Club de Santander vs RCD Espanyol",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247658_53004_RAC_ESL_FC-Web.png",
+      "match_id": 4250108,
+      "title": "Leganes vs RCD Mallorca (LALIGA Hypermotion 2026-27)",
+      "match_name": "Leganes vs RCD Mallorca",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250108_53017_LEG_MRC_FC-Web.png",
       "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
+      "event_name": "LALIGA Hypermotion 2026-27",
       "language": "English",
       "startTime": "07:45:00 PM 24-10-2026",
       "status": "UPCOMING",
@@ -463,6 +483,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249201,
+      "title": "Brighton and Hove Albion Women vs West Ham United Women (Barclays Women's Super League 2026-27)",
+      "match_name": "Brighton and Hove Albion Women vs West Ham United Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249201_53038_BHA-W_WHU-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "Barclays Women's Super League 2026-27",
+      "language": "English",
+      "startTime": "09:45:00 PM 24-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249842,
       "title": "Western Sydney Wanderers vs Auckland (A-League 2026-27)",
       "match_name": "Western Sydney Wanderers vs Auckland",
@@ -471,30 +503,6 @@
       "event_name": "A-League 2026-27",
       "language": "English",
       "startTime": "11:30:00 AM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250108,
-      "title": "Leganes vs RCD Mallorca (LALIGA Hypermotion 2026-27)",
-      "match_name": "Leganes vs RCD Mallorca",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250108_53017_LEG_MRC_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA Hypermotion 2026-27",
-      "language": "English",
-      "startTime": "07:45:00 PM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4247661,
-      "title": "Valencia CF vs Villarreal CF (LALIGA 2026-27)",
-      "match_name": "Valencia CF vs Villarreal CF",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247661_53004_VAL_VIL_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "10:00:00 PM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
