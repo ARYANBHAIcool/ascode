@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/24/2026, 12:49:38 AM IST",
+  "last_updated": "10/24/2026, 1:27:41 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 10,
+  "live_matches": 9,
   "matches": [
     {
       "match_id": "4250483",
@@ -133,18 +133,6 @@
       "event_name": "Butterfield Bermuda Championship 2026"
     },
     {
-      "match_id": "4250156_ENG",
-      "title": "BWF Super 750 - French Open 2026 [English]",
-      "match_name": "Court 1 - QF [English]",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Yonex-French-Open-2026_FC-WEB.jpg",
-      "event_category": "Badminton",
-      "event_name": "BWF Super 750 - French Open 2026",
-      "language": "English",
-      "startTime": "01:00:00 PM 23-10-2026",
-      "status": "LIVE",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250156_english_hls_eaffc4881757714_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/"
-    },
-    {
       "match_id": 4249285,
       "title": "Tasmania vs Victoria (One Day Cup, 2026/27)",
       "match_name": "Tasmania vs Victoria",
@@ -200,7 +188,7 @@
       "event_category": "Cricket",
       "event_name": "Ireland tour of Namibia, 2026",
       "language": "English",
-      "startTime": "01:30:00 PM 24-10-2026",
+      "startTime": "01:00:00 PM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -501,6 +489,18 @@
       "event_name": "ATP 250 - BNP Paribas Fortis European Open",
       "language": "English",
       "startTime": "03:30:00 PM 24-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250353,
+      "title": "Day 3 - World Feed vs Port Royal Golf Course - Southampton, Bermuda (Butterfield Bermuda Championship 2026)",
+      "match_name": "Day 3 - World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Butterfield-bermuda-golf_Web-match-card.png",
+      "event_category": "Golf",
+      "event_name": "Butterfield Bermuda Championship 2026",
+      "language": "English",
+      "startTime": "09:30:00 PM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
