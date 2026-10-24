@@ -2,27 +2,27 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/24/2026, 4:34:20 AM IST",
+  "last_updated": "10/24/2026, 6:25:08 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 3,
+  "live_matches": 2,
   "matches": [
     {
-      "match_id": "4249618",
-      "match_name": "Day 5   World Feed",
-      "title": "Day 5   World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Grand-Prix-Auvergne-Rhone-Alpes_fc-web.jpg",
+      "match_id": "4249285",
+      "match_name": "Victoria Vs Tasmania",
+      "title": "Victoria Vs Tasmania",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249285_53072_TAS_VCT_FC-Web.jpg",
       "language": "English",
-      "event_category": "Tennis",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249618_english_hls_bd306a0e4442012_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "event_category": "Cricket",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249285_english_hls_c101cf832389375_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE",
-      "startTime": "05:30:00 PM 23-10-2026",
-      "team_1": "Day 5 - World Feed",
-      "team_2": "Lyon, France",
-      "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026"
+      "startTime": "05:00:00 AM 24-10-2026",
+      "team_1": "Victoria",
+      "team_2": "Tasmania",
+      "event_name": "One Day Cup, 2026/27"
     },
     {
       "match_id": "139979",
@@ -37,32 +37,6 @@
       "team_1": "Day 2",
       "team_2": "Phillip Island",
       "event_name": "GRAND PRIX OF AUSTRALIA 2026"
-    },
-    {
-      "match_id": "4250507",
-      "match_name": "Opening Race",
-      "title": "Opening Race",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/F2_Canada_web_1792770153782.jpg",
-      "language": "English",
-      "event_category": "Motorsports",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250507_english_hls_44cd9f0fb737145_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "04:20:00 AM 24-10-2026",
-      "team_1": "Opening Race",
-      "team_2": "Austin",
-      "event_name": "F1 ACADEMY AUSTIN 2026"
-    },
-    {
-      "match_id": 4249285,
-      "title": "Tasmania vs Victoria (One Day Cup, 2026/27)",
-      "match_name": "Tasmania vs Victoria",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249285_53072_TAS_VCT_FC-Web.jpg",
-      "event_category": "Cricket",
-      "event_name": "One Day Cup, 2026/27",
-      "language": "English",
-      "startTime": "05:00:00 AM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
     },
     {
       "match_id": 4249282,
@@ -293,6 +267,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4250516,
+      "title": "United Arab Emirates vs Netherlands (ICC CWC League 2 UAE, 2026)",
+      "match_name": "United Arab Emirates vs Netherlands",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/ICC-CWC-League_Web-match-card.png",
+      "event_category": "Cricket",
+      "event_name": "ICC CWC League 2 UAE, 2026",
+      "language": "English",
+      "startTime": "11:00:00 AM 25-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249841,
       "title": "Newcastle Jets vs Macarthur (A-League 2026-27)",
       "match_name": "Newcastle Jets vs Macarthur",
@@ -365,6 +351,30 @@
       "stream_url": ""
     },
     {
+      "match_id": 4250341,
+      "title": "Jersey vs Kenya (ICC CWC Challenge League A 2026)",
+      "match_name": "Jersey vs Kenya",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png",
+      "event_category": "Cricket",
+      "event_name": "ICC CWC Challenge League A 2026",
+      "language": "English",
+      "startTime": "12:15:00 PM 25-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250342,
+      "title": "Denmark vs Papua New Guinea (ICC CWC Challenge League A 2026)",
+      "match_name": "Denmark vs Papua New Guinea",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png",
+      "event_category": "Cricket",
+      "event_name": "ICC CWC Challenge League A 2026",
+      "language": "English",
+      "startTime": "12:15:00 PM 25-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249626,
       "title": "Day 6 - World Feed vs Brussels, Belgium (ATP 250 - BNP Paribas Fortis European Open)",
       "match_name": "Day 6 - World Feed",
@@ -373,18 +383,6 @@
       "event_name": "ATP 250 - BNP Paribas Fortis European Open",
       "language": "English",
       "startTime": "07:30:00 PM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250516,
-      "title": "United Arab Emirates vs Netherlands (ICC CWC League 2 UAE, 2026)",
-      "match_name": "United Arab Emirates vs Netherlands",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/ICC-CWC-League_Web-match-card.png",
-      "event_category": "Cricket",
-      "event_name": "ICC CWC League 2 UAE, 2026",
-      "language": "English",
-      "startTime": "11:00:00 AM 25-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -409,30 +407,6 @@
       "event_name": "F1 MSC CRUISES UNITED STATES GRAND PRIX 2026",
       "language": "English",
       "startTime": "11:00:00 PM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250341,
-      "title": "Jersey vs Kenya (ICC CWC Challenge League A 2026)",
-      "match_name": "Jersey vs Kenya",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png",
-      "event_category": "Cricket",
-      "event_name": "ICC CWC Challenge League A 2026",
-      "language": "English",
-      "startTime": "12:15:00 PM 25-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250342,
-      "title": "Denmark vs Papua New Guinea (ICC CWC Challenge League A 2026)",
-      "match_name": "Denmark vs Papua New Guinea",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png",
-      "event_category": "Cricket",
-      "event_name": "ICC CWC Challenge League A 2026",
-      "language": "English",
-      "startTime": "12:15:00 PM 25-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -473,6 +447,30 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249766,
+      "title": "Gambia vs Lesotho (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
+      "match_name": "Gambia vs Lesotho",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249766_53093_GAM_LES_FC-Web_1792493253302.png",
+      "event_category": "Cricket",
+      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
+      "language": "English",
+      "startTime": "02:00:00 PM 25-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249767,
+      "title": "Mozambique vs Zambia (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
+      "match_name": "Mozambique vs Zambia",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249767_53093_MOZ_ZAM_FC-Web_1792493252681.png",
+      "event_category": "Cricket",
+      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
+      "language": "English",
+      "startTime": "02:00:00 PM 25-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249844,
       "title": "Wellington Phoenix vs Central Coast Mariners (A-League 2026-27)",
       "match_name": "Wellington Phoenix vs Central Coast Mariners",
@@ -485,14 +483,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249766,
-      "title": "Gambia vs Lesotho (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
-      "match_name": "Gambia vs Lesotho",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249766_53093_GAM_LES_FC-Web_1792493253302.png",
-      "event_category": "Cricket",
-      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
+      "match_id": 4249845,
+      "title": "Sydney FC vs Adelaide United (A-League 2026-27)",
+      "match_name": "Sydney FC vs Adelaide United",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249845_53101_SYD_ADL_fc-Web_1792223294286.jpg",
+      "event_category": "Football",
+      "event_name": "A-League 2026-27",
       "language": "English",
-      "startTime": "02:00:00 PM 25-10-2026",
+      "startTime": "09:30:00 AM 25-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
