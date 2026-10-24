@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/25/2026, 4:00:25 AM IST",
+  "last_updated": "10/25/2026, 5:16:20 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 1,
+  "live_matches": 2,
   "matches": [
     {
       "match_id": "139980",
@@ -23,6 +23,16 @@
       "team_1": "Race Day",
       "team_2": "Phillip Island",
       "event_name": "GRAND PRIX OF AUSTRALIA 2026"
+    },
+    {
+      "match_id": "139698",
+      "match_name": "Reverse Grid Race",
+      "title": "Reverse Grid Race",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/F2_Canada_web_1792770153782.jpg",
+      "language": "English",
+      "event_category": "Motorsports",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/139698_english_hls_abbdda98e451175_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE"
     },
     {
       "match_id": 4250516,
@@ -169,14 +179,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 139698,
-      "title": "Reverse Grid Race vs Austin (F1 ACADEMY AUSTIN 2026)",
-      "match_name": "Reverse Grid Race",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/F2_Canada_web_1792770153782.jpg",
-      "event_category": "Motorsports",
-      "event_name": "F1 ACADEMY AUSTIN 2026",
+      "match_id": 4247666,
+      "title": "FC Barcelona vs Real Madrid (LALIGA 2026-27)",
+      "match_name": "FC Barcelona vs Real Madrid",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247666_53004_BAR_RM_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA 2026-27",
       "language": "English",
-      "startTime": "04:30:00 AM 25-10-2026",
+      "startTime": "01:30:00 AM 26-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -225,18 +235,6 @@
       "event_name": "Barclays Women's Super League 2026-27",
       "language": "English",
       "startTime": "07:30:00 PM 25-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4247666,
-      "title": "FC Barcelona vs Real Madrid (LALIGA 2026-27)",
-      "match_name": "FC Barcelona vs Real Madrid",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247666_53004_BAR_RM_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "01:30:00 AM 26-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
