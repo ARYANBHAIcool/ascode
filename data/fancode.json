@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/24/2026, 3:13:01 PM IST",
+  "last_updated": "10/24/2026, 5:03:08 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 7,
+  "live_matches": 8,
   "matches": [
     {
       "match_id": "4249282",
@@ -67,18 +67,32 @@
       "event_name": "Ireland tour of Namibia, 2026"
     },
     {
-      "match_id": "4249763",
-      "match_name": "Mozambique Vs Uganda",
-      "title": "Mozambique Vs Uganda",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249763_53093_UGA_MOZ_FC-Web_1792493252645.png",
+      "match_id": "4249598",
+      "match_name": "Charlton Athletic F.c Vs Norwich City F.c.",
+      "title": "Charlton Athletic F.c Vs Norwich City F.c.",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249598_52993_CHL_NOR_fc-web.jpg",
       "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249763_english_hls_77fe3d2b7540495_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249598_english_hls_9b604f07bf73738_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE",
-      "startTime": "02:00:00 PM 24-10-2026",
-      "team_1": "Mozambique",
-      "team_2": "Uganda",
-      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026"
+      "startTime": "05:00:00 PM 24-10-2026",
+      "team_1": "Charlton Athletic F.C",
+      "team_2": "Norwich City F.C.",
+      "event_name": "EFL Championship 2026-27"
+    },
+    {
+      "match_id": "4247665",
+      "match_name": "Rayo Vallecano Vs Elche Cf",
+      "title": "Rayo Vallecano Vs Elche Cf",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247665_53004_RVL_ELC_FC-Web.png",
+      "language": "English",
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247665_english_hls_02b14500d875914_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "05:30:00 PM 24-10-2026",
+      "team_1": "Rayo Vallecano",
+      "team_2": "Elche CF",
+      "event_name": "LALIGA 2026-27"
     },
     {
       "match_id": "4250158",
@@ -95,18 +109,18 @@
       "event_name": "BWF Super 750 - French Open 2026"
     },
     {
-      "match_id": "4249843",
-      "match_name": "Melbourne Victory Vs Melbourne City",
-      "title": "Melbourne Victory Vs Melbourne City",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249843_53101_MLV_MLC_fc-Web_1792223292104.jpg",
+      "match_id": "4249612",
+      "match_name": "Day 6   World Feed",
+      "title": "Day 6   World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-Web_1792479545067.png",
       "language": "English",
-      "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249843_english_hls_e915c1c41d32510_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "event_category": "Tennis",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249612_english_hls_4bb5d239f294482_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE",
-      "startTime": "02:10:00 PM 24-10-2026",
-      "team_1": "Melbourne Victory",
-      "team_2": "Melbourne City",
-      "event_name": "A-League 2026-27"
+      "startTime": "03:30:00 PM 24-10-2026",
+      "team_1": "Day 6 - World Feed",
+      "team_2": "Almaty, Kazakhstan",
+      "event_name": "ATP 250 - Almaty Open 2026"
     },
     {
       "match_id": 4250484,
@@ -169,6 +183,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249200,
+      "title": "Tottenham Hotspur Women vs Arsenal Women (Barclays Women's Super League 2026-27)",
+      "match_name": "Tottenham Hotspur Women vs Arsenal Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249200_53038_TOT-W_ARS-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "Barclays Women's Super League 2026-27",
+      "language": "English",
+      "startTime": "05:15:00 PM 24-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249764,
       "title": "Gambia vs Zambia (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
       "match_name": "Gambia vs Zambia",
@@ -189,30 +215,6 @@
       "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
       "language": "English",
       "startTime": "06:20:00 PM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249598,
-      "title": "Charlton Athletic F.C vs Norwich City F.C. (EFL Championship 2026-27)",
-      "match_name": "Charlton Athletic F.C vs Norwich City F.C.",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249598_52993_CHL_NOR_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "EFL Championship 2026-27",
-      "language": "English",
-      "startTime": "05:00:00 PM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4247665,
-      "title": "Rayo Vallecano vs Elche CF (LALIGA 2026-27)",
-      "match_name": "Rayo Vallecano vs Elche CF",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247665_53004_RVL_ELC_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "05:30:00 PM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -265,18 +267,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249200,
-      "title": "Tottenham Hotspur Women vs Arsenal Women (Barclays Women's Super League 2026-27)",
-      "match_name": "Tottenham Hotspur Women vs Arsenal Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249200_53038_TOT-W_ARS-W_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "Barclays Women's Super League 2026-27",
-      "language": "English",
-      "startTime": "05:15:00 PM 24-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250108,
       "title": "Leganes vs RCD Mallorca (LALIGA Hypermotion 2026-27)",
       "match_name": "Leganes vs RCD Mallorca",
@@ -313,14 +303,26 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249612,
-      "title": "Day 6 - World Feed vs Almaty, Kazakhstan (ATP 250 - Almaty Open 2026)",
-      "match_name": "Day 6 - World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-Web_1792479545067.png",
-      "event_category": "Tennis",
-      "event_name": "ATP 250 - Almaty Open 2026",
+      "match_id": 4250486,
+      "title": "Emirates Red vs Emirates Blues (Emirates D20, 2026)",
+      "match_name": "Emirates Red vs Emirates Blues",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250486_53130_EMR_EMB_fc-web_1792412929389.jpg",
+      "event_category": "Cricket",
+      "event_name": "Emirates D20, 2026",
       "language": "English",
-      "startTime": "03:30:00 PM 24-10-2026",
+      "startTime": "06:00:00 PM 25-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249619,
+      "title": "World Feed vs Lyon, France (ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026)",
+      "match_name": "World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Grand-Prix-Auvergne-Rhone-Alpes_fc-web.jpg",
+      "event_category": "Tennis",
+      "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026",
+      "language": "English",
+      "startTime": "05:30:00 PM 24-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -349,26 +351,38 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250486,
-      "title": "Emirates Red vs Emirates Blues (Emirates D20, 2026)",
-      "match_name": "Emirates Red vs Emirates Blues",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250486_53130_EMR_EMB_fc-web_1792412929389.jpg",
+      "match_id": 4249768,
+      "title": "Nigeria vs Uganda (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
+      "match_name": "Nigeria vs Uganda",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249768_53093_NGR_UGA_FC-Web_1792493252642.png",
       "event_category": "Cricket",
-      "event_name": "Emirates D20, 2026",
+      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
       "language": "English",
-      "startTime": "06:00:00 PM 25-10-2026",
+      "startTime": "06:20:00 PM 25-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
     {
-      "match_id": 4249619,
-      "title": "World Feed vs Lyon, France (ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026)",
-      "match_name": "World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Grand-Prix-Auvergne-Rhone-Alpes_fc-web.jpg",
-      "event_category": "Tennis",
-      "event_name": "ATP 250 - Grand Prix Auvergne-Rhone-Alpes 2026",
+      "match_id": 4247662,
+      "title": "Athletic Club vs Getafe CF (LALIGA 2026-27)",
+      "match_name": "Athletic Club vs Getafe CF",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247662_53004_ATH_GEF_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA 2026-27",
       "language": "English",
-      "startTime": "05:30:00 PM 24-10-2026",
+      "startTime": "06:30:00 PM 25-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250487,
+      "title": "Ajman vs Dubai (Emirates D20, 2026)",
+      "match_name": "Ajman vs Dubai",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250487_53130_AJM_DUB_fc-web_1792412929315.jpg",
+      "event_category": "Cricket",
+      "event_name": "Emirates D20, 2026",
+      "language": "English",
+      "startTime": "10:00:00 PM 25-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -409,6 +423,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249202,
+      "title": "Crystal Palace Women vs Chelsea F.C. Women (Barclays Women's Super League 2026-27)",
+      "match_name": "Crystal Palace Women vs Chelsea F.C. Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249202_53038_CP-W_CHE-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "Barclays Women's Super League 2026-27",
+      "language": "English",
+      "startTime": "05:30:00 PM 25-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 139505,
       "title": "Qualifying vs Circuit of the Americas (F1 MSC CRUISES UNITED STATES GRAND PRIX 2026)",
       "match_name": "Qualifying",
@@ -417,18 +443,6 @@
       "event_name": "F1 MSC CRUISES UNITED STATES GRAND PRIX 2026",
       "language": "English",
       "startTime": "02:30:00 AM 25-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249768,
-      "title": "Nigeria vs Uganda (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
-      "match_name": "Nigeria vs Uganda",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249768_53093_NGR_UGA_FC-Web_1792493252642.png",
-      "event_category": "Cricket",
-      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
-      "language": "English",
-      "startTime": "06:20:00 PM 25-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -457,18 +471,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4247662,
-      "title": "Athletic Club vs Getafe CF (LALIGA 2026-27)",
-      "match_name": "Athletic Club vs Getafe CF",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247662_53004_ATH_GEF_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "06:30:00 PM 25-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4249844,
       "title": "Wellington Phoenix vs Central Coast Mariners (A-League 2026-27)",
       "match_name": "Wellington Phoenix vs Central Coast Mariners",
@@ -481,26 +483,26 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250487,
-      "title": "Ajman vs Dubai (Emirates D20, 2026)",
-      "match_name": "Ajman vs Dubai",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250487_53130_AJM_DUB_fc-web_1792412929315.jpg",
-      "event_category": "Cricket",
-      "event_name": "Emirates D20, 2026",
+      "match_id": 4250110,
+      "title": "CE Sabadell vs Tenerife (LALIGA Hypermotion 2026-27)",
+      "match_name": "CE Sabadell vs Tenerife",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250110_53017_CES_TFE_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA Hypermotion 2026-27",
       "language": "English",
-      "startTime": "10:00:00 PM 25-10-2026",
+      "startTime": "06:30:00 PM 25-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
     {
-      "match_id": 4249202,
-      "title": "Crystal Palace Women vs Chelsea F.C. Women (Barclays Women's Super League 2026-27)",
-      "match_name": "Crystal Palace Women vs Chelsea F.C. Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249202_53038_CP-W_CHE-W_fc-web.jpg",
+      "match_id": 4247664,
+      "title": "RC Celta vs Real Betis (LALIGA 2026-27)",
+      "match_name": "RC Celta vs Real Betis",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247664_53004_CEV_RB_FC-Web.png",
       "event_category": "Football",
-      "event_name": "Barclays Women's Super League 2026-27",
+      "event_name": "LALIGA 2026-27",
       "language": "English",
-      "startTime": "05:30:00 PM 25-10-2026",
+      "startTime": "08:45:00 PM 25-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
