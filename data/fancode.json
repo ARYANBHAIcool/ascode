@@ -2,51 +2,23 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/25/2026, 1:34:17 AM IST",
+  "last_updated": "10/25/2026, 3:11:17 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 3,
+  "live_matches": 1,
   "matches": [
     {
-      "match_id": "4247659",
-      "match_name": "Atletico De Madrid Vs Deportivo De La Coruna",
-      "title": "Atletico De Madrid Vs Deportivo De La Coruna",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247659_53004_ATM_COR_FC-Web.png",
+      "match_id": "139505",
+      "match_name": "Qualifying",
+      "title": "Qualifying",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Old_Match_Card1.png",
       "language": "English",
-      "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247659_english_hls_c0bfa3143224139_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "event_category": "Formula 1",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/139505_english_hls_8c53cea9f263719_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE"
-    },
-    {
-      "match_id": "4250109",
-      "match_name": "Almería Vs Real Oviedo",
-      "title": "Almería Vs Real Oviedo",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250109_53017_ALM_RO_FC-Web.png",
-      "language": "English",
-      "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250109_english_hls_d7fc37815c58698_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "12:30:00 AM 25-10-2026",
-      "team_1": "Almería",
-      "team_2": "Real Oviedo",
-      "event_name": "LALIGA Hypermotion 2026-27"
-    },
-    {
-      "match_id": "4250353",
-      "match_name": "Day 3   World Feed",
-      "title": "Day 3   World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Butterfield-bermuda-golf_Web-match-card.png",
-      "language": "English",
-      "event_category": "Golf",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250353_english_hls_29318dfe2b32750_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "09:30:00 PM 24-10-2026",
-      "team_1": "Day 3 - World Feed",
-      "team_2": "Port Royal Golf Course - Southampton, Bermuda",
-      "event_name": "Butterfield Bermuda Championship 2026"
     },
     {
       "match_id": 4250516,
@@ -169,18 +141,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249202,
-      "title": "Crystal Palace Women vs Chelsea F.C. Women (Barclays Women's Super League 2026-27)",
-      "match_name": "Crystal Palace Women vs Chelsea F.C. Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249202_53038_CP-W_CHE-W_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "Barclays Women's Super League 2026-27",
-      "language": "English",
-      "startTime": "05:30:00 PM 25-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4247663,
       "title": "Real Sociedad vs Levante (LALIGA 2026-27)",
       "match_name": "Real Sociedad vs Levante",
@@ -189,6 +149,30 @@
       "event_name": "LALIGA 2026-27",
       "language": "English",
       "startTime": "11:00:00 PM 25-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 139980,
+      "title": "Race Day vs Phillip Island (GRAND PRIX OF AUSTRALIA 2026)",
+      "match_name": "Race Day",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Grand-Prix-of-Australiaold-match-card.png",
+      "event_category": "MotoGP",
+      "event_name": "GRAND PRIX OF AUSTRALIA 2026",
+      "language": "English",
+      "startTime": "03:30:00 AM 25-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249202,
+      "title": "Crystal Palace Women vs Chelsea F.C. Women (Barclays Women's Super League 2026-27)",
+      "match_name": "Crystal Palace Women vs Chelsea F.C. Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249202_53038_CP-W_CHE-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "Barclays Women's Super League 2026-27",
+      "language": "English",
+      "startTime": "05:30:00 PM 25-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -265,30 +249,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 139505,
-      "title": "Qualifying vs Circuit of the Americas (F1 MSC CRUISES UNITED STATES GRAND PRIX 2026)",
-      "match_name": "Qualifying",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Old_Match_Card1.png",
-      "event_category": "Formula 1",
-      "event_name": "F1 MSC CRUISES UNITED STATES GRAND PRIX 2026",
-      "language": "English",
-      "startTime": "02:30:00 AM 25-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 139980,
-      "title": "Race Day vs Phillip Island (GRAND PRIX OF AUSTRALIA 2026)",
-      "match_name": "Race Day",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Grand-Prix-of-Australiaold-match-card.png",
-      "event_category": "MotoGP",
-      "event_name": "GRAND PRIX OF AUSTRALIA 2026",
-      "language": "English",
-      "startTime": "03:30:00 AM 25-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 139698,
       "title": "Reverse Grid Race vs Austin (F1 ACADEMY AUSTIN 2026)",
       "match_name": "Reverse Grid Race",
@@ -338,8 +298,8 @@
     },
     {
       "match_id": 4249613,
-      "title": "ATP 250 - Almaty Open 2026 vs Almaty, Kazakhstan (ATP 250 - Almaty Open 2026)",
-      "match_name": "ATP 250 - Almaty Open 2026",
+      "title": "Day 7 - World Feed vs Almaty, Kazakhstan (ATP 250 - Almaty Open 2026)",
+      "match_name": "Day 7 - World Feed",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-Web_1792479545067.png",
       "event_category": "Tennis",
       "event_name": "ATP 250 - Almaty Open 2026",
@@ -361,18 +321,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249627,
-      "title": "ATP 250 - BNP Paribas Fortis European Open vs Brussels, Belgium (ATP 250 - BNP Paribas Fortis European Open)",
-      "match_name": "ATP 250 - BNP Paribas Fortis European Open",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/BNP-Paribas-Fortis-European-Open_fc-web.jpg",
-      "event_category": "Tennis",
-      "event_name": "ATP 250 - BNP Paribas Fortis European Open",
-      "language": "English",
-      "startTime": "03:30:00 PM 25-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250159,
       "title": "Finals vs France (BWF Super 750 - French Open 2026)",
       "match_name": "Finals",
@@ -381,6 +329,18 @@
       "event_name": "BWF Super 750 - French Open 2026",
       "language": "English",
       "startTime": "03:30:00 PM 25-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249627,
+      "title": "Day 7 - World Feed vs Brussels, Belgium (ATP 250 - BNP Paribas Fortis European Open)",
+      "match_name": "Day 7 - World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/BNP-Paribas-Fortis-European-Open_fc-web.jpg",
+      "event_category": "Tennis",
+      "event_name": "ATP 250 - BNP Paribas Fortis European Open",
+      "language": "English",
+      "startTime": "09:00:00 PM 25-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -489,6 +449,42 @@
       "event_name": "Northern Artist Champions League 2026",
       "language": "English",
       "startTime": "06:00:00 PM 26-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250489,
+      "title": "Emirates Blues vs Sharjah (Emirates D20, 2026)",
+      "match_name": "Emirates Blues vs Sharjah",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250489_53130_EMB_SHA_fc-web_1792412930086.jpg",
+      "event_category": "Cricket",
+      "event_name": "Emirates D20, 2026",
+      "language": "English",
+      "startTime": "10:00:00 PM 26-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249628,
+      "title": "ATP 500 - Erste Bank Open 2026 vs Vienna, Austria (ATP 500 - Erste Bank Open 2026)",
+      "match_name": "ATP 500 - Erste Bank Open 2026",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Erste-Bank-Open_Web-match-card.png",
+      "event_category": "Tennis",
+      "event_name": "ATP 500 - Erste Bank Open 2026",
+      "language": "English",
+      "startTime": "03:30:00 PM 26-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249635,
+      "title": "ATP 500 - Erste Bank Open 2026 vs Vienna, Austria (ATP 500 - Erste Bank Open 2026)",
+      "match_name": "ATP 500 - Erste Bank Open 2026",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Erste-Bank-Open_Web-match-card.png",
+      "event_category": "Tennis",
+      "event_name": "ATP 500 - Erste Bank Open 2026",
+      "language": "English",
+      "startTime": "03:30:00 PM 26-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
