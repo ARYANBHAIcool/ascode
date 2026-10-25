@@ -180,6 +180,10 @@
                     </svg>
                     <h3 class="text-lg font-black text-white">Select Stream Quality</h3>
                 </div>
+                <div id="quality-lang-wrapper" class="px-4 py-2.5 bg-slate-900/90 border-b border-[#2d313f] hidden">
+                    <div class="text-[11px] text-slate-400 font-bold mb-1.5 flex items-center gap-1">🌐 Commentary Language:</div>
+                    <div id="quality-lang-list" class="flex gap-1.5 flex-wrap"></div>
+                </div>
                 <div class="p-5 flex flex-col gap-3" id="quality-list"></div>
                 <div class="p-4 text-center border-t border-[#2d313f] bg-[#0d1017]">
                     <button onclick="closeModal()" class="text-sm font-semibold text-slate-400 hover:text-white transition">Cancel</button>
@@ -377,8 +381,41 @@
                 alert("Match details not found.");
                 return;
             }
-            currentMatch = m; // Track current match
+            currentMatch = m;
             renderModalLanguageSelector(m);
+
+            // Populate Language Selector inside Quality Modal
+            const qLangWrap = document.getElementById("quality-lang-wrapper");
+            const qLangList = document.getElementById("quality-lang-list");
+            if (qLangWrap && qLangList) {
+                const baseId = String(m.match_id || "").split("_")[0].toLowerCase();
+                const siblings = allMatches.filter(x => {
+                    const xBase = String(x.match_id || "").split("_")[0].toLowerCase();
+                    return xBase === baseId && hasStream(x);
+                });
+                if (siblings.length > 1) {
+                    qLangWrap.classList.remove("hidden");
+                    qLangList.innerHTML = "";
+                    siblings.forEach(sib => {
+                        const sLang = sib.language || (String(sib.match_id).includes("_tam") ? "Tamil" : (String(sib.match_id).includes("_hin") ? "Hindi" : "English"));
+                        const isCur = String(sib.match_id).toLowerCase() === String(m.match_id).toLowerCase();
+                        const sBtn = document.createElement("button");
+                        sBtn.type = "button";
+                        sBtn.className = isCur
+                            ? "px-3 py-1 rounded text-xs font-black bg-red-600 text-white shadow"
+                            : "px-3 py-1 rounded text-xs font-bold bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 border border-slate-700 transition";
+                        sBtn.textContent = sLang;
+                        sBtn.onclick = (e) => {
+                            e.stopPropagation();
+                            if (!isCur) window.openQuality(sib.match_id);
+                        };
+                        qLangList.appendChild(sBtn);
+                    });
+                } else {
+                    qLangWrap.classList.add("hidden");
+                }
+            }
+
             const qualities = parseQualities(m);
             const list = document.getElementById("quality-list");
             list.innerHTML = "";
@@ -386,20 +423,17 @@
             if (qualities.length === 0) { alert("Stream not currently available"); return; }
 
             let displayTitle = (m.team_1 && m.team_2) ? `${m.team_1} vs ${m.team_2}` : (m.match_name || m.title || "Live Match");
-            // Store details for player modal header
             document.getElementById("player-title").textContent = displayTitle;
             document.getElementById("player-event").textContent = m.event_name || m.tournament || m.event_category || m.title || "";
 
             const btnFull = document.getElementById("btn-full-player");
             if (btnFull) btnFull.href = "player.html?id=" + encodeURIComponent(m.match_id);
 
-            // Only bypass modal for direct DRM redirects
             if (qualities.length === 1 && qualities[0].isDrm) {
                 handleQualitySelect(qualities[0]);
                 return;
             }
 
-            // Sort qualities highest resolution first (1080p -> 720p -> 540p -> 480p -> 360p -> 240p)
             const resOrder = { "1080p": 6, "720p": 5, "540p": 4, "480p": 3, "360p": 2, "240p": 1 };
             qualities.sort((a, b) => (resOrder[b.res] || parseInt(b.res) || 0) - (resOrder[a.res] || parseInt(a.res) || 0));
 
@@ -534,6 +568,7 @@
             const streamSrc = url || selectedRawUrl;
             const reqRes = (currentQuality && currentQuality.res) ? currentQuality.res : "Auto";
             updateModalQualityBadge(reqRes);
+            if (currentMatch) renderModalLanguageSelector(currentMatch);
             buildModalQualityMenu();
 
             if (video.canPlayType("application/vnd.apple.mpegurl")) {
@@ -548,15 +583,18 @@
                 hlsInstance = new Hls({
                     enableWorker: true,
                     lowLatencyMode: false,
-                    backBufferLength: 60,
-                    maxBufferLength: 30,
-                    maxMaxBufferLength: 60,
+                    backBufferLength: 90,
+                    maxBufferLength: 45,
+                    maxMaxBufferLength: 90,
                     maxBufferSize: 60 * 1000 * 1000,
                     maxBufferHole: 0.5,
-                    liveSyncDurationCount: 3,
-                    liveMaxLatencyDurationCount: 6,
+                    liveSyncDurationCount: 4,
+                    liveMaxLatencyDurationCount: 8,
                     liveDurationInfinity: true,
                     highBufferWatchdogPeriod: 2,
+                    fragLoadingTimeOut: 20000,
+                    fragLoadingMaxRetry: 6,
+                    fragLoadingRetryDelay: 500,
                     xhrSetup: function(xhr) { xhr.withCredentials = false; }
                 });
                 hlsInstance.loadSource(streamSrc);
@@ -615,8 +653,18 @@
             if (!targetH || isNaN(targetH)) return -1;
             if (!levels || !levels.length) return -1;
 
-            const exact = levels.findIndex(l => l.height === targetH);
-            if (exact !== -1) return exact;
+            // Find all matching levels for this height
+            const matches = [];
+            for (let i = 0; i < levels.length; i++) {
+                if (levels[i].height === targetH) {
+                    matches.push({ index: i, bitrate: levels[i].bitrate || 0, fps: levels[i].frameRate || 25 });
+                }
+            }
+            if (matches.length > 0) {
+                // If multiple 1080p exist (e.g. 25fps vs 50fps), pick stable 25fps stream to prevent network buffer underrun/lag
+                matches.sort((a, b) => a.bitrate - b.bitrate);
+                return matches[0].index;
+            }
 
             let closest = 0;
             let minDiff = Math.abs((levels[0].height || 0) - targetH);
@@ -839,6 +887,21 @@
                             </div>
                             <h3 class="text-sm font-bold text-white line-clamp-2 mb-1.5 leading-snug">${esc(displayTitle)}</h3>
                             <p class="text-[11px] text-slate-400 truncate">${esc(m.event_name || m.tournament || m.event_category || 'Live Sports')}</p>
+                            ${(() => {
+                                const baseId = String(m.match_id || "").split('_')[0].toLowerCase();
+                                const siblings = allMatches.filter(x => {
+                                    const xBase = String(x.match_id || "").split('_')[0].toLowerCase();
+                                    return xBase === baseId && hasStream(x);
+                                });
+                                if (siblings.length <= 1) return '';
+                                return '<div class="mt-2.5 pt-2 border-t border-slate-700/60 flex items-center gap-1.5 flex-wrap"><span class="text-[10px] text-slate-400 font-bold">🌐 Audio:</span>' +
+                                    siblings.map(sib => {
+                                        const sLang = sib.language || (String(sib.match_id).includes('_tam') ? 'Tamil' : (String(sib.match_id).includes('_hin') ? 'Hindi' : 'English'));
+                                        const isCur = String(sib.match_id).toLowerCase() === String(m.match_id).toLowerCase();
+                                        const sCode = sLang.substring(0, 3).toUpperCase();
+                                        return `<button type="button" class="px-2 py-0.5 rounded text-[10px] font-extrabold transition ${isCur ? 'bg-red-600 text-white shadow' : 'bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 border border-slate-600'}" onclick="event.stopPropagation(); openQuality('${esc(sib.match_id)}');">${esc(sCode)} - ${esc(sLang)}</button>`;
+                                    }).join('') + '</div>';
+                            })()}
                         </div>
                         <div>
                             <div class="text-[11px] text-slate-400 mb-3 flex items-center gap-1.5">

@@ -94,6 +94,10 @@
 <body>
     <div id="loading"><div class="spinner"></div></div>
     <a href="index.html" id="back-btn">← Back</a>
+    <div id="top-lang-bar" style="position:fixed;top:14px;right:14px;z-index:9999;display:none;background:rgba(28,28,32,0.85);border:1px solid rgba(255,255,255,0.15);padding:4px 10px;border-radius:10px;backdrop-filter:blur(10px);display:flex;align-items:center;gap:6px;">
+        <span style="font-size:11px;color:rgba(255,255,255,0.7);font-weight:700;">🌐 Audio:</span>
+        <div id="top-lang-buttons" style="display:flex;align-items:center;gap:4px;"></div>
+    </div>
 
     <div class="player-shell">
         <div id="video-area" class="video-area">
@@ -192,13 +196,21 @@
             if (!targetH || isNaN(targetH)) return -1;
             if (!levels || !levels.length) return -1;
 
-            var exact = levels.findIndex(function(l) { return l.height === targetH; });
-            if (exact !== -1) return exact;
+            var matches = [];
+            for (var i = 0; i < levels.length; i++) {
+                if (levels[i].height === targetH) {
+                    matches.push({ index: i, bitrate: levels[i].bitrate || 0 });
+                }
+            }
+            if (matches.length > 0) {
+                matches.sort(function(a, b) { return a.bitrate - b.bitrate; });
+                return matches[0].index;
+            }
 
             var closest = 0;
             var minDiff = Math.abs((levels[0].height || 0) - targetH);
             for (var i = 1; i < levels.length; i++) {
-                const diff = Math.abs((levels[i].height || 0) - targetH);
+                var diff = Math.abs((levels[i].height || 0) - targetH);
                 if (diff < minDiff) {
                     minDiff = diff;
                     closest = i;
@@ -320,15 +332,18 @@
                 hlsInstance = new Hls({
                     enableWorker: true,
                     lowLatencyMode: false,
-                    backBufferLength: 60,
-                    maxBufferLength: 30,
-                    maxMaxBufferLength: 60,
+                    backBufferLength: 90,
+                    maxBufferLength: 45,
+                    maxMaxBufferLength: 90,
                     maxBufferSize: 60 * 1000 * 1000,
                     maxBufferHole: 0.5,
-                    liveSyncDurationCount: 3,
-                    liveMaxLatencyDurationCount: 6,
+                    liveSyncDurationCount: 4,
+                    liveMaxLatencyDurationCount: 8,
                     liveDurationInfinity: true,
                     highBufferWatchdogPeriod: 2,
+                    fragLoadingTimeOut: 20000,
+                    fragLoadingMaxRetry: 6,
+                    fragLoadingRetryDelay: 500,
                     xhrSetup: function(xhr) { xhr.withCredentials = false; }
                 });
                 hlsInstance.loadSource(url);
