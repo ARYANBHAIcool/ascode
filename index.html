@@ -571,28 +571,22 @@
             if (currentMatch) renderModalLanguageSelector(currentMatch);
             buildModalQualityMenu();
 
-            if (video.canPlayType("application/vnd.apple.mpegurl")) {
-                video.src = streamSrc;
-                video.play().catch(() => {});
-                video.addEventListener("loadedmetadata", playVideo, { once: true });
-                return;
-            }
-
+            // 1. Prefer Hls.js on ALL modern browsers & mobile (prevents 2-3s micro-stutter by managing deep buffer)
             if (window.Hls && Hls.isSupported()) {
                 let triedFallback = false;
                 hlsInstance = new Hls({
                     enableWorker: true,
                     lowLatencyMode: false,
                     backBufferLength: 90,
-                    maxBufferLength: 45,
-                    maxMaxBufferLength: 90,
+                    maxBufferLength: 60,
+                    maxMaxBufferLength: 120,
                     maxBufferSize: 60 * 1000 * 1000,
                     maxBufferHole: 0.5,
                     liveSyncDurationCount: 4,
                     liveMaxLatencyDurationCount: 8,
                     liveDurationInfinity: true,
                     highBufferWatchdogPeriod: 2,
-                    fragLoadingTimeOut: 20000,
+                    fragLoadingTimeOut: 25000,
                     fragLoadingMaxRetry: 6,
                     fragLoadingRetryDelay: 500,
                     xhrSetup: function(xhr) { xhr.withCredentials = false; }
@@ -639,6 +633,14 @@
                         }
                     }
                 });
+                return;
+            }
+
+            // 2. Fallback for iOS Safari ONLY where MediaSource/Hls.js is not supported
+            if (video.canPlayType("application/vnd.apple.mpegurl")) {
+                video.src = streamSrc;
+                video.play().catch(() => {});
+                video.addEventListener("loadedmetadata", playVideo, { once: true });
                 return;
             }
 
