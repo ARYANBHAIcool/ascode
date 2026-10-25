@@ -68,6 +68,19 @@ function parseM3U(content) {
             cur.stream_url = toDaiUrl(line);
             cur.status = 'LIVE';
             if (cur.match_id) {
+                const baseId = String(cur.match_id).split('_')[0].toLowerCase();
+                const lang = (cur.language || 'English').trim();
+                const langLower = lang.toLowerCase();
+                const langCode = langLower.substring(0, 3);
+                
+                // Keep multi-language streams distinct (e.g. 139506_hin, 139506_tam)
+                if (langLower !== 'english' && !String(cur.match_id).toLowerCase().includes('_')) {
+                    cur.match_id = `${baseId}_${langCode}`;
+                }
+                if (!cur.title.toLowerCase().includes(langLower) && !cur.title.toLowerCase().includes(`[${langCode}]`)) {
+                    cur.title = `${cur.title} [${lang}]`;
+                    cur.match_name = cur.title;
+                }
                 matches.push(cur);
             }
             cur = null;
@@ -89,8 +102,8 @@ async function syncFanCode() {
         const m3uMatches = parseM3U(m3uText);
         console.log(`Loaded ${m3uMatches.length} active streams from doctor-8trange.`);
         m3uMatches.forEach(m => {
-            const baseId = String(m.match_id).split('_')[0].toLowerCase();
-            matchesMap.set(baseId, m);
+            const uniqueId = String(m.match_id).toLowerCase();
+            matchesMap.set(uniqueId, m);
         });
     } catch (err) {
         console.warn('⚠️ Could not fetch doctor-8trange M3U:', err.message);
@@ -105,12 +118,15 @@ async function syncFanCode() {
         console.log(`Loaded ${jsonMatches.length} matches from drmlive.`);
 
         jsonMatches.forEach(jm => {
-            const baseId = String(jm.match_id || '').split('_')[0].toLowerCase();
+            const rawId = String(jm.match_id || '').toLowerCase();
+            const baseId = rawId.split('_')[0];
+            const targetKey = matchesMap.has(rawId) ? rawId : (matchesMap.has(baseId) ? baseId : rawId);
+
             const rawStream = jm.adfree_url || jm.dai_url || jm.url || '';
             const streamUrl = toDaiUrl(rawStream);
 
-            if (matchesMap.has(baseId)) {
-                const existing = matchesMap.get(baseId);
+            if (matchesMap.has(targetKey)) {
+                const existing = matchesMap.get(targetKey);
                 if (!existing.startTime && jm.startTime) existing.startTime = jm.startTime;
                 if (!existing.team_1 && jm.team_1) existing.team_1 = jm.team_1;
                 if (!existing.team_2 && jm.team_2) existing.team_2 = jm.team_2;
@@ -118,14 +134,14 @@ async function syncFanCode() {
                 if (!existing.src && jm.src) existing.src = jm.src;
                 if (streamUrl && !existing.stream_url) existing.stream_url = streamUrl;
             } else {
-                matchesMap.set(baseId, {
-                    match_id: jm.match_id || baseId,
+                matchesMap.set(targetKey, {
+                    match_id: jm.match_id || targetKey,
                     title: jm.title || jm.match_name || 'Live Match',
                     match_name: jm.match_name || jm.title || 'Live Match',
                     src: jm.src || jm.image || '',
                     event_category: jm.event_category || jm.category || 'Cricket',
                     event_name: jm.event_name || jm.tournament || '',
-                    language: jm.language || 'English',
+                    language: jm.language || (rawId.includes('_hin') ? 'Hindi' : (rawId.includes('_tam') ? 'Tamil' : 'English')),
                     startTime: jm.startTime || '',
                     status: jm.status || (streamUrl ? 'LIVE' : 'UPCOMING'),
                     stream_url: streamUrl
@@ -135,6 +151,26 @@ async function syncFanCode() {
     } catch (err) {
         console.warn('⚠️ Could not fetch drmlive JSON:', err.message);
     }
+
+    // Enrich multi-language streams with parent / sibling metadata
+    matchesMap.forEach((m, key) => {
+        const baseId = String(m.match_id).split('_')[0].toLowerCase();
+        if (key !== baseId && matchesMap.has(baseId)) {
+            const parent = matchesMap.get(baseId);
+            if (!m.src && parent.src) m.src = parent.src;
+            if (!parent.src && m.src) parent.src = m.src;
+            if (!m.startTime && parent.startTime) m.startTime = parent.startTime;
+            if (!parent.startTime && m.startTime) parent.startTime = m.startTime;
+            if (!m.team_1 && parent.team_1) m.team_1 = parent.team_1;
+            if (!parent.team_1 && m.team_1) parent.team_1 = parent.team_1;
+            if (!m.team_2 && parent.team_2) m.team_2 = parent.team_2;
+            if (!parent.team_2 && m.team_2) parent.team_2 = parent.team_2;
+            if (!m.event_name && parent.event_name) m.event_name = parent.event_name;
+            if (!parent.event_name && m.event_name) parent.event_name = m.event_name;
+            if (parent.event_category && parent.event_category !== 'Cricket') m.event_category = parent.event_category;
+            if (m.event_category && m.event_category !== 'Cricket' && (!parent.event_category || parent.event_category === 'Cricket')) parent.event_category = m.event_category;
+        }
+    });
 
     const allMatches = Array.from(matchesMap.values());
     if (allMatches.length === 0) {
@@ -160,7 +196,6 @@ async function syncFanCode() {
             const oldSig = getMatchesSignature(oldData.matches || []);
             const newSig = getMatchesSignature(allMatches);
 
-            // Heartbeat: If unchanged but file hasn't been refreshed for > 6 hours, allow update
             const hoursSince = (Date.now() - fs.statSync(m3uFile).mtimeMs) / (1000 * 60 * 60);
             if (oldSig === newSig && hoursSince < 6) {
                 hasChanged = false;
@@ -171,7 +206,7 @@ async function syncFanCode() {
     }
 
     if (!hasChanged) {
-        console.log('⚡ FanCode streams & matches are unchanged. Keeping existing playlist (no dummy commit).');
+        console.log('⚡ FanCode streams & matches are unchanged. Keeping existing playlist.');
         return true;
     }
 
@@ -221,51 +256,6 @@ async function main() {
     const ok = await syncFanCode();
     if (!ok) {
         process.exit(1);
-    }
-
-    if (process.argv.includes('--commit-and-push')) {
-        const root = rootDir;
-        const timestamp = new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' });
-        try {
-            try {
-                execSync('git fetch ascode main && (git rebase -X theirs ascode/main || git rebase --abort)', { cwd: root, stdio: 'ignore' });
-            } catch (e) {}
-
-            execSync('git add data/fancode.m3u data/fancode.json', { cwd: root });
-            const status = execSync('git status --porcelain', { encoding: 'utf8', cwd: root }).trim();
-            if (status) {
-                const commitMsg = `📡 refreshed playlist @ ${timestamp} IST • Catch the thrill live! ⚡`;
-                execSync(`git commit -m "${commitMsg}"`, { stdio: 'inherit', cwd: root });
-
-                console.log('🚀 Pushing to ascode remote (ARYANBHAIcool/ascode)...');
-                try {
-                    execSync('git push ascode main', { stdio: 'inherit', cwd: root });
-                } catch (e) {
-                    try {
-                        execSync('git fetch ascode main && git rebase -X theirs ascode/main && git push ascode main', { cwd: root, stdio: 'ignore' });
-                    } catch (e2) {
-                        console.warn('Push to ascode failed:', e.message);
-                    }
-                }
-
-                console.log('🚀 Pushing to origin remote (aryanstreamss)...');
-                try {
-                    execSync('git push origin main', { stdio: 'inherit', cwd: root });
-                } catch (e) {
-                    try {
-                        execSync('git fetch origin main && git rebase -X theirs origin/main && git push origin main', { cwd: root, stdio: 'ignore' });
-                    } catch (e2) {
-                        console.warn('Push to origin failed:', e.message);
-                    }
-                }
-
-                console.log('✨ ascode FanCode feed successfully committed and pushed!');
-            } else {
-                console.log('⚡ ascode FanCode feed already up to date.');
-            }
-        } catch (err) {
-            console.error('❌ Commit & push error in ascode:', err.message);
-        }
     }
 }
 

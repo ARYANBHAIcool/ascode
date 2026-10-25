@@ -124,6 +124,10 @@
                             <span id="player-event" class="text-xs text-slate-400 truncate"></span>
                         </div>
                         <h2 id="player-title" class="mt-2 text-base sm:text-lg font-semibold text-slate-100 truncate"></h2>
+                        <div id="modal-lang-selector" class="mt-2 flex items-center gap-2 flex-wrap hidden">
+                            <span class="text-xs text-indigo-400 font-bold flex items-center gap-1">🌐 Audio:</span>
+                            <div id="modal-lang-buttons" class="flex items-center gap-1.5 flex-wrap"></div>
+                        </div>
                     </div>
 
                     <div class="flex items-center gap-2 shrink-0 flex-wrap sm:flex-nowrap">
@@ -240,11 +244,12 @@
             if (!id) return null;
             const target = String(id).trim().toLowerCase();
             const targetBase = target.split("_")[0];
+            const exact = allMatches.find(m => String(m.match_id || "").trim().toLowerCase() === target);
+            if (exact) return exact;
             return allMatches.find(m => {
                 const cur = String(m.match_id || "").trim().toLowerCase();
-                if (cur === target) return true;
                 const curBase = cur.split("_")[0];
-                return curBase === targetBase || cur === targetBase || curBase === target;
+                return curBase === targetBase;
             });
         }
 
@@ -373,6 +378,7 @@
                 return;
             }
             currentMatch = m; // Track current match
+            renderModalLanguageSelector(m);
             const qualities = parseQualities(m);
             const list = document.getElementById("quality-list");
             list.innerHTML = "";
@@ -541,7 +547,16 @@
                 let triedFallback = false;
                 hlsInstance = new Hls({
                     enableWorker: true,
-                    lowLatencyMode: true,
+                    lowLatencyMode: false,
+                    backBufferLength: 60,
+                    maxBufferLength: 30,
+                    maxMaxBufferLength: 60,
+                    maxBufferSize: 60 * 1000 * 1000,
+                    maxBufferHole: 0.5,
+                    liveSyncDurationCount: 3,
+                    liveMaxLatencyDurationCount: 6,
+                    liveDurationInfinity: true,
+                    highBufferWatchdogPeriod: 2,
                     xhrSetup: function(xhr) { xhr.withCredentials = false; }
                 });
                 hlsInstance.loadSource(streamSrc);
@@ -739,6 +754,49 @@
             });
         };
 
+        function renderModalLanguageSelector(m) {
+            const container = document.getElementById("modal-lang-selector");
+            const btnBox = document.getElementById("modal-lang-buttons");
+            if (!container || !btnBox) return;
+
+            if (!m) {
+                container.classList.add("hidden");
+                return;
+            }
+
+            const baseId = String(m.match_id || "").split("_")[0].toLowerCase();
+            const siblings = allMatches.filter(x => {
+                const xBase = String(x.match_id || "").split("_")[0].toLowerCase();
+                return xBase === baseId && hasStream(x);
+            });
+
+            if (siblings.length <= 1) {
+                container.classList.add("hidden");
+                btnBox.innerHTML = "";
+                return;
+            }
+
+            container.classList.remove("hidden");
+            btnBox.innerHTML = "";
+
+            siblings.forEach(sib => {
+                const sibLang = sib.language || (String(sib.match_id).includes("_tam") ? "Tamil" : (String(sib.match_id).includes("_hin") ? "Hindi" : "English"));
+                const isCurrent = String(sib.match_id).toLowerCase() === String(m.match_id).toLowerCase();
+                const btn = document.createElement("button");
+                btn.type = "button";
+                btn.className = isCurrent
+                    ? "px-3 py-1 rounded-md text-xs font-black bg-red-600 text-white shadow"
+                    : "px-3 py-1 rounded-md text-xs font-semibold bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 border border-slate-700 transition";
+                btn.textContent = sibLang;
+                btn.onclick = () => {
+                    if (!isCurrent) {
+                        openQuality(sib.match_id);
+                    }
+                };
+                btnBox.appendChild(btn);
+            });
+        }
+
         function renderCard(m) {
             const hasStreamUrl = hasStream(m);
             const isLive = (m.status||"").toUpperCase() === "LIVE" && hasStreamUrl;
@@ -751,6 +809,9 @@
             } else if (m.match_name) {
                 displayTitle = m.match_name;
             }
+
+            const lang = m.language || (String(m.match_id).includes('_tam') ? 'Tamil' : (String(m.match_id).includes('_hin') ? 'Hindi' : 'English'));
+            const langBadge = `<span class="inline-flex items-center text-[10px] font-extrabold text-white bg-indigo-600/90 px-2 py-0.5 rounded shadow-sm uppercase">${esc(lang)}</span>`;
             
             const badge = isLive 
                 ? '<span class="inline-flex items-center gap-1.5 text-[10px] font-black text-white bg-red-600 px-2 py-0.5 rounded-full"><span class="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></span>LIVE</span>' 
@@ -770,7 +831,10 @@
                     <div class="p-4 flex-grow flex flex-col justify-between gap-4">
                         <div>
                             <div class="flex items-center justify-between gap-2 mb-2">
-                                ${badge}
+                                <div class="flex items-center gap-1.5 flex-wrap">
+                                    ${badge}
+                                    ${langBadge}
+                                </div>
                                 <span class="text-[10px] font-bold text-indigo-400 uppercase tracking-wider">${esc(m.event_category || m.category || 'Sports')}</span>
                             </div>
                             <h3 class="text-sm font-bold text-white line-clamp-2 mb-1.5 leading-snug">${esc(displayTitle)}</h3>
@@ -856,6 +920,17 @@
                     cur.adfree_url = streamUrl;
                     cur.status = "LIVE";
                     if (cur.match_id) {
+                        const baseId = String(cur.match_id).split("_")[0].toLowerCase();
+                        const lang = (cur.language || "English").trim();
+                        const langLower = lang.toLowerCase();
+                        const langCode = langLower.substring(0, 3);
+                        if (langLower !== "english" && !String(cur.match_id).toLowerCase().includes("_")) {
+                            cur.match_id = `${baseId}_${langCode}`;
+                        }
+                        if (!cur.title.toLowerCase().includes(langLower) && !cur.title.toLowerCase().includes(`[${langCode}]`)) {
+                            cur.title = `${cur.title} [${lang}]`;
+                            cur.match_name = cur.title;
+                        }
                         list.push(cur);
                     }
                     cur = null;
@@ -879,13 +954,13 @@
                     const text = await r.text();
                     const parsed = parseM3uText(text);
                     parsed.forEach(m => {
-                        const baseId = String(m.match_id || "").split("_")[0].toLowerCase();
-                        if (!m3uMap.has(baseId)) {
-                            m3uMap.set(baseId, m);
+                        const uniqueId = String(m.match_id || "").toLowerCase();
+                        if (!m3uMap.has(uniqueId)) {
+                            m3uMap.set(uniqueId, m);
                         } else {
-                            const ex = m3uMap.get(baseId);
+                            const ex = m3uMap.get(uniqueId);
                             if (!ex.stream_url && m.stream_url) {
-                                m3uMap.set(baseId, m);
+                                m3uMap.set(uniqueId, m);
                             }
                         }
                     });
@@ -924,13 +999,13 @@
                     const data = await r.json();
                     const matches = data.matches || (Array.isArray(data) ? data : []);
                     matches.forEach(jm => {
-                        const baseId = String(jm.match_id || "").split("_")[0].toLowerCase();
-                        if (!jsonMap.has(baseId)) {
-                            jsonMap.set(baseId, jm);
+                        const uniqueId = String(jm.match_id || "").toLowerCase();
+                        if (!jsonMap.has(uniqueId)) {
+                            jsonMap.set(uniqueId, jm);
                         } else {
-                            const ex = jsonMap.get(baseId);
+                            const ex = jsonMap.get(uniqueId);
                             if ((!ex.dai_url && !ex.stream_url) && (jm.dai_url || jm.stream_url || jm.adfree_url)) {
-                                jsonMap.set(baseId, Object.assign({}, ex, jm));
+                                jsonMap.set(uniqueId, Object.assign({}, ex, jm));
                             }
                         }
                     });
@@ -948,15 +1023,20 @@
             const m3uMatches = m3uResult.status === "fulfilled" ? m3uResult.value : [];
             const jsonMatches = jsonResult.status === "fulfilled" ? jsonResult.value : [];
 
-            // Combine both sources: M3U matches (active proxy streams) + JSON matches
-            const combined = [...m3uMatches];
-            const m3uMap = new Map();
-            m3uMatches.forEach(m => m3uMap.set(String(m.match_id).split("_")[0].toLowerCase(), m));
+            const combinedMap = new Map();
+
+            m3uMatches.forEach(m => {
+                const uniqueId = String(m.match_id).toLowerCase();
+                combinedMap.set(uniqueId, m);
+            });
 
             for (const jm of jsonMatches) {
-                const baseId = String(jm.match_id || "").split("_")[0].toLowerCase();
-                if (m3uMap.has(baseId)) {
-                    const existing = m3uMap.get(baseId);
+                const rawId = String(jm.match_id || "").toLowerCase();
+                const baseId = rawId.split("_")[0];
+                const targetKey = combinedMap.has(rawId) ? rawId : (combinedMap.has(baseId) ? baseId : rawId);
+
+                if (combinedMap.has(targetKey)) {
+                    const existing = combinedMap.get(targetKey);
                     if (!existing.startTime && jm.startTime) existing.startTime = jm.startTime;
                     if (!existing.team_1 && jm.team_1) existing.team_1 = jm.team_1;
                     if (!existing.team_2 && jm.team_2) existing.team_2 = jm.team_2;
@@ -964,12 +1044,33 @@
                     if (jm.STREAMING_CDN && !existing.STREAMING_CDN) existing.STREAMING_CDN = jm.STREAMING_CDN;
                     if (jm.google_m3u8_hex && !existing.google_m3u8_hex) existing.google_m3u8_hex = jm.google_m3u8_hex;
                     if ((jm.dai_url || jm.adfree_url) && !existing.json_dai_url) existing.json_dai_url = jm.dai_url || jm.adfree_url;
+                    if (!existing.src && jm.src) existing.src = jm.src;
                     existing.status = "LIVE";
                 } else {
-                    combined.push(jm);
+                    combinedMap.set(targetKey, jm);
                 }
             }
-            return combined;
+
+            combinedMap.forEach((m, key) => {
+                const baseId = String(m.match_id).split("_")[0].toLowerCase();
+                if (key !== baseId && combinedMap.has(baseId)) {
+                    const parent = combinedMap.get(baseId);
+                    if (!m.src && parent.src) m.src = parent.src;
+                    if (!parent.src && m.src) parent.src = m.src;
+                    if (!m.startTime && parent.startTime) m.startTime = parent.startTime;
+                    if (!parent.startTime && m.startTime) parent.startTime = m.startTime;
+                    if (!m.team_1 && parent.team_1) m.team_1 = parent.team_1;
+                    if (!parent.team_1 && m.team_1) parent.team_1 = parent.team_1;
+                    if (!m.team_2 && parent.team_2) m.team_2 = parent.team_2;
+                    if (!parent.team_2 && m.team_2) parent.team_2 = parent.team_2;
+                    if (!m.event_name && parent.event_name) m.event_name = parent.event_name;
+                    if (!parent.event_name && m.event_name) parent.event_name = m.event_name;
+                    if (parent.event_category && parent.event_category !== "Cricket") m.event_category = parent.event_category;
+                    if (m.event_category && m.event_category !== "Cricket" && (!parent.event_category || parent.event_category === "Cricket")) parent.event_category = m.event_category;
+                }
+            });
+
+            return Array.from(combinedMap.values());
         }
 
         async function loadData() {
