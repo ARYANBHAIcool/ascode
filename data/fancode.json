@@ -2,36 +2,22 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/26/2026, 12:48:09 AM IST",
+  "last_updated": "10/26/2026, 1:31:16 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 40,
+  "total_matches": 39,
   "live_matches": 4,
   "matches": [
     {
-      "match_id": "4250487",
-      "match_name": "Dubai Vs Ajman",
-      "title": "Dubai Vs Ajman",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250487_53130_AJM_DUB_fc-web_1792412929315.jpg",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250487_english_hls_db3fb56c1a12613_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "10:00:00 PM 25-10-2026",
-      "team_1": "Dubai",
-      "team_2": "Ajman",
-      "event_name": "Emirates D20, 2026"
-    },
-    {
-      "match_id": "4247663",
-      "match_name": "Real Sociedad Vs Levante",
-      "title": "Real Sociedad Vs Levante",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247663_53004_RS_LET_FC-Web.png",
+      "match_id": "4247666",
+      "match_name": "Fc Barcelona Vs Real Madrid",
+      "title": "Fc Barcelona Vs Real Madrid",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247666_53004_BAR_RM_FC-Web.png",
       "language": "English",
       "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247663_english_hls_1ea9c7c09646951_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247666_english_hls_795c44aaba22155_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE"
     },
     {
@@ -63,6 +49,18 @@
       "event_name": "F1 MSC CRUISES UNITED STATES GRAND PRIX 2026"
     },
     {
+      "match_id": "4250487_ENG",
+      "title": "Emirates D20, 2026 [English]",
+      "match_name": "Dubai vs Ajman [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250487_53130_AJM_DUB_fc-web_1792412929315.jpg",
+      "event_category": "Cricket",
+      "event_name": "Emirates D20, 2026",
+      "language": "English",
+      "startTime": "10:00:00 PM 25-10-2026",
+      "status": "LIVE",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250487_english_hls_db3fb56c1a12613_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/"
+    },
+    {
       "match_id": 4250355,
       "title": "Lumbini Lions vs Sudurpaschim Royals (Nepal Premier League Season 3, 2026)",
       "match_name": "Lumbini Lions vs Sudurpaschim Royals",
@@ -71,18 +69,6 @@
       "event_name": "Nepal Premier League Season 3, 2026",
       "language": "English",
       "startTime": "04:45:00 PM 26-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4247666,
-      "title": "FC Barcelona vs Real Madrid (LALIGA 2026-27)",
-      "match_name": "FC Barcelona vs Real Madrid",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247666_53004_BAR_RM_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "01:30:00 AM 26-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
