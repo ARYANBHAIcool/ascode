@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/25/2026, 12:27:35 PM IST",
+  "last_updated": "10/25/2026, 3:24:52 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 4,
+  "live_matches": 8,
   "matches": [
     {
       "match_id": "4250516",
@@ -23,20 +23,6 @@
       "team_1": "United Arab Emirates",
       "team_2": "Netherlands",
       "event_name": "ICC CWC League 2 UAE, 2026"
-    },
-    {
-      "match_id": "4250528",
-      "match_name": "Race Day",
-      "title": "Race Day",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/JK-Tyre-_Web-match-card.png",
-      "language": "English",
-      "event_category": "Motorsports",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250528_english_hls_5f5972517d95754_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "09:30:00 AM 25-10-2026",
-      "team_1": "Race Day",
-      "team_2": "Kari Motor Speedway, Coimbatore",
-      "event_name": "CTR-JK Tyre FMSCI Indian National Car Racing Championship 2026"
     },
     {
       "match_id": "4250341",
@@ -67,6 +53,76 @@
       "event_name": "ICC CWC Challenge League A 2026"
     },
     {
+      "match_id": "4249766",
+      "match_name": "Gambia Vs Lesotho",
+      "title": "Gambia Vs Lesotho",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249766_53093_GAM_LES_FC-Web_1792493253302.png",
+      "language": "English",
+      "event_category": "Cricket",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249766_english_hls_452249917198475_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "02:00:00 PM 25-10-2026",
+      "team_1": "Gambia",
+      "team_2": "Lesotho",
+      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026"
+    },
+    {
+      "match_id": "4249767",
+      "match_name": "Zambia Vs Mozambique",
+      "title": "Zambia Vs Mozambique",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249767_53093_MOZ_ZAM_FC-Web_1792493252681.png",
+      "language": "English",
+      "event_category": "Cricket",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249767_english_hls_3fd0e646ca11655_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "02:00:00 PM 25-10-2026",
+      "team_1": "Zambia",
+      "team_2": "Mozambique",
+      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026"
+    },
+    {
+      "match_id": "4250528",
+      "match_name": "Race Day",
+      "title": "Race Day",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/JK-Tyre-_Web-match-card.png",
+      "language": "English",
+      "event_category": "Motorsports",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250528_english_hls_5f5972517d95754_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "09:30:00 AM 25-10-2026",
+      "team_1": "Race Day",
+      "team_2": "Kari Motor Speedway, Coimbatore",
+      "event_name": "CTR-JK Tyre FMSCI Indian National Car Racing Championship 2026"
+    },
+    {
+      "match_id": "4249613",
+      "match_name": "Day 7   World Feed",
+      "title": "Day 7   World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-Web_1792479545067.png",
+      "language": "English",
+      "event_category": "Tennis",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249613_english_hls_720b338d056084_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "03:30:00 PM 25-10-2026",
+      "team_1": "Day 7 - World Feed",
+      "team_2": "Almaty, Kazakhstan",
+      "event_name": "ATP 250 - Almaty Open 2026"
+    },
+    {
+      "match_id": "4250159",
+      "match_name": "Young Vs Pv Sindhu",
+      "title": "Young Vs Pv Sindhu",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/An_Se_Young_PV_Sindhu_FC-App-V2_FC-WEB.jpg",
+      "language": "English",
+      "event_category": "Badminton",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250159_english_hls_f0bf5565811704_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "status": "LIVE",
+      "startTime": "03:30:00 PM 25-10-2026",
+      "team_1": "Young vs PV Sindhu",
+      "team_2": "France",
+      "event_name": "BWF Super 750 - French Open 2026"
+    },
+    {
       "match_id": 4250486,
       "title": "Emirates Red vs Emirates Blues (Emirates D20, 2026)",
       "match_name": "Emirates Red vs Emirates Blues",
@@ -87,30 +143,6 @@
       "event_name": "Emirates D20, 2026",
       "language": "English",
       "startTime": "10:00:00 PM 25-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249766,
-      "title": "Gambia vs Lesotho (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
-      "match_name": "Gambia vs Lesotho",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249766_53093_GAM_LES_FC-Web_1792493253302.png",
-      "event_category": "Cricket",
-      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
-      "language": "English",
-      "startTime": "02:00:00 PM 25-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249767,
-      "title": "Mozambique vs Zambia (ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026)",
-      "match_name": "Mozambique vs Zambia",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249767_53093_MOZ_ZAM_FC-Web_1792493252681.png",
-      "event_category": "Cricket",
-      "event_name": "ICC Men's T20 WC Africa Sub-regional Qualifier C, 2026",
-      "language": "English",
-      "startTime": "02:00:00 PM 25-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -247,18 +279,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250529,
-      "title": "Delhi Dynamites vs Haryana Hustlers (Northern Artist Champions League 2026)",
-      "match_name": "Delhi Dynamites vs Haryana Hustlers",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "Northern Artist Champions League 2026",
-      "language": "English",
-      "startTime": "10:00:00 AM 26-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250355,
       "title": "Lumbini Lions vs Sudurpaschim Royals (Nepal Premier League Season 3, 2026)",
       "match_name": "Lumbini Lions vs Sudurpaschim Royals",
@@ -271,30 +291,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249613,
-      "title": "Day 7 - World Feed vs Almaty, Kazakhstan (ATP 250 - Almaty Open 2026)",
-      "match_name": "Day 7 - World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-Web_1792479545067.png",
-      "event_category": "Tennis",
-      "event_name": "ATP 250 - Almaty Open 2026",
-      "language": "English",
-      "startTime": "03:30:00 PM 25-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250159,
-      "title": "Young vs PV Sindhu vs France (BWF Super 750 - French Open 2026)",
-      "match_name": "Young vs PV Sindhu",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/An_Se_Young_PV_Sindhu_FC-App-V2_FC-WEB.jpg",
-      "event_category": "Badminton",
-      "event_name": "BWF Super 750 - French Open 2026",
-      "language": "English",
-      "startTime": "03:30:00 PM 25-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250488,
       "title": "Abu Dhabi vs Emirates Red (Emirates D20, 2026)",
       "match_name": "Abu Dhabi vs Emirates Red",
@@ -303,6 +299,30 @@
       "event_name": "Emirates D20, 2026",
       "language": "English",
       "startTime": "06:00:00 PM 26-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250529,
+      "title": "Delhi Dynamites vs Haryana Hustlers (Northern Artist Champions League 2026)",
+      "match_name": "Delhi Dynamites vs Haryana Hustlers",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "Northern Artist Champions League 2026",
+      "language": "English",
+      "startTime": "10:00:00 AM 26-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250530,
+      "title": "Uttrakhand Stars vs Chandigarh Chargers (Northern Artist Champions League 2026)",
+      "match_name": "Uttrakhand Stars vs Chandigarh Chargers",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "Northern Artist Champions League 2026",
+      "language": "English",
+      "startTime": "02:00:00 PM 26-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -367,14 +387,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250530,
-      "title": "Uttrakhand Stars vs Chandigarh Chargers (Northern Artist Champions League 2026)",
-      "match_name": "Uttrakhand Stars vs Chandigarh Chargers",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "match_id": 4250489,
+      "title": "Emirates Blues vs Sharjah (Emirates D20, 2026)",
+      "match_name": "Emirates Blues vs Sharjah",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250489_53130_EMB_SHA_fc-web_1792412930086.jpg",
       "event_category": "Cricket",
-      "event_name": "Northern Artist Champions League 2026",
+      "event_name": "Emirates D20, 2026",
       "language": "English",
-      "startTime": "02:00:00 PM 26-10-2026",
+      "startTime": "10:00:00 PM 26-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -391,18 +411,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250489,
-      "title": "Emirates Blues vs Sharjah (Emirates D20, 2026)",
-      "match_name": "Emirates Blues vs Sharjah",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250489_53130_EMB_SHA_fc-web_1792412930086.jpg",
-      "event_category": "Cricket",
-      "event_name": "Emirates D20, 2026",
-      "language": "English",
-      "startTime": "10:00:00 PM 26-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250531,
       "title": "Himachal Highlenders vs Punjab Warriors (Northern Artist Champions League 2026)",
       "match_name": "Himachal Highlenders vs Punjab Warriors",
@@ -411,6 +419,30 @@
       "event_name": "Northern Artist Champions League 2026",
       "language": "English",
       "startTime": "06:00:00 PM 26-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4248713,
+      "title": "Al-Ahli Saudi FC vs Al Gharafa (AFC Champions League Elite 2026-27)",
+      "match_name": "Al-Ahli Saudi FC vs Al Gharafa",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248713_53053_AAS_AGH_fc-web_1792670285275.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Elite 2026-27",
+      "language": "English",
+      "startTime": "09:30:00 PM 26-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4248714,
+      "title": "Al Ain vs Tractor (AFC Champions League Elite 2026-27)",
+      "match_name": "Al Ain vs Tractor",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248714_53053_AAI_TFC_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Elite 2026-27",
+      "language": "English",
+      "startTime": "09:30:00 PM 26-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -459,30 +491,6 @@
       "event_name": "ATP 500 - Swiss Indoors Basel 2026",
       "language": "English",
       "startTime": "03:30:00 PM 26-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4248713,
-      "title": "Al-Ahli Saudi FC vs Al Gharafa (AFC Champions League Elite 2026-27)",
-      "match_name": "Al-Ahli Saudi FC vs Al Gharafa",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248713_53053_AAS_AGH_fc-web_1792670285275.jpg",
-      "event_category": "Football",
-      "event_name": "AFC Champions League Elite 2026-27",
-      "language": "English",
-      "startTime": "09:30:00 PM 26-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4248714,
-      "title": "Al Ain vs Tractor (AFC Champions League Elite 2026-27)",
-      "match_name": "Al Ain vs Tractor",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248714_53053_AAI_TFC_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "AFC Champions League Elite 2026-27",
-      "language": "English",
-      "startTime": "09:30:00 PM 26-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
