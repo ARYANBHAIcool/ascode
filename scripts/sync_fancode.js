@@ -27,7 +27,7 @@ function fetchEndpoint(url) {
 }
 
 function cleanStreamUrl(value) {
-    return String(value || '').trim().replace(/[,\s]+$/g, '');
+    return String(value || '').trim().split('|')[0].trim().replace(/[,\s]+$/g, '');
 }
 
 function toDaiUrl(streamUrl) {
@@ -73,11 +73,11 @@ function parseM3U(content) {
                 const langLower = lang.toLowerCase();
                 const langCode = langLower.substring(0, 3);
                 
-                // Keep multi-language streams distinct (e.g. 139506_hin, 139506_tam)
-                if (langLower !== 'english' && !String(cur.match_id).toLowerCase().includes('_')) {
-                    cur.match_id = `${baseId}_${langCode}`;
+                // Keep unique match_id per language variant (e.g. 139506, 139506_hin, 139506_tam)
+                if (langLower !== 'english' && !cur.match_id.includes('_')) {
+                    cur.match_id = `${cur.match_id}_${langCode}`;
                 }
-                if (!cur.title.toLowerCase().includes(langLower) && !cur.title.toLowerCase().includes(`[${langCode}]`)) {
+                if (!cur.title.toLowerCase().includes(`[${langLower}]`)) {
                     cur.title = `${cur.title} [${lang}]`;
                     cur.match_name = cur.title;
                 }
@@ -178,37 +178,22 @@ async function syncFanCode() {
         return false;
     }
 
+    // Pre-resolve master_m3u8 for live streams to enable instant quality extraction and lag-free direct bitrate selection
+    console.log('Resolving master playlists for live streams...');
+    await Promise.allSettled(allMatches.map(async (m) => {
+        if (m.stream_url && m.stream_url.includes('.m3u8')) {
+            try {
+                const clean = cleanStreamUrl(m.stream_url);
+                const mText = await fetchEndpoint(clean);
+                if (mText && mText.includes('#EXT-X-STREAM-INF')) {
+                    m.master_m3u8 = mText;
+                }
+            } catch (_) {}
+        }
+    }));
+
     const m3uFile = path.join(dataDir, 'fancode.m3u');
     const jsonFile = path.join(dataDir, 'fancode.json');
-
-    function getMatchesSignature(matches) {
-        return matches
-            .filter(m => m.stream_url)
-            .map(m => `${m.match_id}|${m.stream_url}|${m.match_name || m.title || ''}`)
-            .sort()
-            .join('\n');
-    }
-
-    let hasChanged = true;
-    if (fs.existsSync(jsonFile) && fs.existsSync(m3uFile)) {
-        try {
-            const oldData = JSON.parse(fs.readFileSync(jsonFile, 'utf8'));
-            const oldSig = getMatchesSignature(oldData.matches || []);
-            const newSig = getMatchesSignature(allMatches);
-
-            const hoursSince = (Date.now() - fs.statSync(m3uFile).mtimeMs) / (1000 * 60 * 60);
-            if (oldSig === newSig && hoursSince < 6) {
-                hasChanged = false;
-            }
-        } catch (e) {
-            hasChanged = true;
-        }
-    }
-
-    if (!hasChanged) {
-        console.log('⚡ FanCode streams & matches are unchanged. Keeping existing playlist.');
-        return true;
-    }
 
     // Generate data/fancode.m3u
     let m3uOutput = '#EXTM3U\n';

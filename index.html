@@ -382,9 +382,8 @@
                 return;
             }
             currentMatch = m;
-            renderModalLanguageSelector(m);
 
-            // Populate Language Selector inside Quality Modal
+            // Render sleek segmented Audio Language Selector
             const qLangWrap = document.getElementById("quality-lang-wrapper");
             const qLangList = document.getElementById("quality-lang-list");
             if (qLangWrap && qLangList) {
@@ -402,9 +401,9 @@
                         const sBtn = document.createElement("button");
                         sBtn.type = "button";
                         sBtn.className = isCur
-                            ? "px-3 py-1 rounded text-xs font-black bg-red-600 text-white shadow"
-                            : "px-3 py-1 rounded text-xs font-bold bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 border border-slate-700 transition";
-                        sBtn.textContent = sLang;
+                            ? "py-2 px-3 rounded-lg text-xs font-black bg-red-600 text-white shadow-md transition flex items-center justify-center gap-1.5"
+                            : "py-2 px-3 rounded-lg text-xs font-semibold bg-slate-800/80 text-slate-300 hover:text-white hover:bg-slate-700 transition flex items-center justify-center gap-1.5";
+                        sBtn.innerHTML = (isCur ? '<span>🎙️</span> ' : '') + esc(sLang);
                         sBtn.onclick = (e) => {
                             e.stopPropagation();
                             if (!isCur) window.openQuality(sib.match_id);
@@ -422,8 +421,13 @@
 
             if (qualities.length === 0) { alert("Stream not currently available"); return; }
 
-            let displayTitle = (m.team_1 && m.team_2) ? `${m.team_1} vs ${m.team_2}` : (m.match_name || m.title || "Live Match");
-            document.getElementById("player-title").textContent = displayTitle;
+            let rawTitle = m.title || m.match_name || "Live Match";
+            if (m.team_1 && m.team_2) {
+                rawTitle = `${m.team_1} vs ${m.team_2}`;
+            }
+            const cleanTitle = rawTitle.replace(/\s*\[(English|Hindi|Tamil|Kannada|Telugu|Bengali|ENG|HIN|TAM)\]/gi, '').trim();
+
+            document.getElementById("player-title").textContent = cleanTitle;
             document.getElementById("player-event").textContent = m.event_name || m.tournament || m.event_category || m.title || "";
 
             const btnFull = document.getElementById("btn-full-player");
@@ -439,9 +443,18 @@
 
             qualities.forEach(q => {
                 const btn = document.createElement("button");
-                btn.className = "w-full bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 hover:border-red-500 text-white py-3 rounded-lg text-sm font-bold flex justify-between px-4 transition duration-200";
+                btn.className = "w-full bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 hover:border-red-500 text-white py-3 rounded-lg text-sm font-bold flex justify-between items-center px-4 transition duration-200";
                 const isHd = q.isHd || parseInt(q.res) >= 720;
-                btn.innerHTML = '<span>📺 ' + esc(q.res) + '</span>' + (isHd ? '<span class="bg-red-600 px-2 py-0.5 rounded text-[10px] font-black text-white">HD</span>' : '');
+                const isRecommended = (q.res === "720p");
+                
+                let badgeText = '';
+                if (isRecommended) {
+                    badgeText = '<span class="bg-emerald-600 px-2 py-0.5 rounded text-[10px] font-black text-white">Recommended • Smooth</span>';
+                } else if (isHd) {
+                    badgeText = '<span class="bg-red-600 px-2 py-0.5 rounded text-[10px] font-black text-white">HD</span>';
+                }
+
+                btn.innerHTML = '<span>📺 ' + esc(q.res) + '</span>' + badgeText;
                 btn.onclick = () => handleQualitySelect(q);
                 list.appendChild(btn);
             });
@@ -570,8 +583,15 @@
             updateModalQualityBadge(reqRes);
             if (currentMatch) renderModalLanguageSelector(currentMatch);
             buildModalQualityMenu();
+            // 1. Native HLS playback: runs natively without cross-origin CORS restrictions on all mobile browsers, iOS & Safari
+            if (video.canPlayType("application/vnd.apple.mpegurl")) {
+                video.src = streamSrc;
+                video.play().catch(() => {});
+                video.addEventListener("loadedmetadata", playVideo, { once: true });
+                return;
+            }
 
-            // 1. Prefer Hls.js on ALL modern browsers & mobile (prevents 2-3s micro-stutter by managing deep buffer)
+            // 2. HLS.js for browsers without native HLS support (e.g. desktop browsers)
             if (window.Hls && Hls.isSupported()) {
                 let triedFallback = false;
                 hlsInstance = new Hls({
@@ -636,17 +656,8 @@
                 return;
             }
 
-            // 2. Fallback for iOS Safari ONLY where MediaSource/Hls.js is not supported
-            if (video.canPlayType("application/vnd.apple.mpegurl")) {
-                video.src = streamSrc;
-                video.play().catch(() => {});
-                video.addEventListener("loadedmetadata", playVideo, { once: true });
-                return;
-            }
-
-            clearTimeout(loadTimeout);
-            msg.textContent = "Your browser does not support HLS streaming.";
-            msg.classList.remove("hidden");
+            video.src = streamSrc;
+            playVideo();
         }
 
         function findLevelIndex(levels, targetRes) {
@@ -840,7 +851,15 @@
                 btn.textContent = sibLang;
                 btn.onclick = () => {
                     if (!isCurrent) {
-                        openQuality(sib.match_id);
+                        currentMatch = sib;
+                        const qs = parseQualities(sib);
+                        const curRes = currentQuality ? currentQuality.res : 'Auto';
+                        const targetQ = qs.find(q => q.res === curRes) || qs.find(q => q.res === '720p') || qs[0];
+                        if (targetQ) {
+                            handleQualitySelect(targetQ);
+                        } else {
+                            openQuality(sib.match_id);
+                        }
                     }
                 };
                 btnBox.appendChild(btn);
@@ -853,64 +872,67 @@
             const isEnded = (m.status||"").toUpperCase() === "LIVE" && !hasStreamUrl;
             const img = m.src || m.image || (m.image_cdn && m.image_cdn.APP) || FALLBACK_IMG;
             
-            let displayTitle = m.title;
+            let rawTitle = m.title || m.match_name || "Live Match";
             if (m.team_1 && m.team_2) {
-                displayTitle = `${m.team_1} vs ${m.team_2}`;
-            } else if (m.match_name) {
-                displayTitle = m.match_name;
+                rawTitle = `${m.team_1} vs ${m.team_2}`;
             }
+            // Clean up redundant language brackets from card title
+            const displayTitle = rawTitle.replace(/\s*\[(English|Hindi|Tamil|Kannada|Telugu|Bengali|ENG|HIN|TAM)\]/gi, '').trim();
 
-            const lang = m.language || (String(m.match_id).includes('_tam') ? 'Tamil' : (String(m.match_id).includes('_hin') ? 'Hindi' : 'English'));
-            const langBadge = `<span class="inline-flex items-center text-[10px] font-extrabold text-white bg-indigo-600/90 px-2 py-0.5 rounded shadow-sm uppercase">${esc(lang)}</span>`;
-            
-            const badge = isLive 
+            const baseId = String(m.match_id || "").split('_')[0].toLowerCase();
+            const siblings = allMatches.filter(x => {
+                const xBase = String(x.match_id || "").split('_')[0].toLowerCase();
+                return xBase === baseId && hasStream(x);
+            });
+
+            // Modern sleek badges
+            const liveBadge = isLive 
                 ? '<span class="inline-flex items-center gap-1.5 text-[10px] font-black text-white bg-red-600 px-2 py-0.5 rounded-full"><span class="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></span>LIVE</span>' 
                 : isEnded
                     ? '<span class="inline-flex items-center text-[10px] font-bold text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded-full border border-slate-700/40">ENDED</span>'
                     : '<span class="inline-flex items-center text-[10px] font-bold text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded-full border border-slate-700/40">UPCOMING</span>';
 
+            let audioBadge = '';
+            if (siblings.length > 1) {
+                const langs = siblings.map(s => {
+                    const l = s.language || (String(s.match_id).includes('_tam') ? 'TAM' : (String(s.match_id).includes('_hin') ? 'HIN' : 'ENG'));
+                    return l.substring(0, 3).toUpperCase();
+                });
+                audioBadge = `<span class="inline-flex items-center gap-1 text-[10px] font-extrabold text-amber-300 bg-amber-500/20 border border-amber-500/30 px-2 py-0.5 rounded shadow-sm">🎙️ ${langs.join(' • ')}</span>`;
+            } else {
+                const lang = m.language || (String(m.match_id).includes('_tam') ? 'Tamil' : (String(m.match_id).includes('_hin') ? 'Hindi' : 'English'));
+                audioBadge = `<span class="inline-flex items-center text-[10px] font-bold text-indigo-300 bg-indigo-500/20 border border-indigo-500/30 px-2 py-0.5 rounded shadow-sm uppercase">${esc(lang)}</span>`;
+            }
+
             const btn = isLive
-                ? `<button class="w-full bg-red-600 hover:bg-red-700 text-white py-2 rounded-lg text-xs font-bold transition transform active:scale-95 shadow-md shadow-red-900/30" onclick="openQuality('${esc(m.match_id)}')">▶ WATCH LIVE</button>`
+                ? `<button class="w-full bg-red-600 hover:bg-red-700 text-white py-2.5 rounded-lg text-xs font-bold transition transform active:scale-95 shadow-md shadow-red-900/30 flex items-center justify-center gap-1.5" onclick="openQuality('${esc(m.match_id)}')"><span>▶</span> WATCH LIVE</button>`
                 : isEnded
-                    ? '<button class="w-full bg-slate-800/60 text-slate-500 py-2 rounded-lg text-xs font-bold cursor-not-allowed border border-slate-800" disabled>🏁 Stream Ended</button>'
-                    : '<button class="w-full bg-slate-800/60 text-slate-500 py-2 rounded-lg text-xs font-bold cursor-not-allowed border border-slate-800" disabled>⏳ Not Live Yet</button>';
+                    ? '<button class="w-full bg-slate-800/60 text-slate-500 py-2.5 rounded-lg text-xs font-bold cursor-not-allowed border border-slate-800" disabled>🏁 Stream Ended</button>'
+                    : '<button class="w-full bg-slate-800/60 text-slate-500 py-2.5 rounded-lg text-xs font-bold cursor-not-allowed border border-slate-800" disabled>⏳ Not Live Yet</button>';
 
             return `
                 <div class="match-card rounded-xl overflow-hidden shadow-lg flex flex-col ${isLive ? 'cursor-pointer hover:border-red-500/50 transition duration-200' : ''}" ${isLive ? `onclick="if(!event.target.closest('button')) openQuality('${esc(m.match_id)}');"` : ''}>
-                    <img class="w-full aspect-[16/9] object-cover bg-slate-950" src="${esc(img)}" loading="lazy" onerror="this.src='${FALLBACK_IMG}'" alt="">
-                    <div class="p-4 flex-grow flex flex-col justify-between gap-4">
+                    <div class="relative w-full aspect-[16/9] bg-slate-950 overflow-hidden">
+                        <img class="w-full h-full object-cover transition duration-300 hover:scale-105" src="${esc(img)}" loading="lazy" onerror="this.src='${FALLBACK_IMG}'" alt="">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col justify-between gap-3">
                         <div>
                             <div class="flex items-center justify-between gap-2 mb-2">
                                 <div class="flex items-center gap-1.5 flex-wrap">
-                                    ${badge}
-                                    ${langBadge}
+                                    ${liveBadge}
+                                    ${audioBadge}
                                 </div>
                                 <span class="text-[10px] font-bold text-indigo-400 uppercase tracking-wider">${esc(m.event_category || m.category || 'Sports')}</span>
                             </div>
-                            <h3 class="text-sm font-bold text-white line-clamp-2 mb-1.5 leading-snug">${esc(displayTitle)}</h3>
+                            <h3 class="text-sm font-bold text-white line-clamp-2 mb-1 leading-snug">${esc(displayTitle)}</h3>
                             <p class="text-[11px] text-slate-400 truncate">${esc(m.event_name || m.tournament || m.event_category || 'Live Sports')}</p>
-                            ${(() => {
-                                const baseId = String(m.match_id || "").split('_')[0].toLowerCase();
-                                const siblings = allMatches.filter(x => {
-                                    const xBase = String(x.match_id || "").split('_')[0].toLowerCase();
-                                    return xBase === baseId && hasStream(x);
-                                });
-                                if (siblings.length <= 1) return '';
-                                return '<div class="mt-2.5 pt-2 border-t border-slate-700/60 flex items-center gap-1.5 flex-wrap"><span class="text-[10px] text-slate-400 font-bold">🌐 Audio:</span>' +
-                                    siblings.map(sib => {
-                                        const sLang = sib.language || (String(sib.match_id).includes('_tam') ? 'Tamil' : (String(sib.match_id).includes('_hin') ? 'Hindi' : 'English'));
-                                        const isCur = String(sib.match_id).toLowerCase() === String(m.match_id).toLowerCase();
-                                        const sCode = sLang.substring(0, 3).toUpperCase();
-                                        return `<button type="button" class="px-2 py-0.5 rounded text-[10px] font-extrabold transition ${isCur ? 'bg-red-600 text-white shadow' : 'bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 border border-slate-600'}" onclick="event.stopPropagation(); openQuality('${esc(sib.match_id)}');">${esc(sCode)} - ${esc(sLang)}</button>`;
-                                    }).join('') + '</div>';
-                            })()}
                         </div>
                         <div>
-                            <div class="text-[11px] text-slate-400 mb-3 flex items-center gap-1.5">
+                            <div class="text-[11px] text-slate-400 mb-2.5 flex items-center gap-1.5">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
-                                🕐 ${esc(m.startTime || (isLive ? 'Live Now' : 'Starting Soon'))}
+                                <span>${esc(m.startTime || (isLive ? 'Live Now' : 'Starting Soon'))}</span>
                             </div>
                             ${btn}
                         </div>
@@ -922,8 +944,26 @@
         function render(filter) {
             currentFilter = filter;
             const filtered = filter === "ALL" ? allMatches : allMatches.filter(m => (m.event_category||"").toUpperCase() === filter.toUpperCase());
-            const live = filtered.filter(m => (m.status||"").toUpperCase() === "LIVE" && hasStream(m));
-            const upcoming = filtered.filter(m => (m.status||"").toUpperCase() !== "LIVE" || !hasStream(m));
+            
+            // Group multi-language siblings into a single representative card on the main grid
+            function groupMatches(list) {
+                const map = new Map();
+                list.forEach(item => {
+                    const baseId = String(item.match_id || "").split('_')[0].toLowerCase();
+                    if (!map.has(baseId)) {
+                        map.set(baseId, item);
+                    } else {
+                        // Prefer English as the primary cover card
+                        const cur = map.get(baseId);
+                        const isEng = !String(item.match_id).includes('_') || (item.language && item.language.toLowerCase() === 'english');
+                        if (isEng) map.set(baseId, item);
+                    }
+                });
+                return Array.from(map.values());
+            }
+
+            const live = groupMatches(filtered.filter(m => (m.status||"").toUpperCase() === "LIVE" && hasStream(m)));
+            const upcoming = groupMatches(filtered.filter(m => (m.status||"").toUpperCase() !== "LIVE" || !hasStream(m)));
 
             const ls = document.getElementById("live-section"), us = document.getElementById("upcoming-section");
             
@@ -1036,7 +1076,7 @@
             await Promise.allSettled(list.map(async (item) => {
                 if (item.stream_url && item.stream_url.includes(".m3u8")) {
                     try {
-                        const r = await fetch(item.stream_url, { cache: "no-store" });
+                        const r = await fetch(cleanStreamUrl(item.stream_url), { cache: "no-store" });
                         if (r.ok) {
                             const mText = await r.text();
                             if (mText && mText.includes("#EXT-X-STREAM-INF")) {

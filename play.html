@@ -94,8 +94,8 @@
 <body>
     <div id="loading"><div class="spinner"></div></div>
     <a href="index.html" id="back-btn">← Back</a>
-    <div id="top-lang-bar" style="position:fixed;top:14px;right:14px;z-index:9999;display:none;background:rgba(28,28,32,0.85);border:1px solid rgba(255,255,255,0.15);padding:4px 10px;border-radius:10px;backdrop-filter:blur(10px);display:flex;align-items:center;gap:6px;">
-        <span style="font-size:11px;color:rgba(255,255,255,0.7);font-weight:700;">🌐 Audio:</span>
+    <div id="top-lang-bar" style="position:fixed;top:14px;right:14px;z-index:9999;display:none;background:rgba(20,20,25,0.8);border:1px solid rgba(255,255,255,0.15);padding:4px 8px;border-radius:10px;backdrop-filter:blur(12px);align-items:center;gap:6px;">
+        <span style="font-size:11px;color:rgba(255,255,255,0.75);font-weight:700;">🎙️ Audio:</span>
         <div id="top-lang-buttons" style="display:flex;align-items:center;gap:4px;"></div>
     </div>
 
@@ -128,12 +128,6 @@
                     </button>
                     <span class="time-label"><span id="cur-time">0:00</span></span>
                     <div class="spacer"></div>
-                    <div class="menu-wrap" id="lang-wrap" style="display:none;">
-                        <button id="lang-btn" class="ctrl-btn" title="Audio Language" style="width:auto;padding:0 9px;font-size:11px;font-weight:700;display:flex;align-items:center;gap:4px;border-radius:12px;background:rgba(255,255,255,0.12);">
-                            <span>🌐</span><span id="lang-label">ENG</span>
-                        </button>
-                        <div id="lang-menu" class="quality-popup"></div>
-                    </div>
                     <div class="menu-wrap">
                         <button id="q-btn" class="ctrl-btn" title="Quality">
                             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
@@ -196,21 +190,13 @@
             if (!targetH || isNaN(targetH)) return -1;
             if (!levels || !levels.length) return -1;
 
-            var matches = [];
-            for (var i = 0; i < levels.length; i++) {
-                if (levels[i].height === targetH) {
-                    matches.push({ index: i, bitrate: levels[i].bitrate || 0 });
-                }
-            }
-            if (matches.length > 0) {
-                matches.sort(function(a, b) { return a.bitrate - b.bitrate; });
-                return matches[0].index;
-            }
+            var exact = levels.findIndex(function(l) { return l.height === targetH; });
+            if (exact !== -1) return exact;
 
             var closest = 0;
             var minDiff = Math.abs((levels[0].height || 0) - targetH);
             for (var i = 1; i < levels.length; i++) {
-                var diff = Math.abs((levels[i].height || 0) - targetH);
+                const diff = Math.abs((levels[i].height || 0) - targetH);
                 if (diff < minDiff) {
                     minDiff = diff;
                     closest = i;
@@ -314,71 +300,8 @@
             if (hlsInstance) { hlsInstance.destroy(); hlsInstance = null; }
 
             var desired = targetRes || reqRes || "Auto";
-            // Prefer Hls.js for all modern browsers (gives full buffer control and prevents 2-3s micro-lag)
-            if (window.Hls && Hls.isSupported()) {
-                var triedFallback = false;
-                hlsInstance = new Hls({
-                    enableWorker: true,
-                    lowLatencyMode: false,
-                    backBufferLength: 90,
-                    maxBufferLength: 60,
-                    maxMaxBufferLength: 120,
-                    maxBufferSize: 60 * 1000 * 1000,
-                    maxBufferHole: 0.5,
-                    liveSyncDurationCount: 4,
-                    liveMaxLatencyDurationCount: 8,
-                    liveDurationInfinity: true,
-                    highBufferWatchdogPeriod: 2,
-                    fragLoadingTimeOut: 25000,
-                    fragLoadingMaxRetry: 6,
-                    fragLoadingRetryDelay: 500,
-                    xhrSetup: function(xhr) { xhr.withCredentials = false; }
-                });
-                hlsInstance.loadSource(url);
-                hlsInstance.attachMedia(video);
-
-                hlsInstance.on(Hls.Events.MANIFEST_PARSED, function() {
-                    hideLoading();
-                    if (hlsInstance.levels && hlsInstance.levels.length > 1 && desired !== "Auto") {
-                        var targetIdx = findLevelIndex(hlsInstance.levels, desired);
-                        if (targetIdx !== -1) {
-                            selectedLevel = targetIdx;
-                            hlsInstance.currentLevel = targetIdx;
-                        }
-                    }
-                    buildQMenu();
-                    video.play().catch(function(){});
-                });
-                hlsInstance.on(Hls.Events.LEVEL_SWITCHED, function(ev, data) {
-                    buildQMenu();
-                });
-                hlsInstance.on(Hls.Events.FRAG_LOADED, function() {
-                    hideLoading();
-                });
-                hlsInstance.on(Hls.Events.ERROR, function(ev, data) {
-                    if (data.fatal) {
-                        if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
-                            if (!triedFallback && fallbackUrl && url !== fallbackUrl) {
-                                triedFallback = true;
-                                hlsInstance.loadSource(fallbackUrl);
-                                hlsInstance.startLoad();
-                            } else {
-                                hlsInstance.startLoad();
-                            }
-                        } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
-                            hlsInstance.recoverMediaError();
-                        } else {
-                            hideLoading();
-                            showError("Stream error. Retrying...");
-                            setTimeout(function(){ if(hlsInstance) hlsInstance.startLoad(); }, 3000);
-                        }
-                    }
-                });
-                return;
-            }
-
-            // Fallback for Safari on iOS only
             var isNativeHls = !!video.canPlayType("application/vnd.apple.mpegurl");
+
             if (isNativeHls) {
                 video.src = url;
                 video.play().catch(function(){});
@@ -389,22 +312,12 @@
                 }, { once: true });
                 return;
             }
+
+            if (window.Hls && Hls.isSupported()) {
                 var triedFallback = false;
                 hlsInstance = new Hls({
                     enableWorker: true,
-                    lowLatencyMode: false,
-                    backBufferLength: 90,
-                    maxBufferLength: 45,
-                    maxMaxBufferLength: 90,
-                    maxBufferSize: 60 * 1000 * 1000,
-                    maxBufferHole: 0.5,
-                    liveSyncDurationCount: 4,
-                    liveMaxLatencyDurationCount: 8,
-                    liveDurationInfinity: true,
-                    highBufferWatchdogPeriod: 2,
-                    fragLoadingTimeOut: 20000,
-                    fragLoadingMaxRetry: 6,
-                    fragLoadingRetryDelay: 500,
+                    lowLatencyMode: true,
                     xhrSetup: function(xhr) { xhr.withCredentials = false; }
                 });
                 hlsInstance.loadSource(url);
@@ -514,7 +427,7 @@
                 var list = Object.values(m3uMap);
                 return Promise.all(list.map(function(item) {
                     if (item.stream_url && item.stream_url.includes(".m3u8")) {
-                        return fetch(item.stream_url, { cache: "no-store" })
+                        return fetch(cleanStreamUrl(item.stream_url), { cache: "no-store" })
                             .then(function(r) { return r.ok ? r.text() : ""; })
                             .then(function(mText) {
                                 if (mText && mText.includes("#EXT-X-STREAM-INF")) {
@@ -596,12 +509,11 @@
             if (!id || !matches.length) return null;
             var target = String(id).trim().toLowerCase();
             var targetBase = target.split("_")[0];
-            var exact = matches.find(function(m) { return String(m.match_id || "").trim().toLowerCase() === target; });
-            if (exact) return exact;
             return matches.find(function(m) {
                 var cur = String(m.match_id || "").trim().toLowerCase();
+                if (cur === target) return true;
                 var curBase = cur.split("_")[0];
-                return curBase === targetBase;
+                return curBase === targetBase || cur === targetBase || curBase === target;
             });
         }
 
@@ -609,17 +521,55 @@
             showLoading();
             fetchAllMatches()
                 .then(function(matches) {
-                    allLoadedMatches = matches;
                     var m = findMatch(matches, matchId);
                     if (!m) {
                         hideLoading();
                         showError("Match not found: " + matchId);
                         return;
                     }
-                    buildLanguageMenu(m);
+                    var rawTitle = (m.team_1 && m.team_2) ? (m.team_1 + " vs " + m.team_2) : (m.match_name || m.title || "FanCode Player");
+                    var cleanTitle = rawTitle.replace(/\s*\[(English|Hindi|Tamil|Kannada|Telugu|Bengali|ENG|HIN|TAM)\]/gi, '').trim();
+                    document.title = cleanTitle + " · FanCode Player";
 
-                    var title = (m.team_1 && m.team_2) ? (m.team_1 + " vs " + m.team_2) : (m.match_name || m.title || "FanCode Player");
-                    document.title = title + " · FanCode Player";
+                    // Populate Audio Language Switcher in Player Header
+                    var baseId = String(m.match_id || "").split("_")[0].toLowerCase();
+                    var siblings = matches.filter(function(x) {
+                        return String(x.match_id || "").split("_")[0].toLowerCase() === baseId && (x.stream_url || x.dai_url || x.adfree_url);
+                    });
+                    var topBar = document.getElementById("top-lang-bar");
+                    var topBtns = document.getElementById("top-lang-buttons");
+                    if (topBar && topBtns) {
+                        if (siblings.length > 1) {
+                            topBar.style.display = "flex";
+                            topBtns.innerHTML = "";
+                            siblings.forEach(function(sib) {
+                                var sLang = sib.language || (String(sib.match_id).includes("_tam") ? "Tamil" : (String(sib.match_id).includes("_hin") ? "Hindi" : "English"));
+                                var isCur = String(sib.match_id).toLowerCase() === String(m.match_id).toLowerCase();
+                                var b = document.createElement("button");
+                                b.type = "button";
+                                b.style.padding = "3px 8px";
+                                b.style.borderRadius = "6px";
+                                b.style.fontSize = "11px";
+                                b.style.fontWeight = isCur ? "800" : "600";
+                                b.style.border = "none";
+                                b.style.cursor = isCur ? "default" : "pointer";
+                                b.style.background = isCur ? "#ef4444" : "rgba(255,255,255,0.12)";
+                                b.style.color = "#fff";
+                                b.style.transition = "0.15s";
+                                b.textContent = sLang.substring(0, 3).toUpperCase();
+                                b.title = sLang;
+                                b.onclick = function() {
+                                    if (!isCur) {
+                                        var targetUrl = "player.html?id=" + encodeURIComponent(sib.match_id) + (reqRes !== "Auto" ? "&r=" + encodeURIComponent(reqRes) : "");
+                                        location.replace(targetUrl);
+                                    }
+                                };
+                                topBtns.appendChild(b);
+                            });
+                        } else {
+                            topBar.style.display = "none";
+                        }
+                    }
 
                     availableQualities = parseMatchQualities(m);
                     if (!availableQualities.length) {
@@ -633,11 +583,8 @@
                         return (resOrder[b.res] || parseInt(b.res) || 0) - (resOrder[a.res] || parseInt(a.res) || 0);
                     });
 
-                    // Prefer 720p or 25fps 1080p default over buffer-underrunning 50fps stream to guarantee smooth zero-lag playback
                     var chosen = availableQualities.find(function(x) {
                         return x.res.toLowerCase() === reqRes.toLowerCase() || x.res.replace("p","") === reqRes.replace("p","");
-                    }) || availableQualities.find(function(x) {
-                        return x.res === "720p";
                     }) || availableQualities[0];
 
                     currentRes = chosen.res;

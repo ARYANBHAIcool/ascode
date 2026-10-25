@@ -1,13 +1,13 @@
 #EXTM3U
 # Written and Directed by ✨ A R Y A N ✨
 # Join us on Telegram: https://t.me/aryanstreams
-#DATE:- 10/26/2026, 2:44:11 AM IST
+#DATE:- 10/26/2026, 3:26:10 AM IST
 
 #EXTINF:-1 tvg-id="4247666" tvg-name="Fc Barcelona Vs Real Madrid [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4247666_53004_BAR_RM_FC-Web.png" tvg-language="English" group-title="Football",ENG | Fc Barcelona Vs Real Madrid [English]
-https://dai-fancode.pages.dev/mumbai/4247666_english_hls_795c44aaba22155_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
+https://dai-fancode.pages.dev/mumbai/4247666_english_hls_795c44aaba22155_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="139506" tvg-name="Race [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Old_Match_Card1.png" tvg-language="English" group-title="Formula 1",ENG | Race [English]
-https://dai-fancode.pages.dev/mumbai/139506_english_hls_94c412cf8740443_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
+https://dai-fancode.pages.dev/mumbai/139506_english_hls_94c412cf8740443_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="139506_hin" tvg-name="Race [Hindi]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Old_Match_Card1.png" tvg-language="Hindi" group-title="Formula 1",HIN | Race [Hindi]
-https://dai-fancode.pages.dev/mumbai/139506_hindi_hls_ed86a7c33569645_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
+https://dai-fancode.pages.dev/mumbai/139506_hindi_hls_ed86a7c33569645_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="139506_tam" tvg-name="Race [Tamil]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Old_Match_Card1.png" tvg-language="Tamil" group-title="Formula 1",TAM | Race [Tamil]
-https://dai-fancode.pages.dev/mumbai/139506_tamil_hls_6fbe358a3647910_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
+https://dai-fancode.pages.dev/mumbai/139506_tamil_hls_6fbe358a3647910_1ta-di_h264/index.m3u8
