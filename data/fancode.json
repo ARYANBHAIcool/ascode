@@ -2,7 +2,7 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/26/2026, 6:12:07 AM IST",
+  "last_updated": "10/26/2026, 7:19:15 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -119,6 +119,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4247667,
+      "title": "Sevilla FC vs CA Osasuna (LALIGA 2026-27)",
+      "match_name": "Sevilla FC vs CA Osasuna",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247667_53004_SEV_OSN_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA 2026-27",
+      "language": "English",
+      "startTime": "01:30:00 AM 27-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4250529,
       "title": "Delhi Dynamites vs Haryana Hustlers (Northern Artist Champions League 2026)",
       "match_name": "Delhi Dynamites vs Haryana Hustlers",
@@ -139,18 +151,6 @@
       "event_name": "Northern Artist Champions League 2026",
       "language": "English",
       "startTime": "02:00:00 PM 26-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4247667,
-      "title": "Sevilla FC vs CA Osasuna (LALIGA 2026-27)",
-      "match_name": "Sevilla FC vs CA Osasuna",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247667_53004_SEV_OSN_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "01:30:00 AM 27-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -191,42 +191,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249642,
-      "title": "IWB Court 1 vs Basel, Switzerland (ATP 500 - Swiss Indoors Basel 2026)",
-      "match_name": "IWB Court 1",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-We.png",
-      "event_category": "Tennis",
-      "event_name": "ATP 500 - Swiss Indoors Basel 2026",
-      "language": "English",
-      "startTime": "04:30:00 PM 26-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249628,
-      "title": "World Feed vs Vienna, Austria (ATP 500 - Erste Bank Open 2026)",
-      "match_name": "World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Erste-Bank-Open_Web-match-card.png",
-      "event_category": "Tennis",
-      "event_name": "ATP 500 - Erste Bank Open 2026",
-      "language": "English",
-      "startTime": "06:00:00 PM 26-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249649,
-      "title": "World Feed 1 vs Basel, Switzerland (ATP 500 - Swiss Indoors Basel 2026)",
-      "match_name": "World Feed 1",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-We.png",
-      "event_category": "Tennis",
-      "event_name": "ATP 500 - Swiss Indoors Basel 2026",
-      "language": "English",
-      "startTime": "06:00:00 PM 26-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250343,
       "title": "Qatar vs Papua New Guinea (ICC CWC Challenge League A 2026)",
       "match_name": "Qatar vs Papua New Guinea",
@@ -263,18 +227,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249635,
-      "title": "Glaubandich Court vs Vienna, Austria (ATP 500 - Erste Bank Open 2026)",
-      "match_name": "Glaubandich Court",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Erste-Bank-Open_Web-match-card.png",
-      "event_category": "Tennis",
-      "event_name": "ATP 500 - Erste Bank Open 2026",
-      "language": "English",
-      "startTime": "10:00:00 PM 26-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250333,
       "title": "Namibia vs Ireland (Ireland tour of Namibia, 2026)",
       "match_name": "Namibia vs Ireland",
@@ -283,6 +235,54 @@
       "event_name": "Ireland tour of Namibia, 2026",
       "language": "English",
       "startTime": "01:00:00 PM 27-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249642,
+      "title": "IWB Court 1 vs Basel, Switzerland (ATP 500 - Swiss Indoors Basel 2026)",
+      "match_name": "IWB Court 1",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-We.png",
+      "event_category": "Tennis",
+      "event_name": "ATP 500 - Swiss Indoors Basel 2026",
+      "language": "English",
+      "startTime": "04:30:00 PM 26-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249628,
+      "title": "World Feed vs Vienna, Austria (ATP 500 - Erste Bank Open 2026)",
+      "match_name": "World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Erste-Bank-Open_Web-match-card.png",
+      "event_category": "Tennis",
+      "event_name": "ATP 500 - Erste Bank Open 2026",
+      "language": "English",
+      "startTime": "06:00:00 PM 26-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249649,
+      "title": "World Feed 1 vs Basel, Switzerland (ATP 500 - Swiss Indoors Basel 2026)",
+      "match_name": "World Feed 1",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-We.png",
+      "event_category": "Tennis",
+      "event_name": "ATP 500 - Swiss Indoors Basel 2026",
+      "language": "English",
+      "startTime": "06:00:00 PM 26-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249635,
+      "title": "Glaubandich Court vs Vienna, Austria (ATP 500 - Erste Bank Open 2026)",
+      "match_name": "Glaubandich Court",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Erste-Bank-Open_Web-match-card.png",
+      "event_category": "Tennis",
+      "event_name": "ATP 500 - Erste Bank Open 2026",
+      "language": "English",
+      "startTime": "10:00:00 PM 26-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -395,6 +395,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249769,
+      "title": "Afghanistan vs Zimbabwe (Zimbabwe Tour of Afghanistan in UAE, 2026)",
+      "match_name": "Afghanistan vs Zimbabwe",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/ZIM-VS-AFG_fc-web_1792819628639.jpg",
+      "event_category": "Cricket",
+      "event_name": "Zimbabwe Tour of Afghanistan in UAE, 2026",
+      "language": "English",
+      "startTime": "08:00:00 PM 27-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4248724,
       "title": "Beijing Guoan vs Jeonbuk Motors (AFC Champions League Elite 2026-27)",
       "match_name": "Beijing Guoan vs Jeonbuk Motors",
@@ -415,18 +427,6 @@
       "event_name": "AFC Champions League Elite 2026-27",
       "language": "English",
       "startTime": "05:45:00 PM 27-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249769,
-      "title": "Afghanistan vs Zimbabwe (Zimbabwe Tour of Afghanistan in UAE, 2026)",
-      "match_name": "Afghanistan vs Zimbabwe",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/ZIM-VS-AFG_fc-web_1792819628639.jpg",
-      "event_category": "Cricket",
-      "event_name": "Zimbabwe Tour of Afghanistan in UAE, 2026",
-      "language": "English",
-      "startTime": "08:00:00 PM 27-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
