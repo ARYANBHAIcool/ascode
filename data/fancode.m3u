@@ -1,7 +1,11 @@
 #EXTM3U
 # Written and Directed by ✨ A R Y A N ✨
 # Join us on Telegram: https://t.me/aryanstreams
-#DATE:- 10/26/2026, 12:36:25 PM IST
+#DATE:- 10/26/2026, 4:59:48 PM IST
 
-#EXTINF:-1 tvg-id="4250529" tvg-name="Delhi Dynamites Vs Haryana Hustlers [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg" tvg-language="English" group-title="Cricket",ENG | Delhi Dynamites Vs Haryana Hustlers [English]
-https://dai-fancode.pages.dev/mumbai/4250529_english_hls_e5433aa61a5575_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250355" tvg-name="Sudurpaschim Royals Vs Lumbini Lions [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250355_53124_LBL_SPR_fc-Web.jpg" tvg-language="English" group-title="Cricket",ENG | Sudurpaschim Royals Vs Lumbini Lions [English]
+https://dai-fancode.pages.dev/mumbai/4250355_english_hls_7b5a55758122143_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250530" tvg-name="Uttrakhand Stars Vs Chandigarh Chargers [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250530_53137_UTS_CC_FC-Web_1793010710896.png" tvg-language="English" group-title="Cricket",ENG | Uttrakhand Stars Vs Chandigarh Chargers [English]
+https://dai-fancode.pages.dev/mumbai/4250530_english_hls_a6cfaa994270147_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4249642" tvg-name="Iwb Court 1 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-We.png" tvg-language="English" group-title="Tennis",ENG | Iwb Court 1 [English]
+https://dai-fancode.pages.dev/mumbai/4249642_english_hls_e0c44eb71522883_1ta-di_h264/index.m3u8
