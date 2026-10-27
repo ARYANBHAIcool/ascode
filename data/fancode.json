@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/27/2026, 7:57:26 AM IST",
+  "last_updated": "10/27/2026, 12:00:41 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 47,
-  "live_matches": 7,
+  "live_matches": 9,
   "matches": [
     {
       "match_id": "4250489",
@@ -88,21 +88,33 @@
       "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250546_english_hls_999c99ff213863_1ta-di_h264/240p.m3u8?hdntl=Expires=1793127064~_GO=Generated~acl=/mumbai/4250546_english_hls_999c99ff213863_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_75a8a0d2-fabc-4c~Signature=ATFKiJvlsW20TrVV8oZRkMQt4y7Jf2wj3orUbNHLaXzC1Qi817ndB_sDT7SKVF9ab0DBBpd7ijHyJy4W7z51XVNKRO8G\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250546_english_hls_999c99ff213863_1ta-di_h264/360p.m3u8?hdntl=Expires=1793127064~_GO=Generated~acl=/mumbai/4250546_english_hls_999c99ff213863_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_75a8a0d2-fabc-4c~Signature=ATFKiJvlsW20TrVV8oZRkMQt4y7Jf2wj3orUbNHLaXzC1Qi817ndB_sDT7SKVF9ab0DBBpd7ijHyJy4W7z51XVNKRO8G\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250546_english_hls_999c99ff213863_1ta-di_h264/480p.m3u8?hdntl=Expires=1793127064~_GO=Generated~acl=/mumbai/4250546_english_hls_999c99ff213863_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_75a8a0d2-fabc-4c~Signature=ATFKiJvlsW20TrVV8oZRkMQt4y7Jf2wj3orUbNHLaXzC1Qi817ndB_sDT7SKVF9ab0DBBpd7ijHyJy4W7z51XVNKRO8G\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250546_english_hls_999c99ff213863_1ta-di_h264/540p.m3u8?hdntl=Expires=1793127064~_GO=Generated~acl=/mumbai/4250546_english_hls_999c99ff213863_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_75a8a0d2-fabc-4c~Signature=ATFKiJvlsW20TrVV8oZRkMQt4y7Jf2wj3orUbNHLaXzC1Qi817ndB_sDT7SKVF9ab0DBBpd7ijHyJy4W7z51XVNKRO8G\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250546_english_hls_999c99ff213863_1ta-di_h264/720p.m3u8?hdntl=Expires=1793127064~_GO=Generated~acl=/mumbai/4250546_english_hls_999c99ff213863_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_75a8a0d2-fabc-4c~Signature=ATFKiJvlsW20TrVV8oZRkMQt4y7Jf2wj3orUbNHLaXzC1Qi817ndB_sDT7SKVF9ab0DBBpd7ijHyJy4W7z51XVNKRO8G\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250546_english_hls_999c99ff213863_1ta-di_h264/1080p.m3u8?hdntl=Expires=1793127064~_GO=Generated~acl=/mumbai/4250546_english_hls_999c99ff213863_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_75a8a0d2-fabc-4c~Signature=ATFKiJvlsW20TrVV8oZRkMQt4y7Jf2wj3orUbNHLaXzC1Qi817ndB_sDT7SKVF9ab0DBBpd7ijHyJy4W7z51XVNKRO8G"
     },
     {
-      "match_id": 4250517,
-      "title": "Netherlands vs Oman (ICC CWC League 2 UAE, 2026)",
-      "match_name": "Netherlands vs Oman",
+      "match_id": "4250517_ENG",
+      "title": "ICC CWC League 2 UAE, 2026 [English]",
+      "match_name": "Netherlands vs Oman [English]",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/ICC-CWC-League_Web-match-card.png",
       "event_category": "Cricket",
       "event_name": "ICC CWC League 2 UAE, 2026",
       "language": "English",
       "startTime": "11:00:00 AM 27-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
+      "status": "LIVE",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250517_english_hls_c6aadfde282620_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/"
+    },
+    {
+      "match_id": "4250532_ENG",
+      "title": "Northern Artist Champions League 2026 [English]",
+      "match_name": "Delhi Dynamites vs Uttrakhand Stars [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250532_53137_DLD_UTS_FC-Web.png",
+      "event_category": "Cricket",
+      "event_name": "Northern Artist Champions League 2026",
+      "language": "English",
+      "startTime": "09:00:00 AM 27-10-2026",
+      "status": "LIVE",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250532_english_hls_8d8c6b71df3185_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/"
     },
     {
       "match_id": 4250343,
-      "title": "Qatar vs Papua New Guinea (ICC CWC Challenge League A 2026)",
-      "match_name": "Qatar vs Papua New Guinea",
+      "title": "Papua New Guinea vs Qatar (ICC CWC Challenge League A 2026)",
+      "match_name": "Papua New Guinea vs Qatar",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png",
       "event_category": "Cricket",
       "event_name": "ICC CWC Challenge League A 2026",
@@ -113,8 +125,8 @@
     },
     {
       "match_id": 4250344,
-      "title": "Kuwait vs Jersey (ICC CWC Challenge League A 2026)",
-      "match_name": "Kuwait vs Jersey",
+      "title": "Jersey vs Kuwait (ICC CWC Challenge League A 2026)",
+      "match_name": "Jersey vs Kuwait",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png",
       "event_category": "Cricket",
       "event_name": "ICC CWC Challenge League A 2026",
@@ -125,8 +137,8 @@
     },
     {
       "match_id": 4250356,
-      "title": "Biratnagar Kings vs Chitwan Rhinos (Nepal Premier League Season 3, 2026)",
-      "match_name": "Biratnagar Kings vs Chitwan Rhinos",
+      "title": "Chitwan Rhinos vs Biratnagar Kings (Nepal Premier League Season 3, 2026)",
+      "match_name": "Chitwan Rhinos vs Biratnagar Kings",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/4250356_53124_BK_CWR_fc-Web.jpg",
       "event_category": "Cricket",
       "event_name": "Nepal Premier League Season 3, 2026",
@@ -184,14 +196,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250532,
-      "title": "Delhi Dynamites vs Uttrakhand Stars (Northern Artist Champions League 2026)",
-      "match_name": "Delhi Dynamites vs Uttrakhand Stars",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250532_53137_DLD_UTS_FC-Web.png",
+      "match_id": 4249668,
+      "title": "South Australia vs Western Australia (Sheffield Shield, 2026/27)",
+      "match_name": "South Australia vs Western Australia",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249668_53087_SAU_WAU_FC-WEB.jpg",
       "event_category": "Cricket",
-      "event_name": "Northern Artist Champions League 2026",
+      "event_name": "Sheffield Shield, 2026/27",
       "language": "English",
-      "startTime": "09:00:00 AM 27-10-2026",
+      "startTime": "05:30:00 AM 28-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -208,18 +220,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249668,
-      "title": "South Australia vs Western Australia (Sheffield Shield, 2026/27)",
-      "match_name": "South Australia vs Western Australia",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249668_53087_SAU_WAU_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "Sheffield Shield, 2026/27",
-      "language": "English",
-      "startTime": "05:30:00 AM 28-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250534,
       "title": "UP Thunderbolts vs Rajasthan Royalsmen (Northern Artist Champions League 2026)",
       "match_name": "UP Thunderbolts vs Rajasthan Royalsmen",
@@ -228,6 +228,18 @@
       "event_name": "Northern Artist Champions League 2026",
       "language": "English",
       "startTime": "06:00:00 PM 27-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250526,
+      "title": "Bangladesh vs West Indies (West Indies tour of Bangladesh, 2026)",
+      "match_name": "Bangladesh vs West Indies",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/West-Indies-tour-of-Bangladesh-web-.jpg",
+      "event_category": "Cricket",
+      "event_name": "West Indies tour of Bangladesh, 2026",
+      "language": "English",
+      "startTime": "09:30:00 AM 28-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -388,18 +400,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250526,
-      "title": "Bangladesh vs West Indies (West Indies tour of Bangladesh, 2026)",
-      "match_name": "Bangladesh vs West Indies",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/West-Indies-tour-of-Bangladesh-web-.jpg",
-      "event_category": "Cricket",
-      "event_name": "West Indies tour of Bangladesh, 2026",
-      "language": "English",
-      "startTime": "09:30:00 AM 28-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250345,
       "title": "Qatar vs Denmark (ICC CWC Challenge League A 2026)",
       "match_name": "Qatar vs Denmark",
@@ -436,6 +436,30 @@
       "stream_url": ""
     },
     {
+      "match_id": 4250536,
+      "title": "Punjab Warriors vs Rajasthan Royalsmen (Northern Artist Champions League 2026)",
+      "match_name": "Punjab Warriors vs Rajasthan Royalsmen",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250536_53137_PBW_RR_FC-Web.png",
+      "event_category": "Cricket",
+      "event_name": "Northern Artist Champions League 2026",
+      "language": "English",
+      "startTime": "01:30:00 PM 28-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250358,
+      "title": "Pokhara Avengers vs Sudurpaschim Royals (Nepal Premier League Season 3, 2026)",
+      "match_name": "Pokhara Avengers vs Sudurpaschim Royals",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250358_53124_PKA_SPR_fc-Web.jpg",
+      "event_category": "Cricket",
+      "event_name": "Nepal Premier League Season 3, 2026",
+      "language": "English",
+      "startTime": "04:45:00 PM 28-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249636,
       "title": "Glaubandich Court vs Vienna, Austria (ATP 500 - Erste Bank Open 2026)",
       "match_name": "Glaubandich Court",
@@ -455,7 +479,7 @@
       "event_category": "Tennis",
       "event_name": "ATP 500 - Swiss Indoors Basel 2026",
       "language": "English",
-      "startTime": "05:30:00 PM 27-10-2026",
+      "startTime": "04:30:00 PM 27-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -484,6 +508,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4250490,
+      "title": "Sharjah vs Emirates Red (Emirates D20, 2026)",
+      "match_name": "Sharjah vs Emirates Red",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250490_53130_SHA_EMR_fc-web_1792412929378.jpg",
+      "event_category": "Cricket",
+      "event_name": "Emirates D20, 2026",
+      "language": "English",
+      "startTime": "06:00:00 PM 28-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4250580,
       "title": "Centre Court vs Vienna, Austria (ATP 500 - Erste Bank Open 2026)",
       "match_name": "Centre Court",
@@ -492,30 +528,6 @@
       "event_name": "ATP 500 - Erste Bank Open 2026",
       "language": "English",
       "startTime": "12:30:00 AM 28-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250536,
-      "title": "Punjab Warriors vs Rajasthan Royalsmen (Northern Artist Champions League 2026)",
-      "match_name": "Punjab Warriors vs Rajasthan Royalsmen",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250536_53137_PBW_RR_FC-Web.png",
-      "event_category": "Cricket",
-      "event_name": "Northern Artist Champions League 2026",
-      "language": "English",
-      "startTime": "01:30:00 PM 28-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250358,
-      "title": "Pokhara Avengers vs Sudurpaschim Royals (Nepal Premier League Season 3, 2026)",
-      "match_name": "Pokhara Avengers vs Sudurpaschim Royals",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250358_53124_PKA_SPR_fc-Web.jpg",
-      "event_category": "Cricket",
-      "event_name": "Nepal Premier League Season 3, 2026",
-      "language": "English",
-      "startTime": "04:45:00 PM 28-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -540,18 +552,6 @@
       "event_name": "AFC Champions League Elite 2026-27",
       "language": "English",
       "startTime": "03:30:00 PM 28-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250490,
-      "title": "Sharjah vs Emirates Red (Emirates D20, 2026)",
-      "match_name": "Sharjah vs Emirates Red",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250490_53130_SHA_EMR_fc-web_1792412929378.jpg",
-      "event_category": "Cricket",
-      "event_name": "Emirates D20, 2026",
-      "language": "English",
-      "startTime": "06:00:00 PM 28-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
