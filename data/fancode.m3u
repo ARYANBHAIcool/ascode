@@ -1,29 +1,23 @@
 #EXTM3U
 # Written and Directed by ✨ A R Y A N ✨
 # Join us on Telegram: https://t.me/aryanstreams
-#DATE:- 10/27/2026, 6:08:05 PM IST
+#DATE:- 10/27/2026, 8:08:09 PM IST
 
-#EXTINF:-1 tvg-id="4250517" tvg-name="Netherlands Vs Oman [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/ICC-CWC-League_Web-match-card.png" tvg-language="English" group-title="Cricket",ENG | Netherlands Vs Oman [English]
-https://dai-fancode.pages.dev/mumbai/4250517_english_hls_c6aadfde282620_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4250344" tvg-name="Jersey Vs Kuwait [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png" tvg-language="English" group-title="Cricket",ENG | Jersey Vs Kuwait [English]
-https://dai-fancode.pages.dev/mumbai/4250344_english_hls_de2fcdd6e014877_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="4250333" tvg-name="Namibia Vs Ireland [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Namibia-vs-Ireland_fc-web.jpg" tvg-language="English" group-title="Cricket",ENG | Namibia Vs Ireland [English]
 https://dai-fancode.pages.dev/mumbai/4250333_english_hls_13eab2201f23744_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="4249783" tvg-name="South Africa Vs Australia [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/AUS-vs-SA-test_Web-match-card.png" tvg-language="English" group-title="Cricket",ENG | South Africa Vs Australia [English]
 https://dai-fancode.pages.dev/mumbai/4249783_english_hls_97c5a4780083137_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="4250357" tvg-name="Karnali Yaks Vs Janakpur Bolts [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250357_53124_KNY_JKB_fc-Web.jpg" tvg-language="English" group-title="Cricket",ENG | Karnali Yaks Vs Janakpur Bolts [English]
 https://dai-fancode.pages.dev/mumbai/4250357_english_hls_0360aac3556241_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4249769" tvg-name="Afghanistan Vs Zimbabwe [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/ZIM1.jpg" tvg-language="English" group-title="Cricket",ENG | Afghanistan Vs Zimbabwe [English]
+https://dai-fancode.pages.dev/mumbai/4249769_english_hls_260c41cdcf27321_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="4250534" tvg-name="Up Thunderbolts Vs Rajasthan Royalsmen [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250534_53137_UPT_RR_FC-Web.png" tvg-language="English" group-title="Cricket",ENG | Up Thunderbolts Vs Rajasthan Royalsmen [English]
 https://dai-fancode.pages.dev/mumbai/4250534_english_hls_9b25ee3f6638203_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4248724" tvg-name="Beijing Guoan Vs Jeonbuk Motors [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248724_53053_BEI_JNB_fc-web.jpg" tvg-language="English" group-title="Football",ENG | Beijing Guoan Vs Jeonbuk Motors [English]
-https://dai-fancode.pages.dev/mumbai/4248724_english_hls_5572b29afe77534_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4248725" tvg-name="Ratchaburi Vs Kashiwa Reysol [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248725_53053_RAT_REY_fc-web.jpg" tvg-language="English" group-title="Football",ENG | Ratchaburi Vs Kashiwa Reysol [English]
-https://dai-fancode.pages.dev/mumbai/4248725_english_hls_f67d4623c384869_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="4249636" tvg-name="Glaubandich Court [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Erste-Bank-Open_Web-match-card.png" tvg-language="English" group-title="Tennis",ENG | Glaubandich Court [English]
 https://dai-fancode.pages.dev/mumbai/4249636_english_hls_c755f6996c26929_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="4249650" tvg-name="Iwb Court 1 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-We.png" tvg-language="English" group-title="Tennis",ENG | Iwb Court 1 [English]
 https://dai-fancode.pages.dev/mumbai/4249650_english_hls_8941f86d5194089_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4249629" tvg-name="World Feed [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Erste-Bank-Open_Web-match-card.png" tvg-language="English" group-title="Tennis",ENG | World Feed [English]
+#EXTINF:-1 tvg-id="4249629" tvg-name="C. Alcaraz Vs K. Khachanov [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Alcaraz-vs-Karen-Khachanov-Open-Web-match-card.png" tvg-language="English" group-title="Tennis",ENG | C. Alcaraz Vs K. Khachanov [English]
 https://dai-fancode.pages.dev/mumbai/4249629_english_hls_934d6d9fab39308_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4248723_ENG" tvg-name="Kyoto Sanga vs Newcastle Jets [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248723_53053_KYS_NJ_fc-web.jpg" tvg-language="English" group-title="Football",ENG | Kyoto Sanga vs Newcastle Jets [English]
-https://dai-fancode.pages.dev/mumbai/4248723_english_hls_380992af4276697_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
+#EXTINF:-1 tvg-id="4249643" tvg-name="World Feed [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-We.png" tvg-language="English" group-title="Tennis",ENG | World Feed [English]
+https://dai-fancode.pages.dev/mumbai/4249643_english_hls_c14cffe8e137141_1ta-di_h264/index.m3u8
