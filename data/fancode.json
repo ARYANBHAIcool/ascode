@@ -2,7 +2,7 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/27/2026, 5:12:12 AM IST",
+  "last_updated": "10/27/2026, 6:47:28 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -292,6 +292,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249668,
+      "title": "South Australia vs Western Australia (Sheffield Shield, 2026/27)",
+      "match_name": "South Australia vs Western Australia",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249668_53087_SAU_WAU_FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "Sheffield Shield, 2026/27",
+      "language": "English",
+      "startTime": "05:30:00 AM 28-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4248718,
       "title": "Shabab Al Ahli vs Esteghlal FC (AFC Champions League Elite 2026-27)",
       "match_name": "Shabab Al Ahli vs Esteghlal FC",
@@ -324,18 +336,6 @@
       "event_name": "DFB Pokal 2026-27",
       "language": "English",
       "startTime": "10:30:00 PM 27-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249668,
-      "title": "South Australia vs Western Australia (Sheffield Shield, 2026/27)",
-      "match_name": "South Australia vs Western Australia",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249668_53087_SAU_WAU_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "Sheffield Shield, 2026/27",
-      "language": "English",
-      "startTime": "05:30:00 AM 28-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -400,6 +400,42 @@
       "stream_url": ""
     },
     {
+      "match_id": 4250535,
+      "title": "Himachal Highlenders vs UP Thunderbolts (Northern Artist Champions League 2026)",
+      "match_name": "Himachal Highlenders vs UP Thunderbolts",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250535_53137_HHL_UPT_FC-Web.png",
+      "event_category": "Cricket",
+      "event_name": "Northern Artist Champions League 2026",
+      "language": "English",
+      "startTime": "09:00:00 AM 28-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250345,
+      "title": "Qatar vs Denmark (ICC CWC Challenge League A 2026)",
+      "match_name": "Qatar vs Denmark",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png",
+      "event_category": "Cricket",
+      "event_name": "ICC CWC Challenge League A 2026",
+      "language": "English",
+      "startTime": "12:15:00 PM 28-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250346,
+      "title": "Kuwait vs Kenya (ICC CWC Challenge League A 2026)",
+      "match_name": "Kuwait vs Kenya",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png",
+      "event_category": "Cricket",
+      "event_name": "ICC CWC Challenge League A 2026",
+      "language": "English",
+      "startTime": "12:15:00 PM 28-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4249636,
       "title": "Glaubandich Court vs Vienna, Austria (ATP 500 - Erste Bank Open 2026)",
       "match_name": "Glaubandich Court",
@@ -444,42 +480,6 @@
       "event_name": "ATP 500 - Swiss Indoors Basel 2026",
       "language": "English",
       "startTime": "06:30:00 PM 27-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250535,
-      "title": "Himachal Highlenders vs UP Thunderbolts (Northern Artist Champions League 2026)",
-      "match_name": "Himachal Highlenders vs UP Thunderbolts",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250535_53137_HHL_UPT_FC-Web.png",
-      "event_category": "Cricket",
-      "event_name": "Northern Artist Champions League 2026",
-      "language": "English",
-      "startTime": "09:00:00 AM 28-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250345,
-      "title": "Qatar vs Denmark (ICC CWC Challenge League A 2026)",
-      "match_name": "Qatar vs Denmark",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png",
-      "event_category": "Cricket",
-      "event_name": "ICC CWC Challenge League A 2026",
-      "language": "English",
-      "startTime": "12:15:00 PM 28-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250346,
-      "title": "Kuwait vs Kenya (ICC CWC Challenge League A 2026)",
-      "match_name": "Kuwait vs Kenya",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png",
-      "event_category": "Cricket",
-      "event_name": "ICC CWC Challenge League A 2026",
-      "language": "English",
-      "startTime": "12:15:00 PM 28-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
