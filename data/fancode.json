@@ -2,7 +2,7 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/28/2026, 7:08:48 AM IST",
+  "last_updated": "10/28/2026, 7:51:52 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -470,21 +470,21 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249630,
-      "title": "World Feed vs Vienna, Austria (ATP 500 - Erste Bank Open 2026)",
-      "match_name": "World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Erste-Bank-Open_Web-match-card.png",
-      "event_category": "Tennis",
-      "event_name": "ATP 500 - Erste Bank Open 2026",
+      "match_id": 4250388,
+      "title": "Melbourne Stars Women vs Hobart Hurricanes Women (Women's Big Bash League, 2026)",
+      "match_name": "Melbourne Stars Women vs Hobart Hurricanes Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
       "language": "English",
-      "startTime": "06:00:00 PM 28-10-2026",
+      "startTime": "01:40:00 PM 29-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
     {
-      "match_id": 4249637,
-      "title": "Glaubandich Court vs Vienna, Austria (ATP 500 - Erste Bank Open 2026)",
-      "match_name": "Glaubandich Court",
+      "match_id": 4249630,
+      "title": "World Feed vs Vienna, Austria (ATP 500 - Erste Bank Open 2026)",
+      "match_name": "World Feed",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/Erste-Bank-Open_Web-match-card.png",
       "event_category": "Tennis",
       "event_name": "ATP 500 - Erste Bank Open 2026",
