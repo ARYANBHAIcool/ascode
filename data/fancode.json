@@ -2,14 +2,29 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "10/29/2026, 5:16:32 AM IST",
+  "last_updated": "10/29/2026, 5:52:30 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 0,
+  "live_matches": 1,
   "matches": [
+    {
+      "match_id": "4249668",
+      "match_name": "Western Australia Vs South Australia [English]",
+      "title": "Western Australia Vs South Australia [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249668_53087_SAU_WAU_FC-WEB.jpg",
+      "language": "English",
+      "event_category": "Cricket",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249668_english_hls_a2c3979ec978952_1ta-di_h264/index.m3u8",
+      "status": "LIVE",
+      "startTime": "05:30:00 AM 28-10-2026",
+      "team_1": "Western Australia",
+      "team_2": "South Australia",
+      "event_name": "Sheffield Shield, 2026/27",
+      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4249668_english_hls_a2c3979ec978952_1ta-di_h264/240p.m3u8?hdntl=Expires=1793305810~_GO=Generated~acl=/mumbai/4249668_english_hls_a2c3979ec978952_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_5d2a42a0-a150-42~Signature=ATFKiJtEzTPi-hkMDO32WBAGhNMzMNsDYiCVPBRLDa-VAg_5Nn43LaEuG-OnetW-7jOCEYkDE7Kfq1VtxBlVMLIotsQC\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4249668_english_hls_a2c3979ec978952_1ta-di_h264/360p.m3u8?hdntl=Expires=1793305810~_GO=Generated~acl=/mumbai/4249668_english_hls_a2c3979ec978952_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_5d2a42a0-a150-42~Signature=ATFKiJtEzTPi-hkMDO32WBAGhNMzMNsDYiCVPBRLDa-VAg_5Nn43LaEuG-OnetW-7jOCEYkDE7Kfq1VtxBlVMLIotsQC\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4249668_english_hls_a2c3979ec978952_1ta-di_h264/480p.m3u8?hdntl=Expires=1793305810~_GO=Generated~acl=/mumbai/4249668_english_hls_a2c3979ec978952_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_5d2a42a0-a150-42~Signature=ATFKiJtEzTPi-hkMDO32WBAGhNMzMNsDYiCVPBRLDa-VAg_5Nn43LaEuG-OnetW-7jOCEYkDE7Kfq1VtxBlVMLIotsQC\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4249668_english_hls_a2c3979ec978952_1ta-di_h264/540p.m3u8?hdntl=Expires=1793305810~_GO=Generated~acl=/mumbai/4249668_english_hls_a2c3979ec978952_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_5d2a42a0-a150-42~Signature=ATFKiJtEzTPi-hkMDO32WBAGhNMzMNsDYiCVPBRLDa-VAg_5Nn43LaEuG-OnetW-7jOCEYkDE7Kfq1VtxBlVMLIotsQC\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4249668_english_hls_a2c3979ec978952_1ta-di_h264/720p.m3u8?hdntl=Expires=1793305810~_GO=Generated~acl=/mumbai/4249668_english_hls_a2c3979ec978952_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_5d2a42a0-a150-42~Signature=ATFKiJtEzTPi-hkMDO32WBAGhNMzMNsDYiCVPBRLDa-VAg_5Nn43LaEuG-OnetW-7jOCEYkDE7Kfq1VtxBlVMLIotsQC\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4249668_english_hls_a2c3979ec978952_1ta-di_h264/1080p.m3u8?hdntl=Expires=1793305810~_GO=Generated~acl=/mumbai/4249668_english_hls_a2c3979ec978952_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_5d2a42a0-a150-42~Signature=ATFKiJtEzTPi-hkMDO32WBAGhNMzMNsDYiCVPBRLDa-VAg_5Nn43LaEuG-OnetW-7jOCEYkDE7Kfq1VtxBlVMLIotsQC"
+    },
     {
       "match_id": 4249783,
       "title": "South Africa vs Australia (Australia tour of South Africa, 2026)",
@@ -19,18 +34,6 @@
       "event_name": "Australia tour of South Africa, 2026",
       "language": "English",
       "startTime": "02:00:00 PM 27-10-2026",
-      "status": "PAUSED",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249668,
-      "title": "Western Australia vs South Australia (Sheffield Shield, 2026/27)",
-      "match_name": "Western Australia vs South Australia",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249668_53087_SAU_WAU_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "Sheffield Shield, 2026/27",
-      "language": "English",
-      "startTime": "05:30:00 AM 28-10-2026",
       "status": "PAUSED",
       "stream_url": ""
     },
@@ -455,6 +458,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4250313,
+      "title": "India vs Pakistan (Hong Kong Sixes, 2026)",
+      "match_name": "India vs Pakistan",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250313_53120_IND_PAK_fc-web.jpg",
+      "event_category": "Cricket",
+      "event_name": "Hong Kong Sixes, 2026",
+      "language": "English",
+      "startTime": "11:45:00 AM 30-10-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4250607,
       "title": "Fairplay Court vs Vienna, Austria (ATP 500 - Erste Bank Open 2026)",
       "match_name": "Fairplay Court",
@@ -475,18 +490,6 @@
       "event_name": "ATP 500 - Swiss Indoors Basel 2026",
       "language": "English",
       "startTime": "05:30:00 PM 29-10-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249631,
-      "title": "World Feed vs Vienna, Austria (ATP 500 - Erste Bank Open 2026)",
-      "match_name": "World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Erste-Bank-Open_Web-match-card.png",
-      "event_category": "Tennis",
-      "event_name": "ATP 500 - Erste Bank Open 2026",
-      "language": "English",
-      "startTime": "06:00:00 PM 29-10-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
