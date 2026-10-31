@@ -1,19 +1,27 @@
 #EXTM3U
 # Written and Directed by ✨ A R Y A N ✨
 # Join us on Telegram: https://t.me/aryanstreams
-#DATE:- 10/31/2026, 9:28:38 AM IST
+#DATE:- 10/31/2026, 2:25:16 PM IST
 
-#EXTINF:-1 tvg-id="4249668" tvg-name="Western Australia Vs South Australia [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4249668_53087_SAU_WAU_FC-WEB.jpg" tvg-language="English" group-title="Cricket",ENG | Western Australia Vs South Australia [English]
-https://dai-fancode.pages.dev/mumbai/4249668_english_hls_a2c3979ec985476_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4249783" tvg-name="South Africa Vs Australia [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/AUS-vs-SA-test_Web-match-card.png" tvg-language="English" group-title="Cricket",ENG | South Africa Vs Australia [English]
+https://dai-fancode.pages.dev/mumbai/4249783_english_hls_97c5a4780024185_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="4250526" tvg-name="Bangladesh Vs West Indies [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/West-Indies-tour-of-Bangladesh-web-.jpg" tvg-language="English" group-title="Cricket",ENG | Bangladesh Vs West Indies [English]
 https://dai-fancode.pages.dev/mumbai/4250526_english_hls_d3c070eb3062034_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4249669" tvg-name="Tasmania Vs New South Wales [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4249669_53087_TAS_NSW_FC-WEB.jpg" tvg-language="English" group-title="Cricket",ENG | Tasmania Vs New South Wales [English]
-https://dai-fancode.pages.dev/mumbai/4249669_english_hls_0ad52e993378592_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4249670" tvg-name="Victoria Vs Queensland [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4249670_53087_QUN_VCT_FC-WEB.jpg" tvg-language="English" group-title="Cricket",ENG | Victoria Vs Queensland [English]
-https://dai-fancode.pages.dev/mumbai/4249670_english_hls_72230a09d416519_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4250319" tvg-name="Bangladesh Vs South Africa [English]" tvg-logo="https://images.fancode.com/aig/match/v1793417141979/4250319_CASACARDS_SPORTY_APP.png" tvg-language="English" group-title="Cricket",ENG | Bangladesh Vs South Africa [English]
-https://dai-fancode.pages.dev/mumbai/4250319_english_hls_577669225565164_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250519" tvg-name="Netherlands Vs United Arab Emirates [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/ICC-CWC-League_Web-match-card.png" tvg-language="English" group-title="Cricket",ENG | Netherlands Vs United Arab Emirates [English]
+https://dai-fancode.pages.dev/mumbai/4250519_english_hls_52d639dd0845065_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250349" tvg-name="Kenya Vs Papua New Guinea [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png" tvg-language="English" group-title="Cricket",ENG | Kenya Vs Papua New Guinea [English]
+https://dai-fancode.pages.dev/mumbai/4250349_english_hls_a784cd9b8693638_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250350" tvg-name="Qatar Vs Jersey [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png" tvg-language="English" group-title="Cricket",ENG | Qatar Vs Jersey [English]
+https://dai-fancode.pages.dev/mumbai/4250350_english_hls_b54e08c6d873024_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250324" tvg-name="Afghanistan Vs Scotland [English]" tvg-logo="https://images.fancode.com/aig/match/v1793419339063/4250324_CASACARDS_SPORTY_APP.png" tvg-language="English" group-title="Cricket",ENG | Afghanistan Vs Scotland [English]
+https://dai-fancode.pages.dev/mumbai/4250324_english_hls_f0fd3d36d835431_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250391" tvg-name="Melbourne Renegades Women Vs Perth Scorchers Women [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250391_53125_PS-W_MR-W_fc-web_1793352701283.jpg" tvg-language="English" group-title="Cricket",ENG | Melbourne Renegades Women Vs Perth Scorchers Women [English]
+https://dai-fancode.pages.dev/mumbai/4250391_english_hls_9173e82c8482158_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250543" tvg-name="Himachal Highlenders Vs Uttrakhand Stars [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-Web_1792997982624.png" tvg-language="English" group-title="Cricket",ENG | Himachal Highlenders Vs Uttrakhand Stars [English]
+https://dai-fancode.pages.dev/mumbai/4250543_english_hls_d65f11609f74646_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="139982" tvg-name="Day 2 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Petronas-Grand-Prix-of-Malaysia_fc-web.jpg" tvg-language="English" group-title="MotoGP",ENG | Day 2 [English]
 https://dai-fancode.pages.dev/mumbai/139982_english_hls_db06becffb50637_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4249847" tvg-name="Newcastle Jets Vs Wellington Phoenix [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4249847_53101_NJ_WEL_fc-Web_1792223294133.jpg" tvg-language="English" group-title="Football",ENG | Newcastle Jets Vs Wellington Phoenix [English]
-https://dai-fancode.pages.dev/mumbai/4249847_english_hls_36204caf6f86869_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250514" tvg-name="Day 3 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Wistron-Ladies-Open-2026_fc-web.jpg" tvg-language="English" group-title="Golf",ENG | Day 3 [English]
+https://dai-fancode.pages.dev/mumbai/4250514_english_hls_25387e8ba428316_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4249849" tvg-name="Macarthur Vs Western Sydney Wanderers [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4249849_53101_MAC_SYW_fc-Web_1792223293101.jpg" tvg-language="English" group-title="Football",ENG | Macarthur Vs Western Sydney Wanderers [English]
+https://dai-fancode.pages.dev/mumbai/4249849_english_hls_b67260706b16169_1ta-di_h264/index.m3u8
