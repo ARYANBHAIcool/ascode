@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "11/1/2026, 12:55:02 AM IST",
+  "last_updated": "11/1/2026, 1:04:47 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 4,
+  "live_matches": 5,
   "matches": [
     {
       "match_id": "4250497",
@@ -50,6 +50,17 @@
       "team_2": "Al-Fateh SC",
       "event_name": "Roshn Saudi League 2026-2027",
       "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250273_english_hls_080636bc3c54694_1ta-di_h264/240p.m3u8?hdntl=Expires=1793555463~_GO=Generated~acl=/mumbai/4250273_english_hls_080636bc3c54694_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_d6846e0f-2095-48~Signature=ATFKiJukGnGJplSp1_QDh_RXU-YzmJY8cx00ZHACPZEbMRRzsM3ElKson_0RnY2o6ajv1F9m6yG044WziAJuqfewyeAN\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250273_english_hls_080636bc3c54694_1ta-di_h264/360p.m3u8?hdntl=Expires=1793555463~_GO=Generated~acl=/mumbai/4250273_english_hls_080636bc3c54694_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_d6846e0f-2095-48~Signature=ATFKiJukGnGJplSp1_QDh_RXU-YzmJY8cx00ZHACPZEbMRRzsM3ElKson_0RnY2o6ajv1F9m6yG044WziAJuqfewyeAN\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250273_english_hls_080636bc3c54694_1ta-di_h264/480p.m3u8?hdntl=Expires=1793555463~_GO=Generated~acl=/mumbai/4250273_english_hls_080636bc3c54694_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_d6846e0f-2095-48~Signature=ATFKiJukGnGJplSp1_QDh_RXU-YzmJY8cx00ZHACPZEbMRRzsM3ElKson_0RnY2o6ajv1F9m6yG044WziAJuqfewyeAN\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250273_english_hls_080636bc3c54694_1ta-di_h264/540p.m3u8?hdntl=Expires=1793555463~_GO=Generated~acl=/mumbai/4250273_english_hls_080636bc3c54694_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_d6846e0f-2095-48~Signature=ATFKiJukGnGJplSp1_QDh_RXU-YzmJY8cx00ZHACPZEbMRRzsM3ElKson_0RnY2o6ajv1F9m6yG044WziAJuqfewyeAN\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250273_english_hls_080636bc3c54694_1ta-di_h264/720p.m3u8?hdntl=Expires=1793555463~_GO=Generated~acl=/mumbai/4250273_english_hls_080636bc3c54694_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_d6846e0f-2095-48~Signature=ATFKiJukGnGJplSp1_QDh_RXU-YzmJY8cx00ZHACPZEbMRRzsM3ElKson_0RnY2o6ajv1F9m6yG044WziAJuqfewyeAN\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250273_english_hls_080636bc3c54694_1ta-di_h264/1080p.m3u8?hdntl=Expires=1793555463~_GO=Generated~acl=/mumbai/4250273_english_hls_080636bc3c54694_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_d6846e0f-2095-48~Signature=ATFKiJukGnGJplSp1_QDh_RXU-YzmJY8cx00ZHACPZEbMRRzsM3ElKson_0RnY2o6ajv1F9m6yG044WziAJuqfewyeAN"
+    },
+    {
+      "match_id": "4247668",
+      "match_name": "Fc Barcelona Vs Deportivo Alaves [English]",
+      "title": "Fc Barcelona Vs Deportivo Alaves [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247668_53004_BAR_ALA_FC-Web.png",
+      "language": "English",
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247668_english_hls_c6a19c321671074_1ta-di_h264/index.m3u8",
+      "status": "LIVE",
+      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4247668_english_hls_c6a19c321671074_1ta-di_h264/240p.m3u8?hdntl=Expires=1793475337~_GO=Generated~acl=/mumbai/4247668_english_hls_c6a19c321671074_1ta-di_h264/*~SessionID=7c8f3b1a9d0e6f25_sportsguruand_cda0e94c-dc83-4d~Signature=ATFKiJuc7F1CUxE4iwWmyFDR8Z0035OonOIuNvgZ3idUsh9xVCb2AK51QQpvQuko_eDYVHZo3SbsWB9cqul-jRSijlYH\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4247668_english_hls_c6a19c321671074_1ta-di_h264/360p.m3u8?hdntl=Expires=1793475337~_GO=Generated~acl=/mumbai/4247668_english_hls_c6a19c321671074_1ta-di_h264/*~SessionID=7c8f3b1a9d0e6f25_sportsguruand_cda0e94c-dc83-4d~Signature=ATFKiJuc7F1CUxE4iwWmyFDR8Z0035OonOIuNvgZ3idUsh9xVCb2AK51QQpvQuko_eDYVHZo3SbsWB9cqul-jRSijlYH\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4247668_english_hls_c6a19c321671074_1ta-di_h264/480p.m3u8?hdntl=Expires=1793475337~_GO=Generated~acl=/mumbai/4247668_english_hls_c6a19c321671074_1ta-di_h264/*~SessionID=7c8f3b1a9d0e6f25_sportsguruand_cda0e94c-dc83-4d~Signature=ATFKiJuc7F1CUxE4iwWmyFDR8Z0035OonOIuNvgZ3idUsh9xVCb2AK51QQpvQuko_eDYVHZo3SbsWB9cqul-jRSijlYH\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4247668_english_hls_c6a19c321671074_1ta-di_h264/540p.m3u8?hdntl=Expires=1793475337~_GO=Generated~acl=/mumbai/4247668_english_hls_c6a19c321671074_1ta-di_h264/*~SessionID=7c8f3b1a9d0e6f25_sportsguruand_cda0e94c-dc83-4d~Signature=ATFKiJuc7F1CUxE4iwWmyFDR8Z0035OonOIuNvgZ3idUsh9xVCb2AK51QQpvQuko_eDYVHZo3SbsWB9cqul-jRSijlYH\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4247668_english_hls_c6a19c321671074_1ta-di_h264/720p.m3u8?hdntl=Expires=1793475337~_GO=Generated~acl=/mumbai/4247668_english_hls_c6a19c321671074_1ta-di_h264/*~SessionID=7c8f3b1a9d0e6f25_sportsguruand_cda0e94c-dc83-4d~Signature=ATFKiJuc7F1CUxE4iwWmyFDR8Z0035OonOIuNvgZ3idUsh9xVCb2AK51QQpvQuko_eDYVHZo3SbsWB9cqul-jRSijlYH\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4247668_english_hls_c6a19c321671074_1ta-di_h264/1080p.m3u8?hdntl=Expires=1793475337~_GO=Generated~acl=/mumbai/4247668_english_hls_c6a19c321671074_1ta-di_h264/*~SessionID=7c8f3b1a9d0e6f25_sportsguruand_cda0e94c-dc83-4d~Signature=ATFKiJuc7F1CUxE4iwWmyFDR8Z0035OonOIuNvgZ3idUsh9xVCb2AK51QQpvQuko_eDYVHZo3SbsWB9cqul-jRSijlYH\n#EXT-X-STREAM-INF:BANDWIDTH=5408736,AVERAGE-BANDWIDTH=5408736,CODECS=\"avc1.64002a,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=50.000\nhttps://in-mc-flive.fancode.com/mumbai/4247668_english_hls_c6a19c321671074_1ta-di_h264/1080p5.m3u8?hdntl=Expires=1793475337~_GO=Generated~acl=/mumbai/4247668_english_hls_c6a19c321671074_1ta-di_h264/*~SessionID=7c8f3b1a9d0e6f25_sportsguruand_cda0e94c-dc83-4d~Signature=ATFKiJuc7F1CUxE4iwWmyFDR8Z0035OonOIuNvgZ3idUsh9xVCb2AK51QQpvQuko_eDYVHZo3SbsWB9cqul-jRSijlYH"
     },
     {
       "match_id": "4250524",
@@ -219,18 +230,6 @@
       "event_name": "Nepal Premier League Season 3, 2026",
       "language": "English",
       "startTime": "04:45:00 PM 01-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4247668,
-      "title": "FC Barcelona vs Deportivo Alaves (LALIGA 2026-27)",
-      "match_name": "FC Barcelona vs Deportivo Alaves",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247668_53004_BAR_ALA_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "01:30:00 AM 01-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
