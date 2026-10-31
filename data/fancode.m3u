@@ -1,21 +1,27 @@
 #EXTM3U
 # Written and Directed by ✨ A R Y A N ✨
 # Join us on Telegram: https://t.me/aryanstreams
-#DATE:- 10/31/2026, 3:46:39 PM IST
+#DATE:- 10/31/2026, 8:46:31 PM IST
 
-#EXTINF:-1 tvg-id="4249783" tvg-name="South Africa Vs Australia [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/AUS-vs-SA-test_Web-match-card.png" tvg-language="English" group-title="Cricket",ENG | South Africa Vs Australia [English]
-https://dai-fancode.pages.dev/mumbai/4249783_english_hls_97c5a4780024185_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4250526" tvg-name="Bangladesh Vs West Indies [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/West-Indies-tour-of-Bangladesh-web-.jpg" tvg-language="English" group-title="Cricket",ENG | Bangladesh Vs West Indies [English]
-https://dai-fancode.pages.dev/mumbai/4250526_english_hls_d3c070eb3062034_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4250519" tvg-name="Netherlands Vs United Arab Emirates [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/ICC-CWC-League_Web-match-card.png" tvg-language="English" group-title="Cricket",ENG | Netherlands Vs United Arab Emirates [English]
-https://dai-fancode.pages.dev/mumbai/4250519_english_hls_52d639dd0845065_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4250349" tvg-name="Kenya Vs Papua New Guinea [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png" tvg-language="English" group-title="Cricket",ENG | Kenya Vs Papua New Guinea [English]
-https://dai-fancode.pages.dev/mumbai/4250349_english_hls_a784cd9b8693638_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4250350" tvg-name="Qatar Vs Jersey [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-We.png" tvg-language="English" group-title="Cricket",ENG | Qatar Vs Jersey [English]
-https://dai-fancode.pages.dev/mumbai/4250350_english_hls_b54e08c6d873024_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4250391" tvg-name="Melbourne Renegades Women Vs Perth Scorchers Women [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250391_53125_PS-W_MR-W_fc-web_1793352701283.jpg" tvg-language="English" group-title="Cricket",ENG | Melbourne Renegades Women Vs Perth Scorchers Women [English]
-https://dai-fancode.pages.dev/mumbai/4250391_english_hls_9173e82c8482158_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250362" tvg-name="Sudurpaschim Royals Vs Biratnagar Kings [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250362_53124_SPR_BK_fc-Web.jpg" tvg-language="English" group-title="Cricket",ENG | Sudurpaschim Royals Vs Biratnagar Kings [English]
+https://dai-fancode.pages.dev/mumbai/4250362_english_hls_2279bcd8f161004_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250496" tvg-name="Abu Dhabi Vs Dubai [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250496_53130_ABD_DUB_fc-web_1792412929356.jpg" tvg-language="English" group-title="Cricket",ENG | Abu Dhabi Vs Dubai [English]
+https://dai-fancode.pages.dev/mumbai/4250496_english_hls_1c63fa10bc20382_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="4250543" tvg-name="Himachal Highlenders Vs Uttrakhand Stars [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-Web_1792997982624.png" tvg-language="English" group-title="Cricket",ENG | Himachal Highlenders Vs Uttrakhand Stars [English]
 https://dai-fancode.pages.dev/mumbai/4250543_english_hls_d65f11609f74646_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4249849" tvg-name="Macarthur Vs Western Sydney Wanderers [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4249849_53101_MAC_SYW_fc-Web_1792223293101.jpg" tvg-language="English" group-title="Football",ENG | Macarthur Vs Western Sydney Wanderers [English]
-https://dai-fancode.pages.dev/mumbai/4249849_english_hls_b67260706b16169_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4249602" tvg-name="Millwall F.c. Vs Derby County Football Club [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4249602_52993_MLW_DER_fc-web.jpg" tvg-language="English" group-title="Football",ENG | Millwall F.c. Vs Derby County Football Club [English]
+https://dai-fancode.pages.dev/mumbai/4249602_english_hls_591c2d97c077208_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4247670" tvg-name="Rayo Vallecano Vs Rc Celta [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4247670_53004_RVL_CEV_FC-Web_1792660540605.png" tvg-language="English" group-title="Football",ENG | Rayo Vallecano Vs Rc Celta [English]
+https://dai-fancode.pages.dev/mumbai/4247670_english_hls_4d4d269c0197136_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4249207" tvg-name="Everton Women Vs Manchester United Women [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4249207_53038_EVE-W_MUN-W_fc-app.jpg" tvg-language="English" group-title="Football",ENG | Everton Women Vs Manchester United Women [English]
+https://dai-fancode.pages.dev/mumbai/4249207_english_hls_07fe52cc7848011_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4249633" tvg-name="Glaubandich Court [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Erste-Bank-Open_Web-match-card.png" tvg-language="English" group-title="Tennis",ENG | Glaubandich Court [English]
+https://dai-fancode.pages.dev/mumbai/4249633_english_hls_421e45ee2157_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250524" tvg-name="Semi Finals [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Hylo-Open-2026_fc-web.jpg" tvg-language="English" group-title="Badminton",ENG | Semi Finals [English]
+https://dai-fancode.pages.dev/mumbai/4250524_english_hls_60e4ade45e61091_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4249640" tvg-name="D Medvedev Vs C Alcaraz [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Daniil-Medvedev-vs-Alcaraz-web-match-card.png" tvg-language="English" group-title="Tennis",ENG | D Medvedev Vs C Alcaraz [English]
+https://dai-fancode.pages.dev/mumbai/4249640_english_hls_4f90393d7175429_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4249647" tvg-name="World Feed [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Tennis_FC-We.png" tvg-language="English" group-title="Tennis",ENG | World Feed [English]
+https://dai-fancode.pages.dev/mumbai/4249647_english_hls_82c688241f54573_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4247671" tvg-name="Levante Vs Atletico De Madrid [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4247671_53004_LET_ATM_FC-Web.png" tvg-language="English" group-title="Football",ENG | Levante Vs Atletico De Madrid [English]
+https://dai-fancode.pages.dev/mumbai/4247671_english_hls_ec89eaae303451_1ta-di_h264/index.m3u8
