@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
     <title>FanCode Live | Stream Hub</title>
+    <!-- Monetag In-Market Popunder -->
+    <script data-cfasync="false" src="https://capitalhospitals.org/1/ec8caf215d92bd77dfa766d702a1ec0f"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -1205,6 +1207,46 @@
                 render(currentFilter);
             } catch (e) {}
         }, 60 * 1000);
+    })();
+    </script>
+
+    <!-- Monetag / Smartlink Ad Integration (2 ads max, 60s cooldown, exempting Telegram / Discord) -->
+    <script>
+    (function() {
+        var SMARTLINK_URL = "https://budgetezy.org/4/6da983d7e115700ad4dc612c0e107ec8";
+        var MAX_ADS = 2;
+        var COOLDOWN = 60000;
+        var adCount = 0;
+        var lastAdTime = 0;
+
+        function triggerAd(e) {
+            if (adCount >= MAX_ADS) return;
+            var now = Date.now();
+            if (now - lastAdTime < COOLDOWN) return;
+            if (e && e.target && e.target.closest) {
+                var anchor = e.target.closest('a');
+                if (anchor) {
+                    var href = (anchor.getAttribute('href') || '').toLowerCase();
+                    if (href.includes('t.me') || href.includes('discord')) return;
+                }
+            }
+            adCount++;
+            lastAdTime = now;
+            try {
+                window.open(SMARTLINK_URL, '_blank', 'noopener,noreferrer');
+            } catch(err){}
+        }
+
+        document.addEventListener('click', function(e) {
+            if (adCount >= MAX_ADS) return;
+            if (e.target && e.target.closest) {
+                if (e.target.closest('a[href*="t.me"]') || e.target.closest('a[href*="discord"]')) return;
+                // Trigger on match card, stream watch buttons, player modal clicks
+                if (e.target.closest('.match-card') || e.target.closest('#player-modal') || e.target.closest('#btn-continue-stream') || e.target.closest('#quality-list')) {
+                    triggerAd(e);
+                }
+            }
+        }, true);
     })();
     </script>
 </body>
