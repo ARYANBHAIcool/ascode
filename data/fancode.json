@@ -2,55 +2,14 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "11/2/2026, 1:19:18 AM IST",
+  "last_updated": "11/2/2026, 4:32:28 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 42,
-  "live_matches": 8,
+  "live_matches": 4,
   "matches": [
-    {
-      "match_id": "4250499",
-      "match_name": "Ajman Vs Emirates Red [English]",
-      "title": "Ajman Vs Emirates Red [English]",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250499_53130_AJM_EMR_fc-web_1792412929398.jpg",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250499_english_hls_64f93326f698395_1ta-di_h264/index.m3u8",
-      "status": "LIVE",
-      "startTime": "10:00:00 PM 01-11-2026",
-      "team_1": "Ajman",
-      "team_2": "Emirates Red",
-      "event_name": "Emirates D20, 2026",
-      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250499_english_hls_64f93326f698395_1ta-di_h264/240p.m3u8?hdntl=Expires=1793636345~_GO=Generated~acl=/mumbai/4250499_english_hls_64f93326f698395_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_0fc52dde-67b9-4e~Signature=ATFKiJvUlLwwBUDA1pGLhxbvVaCFNKyuLTTgEdb4BMZt9y770GCHFVBQ1RiiUKL_XCnoOFndxHw05bksAi8PxwyoTBkJ\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250499_english_hls_64f93326f698395_1ta-di_h264/360p.m3u8?hdntl=Expires=1793636345~_GO=Generated~acl=/mumbai/4250499_english_hls_64f93326f698395_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_0fc52dde-67b9-4e~Signature=ATFKiJvUlLwwBUDA1pGLhxbvVaCFNKyuLTTgEdb4BMZt9y770GCHFVBQ1RiiUKL_XCnoOFndxHw05bksAi8PxwyoTBkJ\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250499_english_hls_64f93326f698395_1ta-di_h264/480p.m3u8?hdntl=Expires=1793636345~_GO=Generated~acl=/mumbai/4250499_english_hls_64f93326f698395_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_0fc52dde-67b9-4e~Signature=ATFKiJvUlLwwBUDA1pGLhxbvVaCFNKyuLTTgEdb4BMZt9y770GCHFVBQ1RiiUKL_XCnoOFndxHw05bksAi8PxwyoTBkJ\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250499_english_hls_64f93326f698395_1ta-di_h264/540p.m3u8?hdntl=Expires=1793636345~_GO=Generated~acl=/mumbai/4250499_english_hls_64f93326f698395_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_0fc52dde-67b9-4e~Signature=ATFKiJvUlLwwBUDA1pGLhxbvVaCFNKyuLTTgEdb4BMZt9y770GCHFVBQ1RiiUKL_XCnoOFndxHw05bksAi8PxwyoTBkJ\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250499_english_hls_64f93326f698395_1ta-di_h264/720p.m3u8?hdntl=Expires=1793636345~_GO=Generated~acl=/mumbai/4250499_english_hls_64f93326f698395_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_0fc52dde-67b9-4e~Signature=ATFKiJvUlLwwBUDA1pGLhxbvVaCFNKyuLTTgEdb4BMZt9y770GCHFVBQ1RiiUKL_XCnoOFndxHw05bksAi8PxwyoTBkJ\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250499_english_hls_64f93326f698395_1ta-di_h264/1080p.m3u8?hdntl=Expires=1793636345~_GO=Generated~acl=/mumbai/4250499_english_hls_64f93326f698395_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_0fc52dde-67b9-4e~Signature=ATFKiJvUlLwwBUDA1pGLhxbvVaCFNKyuLTTgEdb4BMZt9y770GCHFVBQ1RiiUKL_XCnoOFndxHw05bksAi8PxwyoTBkJ"
-    },
-    {
-      "match_id": "4250203",
-      "match_name": "West Indies A Vs England Lions [English]",
-      "title": "West Indies A Vs England Lions [English]",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-Mini.png",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250203_english_hls_91f4cd541682224_1ta-di_h264/index.m3u8",
-      "status": "LIVE",
-      "startTime": "10:30:00 PM 01-11-2026",
-      "team_1": "West Indies A",
-      "team_2": "England Lions",
-      "event_name": "England Lions tour of West Indies, 2026",
-      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250203_english_hls_91f4cd541682224_1ta-di_h264/240p.m3u8?hdntl=Expires=1793638265~_GO=Generated~acl=/mumbai/4250203_english_hls_91f4cd541682224_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_59c7c55b-2cd3-4f~Signature=ATFKiJu9JVtao9OII_KYsK_pyq2eef0EZMUcflNcFspIEWFTG88qrcqIDakZECJRk3Jm0heIQHX9AEQ1ZJ2Q-xFS6QgG\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250203_english_hls_91f4cd541682224_1ta-di_h264/360p.m3u8?hdntl=Expires=1793638265~_GO=Generated~acl=/mumbai/4250203_english_hls_91f4cd541682224_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_59c7c55b-2cd3-4f~Signature=ATFKiJu9JVtao9OII_KYsK_pyq2eef0EZMUcflNcFspIEWFTG88qrcqIDakZECJRk3Jm0heIQHX9AEQ1ZJ2Q-xFS6QgG\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250203_english_hls_91f4cd541682224_1ta-di_h264/480p.m3u8?hdntl=Expires=1793638265~_GO=Generated~acl=/mumbai/4250203_english_hls_91f4cd541682224_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_59c7c55b-2cd3-4f~Signature=ATFKiJu9JVtao9OII_KYsK_pyq2eef0EZMUcflNcFspIEWFTG88qrcqIDakZECJRk3Jm0heIQHX9AEQ1ZJ2Q-xFS6QgG\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250203_english_hls_91f4cd541682224_1ta-di_h264/540p.m3u8?hdntl=Expires=1793638265~_GO=Generated~acl=/mumbai/4250203_english_hls_91f4cd541682224_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_59c7c55b-2cd3-4f~Signature=ATFKiJu9JVtao9OII_KYsK_pyq2eef0EZMUcflNcFspIEWFTG88qrcqIDakZECJRk3Jm0heIQHX9AEQ1ZJ2Q-xFS6QgG\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250203_english_hls_91f4cd541682224_1ta-di_h264/720p.m3u8?hdntl=Expires=1793638265~_GO=Generated~acl=/mumbai/4250203_english_hls_91f4cd541682224_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_59c7c55b-2cd3-4f~Signature=ATFKiJu9JVtao9OII_KYsK_pyq2eef0EZMUcflNcFspIEWFTG88qrcqIDakZECJRk3Jm0heIQHX9AEQ1ZJ2Q-xFS6QgG\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250203_english_hls_91f4cd541682224_1ta-di_h264/1080p.m3u8?hdntl=Expires=1793638265~_GO=Generated~acl=/mumbai/4250203_english_hls_91f4cd541682224_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_59c7c55b-2cd3-4f~Signature=ATFKiJu9JVtao9OII_KYsK_pyq2eef0EZMUcflNcFspIEWFTG88qrcqIDakZECJRk3Jm0heIQHX9AEQ1ZJ2Q-xFS6QgG"
-    },
-    {
-      "match_id": "4247675",
-      "match_name": "Athletic Club Vs Real Sociedad [English]",
-      "title": "Athletic Club Vs Real Sociedad [English]",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247675_53004_ATH_RS_FC-Web.png",
-      "language": "English",
-      "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247675_english_hls_ca07032c1738959_1ta-di_h264/index.m3u8",
-      "status": "LIVE",
-      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4247675_english_hls_ca07032c1738959_1ta-di_h264/240p.m3u8?hdntl=Expires=1793648228~_GO=Generated~acl=/mumbai/4247675_english_hls_ca07032c1738959_1ta-di_h264/*~SessionID=65469799_sportsguruand_0f621cec-0584-44~Signature=ATFKiJtwFtVMulfO5P7bsrG7gZujm8noeCTxZs2A9we0Q5xu0QiX5L_30Nikb2qxV57-nYtLs5pmdfEmIBRUFCxLFMgN\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4247675_english_hls_ca07032c1738959_1ta-di_h264/360p.m3u8?hdntl=Expires=1793648228~_GO=Generated~acl=/mumbai/4247675_english_hls_ca07032c1738959_1ta-di_h264/*~SessionID=65469799_sportsguruand_0f621cec-0584-44~Signature=ATFKiJtwFtVMulfO5P7bsrG7gZujm8noeCTxZs2A9we0Q5xu0QiX5L_30Nikb2qxV57-nYtLs5pmdfEmIBRUFCxLFMgN\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4247675_english_hls_ca07032c1738959_1ta-di_h264/480p.m3u8?hdntl=Expires=1793648228~_GO=Generated~acl=/mumbai/4247675_english_hls_ca07032c1738959_1ta-di_h264/*~SessionID=65469799_sportsguruand_0f621cec-0584-44~Signature=ATFKiJtwFtVMulfO5P7bsrG7gZujm8noeCTxZs2A9we0Q5xu0QiX5L_30Nikb2qxV57-nYtLs5pmdfEmIBRUFCxLFMgN\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4247675_english_hls_ca07032c1738959_1ta-di_h264/540p.m3u8?hdntl=Expires=1793648228~_GO=Generated~acl=/mumbai/4247675_english_hls_ca07032c1738959_1ta-di_h264/*~SessionID=65469799_sportsguruand_0f621cec-0584-44~Signature=ATFKiJtwFtVMulfO5P7bsrG7gZujm8noeCTxZs2A9we0Q5xu0QiX5L_30Nikb2qxV57-nYtLs5pmdfEmIBRUFCxLFMgN\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4247675_english_hls_ca07032c1738959_1ta-di_h264/720p.m3u8?hdntl=Expires=1793648228~_GO=Generated~acl=/mumbai/4247675_english_hls_ca07032c1738959_1ta-di_h264/*~SessionID=65469799_sportsguruand_0f621cec-0584-44~Signature=ATFKiJtwFtVMulfO5P7bsrG7gZujm8noeCTxZs2A9we0Q5xu0QiX5L_30Nikb2qxV57-nYtLs5pmdfEmIBRUFCxLFMgN\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4247675_english_hls_ca07032c1738959_1ta-di_h264/1080p.m3u8?hdntl=Expires=1793648228~_GO=Generated~acl=/mumbai/4247675_english_hls_ca07032c1738959_1ta-di_h264/*~SessionID=65469799_sportsguruand_0f621cec-0584-44~Signature=ATFKiJtwFtVMulfO5P7bsrG7gZujm8noeCTxZs2A9we0Q5xu0QiX5L_30Nikb2qxV57-nYtLs5pmdfEmIBRUFCxLFMgN\n#EXT-X-STREAM-INF:BANDWIDTH=5408736,AVERAGE-BANDWIDTH=5408736,CODECS=\"avc1.64002a,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=50.000\nhttps://in-mc-flive.fancode.com/mumbai/4247675_english_hls_ca07032c1738959_1ta-di_h264/1080p5.m3u8?hdntl=Expires=1793648228~_GO=Generated~acl=/mumbai/4247675_english_hls_ca07032c1738959_1ta-di_h264/*~SessionID=65469799_sportsguruand_0f621cec-0584-44~Signature=ATFKiJtwFtVMulfO5P7bsrG7gZujm8noeCTxZs2A9we0Q5xu0QiX5L_30Nikb2qxV57-nYtLs5pmdfEmIBRUFCxLFMgN"
-    },
     {
       "match_id": "139511",
       "match_name": "Race [English]",
@@ -108,17 +67,6 @@
       "team_2": "Vidanta Vallarta Golf Course - Vallarta, México",
       "event_name": "VidantaWorld Mexico Open 2026",
       "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250511_english_hls_91146ecc6c34862_1ta-di_h264/240p.m3u8?hdntl=Expires=1793645467~_GO=Generated~acl=/mumbai/4250511_english_hls_91146ecc6c34862_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_8eaacb28-0a5a-4f~Signature=ATFKiJvXSTmQFMAZVqyjtjKrm68p9dcihUw0ONKqvxjG850v1JhbgA1cE2dqg9M-YyzOGSvAhnxjuwKkUSem5DbtF3YI\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250511_english_hls_91146ecc6c34862_1ta-di_h264/360p.m3u8?hdntl=Expires=1793645467~_GO=Generated~acl=/mumbai/4250511_english_hls_91146ecc6c34862_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_8eaacb28-0a5a-4f~Signature=ATFKiJvXSTmQFMAZVqyjtjKrm68p9dcihUw0ONKqvxjG850v1JhbgA1cE2dqg9M-YyzOGSvAhnxjuwKkUSem5DbtF3YI\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250511_english_hls_91146ecc6c34862_1ta-di_h264/480p.m3u8?hdntl=Expires=1793645467~_GO=Generated~acl=/mumbai/4250511_english_hls_91146ecc6c34862_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_8eaacb28-0a5a-4f~Signature=ATFKiJvXSTmQFMAZVqyjtjKrm68p9dcihUw0ONKqvxjG850v1JhbgA1cE2dqg9M-YyzOGSvAhnxjuwKkUSem5DbtF3YI\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250511_english_hls_91146ecc6c34862_1ta-di_h264/540p.m3u8?hdntl=Expires=1793645467~_GO=Generated~acl=/mumbai/4250511_english_hls_91146ecc6c34862_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_8eaacb28-0a5a-4f~Signature=ATFKiJvXSTmQFMAZVqyjtjKrm68p9dcihUw0ONKqvxjG850v1JhbgA1cE2dqg9M-YyzOGSvAhnxjuwKkUSem5DbtF3YI\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250511_english_hls_91146ecc6c34862_1ta-di_h264/720p.m3u8?hdntl=Expires=1793645467~_GO=Generated~acl=/mumbai/4250511_english_hls_91146ecc6c34862_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_8eaacb28-0a5a-4f~Signature=ATFKiJvXSTmQFMAZVqyjtjKrm68p9dcihUw0ONKqvxjG850v1JhbgA1cE2dqg9M-YyzOGSvAhnxjuwKkUSem5DbtF3YI\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250511_english_hls_91146ecc6c34862_1ta-di_h264/1080p.m3u8?hdntl=Expires=1793645467~_GO=Generated~acl=/mumbai/4250511_english_hls_91146ecc6c34862_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_8eaacb28-0a5a-4f~Signature=ATFKiJvXSTmQFMAZVqyjtjKrm68p9dcihUw0ONKqvxjG850v1JhbgA1cE2dqg9M-YyzOGSvAhnxjuwKkUSem5DbtF3YI"
-    },
-    {
-      "match_id": "4247672",
-      "match_name": "Elche Cf Vs Valencia Cf [English]",
-      "title": "Elche Cf Vs Valencia Cf [English]",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247672_53004_ELC_VAL_FC-Web.png",
-      "language": "English",
-      "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4247672_english_hls_ad27ff9c9a2029_1ta-di_h264/index.m3u8",
-      "status": "LIVE",
-      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4247672_english_hls_ad27ff9c9a2029_1ta-di_h264/240p.m3u8?hdntl=Expires=1793639107~_GO=Generated~acl=/mumbai/4247672_english_hls_ad27ff9c9a2029_1ta-di_h264/*~SessionID=65469799_sportsguruand_0d3bc35b-15b2-4a~Signature=ATFKiJuxcOE2sf37jd-RPMlgF2i_C4cB7V1j-aG9qghFllFhc_p7toZr_av6kWU67r-2TfW-X32F2m5fKpQYuEu2ukkA\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4247672_english_hls_ad27ff9c9a2029_1ta-di_h264/360p.m3u8?hdntl=Expires=1793639107~_GO=Generated~acl=/mumbai/4247672_english_hls_ad27ff9c9a2029_1ta-di_h264/*~SessionID=65469799_sportsguruand_0d3bc35b-15b2-4a~Signature=ATFKiJuxcOE2sf37jd-RPMlgF2i_C4cB7V1j-aG9qghFllFhc_p7toZr_av6kWU67r-2TfW-X32F2m5fKpQYuEu2ukkA\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4247672_english_hls_ad27ff9c9a2029_1ta-di_h264/480p.m3u8?hdntl=Expires=1793639107~_GO=Generated~acl=/mumbai/4247672_english_hls_ad27ff9c9a2029_1ta-di_h264/*~SessionID=65469799_sportsguruand_0d3bc35b-15b2-4a~Signature=ATFKiJuxcOE2sf37jd-RPMlgF2i_C4cB7V1j-aG9qghFllFhc_p7toZr_av6kWU67r-2TfW-X32F2m5fKpQYuEu2ukkA\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4247672_english_hls_ad27ff9c9a2029_1ta-di_h264/540p.m3u8?hdntl=Expires=1793639107~_GO=Generated~acl=/mumbai/4247672_english_hls_ad27ff9c9a2029_1ta-di_h264/*~SessionID=65469799_sportsguruand_0d3bc35b-15b2-4a~Signature=ATFKiJuxcOE2sf37jd-RPMlgF2i_C4cB7V1j-aG9qghFllFhc_p7toZr_av6kWU67r-2TfW-X32F2m5fKpQYuEu2ukkA\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4247672_english_hls_ad27ff9c9a2029_1ta-di_h264/720p.m3u8?hdntl=Expires=1793639107~_GO=Generated~acl=/mumbai/4247672_english_hls_ad27ff9c9a2029_1ta-di_h264/*~SessionID=65469799_sportsguruand_0d3bc35b-15b2-4a~Signature=ATFKiJuxcOE2sf37jd-RPMlgF2i_C4cB7V1j-aG9qghFllFhc_p7toZr_av6kWU67r-2TfW-X32F2m5fKpQYuEu2ukkA\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4247672_english_hls_ad27ff9c9a2029_1ta-di_h264/1080p.m3u8?hdntl=Expires=1793639107~_GO=Generated~acl=/mumbai/4247672_english_hls_ad27ff9c9a2029_1ta-di_h264/*~SessionID=65469799_sportsguruand_0d3bc35b-15b2-4a~Signature=ATFKiJuxcOE2sf37jd-RPMlgF2i_C4cB7V1j-aG9qghFllFhc_p7toZr_av6kWU67r-2TfW-X32F2m5fKpQYuEu2ukkA\n#EXT-X-STREAM-INF:BANDWIDTH=5408736,AVERAGE-BANDWIDTH=5408736,CODECS=\"avc1.64002a,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=50.000\nhttps://in-mc-flive.fancode.com/mumbai/4247672_english_hls_ad27ff9c9a2029_1ta-di_h264/1080p5.m3u8?hdntl=Expires=1793639107~_GO=Generated~acl=/mumbai/4247672_english_hls_ad27ff9c9a2029_1ta-di_h264/*~SessionID=65469799_sportsguruand_0d3bc35b-15b2-4a~Signature=ATFKiJuxcOE2sf37jd-RPMlgF2i_C4cB7V1j-aG9qghFllFhc_p7toZr_av6kWU67r-2TfW-X32F2m5fKpQYuEu2ukkA"
     },
     {
       "match_id": 4249670,
@@ -525,6 +473,54 @@
       "event_name": "AFC Champions League Elite 2026-27",
       "language": "English",
       "startTime": "09:30:00 PM 03-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249008,
+      "title": "Al Hussein vs Al Shorta (AFC Champions League Two 2026-27)",
+      "match_name": "Al Hussein vs Al Shorta",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249008_53057_HUS_SHR_fc-web_1789025065496.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Two 2026-27",
+      "language": "English",
+      "startTime": "09:30:00 PM 03-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250204,
+      "title": "West Indies A vs England Lions (England Lions tour of West Indies, 2026)",
+      "match_name": "West Indies A vs England Lions",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-Mini.png",
+      "event_category": "Cricket",
+      "event_name": "England Lions tour of West Indies, 2026",
+      "language": "English",
+      "startTime": "10:30:00 PM 03-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4248735,
+      "title": "Al Hilal SFC vs Shabab Al Ahli (AFC Champions League Elite 2026-27)",
+      "match_name": "Al Hilal SFC vs Shabab Al Ahli",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248735_53053_AHS_SAA_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Elite 2026-27",
+      "language": "English",
+      "startTime": "11:45:00 PM 03-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250006,
+      "title": "West Bromwich Albion F.C. vs Southampton F.C. (EFL Championship 2026-27)",
+      "match_name": "West Bromwich Albion F.C. vs Southampton F.C.",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250006_52993_WBA_SOU_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "EFL Championship 2026-27",
+      "language": "English",
+      "startTime": "01:30:00 AM 04-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
