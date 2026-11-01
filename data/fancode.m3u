@@ -1,7 +1,13 @@
 #EXTM3U
 # Written and Directed by ✨ A R Y A N ✨
 # Join us on Telegram: https://t.me/aryanstreams
-#DATE:- 11/1/2026, 4:18:01 AM IST
+#DATE:- 11/1/2026, 7:01:39 AM IST
 
-#EXTINF:-1 tvg-id="4250510" tvg-name="Day 3 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Golf_FC-Web_1792760641052.png" tvg-language="English" group-title="Golf",ENG | Day 3 [English]
-https://dai-fancode.pages.dev/mumbai/4250510_english_hls_369601d34022188_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4249669" tvg-name="Tasmania Vs New South Wales [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4249669_53087_TAS_NSW_FC-WEB.jpg" tvg-language="English" group-title="Cricket",ENG | Tasmania Vs New South Wales [English]
+https://dai-fancode.pages.dev/mumbai/4249669_english_hls_0ad52e993333483_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4249670" tvg-name="Victoria Vs Queensland [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4249670_53087_QUN_VCT_FC-WEB.jpg" tvg-language="English" group-title="Cricket",ENG | Victoria Vs Queensland [English]
+https://dai-fancode.pages.dev/mumbai/4249670_english_hls_72230a09d418743_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250325" tvg-name="Bangladesh Vs India [English]" tvg-logo="https://images.fancode.com/aig/match/v1793443733623/4250325_CASACARDS_SPORTY_APP.png" tvg-language="English" group-title="Cricket",ENG | Bangladesh Vs India [English]
+https://dai-fancode.pages.dev/mumbai/4250325_english_hls_00493f9e9683011_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="139983" tvg-name="Race Day [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Petronas-Grand-Prix-of-Malaysia_fc-web.jpg" tvg-language="English" group-title="MotoGP",ENG | Race Day [English]
+https://dai-fancode.pages.dev/mumbai/139983_english_hls_919a9f8e1987742_1ta-di_h264/index.m3u8
