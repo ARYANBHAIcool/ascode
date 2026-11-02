@@ -1,17 +1,19 @@
 #EXTM3U
 # Written and Directed by ✨ A R Y A N ✨
 # Join us on Telegram: https://t.me/aryanstreams
-#DATE:- 11/2/2026, 3:29:49 PM IST
+#DATE:- 11/3/2026, 1:19:52 AM IST
 
-#EXTINF:-1 tvg-id="4250520" tvg-name="Oman Vs Netherlands [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/ICC-CWC-League_Web-match-card.png" tvg-language="English" group-title="Cricket",ENG | Oman Vs Netherlands [English]
-https://dai-fancode.pages.dev/mumbai/4250520_english_hls_59af97507c90476_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4250364" tvg-name="Karnali Yaks Vs Kathmandu Gurkhas [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250364_53124_KMG_KNY_fc-Web.jpg" tvg-language="English" group-title="Cricket",ENG | Karnali Yaks Vs Kathmandu Gurkhas [English]
-https://dai-fancode.pages.dev/mumbai/4250364_english_hls_fbaf854a5c55408_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4250394" tvg-name="Perth Scorchers Women Vs Melbourne Stars Women [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250394_53125_MS-W_PS-W_fc-web_1793352701258.jpg" tvg-language="English" group-title="Cricket",ENG | Perth Scorchers Women Vs Melbourne Stars Women [English]
-https://dai-fancode.pages.dev/mumbai/4250394_english_hls_6842beeecc93132_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4250547" tvg-name="Court 2 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Rolex-Paris-Masters_fc-web.jpg" tvg-language="English" group-title="Tennis",ENG | Court 2 [English]
-https://dai-fancode.pages.dev/mumbai/4250547_english_hls_86bc2823d575763_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250501" tvg-name="Dubai Vs Sharjah [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250501_53130_DUB_SHA_fc-web_1792412930100.jpg" tvg-language="English" group-title="Cricket",ENG | Dubai Vs Sharjah [English]
+https://dai-fancode.pages.dev/mumbai/4250501_english_hls_ab493c21a565424_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4248732" tvg-name="Al Ittihad Vs Al Ain [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248732_53053_ITT_AAI_fc-web.jpg" tvg-language="English" group-title="Football",ENG | Al Ittihad Vs Al Ain [English]
+https://dai-fancode.pages.dev/mumbai/4248732_english_hls_1b9e148e1247439_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4248733" tvg-name="Al Gharafa Vs Al Qadisiyah [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248733_53053_AGH_ALQ_fc-web.jpg" tvg-language="English" group-title="Football",ENG | Al Gharafa Vs Al Qadisiyah [English]
+https://dai-fancode.pages.dev/mumbai/4248733_english_hls_0194875fca800_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="4250548" tvg-name="Court 1 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Rolex-Paris-Masters_fc-web.jpg" tvg-language="English" group-title="Tennis",ENG | Court 1 [English]
 https://dai-fancode.pages.dev/mumbai/4250548_english_hls_dc9ffe730c203_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="4250549" tvg-name="World Feed [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Rolex-Paris-Masters_fc-web.jpg" tvg-language="English" group-title="Tennis",ENG | World Feed [English]
 https://dai-fancode.pages.dev/mumbai/4250549_english_hls_cd610edfc088949_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250550" tvg-name="Court Central [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Rolex-Paris-Masters_fc-web.jpg" tvg-language="English" group-title="Tennis",ENG | Court Central [English]
+https://dai-fancode.pages.dev/mumbai/4250550_english_hls_af88dc9fb09822_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250629_ENG" tvg-name="RCD Mallorca vs Cadiz [English]" tvg-logo="https://images.fancode.com/aig/match/v1793599298969/4250629_CASACARDS_APP.png" tvg-language="English" group-title="Football",ENG | RCD Mallorca vs Cadiz [English]
+https://dai-fancode.pages.dev/mumbai/4250629_english_hls_ae2f69962270906_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
