@@ -1,9 +1,21 @@
 #EXTM3U
 # Written and Directed by ✨ A R Y A N ✨
 # Join us on Telegram: https://t.me/aryanstreams
-#DATE:- 11/3/2026, 2:28:57 PM IST
+#DATE:- 11/3/2026, 3:28:43 PM IST
 
 #EXTINF:-1 tvg-id="4250366" tvg-name="Biratnagar Kings Vs Janakpur Bolts [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250366_53124_BK_JKB_fc-Web_1793616701848.jpg" tvg-language="English" group-title="Cricket",ENG | Biratnagar Kings Vs Janakpur Bolts [English]
 https://dai-fancode.pages.dev/mumbai/4250366_english_hls_88259a4e5e85082_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="4248736" tvg-name="Newcastle Jets Vs Shanghai Port [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248736_53053_NJ_SHG_fc-web.jpg" tvg-language="English" group-title="Football",ENG | Newcastle Jets Vs Shanghai Port [English]
 https://dai-fancode.pages.dev/mumbai/4248736_english_hls_00cc8fff6212802_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4248737" tvg-name="Jeonbuk Motors Vs Johor Darul Ta'zim [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248737_53053_JNB_JDT_fc-web.jpg" tvg-language="English" group-title="Football",ENG | Jeonbuk Motors Vs Johor Darul Ta'zim [English]
+https://dai-fancode.pages.dev/mumbai/4248737_english_hls_9807c908ca75444_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4248738" tvg-name="Vissel Kobe Vs Ratchaburi [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248738_53053_VIS_RAT_fc-web.jpg" tvg-language="English" group-title="Football",ENG | Vissel Kobe Vs Ratchaburi [English]
+https://dai-fancode.pages.dev/mumbai/4248738_english_hls_b33098290730441_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4248739" tvg-name="Kashiwa Reysol Vs Daejeon Hana Citizen Fc [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4248739_53053_REY_DAC_fc-web.jpg" tvg-language="English" group-title="Football",ENG | Kashiwa Reysol Vs Daejeon Hana Citizen Fc [English]
+https://dai-fancode.pages.dev/mumbai/4248739_english_hls_d42be6862981210_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250551" tvg-name="Court 1 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Rolex-Paris-Masters_fc-web.jpg" tvg-language="English" group-title="Tennis",ENG | Court 1 [English]
+https://dai-fancode.pages.dev/mumbai/4250551_english_hls_f43aad1fa760894_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250552" tvg-name="World Feed [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Rolex-Paris-Masters_fc-web.jpg" tvg-language="English" group-title="Tennis",ENG | World Feed [English]
+https://dai-fancode.pages.dev/mumbai/4250552_english_hls_0f67fd0f6498945_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250554" tvg-name="Court 2 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Rolex-Paris-Masters_fc-web.jpg" tvg-language="English" group-title="Tennis",ENG | Court 2 [English]
+https://dai-fancode.pages.dev/mumbai/4250554_english_hls_6b1499b9d656750_1ta-di_h264/index.m3u8
