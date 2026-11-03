@@ -2,7 +2,7 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "11/3/2026, 10:27:43 PM IST",
+  "last_updated": "11/3/2026, 11:15:08 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -170,18 +170,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250504,
-      "title": "TBC vs TBC (Emirates D20, 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "Emirates D20, 2026",
-      "language": "English",
-      "startTime": "06:00:00 PM 04-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4248735,
       "title": "Al Hilal SFC vs Shabab Al Ahli (AFC Champions League Elite 2026-27)",
       "match_name": "Al Hilal SFC vs Shabab Al Ahli",
@@ -190,6 +178,18 @@
       "event_name": "AFC Champions League Elite 2026-27",
       "language": "English",
       "startTime": "11:45:00 PM 03-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250504,
+      "title": "TBC vs TBC (Emirates D20, 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "Emirates D20, 2026",
+      "language": "English",
+      "startTime": "06:00:00 PM 04-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -206,18 +206,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4249009,
-      "title": "Melbourne Victory vs Persib Bandung (AFC Champions League Two 2026-27)",
-      "match_name": "Melbourne Victory vs Persib Bandung",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249009_53057_MLV_PER_fc-web_1789025065711.jpg",
-      "event_category": "Football",
-      "event_name": "AFC Champions League Two 2026-27",
-      "language": "English",
-      "startTime": "01:15:00 PM 04-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250505,
       "title": "TBC vs TBC (Emirates D20, 2026)",
       "match_name": "TBC vs TBC",
@@ -226,6 +214,18 @@
       "event_name": "Emirates D20, 2026",
       "language": "English",
       "startTime": "10:00:00 PM 04-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249009,
+      "title": "Melbourne Victory vs Persib Bandung (AFC Champions League Two 2026-27)",
+      "match_name": "Melbourne Victory vs Persib Bandung",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249009_53057_MLV_PER_fc-web_1789025065711.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Two 2026-27",
+      "language": "English",
+      "startTime": "01:15:00 PM 04-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
