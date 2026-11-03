@@ -1,7 +1,7 @@
 #EXTM3U
 # Written and Directed by ✨ A R Y A N ✨
 # Join us on Telegram: https://t.me/aryanstreams
-#DATE:- 11/3/2026, 1:46:51 AM IST
+#DATE:- 11/3/2026, 7:23:14 AM IST
 
 #EXTINF:-1 tvg-id="4250501" tvg-name="Dubai Vs Sharjah [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250501_53130_DUB_SHA_fc-web_1792412930100.jpg" tvg-language="English" group-title="Cricket",ENG | Dubai Vs Sharjah [English]
 https://dai-fancode.pages.dev/mumbai/4250501_english_hls_ab493c21a565424_1ta-di_h264/index.m3u8
@@ -15,5 +15,5 @@ https://dai-fancode.pages.dev/mumbai/4250548_english_hls_dc9ffe730c203_1ta-di_h2
 https://dai-fancode.pages.dev/mumbai/4250549_english_hls_cd610edfc088949_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="4250550" tvg-name="Court Central [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Rolex-Paris-Masters_fc-web.jpg" tvg-language="English" group-title="Tennis",ENG | Court Central [English]
 https://dai-fancode.pages.dev/mumbai/4250550_english_hls_af88dc9fb09822_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4250629_ENG" tvg-name="RCD Mallorca vs Cadiz [English]" tvg-logo="https://images.fancode.com/aig/match/v1793599298969/4250629_CASACARDS_APP.png" tvg-language="English" group-title="Football",ENG | RCD Mallorca vs Cadiz [English]
-https://dai-fancode.pages.dev/mumbai/4250629_english_hls_ae2f69962270906_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
+#EXTINF:-1 tvg-id="4249670_ENG" tvg-name="Victoria vs Queensland [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4249670_53087_QUN_VCT_FC-WEB.jpg" tvg-language="English" group-title="Cricket",ENG | Victoria vs Queensland [English]
+https://dai-fancode.pages.dev/mumbai/4249670_english_hls_72230a09d488245_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
