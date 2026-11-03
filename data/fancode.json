@@ -2,7 +2,7 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "11/3/2026, 7:23:14 AM IST",
+  "last_updated": "11/3/2026, 7:59:16 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -294,6 +294,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4250395,
+      "title": "Hobart Hurricanes Women vs Melbourne Renegades Women (Women's Big Bash League, 2026)",
+      "match_name": "Hobart Hurricanes Women vs Melbourne Renegades Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250395_53125_HB-W_MR-W_fc-web_1793352702028.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
+      "language": "English",
+      "startTime": "01:40:00 PM 04-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4250551,
       "title": "ATP - Rolex Paris Masters 2026 vs Paris, France (ATP Masters - Rolex Paris Masters 2026)",
       "match_name": "ATP - Rolex Paris Masters 2026",
@@ -342,18 +354,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250395,
-      "title": "Hobart Hurricanes Women vs Melbourne Renegades Women (Women's Big Bash League, 2026)",
-      "match_name": "Hobart Hurricanes Women vs Melbourne Renegades Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250395_53125_HB-W_MR-W_fc-web_1793352702028.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
-      "language": "English",
-      "startTime": "01:40:00 PM 04-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4249009,
       "title": "Melbourne Victory vs Persib Bandung (AFC Champions League Two 2026-27)",
       "match_name": "Melbourne Victory vs Persib Bandung",
@@ -390,6 +390,18 @@
       "stream_url": ""
     },
     {
+      "match_id": 4250504,
+      "title": "TBC vs TBC (Emirates D20, 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "Emirates D20, 2026",
+      "language": "English",
+      "startTime": "06:00:00 PM 04-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4250250,
       "title": "Bam Khatoon FC vs Naegohyang Women's FC (AFC Women's Champions League 2026-27)",
       "match_name": "Bam Khatoon FC vs Naegohyang Women's FC",
@@ -410,18 +422,6 @@
       "event_name": "AFC Women's Champions League 2026-27",
       "language": "English",
       "startTime": "02:00:00 PM 04-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250504,
-      "title": "TBC vs TBC (Emirates D20, 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "Emirates D20, 2026",
-      "language": "English",
-      "startTime": "06:00:00 PM 04-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
