@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "11/4/2026, 3:08:50 PM IST",
+  "last_updated": "11/4/2026, 3:39:56 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 9,
+  "live_matches": 10,
   "matches": [
     {
       "match_id": "4250521",
@@ -41,19 +41,32 @@
       "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250395_english_hls_e4b3957daa9486_1ta-di_h264/240p.m3u8?hdntl=Expires=1793865484~_GO=Generated~acl=/mumbai/4250395_english_hls_e4b3957daa9486_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_0c938bb0-4f35-4d~Signature=AV7HGj6YjdqI_GDX05Yg-XEv05ttQiMI7tE5FW0aOIms-q4ik0eZ6AeCo-3nBSBjJTWcsIM_X2mZW2jO0r9j7SObD1kP\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250395_english_hls_e4b3957daa9486_1ta-di_h264/360p.m3u8?hdntl=Expires=1793865484~_GO=Generated~acl=/mumbai/4250395_english_hls_e4b3957daa9486_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_0c938bb0-4f35-4d~Signature=AV7HGj6YjdqI_GDX05Yg-XEv05ttQiMI7tE5FW0aOIms-q4ik0eZ6AeCo-3nBSBjJTWcsIM_X2mZW2jO0r9j7SObD1kP\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250395_english_hls_e4b3957daa9486_1ta-di_h264/480p.m3u8?hdntl=Expires=1793865484~_GO=Generated~acl=/mumbai/4250395_english_hls_e4b3957daa9486_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_0c938bb0-4f35-4d~Signature=AV7HGj6YjdqI_GDX05Yg-XEv05ttQiMI7tE5FW0aOIms-q4ik0eZ6AeCo-3nBSBjJTWcsIM_X2mZW2jO0r9j7SObD1kP\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250395_english_hls_e4b3957daa9486_1ta-di_h264/540p.m3u8?hdntl=Expires=1793865484~_GO=Generated~acl=/mumbai/4250395_english_hls_e4b3957daa9486_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_0c938bb0-4f35-4d~Signature=AV7HGj6YjdqI_GDX05Yg-XEv05ttQiMI7tE5FW0aOIms-q4ik0eZ6AeCo-3nBSBjJTWcsIM_X2mZW2jO0r9j7SObD1kP\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250395_english_hls_e4b3957daa9486_1ta-di_h264/720p.m3u8?hdntl=Expires=1793865484~_GO=Generated~acl=/mumbai/4250395_english_hls_e4b3957daa9486_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_0c938bb0-4f35-4d~Signature=AV7HGj6YjdqI_GDX05Yg-XEv05ttQiMI7tE5FW0aOIms-q4ik0eZ6AeCo-3nBSBjJTWcsIM_X2mZW2jO0r9j7SObD1kP\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250395_english_hls_e4b3957daa9486_1ta-di_h264/1080p.m3u8?hdntl=Expires=1793865484~_GO=Generated~acl=/mumbai/4250395_english_hls_e4b3957daa9486_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_0c938bb0-4f35-4d~Signature=AV7HGj6YjdqI_GDX05Yg-XEv05ttQiMI7tE5FW0aOIms-q4ik0eZ6AeCo-3nBSBjJTWcsIM_X2mZW2jO0r9j7SObD1kP"
     },
     {
-      "match_id": "4249009",
-      "match_name": "Melbourne Victory Vs Persib Bandung [English]",
-      "title": "Melbourne Victory Vs Persib Bandung [English]",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249009_53057_MLV_PER_fc-web_1789025065711.jpg",
+      "match_id": "4248742",
+      "match_name": "Pohang Steelers Vs Gamba Osaka [English]",
+      "title": "Pohang Steelers Vs Gamba Osaka [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248742_53053_PHG_OSK_fc-web.jpg",
       "language": "English",
       "event_category": "Football",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249009_english_hls_3cee20df9032217_1ta-di_h264/index.m3u8",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4248742_english_hls_704e0f513640525_1ta-di_h264/index.m3u8",
       "status": "LIVE",
-      "startTime": "01:15:00 PM 04-11-2026",
-      "team_1": "Melbourne Victory",
-      "team_2": "Persib Bandung",
-      "event_name": "AFC Champions League Two 2026-27",
-      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4249009_english_hls_3cee20df9032217_1ta-di_h264/240p.m3u8?hdntl=Expires=1793864224~_GO=Generated~acl=/mumbai/4249009_english_hls_3cee20df9032217_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_ed78d987-92d1-4e~Signature=AV7HGj6UFLPBX6k4YmELBRz1bWGnsYnOZHGQx-jd6EHIgHznSlsIntiqOulnTAem8LBmCRd7R6litarBcdlC1f2xri8I\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4249009_english_hls_3cee20df9032217_1ta-di_h264/360p.m3u8?hdntl=Expires=1793864224~_GO=Generated~acl=/mumbai/4249009_english_hls_3cee20df9032217_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_ed78d987-92d1-4e~Signature=AV7HGj6UFLPBX6k4YmELBRz1bWGnsYnOZHGQx-jd6EHIgHznSlsIntiqOulnTAem8LBmCRd7R6litarBcdlC1f2xri8I\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4249009_english_hls_3cee20df9032217_1ta-di_h264/480p.m3u8?hdntl=Expires=1793864224~_GO=Generated~acl=/mumbai/4249009_english_hls_3cee20df9032217_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_ed78d987-92d1-4e~Signature=AV7HGj6UFLPBX6k4YmELBRz1bWGnsYnOZHGQx-jd6EHIgHznSlsIntiqOulnTAem8LBmCRd7R6litarBcdlC1f2xri8I\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4249009_english_hls_3cee20df9032217_1ta-di_h264/540p.m3u8?hdntl=Expires=1793864224~_GO=Generated~acl=/mumbai/4249009_english_hls_3cee20df9032217_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_ed78d987-92d1-4e~Signature=AV7HGj6UFLPBX6k4YmELBRz1bWGnsYnOZHGQx-jd6EHIgHznSlsIntiqOulnTAem8LBmCRd7R6litarBcdlC1f2xri8I\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4249009_english_hls_3cee20df9032217_1ta-di_h264/720p.m3u8?hdntl=Expires=1793864224~_GO=Generated~acl=/mumbai/4249009_english_hls_3cee20df9032217_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_ed78d987-92d1-4e~Signature=AV7HGj6UFLPBX6k4YmELBRz1bWGnsYnOZHGQx-jd6EHIgHznSlsIntiqOulnTAem8LBmCRd7R6litarBcdlC1f2xri8I\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4249009_english_hls_3cee20df9032217_1ta-di_h264/1080p.m3u8?hdntl=Expires=1793864224~_GO=Generated~acl=/mumbai/4249009_english_hls_3cee20df9032217_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_ed78d987-92d1-4e~Signature=AV7HGj6UFLPBX6k4YmELBRz1bWGnsYnOZHGQx-jd6EHIgHznSlsIntiqOulnTAem8LBmCRd7R6litarBcdlC1f2xri8I"
+      "startTime": "03:30:00 PM 04-11-2026",
+      "team_1": "Pohang Steelers",
+      "team_2": "Gamba Osaka",
+      "event_name": "AFC Champions League Elite 2026-27"
+    },
+    {
+      "match_id": "4249010",
+      "match_name": "Seoul Vs The Cong   Viettel Fc [English]",
+      "title": "Seoul Vs The Cong   Viettel Fc [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249010_53057_SE_CV_fc-web_1789025065555.jpg",
+      "language": "English",
+      "event_category": "Football",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249010_english_hls_04468d42f594603_1ta-di_h264/index.m3u8",
+      "status": "LIVE",
+      "startTime": "03:30:00 PM 04-11-2026",
+      "team_1": "Seoul",
+      "team_2": "The Cong - Viettel FC",
+      "event_name": "AFC Champions League Two 2026-27"
     },
     {
       "match_id": "4250250",
@@ -166,30 +179,6 @@
       "event_name": "Emirates D20, 2026",
       "language": "English",
       "startTime": "10:00:00 PM 04-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4248742,
-      "title": "Pohang Steelers vs Gamba Osaka (AFC Champions League Elite 2026-27)",
-      "match_name": "Pohang Steelers vs Gamba Osaka",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248742_53053_PHG_OSK_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "AFC Champions League Elite 2026-27",
-      "language": "English",
-      "startTime": "03:30:00 PM 04-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249010,
-      "title": "Seoul vs The Cong - Viettel FC (AFC Champions League Two 2026-27)",
-      "match_name": "Seoul vs The Cong - Viettel FC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249010_53057_SE_CV_fc-web_1789025065555.jpg",
-      "event_category": "Football",
-      "event_name": "AFC Champions League Two 2026-27",
-      "language": "English",
-      "startTime": "03:30:00 PM 04-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -350,18 +339,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250007,
-      "title": "Bristol City F.C. vs Wolverhampton Wanderers F.C. (EFL Championship 2026-27)",
-      "match_name": "Bristol City F.C. vs Wolverhampton Wanderers F.C.",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250007_52993_BRI_WOL_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "EFL Championship 2026-27",
-      "language": "English",
-      "startTime": "01:30:00 AM 05-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250397,
       "title": "Sydney Thunder Women vs Perth Scorchers Women (Women's Big Bash League, 2026)",
       "match_name": "Sydney Thunder Women vs Perth Scorchers Women",
@@ -370,6 +347,18 @@
       "event_name": "Women's Big Bash League, 2026",
       "language": "English",
       "startTime": "01:40:00 PM 05-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250007,
+      "title": "Bristol City F.C. vs Wolverhampton Wanderers F.C. (EFL Championship 2026-27)",
+      "match_name": "Bristol City F.C. vs Wolverhampton Wanderers F.C.",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250007_52993_BRI_WOL_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "EFL Championship 2026-27",
+      "language": "English",
+      "startTime": "01:30:00 AM 05-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -514,6 +503,18 @@
       "event_name": "BWF Super 500 -  Korea Open 2026",
       "language": "English",
       "startTime": "06:30:00 AM 05-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250608,
+      "title": "Day 1 vs Mission Hills, China (Aramco China Championship 2026)",
+      "match_name": "Day 1",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Aramco-China-Championship_Web-match-card.png",
+      "event_category": "Golf",
+      "event_name": "Aramco China Championship 2026",
+      "language": "English",
+      "startTime": "11:00:00 AM 05-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
