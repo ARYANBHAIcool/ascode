@@ -1,5 +1,23 @@
 #EXTM3U
 # Written and Directed by ✨ A R Y A N ✨
 # Join us on Telegram: https://t.me/aryanstreams
-#DATE:- 11/4/2026, 8:16:04 AM IST
+#DATE:- 11/4/2026, 3:08:50 PM IST
 
+#EXTINF:-1 tvg-id="4250521" tvg-name="United Arab Emirates Vs Oman [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/ICC-CWC-League_Web-match-card.png" tvg-language="English" group-title="Cricket",ENG | United Arab Emirates Vs Oman [English]
+https://dai-fancode.pages.dev/mumbai/4250521_english_hls_67c3c2083472952_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250395" tvg-name="Hobart Hurricanes Women Vs Melbourne Renegades Women [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250395_53125_HB-W_MR-W_fc-web_1793352702028.jpg" tvg-language="English" group-title="Cricket",ENG | Hobart Hurricanes Women Vs Melbourne Renegades Women [English]
+https://dai-fancode.pages.dev/mumbai/4250395_english_hls_e4b3957daa9486_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4249009" tvg-name="Melbourne Victory Vs Persib Bandung [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4249009_53057_MLV_PER_fc-web_1789025065711.jpg" tvg-language="English" group-title="Football",ENG | Melbourne Victory Vs Persib Bandung [English]
+https://dai-fancode.pages.dev/mumbai/4249009_english_hls_3cee20df9032217_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250250" tvg-name="Bam Khatoon Fc Vs Naegohyang Women's Fc [English]" tvg-logo="https://images.fancode.com/aig/match/v1793533399050/4250250_CASACARDS_SPORTY_APP.png" tvg-language="English" group-title="Football",ENG | Bam Khatoon Fc Vs Naegohyang Women's Fc [English]
+https://dai-fancode.pages.dev/mumbai/4250250_english_hls_d3bc5c7ed325175_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250256" tvg-name="4.25 Sc Women Vs Ho Chi Minh City Women [English]" tvg-logo="https://images.fancode.com/aig/match/v1793533399050/4250256_CASACARDS_SPORTY_APP.png" tvg-language="English" group-title="Football",ENG | 4.25 Sc Women Vs Ho Chi Minh City Women [English]
+https://dai-fancode.pages.dev/mumbai/4250256_english_hls_debc0d36fb68671_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250555" tvg-name="Court 2 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Rolex-Paris-Masters_fc-web.jpg" tvg-language="English" group-title="Tennis",ENG | Court 2 [English]
+https://dai-fancode.pages.dev/mumbai/4250555_english_hls_2f6e1265bd94660_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250556" tvg-name="Court 1 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Rolex-Paris-Masters_fc-web.jpg" tvg-language="English" group-title="Tennis",ENG | Court 1 [English]
+https://dai-fancode.pages.dev/mumbai/4250556_english_hls_29cd6c5f7087053_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250557" tvg-name="World Feed [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Rolex-Paris-Masters_fc-web.jpg" tvg-language="English" group-title="Tennis",ENG | World Feed [English]
+https://dai-fancode.pages.dev/mumbai/4250557_english_hls_f271ef0bfa17291_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250558" tvg-name="Court 3 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Rolex-Paris-Masters_fc-web.jpg" tvg-language="English" group-title="Tennis",ENG | Court 3 [English]
+https://dai-fancode.pages.dev/mumbai/4250558_english_hls_ce2c31320352771_1ta-di_h264/index.m3u8
