@@ -2,7 +2,7 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "11/5/2026, 11:49:53 PM IST",
+  "last_updated": "11/6/2026, 12:34:08 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -169,18 +169,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250609,
-      "title": "Day 2 vs Mission Hills, China (Aramco China Championship 2026)",
-      "match_name": "Day 2",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Aramco-China-Championship_Web-match-card.png",
-      "event_category": "Golf",
-      "event_name": "Aramco China Championship 2026",
-      "language": "English",
-      "startTime": "11:00:00 AM 06-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250588,
       "title": "Castellón vs Eibar (LALIGA Hypermotion 2026-27)",
       "match_name": "Castellón vs Eibar",
@@ -189,6 +177,18 @@
       "event_name": "LALIGA Hypermotion 2026-27",
       "language": "English",
       "startTime": "01:00:00 AM 07-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250609,
+      "title": "Day 2 vs Mission Hills, China (Aramco China Championship 2026)",
+      "match_name": "Day 2",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Aramco-China-Championship_Web-match-card.png",
+      "event_category": "Golf",
+      "event_name": "Aramco China Championship 2026",
+      "language": "English",
+      "startTime": "11:00:00 AM 06-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
