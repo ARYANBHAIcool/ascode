@@ -1,9 +1,29 @@
 #EXTM3U
 # Written and Directed by ✨ A R Y A N ✨
 # Join us on Telegram: https://t.me/aryanstreams
-#DATE:- 11/5/2026, 9:14:54 AM IST
+#DATE:- 11/5/2026, 4:16:36 PM IST
 
 #EXTINF:-1 tvg-id="4250527" tvg-name="West Indies Vs Bangladesh [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/West-Indies-tour-of-Bangladesh-web-.jpg" tvg-language="English" group-title="Cricket",ENG | West Indies Vs Bangladesh [English]
 https://dai-fancode.pages.dev/mumbai/4250527_english_hls_370c6945842186_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4249772" tvg-name="Zimbabwe Vs Afghanistan [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/AFG-vs-ZIM_Test_fc-web.jpg" tvg-language="English" group-title="Cricket",ENG | Zimbabwe Vs Afghanistan [English]
+https://dai-fancode.pages.dev/mumbai/4249772_english_hls_ea87fdf83410465_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250368" tvg-name="Lumbini Lions Vs Janakpur Bolts [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250368_53124_LBL_JKB_fc-Web_1793616701591.jpg" tvg-language="English" group-title="Cricket",ENG | Lumbini Lions Vs Janakpur Bolts [English]
+https://dai-fancode.pages.dev/mumbai/4250368_english_hls_7ea136c62c30127_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250397" tvg-name="Perth Scorchers Women Vs Sydney Thunder Women [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250397_53125_ST-W_PS-W_fc-web_1793352702086.jpg" tvg-language="English" group-title="Cricket",ENG | Perth Scorchers Women Vs Sydney Thunder Women [English]
+https://dai-fancode.pages.dev/mumbai/4250397_english_hls_6c8073e58c25460_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="4250603" tvg-name="Round Of 16 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/BWF-Korean-Open-web-2.png" tvg-language="English" group-title="Badminton",ENG | Round Of 16 [English]
 https://dai-fancode.pages.dev/mumbai/4250603_english_hls_ef3001b64b61956_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250608" tvg-name="Day 1 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Aramco-China-Championship_Web-match-card.png" tvg-language="English" group-title="Golf",ENG | Day 1 [English]
+https://dai-fancode.pages.dev/mumbai/4250608_english_hls_3f30a1cfe72793_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4249011_ENG" tvg-name="Lion City Sailors vs Adelaide United [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4249011_53057_LIO_ADL_fc-web_1789025066009.jpg" tvg-language="English" group-title="Football",ENG | Lion City Sailors vs Adelaide United [English]
+https://dai-fancode.pages.dev/mumbai/4249011_english_hls_c89ad8931778425_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
+#EXTINF:-1 tvg-id="4249013_ENG" tvg-name="Machida Zelvia vs Shanghai Shenhua [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4249013_53057_MZ_SHN_fc-web_1789025065413.jpg" tvg-language="English" group-title="Football",ENG | Machida Zelvia vs Shanghai Shenhua [English]
+https://dai-fancode.pages.dev/mumbai/4249013_english_hls_df8ece92c542206_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
+#EXTINF:-1 tvg-id="4249015_ENG" tvg-name="Kitchee SC vs Phnom Penh Crown [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4249015_53057_KIT_PPC_fc-web_1789025065807.jpg" tvg-language="English" group-title="Football",ENG | Kitchee SC vs Phnom Penh Crown [English]
+https://dai-fancode.pages.dev/mumbai/4249015_english_hls_028a1a39027561_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
+#EXTINF:-1 tvg-id="4250559_ENG" tvg-name="World Feed [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Rolex-Paris-Masters_fc-web.jpg" tvg-language="English" group-title="Tennis",ENG | World Feed [English]
+https://dai-fancode.pages.dev/mumbai/4250559_english_hls_cc6d0bad3541603_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
+#EXTINF:-1 tvg-id="4250560_ENG" tvg-name="Court 1 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Rolex-Paris-Masters_fc-web.jpg" tvg-language="English" group-title="Tennis",ENG | Court 1 [English]
+https://dai-fancode.pages.dev/mumbai/4250560_english_hls_bfc9da6b9213120_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
+#EXTINF:-1 tvg-id="4250561_ENG" tvg-name="Court 2 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Rolex-Paris-Masters_fc-web.jpg" tvg-language="English" group-title="Tennis",ENG | Court 2 [English]
+https://dai-fancode.pages.dev/mumbai/4250561_english_hls_fb1c637ed552842_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
