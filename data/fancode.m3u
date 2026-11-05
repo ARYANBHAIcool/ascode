@@ -1,7 +1,7 @@
 #EXTM3U
 # Written and Directed by ✨ A R Y A N ✨
 # Join us on Telegram: https://t.me/aryanstreams
-#DATE:- 11/5/2026, 4:16:36 PM IST
+#DATE:- 11/5/2026, 5:13:36 PM IST
 
 #EXTINF:-1 tvg-id="4250527" tvg-name="West Indies Vs Bangladesh [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/West-Indies-tour-of-Bangladesh-web-.jpg" tvg-language="English" group-title="Cricket",ENG | West Indies Vs Bangladesh [English]
 https://dai-fancode.pages.dev/mumbai/4250527_english_hls_370c6945842186_1ta-di_h264/index.m3u8
@@ -15,6 +15,8 @@ https://dai-fancode.pages.dev/mumbai/4250397_english_hls_6c8073e58c25460_1ta-di_
 https://dai-fancode.pages.dev/mumbai/4250603_english_hls_ef3001b64b61956_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="4250608" tvg-name="Day 1 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Aramco-China-Championship_Web-match-card.png" tvg-language="English" group-title="Golf",ENG | Day 1 [English]
 https://dai-fancode.pages.dev/mumbai/4250608_english_hls_3f30a1cfe72793_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250369_ENG" tvg-name="Biratnagar Kings vs Kathmandu Gorkhas [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250369_53124_KMG_BK_fc-Web_1793616701857.jpg" tvg-language="English" group-title="Cricket",ENG | Biratnagar Kings vs Kathmandu Gorkhas [English]
+https://dai-fancode.pages.dev/mumbai/4250369_english_hls_41beb5797488624_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
 #EXTINF:-1 tvg-id="4249011_ENG" tvg-name="Lion City Sailors vs Adelaide United [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4249011_53057_LIO_ADL_fc-web_1789025066009.jpg" tvg-language="English" group-title="Football",ENG | Lion City Sailors vs Adelaide United [English]
 https://dai-fancode.pages.dev/mumbai/4249011_english_hls_c89ad8931778425_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
 #EXTINF:-1 tvg-id="4249013_ENG" tvg-name="Machida Zelvia vs Shanghai Shenhua [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4249013_53057_MZ_SHN_fc-web_1789025065413.jpg" tvg-language="English" group-title="Football",ENG | Machida Zelvia vs Shanghai Shenhua [English]

@@ -2,13 +2,13 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "11/5/2026, 4:16:36 PM IST",
+  "last_updated": "11/5/2026, 5:13:36 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 42,
-  "live_matches": 12,
+  "total_matches": 44,
+  "live_matches": 13,
   "matches": [
     {
       "match_id": "4250527",
@@ -49,10 +49,6 @@
       "event_category": "Cricket",
       "stream_url": "https://dai-fancode.pages.dev/mumbai/4250368_english_hls_7ea136c62c30127_1ta-di_h264/index.m3u8",
       "status": "LIVE",
-      "startTime": "12:15:00 PM 05-11-2026",
-      "team_1": "Lumbini Lions",
-      "team_2": "Janakpur Bolts",
-      "event_name": "Nepal Premier League Season 3, 2026",
       "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250368_english_hls_7ea136c62c30127_1ta-di_h264/240p.m3u8?hdntl=Expires=1793946607~_GO=Generated~acl=/mumbai/4250368_english_hls_7ea136c62c30127_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_70d97246-d20c-49~Signature=AV7HGj7JH_snu-fxVnpJHzh3XdjrB9GU0rKe4JaLb5aN_dN2drq8ZzIC0h-2NydUJMkdX5xtMkJzMzoYlTu-RHnl-30O\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250368_english_hls_7ea136c62c30127_1ta-di_h264/360p.m3u8?hdntl=Expires=1793946607~_GO=Generated~acl=/mumbai/4250368_english_hls_7ea136c62c30127_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_70d97246-d20c-49~Signature=AV7HGj7JH_snu-fxVnpJHzh3XdjrB9GU0rKe4JaLb5aN_dN2drq8ZzIC0h-2NydUJMkdX5xtMkJzMzoYlTu-RHnl-30O\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250368_english_hls_7ea136c62c30127_1ta-di_h264/480p.m3u8?hdntl=Expires=1793946607~_GO=Generated~acl=/mumbai/4250368_english_hls_7ea136c62c30127_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_70d97246-d20c-49~Signature=AV7HGj7JH_snu-fxVnpJHzh3XdjrB9GU0rKe4JaLb5aN_dN2drq8ZzIC0h-2NydUJMkdX5xtMkJzMzoYlTu-RHnl-30O\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250368_english_hls_7ea136c62c30127_1ta-di_h264/540p.m3u8?hdntl=Expires=1793946607~_GO=Generated~acl=/mumbai/4250368_english_hls_7ea136c62c30127_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_70d97246-d20c-49~Signature=AV7HGj7JH_snu-fxVnpJHzh3XdjrB9GU0rKe4JaLb5aN_dN2drq8ZzIC0h-2NydUJMkdX5xtMkJzMzoYlTu-RHnl-30O\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250368_english_hls_7ea136c62c30127_1ta-di_h264/720p.m3u8?hdntl=Expires=1793946607~_GO=Generated~acl=/mumbai/4250368_english_hls_7ea136c62c30127_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_70d97246-d20c-49~Signature=AV7HGj7JH_snu-fxVnpJHzh3XdjrB9GU0rKe4JaLb5aN_dN2drq8ZzIC0h-2NydUJMkdX5xtMkJzMzoYlTu-RHnl-30O\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250368_english_hls_7ea136c62c30127_1ta-di_h264/1080p.m3u8?hdntl=Expires=1793946607~_GO=Generated~acl=/mumbai/4250368_english_hls_7ea136c62c30127_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_70d97246-d20c-49~Signature=AV7HGj7JH_snu-fxVnpJHzh3XdjrB9GU0rKe4JaLb5aN_dN2drq8ZzIC0h-2NydUJMkdX5xtMkJzMzoYlTu-RHnl-30O"
     },
     {
@@ -64,10 +60,6 @@
       "event_category": "Cricket",
       "stream_url": "https://dai-fancode.pages.dev/mumbai/4250397_english_hls_6c8073e58c25460_1ta-di_h264/index.m3u8",
       "status": "LIVE",
-      "startTime": "01:40:00 PM 05-11-2026",
-      "team_1": "Perth Scorchers Women",
-      "team_2": "Sydney Thunder Women",
-      "event_name": "Women's Big Bash League, 2026",
       "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250397_english_hls_6c8073e58c25460_1ta-di_h264/240p.m3u8?hdntl=Expires=1793951882~_GO=Generated~acl=/mumbai/4250397_english_hls_6c8073e58c25460_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_1f816bfa-d371-44~Signature=AV7HGj6RmrGmP5CmBLjrbM4Q5oxOIcp4qFYEd6Vd9uEiOtHZbZpLfRkrBS_XeOFHcfUarM4HRcq-O-TIvVWx5DS9eGwP\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250397_english_hls_6c8073e58c25460_1ta-di_h264/360p.m3u8?hdntl=Expires=1793951882~_GO=Generated~acl=/mumbai/4250397_english_hls_6c8073e58c25460_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_1f816bfa-d371-44~Signature=AV7HGj6RmrGmP5CmBLjrbM4Q5oxOIcp4qFYEd6Vd9uEiOtHZbZpLfRkrBS_XeOFHcfUarM4HRcq-O-TIvVWx5DS9eGwP\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250397_english_hls_6c8073e58c25460_1ta-di_h264/480p.m3u8?hdntl=Expires=1793951882~_GO=Generated~acl=/mumbai/4250397_english_hls_6c8073e58c25460_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_1f816bfa-d371-44~Signature=AV7HGj6RmrGmP5CmBLjrbM4Q5oxOIcp4qFYEd6Vd9uEiOtHZbZpLfRkrBS_XeOFHcfUarM4HRcq-O-TIvVWx5DS9eGwP\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250397_english_hls_6c8073e58c25460_1ta-di_h264/540p.m3u8?hdntl=Expires=1793951882~_GO=Generated~acl=/mumbai/4250397_english_hls_6c8073e58c25460_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_1f816bfa-d371-44~Signature=AV7HGj6RmrGmP5CmBLjrbM4Q5oxOIcp4qFYEd6Vd9uEiOtHZbZpLfRkrBS_XeOFHcfUarM4HRcq-O-TIvVWx5DS9eGwP\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250397_english_hls_6c8073e58c25460_1ta-di_h264/720p.m3u8?hdntl=Expires=1793951882~_GO=Generated~acl=/mumbai/4250397_english_hls_6c8073e58c25460_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_1f816bfa-d371-44~Signature=AV7HGj6RmrGmP5CmBLjrbM4Q5oxOIcp4qFYEd6Vd9uEiOtHZbZpLfRkrBS_XeOFHcfUarM4HRcq-O-TIvVWx5DS9eGwP\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250397_english_hls_6c8073e58c25460_1ta-di_h264/1080p.m3u8?hdntl=Expires=1793951882~_GO=Generated~acl=/mumbai/4250397_english_hls_6c8073e58c25460_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_1f816bfa-d371-44~Signature=AV7HGj6RmrGmP5CmBLjrbM4Q5oxOIcp4qFYEd6Vd9uEiOtHZbZpLfRkrBS_XeOFHcfUarM4HRcq-O-TIvVWx5DS9eGwP"
     },
     {
@@ -91,6 +83,18 @@
       "stream_url": "https://dai-fancode.pages.dev/mumbai/4250608_english_hls_3f30a1cfe72793_1ta-di_h264/index.m3u8",
       "status": "LIVE",
       "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250608_english_hls_3f30a1cfe72793_1ta-di_h264/240p.m3u8?hdntl=Expires=1793942346~_GO=Generated~acl=/mumbai/4250608_english_hls_3f30a1cfe72793_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_0c719543-af6c-4e~Signature=AV7HGj7pDPe4LnqaHvP9V_VWy1C07v81krbztE7YRr8zzybZII6Oq7T1l9pUeNIACkIzq9VQVO9yxZRLodi-_rmmOVoE\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250608_english_hls_3f30a1cfe72793_1ta-di_h264/360p.m3u8?hdntl=Expires=1793942346~_GO=Generated~acl=/mumbai/4250608_english_hls_3f30a1cfe72793_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_0c719543-af6c-4e~Signature=AV7HGj7pDPe4LnqaHvP9V_VWy1C07v81krbztE7YRr8zzybZII6Oq7T1l9pUeNIACkIzq9VQVO9yxZRLodi-_rmmOVoE\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250608_english_hls_3f30a1cfe72793_1ta-di_h264/480p.m3u8?hdntl=Expires=1793942346~_GO=Generated~acl=/mumbai/4250608_english_hls_3f30a1cfe72793_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_0c719543-af6c-4e~Signature=AV7HGj7pDPe4LnqaHvP9V_VWy1C07v81krbztE7YRr8zzybZII6Oq7T1l9pUeNIACkIzq9VQVO9yxZRLodi-_rmmOVoE\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250608_english_hls_3f30a1cfe72793_1ta-di_h264/540p.m3u8?hdntl=Expires=1793942346~_GO=Generated~acl=/mumbai/4250608_english_hls_3f30a1cfe72793_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_0c719543-af6c-4e~Signature=AV7HGj7pDPe4LnqaHvP9V_VWy1C07v81krbztE7YRr8zzybZII6Oq7T1l9pUeNIACkIzq9VQVO9yxZRLodi-_rmmOVoE\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250608_english_hls_3f30a1cfe72793_1ta-di_h264/720p.m3u8?hdntl=Expires=1793942346~_GO=Generated~acl=/mumbai/4250608_english_hls_3f30a1cfe72793_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_0c719543-af6c-4e~Signature=AV7HGj7pDPe4LnqaHvP9V_VWy1C07v81krbztE7YRr8zzybZII6Oq7T1l9pUeNIACkIzq9VQVO9yxZRLodi-_rmmOVoE\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250608_english_hls_3f30a1cfe72793_1ta-di_h264/1080p.m3u8?hdntl=Expires=1793942346~_GO=Generated~acl=/mumbai/4250608_english_hls_3f30a1cfe72793_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_0c719543-af6c-4e~Signature=AV7HGj7pDPe4LnqaHvP9V_VWy1C07v81krbztE7YRr8zzybZII6Oq7T1l9pUeNIACkIzq9VQVO9yxZRLodi-_rmmOVoE"
+    },
+    {
+      "match_id": "4250369_ENG",
+      "title": "Nepal Premier League Season 3, 2026 [English]",
+      "match_name": "Biratnagar Kings vs Kathmandu Gorkhas [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250369_53124_KMG_BK_fc-Web_1793616701857.jpg",
+      "event_category": "Cricket",
+      "event_name": "Nepal Premier League Season 3, 2026",
+      "language": "English",
+      "startTime": "04:45:00 PM 05-11-2026",
+      "status": "LIVE",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250369_english_hls_41beb5797488624_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/"
     },
     {
       "match_id": "4249011_ENG",
@@ -165,18 +169,6 @@
       "stream_url": "https://dai-fancode.pages.dev/mumbai/4250561_english_hls_fb1c637ed552842_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/"
     },
     {
-      "match_id": 4250369,
-      "title": "Kathmandu Gorkhas vs Biratnagar Kings (Nepal Premier League Season 3, 2026)",
-      "match_name": "Kathmandu Gorkhas vs Biratnagar Kings",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250369_53124_KMG_BK_fc-Web_1793616701857.jpg",
-      "event_category": "Cricket",
-      "event_name": "Nepal Premier League Season 3, 2026",
-      "language": "English",
-      "startTime": "04:45:00 PM 05-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250506,
       "title": "Abu Dhabi vs Emirates Blues (Emirates D20, 2026)",
       "match_name": "Abu Dhabi vs Emirates Blues",
@@ -185,30 +177,6 @@
       "event_name": "Emirates D20, 2026",
       "language": "English",
       "startTime": "08:00:00 PM 05-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250370,
-      "title": "Sudurpaschim Royals vs Karnali Yaks (Nepal Premier League Season 3, 2026)",
-      "match_name": "Sudurpaschim Royals vs Karnali Yaks",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250370_53124_SPR_KNY_fc-Web_1793616701745.jpg",
-      "event_category": "Cricket",
-      "event_name": "Nepal Premier League Season 3, 2026",
-      "language": "English",
-      "startTime": "12:15:00 PM 06-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250398,
-      "title": "Melbourne Stars Women vs Sydney Sixers Women (Women's Big Bash League, 2026)",
-      "match_name": "Melbourne Stars Women vs Sydney Sixers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250398_53125_MS-W_SS-W_fc-web_1793352701994.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
-      "language": "English",
-      "startTime": "01:40:00 PM 06-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -245,6 +213,30 @@
       "event_name": "AFC Champions League Two 2026-27",
       "language": "English",
       "startTime": "05:45:00 PM 05-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250370,
+      "title": "Sudurpaschim Royals vs Karnali Yaks (Nepal Premier League Season 3, 2026)",
+      "match_name": "Sudurpaschim Royals vs Karnali Yaks",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250370_53124_SPR_KNY_fc-Web_1793616701745.jpg",
+      "event_category": "Cricket",
+      "event_name": "Nepal Premier League Season 3, 2026",
+      "language": "English",
+      "startTime": "12:15:00 PM 06-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250398,
+      "title": "Melbourne Stars Women vs Sydney Sixers Women (Women's Big Bash League, 2026)",
+      "match_name": "Melbourne Stars Women vs Sydney Sixers Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250398_53125_MS-W_SS-W_fc-web_1793352701994.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
+      "language": "English",
+      "startTime": "01:40:00 PM 06-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -393,18 +385,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 139512,
-      "title": "Practice 1 vs Autodromo Jose Carlos Pace (F1 MSC CRUISES GRANDE PREMIO DE SAO PAULO 2026)",
-      "match_name": "Practice 1",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/F1_Sao-Paulo_web_1793258815657.jpg",
-      "event_category": "Formula 1",
-      "event_name": "F1 MSC CRUISES GRANDE PREMIO DE SAO PAULO 2026",
-      "language": "English",
-      "startTime": "09:00:00 PM 06-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250588,
       "title": "Castellón vs Eibar (LALIGA Hypermotion 2026-27)",
       "match_name": "Castellón vs Eibar",
@@ -413,6 +393,18 @@
       "event_name": "LALIGA Hypermotion 2026-27",
       "language": "English",
       "startTime": "01:00:00 AM 07-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 139512,
+      "title": "Practice 1 vs Autodromo Jose Carlos Pace (F1 MSC CRUISES GRANDE PREMIO DE SAO PAULO 2026)",
+      "match_name": "Practice 1",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/F1_Sao-Paulo_web_1793258815657.jpg",
+      "event_category": "Formula 1",
+      "event_name": "F1 MSC CRUISES GRANDE PREMIO DE SAO PAULO 2026",
+      "language": "English",
+      "startTime": "09:00:00 PM 06-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -521,6 +513,30 @@
       "event_name": "Nepal Premier League Season 3, 2026",
       "language": "English",
       "startTime": "04:45:00 PM 07-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250252,
+      "title": "Naegohyang Women's FC vs INAC Kobe Leonessa Women (AFC Women's Champions League 2026-27)",
+      "match_name": "Naegohyang Women's FC vs INAC Kobe Leonessa Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Football_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "AFC Women's Champions League 2026-27",
+      "language": "English",
+      "startTime": "02:00:00 PM 07-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250258,
+      "title": "Hwacheon KSPO WFC vs Ho Chi Minh City Women (AFC Women's Champions League 2026-27)",
+      "match_name": "Hwacheon KSPO WFC vs Ho Chi Minh City Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Football_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "AFC Women's Champions League 2026-27",
+      "language": "English",
+      "startTime": "02:00:00 PM 07-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
