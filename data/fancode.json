@@ -2,14 +2,29 @@
   "Author": "ARYAN",
   "Telegram": "https://t.me/aryanstreams",
   "name": "Aryan FanCode Live Stream API",
-  "last_updated": "11/5/2026, 8:37:14 AM IST",
+  "last_updated": "11/5/2026, 9:14:54 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 40,
-  "live_matches": 1,
+  "live_matches": 2,
   "matches": [
+    {
+      "match_id": "4250527",
+      "match_name": "West Indies Vs Bangladesh [English]",
+      "title": "West Indies Vs Bangladesh [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/West-Indies-tour-of-Bangladesh-web-.jpg",
+      "language": "English",
+      "event_category": "Cricket",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250527_english_hls_370c6945842186_1ta-di_h264/index.m3u8",
+      "status": "LIVE",
+      "startTime": "09:00:00 AM 05-11-2026",
+      "team_1": "West Indies",
+      "team_2": "Bangladesh",
+      "event_name": "West Indies tour of Bangladesh, 2026",
+      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250527_english_hls_370c6945842186_1ta-di_h264/240p.m3u8?hdntl=Expires=1793935146~_GO=Generated~acl=/mumbai/4250527_english_hls_370c6945842186_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_71c4a542-5989-41~Signature=AV7HGj6Ygg-2oiVs9y-dBe43q3RDxAyVHWoaVvDjYQNam6bNTVUbBVSqXXHt5OGvjU6ulXh5oxfAT5qjlvaq4HDBFrEI\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250527_english_hls_370c6945842186_1ta-di_h264/360p.m3u8?hdntl=Expires=1793935146~_GO=Generated~acl=/mumbai/4250527_english_hls_370c6945842186_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_71c4a542-5989-41~Signature=AV7HGj6Ygg-2oiVs9y-dBe43q3RDxAyVHWoaVvDjYQNam6bNTVUbBVSqXXHt5OGvjU6ulXh5oxfAT5qjlvaq4HDBFrEI\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250527_english_hls_370c6945842186_1ta-di_h264/480p.m3u8?hdntl=Expires=1793935146~_GO=Generated~acl=/mumbai/4250527_english_hls_370c6945842186_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_71c4a542-5989-41~Signature=AV7HGj6Ygg-2oiVs9y-dBe43q3RDxAyVHWoaVvDjYQNam6bNTVUbBVSqXXHt5OGvjU6ulXh5oxfAT5qjlvaq4HDBFrEI\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250527_english_hls_370c6945842186_1ta-di_h264/540p.m3u8?hdntl=Expires=1793935146~_GO=Generated~acl=/mumbai/4250527_english_hls_370c6945842186_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_71c4a542-5989-41~Signature=AV7HGj6Ygg-2oiVs9y-dBe43q3RDxAyVHWoaVvDjYQNam6bNTVUbBVSqXXHt5OGvjU6ulXh5oxfAT5qjlvaq4HDBFrEI\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250527_english_hls_370c6945842186_1ta-di_h264/720p.m3u8?hdntl=Expires=1793935146~_GO=Generated~acl=/mumbai/4250527_english_hls_370c6945842186_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_71c4a542-5989-41~Signature=AV7HGj6Ygg-2oiVs9y-dBe43q3RDxAyVHWoaVvDjYQNam6bNTVUbBVSqXXHt5OGvjU6ulXh5oxfAT5qjlvaq4HDBFrEI\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250527_english_hls_370c6945842186_1ta-di_h264/1080p.m3u8?hdntl=Expires=1793935146~_GO=Generated~acl=/mumbai/4250527_english_hls_370c6945842186_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_71c4a542-5989-41~Signature=AV7HGj6Ygg-2oiVs9y-dBe43q3RDxAyVHWoaVvDjYQNam6bNTVUbBVSqXXHt5OGvjU6ulXh5oxfAT5qjlvaq4HDBFrEI"
+    },
     {
       "match_id": "4250603",
       "match_name": "Round Of 16 [English]",
@@ -24,18 +39,6 @@
       "team_2": "Korea",
       "event_name": "BWF Super 500 -  Korea Open 2026",
       "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250603_english_hls_ef3001b64b61956_1ta-di_h264/240p.m3u8?hdntl=Expires=1793925845~_GO=Generated~acl=/mumbai/4250603_english_hls_ef3001b64b61956_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_4ced0498-b383-4b~Signature=AV7HGj5f_r9rwiPzF2BsiJZZgxlGQAFtLhn84cI4EeHjOjvUhG01q0PGdmP0CqP5bGaTIzpR1Az7Jdw-_Sk1z5bS6JoK\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250603_english_hls_ef3001b64b61956_1ta-di_h264/360p.m3u8?hdntl=Expires=1793925845~_GO=Generated~acl=/mumbai/4250603_english_hls_ef3001b64b61956_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_4ced0498-b383-4b~Signature=AV7HGj5f_r9rwiPzF2BsiJZZgxlGQAFtLhn84cI4EeHjOjvUhG01q0PGdmP0CqP5bGaTIzpR1Az7Jdw-_Sk1z5bS6JoK\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250603_english_hls_ef3001b64b61956_1ta-di_h264/480p.m3u8?hdntl=Expires=1793925845~_GO=Generated~acl=/mumbai/4250603_english_hls_ef3001b64b61956_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_4ced0498-b383-4b~Signature=AV7HGj5f_r9rwiPzF2BsiJZZgxlGQAFtLhn84cI4EeHjOjvUhG01q0PGdmP0CqP5bGaTIzpR1Az7Jdw-_Sk1z5bS6JoK\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250603_english_hls_ef3001b64b61956_1ta-di_h264/540p.m3u8?hdntl=Expires=1793925845~_GO=Generated~acl=/mumbai/4250603_english_hls_ef3001b64b61956_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_4ced0498-b383-4b~Signature=AV7HGj5f_r9rwiPzF2BsiJZZgxlGQAFtLhn84cI4EeHjOjvUhG01q0PGdmP0CqP5bGaTIzpR1Az7Jdw-_Sk1z5bS6JoK\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250603_english_hls_ef3001b64b61956_1ta-di_h264/720p.m3u8?hdntl=Expires=1793925845~_GO=Generated~acl=/mumbai/4250603_english_hls_ef3001b64b61956_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_4ced0498-b383-4b~Signature=AV7HGj5f_r9rwiPzF2BsiJZZgxlGQAFtLhn84cI4EeHjOjvUhG01q0PGdmP0CqP5bGaTIzpR1Az7Jdw-_Sk1z5bS6JoK\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250603_english_hls_ef3001b64b61956_1ta-di_h264/1080p.m3u8?hdntl=Expires=1793925845~_GO=Generated~acl=/mumbai/4250603_english_hls_ef3001b64b61956_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_4ced0498-b383-4b~Signature=AV7HGj5f_r9rwiPzF2BsiJZZgxlGQAFtLhn84cI4EeHjOjvUhG01q0PGdmP0CqP5bGaTIzpR1Az7Jdw-_Sk1z5bS6JoK"
-    },
-    {
-      "match_id": 4250527,
-      "title": "Bangladesh vs West Indies (West Indies tour of Bangladesh, 2026)",
-      "match_name": "Bangladesh vs West Indies",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/West-Indies-tour-of-Bangladesh-web-.jpg",
-      "event_category": "Cricket",
-      "event_name": "West Indies tour of Bangladesh, 2026",
-      "language": "English",
-      "startTime": "09:00:00 AM 05-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
     },
     {
       "match_id": 4250396,
