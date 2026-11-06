@@ -56,19 +56,35 @@ function parseM3U(content) {
             const logoMatch = line.match(/tvg-logo="([^"]+)"/i);
             cur.src = logoMatch ? logoMatch[1] : '';
             const langMatch = line.match(/tvg-language="([^"]+)"/i);
-            cur.language = langMatch ? langMatch[1] : 'English';
+            cur.language = langMatch ? langMatch[1] : '';
             const groupMatch = line.match(/group-title="([^"]+)"/i);
-            cur.event_category = groupMatch ? groupMatch[1] : 'Cricket';
+            cur.event_category = groupMatch ? groupMatch[1].replace(/^fancode-/i, '') : '';
             const commaSplit = line.split(',');
             if (commaSplit.length > 1 && !cur.title) {
                 cur.title = commaSplit[commaSplit.length - 1].trim();
                 cur.match_name = cur.title;
             }
         } else if (line.startsWith('http') && cur) {
+            // If match_id is missing from EXTINF, extract from stream URL path
+            if (!cur.match_id) {
+                const urlIdMatch = line.match(/mumbai\/([0-9a-zA-Z]+)_/i);
+                if (urlIdMatch) cur.match_id = urlIdMatch[1];
+            }
+            if (!cur.language) {
+                const urlLangMatch = line.match(/mumbai\/[0-9a-zA-Z]+_([a-zA-Z]+)_hls/i);
+                if (urlLangMatch) {
+                    const l = urlLangMatch[1];
+                    cur.language = l.charAt(0).toUpperCase() + l.slice(1).toLowerCase();
+                } else {
+                    cur.language = 'English';
+                }
+            }
+            if (!cur.event_category) {
+                cur.event_category = 'Sports';
+            }
             cur.stream_url = toDaiUrl(line);
             cur.status = 'LIVE';
             if (cur.match_id) {
-                const baseId = String(cur.match_id).split('_')[0].toLowerCase();
                 const lang = (cur.language || 'English').trim();
                 const langLower = lang.toLowerCase();
                 const langCode = langLower.substring(0, 3);
@@ -89,13 +105,42 @@ function parseM3U(content) {
     return matches;
 }
 
+function normalizeTitle(t) {
+    return String(t || '')
+        .toLowerCase()
+        .replace(/\[[^\]]*\]/g, '')
+        .replace(/\([^\)]*\)/g, '')
+        .replace(/[^a-z0-9]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+function titlesMatch(a, b) {
+    const na = normalizeTitle(a);
+    const nb = normalizeTitle(b);
+    if (!na || !nb) return false;
+    if (na === nb || na.includes(nb) || nb.includes(na)) return true;
+    
+    // Check keyword overlap (e.g., "practice 2", "qualifying", "derby county")
+    const wordsA = na.split(' ').filter(w => w.length > 3);
+    const wordsB = nb.split(' ').filter(w => w.length > 3);
+    if (wordsA.length && wordsB.length) {
+        const overlap = wordsA.filter(w => wordsB.includes(w));
+        if (overlap.length >= 2 || (overlap.length === 1 && (wordsA.length === 1 || wordsB.length === 1))) {
+            return true;
+        }
+    }
+    return false;
+}
+
 async function syncFanCode() {
     const timestamp = new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' });
-    console.log(`[${timestamp} IST] 🔄 Starting FanCode feed synchronization...`);
+    console.log(`[${timestamp} IST] 🔄 Starting FanCode multi-source feed synchronization...`);
 
     const matchesMap = new Map();
+    const liveStreamsPool = [];
 
-    // 1. Fetch from doctor-8trange's active M3U
+    // 1. Fetch from doctor-8trange active M3U
     try {
         console.log('Fetching doctor-8trange zyphx8 fancode.m3u...');
         const m3uText = await fetchEndpoint('https://raw.githubusercontent.com/doctor-8trange/zyphx8/main/data/fancode.m3u');
@@ -104,12 +149,82 @@ async function syncFanCode() {
         m3uMatches.forEach(m => {
             const uniqueId = String(m.match_id).toLowerCase();
             matchesMap.set(uniqueId, m);
+            liveStreamsPool.push(m);
         });
     } catch (err) {
         console.warn('⚠️ Could not fetch doctor-8trange M3U:', err.message);
     }
 
-    // 2. Fetch from drmlive fancode.json
+    // 2. Fetch from sportlive18 DAI M3U (fancode2.m3u - Cloudflare worker DAI streams)
+    try {
+        console.log('Fetching sportlive18 fancode2.m3u (DAI)...');
+        const sl2Text = await fetchEndpoint('https://raw.githubusercontent.com/sportlive18/Fancode-New-Auto-Update/main/fancode2.m3u');
+        const sl2Matches = parseM3U(sl2Text);
+        console.log(`Loaded ${sl2Matches.length} streams from sportlive18 DAI.`);
+        sl2Matches.forEach(m => {
+            const uniqueId = String(m.match_id).toLowerCase();
+            if (!matchesMap.has(uniqueId)) {
+                matchesMap.set(uniqueId, m);
+            }
+            liveStreamsPool.push(m);
+        });
+    } catch (err) {
+        console.warn('⚠️ Could not fetch sportlive18 fancode2 M3U:', err.message);
+    }
+
+    // 3. Fetch from sportlive18 direct streams (fancode.m3u - 1080p & fancode3.m3u - 720p)
+    try {
+        console.log('Fetching sportlive18 fancode.m3u (1080p)...');
+        const sl1Text = await fetchEndpoint('https://raw.githubusercontent.com/sportlive18/Fancode-New-Auto-Update/main/fancode.m3u');
+        const sl1Matches = parseM3U(sl1Text);
+        console.log(`Loaded ${sl1Matches.length} streams from sportlive18 1080p.`);
+        sl1Matches.forEach(m => {
+            const uniqueId = String(m.match_id).toLowerCase();
+            if (!matchesMap.has(uniqueId)) {
+                matchesMap.set(uniqueId, m);
+            }
+            liveStreamsPool.push(m);
+        });
+    } catch (err) {
+        console.warn('⚠️ Could not fetch sportlive18 fancode M3U:', err.message);
+    }
+
+    // 4. Fetch from byte-capsule JSON
+    try {
+        console.log('Fetching byte-capsule JSON...');
+        const bcText = await fetchEndpoint('https://raw.githubusercontent.com/byte-capsule/FanCode-Hls-Fetcher/main/Fancode_hls_m3u8.Json');
+        const bcData = JSON.parse(bcText);
+        const bcMatches = bcData.matches || [];
+        console.log(`Loaded ${bcMatches.length} streams from byte-capsule.`);
+        bcMatches.forEach(bm => {
+            const rawId = String(bm.match_id || '').toLowerCase();
+            if (!rawId) return;
+            const streamUrl = toDaiUrl(bm.stream_link || bm.adfree_url || bm.dai_url || '');
+            if (!streamUrl) return;
+
+            const entry = {
+                match_id: rawId,
+                title: bm.match_name || `${bm.team_1 || ''} vs ${bm.team_2 || ''}`.trim() || 'Live Match',
+                match_name: bm.match_name || 'Live Match',
+                src: bm.banner || bm.team_1_flag || '',
+                event_category: bm.event_catagory || 'Cricket',
+                event_name: bm.event_name || '',
+                language: 'English',
+                team_1: bm.team_1 || '',
+                team_2: bm.team_2 || '',
+                status: 'LIVE',
+                stream_url: streamUrl
+            };
+            if (!matchesMap.has(rawId)) {
+                matchesMap.set(rawId, entry);
+            }
+            liveStreamsPool.push(entry);
+        });
+    } catch (err) {
+        console.warn('⚠️ Could not fetch byte-capsule JSON:', err.message);
+    }
+
+    // 5. Fetch from drmlive fancode.json (Primary Match Schedule & Catalog)
     try {
         console.log('Fetching drmlive fancode.json...');
         const jsonText = await fetchEndpoint('https://raw.githubusercontent.com/drmlive/fancode-live-events/main/fancode.json');
@@ -120,12 +235,25 @@ async function syncFanCode() {
         jsonMatches.forEach(jm => {
             const rawId = String(jm.match_id || '').toLowerCase();
             const baseId = rawId.split('_')[0];
-            const targetKey = matchesMap.has(rawId) ? rawId : (matchesMap.has(baseId) ? baseId : rawId);
+            
+            // Check direct ID or base ID match
+            let targetKey = matchesMap.has(rawId) ? rawId : (matchesMap.has(baseId) ? baseId : null);
+
+            // Fuzzy title matching if ID didn't directly match
+            if (!targetKey) {
+                const jmTitle = jm.title || jm.match_name || '';
+                for (const [k, v] of matchesMap.entries()) {
+                    if (v.stream_url && titlesMatch(jmTitle, v.title || v.match_name)) {
+                        targetKey = k;
+                        break;
+                    }
+                }
+            }
 
             const rawStream = jm.adfree_url || jm.dai_url || jm.url || '';
             const streamUrl = toDaiUrl(rawStream);
 
-            if (matchesMap.has(targetKey)) {
+            if (targetKey && matchesMap.has(targetKey)) {
                 const existing = matchesMap.get(targetKey);
                 if (!existing.startTime && jm.startTime) existing.startTime = jm.startTime;
                 if (!existing.team_1 && jm.team_1) existing.team_1 = jm.team_1;
@@ -133,18 +261,32 @@ async function syncFanCode() {
                 if (!existing.event_name && (jm.event_name || jm.tournament)) existing.event_name = jm.event_name || jm.tournament;
                 if (!existing.src && jm.src) existing.src = jm.src;
                 if (streamUrl && !existing.stream_url) existing.stream_url = streamUrl;
+                if (!existing.event_category && jm.event_category) existing.event_category = jm.event_category;
             } else {
-                matchesMap.set(targetKey, {
-                    match_id: jm.match_id || targetKey,
+                // Check if any active stream in the pool matches this schedule entry
+                let matchedStream = streamUrl;
+                if (!matchedStream) {
+                    const matchInPool = liveStreamsPool.find(s => 
+                        String(s.match_id).toLowerCase() === rawId ||
+                        String(s.match_id).toLowerCase() === baseId ||
+                        titlesMatch(s.title || s.match_name, jm.title || jm.match_name)
+                    );
+                    if (matchInPool && matchInPool.stream_url) {
+                        matchedStream = matchInPool.stream_url;
+                    }
+                }
+
+                matchesMap.set(rawId, {
+                    match_id: jm.match_id || rawId,
                     title: jm.title || jm.match_name || 'Live Match',
                     match_name: jm.match_name || jm.title || 'Live Match',
                     src: jm.src || jm.image || '',
-                    event_category: jm.event_category || jm.category || 'Cricket',
+                    event_category: jm.event_category || jm.category || 'Sports',
                     event_name: jm.event_name || jm.tournament || '',
                     language: jm.language || (rawId.includes('_hin') ? 'Hindi' : (rawId.includes('_tam') ? 'Tamil' : 'English')),
                     startTime: jm.startTime || '',
-                    status: jm.status || (streamUrl ? 'LIVE' : 'UPCOMING'),
-                    stream_url: streamUrl
+                    status: jm.status || (matchedStream ? 'LIVE' : 'UPCOMING'),
+                    stream_url: matchedStream || ''
                 });
             }
         });
@@ -152,7 +294,7 @@ async function syncFanCode() {
         console.warn('⚠️ Could not fetch drmlive JSON:', err.message);
     }
 
-    // Enrich multi-language streams with parent / sibling metadata
+    // 6. Enrich multi-language streams with parent / sibling metadata
     matchesMap.forEach((m, key) => {
         const baseId = String(m.match_id).split('_')[0].toLowerCase();
         if (key !== baseId && matchesMap.has(baseId)) {
@@ -247,5 +389,3 @@ async function main() {
 if (require.main === module) {
     main();
 }
-
-module.exports = { syncFanCode };

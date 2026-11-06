@@ -408,7 +408,9 @@
             var urls = [
                 M3U_API + "?t=" + Date.now(),
                 "./data/fancode.m3u?t=" + Date.now(),
-                BACKUP_M3U_API + "?t=" + Date.now()
+                BACKUP_M3U_API + "?t=" + Date.now(),
+                "https://raw.githubusercontent.com/sportlive18/Fancode-New-Auto-Update/main/fancode2.m3u?t=" + Date.now(),
+                "https://raw.githubusercontent.com/sportlive18/Fancode-New-Auto-Update/main/fancode.m3u?t=" + Date.now()
             ];
 
             return Promise.allSettled(urls.map(function(u) {
@@ -450,7 +452,8 @@
             var urls = [
                 JSON_API + "?t=" + Date.now(),
                 "./data/fancode.json?t=" + Date.now(),
-                BACKUP_JSON_API + "?t=" + Date.now()
+                BACKUP_JSON_API + "?t=" + Date.now(),
+                "https://raw.githubusercontent.com/byte-capsule/FanCode-Hls-Fetcher/main/Fancode_hls_m3u8.Json?t=" + Date.now()
             ];
 
             return Promise.allSettled(urls.map(function(u) {
