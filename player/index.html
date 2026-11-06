@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="referrer" content="no-referrer">
-    <title>FanCode Player</title>
+    <title>⚡ AryanStreams Player • FanCode Pro</title>
     <!-- Monetag In-Market Popunder -->
     <script data-cfasync="false" src="https://capitalhospitals.org/1/ec8caf215d92bd77dfa766d702a1ec0f"></script>
 
@@ -96,7 +96,8 @@
 </head>
 <body>
     <div id="loading"><div class="spinner"></div></div>
-    <a href="index.html" id="back-btn">← Back</a>
+    <a href="index.html" id="back-btn">← Back to Hub</a>
+    <div id="brand-badge" style="position:fixed;top:14px;left:135px;z-index:9999;background:rgba(15,20,30,0.75);border:1px solid rgba(255,255,255,0.12);padding:6px 12px;border-radius:8px;font-size:11px;font-weight:800;color:#fff;backdrop-filter:blur(10px);display:flex;align-items:center;gap:6px;box-shadow:0 4px 16px rgba(0,0,0,0.3);"><span style="color:#ef4444;">⚡</span> AryanStreams</div>
     <div id="top-lang-bar" style="position:fixed;top:14px;right:14px;z-index:9999;display:none;background:rgba(20,20,25,0.8);border:1px solid rgba(255,255,255,0.15);padding:4px 8px;border-radius:10px;backdrop-filter:blur(12px);align-items:center;gap:6px;">
         <span style="font-size:11px;color:rgba(255,255,255,0.75);font-weight:700;">🎙️ Audio:</span>
         <div id="top-lang-buttons" style="display:flex;align-items:center;gap:4px;"></div>
@@ -535,7 +536,7 @@
                     }
                     var rawTitle = (m.team_1 && m.team_2) ? (m.team_1 + " vs " + m.team_2) : (m.match_name || m.title || "FanCode Player");
                     var cleanTitle = rawTitle.replace(/\s*\[(English|Hindi|Tamil|Kannada|Telugu|Bengali|ENG|HIN|TAM)\]/gi, '').trim();
-                    document.title = cleanTitle + " · FanCode Player";
+                    document.title = cleanTitle + " · AryanStreams Live";
 
                     // Populate Audio Language Switcher in Player Header
                     var baseId = String(m.match_id || "").split("_")[0].toLowerCase();
