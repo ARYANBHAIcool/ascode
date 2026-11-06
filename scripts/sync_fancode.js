@@ -337,7 +337,7 @@ async function syncFanCode() {
             const dObj = parseFanCodeDate(m.startTime);
             if (dObj) {
                 const diffHours = (now - dObj.getTime()) / (1000 * 3600);
-                if (diffHours > 6) {
+                if (diffHours > 3.5) {
                     console.log(`Purging expired match (${diffHours.toFixed(1)}h old):`, m.title);
                     continue;
                 }

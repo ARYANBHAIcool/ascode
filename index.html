@@ -1024,7 +1024,7 @@
                     var d = parseFanCodeDate(m.startTime);
                     if (d && d !== 'LIVE') {
                         var diffHours = (now - d.getTime()) / (1000 * 3600);
-                        if (diffHours > 6) return; // Skip old matches
+                        if (diffHours > 3.5) return; // Skip old ended matches
                     }
                 }
                 valid.push(m);
