@@ -3,14 +3,26 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/7/2026, 6:01:46 AM IST",
+  "last_updated": "11/7/2026, 8:29:52 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 38,
-  "live_matches": 0,
+  "live_matches": 1,
   "matches": [
+    {
+      "match_id": "4250605",
+      "match_name": "Semi Final [English]",
+      "title": "Semi Final [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/BWF-Korean-Open-web-2.png",
+      "language": "English",
+      "event_category": "Badminton",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250605_english_hls_263bfd45b59969_1ta-di_h264/index.m3u8",
+      "status": "LIVE",
+      "startTime": "Live Now",
+      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250605_english_hls_263bfd45b59969_1ta-di_h264/240p.m3u8?hdntl=Expires=1794102667~_GO=Generated~acl=/mumbai/4250605_english_hls_263bfd45b59969_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_cbe755f8-2135-44~Signature=AV7HGj6hWBi2d0UMn63CSnVm6TQsuXy5Dr3b1trWvFN9HXGhVvOpXhBOS45-3w9F5NaMAf4ExwpW03Pt2yvz7O7hfKIM\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250605_english_hls_263bfd45b59969_1ta-di_h264/360p.m3u8?hdntl=Expires=1794102667~_GO=Generated~acl=/mumbai/4250605_english_hls_263bfd45b59969_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_cbe755f8-2135-44~Signature=AV7HGj6hWBi2d0UMn63CSnVm6TQsuXy5Dr3b1trWvFN9HXGhVvOpXhBOS45-3w9F5NaMAf4ExwpW03Pt2yvz7O7hfKIM\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250605_english_hls_263bfd45b59969_1ta-di_h264/480p.m3u8?hdntl=Expires=1794102667~_GO=Generated~acl=/mumbai/4250605_english_hls_263bfd45b59969_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_cbe755f8-2135-44~Signature=AV7HGj6hWBi2d0UMn63CSnVm6TQsuXy5Dr3b1trWvFN9HXGhVvOpXhBOS45-3w9F5NaMAf4ExwpW03Pt2yvz7O7hfKIM\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250605_english_hls_263bfd45b59969_1ta-di_h264/540p.m3u8?hdntl=Expires=1794102667~_GO=Generated~acl=/mumbai/4250605_english_hls_263bfd45b59969_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_cbe755f8-2135-44~Signature=AV7HGj6hWBi2d0UMn63CSnVm6TQsuXy5Dr3b1trWvFN9HXGhVvOpXhBOS45-3w9F5NaMAf4ExwpW03Pt2yvz7O7hfKIM\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250605_english_hls_263bfd45b59969_1ta-di_h264/720p.m3u8?hdntl=Expires=1794102667~_GO=Generated~acl=/mumbai/4250605_english_hls_263bfd45b59969_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_cbe755f8-2135-44~Signature=AV7HGj6hWBi2d0UMn63CSnVm6TQsuXy5Dr3b1trWvFN9HXGhVvOpXhBOS45-3w9F5NaMAf4ExwpW03Pt2yvz7O7hfKIM\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250605_english_hls_263bfd45b59969_1ta-di_h264/1080p.m3u8?hdntl=Expires=1794102667~_GO=Generated~acl=/mumbai/4250605_english_hls_263bfd45b59969_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_cbe755f8-2135-44~Signature=AV7HGj6hWBi2d0UMn63CSnVm6TQsuXy5Dr3b1trWvFN9HXGhVvOpXhBOS45-3w9F5NaMAf4ExwpW03Pt2yvz7O7hfKIM"
+    },
     {
       "match_id": 4250750,
       "title": "Western Australia vs England (Western Australia vs England One-Day 2026)",
@@ -144,6 +156,30 @@
       "stream_url": ""
     },
     {
+      "match_id": 4250401,
+      "title": "Sydney Sixers Women vs Sydney Thunder Women (Women's Big Bash League, 2026)",
+      "match_name": "Sydney Sixers Women vs Sydney Thunder Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250401_53125_SS-W_ST-W_fc-web_1793352701343.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
+      "language": "English",
+      "startTime": "08:10:00 AM 08-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4247682,
+      "title": "Valencia CF vs Real Madrid (LALIGA 2026-27)",
+      "match_name": "Valencia CF vs Real Madrid",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247682_53004_VAL_RM_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA 2026-27",
+      "language": "English",
+      "startTime": "01:30:00 AM 08-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4250252,
       "title": "Naegohyang Women's FC vs INAC Kobe Leonessa Women (AFC Women's Champions League 2026-27)",
       "match_name": "Naegohyang Women's FC vs INAC Kobe Leonessa Women",
@@ -164,18 +200,6 @@
       "event_name": "AFC Women's Champions League 2026-27",
       "language": "English",
       "startTime": "02:00:00 PM 07-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4247682,
-      "title": "Valencia CF vs Real Madrid (LALIGA 2026-27)",
-      "match_name": "Valencia CF vs Real Madrid",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247682_53004_VAL_RM_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "01:30:00 AM 08-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -240,18 +264,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250401,
-      "title": "Sydney Sixers Women vs Sydney Thunder Women (Women's Big Bash League, 2026)",
-      "match_name": "Sydney Sixers Women vs Sydney Thunder Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250401_53125_SS-W_ST-W_fc-web_1793352701343.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
-      "language": "English",
-      "startTime": "08:10:00 AM 08-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250402,
       "title": "Perth Scorchers Women vs Melbourne Stars Women (Women's Big Bash League, 2026)",
       "match_name": "Perth Scorchers Women vs Melbourne Stars Women",
@@ -260,18 +272,6 @@
       "event_name": "Women's Big Bash League, 2026",
       "language": "English",
       "startTime": "11:40:00 AM 08-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250605,
-      "title": "Semi-Final vs Korea (BWF Super 500 -  Korea Open 2026)",
-      "match_name": "Semi-Final",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/BWF-Korean-Open-web-2.png",
-      "event_category": "Badminton",
-      "event_name": "BWF Super 500 -  Korea Open 2026",
-      "language": "English",
-      "startTime": "07:30:00 AM 07-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
