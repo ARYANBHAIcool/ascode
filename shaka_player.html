@@ -89,6 +89,11 @@
             }
         }
 
+                var paramId = params.get('id');
+        if (paramId) {
+            location.replace('player.html?id=' + encodeURIComponent(paramId) + (params.get('r') ? '&r=' + encodeURIComponent(params.get('r')) : ''));
+            return;
+        }
         var rawMpd = cleanStreamUrl(params.get('mpd') || params.get('url') || '');
         var KEY_ID  = cleanKey(params.get('kid') || '');
         var KEY     = cleanKey(params.get('key') || '');
@@ -137,9 +142,10 @@
                     if (u.indexOf('asp1.lovable.app/api/proxy?u=') !== -1 || u.indexOf('stream-through-spark.lovable.app/api/proxy?u=') !== -1) {
                         return u;
                     }
-                    if (u.indexOf('lovable.app/api/') !== -1 || u.indexOf('ascode.pages.dev/') !== -1 || u.indexOf('localhost') !== -1) {
-                        var filename = u.substring(u.lastIndexOf('/') + 1);
-                        if (baseMpdUrl) {
+                    if (u.indexOf('lovable.app/api/') !== -1 || u.indexOf('ascode.pages.dev/') !== -1 || u.indexOf('localhost') !== -1 || (!u.startsWith('http://') && !u.startsWith('https://'))) {
+                        var cleanU = u.split('?')[0];
+                        var filename = cleanU.substring(cleanU.lastIndexOf('/') + 1);
+                        if (baseMpdUrl && filename) {
                             return toProxiedUrl(baseMpdUrl + filename, currentProxyIdx);
                         }
                     }
@@ -151,9 +157,28 @@
             });
 
             var config = {
-                manifest: { defaultPresentationDelay:4, dash:{autoCorrectDrift:true, ignoreMinBufferTime:true}, retryParameters:{baseDelay:100} },
-                streaming: { bufferingGoal:8, rebufferingGoal:1.5, bufferBehind:20, retryParameters:{baseDelay:100, maxAttempts:5} },
-                abr: { enabled:true, defaultBandwidthEstimate:1500000, restrictions:{maxHeight:1080} }
+                manifest: {
+                    defaultPresentationDelay: 16,
+                    dash: {
+                        autoCorrectDrift: true,
+                        ignoreMinBufferTime: false
+                    },
+                    retryParameters: { maxAttempts: 5, baseDelay: 200, backoffFactor: 1.5 }
+                },
+                streaming: {
+                    bufferingGoal: 30,
+                    rebufferingGoal: 6,
+                    bufferBehind: 20,
+                    safeSeekOffset: 5,
+                    stallEnabled: false,
+                    retryParameters: { maxAttempts: 5, baseDelay: 200, backoffFactor: 1.5 }
+                },
+                abr: {
+                    enabled: true,
+                    defaultBandwidthEstimate: 1500000,
+                    switchInterval: 8,
+                    restrictions: { maxHeight: 1080 }
+                }
             };
             if (KEY_ID && KEY) {
                 config.drm = { clearKeys:{} };
@@ -190,6 +215,7 @@
                 setTimeout(function(){ startLoad(); }, 5000);
             });
 
+            document.addEventListener('touchstart', function unmute() { $video.muted = false; document.removeEventListener('touchstart', unmute); }, { once: true });
             document.addEventListener('click', function unmute() {
                 $video.muted = false;
                 document.removeEventListener('click', unmute);

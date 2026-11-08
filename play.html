@@ -105,7 +105,7 @@
 
     <div class="player-shell">
         <div id="video-area" class="video-area">
-            <video id="video" autoplay muted playsinline referrerpolicy="no-referrer"></video>
+            <video id="video" autoplay muted playsinline webkit-playsinline referrerpolicy="no-referrer"></video>
 
             <div id="center-flash" class="center-flash">
                 <div class="center-circle">
@@ -138,6 +138,9 @@
                         </button>
                         <div id="q-menu" class="quality-popup"></div>
                     </div>
+                    <button id="share-btn" class="ctrl-btn" title="Share Match">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:17px;height:17px;"><path stroke-linecap="round" stroke-linejoin="round" d="M8.684 10.742l4.636-2.318M8.684 13.258l4.636 2.318m6-4.576a3 3 0 11-6 0 3 3 0 016 0zm-6-5.736a3 3 0 11-6 0 3 3 0 016 0zm0 11.472a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    </button>
                     <button id="fs-btn" class="ctrl-btn" title="Fullscreen">
                         <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
                     </button>
@@ -148,6 +151,7 @@
     <div id="error-msg"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/shaka-player@5.2.4/dist/shaka-player.compiled.js"></script>
     <script>
     (function() {
         var M3U_API = "https://raw.githubusercontent.com/ARYANBHAIcool/ascode/main/data/fancode.m3u";
@@ -259,6 +263,26 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
             return list;
         }
 
+        
+        function cleanKey(k) {
+            if (!k) return '';
+            var s = String(k).trim().toLowerCase().replace(/-/g, '');
+            if (s.length === 32) return s;
+            try {
+                var b64 = k.replace(/-/g, '+').replace(/_/g, '/');
+                while (b64.length % 4) b64 += '=';
+                var bin = atob(b64);
+                var hex = '';
+                for (var i = 0; i < bin.length; i++) {
+                    var h = bin.charCodeAt(i).toString(16);
+                    hex += (h.length === 1 ? '0' : '') + h;
+                }
+                return hex;
+            } catch(e) {
+                return s;
+            }
+        }
+
         function isUrlNotExpired(url) {
             var m = String(url || "").match(/Expires=(\d+)/i);
             if (!m) return true;
@@ -277,14 +301,22 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                 var kid = parts[0], key = parts[1];
                 var url = cleanStreamUrl(cdn.Primary_Playback_URL || baseStream || "");
                 if (url) {
-                    location.replace("shaka_player.html?mpd=" + encodeURIComponent(url) + "&kid=" + encodeURIComponent(kid) + "&key=" + encodeURIComponent(key));
-                    return [];
+                    var drmList = [];
+                    standardRes.forEach(function(r) {
+                        drmList.push({ res: r, targetRes: r, url: url, isDrm: true, kid: kid, key: key });
+                    });
+                    drmList.push({ res: "Auto", targetRes: "Auto", url: url, isDrm: true, kid: kid, key: key });
+                    return drmList;
                 }
             } else if (baseStream && baseStream.indexOf(".mpd") !== -1) {
                 var kid = m.kid || "";
                 var key = m.key || "";
-                location.replace("shaka_player.html?mpd=" + encodeURIComponent(baseStream) + (kid ? "&kid=" + encodeURIComponent(kid) : "") + (key ? "&key=" + encodeURIComponent(key) : ""));
-                return [];
+                var drmList = [];
+                standardRes.forEach(function(r) {
+                    drmList.push({ res: r, targetRes: r, url: baseStream, isDrm: true, kid: kid, key: key });
+                });
+                drmList.push({ res: "Auto", targetRes: "Auto", url: baseStream, isDrm: true, kid: kid, key: key });
+                return drmList;
             }
 
             // Check google_m3u8_hex / m3u8_hex AND resolved M3U master playlist
@@ -319,11 +351,179 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
             return [];
         }
 
-        function playStream(rawUrl, targetRes, fallbackUrl) {
+        var shakaInstance = null;
+
+        function buildShakaQMenu(desired) {
+            if (!shakaInstance) return;
+            var tracks = shakaInstance.getVariantTracks();
+            if (!tracks || tracks.length <= 1) {
+                qMenu.innerHTML = '<div class="q-item active">Auto</div>';
+                return;
+            }
+
+            var heightMap = {};
+            tracks.forEach(function(t) {
+                if (t.height && !heightMap[t.height]) {
+                    heightMap[t.height] = t;
+                }
+            });
+
+            var heights = Object.keys(heightMap).map(Number).sort(function(a, b){ return b - a; });
+            var items = [{ name: "Auto", height: 0, track: null }];
+            heights.forEach(function(h) {
+                items.push({ name: h + "p", height: h, track: heightMap[h] });
+            });
+
+            var activeName = currentRes || "Auto";
+            if (desired && desired !== "Auto") {
+                var matchTrack = heights.find(function(h) { return h + "p" === desired || String(h) === desired; });
+                if (matchTrack) {
+                    activeName = matchTrack + "p";
+                    currentRes = activeName;
+                    shakaInstance.configure({ abr: { enabled: false } });
+                    shakaInstance.selectVariantTrack(heightMap[matchTrack], true);
+                }
+            }
+
+            qMenu.innerHTML = "";
+            items.forEach(function(it) {
+                var el = document.createElement("div");
+                var isActive = (it.name === activeName);
+                el.className = "q-item" + (isActive ? " active" : "");
+                el.textContent = it.name;
+                el.onclick = function(e) {
+                    e.stopPropagation();
+                    currentRes = it.name;
+                    if (it.name === "Auto") {
+                        shakaInstance.configure({ abr: { enabled: true } });
+                    } else {
+                        shakaInstance.configure({ abr: { enabled: false } });
+                        shakaInstance.selectVariantTrack(it.track, true);
+                    }
+                    qMenu.classList.remove("open");
+                    isQMenuOpen = false;
+                    buildShakaQMenu(currentRes);
+                };
+                qMenu.appendChild(el);
+            });
+        }
+
+        function playDrmStream(rawUrl, kid, key, targetRes) {
             showLoading();
             if (hlsInstance) { hlsInstance.destroy(); hlsInstance = null; }
+            if (shakaInstance) { shakaInstance.destroy(); shakaInstance = null; }
 
-            var url = toProxiedUrl(rawUrl, currentProxyIdx);
+            shaka.polyfill.installAll();
+            if (!shaka.Player.isBrowserSupported()) {
+                hideLoading();
+                showError("Browser does not support DRM DASH playback.");
+                return;
+            }
+
+            var cleanMpd = cleanStreamUrl(rawUrl);
+            var baseMpdUrl = cleanMpd.substring(0, cleanMpd.lastIndexOf("/") + 1);
+            var proxiedMpd = toProxiedUrl(cleanMpd, currentProxyIdx);
+
+            shakaInstance = new shaka.Player();
+            shakaInstance.attach(video).then(function() {
+                shakaInstance.getNetworkingEngine().registerRequestFilter(function(type, req) {
+                    req.uris = req.uris.map(function(u) {
+                        if (u.indexOf("asp1.lovable.app/api/proxy?u=") !== -1 || u.indexOf("stream-through-spark.lovable.app/api/proxy?u=") !== -1) {
+                            return u;
+                        }
+                        if (u.indexOf("lovable.app/api/") !== -1 || u.indexOf("ascode.pages.dev/") !== -1 || u.indexOf("localhost") !== -1 || (!u.startsWith("http://") && !u.startsWith("https://"))) {
+                            var cleanU = u.split("?")[0];
+                            var filename = cleanU.substring(cleanU.lastIndexOf("/") + 1);
+                            if (baseMpdUrl && filename) {
+                                return toProxiedUrl(baseMpdUrl + filename, currentProxyIdx);
+                            }
+                        }
+                        if (u.indexOf("fancode.com") !== -1 && u.indexOf("proxy") === -1) {
+                            return toProxiedUrl(u, currentProxyIdx);
+                        }
+                        return u;
+                    });
+                });
+
+                var cleanKid = cleanKey(kid);
+                var cleanK = cleanKey(key);
+
+                var config = {
+                    manifest: {
+                        dash: {
+                            autoCorrectDrift: true,
+                            ignoreMinBufferTime: false
+                        },
+                        defaultPresentationDelay: 16,
+                        retryParameters: { maxAttempts: 5, baseDelay: 200, backoffFactor: 1.5 }
+                    },
+                    streaming: {
+                        bufferingGoal: 30,
+                        rebufferingGoal: 6,
+                        bufferBehind: 20,
+                        safeSeekOffset: 5,
+                        stallEnabled: false,
+                        retryParameters: { maxAttempts: 5, baseDelay: 200, backoffFactor: 1.5 }
+                    },
+                    abr: {
+                        enabled: true,
+                        defaultBandwidthEstimate: 1500000,
+                        switchInterval: 8,
+                        restrictions: { maxHeight: 1080 }
+                    }
+                };
+
+                if (cleanKid && cleanK) {
+                    config.drm = { clearKeys: {} };
+                    config.drm.clearKeys[cleanKid] = cleanK;
+                }
+                shakaInstance.configure(config);
+
+                function loadMpd() {
+                    shakaInstance.load(proxiedMpd).then(function() {
+                        hideLoading();
+                        video.play().catch(function(){});
+                        buildShakaQMenu(targetRes);
+                    }).catch(function(err) {
+                        console.error("Shaka load error:", err);
+                        if (currentProxyIdx < PROXIES.length - 1) {
+                            currentProxyIdx++;
+                            proxiedMpd = toProxiedUrl(cleanMpd, currentProxyIdx);
+                            loadMpd();
+                        } else {
+                            hideLoading();
+                            showError("Stream failed to load.");
+                        }
+                    });
+                }
+
+                loadMpd();
+
+                shakaInstance.addEventListener("error", function(ev) {
+                    var err = ev.detail;
+                    if (err && err.severity === shaka.util.Error.Severity.RECOVERABLE) return;
+                    showError("Playback error – retrying...");
+                    setTimeout(function(){ loadMpd(); }, 5000);
+                });
+            }).catch(function(e) {
+                hideLoading();
+                showError("Player initialization error: " + (e.message || e));
+            });
+        }
+
+        function playStream(rawUrl, targetRes, fallbackUrl, isDrm, kid, key) {
+            showLoading();
+            if (hlsInstance) { hlsInstance.destroy(); hlsInstance = null; }
+            if (shakaInstance) { shakaInstance.destroy(); shakaInstance = null; }
+
+            var clean = cleanStreamUrl(rawUrl);
+            var isMpd = isDrm || clean.indexOf(".mpd") !== -1;
+            if (isMpd) {
+                playDrmStream(clean, kid || params.get("kid") || "", key || params.get("key") || "", targetRes);
+                return;
+            }
+
+            var url = toProxiedUrl(clean, currentProxyIdx);
             var desired = targetRes || reqRes || "Auto";
             var isNativeHls = !!video.canPlayType("application/vnd.apple.mpegurl");
 
@@ -626,7 +826,7 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                     }) || availableQualities[0];
 
                     currentRes = chosen.res;
-                    playStream(chosen.url, chosen.targetRes || chosen.res, chosen.fallbackUrl);
+                    playStream(chosen.url, chosen.targetRes || chosen.res, chosen.fallbackUrl, chosen.isDrm, chosen.kid, chosen.key);
                 })
                 .catch(function(e) {
                     hideLoading();
@@ -636,7 +836,7 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
             if (rawUrl.indexOf(".mpd") !== -1) {
                 var kid = params.get("kid") || "";
                 var key = params.get("key") || "";
-                location.replace("shaka_player.html?mpd=" + encodeURIComponent(rawUrl) + (kid ? "&kid=" + encodeURIComponent(kid) : "") + (key ? "&key=" + encodeURIComponent(key) : ""));
+                playDrmStream(rawUrl, kid, key, reqRes);
                 return;
             }
             playStream(rawUrl);
@@ -718,6 +918,10 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
         document.addEventListener("click", function(e) { if(isQMenuOpen&&!qMenu.contains(e.target)&&e.target!==qBtn) { qMenu.classList.remove("open"); isQMenuOpen=false; } });
 
         function buildQMenu() {
+            if (shakaInstance) {
+                buildShakaQMenu(currentRes);
+                return;
+            }
             qMenu.innerHTML = "";
             if (availableQualities.length > 0) {
                 availableQualities.forEach(function(item) {
@@ -775,6 +979,34 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
 
         // Unmute on click
         document.addEventListener("click", function unmute() { video.muted=false; document.removeEventListener("click",unmute); }, {once:true});
+        var shareBtn = document.getElementById("share-btn");
+        if (shareBtn) {
+            shareBtn.addEventListener("click", function(e) {
+                e.stopPropagation();
+                var shareUrl = window.location.href;
+                var shareTitle = document.title || "AryanStreams Player";
+                if (navigator.share) {
+                    navigator.share({ title: shareTitle, url: shareUrl }).catch(function(){});
+                } else if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(shareUrl).then(function() {
+                        var err = document.getElementById("error-msg");
+                        if (err) {
+                            err.style.background = "rgba(16,185,129,0.95)";
+                            err.textContent = "Share link copied to clipboard!";
+                            err.style.display = "block";
+                            setTimeout(function(){ err.style.display = "none"; err.style.background = "rgba(239,68,68,0.9)"; }, 3500);
+                        }
+                    }).catch(function() {
+                        prompt("Copy match link:", shareUrl);
+                    });
+                } else {
+                    prompt("Copy match link:", shareUrl);
+                }
+            });
+        }
+
+        document.addEventListener("touchstart", function unmute() { video.muted=false; document.removeEventListener("touchstart",unmute); }, {once:true});
+
     })();
     </script>
 

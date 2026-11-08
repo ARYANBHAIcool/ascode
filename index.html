@@ -469,12 +469,22 @@ function cleanCategory(cat) {
                 const [kid, key] = cdn.drm.clearkey.split(":");
                 const url = cleanStreamUrl(cdn.Primary_Playback_URL || baseStream || "");
                 if (url) {
-                    return [{ 
-                        res: "DRM Stream", 
-                        url: "shaka_player.html?mpd=" + encodeURIComponent(url) + "&kid=" + encodeURIComponent(kid) + "&key=" + encodeURIComponent(key), 
-                        isDrm: true 
-                    }];
+                    const qualities = [];
+                    standardRes.forEach(r => {
+                        qualities.push({ res: r, url: url, isHd: parseInt(r) >= 720, targetRes: r, isDrm: true, kid: kid, key: key });
+                    });
+                    qualities.push({ res: "Auto", url: url, isHd: false, targetRes: "Auto", isDrm: true, kid: kid, key: key });
+                    return qualities;
                 }
+            } else if (baseStream && baseStream.indexOf(".mpd") !== -1) {
+                const kid = m.kid || "";
+                const key = m.key || "";
+                const qualities = [];
+                standardRes.forEach(r => {
+                    qualities.push({ res: r, url: baseStream, isHd: parseInt(r) >= 720, targetRes: r, isDrm: true, kid: kid, key: key });
+                });
+                qualities.push({ res: "Auto", url: baseStream, isHd: false, targetRes: "Auto", isDrm: true, kid: kid, key: key });
+                return qualities;
             }
 
             // 2. Check google_m3u8_hex / m3u8_hex AND resolved M3U master playlist
@@ -612,10 +622,7 @@ function cleanCategory(cat) {
             const btnFull = document.getElementById("btn-full-player");
             if (btnFull) btnFull.href = "player.html?id=" + encodeURIComponent(m.match_id);
 
-            if (qualities.length === 1 && (qualities[0].isDrm || qualities[0].url.includes("shaka_player.html"))) {
-                handleQualitySelect(qualities[0]);
-                return;
-            }
+            
 
             const resOrder = { "1080p": 6, "720p": 5, "540p": 4, "480p": 3, "360p": 2, "240p": 1 };
             qualities.sort((a, b) => (resOrder[b.res] || parseInt(b.res) || 0) - (resOrder[a.res] || parseInt(a.res) || 0));
@@ -649,10 +656,7 @@ function cleanCategory(cat) {
 
         function handleQualitySelect(q) {
             closeModal();
-            if (q.isDrm) {
-                location.href = q.url;
-                return;
-            }
+            
 
             currentQuality = q;
             selectedStreamUrl = q.url;
@@ -1063,6 +1067,27 @@ function cleanCategory(cat) {
         }
 
         loadData();
+
+        const btnShare = document.getElementById("btn-share-match");
+        if (btnShare) {
+            btnShare.addEventListener("click", function() {
+                if (!currentMatch) return;
+                const shareUrl = window.location.origin + "/player.html?id=" + encodeURIComponent(currentMatch.match_id) + (currentQuality && currentQuality.targetRes ? "&r=" + encodeURIComponent(currentQuality.targetRes) : "");
+                const shareTitle = currentMatch.title || currentMatch.match_name || "AryanStreams Live Sports";
+                if (navigator.share) {
+                    navigator.share({ title: shareTitle, url: shareUrl }).catch(function(){});
+                } else if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(shareUrl).then(function() {
+                        alert("Match link copied to clipboard:\n" + shareUrl);
+                    }).catch(function() {
+                        prompt("Copy match link:", shareUrl);
+                    });
+                } else {
+                    prompt("Copy match link:", shareUrl);
+                }
+            });
+        }
+
 
         // Auto-refresh matches every 60s
         setInterval(async () => {
