@@ -162,7 +162,22 @@
             return String(value || "").trim().split("|")[0].trim().replace(/[,\s]+$/g, "");
         }
 
-        var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
+        
+
+        var PROXIES = [
+            "https://asp1.lovable.app/api/proxy?u=",
+            "https://stream-through-spark.lovable.app/api/proxy?u="
+        ];
+        var currentProxyIdx = 0;
+
+        function toProxiedUrl(u, pIdx) {
+            if (!u) return "";
+            var clean = cleanStreamUrl(u);
+            if (clean.indexOf("lovable.app") !== -1 || clean.indexOf("/api/proxy") !== -1) return clean;
+            var px = PROXIES[typeof pIdx === 'number' ? pIdx : currentProxyIdx] || PROXIES[0];
+            return px + encodeURIComponent(clean);
+        }
+var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
         var streamUrl = "";
         var availableQualities = [];
         var currentRes = "";
@@ -237,7 +252,7 @@
                     var resLabel = height + "p";
                     if (streamUrl && streamUrl.startsWith("http") && !seen[resLabel]) {
                         seen[resLabel] = true;
-                        list.push({ res: resLabel, url: streamUrl, targetRes: resLabel });
+                        list.push({ res: resLabel, url: toProxiedUrl(streamUrl), targetRes: resLabel });
                     }
                 }
             }
@@ -299,10 +314,11 @@
             return [];
         }
 
-        function playStream(url, targetRes, fallbackUrl) {
+        function playStream(rawUrl, targetRes, fallbackUrl) {
             showLoading();
             if (hlsInstance) { hlsInstance.destroy(); hlsInstance = null; }
 
+            var url = toProxiedUrl(rawUrl, currentProxyIdx);
             var desired = targetRes || reqRes || "Auto";
             var isNativeHls = !!video.canPlayType("application/vnd.apple.mpegurl");
 
@@ -319,6 +335,7 @@
 
             if (window.Hls && Hls.isSupported()) {
                 var triedFallback = false;
+                var triedProxyFallback = false;
                 hlsInstance = new Hls({
                     enableWorker: true,
                     lowLatencyMode: true,
@@ -348,9 +365,19 @@
                 hlsInstance.on(Hls.Events.ERROR, function(ev, data) {
                     if (data.fatal) {
                         if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
-                            if (!triedFallback && fallbackUrl && url !== fallbackUrl) {
+                            if (!triedProxyFallback && currentProxyIdx < PROXIES.length - 1) {
+                                triedProxyFallback = true;
+                                currentProxyIdx++;
+                                var altPxUrl = toProxiedUrl(rawUrl, currentProxyIdx);
+                                console.warn("Primary proxy failed, trying secondary proxy:", altPxUrl);
+                                hlsInstance.loadSource(altPxUrl);
+                                hlsInstance.startLoad();
+                            } else if (!triedFallback && fallbackUrl && rawUrl !== fallbackUrl) {
                                 triedFallback = true;
-                                hlsInstance.loadSource(fallbackUrl);
+                                currentProxyIdx = 0;
+                                var fbUrl = toProxiedUrl(fallbackUrl, 0);
+                                console.warn("Trying fallback stream URL:", fbUrl);
+                                hlsInstance.loadSource(fbUrl);
                                 hlsInstance.startLoad();
                             } else {
                                 hlsInstance.startLoad();
@@ -433,7 +460,7 @@
                 var list = Object.values(m3uMap);
                 return Promise.all(list.map(function(item) {
                     if (item.stream_url && item.stream_url.includes(".m3u8")) {
-                        return fetch(cleanStreamUrl(item.stream_url), { cache: "no-store" })
+                        return fetch(toProxiedUrl(item.stream_url, 0), { cache: "no-store" })
                             .then(function(r) { return r.ok ? r.text() : ""; })
                             .then(function(mText) {
                                 if (mText && mText.includes("#EXT-X-STREAM-INF")) {

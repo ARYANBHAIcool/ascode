@@ -324,7 +324,22 @@
             return String(value || "").trim().split("|")[0].trim().replace(/[,\s]+$/g, "");
         }
 
-        function cleanCategory(cat) {
+        
+
+        var PROXIES = [
+            "https://asp1.lovable.app/api/proxy?u=",
+            "https://stream-through-spark.lovable.app/api/proxy?u="
+        ];
+        var currentProxyIdx = 0;
+
+        function toProxiedUrl(u, pIdx) {
+            if (!u) return "";
+            var clean = cleanStreamUrl(u);
+            if (clean.indexOf("lovable.app") !== -1 || clean.indexOf("/api/proxy") !== -1) return clean;
+            var px = PROXIES[typeof pIdx === 'number' ? pIdx : currentProxyIdx] || PROXIES[0];
+            return px + encodeURIComponent(clean);
+        }
+function cleanCategory(cat) {
             if (!cat) return 'Sports';
             var c = String(cat).replace(/^fancode-/i, '').trim();
             if (!c) return 'Sports';
@@ -432,7 +447,7 @@
                     var resLabel = height + "p";
                     if (streamUrl && streamUrl.startsWith("http") && !seen[resLabel]) {
                         seen[resLabel] = true;
-                        list.push({ res: resLabel, url: streamUrl, isHd: parseInt(height) >= 720, targetRes: resLabel });
+                        list.push({ res: resLabel, url: toProxiedUrl(streamUrl), isHd: parseInt(height) >= 720, targetRes: resLabel });
                     }
                 }
             }
@@ -914,7 +929,7 @@
             await Promise.allSettled(list.map(async (item) => {
                 if (item.stream_url && item.stream_url.includes(".m3u8")) {
                     try {
-                        const r = await fetch(cleanStreamUrl(item.stream_url), { cache: "no-store" });
+                        const r = await fetch(toProxiedUrl(item.stream_url), { cache: "no-store" });
                         if (r.ok) {
                             const mText = await r.text();
                             if (mText && mText.includes("#EXT-X-STREAM-INF")) {
