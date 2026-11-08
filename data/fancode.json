@@ -3,12 +3,12 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/9/2026, 2:06:04 AM IST",
+  "last_updated": "11/9/2026, 4:40:42 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 39,
+  "total_matches": 40,
   "live_matches": 2,
   "matches": [
     {
@@ -42,18 +42,6 @@
       "src": "https://www.fancode.com/skillup-uploads/cms-media/World-Wide-Technology-Championship_Web-match-card_1793992817308.png",
       "event_category": "Golf",
       "event_name": "World Wide Technology Championship 2026",
-      "language": "English",
-      "startTime": "01:30:00 AM 09-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": "4250612_ENG",
-      "title": "WTGL 2026 [English]",
-      "match_name": "LAGC vs NYGC [English]",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250612_53143_WTGL_LOC_FC-Web.png",
-      "event_category": "Golf",
-      "event_name": "WTGL 2026",
       "language": "English",
       "startTime": "01:30:00 AM 09-11-2026",
       "status": "UPCOMING",
@@ -476,6 +464,30 @@
       "event_name": "Nepal Premier League Season 3, 2026",
       "language": "English",
       "startTime": "04:45:00 PM 13-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250631,
+      "title": "Quarter-Final vs Japan (BWF Super 500 - Japan Masters 2026)",
+      "match_name": "Quarter-Final",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Japan-Masters_fc-web.jpg",
+      "event_category": "Badminton",
+      "event_name": "BWF Super 500 - Japan Masters 2026",
+      "language": "English",
+      "startTime": "06:30:00 AM 13-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250586,
+      "title": "ATP 250 - Bybit Stockholm Open 2026 vs Stockholm, Sweden (ATP 250 - Bybit Stockholm Open 2026)",
+      "match_name": "ATP 250 - Bybit Stockholm Open 2026",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/ATP-250---Bybit-Stockholm-Open_2026_FC-WEB.jpg",
+      "event_category": "Tennis",
+      "event_name": "ATP 250 - Bybit Stockholm Open 2026",
+      "language": "English",
+      "startTime": "12:00:00 PM 13-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
