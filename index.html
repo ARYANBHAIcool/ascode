@@ -612,7 +612,7 @@ function cleanCategory(cat) {
             const btnFull = document.getElementById("btn-full-player");
             if (btnFull) btnFull.href = "player.html?id=" + encodeURIComponent(m.match_id);
 
-            if (qualities.length === 1 && qualities[0].isDrm) {
+            if (qualities.length === 1 && (qualities[0].isDrm || qualities[0].url.includes("shaka_player.html"))) {
                 handleQualitySelect(qualities[0]);
                 return;
             }

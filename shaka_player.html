@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="referrer" content="no-referrer">
-    <title>FanCode Player (DRM)</title>
+    <title>⚡ FanCode Live Player • AryanStreams</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shaka-player@5.2.4/dist/controls.css">
     <style>
         * { margin:0; padding:0; box-sizing:border-box; }
@@ -56,10 +56,42 @@
             return String(value || "").trim().split("|")[0].trim().replace(/[,\s]+$/g, "");
         }
 
-        var rawMpd = cleanStreamUrl(params.get('mpd') || '');
-        var MPD_URL = "";
-        var KEY_ID  = params.get('kid') || '';
-        var KEY     = params.get('key') || '';
+        var PROXIES = [
+            "https://asp1.lovable.app/api/proxy?u=",
+            "https://stream-through-spark.lovable.app/api/proxy?u="
+        ];
+        var currentProxyIdx = 0;
+
+        function toProxiedUrl(u, pIdx) {
+            if (!u) return "";
+            var clean = cleanStreamUrl(u);
+            if (clean.indexOf("lovable.app") !== -1 || clean.indexOf("/api/proxy") !== -1) return clean;
+            var px = PROXIES[typeof pIdx === 'number' ? pIdx : currentProxyIdx] || PROXIES[0];
+            return px + encodeURIComponent(clean);
+        }
+
+        function cleanKey(k) {
+            if (!k) return '';
+            var s = String(k).trim().toLowerCase().replace(/-/g, '');
+            if (s.length === 32) return s;
+            try {
+                var b64 = k.replace(/-/g, '+').replace(/_/g, '/');
+                while (b64.length % 4) b64 += '=';
+                var bin = atob(b64);
+                var hex = '';
+                for (var i = 0; i < bin.length; i++) {
+                    var h = bin.charCodeAt(i).toString(16);
+                    hex += (h.length === 1 ? '0' : '') + h;
+                }
+                return hex;
+            } catch(e) {
+                return s;
+            }
+        }
+
+        var rawMpd = cleanStreamUrl(params.get('mpd') || params.get('url') || '');
+        var KEY_ID  = cleanKey(params.get('kid') || '');
+        var KEY     = cleanKey(params.get('key') || '');
         var REFERER = params.get('referer') || 'https://fancode.com/';
 
         var $video   = document.getElementById('video');
@@ -82,7 +114,6 @@
             return;
         }
 
-
         shaka.polyfill.installAll();
         if (!shaka.Player.isBrowserSupported()) {
             hideLoading();
@@ -90,7 +121,8 @@
             return;
         }
 
-        MPD_URL = rawMpd; // Direct MPD stream like speedsters / diko8teen
+        var baseMpdUrl = rawMpd.substring(0, rawMpd.lastIndexOf('/') + 1);
+        var MPD_URL = toProxiedUrl(rawMpd, currentProxyIdx);
 
         var player = new shaka.Player();
         player.attach($video).then(function() {
@@ -101,8 +133,21 @@
             });
 
             player.getNetworkingEngine().registerRequestFilter(function(type, req) {
-                req.headers['Referer'] = REFERER;
-                req.headers['User-Agent'] = navigator.userAgent;
+                req.uris = req.uris.map(function(u) {
+                    if (u.indexOf('asp1.lovable.app/api/proxy?u=') !== -1 || u.indexOf('stream-through-spark.lovable.app/api/proxy?u=') !== -1) {
+                        return u;
+                    }
+                    if (u.indexOf('lovable.app/api/') !== -1 || u.indexOf('ascode.pages.dev/') !== -1 || u.indexOf('localhost') !== -1) {
+                        var filename = u.substring(u.lastIndexOf('/') + 1);
+                        if (baseMpdUrl) {
+                            return toProxiedUrl(baseMpdUrl + filename, currentProxyIdx);
+                        }
+                    }
+                    if (u.indexOf('fancode.com') !== -1 && u.indexOf('proxy') === -1) {
+                        return toProxiedUrl(u, currentProxyIdx);
+                    }
+                    return u;
+                });
             });
 
             var config = {
@@ -116,14 +161,24 @@
             }
             player.configure(config);
 
-            player.load(MPD_URL).then(function() {
-                $video.muted = true;
-                $video.play().catch(function(){});
-            }).catch(function(e) {
-                console.error('Load error:', e);
-                showError('Stream load failed – retrying...');
-                setTimeout(function(){ location.reload(); }, 5000);
-            });
+            function startLoad() {
+                player.load(MPD_URL).then(function() {
+                    $video.muted = true;
+                    $video.play().catch(function(){});
+                }).catch(function(e) {
+                    console.error('Load error:', e);
+                    if (currentProxyIdx < PROXIES.length - 1) {
+                        currentProxyIdx++;
+                        MPD_URL = toProxiedUrl(rawMpd, currentProxyIdx);
+                        startLoad();
+                    } else {
+                        showError('Stream load failed – retrying...');
+                        setTimeout(function(){ location.reload(); }, 5000);
+                    }
+                });
+            }
+
+            startLoad();
 
             $video.addEventListener('playing', hideLoading);
             $video.addEventListener('canplay', hideLoading);
@@ -132,7 +187,7 @@
                 var err = ev.detail;
                 if (err && err.severity === shaka.util.Error.Severity.RECOVERABLE) return;
                 showError('Playback error – retrying...');
-                setTimeout(function(){ player.load(MPD_URL).catch(function(){}); }, 5000);
+                setTimeout(function(){ startLoad(); }, 5000);
             });
 
             document.addEventListener('click', function unmute() {

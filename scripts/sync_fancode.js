@@ -25,6 +25,14 @@ function fetchEndpoint(url) {
     });
 }
 
+
+function b64ToHex(b64url) {
+    if (!b64url) return '';
+    let b64 = b64url.replace(/-/g, '+').replace(/_/g, '/');
+    while (b64.length % 4) b64 += '=';
+    return Buffer.from(b64, 'base64').toString('hex');
+}
+
 function cleanStreamUrl(value) {
     return String(value || '').trim().split('|')[0].trim().replace(/[,\s]+$/g, '');
 }
@@ -32,6 +40,7 @@ function cleanStreamUrl(value) {
 function toDaiUrl(streamUrl) {
     if (!streamUrl) return '';
     if (streamUrl.includes('dai-fancode.pages.dev')) return cleanStreamUrl(streamUrl);
+    if (streamUrl.includes('.mpd')) return cleanStreamUrl(streamUrl);
     const match = streamUrl.match(/(mumbai\/[^\/]+)/);
     if (match) {
         return `https://dai-fancode.pages.dev/${match[1]}/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/`;
@@ -106,13 +115,22 @@ function parseM3U(content) {
                 cur.title = commaSplit[commaSplit.length - 1].trim();
                 cur.match_name = cur.title;
             }
+        } else if (line.includes('license_key=') && cur) {
+            try {
+                const jsonStr = line.split('license_key=')[1];
+                const keyObj = JSON.parse(jsonStr);
+                if (keyObj.keys && keyObj.keys[0]) {
+                    cur.kid = b64ToHex(keyObj.keys[0].kid);
+                    cur.key = b64ToHex(keyObj.keys[0].k);
+                }
+            } catch(e) {}
         } else if (line.startsWith('http') && cur) {
             if (!cur.match_id) {
                 const urlIdMatch = line.match(/mumbai\/([0-9a-zA-Z]+)_/i);
                 if (urlIdMatch) cur.match_id = urlIdMatch[1];
             }
             if (!cur.language) {
-                const urlLangMatch = line.match(/mumbai\/[0-9a-zA-Z]+_([a-zA-Z]+)_hls/i);
+                const urlLangMatch = line.match(/mumbai\/[0-9a-zA-Z]+_([a-zA-Z]+)_(?:hls|dash)/i);
                 if (urlLangMatch) {
                     const l = urlLangMatch[1];
                     cur.language = l.charAt(0).toUpperCase() + l.slice(1).toLowerCase();
@@ -120,7 +138,20 @@ function parseM3U(content) {
                     cur.language = 'English';
                 }
             }
-            cur.stream_url = toDaiUrl(line);
+            if (line.includes('.mpd')) {
+                cur.stream_url = cleanStreamUrl(line);
+                if (cur.kid && cur.key) {
+                    cur.STREAMING_CDN = {
+                        is_drm: true,
+                        Primary_Playback_URL: cur.stream_url,
+                        drm: {
+                            clearkey: `${cur.kid}:${cur.key}`
+                        }
+                    };
+                }
+            } else {
+                cur.stream_url = toDaiUrl(line);
+            }
             cur.status = 'LIVE';
             cur.startTime = cur.startTime || 'Live Now';
 
@@ -280,6 +311,7 @@ async function syncFanCode() {
                 if (!existing.event_name && (jm.event_name || jm.tournament)) existing.event_name = jm.event_name || jm.tournament;
                 if (!existing.src && jm.src) existing.src = jm.src;
                 if (!existing.event_category && jm.event_category) existing.event_category = cleanCategory(jm.event_category);
+                if (existing.stream_url) existing.status = 'LIVE';
             } else {
                 // If this scheduled match has no verified stream, add as UPCOMING (never broken LIVE)
                 matchesMap.set(rawId, {

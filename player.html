@@ -280,6 +280,11 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                     location.replace("shaka_player.html?mpd=" + encodeURIComponent(url) + "&kid=" + encodeURIComponent(kid) + "&key=" + encodeURIComponent(key));
                     return [];
                 }
+            } else if (baseStream && baseStream.indexOf(".mpd") !== -1) {
+                var kid = m.kid || "";
+                var key = m.key || "";
+                location.replace("shaka_player.html?mpd=" + encodeURIComponent(baseStream) + (kid ? "&kid=" + encodeURIComponent(kid) : "") + (key ? "&key=" + encodeURIComponent(key) : ""));
+                return [];
             }
 
             // Check google_m3u8_hex / m3u8_hex AND resolved M3U master playlist
@@ -628,6 +633,12 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                     showError("Could not load match data. Please reload.");
                 });
         } else if (rawUrl) {
+            if (rawUrl.indexOf(".mpd") !== -1) {
+                var kid = params.get("kid") || "";
+                var key = params.get("key") || "";
+                location.replace("shaka_player.html?mpd=" + encodeURIComponent(rawUrl) + (kid ? "&kid=" + encodeURIComponent(kid) : "") + (key ? "&key=" + encodeURIComponent(key) : ""));
+                return;
+            }
             playStream(rawUrl);
         } else {
             hideLoading();
