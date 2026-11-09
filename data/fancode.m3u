@@ -1,11 +1,7 @@
 #EXTM3U
 # ⚡ ARYANSTREAMS • FANCODE PRO LIVE HUB ⚡
 # Official Telegram: https://t.me/aryanstreams
-# Verified: 11/9/2026, 3:54:47 PM IST
+# Verified: 11/9/2026, 9:22:55 PM IST
 
-#EXTINF:-1 tvg-id="4250527" tvg-name="2026 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/West-Indies-tour-of-Bangladesh-web-.jpg" tvg-language="English" group-title="Cricket",ENG | 2026 [English]
-https://dai-fancode.pages.dev/mumbai/4250527_english_hls_370c69458446842_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
-#EXTINF:-1 tvg-id="4249772" tvg-name="Zimbabwe Vs Afghanistan [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/AFG-vs-ZIM_Test_fc-web.jpg" tvg-language="English" group-title="Cricket",ENG | Zimbabwe Vs Afghanistan [English]
-https://dai-fancode.pages.dev/mumbai/4249772_english_hls_ea87fdf83461346_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4250373" tvg-name="Pokhara Avengers Vs Karnali Yaks [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250373_53124_PKA_KNY_fc-Web_1793616702356.jpg" tvg-language="English" group-title="Cricket",ENG | Pokhara Avengers Vs Karnali Yaks [English]
-https://dai-fancode.pages.dev/mumbai/4250373_english_hls_c42dd1db2742464_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250582" tvg-name="World Feed [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/ATP-250---Bybit-Stockholm-Open_2026_FC-WEB.jpg" tvg-language="English" group-title="Tennis",ENG | World Feed [English]
+https://dai-fancode.pages.dev/mumbai/4250582_english_hls_1fc5d1716c90892_1ta-di_h264/index.m3u8
