@@ -3,29 +3,14 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/10/2026, 2:31:16 AM IST",
+  "last_updated": "11/10/2026, 5:27:12 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 37,
-  "live_matches": 2,
+  "live_matches": 1,
   "matches": [
-    {
-      "match_id": "4250582",
-      "match_name": "ATP 250 - Bybit Stockholm Open 2026 [English]",
-      "title": "ATP 250 - Bybit Stockholm Open 2026 [English]",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/ATP-250---Bybit-Stockholm-Open_2026_FC-WEB.jpg",
-      "language": "English",
-      "event_category": "Tennis",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250582_english_hls_1fc5d1716c90892_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "Live Now",
-      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250582_english_hls_1fc5d1716c90892_1ta-di_h264/240p.m3u8?hdntl=Expires=1794329468~_GO=Generated~acl=/mumbai/4250582_english_hls_1fc5d1716c90892_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_89e94e6b-bed6-44~Signature=AbO9Bjjq8IaN11tRK7zQoLiAu9_3z5mzTqEAKbYpCkexM7zGatGohBo0iBx2_4H7lx_3_vZ5uy4OtyweedEn9-7rC5sF\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250582_english_hls_1fc5d1716c90892_1ta-di_h264/360p.m3u8?hdntl=Expires=1794329468~_GO=Generated~acl=/mumbai/4250582_english_hls_1fc5d1716c90892_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_89e94e6b-bed6-44~Signature=AbO9Bjjq8IaN11tRK7zQoLiAu9_3z5mzTqEAKbYpCkexM7zGatGohBo0iBx2_4H7lx_3_vZ5uy4OtyweedEn9-7rC5sF\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250582_english_hls_1fc5d1716c90892_1ta-di_h264/480p.m3u8?hdntl=Expires=1794329468~_GO=Generated~acl=/mumbai/4250582_english_hls_1fc5d1716c90892_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_89e94e6b-bed6-44~Signature=AbO9Bjjq8IaN11tRK7zQoLiAu9_3z5mzTqEAKbYpCkexM7zGatGohBo0iBx2_4H7lx_3_vZ5uy4OtyweedEn9-7rC5sF\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250582_english_hls_1fc5d1716c90892_1ta-di_h264/540p.m3u8?hdntl=Expires=1794329468~_GO=Generated~acl=/mumbai/4250582_english_hls_1fc5d1716c90892_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_89e94e6b-bed6-44~Signature=AbO9Bjjq8IaN11tRK7zQoLiAu9_3z5mzTqEAKbYpCkexM7zGatGohBo0iBx2_4H7lx_3_vZ5uy4OtyweedEn9-7rC5sF\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250582_english_hls_1fc5d1716c90892_1ta-di_h264/720p.m3u8?hdntl=Expires=1794329468~_GO=Generated~acl=/mumbai/4250582_english_hls_1fc5d1716c90892_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_89e94e6b-bed6-44~Signature=AbO9Bjjq8IaN11tRK7zQoLiAu9_3z5mzTqEAKbYpCkexM7zGatGohBo0iBx2_4H7lx_3_vZ5uy4OtyweedEn9-7rC5sF\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250582_english_hls_1fc5d1716c90892_1ta-di_h264/1080p.m3u8?hdntl=Expires=1794329468~_GO=Generated~acl=/mumbai/4250582_english_hls_1fc5d1716c90892_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_89e94e6b-bed6-44~Signature=AbO9Bjjq8IaN11tRK7zQoLiAu9_3z5mzTqEAKbYpCkexM7zGatGohBo0iBx2_4H7lx_3_vZ5uy4OtyweedEn9-7rC5sF",
-      "team_1": "World Feed",
-      "team_2": "Stockholm, Sweden",
-      "event_name": "ATP 250 - Bybit Stockholm Open 2026"
-    },
     {
       "match_id": "4250207",
       "match_name": "2026 [English]",
@@ -36,7 +21,7 @@
       "stream_url": "https://dai-fancode.pages.dev/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE",
       "startTime": "Live Now",
-      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/240p.m3u8?hdntl=Expires=1794333069~_GO=Generated~acl=/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_346a3dd3-cdf1-47~Signature=AbO9BjjxFUnIJwmLjaCv84kLB2wUn-qf4KqoYgWmY51mxEJZUWV1dEACw0FAzlF_RjXlpCPltmgLO4Al3DESO1YK1JcH\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/360p.m3u8?hdntl=Expires=1794333069~_GO=Generated~acl=/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_346a3dd3-cdf1-47~Signature=AbO9BjjxFUnIJwmLjaCv84kLB2wUn-qf4KqoYgWmY51mxEJZUWV1dEACw0FAzlF_RjXlpCPltmgLO4Al3DESO1YK1JcH\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/480p.m3u8?hdntl=Expires=1794333069~_GO=Generated~acl=/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_346a3dd3-cdf1-47~Signature=AbO9BjjxFUnIJwmLjaCv84kLB2wUn-qf4KqoYgWmY51mxEJZUWV1dEACw0FAzlF_RjXlpCPltmgLO4Al3DESO1YK1JcH\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/540p.m3u8?hdntl=Expires=1794333069~_GO=Generated~acl=/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_346a3dd3-cdf1-47~Signature=AbO9BjjxFUnIJwmLjaCv84kLB2wUn-qf4KqoYgWmY51mxEJZUWV1dEACw0FAzlF_RjXlpCPltmgLO4Al3DESO1YK1JcH\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/720p.m3u8?hdntl=Expires=1794333069~_GO=Generated~acl=/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_346a3dd3-cdf1-47~Signature=AbO9BjjxFUnIJwmLjaCv84kLB2wUn-qf4KqoYgWmY51mxEJZUWV1dEACw0FAzlF_RjXlpCPltmgLO4Al3DESO1YK1JcH\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/1080p.m3u8?hdntl=Expires=1794333069~_GO=Generated~acl=/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_346a3dd3-cdf1-47~Signature=AbO9BjjxFUnIJwmLjaCv84kLB2wUn-qf4KqoYgWmY51mxEJZUWV1dEACw0FAzlF_RjXlpCPltmgLO4Al3DESO1YK1JcH",
+      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/240p.m3u8?hdntl=Expires=1794351487~_GO=Generated~acl=/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_36b887ba-2f1c-46~Signature=AbO9BjiE1DY8916iJ61dEBzt7_ZFtIxY-jmmzrolEDfDmjgq0y17lOuuJu1E9gglHPnDnOF63aIu5g4xl1WUCPT9xQAO\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/360p.m3u8?hdntl=Expires=1794351487~_GO=Generated~acl=/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_36b887ba-2f1c-46~Signature=AbO9BjiE1DY8916iJ61dEBzt7_ZFtIxY-jmmzrolEDfDmjgq0y17lOuuJu1E9gglHPnDnOF63aIu5g4xl1WUCPT9xQAO\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/480p.m3u8?hdntl=Expires=1794351487~_GO=Generated~acl=/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_36b887ba-2f1c-46~Signature=AbO9BjiE1DY8916iJ61dEBzt7_ZFtIxY-jmmzrolEDfDmjgq0y17lOuuJu1E9gglHPnDnOF63aIu5g4xl1WUCPT9xQAO\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/540p.m3u8?hdntl=Expires=1794351487~_GO=Generated~acl=/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_36b887ba-2f1c-46~Signature=AbO9BjiE1DY8916iJ61dEBzt7_ZFtIxY-jmmzrolEDfDmjgq0y17lOuuJu1E9gglHPnDnOF63aIu5g4xl1WUCPT9xQAO\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/720p.m3u8?hdntl=Expires=1794351487~_GO=Generated~acl=/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_36b887ba-2f1c-46~Signature=AbO9BjiE1DY8916iJ61dEBzt7_ZFtIxY-jmmzrolEDfDmjgq0y17lOuuJu1E9gglHPnDnOF63aIu5g4xl1WUCPT9xQAO\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/1080p.m3u8?hdntl=Expires=1794351487~_GO=Generated~acl=/mumbai/4250207_english_hls_f0ca20d9c497736_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_36b887ba-2f1c-46~Signature=AbO9BjiE1DY8916iJ61dEBzt7_ZFtIxY-jmmzrolEDfDmjgq0y17lOuuJu1E9gglHPnDnOF63aIu5g4xl1WUCPT9xQAO",
       "team_1": "West Indies A",
       "team_2": "England Lions",
       "event_name": "England Lions tour of West Indies, 2026"
@@ -62,30 +47,6 @@
       "event_name": "Nepal Premier League Season 3, 2026",
       "language": "English",
       "startTime": "04:45:00 PM 10-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249495,
-      "title": "BK Häcken Women vs Chelsea F.C. Women (UEFA Women's Champions League 2026-27)",
-      "match_name": "BK Häcken Women vs Chelsea F.C. Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249495_53078_BKH-W_CHE-W_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "UEFA Women's Champions League 2026-27",
-      "language": "English",
-      "startTime": "11:15:00 PM 10-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249496,
-      "title": "Real Madrid Women vs Paris FC Women (UEFA Women's Champions League 2026-27)",
-      "match_name": "Real Madrid Women vs Paris FC Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249496_53078_RM-W_PFC-W_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "UEFA Women's Champions League 2026-27",
-      "language": "English",
-      "startTime": "11:15:00 PM 10-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -122,6 +83,30 @@
       "event_name": "Sheffield Shield, 2026/27",
       "language": "English",
       "startTime": "05:30:00 AM 11-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249495,
+      "title": "BK Häcken Women vs Chelsea F.C. Women (UEFA Women's Champions League 2026-27)",
+      "match_name": "BK Häcken Women vs Chelsea F.C. Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249495_53078_BKH-W_CHE-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "UEFA Women's Champions League 2026-27",
+      "language": "English",
+      "startTime": "11:15:00 PM 10-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4249496,
+      "title": "Real Madrid Women vs Paris FC Women (UEFA Women's Champions League 2026-27)",
+      "match_name": "Real Madrid Women vs Paris FC Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249496_53078_RM-W_PFC-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "UEFA Women's Champions League 2026-27",
+      "language": "English",
+      "startTime": "11:15:00 PM 10-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -458,6 +443,18 @@
       "event_name": "Namibia Super 50, 2026",
       "language": "English",
       "startTime": "01:00:00 PM 14-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250380,
+      "title": "Biratnagar Kings vs Lumbini Lions (Nepal Premier League Season 3, 2026)",
+      "match_name": "Biratnagar Kings vs Lumbini Lions",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250380_53124_BK_LBL_fc-Web_1793616701807.jpg",
+      "event_category": "Cricket",
+      "event_name": "Nepal Premier League Season 3, 2026",
+      "language": "English",
+      "startTime": "04:45:00 PM 14-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
