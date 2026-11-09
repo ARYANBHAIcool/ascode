@@ -1,7 +1,9 @@
 #EXTM3U
 # ⚡ ARYANSTREAMS • FANCODE PRO LIVE HUB ⚡
 # Official Telegram: https://t.me/aryanstreams
-# Verified: 11/9/2026, 8:12:14 AM IST
+# Verified: 11/9/2026, 11:28:42 AM IST
 
-#EXTINF:-1 tvg-id="4250600" tvg-name="World Wide Technology Championship 2026 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/World-Wide-Technology-Championship_Web-match-card_1793992817308.png" tvg-language="English" group-title="Golf",ENG | World Wide Technology Championship 2026 [English]
-https://dai-fancode.pages.dev/mumbai/4250600_english_hls_ba8a5e093433776_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/
+#EXTINF:-1 tvg-id="4250527" tvg-name="West Indies Vs Bangladesh [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/West-Indies-tour-of-Bangladesh-web-.jpg" tvg-language="English" group-title="Cricket",ENG | West Indies Vs Bangladesh [English]
+https://dai-fancode.pages.dev/mumbai/4250527_english_hls_370c69458446842_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4249772" tvg-name="Zimbabwe Vs Afghanistan [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/AFG-vs-ZIM_Test_fc-web.jpg" tvg-language="English" group-title="Cricket",ENG | Zimbabwe Vs Afghanistan [English]
+https://dai-fancode.pages.dev/mumbai/4249772_english_hls_ea87fdf83461346_1ta-di_h264/index.m3u8
