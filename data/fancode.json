@@ -3,29 +3,14 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/10/2026, 8:40:33 PM IST",
+  "last_updated": "11/11/2026, 12:23:08 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 38,
-  "live_matches": 2,
+  "live_matches": 1,
   "matches": [
-    {
-      "match_id": "4250375",
-      "match_name": "2026 [English]",
-      "title": "2026 [English]",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250375_53124_SPR_JKB_fc-Web_1793616701881.jpg",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4250375_english_hls_9f335c869c43687_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "Live Now",
-      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250375_english_hls_9f335c869c43687_1ta-di_h264/240p.m3u8?hdntl=Expires=1794395948~_GO=Generated~acl=/mumbai/4250375_english_hls_9f335c869c43687_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_6e765608-931a-47~Signature=AbO9BjgWF4qomb2aY63QYsdR5HKFrQ72-s2xlfvUUu9rH74aS5lkLWBQeDM3Uwns_vHpMmE2Ok2a6nzGWeJm4RfkIaYM\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250375_english_hls_9f335c869c43687_1ta-di_h264/360p.m3u8?hdntl=Expires=1794395948~_GO=Generated~acl=/mumbai/4250375_english_hls_9f335c869c43687_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_6e765608-931a-47~Signature=AbO9BjgWF4qomb2aY63QYsdR5HKFrQ72-s2xlfvUUu9rH74aS5lkLWBQeDM3Uwns_vHpMmE2Ok2a6nzGWeJm4RfkIaYM\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250375_english_hls_9f335c869c43687_1ta-di_h264/480p.m3u8?hdntl=Expires=1794395948~_GO=Generated~acl=/mumbai/4250375_english_hls_9f335c869c43687_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_6e765608-931a-47~Signature=AbO9BjgWF4qomb2aY63QYsdR5HKFrQ72-s2xlfvUUu9rH74aS5lkLWBQeDM3Uwns_vHpMmE2Ok2a6nzGWeJm4RfkIaYM\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250375_english_hls_9f335c869c43687_1ta-di_h264/540p.m3u8?hdntl=Expires=1794395948~_GO=Generated~acl=/mumbai/4250375_english_hls_9f335c869c43687_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_6e765608-931a-47~Signature=AbO9BjgWF4qomb2aY63QYsdR5HKFrQ72-s2xlfvUUu9rH74aS5lkLWBQeDM3Uwns_vHpMmE2Ok2a6nzGWeJm4RfkIaYM\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250375_english_hls_9f335c869c43687_1ta-di_h264/720p.m3u8?hdntl=Expires=1794395948~_GO=Generated~acl=/mumbai/4250375_english_hls_9f335c869c43687_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_6e765608-931a-47~Signature=AbO9BjgWF4qomb2aY63QYsdR5HKFrQ72-s2xlfvUUu9rH74aS5lkLWBQeDM3Uwns_vHpMmE2Ok2a6nzGWeJm4RfkIaYM\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-plive.fancode.com/mumbai/4250375_english_hls_9f335c869c43687_1ta-di_h264/1080p.m3u8?hdntl=Expires=1794395948~_GO=Generated~acl=/mumbai/4250375_english_hls_9f335c869c43687_1ta-di_h264/*~SessionID=26301734ad95c0a7e59610f8197f3df8_playbox_6e765608-931a-47~Signature=AbO9BjgWF4qomb2aY63QYsdR5HKFrQ72-s2xlfvUUu9rH74aS5lkLWBQeDM3Uwns_vHpMmE2Ok2a6nzGWeJm4RfkIaYM",
-      "team_1": "Sudurpaschim Royals",
-      "team_2": "Janakpur Bolts",
-      "event_name": "Nepal Premier League Season 3, 2026"
-    },
     {
       "match_id": "4250583",
       "match_name": "ATP 250 - Bybit Stockholm Open 2026 [English]",
@@ -40,6 +25,30 @@
       "team_1": "World Feed",
       "team_2": "Stockholm, Sweden",
       "event_name": "ATP 250 - Bybit Stockholm Open 2026"
+    },
+    {
+      "match_id": "4249495_ENG",
+      "title": "UEFA Women's Champions League 2026-27 [English]",
+      "match_name": "BK Häcken Women vs Chelsea F.C. Women [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249495_53078_BKH-W_CHE-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "UEFA Women's Champions League 2026-27",
+      "language": "English",
+      "startTime": "11:15:00 PM 10-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": "4249496_ENG",
+      "title": "UEFA Women's Champions League 2026-27 [English]",
+      "match_name": "Real Madrid Women vs Paris FC Women [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249496_53078_RM-W_PFC-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "UEFA Women's Champions League 2026-27",
+      "language": "English",
+      "startTime": "11:15:00 PM 10-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
     },
     {
       "match_id": 4249671,
@@ -86,30 +95,6 @@
       "event_name": "Women's Big Bash League, 2026",
       "language": "English",
       "startTime": "01:40:00 PM 11-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249495,
-      "title": "BK Häcken Women vs Chelsea F.C. Women (UEFA Women's Champions League 2026-27)",
-      "match_name": "BK Häcken Women vs Chelsea F.C. Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249495_53078_BKH-W_CHE-W_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "UEFA Women's Champions League 2026-27",
-      "language": "English",
-      "startTime": "11:15:00 PM 10-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249496,
-      "title": "Real Madrid Women vs Paris FC Women (UEFA Women's Champions League 2026-27)",
-      "match_name": "Real Madrid Women vs Paris FC Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249496_53078_RM-W_PFC-W_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "UEFA Women's Champions League 2026-27",
-      "language": "English",
-      "startTime": "11:15:00 PM 10-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -174,18 +159,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250613,
-      "title": "DET vs LAGC vs Palm Beach Gardens, FL (WTGL 2026)",
-      "match_name": "DET vs LAGC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/2_web.png",
-      "event_category": "Golf",
-      "event_name": "WTGL 2026",
-      "language": "English",
-      "startTime": "06:30:00 AM 11-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4249502,
       "title": "Juventus Women vs OL Lyonnes (UEFA Women's Champions League 2026-27)",
       "match_name": "Juventus Women vs OL Lyonnes",
@@ -206,6 +179,18 @@
       "event_name": "UEFA Women's Champions League 2026-27",
       "language": "English",
       "startTime": "01:30:00 AM 12-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250613,
+      "title": "DET vs LAGC vs Palm Beach Gardens, FL (WTGL 2026)",
+      "match_name": "DET vs LAGC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/2_web.png",
+      "event_category": "Golf",
+      "event_name": "WTGL 2026",
+      "language": "English",
+      "startTime": "06:30:00 AM 11-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -258,18 +243,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250630,
-      "title": "Round of 16 vs Japan (BWF Super 500 - Japan Masters 2026)",
-      "match_name": "Round of 16",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Japan-Masters_fc-web.jpg",
-      "event_category": "Badminton",
-      "event_name": "BWF Super 500 - Japan Masters 2026",
-      "language": "English",
-      "startTime": "05:30:00 AM 12-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250377,
       "title": "Karnali Yaks vs Lumbini Lions (Nepal Premier League Season 3, 2026)",
       "match_name": "Karnali Yaks vs Lumbini Lions",
@@ -278,6 +251,18 @@
       "event_name": "Nepal Premier League Season 3, 2026",
       "language": "English",
       "startTime": "04:45:00 PM 12-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250630,
+      "title": "Round of 16 vs Japan (BWF Super 500 - Japan Masters 2026)",
+      "match_name": "Round of 16",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Japan-Masters_fc-web.jpg",
+      "event_category": "Badminton",
+      "event_name": "BWF Super 500 - Japan Masters 2026",
+      "language": "English",
+      "startTime": "05:30:00 AM 12-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -470,6 +455,18 @@
       "event_name": "BWF Super 500 - Japan Masters 2026",
       "language": "English",
       "startTime": "06:30:00 AM 14-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250658,
+      "title": "Round 2 vs Kari Motor Speedway, Coimbatore (CTR-JK Tyre FMSCI Indian National Car Racing Championship 2026)",
+      "match_name": "Round 2",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/JK-Tyre-_Web-match-card.png",
+      "event_category": "Motorsports",
+      "event_name": "CTR-JK Tyre FMSCI Indian National Car Racing Championship 2026",
+      "language": "English",
+      "startTime": "09:45:00 AM 14-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
