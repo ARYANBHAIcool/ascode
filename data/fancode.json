@@ -3,27 +3,27 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/11/2026, 11:28:17 AM IST",
+  "last_updated": "11/11/2026, 1:29:54 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 38,
-  "live_matches": 3,
+  "total_matches": 37,
+  "live_matches": 2,
   "matches": [
     {
-      "match_id": "4249672",
+      "match_id": "4249673",
       "match_name": "2026/27 [English]",
       "title": "2026/27 [English]",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249672_53087_VCT_WAU_FC-WEB.jpg",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249673_53087_QUN_TAS_FC-WEB.jpg",
       "language": "English",
       "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249672_english_hls_774ea9bc0e36342_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
       "status": "LIVE",
       "startTime": "Live Now",
-      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4249672_english_hls_774ea9bc0e36342_1ta-di_h264/240p.m3u8?hdntl=Expires=1794376109~_GO=Generated~acl=/mumbai/4249672_english_hls_774ea9bc0e36342_1ta-di_h264/*~SessionID=330525720_sportsguruand_e03c6572-4ea0-4f~Signature=AbO9BjiKALN6VVHl0GJD-p5e00agp-C0Rd5b0Lcn98zAQwUEgvwcd5eZgDtgEpxNt6spRjgvAmTFCtELQcsWLR9IkvgL\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4249672_english_hls_774ea9bc0e36342_1ta-di_h264/360p.m3u8?hdntl=Expires=1794376109~_GO=Generated~acl=/mumbai/4249672_english_hls_774ea9bc0e36342_1ta-di_h264/*~SessionID=330525720_sportsguruand_e03c6572-4ea0-4f~Signature=AbO9BjiKALN6VVHl0GJD-p5e00agp-C0Rd5b0Lcn98zAQwUEgvwcd5eZgDtgEpxNt6spRjgvAmTFCtELQcsWLR9IkvgL\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4249672_english_hls_774ea9bc0e36342_1ta-di_h264/480p.m3u8?hdntl=Expires=1794376109~_GO=Generated~acl=/mumbai/4249672_english_hls_774ea9bc0e36342_1ta-di_h264/*~SessionID=330525720_sportsguruand_e03c6572-4ea0-4f~Signature=AbO9BjiKALN6VVHl0GJD-p5e00agp-C0Rd5b0Lcn98zAQwUEgvwcd5eZgDtgEpxNt6spRjgvAmTFCtELQcsWLR9IkvgL\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4249672_english_hls_774ea9bc0e36342_1ta-di_h264/540p.m3u8?hdntl=Expires=1794376109~_GO=Generated~acl=/mumbai/4249672_english_hls_774ea9bc0e36342_1ta-di_h264/*~SessionID=330525720_sportsguruand_e03c6572-4ea0-4f~Signature=AbO9BjiKALN6VVHl0GJD-p5e00agp-C0Rd5b0Lcn98zAQwUEgvwcd5eZgDtgEpxNt6spRjgvAmTFCtELQcsWLR9IkvgL\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4249672_english_hls_774ea9bc0e36342_1ta-di_h264/720p.m3u8?hdntl=Expires=1794376109~_GO=Generated~acl=/mumbai/4249672_english_hls_774ea9bc0e36342_1ta-di_h264/*~SessionID=330525720_sportsguruand_e03c6572-4ea0-4f~Signature=AbO9BjiKALN6VVHl0GJD-p5e00agp-C0Rd5b0Lcn98zAQwUEgvwcd5eZgDtgEpxNt6spRjgvAmTFCtELQcsWLR9IkvgL\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4249672_english_hls_774ea9bc0e36342_1ta-di_h264/1080p.m3u8?hdntl=Expires=1794376109~_GO=Generated~acl=/mumbai/4249672_english_hls_774ea9bc0e36342_1ta-di_h264/*~SessionID=330525720_sportsguruand_e03c6572-4ea0-4f~Signature=AbO9BjiKALN6VVHl0GJD-p5e00agp-C0Rd5b0Lcn98zAQwUEgvwcd5eZgDtgEpxNt6spRjgvAmTFCtELQcsWLR9IkvgL",
-      "team_1": "Victoria",
-      "team_2": "Western Australia",
+      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/240p.m3u8?hdntl=Expires=1794376113~_GO=Generated~acl=/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/*~SessionID=330525720_sportsguruand_73d2e80c-5e8e-40~Signature=AbO9BjhEFPKIUNH-4BeAoriL9NwCEITyxDJs78TX6Iz61J5e_I3MPDF0ZhnDbZpjKMGXA_3eFfZ93An3xpkucgD_tCwL\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/360p.m3u8?hdntl=Expires=1794376113~_GO=Generated~acl=/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/*~SessionID=330525720_sportsguruand_73d2e80c-5e8e-40~Signature=AbO9BjhEFPKIUNH-4BeAoriL9NwCEITyxDJs78TX6Iz61J5e_I3MPDF0ZhnDbZpjKMGXA_3eFfZ93An3xpkucgD_tCwL\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/480p.m3u8?hdntl=Expires=1794376113~_GO=Generated~acl=/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/*~SessionID=330525720_sportsguruand_73d2e80c-5e8e-40~Signature=AbO9BjhEFPKIUNH-4BeAoriL9NwCEITyxDJs78TX6Iz61J5e_I3MPDF0ZhnDbZpjKMGXA_3eFfZ93An3xpkucgD_tCwL\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/540p.m3u8?hdntl=Expires=1794376113~_GO=Generated~acl=/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/*~SessionID=330525720_sportsguruand_73d2e80c-5e8e-40~Signature=AbO9BjhEFPKIUNH-4BeAoriL9NwCEITyxDJs78TX6Iz61J5e_I3MPDF0ZhnDbZpjKMGXA_3eFfZ93An3xpkucgD_tCwL\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/720p.m3u8?hdntl=Expires=1794376113~_GO=Generated~acl=/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/*~SessionID=330525720_sportsguruand_73d2e80c-5e8e-40~Signature=AbO9BjhEFPKIUNH-4BeAoriL9NwCEITyxDJs78TX6Iz61J5e_I3MPDF0ZhnDbZpjKMGXA_3eFfZ93An3xpkucgD_tCwL\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/1080p.m3u8?hdntl=Expires=1794376113~_GO=Generated~acl=/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/*~SessionID=330525720_sportsguruand_73d2e80c-5e8e-40~Signature=AbO9BjhEFPKIUNH-4BeAoriL9NwCEITyxDJs78TX6Iz61J5e_I3MPDF0ZhnDbZpjKMGXA_3eFfZ93An3xpkucgD_tCwL",
+      "team_1": "Queensland",
+      "team_2": "Tasmania",
       "event_name": "Sheffield Shield, 2026/27"
     },
     {
@@ -42,29 +42,26 @@
       "event_name": "Sheffield Shield, 2026/27"
     },
     {
-      "match_id": "4249673",
-      "match_name": "2026/27 [English]",
-      "title": "2026/27 [English]",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249673_53087_QUN_TAS_FC-WEB.jpg",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/index.m3u8|User-Agent=ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
-      "status": "LIVE",
-      "startTime": "Live Now",
-      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/240p.m3u8?hdntl=Expires=1794376113~_GO=Generated~acl=/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/*~SessionID=330525720_sportsguruand_73d2e80c-5e8e-40~Signature=AbO9BjhEFPKIUNH-4BeAoriL9NwCEITyxDJs78TX6Iz61J5e_I3MPDF0ZhnDbZpjKMGXA_3eFfZ93An3xpkucgD_tCwL\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/360p.m3u8?hdntl=Expires=1794376113~_GO=Generated~acl=/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/*~SessionID=330525720_sportsguruand_73d2e80c-5e8e-40~Signature=AbO9BjhEFPKIUNH-4BeAoriL9NwCEITyxDJs78TX6Iz61J5e_I3MPDF0ZhnDbZpjKMGXA_3eFfZ93An3xpkucgD_tCwL\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/480p.m3u8?hdntl=Expires=1794376113~_GO=Generated~acl=/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/*~SessionID=330525720_sportsguruand_73d2e80c-5e8e-40~Signature=AbO9BjhEFPKIUNH-4BeAoriL9NwCEITyxDJs78TX6Iz61J5e_I3MPDF0ZhnDbZpjKMGXA_3eFfZ93An3xpkucgD_tCwL\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/540p.m3u8?hdntl=Expires=1794376113~_GO=Generated~acl=/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/*~SessionID=330525720_sportsguruand_73d2e80c-5e8e-40~Signature=AbO9BjhEFPKIUNH-4BeAoriL9NwCEITyxDJs78TX6Iz61J5e_I3MPDF0ZhnDbZpjKMGXA_3eFfZ93An3xpkucgD_tCwL\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/720p.m3u8?hdntl=Expires=1794376113~_GO=Generated~acl=/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/*~SessionID=330525720_sportsguruand_73d2e80c-5e8e-40~Signature=AbO9BjhEFPKIUNH-4BeAoriL9NwCEITyxDJs78TX6Iz61J5e_I3MPDF0ZhnDbZpjKMGXA_3eFfZ93An3xpkucgD_tCwL\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\nhttps://in-mc-flive.fancode.com/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/1080p.m3u8?hdntl=Expires=1794376113~_GO=Generated~acl=/mumbai/4249673_english_hls_1f70f8c9aa29270_1ta-di_h264/*~SessionID=330525720_sportsguruand_73d2e80c-5e8e-40~Signature=AbO9BjhEFPKIUNH-4BeAoriL9NwCEITyxDJs78TX6Iz61J5e_I3MPDF0ZhnDbZpjKMGXA_3eFfZ93An3xpkucgD_tCwL",
-      "team_1": "Queensland",
-      "team_2": "Tasmania",
-      "event_name": "Sheffield Shield, 2026/27"
-    },
-    {
       "match_id": 4250404,
-      "title": "Perth Scorchers Women vs Sydney Thunder Women (Women's Big Bash League, 2026)",
-      "match_name": "Perth Scorchers Women vs Sydney Thunder Women",
+      "title": "Sydney Thunder Women vs Perth Scorchers Women (Women's Big Bash League, 2026)",
+      "match_name": "Sydney Thunder Women vs Perth Scorchers Women",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/4250404_53125_PS-W_ST-W_fc-web_1793352702145.jpg",
       "event_category": "Cricket",
       "event_name": "Women's Big Bash League, 2026",
       "language": "English",
       "startTime": "01:40:00 PM 11-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250405,
+      "title": "Melbourne Stars Women vs Brisbane Heat Women (Women's Big Bash League, 2026)",
+      "match_name": "Melbourne Stars Women vs Brisbane Heat Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250405_53125_MS-W_BH-W_fc-web_1793352701261.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
+      "language": "English",
+      "startTime": "10:10:00 AM 12-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -93,34 +90,10 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250405,
-      "title": "Melbourne Stars Women vs Brisbane Heat Women (Women's Big Bash League, 2026)",
-      "match_name": "Melbourne Stars Women vs Brisbane Heat Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250405_53125_MS-W_BH-W_fc-web_1793352701261.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
-      "language": "English",
-      "startTime": "10:10:00 AM 12-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4249502,
       "title": "Juventus Women vs OL Lyonnes (UEFA Women's Champions League 2026-27)",
       "match_name": "Juventus Women vs OL Lyonnes",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/4249502_53078_JUV-W_OLY-W_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "UEFA Women's Champions League 2026-27",
-      "language": "English",
-      "startTime": "01:30:00 AM 12-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4249503,
-      "title": "Benfica Women vs Austria Wien Women (UEFA Women's Champions League 2026-27)",
-      "match_name": "Benfica Women vs Austria Wien Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249503_53078_BEN-W_AW-W_fc-web.jpg",
       "event_category": "Football",
       "event_name": "UEFA Women's Champions League 2026-27",
       "language": "English",
@@ -213,6 +186,30 @@
       "stream_url": ""
     },
     {
+      "match_id": 4249503,
+      "title": "Benfica Women vs Austria Wien Women (UEFA Women's Champions League 2026-27)",
+      "match_name": "Benfica Women vs Austria Wien Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249503_53078_BEN-W_AW-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "UEFA Women's Champions League 2026-27",
+      "language": "English",
+      "startTime": "01:30:00 AM 13-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250721,
+      "title": "Day 1 vs Austin, Texas (Austin Championship 2026)",
+      "match_name": "Day 1",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Austin-championship_Web-match-card.png",
+      "event_category": "Golf",
+      "event_name": "Austin Championship 2026",
+      "language": "English",
+      "startTime": "01:30:00 AM 13-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
       "match_id": 4250640,
       "title": "Australia vs England (England tour of Australia, 2026)",
       "match_name": "Australia vs England",
@@ -237,18 +234,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250721,
-      "title": "Day 1 vs Austin, Texas (Austin Championship 2026)",
-      "match_name": "Day 1",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Austin-championship_Web-match-card.png",
-      "event_category": "Golf",
-      "event_name": "Austin Championship 2026",
-      "language": "English",
-      "startTime": "01:30:00 AM 13-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250378,
       "title": "Kathmandu Gorkhas vs Sudurpaschim Royals (Nepal Premier League Season 3, 2026)",
       "match_name": "Kathmandu Gorkhas vs Sudurpaschim Royals",
@@ -257,6 +242,18 @@
       "event_name": "Nepal Premier League Season 3, 2026",
       "language": "English",
       "startTime": "12:15:00 PM 13-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250631,
+      "title": "Quarter-Final vs Japan (BWF Super 500 - Japan Masters 2026)",
+      "match_name": "Quarter-Final",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Japan-Masters_fc-web.jpg",
+      "event_category": "Badminton",
+      "event_name": "BWF Super 500 - Japan Masters 2026",
+      "language": "English",
+      "startTime": "06:30:00 AM 13-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -285,26 +282,26 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250631,
-      "title": "Quarter-Final vs Japan (BWF Super 500 - Japan Masters 2026)",
-      "match_name": "Quarter-Final",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Japan-Masters_fc-web.jpg",
-      "event_category": "Badminton",
-      "event_name": "BWF Super 500 - Japan Masters 2026",
-      "language": "English",
-      "startTime": "06:30:00 AM 13-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250592,
       "title": "Leganes vs Burgos CF (LALIGA Hypermotion 2026-27)",
       "match_name": "Leganes vs Burgos CF",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Football-old-copy.jpg",
+      "src": "https://images.fancode.com/aig/match/v1794380803687/4250592_CASACARDS_APP.png",
       "event_category": "Football",
       "event_name": "LALIGA Hypermotion 2026-27",
       "language": "English",
       "startTime": "01:00:00 AM 14-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250722,
+      "title": "Day 2 vs Austin, Texas (Austin Championship 2026)",
+      "match_name": "Day 2",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Austin-championship_Web-match-card.png",
+      "event_category": "Golf",
+      "event_name": "Austin Championship 2026",
+      "language": "English",
+      "startTime": "01:30:00 AM 14-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -321,14 +318,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250722,
-      "title": "Day 2 vs Austin, Texas (Austin Championship 2026)",
-      "match_name": "Day 2",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Austin-championship_Web-match-card.png",
-      "event_category": "Golf",
-      "event_name": "Austin Championship 2026",
+      "match_id": 4250632,
+      "title": "Semi-Final vs Japan (BWF Super 500 - Japan Masters 2026)",
+      "match_name": "Semi-Final",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Japan-Masters_fc-web.jpg",
+      "event_category": "Badminton",
+      "event_name": "BWF Super 500 - Japan Masters 2026",
       "language": "English",
-      "startTime": "01:30:00 AM 14-11-2026",
+      "startTime": "06:30:00 AM 14-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -369,30 +366,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250632,
-      "title": "Semi-Final vs Japan (BWF Super 500 - Japan Masters 2026)",
-      "match_name": "Semi-Final",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Japan-Masters_fc-web.jpg",
-      "event_category": "Badminton",
-      "event_name": "BWF Super 500 - Japan Masters 2026",
-      "language": "English",
-      "startTime": "06:30:00 AM 14-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250658,
-      "title": "Round 2 vs Kari Motor Speedway, Coimbatore (CTR-JK Tyre FMSCI Indian National Car Racing Championship 2026)",
-      "match_name": "Round 2",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/JK-Tyre-_Web-match-card.png",
-      "event_category": "Motorsports",
-      "event_name": "CTR-JK Tyre FMSCI Indian National Car Racing Championship 2026",
-      "language": "English",
-      "startTime": "09:45:00 AM 14-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250001,
       "title": "Exeter City vs Cheltenham Town (League Two 2026-27)",
       "match_name": "Exeter City vs Cheltenham Town",
@@ -408,7 +381,7 @@
       "match_id": 4250593,
       "title": "Real Valladolid vs Castellón (LALIGA Hypermotion 2026-27)",
       "match_name": "Real Valladolid vs Castellón",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Football-old-copy.jpg",
+      "src": "https://images.fancode.com/aig/match/v1794380803708/4250593_CASACARDS_APP.png",
       "event_category": "Football",
       "event_name": "LALIGA Hypermotion 2026-27",
       "language": "English",
@@ -473,6 +446,18 @@
       "event_name": "League Two 2026-27",
       "language": "English",
       "startTime": "11:00:00 PM 14-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250765,
+      "title": "Brighton and Hove Albion Women vs Liverpool Women (Barclays Women's Super League 2026-27)",
+      "match_name": "Brighton and Hove Albion Women vs Liverpool Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Football-old-copy.jpg",
+      "event_category": "Football",
+      "event_name": "Barclays Women's Super League 2026-27",
+      "language": "English",
+      "startTime": "10:45:00 PM 14-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     }
