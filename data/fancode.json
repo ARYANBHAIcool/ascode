@@ -3,7 +3,7 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/11/2026, 5:25:44 AM IST",
+  "last_updated": "11/11/2026, 6:52:10 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -44,6 +44,18 @@
       "event_name": "Sheffield Shield, 2026/27",
       "language": "English",
       "startTime": "05:30:00 AM 11-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": "4250613_ENG",
+      "title": "WTGL 2026 [English]",
+      "match_name": "DET vs LAGC [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/2_web.png",
+      "event_category": "Golf",
+      "event_name": "WTGL 2026",
+      "language": "English",
+      "startTime": "06:30:00 AM 11-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -120,14 +132,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250613,
-      "title": "DET vs LAGC vs Palm Beach Gardens, FL (WTGL 2026)",
-      "match_name": "DET vs LAGC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/2_web.png",
-      "event_category": "Golf",
-      "event_name": "WTGL 2026",
+      "match_id": 4250376,
+      "title": "Biratnagar Kings vs Pokhara Avengers (Nepal Premier League Season 3, 2026)",
+      "match_name": "Biratnagar Kings vs Pokhara Avengers",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250376_53124_BK_PKA_fc-Web_1793616701804.jpg",
+      "event_category": "Cricket",
+      "event_name": "Nepal Premier League Season 3, 2026",
       "language": "English",
-      "startTime": "06:30:00 AM 11-11-2026",
+      "startTime": "12:15:00 PM 12-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -140,18 +152,6 @@
       "event_name": "ATP 250 - Bybit Stockholm Open 2026",
       "language": "English",
       "startTime": "05:30:00 PM 11-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250376,
-      "title": "Biratnagar Kings vs Pokhara Avengers (Nepal Premier League Season 3, 2026)",
-      "match_name": "Biratnagar Kings vs Pokhara Avengers",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250376_53124_BK_PKA_fc-Web_1793616701804.jpg",
-      "event_category": "Cricket",
-      "event_name": "Nepal Premier League Season 3, 2026",
-      "language": "English",
-      "startTime": "12:15:00 PM 12-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
