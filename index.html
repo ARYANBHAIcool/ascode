@@ -332,10 +332,24 @@
         ];
         var currentProxyIdx = 0;
 
+        function unwrapProxiedUrl(u) {
+            var cur = cleanStreamUrl(u);
+            var guard = 0;
+            while (guard++ < 4 && cur) {
+                var m = cur.match(/https?:\/\/[^/]+(?:\/api)?(?:\/public)?\/(?:proxy|px)(?:\/[^?]*)?\?(?:u|url)=(.+)$/i);
+                if (!m) break;
+                try {
+                    cur = cleanStreamUrl(decodeURIComponent(m[1]));
+                } catch (_) {
+                    cur = cleanStreamUrl(m[1]);
+                }
+            }
+            return cur;
+        }
+
         function toProxiedUrl(u, pIdx) {
             if (!u) return "";
-            var clean = cleanStreamUrl(u);
-            if (clean.indexOf("lovable.app") !== -1 || clean.indexOf("/api/proxy") !== -1) return clean;
+            var clean = unwrapProxiedUrl(u);
             var px = PROXIES[typeof pIdx === 'number' ? pIdx : currentProxyIdx] || PROXIES[0];
             return px + encodeURIComponent(clean);
         }
@@ -447,7 +461,7 @@ function cleanCategory(cat) {
                     var resLabel = height + "p";
                     if (streamUrl && streamUrl.startsWith("http") && !seen[resLabel]) {
                         seen[resLabel] = true;
-                        list.push({ res: resLabel, url: toProxiedUrl(streamUrl), isHd: parseInt(height) >= 720, targetRes: resLabel });
+                        list.push({ res: resLabel, url: cleanStreamUrl(streamUrl), isHd: parseInt(height) >= 720, targetRes: resLabel });
                     }
                 }
             }
@@ -456,12 +470,25 @@ function cleanCategory(cat) {
 
         function hasStream(m) {
             if (!m) return false;
-            return !!(m.dai_url || m.adfree_url || m.stream_url || (m.STREAMING_CDN && m.STREAMING_CDN.Primary_Playback_URL) || m.google_m3u8_hex || m.master_m3u8);
+            return !!(m.dai_url || m.adfree_url || m.stream_url || (m.STREAMING_CDN && m.STREAMING_CDN.Primary_Playback_URL) || (m.streams && (m.streams.primary || m.streams.fancode_cdn)) || m.auto_streams || m.google_m3u8_hex || m.master_m3u8);
         }
 
         function parseQualities(m) {
             const standardRes = ["1080p", "720p", "540p", "480p", "360p", "240p"];
-            const baseStream = cleanStreamUrl(m.dai_url || m.adfree_url || m.stream_url || "");
+            const kajjuStreams = (m.streams && typeof m.streams === "object") ? m.streams : {};
+            const autoStreamsMap = (m.auto_streams && typeof m.auto_streams === "object" && !Array.isArray(m.auto_streams)) ? m.auto_streams : {};
+            const autoLangKey = Object.keys(autoStreamsMap).find(k => m.language && k.toLowerCase().includes(String(m.language).toLowerCase().slice(0, 3))) || Object.keys(autoStreamsMap)[0];
+            const autoLangStreams = (autoLangKey && autoStreamsMap[autoLangKey] && autoStreamsMap[autoLangKey].streams) ? autoStreamsMap[autoLangKey].streams : {};
+            const baseStream = cleanStreamUrl(
+                m.dai_url ||
+                m.adfree_url ||
+                m.stream_url ||
+                kajjuStreams.primary ||
+                autoLangStreams["1080p"] ||
+                autoLangStreams["720p"] ||
+                kajjuStreams.fancode_cdn ||
+                ""
+            );
 
             // 1. Check DRM first
             const cdn = m.STREAMING_CDN || {};
@@ -492,9 +519,16 @@ function cleanCategory(cat) {
             const hexQualities = hexData ? extractM3u8Qualities(decodeHex(hexData), cleanStreamUrl(m.json_dai_url || baseStream)) : [];
             const m3uQualities = m.master_m3u8 ? extractM3u8Qualities(m.master_m3u8, baseStream) : [];
 
+            const autoObjList = [];
+            standardRes.forEach(r => {
+                if (autoLangStreams[r] && isUrlNotExpired(autoLangStreams[r])) {
+                    autoObjList.push({ res: r, url: cleanStreamUrl(autoLangStreams[r]), isHd: parseInt(r) >= 720, targetRes: r });
+                }
+            });
+
             const useHexPrimary = hexQualities.length > 0 && isUrlNotExpired(hexQualities[0].url);
-            const primaryList = useHexPrimary ? hexQualities : (m3uQualities.length > 0 ? m3uQualities : hexQualities);
-            const secondaryList = useHexPrimary ? m3uQualities : hexQualities;
+            const primaryList = useHexPrimary ? hexQualities : (m3uQualities.length > 0 ? m3uQualities : (autoObjList.length > 0 ? autoObjList : hexQualities));
+            const secondaryList = useHexPrimary ? (m3uQualities.length > 0 ? m3uQualities : autoObjList) : (autoObjList.length > 0 ? autoObjList : hexQualities);
 
             if (primaryList.length > 0) {
                 primaryList.forEach(q => {
@@ -906,7 +940,8 @@ function cleanCategory(cat) {
                 "./data/fancode.m3u?t=" + Date.now(),
                 BACKUP_M3U_API + "?t=" + Date.now(),
                 "https://raw.githubusercontent.com/sportlive18/Fancode-New-Auto-Update/main/fancode2.m3u?t=" + Date.now(),
-                "https://raw.githubusercontent.com/sportlive18/Fancode-New-Auto-Update/main/fancode.m3u?t=" + Date.now()
+                "https://raw.githubusercontent.com/sportlive18/Fancode-New-Auto-Update/main/fancode.m3u?t=" + Date.now(),
+                "https://raw.githubusercontent.com/sportlive18/Fancode-New-Auto-Update/main/fancode3.m3u?t=" + Date.now()
             ];
 
             await Promise.allSettled(urls.map(async (u) => {
@@ -951,7 +986,8 @@ function cleanCategory(cat) {
             const urls = [
                 JSON_API + "?t=" + Date.now(),
                 "./data/fancode.json?t=" + Date.now(),
-                BACKUP_JSON_API + "?t=" + Date.now()
+                BACKUP_JSON_API + "?t=" + Date.now(),
+                "https://raw.githubusercontent.com/kajju027/Fancode-Events-Json/refs/heads/main/fancode.json?t=" + Date.now()
             ];
 
             await Promise.allSettled(urls.map(async (u) => {
@@ -966,8 +1002,13 @@ function cleanCategory(cat) {
                             jsonMap.set(uniqueId, jm);
                         } else {
                             const ex = jsonMap.get(uniqueId);
-                            if ((!ex.dai_url && !ex.stream_url) && (jm.dai_url || jm.stream_url || jm.adfree_url)) {
+                            if ((!ex.dai_url && !ex.stream_url) && (jm.dai_url || jm.stream_url || jm.adfree_url || (jm.streams && jm.streams.primary))) {
                                 jsonMap.set(uniqueId, Object.assign({}, ex, jm));
+                            } else {
+                                if (jm.streams && !ex.streams) ex.streams = jm.streams;
+                                if (jm.auto_streams && !ex.auto_streams) ex.auto_streams = jm.auto_streams;
+                                if (jm.google_m3u8_hex && !ex.google_m3u8_hex) ex.google_m3u8_hex = jm.google_m3u8_hex;
+                                if (jm.STREAMING_CDN && !ex.STREAMING_CDN) ex.STREAMING_CDN = jm.STREAMING_CDN;
                             }
                         }
                     });
@@ -1005,6 +1046,8 @@ function cleanCategory(cat) {
                     if (!existing.event_name && (jm.event_name || jm.tournament)) existing.event_name = jm.event_name || jm.tournament;
                     if (jm.STREAMING_CDN && !existing.STREAMING_CDN) existing.STREAMING_CDN = jm.STREAMING_CDN;
                     if (jm.google_m3u8_hex && !existing.google_m3u8_hex) existing.google_m3u8_hex = jm.google_m3u8_hex;
+                    if (jm.streams && !existing.streams) existing.streams = jm.streams;
+                    if (jm.auto_streams && !existing.auto_streams) existing.auto_streams = jm.auto_streams;
                     if ((jm.dai_url || jm.adfree_url) && !existing.json_dai_url) existing.json_dai_url = jm.dai_url || jm.adfree_url;
                     if (!existing.src && jm.src) existing.src = jm.src;
                     existing.status = "LIVE";

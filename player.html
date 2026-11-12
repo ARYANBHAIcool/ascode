@@ -174,10 +174,24 @@
         ];
         var currentProxyIdx = 0;
 
+        function unwrapProxiedUrl(u) {
+            var cur = cleanStreamUrl(u);
+            var guard = 0;
+            while (guard++ < 4 && cur) {
+                var m = cur.match(/https?:\/\/[^/]+(?:\/api)?(?:\/public)?\/(?:proxy|px)(?:\/[^?]*)?\?(?:u|url)=(.+)$/i);
+                if (!m) break;
+                try {
+                    cur = cleanStreamUrl(decodeURIComponent(m[1]));
+                } catch (_) {
+                    cur = cleanStreamUrl(m[1]);
+                }
+            }
+            return cur;
+        }
+
         function toProxiedUrl(u, pIdx) {
             if (!u) return "";
-            var clean = cleanStreamUrl(u);
-            if (clean.indexOf("lovable.app") !== -1 || clean.indexOf("/api/proxy") !== -1) return clean;
+            var clean = unwrapProxiedUrl(u);
             var px = PROXIES[typeof pIdx === 'number' ? pIdx : currentProxyIdx] || PROXIES[0];
             return px + encodeURIComponent(clean);
         }
@@ -256,7 +270,7 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                     var resLabel = height + "p";
                     if (streamUrl && streamUrl.startsWith("http") && !seen[resLabel]) {
                         seen[resLabel] = true;
-                        list.push({ res: resLabel, url: toProxiedUrl(streamUrl), targetRes: resLabel });
+                        list.push({ res: resLabel, url: cleanStreamUrl(streamUrl), targetRes: resLabel });
                     }
                 }
             }
@@ -292,7 +306,22 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
 
         function parseMatchQualities(m) {
             var standardRes = ["1080p", "720p", "540p", "480p", "360p", "240p"];
-            var baseStream = cleanStreamUrl(m.dai_url || m.adfree_url || m.stream_url || "");
+            var kajjuStreams = (m.streams && typeof m.streams === "object") ? m.streams : {};
+            var autoStreamsMap = (m.auto_streams && typeof m.auto_streams === "object" && !Array.isArray(m.auto_streams)) ? m.auto_streams : {};
+            var autoLangKey = Object.keys(autoStreamsMap).find(function(k) {
+                return m.language && k.toLowerCase().indexOf(String(m.language).toLowerCase().slice(0, 3)) !== -1;
+            }) || Object.keys(autoStreamsMap)[0];
+            var autoLangStreams = (autoLangKey && autoStreamsMap[autoLangKey] && autoStreamsMap[autoLangKey].streams) ? autoStreamsMap[autoLangKey].streams : {};
+            var baseStream = cleanStreamUrl(
+                m.dai_url ||
+                m.adfree_url ||
+                m.stream_url ||
+                kajjuStreams.primary ||
+                autoLangStreams["1080p"] ||
+                autoLangStreams["720p"] ||
+                kajjuStreams.fancode_cdn ||
+                ""
+            );
 
             // Check DRM
             var cdn = m.STREAMING_CDN || {};
@@ -324,14 +353,22 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
             var hexQualities = hexData ? extractM3u8Qualities(decodeHex(hexData), cleanStreamUrl(m.json_dai_url || baseStream)) : [];
             var m3uQualities = m.master_m3u8 ? extractM3u8Qualities(m.master_m3u8, baseStream) : [];
 
+            var autoObjList = [];
+            standardRes.forEach(function(r) {
+                if (autoLangStreams[r] && isUrlNotExpired(autoLangStreams[r])) {
+                    autoObjList.push({ res: r, url: cleanStreamUrl(autoLangStreams[r]), targetRes: r });
+                }
+            });
+
             var useHexPrimary = hexQualities.length > 0 && isUrlNotExpired(hexQualities[0].url);
-            var primaryList = useHexPrimary ? hexQualities : (m3uQualities.length > 0 ? m3uQualities : hexQualities);
-            var secondaryList = useHexPrimary ? m3uQualities : hexQualities;
+            var primaryList = useHexPrimary ? hexQualities : (m3uQualities.length > 0 ? m3uQualities : (autoObjList.length > 0 ? autoObjList : hexQualities));
+            var secondaryList = useHexPrimary ? (m3uQualities.length > 0 ? m3uQualities : autoObjList) : (autoObjList.length > 0 ? autoObjList : hexQualities);
 
             if (primaryList.length > 0) {
                 primaryList.forEach(function(q) {
                     var alt = secondaryList.find(function(s) { return s.res === q.res; });
                     if (alt && alt.url !== q.url) q.fallbackUrl = alt.url;
+                    else if (kajjuStreams.fancode_cdn && kajjuStreams.fancode_cdn !== q.url) q.fallbackUrl = cleanStreamUrl(kajjuStreams.fancode_cdn);
                 });
                 return primaryList;
             }
@@ -344,7 +381,7 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                     if (/(\d+p\d*|\d+)\.m3u8/i.test(qUrl)) {
                         qUrl = qUrl.replace(/(index__|\/)(\d+p\d*|\d+)\.m3u8/i, "$1" + r + ".m3u8");
                     }
-                    list.push({ res: r, url: qUrl, targetRes: r });
+                    list.push({ res: r, url: qUrl, targetRes: r, fallbackUrl: kajjuStreams.fancode_cdn ? cleanStreamUrl(kajjuStreams.fancode_cdn) : undefined });
                 });
                 return list;
             }
@@ -420,22 +457,29 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                 return;
             }
 
-            var cleanMpd = cleanStreamUrl(rawUrl);
+            var cleanMpd = unwrapProxiedUrl(rawUrl);
             var baseMpdUrl = cleanMpd.substring(0, cleanMpd.lastIndexOf("/") + 1);
             var proxiedMpd = toProxiedUrl(cleanMpd, currentProxyIdx);
+            var drmRetryCount = 0;
 
             shakaInstance = new shaka.Player();
             shakaInstance.attach(video).then(function() {
                 shakaInstance.getNetworkingEngine().registerRequestFilter(function(type, req) {
                     req.uris = req.uris.map(function(u) {
-                        if (u.indexOf("asp1.lovable.app/api/proxy?u=") !== -1 || u.indexOf("stream-through-spark.lovable.app/api/proxy?u=") !== -1) {
-                            return u;
+                        var activePx = PROXIES[currentProxyIdx] || PROXIES[0];
+                        if (u.indexOf(activePx) === 0) return u;
+                        if (u.indexOf("/api/proxy?u=") !== -1 || u.indexOf("/proxy?u=") !== -1) {
+                            return toProxiedUrl(unwrapProxiedUrl(u), currentProxyIdx);
                         }
                         if (u.indexOf("lovable.app/api/") !== -1 || u.indexOf("ascode.pages.dev/") !== -1 || u.indexOf("localhost") !== -1 || (!u.startsWith("http://") && !u.startsWith("https://"))) {
-                            var cleanU = u.split("?")[0];
-                            var filename = cleanU.substring(cleanU.lastIndexOf("/") + 1);
-                            if (baseMpdUrl && filename) {
-                                return toProxiedUrl(baseMpdUrl + filename, currentProxyIdx);
+                            try {
+                                return toProxiedUrl(new URL(u, baseMpdUrl).href, currentProxyIdx);
+                            } catch (_) {
+                                var cleanU = u.split("?")[0];
+                                var filename = cleanU.substring(cleanU.lastIndexOf("/") + 1);
+                                if (baseMpdUrl && filename) {
+                                    return toProxiedUrl(baseMpdUrl + filename, currentProxyIdx);
+                                }
                             }
                         }
                         if (u.indexOf("fancode.com") !== -1 && u.indexOf("proxy") === -1) {
@@ -481,6 +525,7 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
 
                 function loadMpd() {
                     shakaInstance.load(proxiedMpd).then(function() {
+                        drmRetryCount = 0;
                         hideLoading();
                         video.play().catch(function(){});
                         buildShakaQMenu(targetRes);
@@ -492,7 +537,7 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                             loadMpd();
                         } else {
                             hideLoading();
-                            showError("Stream failed to load.");
+                            showError("Stream unavailable or blocked by upstream CDN.");
                         }
                     });
                 }
@@ -502,8 +547,14 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                 shakaInstance.addEventListener("error", function(ev) {
                     var err = ev.detail;
                     if (err && err.severity === shaka.util.Error.Severity.RECOVERABLE) return;
-                    showError("Playback error – retrying...");
-                    setTimeout(function(){ loadMpd(); }, 5000);
+                    if (drmRetryCount < 2) {
+                        drmRetryCount++;
+                        showError("Playback interrupted – retrying...");
+                        setTimeout(function(){ if (shakaInstance) loadMpd(); }, 3000);
+                    } else {
+                        hideLoading();
+                        showError("Stream unavailable or blocked by upstream CDN.");
+                    }
                 });
             }).catch(function(e) {
                 hideLoading();
@@ -516,21 +567,44 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
             if (hlsInstance) { hlsInstance.destroy(); hlsInstance = null; }
             if (shakaInstance) { shakaInstance.destroy(); shakaInstance = null; }
 
-            var clean = cleanStreamUrl(rawUrl);
+            var clean = unwrapProxiedUrl(rawUrl);
+            var activeSource = clean;
+            var cleanFallback = fallbackUrl ? unwrapProxiedUrl(fallbackUrl) : "";
             var isMpd = isDrm || clean.indexOf(".mpd") !== -1;
             if (isMpd) {
                 playDrmStream(clean, kid || params.get("kid") || "", key || params.get("key") || "", targetRes);
                 return;
             }
 
-            var url = toProxiedUrl(clean, currentProxyIdx);
+            currentProxyIdx = 0;
+            var url = toProxiedUrl(activeSource, currentProxyIdx);
             var desired = targetRes || reqRes || "Auto";
             var isNativeHls = !!video.canPlayType("application/vnd.apple.mpegurl");
 
             if (isNativeHls) {
+                var nativeTriedFallback = false;
+                var onNativeErr = function() {
+                    if (currentProxyIdx < PROXIES.length - 1) {
+                        currentProxyIdx++;
+                        video.src = toProxiedUrl(activeSource, currentProxyIdx);
+                        video.play().catch(function(){});
+                    } else if (!nativeTriedFallback && cleanFallback && cleanFallback !== activeSource) {
+                        nativeTriedFallback = true;
+                        activeSource = cleanFallback;
+                        currentProxyIdx = 0;
+                        video.src = toProxiedUrl(activeSource, 0);
+                        video.play().catch(function(){});
+                    } else {
+                        video.removeEventListener("error", onNativeErr);
+                        hideLoading();
+                        showError("Stream unavailable or blocked by upstream CDN.");
+                    }
+                };
+                video.addEventListener("error", onNativeErr);
                 video.src = url;
                 video.play().catch(function(){});
                 video.addEventListener("loadedmetadata", function() {
+                    video.removeEventListener("error", onNativeErr);
                     hideLoading();
                     video.play().catch(function(){});
                     buildQMenu();
@@ -540,7 +614,7 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
 
             if (window.Hls && Hls.isSupported()) {
                 var triedFallback = false;
-                var triedProxyFallback = false;
+                var networkRetries = 0;
                 hlsInstance = new Hls({
                     enableWorker: true,
                     lowLatencyMode: true,
@@ -550,6 +624,7 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                 hlsInstance.attachMedia(video);
 
                 hlsInstance.on(Hls.Events.MANIFEST_PARSED, function() {
+                    networkRetries = 0;
                     hideLoading();
                     if (hlsInstance.levels && hlsInstance.levels.length > 1 && desired !== "Auto") {
                         var targetIdx = findLevelIndex(hlsInstance.levels, desired);
@@ -565,34 +640,38 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                     buildQMenu();
                 });
                 hlsInstance.on(Hls.Events.FRAG_LOADED, function() {
+                    networkRetries = 0;
                     hideLoading();
                 });
                 hlsInstance.on(Hls.Events.ERROR, function(ev, data) {
                     if (data.fatal) {
                         if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
-                            if (!triedProxyFallback && currentProxyIdx < PROXIES.length - 1) {
-                                triedProxyFallback = true;
+                            if (currentProxyIdx < PROXIES.length - 1) {
                                 currentProxyIdx++;
-                                var altPxUrl = toProxiedUrl(rawUrl, currentProxyIdx);
-                                console.warn("Primary proxy failed, trying secondary proxy:", altPxUrl);
+                                var altPxUrl = toProxiedUrl(activeSource, currentProxyIdx);
+                                console.warn("Proxy failed, trying backup proxy:", altPxUrl);
                                 hlsInstance.loadSource(altPxUrl);
                                 hlsInstance.startLoad();
-                            } else if (!triedFallback && fallbackUrl && rawUrl !== fallbackUrl) {
+                            } else if (!triedFallback && cleanFallback && activeSource !== cleanFallback) {
                                 triedFallback = true;
+                                activeSource = cleanFallback;
                                 currentProxyIdx = 0;
-                                var fbUrl = toProxiedUrl(fallbackUrl, 0);
+                                var fbUrl = toProxiedUrl(activeSource, 0);
                                 console.warn("Trying fallback stream URL:", fbUrl);
                                 hlsInstance.loadSource(fbUrl);
                                 hlsInstance.startLoad();
-                            } else {
+                            } else if (networkRetries < 1) {
+                                networkRetries++;
                                 hlsInstance.startLoad();
+                            } else {
+                                hideLoading();
+                                showError("Stream unavailable or blocked by upstream CDN (HTTP 403/Offline).");
                             }
                         } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
                             hlsInstance.recoverMediaError();
                         } else {
                             hideLoading();
-                            showError("Stream error. Retrying...");
-                            setTimeout(function(){ if(hlsInstance) hlsInstance.startLoad(); }, 3000);
+                            showError("Stream playback error. Please try another quality or reload.");
                         }
                     }
                 });
@@ -643,7 +722,8 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                 "./data/fancode.m3u?t=" + Date.now(),
                 BACKUP_M3U_API + "?t=" + Date.now(),
                 "https://raw.githubusercontent.com/sportlive18/Fancode-New-Auto-Update/main/fancode2.m3u?t=" + Date.now(),
-                "https://raw.githubusercontent.com/sportlive18/Fancode-New-Auto-Update/main/fancode.m3u?t=" + Date.now()
+                "https://raw.githubusercontent.com/sportlive18/Fancode-New-Auto-Update/main/fancode.m3u?t=" + Date.now(),
+                "https://raw.githubusercontent.com/sportlive18/Fancode-New-Auto-Update/main/fancode3.m3u?t=" + Date.now()
             ];
 
             return Promise.allSettled(urls.map(function(u) {
@@ -685,7 +765,8 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
             var urls = [
                 JSON_API + "?t=" + Date.now(),
                 "./data/fancode.json?t=" + Date.now(),
-                BACKUP_JSON_API + "?t=" + Date.now()
+                BACKUP_JSON_API + "?t=" + Date.now(),
+                "https://raw.githubusercontent.com/kajju027/Fancode-Events-Json/refs/heads/main/fancode.json?t=" + Date.now()
             ];
 
             return Promise.allSettled(urls.map(function(u) {
@@ -700,8 +781,13 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                                 jsonMap[base] = jm;
                             } else {
                                 var ex = jsonMap[base];
-                                if ((!ex.dai_url && !ex.stream_url) && (jm.dai_url || jm.stream_url || jm.adfree_url)) {
+                                if ((!ex.dai_url && !ex.stream_url) && (jm.dai_url || jm.stream_url || jm.adfree_url || (jm.streams && jm.streams.primary))) {
                                     jsonMap[base] = Object.assign({}, ex, jm);
+                                } else {
+                                    if (jm.streams && !ex.streams) ex.streams = jm.streams;
+                                    if (jm.auto_streams && !ex.auto_streams) ex.auto_streams = jm.auto_streams;
+                                    if (jm.google_m3u8_hex && !ex.google_m3u8_hex) ex.google_m3u8_hex = jm.google_m3u8_hex;
+                                    if (jm.STREAMING_CDN && !ex.STREAMING_CDN) ex.STREAMING_CDN = jm.STREAMING_CDN;
                                 }
                             }
                         });
@@ -733,6 +819,8 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                             if (!existing.event_name && (jm.event_name || jm.tournament)) existing.event_name = jm.event_name || jm.tournament;
                             if (jm.STREAMING_CDN && !existing.STREAMING_CDN) existing.STREAMING_CDN = jm.STREAMING_CDN;
                             if (jm.google_m3u8_hex && !existing.google_m3u8_hex) existing.google_m3u8_hex = jm.google_m3u8_hex;
+                            if (jm.streams && !existing.streams) existing.streams = jm.streams;
+                            if (jm.auto_streams && !existing.auto_streams) existing.auto_streams = jm.auto_streams;
                             if ((jm.dai_url || jm.adfree_url) && !existing.json_dai_url) existing.json_dai_url = jm.dai_url || jm.adfree_url;
                             existing.status = "LIVE";
                         } else {
