@@ -93,6 +93,45 @@ function probeStream(url) {
     });
 }
 
+function collectCandidateUrls(jm) {
+    const urls = [];
+    const push = (u) => {
+        const clean = toDaiUrl(u);
+        if (clean && /^https?:\/\//i.test(clean) && !urls.includes(clean)) {
+            urls.push(clean);
+        }
+    };
+    push(jm.dai_url);
+    push(jm.adfree_url);
+    if (jm.STREAMING_CDN && jm.STREAMING_CDN.Primary_Playback_URL) {
+        push(jm.STREAMING_CDN.Primary_Playback_URL);
+    }
+    if (jm.streams) {
+        push(jm.streams.primary);
+    }
+    if (jm.auto_streams && typeof jm.auto_streams === 'object') {
+        for (const langObj of Object.values(jm.auto_streams)) {
+            const s = langObj && langObj.streams;
+            if (s && typeof s === 'object') {
+                ['1080p', '720p', '540p', '480p', '360p', '240p'].forEach(q => push(s[q]));
+            }
+        }
+    }
+    return urls;
+}
+
+async function pickBestParentCandidate(candidates) {
+    let bestRestricted = null;
+    for (const url of candidates) {
+        const p = await probeStream(url);
+        if (p.alive) return { url, probe: p };
+        if (p.restricted && isTokenFresh(url) && !bestRestricted) {
+            bestRestricted = { url, probe: p };
+        }
+    }
+    return bestRestricted;
+}
+
 function cleanCategory(cat) {
     if (!cat) return 'Sports';
     const c = String(cat).replace(/^fancode-/i, '').trim();
@@ -338,13 +377,7 @@ async function syncFanCode() {
                     }
                 }
 
-                const jmStreamUrl = cleanStreamUrl(
-                    jm.dai_url ||
-                    jm.adfree_url ||
-                    (jm.STREAMING_CDN && jm.STREAMING_CDN.Primary_Playback_URL) ||
-                    (jm.streams && jm.streams.primary) ||
-                    ''
-                );
+                const candidates = collectCandidateUrls(jm);
 
                 if (targetKey && matchesMap.has(targetKey)) {
                     const existing = matchesMap.get(targetKey);
@@ -366,11 +399,26 @@ async function syncFanCode() {
                     if (jm.STREAMING_CDN && !existing.STREAMING_CDN) existing.STREAMING_CDN = jm.STREAMING_CDN;
                     if (jm.streams && !existing.streams) existing.streams = jm.streams;
                     if (jm.auto_streams && !existing.auto_streams) existing.auto_streams = jm.auto_streams;
+
+                    // Upgrade any 403/empty stream if this catalog provides a 200 OK parent candidate
+                    if (!verifiedLiveMap.has(targetKey) && isUpstreamLive && candidates.length) {
+                        const best = await pickBestParentCandidate(candidates);
+                        if (best && (best.probe.alive || !existing.stream_url)) {
+                            existing.stream_url = best.url;
+                            if (best.probe.playlistText && best.probe.playlistText.includes('#EXT-X-STREAM-INF')) {
+                                existing.master_m3u8 = best.probe.playlistText;
+                            }
+                            if (best.probe.alive) {
+                                verifiedLiveMap.set(targetKey, existing);
+                            }
+                        }
+                    }
+
                     if (existing.stream_url) existing.status = 'LIVE';
-                } else if (isUpstreamLive && jmStreamUrl && isTokenFresh(jmStreamUrl)) {
-                    const p = await probeStream(jmStreamUrl);
-                    if (p.alive || p.restricted) {
-                        matchesMap.set(rawId, {
+                } else if (isUpstreamLive && candidates.length) {
+                    const best = await pickBestParentCandidate(candidates);
+                    if (best) {
+                        const entry = {
                             match_id: jm.match_id || rawId,
                             title: jmTitle || 'Live Match',
                             match_name: jm.match_name || jmTitle || 'Live Match',
@@ -382,15 +430,17 @@ async function syncFanCode() {
                             language: jm.language || (rawId.includes('_hin') ? 'Hindi' : (rawId.includes('_tam') ? 'Tamil' : 'English')),
                             startTime: jm.startTime || 'Live Now',
                             status: 'LIVE',
-                            stream_url: jmStreamUrl,
-                            dai_url: jm.dai_url ? cleanStreamUrl(jm.dai_url) : jmStreamUrl,
+                            stream_url: best.url,
+                            dai_url: jm.dai_url ? cleanStreamUrl(jm.dai_url) : best.url,
                             adfree_url: jm.adfree_url ? cleanStreamUrl(jm.adfree_url) : '',
                             google_m3u8_hex: jm.google_m3u8_hex || '',
                             STREAMING_CDN: jm.STREAMING_CDN || undefined,
                             streams: jm.streams || undefined,
                             auto_streams: jm.auto_streams || undefined,
-                            master_m3u8: (p.playlistText && p.playlistText.includes('#EXT-X-STREAM-INF')) ? p.playlistText : undefined
-                        });
+                            master_m3u8: (best.probe.playlistText && best.probe.playlistText.includes('#EXT-X-STREAM-INF')) ? best.probe.playlistText : undefined
+                        };
+                        matchesMap.set(rawId, entry);
+                        if (best.probe.alive) verifiedLiveMap.set(rawId, entry);
                     }
                 } else if (!matchesMap.has(rawId)) {
                     matchesMap.set(rawId, {
