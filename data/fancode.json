@@ -3,7 +3,7 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/12/2026, 7:59:30 AM IST",
+  "last_updated": "11/12/2026, 8:51:27 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -264,18 +264,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250631,
-      "title": "Quarter-Final vs Japan (BWF Super 500 - Japan Masters 2026)",
-      "match_name": "Quarter-Final",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Japan-Masters_fc-web.jpg",
-      "event_category": "Badminton",
-      "event_name": "BWF Super 500 - Japan Masters 2026",
-      "language": "English",
-      "startTime": "06:30:00 AM 13-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250379,
       "title": "Janakpur Bolts vs Chitwan Rhinos (Nepal Premier League Season 3, 2026)",
       "match_name": "Janakpur Bolts vs Chitwan Rhinos",
@@ -284,6 +272,18 @@
       "event_name": "Nepal Premier League Season 3, 2026",
       "language": "English",
       "startTime": "04:45:00 PM 13-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250631,
+      "title": "Quarter-Final vs Japan (BWF Super 500 - Japan Masters 2026)",
+      "match_name": "Quarter-Final",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Japan-Masters_fc-web.jpg",
+      "event_category": "Badminton",
+      "event_name": "BWF Super 500 - Japan Masters 2026",
+      "language": "English",
+      "startTime": "06:30:00 AM 13-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
