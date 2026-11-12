@@ -3,75 +3,14 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/12/2026, 3:43:14 PM IST",
+  "last_updated": "11/12/2026, 5:09:08 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
   "total_matches": 33,
-  "live_matches": 1,
+  "live_matches": 0,
   "matches": [
-    {
-      "match_id": "4250376",
-      "match_name": "Pokhara Avengers vs Biratnagar Kings [English]",
-      "title": "Pokhara Avengers vs Biratnagar Kings [English]",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250376_53124_BK_PKA_fc-Web_1793616701804.jpg",
-      "language": "English",
-      "event_category": "Cricket",
-      "stream_url": "https://in-mc-flive.fancode.com/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/720p.m3u8?hdntl=Expires=1794551600~_GO=Generated~acl=/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/*~SessionID=20fde653298ae09b1231e2c94877ae9f_playbox_845100cd-5fdc-46~Signature=AbO9BjgfyL-FpZ7spkiG2wk2QQTC6UB2OHU7ZKlNcQy4HU3FoWFjTUucHLaPgIbX7QFpbRGK2lYv32eBx3NUFzpDLlIG",
-      "status": "LIVE",
-      "startTime": "Live Now",
-      "team_1": "Pokhara Avengers",
-      "team_2": "Biratnagar Kings",
-      "event_name": "Nepal Premier League Season 3, 2026",
-      "dai_url": "https://in-mc-flive.fancode.com/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/1080p.m3u8?hdntl=Expires=1794551600~_GO=Generated~acl=/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/*~SessionID=20fde653298ae09b1231e2c94877ae9f_playbox_845100cd-5fdc-46~Signature=AbO9BjgfyL-FpZ7spkiG2wk2QQTC6UB2OHU7ZKlNcQy4HU3FoWFjTUucHLaPgIbX7QFpbRGK2lYv32eBx3NUFzpDLlIG",
-      "adfree_url": "https://in-mc-flive.fancode.com/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/1080p.m3u8?hdntl=Expires=1794551600~_GO=Generated~acl=/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/*~SessionID=20fde653298ae09b1231e2c94877ae9f_playbox_845100cd-5fdc-46~Signature=AbO9BjgfyL-FpZ7spkiG2wk2QQTC6UB2OHU7ZKlNcQy4HU3FoWFjTUucHLaPgIbX7QFpbRGK2lYv32eBx3NUFzpDLlIG",
-      "google_m3u8_hex": "234558544d33550a234558542d582d56455253494f4e3a330a234558542d582d53545245414d2d494e463a42414e4457494454483d3434363933362c415645524147452d42414e4457494454483d3434363933362c434f444543533d22617663312e3432653031352c6d7034612e34302e32222c50524f4752414d2d49443d312c5245534f4c5554494f4e3d343236783234302c4652414d452d524154453d32352e3030300a68747470733a2f2f696e2d6d632d666c6976652e66616e636f64652e636f6d2f6d756d6261692f343235303337365f656e676c6973685f686c735f3036663864663739306332353338385f3174612d64695f683236342f323430702e6d3375383f68646e746c3d457870697265733d313739343535313630307e5f474f3d47656e6572617465647e61636c3d2f6d756d6261692f343235303337365f656e676c6973685f686c735f3036663864663739306332353338385f3174612d64695f683236342f2a7e53657373696f6e49443d32306664653635333239386165303962313233316532633934383737616539665f706c6179626f785f38343531303063642d356664632d34367e5369676e61747572653d41624f39426a6766794c2d46705a3773706b694732776b3251515443365542324f4855375a4b6c4e63517934485533466f57466a54557563484c615067496258375146706252474b326c59763332654278334e55467a70444c6c49470a234558542d582d53545245414d2d494e463a42414e4457494454483d3730323337362c415645524147452d42414e4457494454483d3730323337362c434f444543533d22617663312e3432653031652c6d7034612e34302e32222c50524f4752414d2d49443d312c5245534f4c5554494f4e3d363430783336302c4652414d452d524154453d32352e3030300a68747470733a2f2f696e2d6d632d666c6976652e66616e636f64652e636f6d2f6d756d6261692f343235303337365f656e676c6973685f686c735f3036663864663739306332353338385f3174612d64695f683236342f333630702e6d3375383f68646e746c3d457870697265733d313739343535313630307e5f474f3d47656e6572617465647e61636c3d2f6d756d6261692f343235303337365f656e676c6973685f686c735f3036663864663739306332353338385f3174612d64695f683236342f2a7e53657373696f6e49443d32306664653635333239386165303962313233316532633934383737616539665f706c6179626f785f38343531303063642d356664632d34367e5369676e61747572653d41624f39426a6766794c2d46705a3773706b694732776b3251515443365542324f4855375a4b6c4e63517934485533466f57466a54557563484c615067496258375146706252474b326c59763332654278334e55467a70444c6c49470a234558542d582d53545245414d2d494e463a42414e4457494454483d313032333232342c415645524147452d42414e4457494454483d313032333232342c434f444543533d22617663312e3464343031652c6d7034612e34302e32222c50524f4752414d2d49443d312c5245534f4c5554494f4e3d383534783438302c4652414d452d524154453d32352e3030300a68747470733a2f2f696e2d6d632d666c6976652e66616e636f64652e636f6d2f6d756d6261692f343235303337365f656e676c6973685f686c735f3036663864663739306332353338385f3174612d64695f683236342f343830702e6d3375383f68646e746c3d457870697265733d313739343535313630307e5f474f3d47656e6572617465647e61636c3d2f6d756d6261692f343235303337365f656e676c6973685f686c735f3036663864663739306332353338385f3174612d64695f683236342f2a7e53657373696f6e49443d32306664653635333239386165303962313233316532633934383737616539665f706c6179626f785f38343531303063642d356664632d34367e5369676e61747572653d41624f39426a6766794c2d46705a3773706b694732776b3251515443365542324f4855375a4b6c4e63517934485533466f57466a54557563484c615067496258375146706252474b326c59763332654278334e55467a70444c6c49470a234558542d582d53545245414d2d494e463a42414e4457494454483d313237383636342c415645524147452d42414e4457494454483d313237383636342c434f444543533d22617663312e3464343031662c6d7034612e34302e32222c50524f4752414d2d49443d312c5245534f4c5554494f4e3d393630783534302c4652414d452d524154453d32352e3030300a68747470733a2f2f696e2d6d632d666c6976652e66616e636f64652e636f6d2f6d756d6261692f343235303337365f656e676c6973685f686c735f3036663864663739306332353338385f3174612d64695f683236342f353430702e6d3375383f68646e746c3d457870697265733d313739343535313630307e5f474f3d47656e6572617465647e61636c3d2f6d756d6261692f343235303337365f656e676c6973685f686c735f3036663864663739306332353338385f3174612d64695f683236342f2a7e53657373696f6e49443d32306664653635333239386165303962313233316532633934383737616539665f706c6179626f785f38343531303063642d356664632d34367e5369676e61747572653d41624f39426a6766794c2d46705a3773706b694732776b3251515443365542324f4855375a4b6c4e63517934485533466f57466a54557563484c615067496258375146706252474b326c59763332654278334e55467a70444c6c49470a234558542d582d53545245414d2d494e463a42414e4457494454483d313738393531322c415645524147452d42414e4457494454483d313738393531322c434f444543533d22617663312e3634303031662c6d7034612e34302e32222c50524f4752414d2d49443d312c5245534f4c5554494f4e3d31323830783732302c4652414d452d524154453d32352e3030300a68747470733a2f2f696e2d6d632d666c6976652e66616e636f64652e636f6d2f6d756d6261692f343235303337365f656e676c6973685f686c735f3036663864663739306332353338385f3174612d64695f683236342f373230702e6d3375383f68646e746c3d457870697265733d313739343535313630307e5f474f3d47656e6572617465647e61636c3d2f6d756d6261692f343235303337365f656e676c6973685f686c735f3036663864663739306332353338385f3174612d64695f683236342f2a7e53657373696f6e49443d32306664653635333239386165303962313233316532633934383737616539665f706c6179626f785f38343531303063642d356664632d34367e5369676e61747572653d41624f39426a6766794c2d46705a3773706b694732776b3251515443365542324f4855375a4b6c4e63517934485533466f57466a54557563484c615067496258375146706252474b326c59763332654278334e55467a70444c6c49470a234558542d582d53545245414d2d494e463a42414e4457494454483d333332323132302c415645524147452d42414e4457494454483d333332323132302c434f444543533d22617663312e3634303032382c6d7034612e34302e32222c50524f4752414d2d49443d312c5245534f4c5554494f4e3d3139323078313038302c4652414d452d524154453d32352e3030300a68747470733a2f2f696e2d6d632d666c6976652e66616e636f64652e636f6d2f6d756d6261692f343235303337365f656e676c6973685f686c735f3036663864663739306332353338385f3174612d64695f683236342f31303830702e6d3375383f68646e746c3d457870697265733d313739343535313630307e5f474f3d47656e6572617465647e61636c3d2f6d756d6261692f343235303337365f656e676c6973685f686c735f3036663864663739306332353338385f3174612d64695f683236342f2a7e53657373696f6e49443d32306664653635333239386165303962313233316532633934383737616539665f706c6179626f785f38343531303063642d356664632d34367e5369676e61747572653d41624f39426a6766794c2d46705a3773706b694732776b3251515443365542324f4855375a4b6c4e63517934485533466f57466a54557563484c615067496258375146706252474b326c59763332654278334e55467a70444c6c49470a",
-      "streams": {
-        "primary": "https://in-mc-flive.fancode.com/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/1080p.m3u8?hdntl=Expires=1794551600~_GO=Generated~acl=/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/*~SessionID=20fde653298ae09b1231e2c94877ae9f_playbox_845100cd-5fdc-46~Signature=AbO9BjgfyL-FpZ7spkiG2wk2QQTC6UB2OHU7ZKlNcQy4HU3FoWFjTUucHLaPgIbX7QFpbRGK2lYv32eBx3NUFzpDLlIG",
-        "fancode_cdn": "https://in-mc-flive.fancode.com/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/index.m3u8",
-        "fancode_bd_cdn": "https://bd-mc-flive.fancode.com/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/index.m3u8",
-        "fancode_np_cdn": "https://np-mc-flive.fancode.com/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/index.m3u8",
-        "fancode_lk_cdn": "https://lk-mc-flive.fancode.com/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/index.m3u8",
-        "backup": {}
-      },
-      "auto_streams": {
-        "ENGLISH": {
-          "streams": {
-            "240p": "https://in-mc-flive.fancode.com/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/240p.m3u8?hdntl=Expires=1794551600~_GO=Generated~acl=/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/*~SessionID=20fde653298ae09b1231e2c94877ae9f_playbox_845100cd-5fdc-46~Signature=AbO9BjgfyL-FpZ7spkiG2wk2QQTC6UB2OHU7ZKlNcQy4HU3FoWFjTUucHLaPgIbX7QFpbRGK2lYv32eBx3NUFzpDLlIG",
-            "360p": "https://in-mc-flive.fancode.com/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/360p.m3u8?hdntl=Expires=1794551600~_GO=Generated~acl=/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/*~SessionID=20fde653298ae09b1231e2c94877ae9f_playbox_845100cd-5fdc-46~Signature=AbO9BjgfyL-FpZ7spkiG2wk2QQTC6UB2OHU7ZKlNcQy4HU3FoWFjTUucHLaPgIbX7QFpbRGK2lYv32eBx3NUFzpDLlIG",
-            "480p": "https://in-mc-flive.fancode.com/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/480p.m3u8?hdntl=Expires=1794551600~_GO=Generated~acl=/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/*~SessionID=20fde653298ae09b1231e2c94877ae9f_playbox_845100cd-5fdc-46~Signature=AbO9BjgfyL-FpZ7spkiG2wk2QQTC6UB2OHU7ZKlNcQy4HU3FoWFjTUucHLaPgIbX7QFpbRGK2lYv32eBx3NUFzpDLlIG",
-            "540p": "https://in-mc-flive.fancode.com/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/540p.m3u8?hdntl=Expires=1794551600~_GO=Generated~acl=/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/*~SessionID=20fde653298ae09b1231e2c94877ae9f_playbox_845100cd-5fdc-46~Signature=AbO9BjgfyL-FpZ7spkiG2wk2QQTC6UB2OHU7ZKlNcQy4HU3FoWFjTUucHLaPgIbX7QFpbRGK2lYv32eBx3NUFzpDLlIG",
-            "720p": "https://in-mc-flive.fancode.com/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/720p.m3u8?hdntl=Expires=1794551600~_GO=Generated~acl=/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/*~SessionID=20fde653298ae09b1231e2c94877ae9f_playbox_845100cd-5fdc-46~Signature=AbO9BjgfyL-FpZ7spkiG2wk2QQTC6UB2OHU7ZKlNcQy4HU3FoWFjTUucHLaPgIbX7QFpbRGK2lYv32eBx3NUFzpDLlIG",
-            "1080p": "https://in-mc-flive.fancode.com/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/1080p.m3u8?hdntl=Expires=1794551600~_GO=Generated~acl=/mumbai/4250376_english_hls_06f8df790c25388_1ta-di_h264/*~SessionID=20fde653298ae09b1231e2c94877ae9f_playbox_845100cd-5fdc-46~Signature=AbO9BjgfyL-FpZ7spkiG2wk2QQTC6UB2OHU7ZKlNcQy4HU3FoWFjTUucHLaPgIbX7QFpbRGK2lYv32eBx3NUFzpDLlIG"
-          },
-          "sonu_px": "https://akamaii.lovable.app/api/public/px/fancode?url=https%3A%2F%2Fin-mc-flive.fancode.com%2Fmumbai%2F4250376_english_hls_06f8df790c25388_1ta-di_h264%2F720p.m3u8%3Fhdntl%3DExpires%3D1794551600~_GO%3DGenerated~acl%3D%2Fmumbai%2F4250376_english_hls_06f8df790c25388_1ta-di_h264%2F*~SessionID%3D20fde653298ae09b1231e2c94877ae9f_playbox_845100cd-5fdc-46~Signature%3DAbO9BjgfyL-FpZ7spkiG2wk2QQTC6UB2OHU7ZKlNcQy4HU3FoWFjTUucHLaPgIbX7QFpbRGK2lYv32eBx3NUFzpDLlIG",
-          "expires": "1794551600",
-          "expire_date": "13-11-2026 12:03:20 IST"
-        }
-      }
-    },
-    {
-      "match_id": 4250377,
-      "title": "Karnali Yaks vs Lumbini Lions (Nepal Premier League Season 3, 2026)",
-      "match_name": "Karnali Yaks vs Lumbini Lions",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250377_53124_KNY_LBL_fc-Web_1793616701916.jpg",
-      "event_category": "Cricket",
-      "event_name": "Nepal Premier League Season 3, 2026",
-      "language": "English",
-      "startTime": "04:45:00 PM 12-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
     {
       "match_id": 4250640,
       "title": "Australia vs England (England tour of Australia, 2026)",
@@ -199,27 +138,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4249503,
-      "title": "Benfica Women vs Austria Wien Women (UEFA Women's Champions League 2026-27)",
-      "match_name": "Benfica Women vs Austria Wien Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249503_53078_BEN-W_AW-W_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "UEFA Women's Champions League 2026-27",
-      "language": "English",
-      "startTime": "01:30:00 AM 13-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250665,
       "title": "Thailand Women vs Pakistan Women (ICC Women's Emerging Nations Trophy, 2026)",
       "match_name": "Thailand Women vs Pakistan Women",
@@ -249,6 +167,27 @@
       "event_name": "ICC Women's Emerging Nations Trophy, 2026",
       "language": "English",
       "startTime": "02:45:00 PM 13-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4249503,
+      "title": "Benfica Women vs Austria Wien Women (UEFA Women's Champions League 2026-27)",
+      "match_name": "Benfica Women vs Austria Wien Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249503_53078_BEN-W_AW-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "UEFA Women's Champions League 2026-27",
+      "language": "English",
+      "startTime": "01:30:00 AM 13-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -556,6 +495,27 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4250380,
+      "title": "Biratnagar Kings vs Lumbini Lions (Nepal Premier League Season 3, 2026)",
+      "match_name": "Biratnagar Kings vs Lumbini Lions",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250380_53124_BK_LBL_fc-Web_1793616701807.jpg",
+      "event_category": "Cricket",
+      "event_name": "Nepal Premier League Season 3, 2026",
+      "language": "English",
+      "startTime": "04:45:00 PM 14-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4250587,
       "title": "ATP 250 - Bybit Stockholm Open 2026 vs Stockholm, Sweden (ATP 250 - Bybit Stockholm Open 2026)",
       "match_name": "ATP 250 - Bybit Stockholm Open 2026",
@@ -711,6 +671,27 @@
       "event_name": "Barclays Women's Super League 2026-27",
       "language": "English",
       "startTime": "10:45:00 PM 14-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250002,
+      "title": "Fleetwood Town vs Tranmere Rovers (League Two 2026-27)",
+      "match_name": "Fleetwood Town vs Tranmere Rovers",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Mini_Match_Card-2.png",
+      "event_category": "Football",
+      "event_name": "League Two 2026-27",
+      "language": "English",
+      "startTime": "11:00:00 PM 14-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
