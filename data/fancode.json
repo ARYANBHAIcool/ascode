@@ -3,7 +3,7 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/12/2026, 4:08:54 AM IST",
+  "last_updated": "11/12/2026, 7:59:30 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -11,6 +11,18 @@
   "total_matches": 37,
   "live_matches": 0,
   "matches": [
+    {
+      "match_id": "4250630_ENG",
+      "title": "BWF Super 500 - Japan Masters 2026 [English]",
+      "match_name": "Round of 16 [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Japan-Masters_fc-web.jpg",
+      "event_category": "Badminton",
+      "event_name": "BWF Super 500 - Japan Masters 2026",
+      "language": "English",
+      "startTime": "05:30:00 AM 12-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
     {
       "match_id": 4250405,
       "title": "Melbourne Stars Women vs Brisbane Heat Women (Women's Big Bash League, 2026)",
@@ -144,30 +156,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250630,
-      "title": "Round of 16 vs Japan (BWF Super 500 - Japan Masters 2026)",
-      "match_name": "Round of 16",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Japan-Masters_fc-web.jpg",
-      "event_category": "Badminton",
-      "event_name": "BWF Super 500 - Japan Masters 2026",
-      "language": "English",
-      "startTime": "05:30:00 AM 12-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
-      "match_id": 4250585,
-      "title": "World Feed vs Stockholm, Sweden (ATP 250 - Bybit Stockholm Open 2026)",
-      "match_name": "World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/ATP-250---Bybit-Stockholm-Open_2026_FC-WEB.jpg",
-      "event_category": "Tennis",
-      "event_name": "ATP 250 - Bybit Stockholm Open 2026",
-      "language": "English",
-      "startTime": "05:30:00 PM 12-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250663,
       "title": "Scotland Women vs Sri Lanka Women (ICC Women's Emerging Nations Trophy, 2026)",
       "match_name": "Scotland Women vs Sri Lanka Women",
@@ -204,18 +192,6 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250721,
-      "title": "World Feed - Day 1 vs Austin, Texas (Austin Championship 2026)",
-      "match_name": "World Feed - Day 1",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Austin-championship_Web-match-card.png",
-      "event_category": "Golf",
-      "event_name": "Austin Championship 2026",
-      "language": "English",
-      "startTime": "01:30:00 AM 13-11-2026",
-      "status": "UPCOMING",
-      "stream_url": ""
-    },
-    {
       "match_id": 4250378,
       "title": "Kathmandu Gorkhas vs Sudurpaschim Royals (Nepal Premier League Season 3, 2026)",
       "match_name": "Kathmandu Gorkhas vs Sudurpaschim Royals",
@@ -224,6 +200,18 @@
       "event_name": "Nepal Premier League Season 3, 2026",
       "language": "English",
       "startTime": "12:15:00 PM 13-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250585,
+      "title": "World Feed vs Stockholm, Sweden (ATP 250 - Bybit Stockholm Open 2026)",
+      "match_name": "World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/ATP-250---Bybit-Stockholm-Open_2026_FC-WEB.jpg",
+      "event_category": "Tennis",
+      "event_name": "ATP 250 - Bybit Stockholm Open 2026",
+      "language": "English",
+      "startTime": "05:30:00 PM 12-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -252,14 +240,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250631,
-      "title": "Quarter-Final vs Japan (BWF Super 500 - Japan Masters 2026)",
-      "match_name": "Quarter-Final",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Japan-Masters_fc-web.jpg",
-      "event_category": "Badminton",
-      "event_name": "BWF Super 500 - Japan Masters 2026",
+      "match_id": 4250721,
+      "title": "World Feed - Day 1 vs Austin, Texas (Austin Championship 2026)",
+      "match_name": "World Feed - Day 1",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Austin-championship_Web-match-card.png",
+      "event_category": "Golf",
+      "event_name": "Austin Championship 2026",
       "language": "English",
-      "startTime": "06:30:00 AM 13-11-2026",
+      "startTime": "01:30:00 AM 13-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -276,14 +264,14 @@
       "stream_url": ""
     },
     {
-      "match_id": 4250881,
-      "title": "Featured Group - Day 1 vs Omni Barton Creek Resort & Spa (Fazio Canyons Cour (Austin Championship 2026)",
-      "match_name": "Featured Group - Day 1",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Austin-championship_Web-match-card.png",
-      "event_category": "Golf",
-      "event_name": "Austin Championship 2026",
+      "match_id": 4250631,
+      "title": "Quarter-Final vs Japan (BWF Super 500 - Japan Masters 2026)",
+      "match_name": "Quarter-Final",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Japan-Masters_fc-web.jpg",
+      "event_category": "Badminton",
+      "event_name": "BWF Super 500 - Japan Masters 2026",
       "language": "English",
-      "startTime": "06:30:00 PM 12-11-2026",
+      "startTime": "06:30:00 AM 13-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
@@ -296,6 +284,18 @@
       "event_name": "Nepal Premier League Season 3, 2026",
       "language": "English",
       "startTime": "04:45:00 PM 13-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
+    },
+    {
+      "match_id": 4250881,
+      "title": "Featured Group - Day 1 vs Omni Barton Creek Resort & Spa (Fazio Canyons Cour (Austin Championship 2026)",
+      "match_name": "Featured Group - Day 1",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Austin-championship_Web-match-card.png",
+      "event_category": "Golf",
+      "event_name": "Austin Championship 2026",
+      "language": "English",
+      "startTime": "06:30:00 PM 12-11-2026",
       "status": "UPCOMING",
       "stream_url": ""
     },
