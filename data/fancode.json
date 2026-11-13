@@ -3,7 +3,7 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/14/2026, 1:35:06 AM IST",
+  "last_updated": "11/14/2026, 2:54:55 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -117,6 +117,27 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4250209,
+      "title": "West Indies A vs England Lions (England Lions tour of West Indies, 2026)",
+      "match_name": "West Indies A vs England Lions",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-Mini.png",
+      "event_category": "Cricket",
+      "event_name": "England Lions tour of West Indies, 2026",
+      "language": "English",
+      "startTime": "11:30:00 PM 14-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4250001,
       "title": "Exeter City vs Cheltenham Town (League Two 2026-27)",
       "match_name": "Exeter City vs Cheltenham Town",
@@ -146,27 +167,6 @@
       "event_name": "Barclays Women's Super League 2026-27",
       "language": "English",
       "startTime": "06:15:00 PM 14-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250209,
-      "title": "West Indies A vs England Lions (England Lions tour of West Indies, 2026)",
-      "match_name": "West Indies A vs England Lions",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-Mini.png",
-      "event_category": "Cricket",
-      "event_name": "England Lions tour of West Indies, 2026",
-      "language": "English",
-      "startTime": "11:30:00 PM 14-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -243,14 +243,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250765,
-      "title": "Brighton and Hove Albion Women vs Liverpool Women (Barclays Women's Super League 2026-27)",
-      "match_name": "Brighton and Hove Albion Women vs Liverpool Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Football-old-copy.jpg",
-      "event_category": "Football",
-      "event_name": "Barclays Women's Super League 2026-27",
+      "match_id": 4250409,
+      "title": "Sydney Sixers Women vs Melbourne Renegades Women (Women's Big Bash League, 2026)",
+      "match_name": "Sydney Sixers Women vs Melbourne Renegades Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250409_53125_SS-W_MR-W_fc-web_1793352702153.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
       "language": "English",
-      "startTime": "10:45:00 PM 14-11-2026",
+      "startTime": "05:30:00 AM 15-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -264,14 +264,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250409,
-      "title": "Sydney Sixers Women vs Melbourne Renegades Women (Women's Big Bash League, 2026)",
-      "match_name": "Sydney Sixers Women vs Melbourne Renegades Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250409_53125_SS-W_MR-W_fc-web_1793352702153.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
+      "match_id": 4250765,
+      "title": "Brighton and Hove Albion Women vs Liverpool Women (Barclays Women's Super League 2026-27)",
+      "match_name": "Brighton and Hove Albion Women vs Liverpool Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Football-old-copy.jpg",
+      "event_category": "Football",
+      "event_name": "Barclays Women's Super League 2026-27",
       "language": "English",
-      "startTime": "05:30:00 AM 15-11-2026",
+      "startTime": "10:45:00 PM 14-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -537,14 +537,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250633,
-      "title": "Final vs Japan (BWF Super 500 - Japan Masters 2026)",
-      "match_name": "Final",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Japan-Masters_fc-web.jpg",
-      "event_category": "Badminton",
-      "event_name": "BWF Super 500 - Japan Masters 2026",
+      "match_id": 4250749,
+      "title": "Pupkewitz Wildcats vs Eavion Eagles (Namibia Super 50, 2026)",
+      "match_name": "Pupkewitz Wildcats vs Eavion Eagles",
+      "src": "https://images.fancode.com/aig/match/v1793949984337/4250749_CASACARDS_APP.png",
+      "event_category": "Cricket",
+      "event_name": "Namibia Super 50, 2026",
       "language": "English",
-      "startTime": "07:30:00 AM 15-11-2026",
+      "startTime": "01:00:00 PM 15-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -558,14 +558,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250749,
-      "title": "Pupkewitz Wildcats vs Eavion Eagles (Namibia Super 50, 2026)",
-      "match_name": "Pupkewitz Wildcats vs Eavion Eagles",
-      "src": "https://images.fancode.com/aig/match/v1793949984337/4250749_CASACARDS_APP.png",
-      "event_category": "Cricket",
-      "event_name": "Namibia Super 50, 2026",
+      "match_id": 4250633,
+      "title": "Final vs Japan (BWF Super 500 - Japan Masters 2026)",
+      "match_name": "Final",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Japan-Masters_fc-web.jpg",
+      "event_category": "Badminton",
+      "event_name": "BWF Super 500 - Japan Masters 2026",
       "language": "English",
-      "startTime": "01:00:00 PM 15-11-2026",
+      "startTime": "07:30:00 AM 15-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
