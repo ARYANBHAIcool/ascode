@@ -3,35 +3,14 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/15/2026, 4:55:24 AM IST",
+  "last_updated": "11/15/2026, 8:24:32 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 38,
+  "total_matches": 37,
   "live_matches": 0,
   "matches": [
-    {
-      "match_id": 4250409,
-      "title": "Sydney Sixers Women vs Melbourne Renegades Women (Women's Big Bash League, 2026)",
-      "match_name": "Sydney Sixers Women vs Melbourne Renegades Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250409_53125_SS-W_MR-W_fc-web_1793352702153.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
-      "language": "English",
-      "startTime": "05:30:00 AM 15-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
     {
       "match_id": 4250641,
       "title": "Australia vs England (England tour of Australia, 2026)",
@@ -201,27 +180,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250749,
-      "title": "Pupkewitz Wildcats vs Eavion Eagles (Namibia Super 50, 2026)",
-      "match_name": "Pupkewitz Wildcats vs Eavion Eagles",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_6759.jpeg",
-      "event_category": "Cricket",
-      "event_name": "Namibia Super 50, 2026",
-      "language": "English",
-      "startTime": "01:00:00 PM 15-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4249281,
       "title": "New South Wales vs South Australia (One Day Cup, 2026/27)",
       "match_name": "New South Wales vs South Australia",
@@ -243,6 +201,27 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4250749,
+      "title": "Pupkewitz Wildcats vs Eavion Eagles (Namibia Super 50, 2026)",
+      "match_name": "Pupkewitz Wildcats vs Eavion Eagles",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_6759.jpeg",
+      "event_category": "Cricket",
+      "event_name": "Namibia Super 50, 2026",
+      "language": "English",
+      "startTime": "01:00:00 PM 15-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4249286,
       "title": "Queensland vs Tasmania (One Day Cup, 2026/27)",
       "match_name": "Queensland vs Tasmania",
@@ -251,6 +230,27 @@
       "event_name": "One Day Cup, 2026/27",
       "language": "English",
       "startTime": "05:30:00 AM 16-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4249289,
+      "title": "Victoria vs Western Australia (One Day Cup, 2026/27)",
+      "match_name": "Victoria vs Western Australia",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249289_53072_VCT_WAU_FC-Web.jpg",
+      "event_category": "Cricket",
+      "event_name": "One Day Cup, 2026/27",
+      "language": "English",
+      "startTime": "08:30:00 AM 16-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -348,48 +348,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4249289,
-      "title": "Victoria vs Western Australia (One Day Cup, 2026/27)",
-      "match_name": "Victoria vs Western Australia",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249289_53072_VCT_WAU_FC-Web.jpg",
-      "event_category": "Cricket",
-      "event_name": "One Day Cup, 2026/27",
-      "language": "English",
-      "startTime": "08:30:00 AM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250633,
-      "title": "Final vs Japan (BWF Super 500 - Japan Masters 2026)",
-      "match_name": "Final",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Japan-Masters_fc-web.jpg",
-      "event_category": "Badminton",
-      "event_name": "BWF Super 500 - Japan Masters 2026",
-      "language": "English",
-      "startTime": "07:30:00 AM 15-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250671,
       "title": "Bangladesh Women vs Netherlands Women (ICC Women's Emerging Nations Trophy, 2026)",
       "match_name": "Bangladesh Women vs Netherlands Women",
@@ -419,6 +377,27 @@
       "event_name": "ICC Women's Emerging Nations Trophy, 2026",
       "language": "English",
       "startTime": "10:30:00 AM 16-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250410,
+      "title": "Sydney Thunder Women vs Melbourne Stars Women (Women's Big Bash League, 2026)",
+      "match_name": "Sydney Thunder Women vs Melbourne Stars Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250410_53125_ST-W_MS-W_fc-web_1793352701285.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
+      "language": "English",
+      "startTime": "01:40:00 PM 16-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -495,69 +474,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250929,
-      "title": "Shelton vs Fils vs Italy (Nitto ATP Finals 2026)",
-      "match_name": "Shelton vs Fils",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Shelton-vs-Fils_FC-WEB.jpg",
-      "event_category": "Tennis",
-      "event_name": "Nitto ATP Finals 2026",
-      "language": "English",
-      "startTime": "01:00:00 AM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250724,
-      "title": "World Feed - Day 4 vs Austin, Texas (Austin Championship 2026)",
-      "match_name": "World Feed - Day 4",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Austin-championship_Web-match-card.png",
-      "event_category": "Golf",
-      "event_name": "Austin Championship 2026",
-      "language": "English",
-      "startTime": "01:30:00 AM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250410,
-      "title": "Sydney Thunder Women vs Melbourne Stars Women (Women's Big Bash League, 2026)",
-      "match_name": "Sydney Thunder Women vs Melbourne Stars Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250410_53125_ST-W_MS-W_fc-web_1793352701285.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
-      "language": "English",
-      "startTime": "01:40:00 PM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250673,
       "title": "Ireland Women vs Papua New Guinea Women (ICC Women's Emerging Nations Trophy, 2026)",
       "match_name": "Ireland Women vs Papua New Guinea Women",
@@ -600,14 +516,35 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250658,
-      "title": "CTR-JK Tyre Indian National Car Racing Championship vs Kari Motor Speedway, Coimbatore (CTR-JK Tyre Indian National Car Racing Championship 2026)",
-      "match_name": "CTR-JK Tyre Indian National Car Racing Championship",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/JK-Tyre_fc-web.jpg",
-      "event_category": "Motorsports",
-      "event_name": "CTR-JK Tyre Indian National Car Racing Championship 2026",
+      "match_id": 4250929,
+      "title": "Shelton vs Fils vs Italy (Nitto ATP Finals 2026)",
+      "match_name": "Shelton vs Fils",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Shelton-vs-Fils_FC-WEB.jpg",
+      "event_category": "Tennis",
+      "event_name": "Nitto ATP Finals 2026",
       "language": "English",
-      "startTime": "09:30:00 AM 15-11-2026",
+      "startTime": "01:00:00 AM 16-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250724,
+      "title": "World Feed - Day 4 vs Austin, Texas (Austin Championship 2026)",
+      "match_name": "World Feed - Day 4",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Austin-championship_Web-match-card.png",
+      "event_category": "Golf",
+      "event_name": "Austin Championship 2026",
+      "language": "English",
+      "startTime": "01:30:00 AM 16-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -629,6 +566,27 @@
       "event_name": "Test Twenty Championship 2026",
       "language": "English",
       "startTime": "02:30:00 PM 16-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250658,
+      "title": "CTR-JK Tyre Indian National Car Racing Championship vs Kari Motor Speedway, Coimbatore (CTR-JK Tyre Indian National Car Racing Championship 2026)",
+      "match_name": "CTR-JK Tyre Indian National Car Racing Championship",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/JK-Tyre_fc-web.jpg",
+      "event_category": "Motorsports",
+      "event_name": "CTR-JK Tyre Indian National Car Racing Championship 2026",
+      "language": "English",
+      "startTime": "09:30:00 AM 15-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -797,6 +755,27 @@
       "event_name": "Women's Big Bash League, 2026",
       "language": "English",
       "startTime": "01:40:00 PM 17-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250727,
+      "title": "Match 3 vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Match 3",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
+      "event_category": "Tennis",
+      "event_name": "Nitto ATP Finals 2026",
+      "language": "English",
+      "startTime": "04:00:00 PM 17-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
