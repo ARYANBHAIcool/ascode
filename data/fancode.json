@@ -3,12 +3,12 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/15/2026, 10:56:36 PM IST",
+  "last_updated": "11/16/2026, 3:27:48 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 35,
+  "total_matches": 36,
   "live_matches": 0,
   "matches": [
     {
@@ -201,27 +201,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250724,
-      "title": "World Feed - Day 4 vs Austin, Texas (Austin Championship 2026)",
-      "match_name": "World Feed - Day 4",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Austin-championship_Web-match-card.png",
-      "event_category": "Golf",
-      "event_name": "Austin Championship 2026",
-      "language": "English",
-      "startTime": "11:00:00 PM 15-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250210,
       "title": "West Indies A vs England Lions (England Lions tour of West Indies, 2026)",
       "match_name": "West Indies A vs England Lions",
@@ -230,27 +209,6 @@
       "event_name": "England Lions tour of West Indies, 2026",
       "language": "English",
       "startTime": "11:30:00 PM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250929,
-      "title": "Shelton vs Fils vs Italy (Nitto ATP Finals 2026)",
-      "match_name": "Shelton vs Fils",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Shelton-vs-Fils_FC-WEB.jpg",
-      "event_category": "Tennis",
-      "event_name": "Nitto ATP Finals 2026",
-      "language": "English",
-      "startTime": "01:00:00 AM 16-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -369,14 +327,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250614,
-      "title": "BOS vs DET vs Palm Beach Gardens, FL (WTGL 2026)",
-      "match_name": "BOS vs DET",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/3_web.png",
-      "event_category": "Golf",
-      "event_name": "WTGL 2026",
+      "match_id": 4250411,
+      "title": "Adelaide Strikers Women vs Sydney Sixers Women (Women's Big Bash League, 2026)",
+      "match_name": "Adelaide Strikers Women vs Sydney Sixers Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250411_53125_AS-W_SS-W_fc-web_1793352702025.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
       "language": "English",
-      "startTime": "06:30:00 AM 17-11-2026",
+      "startTime": "01:40:00 PM 17-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -390,14 +348,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250411,
-      "title": "Adelaide Strikers Women vs Sydney Sixers Women (Women's Big Bash League, 2026)",
-      "match_name": "Adelaide Strikers Women vs Sydney Sixers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250411_53125_AS-W_SS-W_fc-web_1793352702025.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
+      "match_id": 4250614,
+      "title": "BOS vs DET vs Palm Beach Gardens, FL (WTGL 2026)",
+      "match_name": "BOS vs DET",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/3_web.png",
+      "event_category": "Golf",
+      "event_name": "WTGL 2026",
       "language": "English",
-      "startTime": "01:40:00 PM 17-11-2026",
+      "startTime": "06:30:00 AM 17-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -734,6 +692,69 @@
       "event_name": "UEFA Women's Champions League 2026-27",
       "language": "English",
       "startTime": "11:15:00 PM 18-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4249505,
+      "title": "Real Madrid Women vs Inter Women (UEFA Women's Champions League 2026-27)",
+      "match_name": "Real Madrid Women vs Inter Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249505_53078_RM-W_INT-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "UEFA Women's Champions League 2026-27",
+      "language": "English",
+      "startTime": "11:15:00 PM 18-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4249506,
+      "title": "Chelsea F.C. Women vs Paris Saint-Germain Women (UEFA Women's Champions League 2026-27)",
+      "match_name": "Chelsea F.C. Women vs Paris Saint-Germain Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249506_53078_CHE-W_PSG-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "UEFA Women's Champions League 2026-27",
+      "language": "English",
+      "startTime": "01:30:00 AM 19-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4249507,
+      "title": "Juventus Women vs Oud-Heverlee Leuven Women (UEFA Women's Champions League 2026-27)",
+      "match_name": "Juventus Women vs Oud-Heverlee Leuven Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249507_53078_JUV-W_OHL-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "UEFA Women's Champions League 2026-27",
+      "language": "English",
+      "startTime": "01:30:00 AM 19-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
