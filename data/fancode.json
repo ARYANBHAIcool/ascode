@@ -3,12 +3,12 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/16/2026, 3:27:48 AM IST",
+  "last_updated": "11/16/2026, 3:32:22 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 36,
+  "total_matches": 37,
   "live_matches": 0,
   "matches": [
     {
@@ -766,6 +766,18 @@
         "backup": {}
       },
       "auto_streams": {}
+    },
+    {
+      "match_id": 4250937,
+      "title": "Nitto ATP Finals 2026 vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Nitto ATP Finals 2026",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
+      "event_category": "Tennis",
+      "event_name": "Nitto ATP Finals 2026",
+      "language": "English",
+      "startTime": "10:30:00 PM 18-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
     }
   ]
 }
