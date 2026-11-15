@@ -3,161 +3,14 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/15/2026, 8:26:23 AM IST",
+  "last_updated": "11/15/2026, 3:57:30 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 37,
+  "total_matches": 32,
   "live_matches": 0,
   "matches": [
-    {
-      "match_id": 4250641,
-      "title": "Australia vs England (England tour of Australia, 2026)",
-      "match_name": "Australia vs England",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/ENG-mini.png",
-      "event_category": "Cricket",
-      "event_name": "England tour of Australia, 2026",
-      "language": "English",
-      "startTime": "09:00:00 AM 15-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250667,
-      "title": "Thailand Women vs Zimbabwe Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "Thailand Women vs Zimbabwe Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250667_53149_THA-W_ZIM-W_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
-      "language": "English",
-      "startTime": "10:30:00 AM 15-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250668,
-      "title": "Pakistan Women vs Netherlands Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "Pakistan Women vs Netherlands Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250668_53149_PAK-W_NED-W_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
-      "language": "English",
-      "startTime": "10:30:00 AM 15-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250381,
-      "title": "Chitwan Rhinos vs Karnali Yaks (Nepal Premier League Season 3, 2026)",
-      "match_name": "Chitwan Rhinos vs Karnali Yaks",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250381_53124_CWR_KNY_fc-Web_1793616701831.jpg",
-      "event_category": "Cricket",
-      "event_name": "Nepal Premier League Season 3, 2026",
-      "language": "English",
-      "startTime": "12:15:00 PM 15-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250650,
-      "title": "South Africa vs Bangladesh (Bangladesh tour of South Africa, 2026)",
-      "match_name": "South Africa vs Bangladesh",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/BAN-vs-SA_Test_fc-web_1794644019035.jpg",
-      "event_category": "Cricket",
-      "event_name": "Bangladesh tour of South Africa, 2026",
-      "language": "English",
-      "startTime": "01:30:00 PM 15-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250669,
-      "title": "Scotland Women vs United Arab Emirates Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "Scotland Women vs United Arab Emirates Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250669_53149_SCO-W_UAE-W_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
-      "language": "English",
-      "startTime": "02:45:00 PM 15-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250670,
-      "title": "Sri Lanka Women vs Papua New Guinea Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "Sri Lanka Women vs Papua New Guinea Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250670_53149_SL-W_PNG-W_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
-      "language": "English",
-      "startTime": "02:45:00 PM 15-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
     {
       "match_id": 4250382,
       "title": "Pokhara Avengers vs Kathmandu Gorkhas (Nepal Premier League Season 3, 2026)",
@@ -201,27 +54,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250749,
-      "title": "Pupkewitz Wildcats vs Eavion Eagles (Namibia Super 50, 2026)",
-      "match_name": "Pupkewitz Wildcats vs Eavion Eagles",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_6759.jpeg",
-      "event_category": "Cricket",
-      "event_name": "Namibia Super 50, 2026",
-      "language": "English",
-      "startTime": "01:00:00 PM 15-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4249286,
       "title": "Queensland vs Tasmania (One Day Cup, 2026/27)",
       "match_name": "Queensland vs Tasmania",
@@ -251,6 +83,111 @@
       "event_name": "One Day Cup, 2026/27",
       "language": "English",
       "startTime": "08:30:00 AM 16-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250671,
+      "title": "Bangladesh Women vs Netherlands Women (ICC Women's Emerging Nations Trophy, 2026)",
+      "match_name": "Bangladesh Women vs Netherlands Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250671_53149_BAN-W_NED-W_FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
+      "language": "English",
+      "startTime": "10:30:00 AM 16-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250672,
+      "title": "Zimbabwe Women vs Pakistan Women (ICC Women's Emerging Nations Trophy, 2026)",
+      "match_name": "Zimbabwe Women vs Pakistan Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250672_53149_ZIM-W_PAK-W_FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
+      "language": "English",
+      "startTime": "10:30:00 AM 16-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250410,
+      "title": "Sydney Thunder Women vs Melbourne Stars Women (Women's Big Bash League, 2026)",
+      "match_name": "Sydney Thunder Women vs Melbourne Stars Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250410_53125_ST-W_MS-W_fc-web_1793352701285.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
+      "language": "English",
+      "startTime": "01:40:00 PM 16-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250673,
+      "title": "Ireland Women vs Papua New Guinea Women (ICC Women's Emerging Nations Trophy, 2026)",
+      "match_name": "Ireland Women vs Papua New Guinea Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250673_53149_IRE-W_PNG-W_FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
+      "language": "English",
+      "startTime": "02:45:00 PM 16-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250674,
+      "title": "United Arab Emirates Women vs Sri Lanka Women (ICC Women's Emerging Nations Trophy, 2026)",
+      "match_name": "United Arab Emirates Women vs Sri Lanka Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250674_53149_UAE-W_SL-W_FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
+      "language": "English",
+      "startTime": "02:45:00 PM 16-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -348,69 +285,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250671,
-      "title": "Bangladesh Women vs Netherlands Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "Bangladesh Women vs Netherlands Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/ICC_Womens_Emerging_2026_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
-      "language": "English",
-      "startTime": "10:30:00 AM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250672,
-      "title": "Zimbabwe Women vs Pakistan Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "Zimbabwe Women vs Pakistan Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/ICC_Womens_Emerging_2026_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
-      "language": "English",
-      "startTime": "10:30:00 AM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250410,
-      "title": "Sydney Thunder Women vs Melbourne Stars Women (Women's Big Bash League, 2026)",
-      "match_name": "Sydney Thunder Women vs Melbourne Stars Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250410_53125_ST-W_MS-W_fc-web_1793352701285.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
-      "language": "English",
-      "startTime": "01:40:00 PM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250725,
       "title": "Men's Doubles vs Turin, Italy (Nitto ATP Finals 2026)",
       "match_name": "Men's Doubles",
@@ -419,6 +293,27 @@
       "event_name": "Nitto ATP Finals 2026",
       "language": "English",
       "startTime": "04:00:00 PM 15-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250950,
+      "title": "South Asia vs Europe (Test Twenty Championship 2026)",
+      "match_name": "South Asia vs Europe",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Test_Twenty_2026FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "Test Twenty Championship 2026",
+      "language": "English",
+      "startTime": "02:30:00 PM 16-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -474,35 +369,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250673,
-      "title": "Ireland Women vs Papua New Guinea Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "Ireland Women vs Papua New Guinea Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/ICC_Womens_Emerging_2026_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
+      "match_id": 4250724,
+      "title": "World Feed - Day 4 vs Austin, Texas (Austin Championship 2026)",
+      "match_name": "World Feed - Day 4",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Austin-championship_Web-match-card.png",
+      "event_category": "Golf",
+      "event_name": "Austin Championship 2026",
       "language": "English",
-      "startTime": "02:45:00 PM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250674,
-      "title": "United Arab Emirates Women vs Sri Lanka Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "United Arab Emirates Women vs Sri Lanka Women",
-      "src": "https://images.fancode.com/aig/match/v1794414538710/4250674_CASACARDS_APP.png",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
-      "language": "English",
-      "startTime": "02:45:00 PM 16-11-2026",
+      "startTime": "11:00:00 PM 15-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -537,69 +411,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250724,
-      "title": "World Feed - Day 4 vs Austin, Texas (Austin Championship 2026)",
-      "match_name": "World Feed - Day 4",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Austin-championship_Web-match-card.png",
-      "event_category": "Golf",
-      "event_name": "Austin Championship 2026",
-      "language": "English",
-      "startTime": "01:30:00 AM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250950,
-      "title": "South Asia vs Europe (Test Twenty Championship 2026)",
-      "match_name": "South Asia vs Europe",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Test_Twenty_2026FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "Test Twenty Championship 2026",
-      "language": "English",
-      "startTime": "02:30:00 PM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250658,
-      "title": "CTR-JK Tyre Indian National Car Racing Championship vs Kari Motor Speedway, Coimbatore (CTR-JK Tyre Indian National Car Racing Championship 2026)",
-      "match_name": "CTR-JK Tyre Indian National Car Racing Championship",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/JK-Tyre_fc-web.jpg",
-      "event_category": "Motorsports",
-      "event_name": "CTR-JK Tyre Indian National Car Racing Championship 2026",
-      "language": "English",
-      "startTime": "09:30:00 AM 15-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250930,
       "title": "Men's Doubles vs Turin, Italy (Nitto ATP Finals 2026)",
       "match_name": "Men's Doubles",
@@ -621,14 +432,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250726,
-      "title": "Alcaraz vs Tiafoe vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Alcaraz vs Tiafoe",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Alcaraz-vs-Tiafoe_FC-WEB.jpg",
-      "event_category": "Tennis",
-      "event_name": "Nitto ATP Finals 2026",
+      "match_id": 4250210,
+      "title": "West Indies A vs England Lions (England Lions tour of West Indies, 2026)",
+      "match_name": "West Indies A vs England Lions",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-Mini.png",
+      "event_category": "Cricket",
+      "event_name": "England Lions tour of West Indies, 2026",
       "language": "English",
-      "startTime": "06:30:00 PM 16-11-2026",
+      "startTime": "11:30:00 PM 16-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -642,14 +453,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250210,
-      "title": "West Indies A vs England Lions (England Lions tour of West Indies, 2026)",
-      "match_name": "West Indies A vs England Lions",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cricket_FC-Mini.png",
-      "event_category": "Cricket",
-      "event_name": "England Lions tour of West Indies, 2026",
+      "match_id": 4250726,
+      "title": "Alcaraz vs Tiafoe vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Alcaraz vs Tiafoe",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Alcaraz-vs-Tiafoe_FC-WEB.jpg",
+      "event_category": "Tennis",
+      "event_name": "Nitto ATP Finals 2026",
       "language": "English",
-      "startTime": "11:30:00 PM 16-11-2026",
+      "startTime": "06:30:00 PM 16-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -776,6 +587,90 @@
       "event_name": "Nitto ATP Finals 2026",
       "language": "English",
       "startTime": "04:00:00 PM 17-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250933,
+      "title": "Nitto ATP Finals 2026 vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Nitto ATP Finals 2026",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
+      "event_category": "Tennis",
+      "event_name": "Nitto ATP Finals 2026",
+      "language": "English",
+      "startTime": "06:30:00 PM 17-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250934,
+      "title": "Nitto ATP Finals 2026 vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Nitto ATP Finals 2026",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
+      "event_category": "Tennis",
+      "event_name": "Nitto ATP Finals 2026",
+      "language": "English",
+      "startTime": "10:30:00 PM 17-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250935,
+      "title": "Nitto ATP Finals 2026 vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Nitto ATP Finals 2026",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
+      "event_category": "Tennis",
+      "event_name": "Nitto ATP Finals 2026",
+      "language": "English",
+      "startTime": "01:00:00 AM 18-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250642,
+      "title": "Australia vs England (England tour of Australia, 2026)",
+      "match_name": "Australia vs England",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/ENG-mini.png",
+      "event_category": "Cricket",
+      "event_name": "England tour of Australia, 2026",
+      "language": "English",
+      "startTime": "09:00:00 AM 18-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
