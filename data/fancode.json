@@ -3,65 +3,23 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/16/2026, 2:06:12 PM IST",
+  "last_updated": "11/16/2026, 2:59:21 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 36,
+  "total_matches": 33,
   "live_matches": 0,
   "matches": [
     {
-      "match_id": 4250673,
-      "title": "Ireland Women vs Papua New Guinea Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "Ireland Women vs Papua New Guinea Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250673_53149_IRE-W_PNG-W_FC-WEB.jpg",
+      "match_id": 4250383,
+      "title": "TBC vs TBC (Nepal Premier League Season 3, 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
       "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
+      "event_name": "Nepal Premier League Season 3, 2026",
       "language": "English",
-      "startTime": "02:45:00 PM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250674,
-      "title": "United Arab Emirates Women vs Sri Lanka Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "United Arab Emirates Women vs Sri Lanka Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250674_53149_UAE-W_SL-W_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
-      "language": "English",
-      "startTime": "02:45:00 PM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250950,
-      "title": "South Asia vs Europe (Test Twenty Championship 2026)",
-      "match_name": "South Asia vs Europe",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Test_Twenty_2026FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "Test Twenty Championship 2026",
-      "language": "English",
-      "startTime": "02:30:00 PM 16-11-2026",
+      "startTime": "12:15:00 PM 17-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -83,27 +41,6 @@
       "event_name": "England Lions tour of West Indies, 2026",
       "language": "English",
       "startTime": "11:30:00 PM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250383,
-      "title": "TBC vs TBC (Nepal Premier League Season 3, 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "Nepal Premier League Season 3, 2026",
-      "language": "English",
-      "startTime": "12:15:00 PM 17-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -244,8 +181,8 @@
     },
     {
       "match_id": 4250727,
-      "title": "Match 3 vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Match 3",
+      "title": "Men's Doubles vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Men's Doubles",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
       "event_category": "Tennis",
       "event_name": "Nitto ATP Finals 2026",
@@ -264,9 +201,30 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4250963,
+      "title": "World Feed vs Omni Barton Creek Resort & Spa (Fazio Canyons Cour (Austin Championship 2026)",
+      "match_name": "World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Austin-championship_Web-match-card.png",
+      "event_category": "Golf",
+      "event_name": "Austin Championship 2026",
+      "language": "English",
+      "startTime": "10:30:00 PM 16-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4250933,
-      "title": "Nitto ATP Finals 2026 vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Nitto ATP Finals 2026",
+      "title": "Fils vs Jodar vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Fils vs Jodar",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
       "event_category": "Tennis",
       "event_name": "Nitto ATP Finals 2026",
@@ -286,8 +244,8 @@
     },
     {
       "match_id": 4250934,
-      "title": "Nitto ATP Finals 2026 vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Nitto ATP Finals 2026",
+      "title": "Men's Doubles vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Men's Doubles",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
       "event_category": "Tennis",
       "event_name": "Nitto ATP Finals 2026",
@@ -307,9 +265,9 @@
     },
     {
       "match_id": 4250935,
-      "title": "Nitto ATP Finals 2026 vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Nitto ATP Finals 2026",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
+      "title": "Zverev vs Shelton vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Zverev vs Shelton",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Zverev-vs-Shelton_FC-WEB.jpg",
       "event_category": "Tennis",
       "event_name": "Nitto ATP Finals 2026",
       "language": "English",
@@ -734,27 +692,6 @@
       "event_name": "Women's Big Bash League, 2026",
       "language": "English",
       "startTime": "01:40:00 PM 19-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250952,
-      "title": "Europe vs Sub Saharan Africa (Test Twenty Championship 2026)",
-      "match_name": "Europe vs Sub Saharan Africa",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Test_Twenty_2026FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "Test Twenty Championship 2026",
-      "language": "English",
-      "startTime": "02:30:00 PM 19-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
