@@ -3,56 +3,14 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/16/2026, 3:32:22 AM IST",
+  "last_updated": "11/16/2026, 7:09:56 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 37,
+  "total_matches": 36,
   "live_matches": 0,
   "matches": [
-    {
-      "match_id": 4249281,
-      "title": "New South Wales vs South Australia (One Day Cup, 2026/27)",
-      "match_name": "New South Wales vs South Australia",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249281_53072_NSW_SAU_FC-Web.jpg",
-      "event_category": "Cricket",
-      "event_name": "One Day Cup, 2026/27",
-      "language": "English",
-      "startTime": "04:30:00 AM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4249286,
-      "title": "Queensland vs Tasmania (One Day Cup, 2026/27)",
-      "match_name": "Queensland vs Tasmania",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249286_53072_QUN_TAS_FC-Web.jpg",
-      "event_category": "Cricket",
-      "event_name": "One Day Cup, 2026/27",
-      "language": "English",
-      "startTime": "05:30:00 AM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
     {
       "match_id": 4249289,
       "title": "Victoria vs Western Australia (One Day Cup, 2026/27)",
@@ -222,6 +180,27 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4250383,
+      "title": "TBC vs TBC (Nepal Premier League Season 3, 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "Nepal Premier League Season 3, 2026",
+      "language": "English",
+      "startTime": "12:15:00 PM 17-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4250930,
       "title": "Men's Doubles vs Turin, Italy (Nitto ATP Finals 2026)",
       "match_name": "Men's Doubles",
@@ -285,48 +264,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250932,
-      "title": "Medvedev vs Cobolli vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Medvedev vs Cobolli",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Medvedev-vs-Cobolli_FC-WEB_1794654529580.jpg",
-      "event_category": "Tennis",
-      "event_name": "Nitto ATP Finals 2026",
-      "language": "English",
-      "startTime": "01:00:00 AM 17-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250383,
-      "title": "TBC vs TBC (Nepal Premier League Season 3, 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "Nepal Premier League Season 3, 2026",
-      "language": "English",
-      "startTime": "12:15:00 PM 17-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250411,
       "title": "Adelaide Strikers Women vs Sydney Sixers Women (Women's Big Bash League, 2026)",
       "match_name": "Adelaide Strikers Women vs Sydney Sixers Women",
@@ -335,6 +272,27 @@
       "event_name": "Women's Big Bash League, 2026",
       "language": "English",
       "startTime": "01:40:00 PM 17-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250932,
+      "title": "Medvedev vs Cobolli vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Medvedev vs Cobolli",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Medvedev-vs-Cobolli_FC-WEB_1794654529580.jpg",
+      "event_category": "Tennis",
+      "event_name": "Nitto ATP Finals 2026",
+      "language": "English",
+      "startTime": "01:00:00 AM 17-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -777,7 +735,37 @@
       "language": "English",
       "startTime": "10:30:00 PM 18-11-2026",
       "status": "UPCOMING",
-      "stream_url": ""
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250938,
+      "title": "Nitto ATP Finals 2026 vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Nitto ATP Finals 2026",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
+      "event_category": "Tennis",
+      "event_name": "Nitto ATP Finals 2026",
+      "language": "English",
+      "startTime": "01:00:00 AM 19-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
     }
   ]
 }
