@@ -3,7 +3,7 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/16/2026, 7:27:23 AM IST",
+  "last_updated": "11/16/2026, 2:06:12 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -11,90 +11,6 @@
   "total_matches": 36,
   "live_matches": 0,
   "matches": [
-    {
-      "match_id": 4249289,
-      "title": "Victoria vs Western Australia (One Day Cup, 2026/27)",
-      "match_name": "Victoria vs Western Australia",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249289_53072_VCT_WAU_FC-Web.jpg",
-      "event_category": "Cricket",
-      "event_name": "One Day Cup, 2026/27",
-      "language": "English",
-      "startTime": "08:30:00 AM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250671,
-      "title": "Bangladesh Women vs Netherlands Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "Bangladesh Women vs Netherlands Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250671_53149_BAN-W_NED-W_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
-      "language": "English",
-      "startTime": "10:30:00 AM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250672,
-      "title": "Zimbabwe Women vs Pakistan Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "Zimbabwe Women vs Pakistan Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250672_53149_ZIM-W_PAK-W_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
-      "language": "English",
-      "startTime": "10:30:00 AM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250410,
-      "title": "Sydney Thunder Women vs Melbourne Stars Women (Women's Big Bash League, 2026)",
-      "match_name": "Sydney Thunder Women vs Melbourne Stars Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250410_53125_ST-W_MS-W_fc-web_1793352701285.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
-      "language": "English",
-      "startTime": "01:40:00 PM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
     {
       "match_id": 4250673,
       "title": "Ireland Women vs Papua New Guinea Women (ICC Women's Emerging Nations Trophy, 2026)",
@@ -201,6 +117,27 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4250411,
+      "title": "Adelaide Strikers Women vs Sydney Sixers Women (Women's Big Bash League, 2026)",
+      "match_name": "Adelaide Strikers Women vs Sydney Sixers Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250411_53125_AS-W_SS-W_fc-web_1793352702025.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
+      "language": "English",
+      "startTime": "01:40:00 PM 17-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4250930,
       "title": "Men's Doubles vs Turin, Italy (Nitto ATP Finals 2026)",
       "match_name": "Men's Doubles",
@@ -230,27 +167,6 @@
       "event_name": "Nitto ATP Finals 2026",
       "language": "English",
       "startTime": "06:30:00 PM 16-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250411,
-      "title": "Adelaide Strikers Women vs Sydney Sixers Women (Women's Big Bash League, 2026)",
-      "match_name": "Adelaide Strikers Women vs Sydney Sixers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250411_53125_AS-W_SS-W_fc-web_1793352702025.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
-      "language": "English",
-      "startTime": "01:40:00 PM 17-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -755,6 +671,90 @@
       "event_name": "Nitto ATP Finals 2026",
       "language": "English",
       "startTime": "01:00:00 AM 19-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250412,
+      "title": "Hobart Hurricanes Women vs Perth Scorchers Women (Women's Big Bash League, 2026)",
+      "match_name": "Hobart Hurricanes Women vs Perth Scorchers Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250412_53125_HB-W_PS-W_fc-web_1793352701293.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
+      "language": "English",
+      "startTime": "10:10:00 AM 19-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250634,
+      "title": "Round of 16 vs Hong Kong (BWF Super 500 - LI-NING Hong Kong Open 2026)",
+      "match_name": "Round of 16",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Hong-Kong-Open_BWF-Super-500_fc-web.jpg",
+      "event_category": "Badminton",
+      "event_name": "BWF Super 500 - LI-NING Hong Kong Open 2026",
+      "language": "English",
+      "startTime": "06:30:00 AM 19-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250413,
+      "title": "Brisbane Heat Women vs Sydney Thunder Women (Women's Big Bash League, 2026)",
+      "match_name": "Brisbane Heat Women vs Sydney Thunder Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250413_53125_BH-W_ST-W_fc-web_1793352701339.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
+      "language": "English",
+      "startTime": "01:40:00 PM 19-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250952,
+      "title": "Europe vs Sub Saharan Africa (Test Twenty Championship 2026)",
+      "match_name": "Europe vs Sub Saharan Africa",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Test_Twenty_2026FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "Test Twenty Championship 2026",
+      "language": "English",
+      "startTime": "02:30:00 PM 19-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
