@@ -3,7 +3,7 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/17/2026, 7:47:15 AM IST",
+  "last_updated": "11/17/2026, 8:12:19 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -141,7 +141,7 @@
       "match_id": 4250933,
       "title": "Fils vs Jodar vs Turin, Italy (Nitto ATP Finals 2026)",
       "match_name": "Fils vs Jodar",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Fils-vs-Jodar_FC-WEB.jpg",
       "event_category": "Tennis",
       "event_name": "Nitto ATP Finals 2026",
       "language": "English",
@@ -167,27 +167,6 @@
       "event_name": "Nitto ATP Finals 2026",
       "language": "English",
       "startTime": "10:30:00 PM 17-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250935,
-      "title": "Zverev vs Shelton vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Zverev vs Shelton",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Zverev-vs-Shelton_FC-WEB.jpg",
-      "event_category": "Tennis",
-      "event_name": "Nitto ATP Finals 2026",
-      "language": "English",
-      "startTime": "01:00:00 AM 18-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -230,6 +209,27 @@
       "event_name": "ICC Women's Emerging Nations Trophy, 2026",
       "language": "English",
       "startTime": "02:45:00 PM 18-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250935,
+      "title": "Zverev vs Shelton vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Zverev vs Shelton",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Zverev-vs-Shelton_FC-WEB.jpg",
+      "event_category": "Tennis",
+      "event_name": "Nitto ATP Finals 2026",
+      "language": "English",
+      "startTime": "01:00:00 AM 18-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
