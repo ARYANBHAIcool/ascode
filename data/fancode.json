@@ -3,12 +3,12 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/17/2026, 1:18:59 AM IST",
+  "last_updated": "11/17/2026, 7:47:15 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 35,
+  "total_matches": 37,
   "live_matches": 0,
   "matches": [
     {
@@ -36,7 +36,7 @@
       "match_id": 4250383,
       "title": "Lumbini Lions vs Sudurpaschim Royals (Nepal Premier League Season 3, 2026)",
       "match_name": "Lumbini Lions vs Sudurpaschim Royals",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250355_53124_LBL_SPR_fc-Web_1793616702288.jpg",
       "event_category": "Cricket",
       "event_name": "Nepal Premier League Season 3, 2026",
       "language": "English",
@@ -54,14 +54,56 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250614,
-      "title": "BOS vs DET vs Palm Beach Gardens, FL (WTGL 2026)",
-      "match_name": "BOS vs DET",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/3_web.png",
-      "event_category": "Golf",
-      "event_name": "WTGL 2026",
+      "match_id": 4250642,
+      "title": "Australia vs England (England tour of Australia, 2026)",
+      "match_name": "Australia vs England",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/ENG-mini.png",
+      "event_category": "Cricket",
+      "event_name": "England tour of Australia, 2026",
       "language": "English",
-      "startTime": "06:30:00 AM 17-11-2026",
+      "startTime": "09:00:00 AM 18-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250675,
+      "title": "Papua New Guinea Women vs United Arab Emirates Women (ICC Women's Emerging Nations Trophy, 2026)",
+      "match_name": "Papua New Guinea Women vs United Arab Emirates Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250675_53149_PNG-W_UAE-W_FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
+      "language": "English",
+      "startTime": "10:30:00 AM 18-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250676,
+      "title": "Ireland Women vs Scotland Women (ICC Women's Emerging Nations Trophy, 2026)",
+      "match_name": "Ireland Women vs Scotland Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250676_53149_IRE-W_SCO-W_FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
+      "language": "English",
+      "startTime": "10:30:00 AM 18-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -117,27 +159,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250642,
-      "title": "Australia vs England (England tour of Australia, 2026)",
-      "match_name": "Australia vs England",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/ENG-mini.png",
-      "event_category": "Cricket",
-      "event_name": "England tour of Australia, 2026",
-      "language": "English",
-      "startTime": "09:00:00 AM 18-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250934,
       "title": "Men's Doubles vs Turin, Italy (Nitto ATP Finals 2026)",
       "match_name": "Men's Doubles",
@@ -146,48 +167,6 @@
       "event_name": "Nitto ATP Finals 2026",
       "language": "English",
       "startTime": "10:30:00 PM 17-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250675,
-      "title": "Papua New Guinea Women vs United Arab Emirates Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "Papua New Guinea Women vs United Arab Emirates Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250675_53149_PNG-W_UAE-W_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
-      "language": "English",
-      "startTime": "10:30:00 AM 18-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250676,
-      "title": "Ireland Women vs Scotland Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "Ireland Women vs Scotland Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250676_53149_IRE-W_SCO-W_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
-      "language": "English",
-      "startTime": "10:30:00 AM 18-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -264,14 +243,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250951,
-      "title": "South Asia vs Australasia (Test Twenty Championship 2026)",
-      "match_name": "South Asia vs Australasia",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Test_Twenty_2026FC-WEB.jpg",
+      "match_id": 4250384,
+      "title": "Kathmandu Gorkhas vs Chitwan Rhinos (Nepal Premier League Season 3, 2026)",
+      "match_name": "Kathmandu Gorkhas vs Chitwan Rhinos",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250374_53124_CWR_KMG_fc-Web_1793616701562.jpg",
       "event_category": "Cricket",
-      "event_name": "Test Twenty Championship 2026",
+      "event_name": "Nepal Premier League Season 3, 2026",
       "language": "English",
-      "startTime": "02:30:00 PM 18-11-2026",
+      "startTime": "04:45:00 PM 18-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -285,14 +264,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250384,
-      "title": "Kathmandu Gorkhas vs Chitwan Rhinos (Nepal Premier League Season 3, 2026)",
-      "match_name": "Kathmandu Gorkhas vs Chitwan Rhinos",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "match_id": 4250951,
+      "title": "South Asia vs Australasia (Test Twenty Championship 2026)",
+      "match_name": "South Asia vs Australasia",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Test_Twenty_2026FC-WEB.jpg",
       "event_category": "Cricket",
-      "event_name": "Nepal Premier League Season 3, 2026",
+      "event_name": "Test Twenty Championship 2026",
       "language": "English",
-      "startTime": "04:45:00 PM 18-11-2026",
+      "startTime": "02:30:00 PM 18-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -734,6 +713,69 @@
       "event_name": "UEFA Women's Champions League 2026-27",
       "language": "English",
       "startTime": "11:15:00 PM 19-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4249510,
+      "title": "Arsenal Women vs OL Lyonnes (UEFA Women's Champions League 2026-27)",
+      "match_name": "Arsenal Women vs OL Lyonnes",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249510_53078_ARS-W_OLY-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "UEFA Women's Champions League 2026-27",
+      "language": "English",
+      "startTime": "01:30:00 AM 20-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4249511,
+      "title": "Barcelona Women vs Servette Women (UEFA Women's Champions League 2026-27)",
+      "match_name": "Barcelona Women vs Servette Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249511_53078_BAR-W_SVT-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "UEFA Women's Champions League 2026-27",
+      "language": "English",
+      "startTime": "01:30:00 AM 20-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4249512,
+      "title": "Benfica Women vs Roma Women (UEFA Women's Champions League 2026-27)",
+      "match_name": "Benfica Women vs Roma Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249512_53078_BEN-W_ROM-W_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "UEFA Women's Champions League 2026-27",
+      "language": "English",
+      "startTime": "01:30:00 AM 20-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
