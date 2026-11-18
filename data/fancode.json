@@ -3,119 +3,14 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/18/2026, 7:50:23 AM IST",
+  "last_updated": "11/18/2026, 3:12:43 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 39,
+  "total_matches": 35,
   "live_matches": 0,
   "matches": [
-    {
-      "match_id": 4250642,
-      "title": "Australia vs England (England tour of Australia, 2026)",
-      "match_name": "Australia vs England",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/ENG-mini.png",
-      "event_category": "Cricket",
-      "event_name": "England tour of Australia, 2026",
-      "language": "English",
-      "startTime": "09:00:00 AM 18-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250675,
-      "title": "Papua New Guinea Women vs United Arab Emirates Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "Papua New Guinea Women vs United Arab Emirates Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250675_53149_PNG-W_UAE-W_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
-      "language": "English",
-      "startTime": "10:30:00 AM 18-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250676,
-      "title": "Ireland Women vs Scotland Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "Ireland Women vs Scotland Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250676_53149_IRE-W_SCO-W_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
-      "language": "English",
-      "startTime": "10:30:00 AM 18-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250677,
-      "title": "Netherlands Women vs Zimbabwe Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "Netherlands Women vs Zimbabwe Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250677_53149_NED-W_ZIM-W_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
-      "language": "English",
-      "startTime": "02:45:00 PM 18-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250678,
-      "title": "Bangladesh Women vs Thailand Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "Bangladesh Women vs Thailand Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250678_53149_BAN-W_THA-W_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
-      "language": "English",
-      "startTime": "02:45:00 PM 18-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
     {
       "match_id": 4250384,
       "title": "Kathmandu Gorkhas vs Chitwan Rhinos (Nepal Premier League Season 3, 2026)",
@@ -138,14 +33,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250951,
-      "title": "South Asia vs Australasia (Test Twenty Championship 2026)",
-      "match_name": "South Asia vs Australasia",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Test_Twenty_2026FC-WEB.jpg",
+      "match_id": 4250896,
+      "title": "Muscat Thunders Women vs Muscat Shaheens  Women (Oman Women's D20, 2026)",
+      "match_name": "Muscat Thunders Women vs Muscat Shaheens  Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
       "event_category": "Cricket",
-      "event_name": "Test Twenty Championship 2026",
+      "event_name": "Oman Women's D20, 2026",
       "language": "English",
-      "startTime": "02:30:00 PM 18-11-2026",
+      "startTime": "04:00:00 PM 18-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -159,14 +54,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250896,
-      "title": "Muscat Thunders Women vs Muscat Shaheens  Women (Oman Women's D20, 2026)",
-      "match_name": "Muscat Thunders Women vs Muscat Shaheens  Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
+      "match_id": 4250412,
+      "title": "Hobart Hurricanes Women vs Perth Scorchers Women (Women's Big Bash League, 2026)",
+      "match_name": "Hobart Hurricanes Women vs Perth Scorchers Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250412_53125_HB-W_PS-W_fc-web_1793352701293.jpg",
       "event_category": "Cricket",
-      "event_name": "Oman Women's D20, 2026",
+      "event_name": "Women's Big Bash League, 2026",
       "language": "English",
-      "startTime": "04:00:00 PM 18-11-2026",
+      "startTime": "10:10:00 AM 19-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -285,14 +180,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250412,
-      "title": "Hobart Hurricanes Women vs Perth Scorchers Women (Women's Big Bash League, 2026)",
-      "match_name": "Hobart Hurricanes Women vs Perth Scorchers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250412_53125_HB-W_PS-W_fc-web_1793352701293.jpg",
+      "match_id": 4250413,
+      "title": "Brisbane Heat Women vs Sydney Thunder Women (Women's Big Bash League, 2026)",
+      "match_name": "Brisbane Heat Women vs Sydney Thunder Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250413_53125_BH-W_ST-W_fc-web_1793352701339.jpg",
       "event_category": "Cricket",
       "event_name": "Women's Big Bash League, 2026",
       "language": "English",
-      "startTime": "10:10:00 AM 19-11-2026",
+      "startTime": "01:40:00 PM 19-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -327,14 +222,56 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250413,
-      "title": "Brisbane Heat Women vs Sydney Thunder Women (Women's Big Bash League, 2026)",
-      "match_name": "Brisbane Heat Women vs Sydney Thunder Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250413_53125_BH-W_ST-W_fc-web_1793352701339.jpg",
+      "match_id": 4250385,
+      "title": "TBC vs TBC (Nepal Premier League Season 3, 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
       "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
+      "event_name": "Nepal Premier League Season 3, 2026",
       "language": "English",
-      "startTime": "01:40:00 PM 19-11-2026",
+      "startTime": "04:45:00 PM 19-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250952,
+      "title": "Europe vs Sub Saharan Africa (Test Twenty Championship 2026)",
+      "match_name": "Europe vs Sub Saharan Africa",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Test_Twenty_2026FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "Test Twenty Championship 2026",
+      "language": "English",
+      "startTime": "02:30:00 PM 19-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250898,
+      "title": "Ghubra Giants Women vs Wadi Kabir Royals Women (Oman Women's D20, 2026)",
+      "match_name": "Ghubra Giants Women vs Wadi Kabir Royals Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
+      "event_category": "Cricket",
+      "event_name": "Oman Women's D20, 2026",
+      "language": "English",
+      "startTime": "04:00:00 PM 19-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -432,69 +369,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250385,
-      "title": "TBC vs TBC (Nepal Premier League Season 3, 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "Nepal Premier League Season 3, 2026",
-      "language": "English",
-      "startTime": "04:45:00 PM 19-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250952,
-      "title": "Europe vs Sub Saharan Africa (Test Twenty Championship 2026)",
-      "match_name": "Europe vs Sub Saharan Africa",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Test_Twenty_2026FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "Test Twenty Championship 2026",
-      "language": "English",
-      "startTime": "02:30:00 PM 19-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250898,
-      "title": "Ghubra Giants Women vs Wadi Kabir Royals Women (Oman Women's D20, 2026)",
-      "match_name": "Ghubra Giants Women vs Wadi Kabir Royals Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
-      "event_category": "Cricket",
-      "event_name": "Oman Women's D20, 2026",
-      "language": "English",
-      "startTime": "04:00:00 PM 19-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250899,
       "title": "OCA Strikers Women vs Danube Titans  Women (Oman Women's D20, 2026)",
       "match_name": "OCA Strikers Women vs Danube Titans  Women",
@@ -537,27 +411,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250939,
-      "title": "Nitto ATP Finals 2026 vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Nitto ATP Finals 2026",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
-      "event_category": "Tennis",
-      "event_name": "Nitto ATP Finals 2026",
-      "language": "English",
-      "startTime": "06:30:00 PM 19-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4249508,
       "title": "Austria Wien Women vs Bayern Munich Women (UEFA Women's Champions League 2026-27)",
       "match_name": "Austria Wien Women vs Bayern Munich Women",
@@ -587,6 +440,27 @@
       "event_name": "UEFA Women's Champions League 2026-27",
       "language": "English",
       "startTime": "11:15:00 PM 19-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250939,
+      "title": "Nitto ATP Finals 2026 vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Nitto ATP Finals 2026",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
+      "event_category": "Tennis",
+      "event_name": "Nitto ATP Finals 2026",
+      "language": "English",
+      "startTime": "06:30:00 PM 19-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -705,6 +579,27 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4251121,
+      "title": "Race 1 - Trofeo Pirelli vs Barcelona, Spain (Ferrari Challenge Series 2026)",
+      "match_name": "Race 1 - Trofeo Pirelli",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Ferrari-Challenge-Series-Suzuka-2026-old_1794390200647.-psd.png",
+      "event_category": "Motorsports",
+      "event_name": "Ferrari Challenge Series 2026",
+      "language": "English",
+      "startTime": "05:15:00 PM 19-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4251083,
       "title": "Day 1 - Featured Groups vs St. Simons Island, Georgia (The RSM Classic 2026)",
       "match_name": "Day 1 - Featured Groups",
@@ -734,6 +629,27 @@
       "event_name": "Nitto ATP Finals 2026",
       "language": "English",
       "startTime": "01:00:00 AM 20-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4251122,
+      "title": "Race 1 - Coppa Shell vs Barcelona, Spain (Ferrari Challenge Series 2026)",
+      "match_name": "Race 1 - Coppa Shell",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Ferrari-Challenge-Series-Suzuka-2026-old_1794390200647.-psd.png",
+      "event_category": "Motorsports",
+      "event_name": "Ferrari Challenge Series 2026",
+      "language": "English",
+      "startTime": "07:45:00 PM 19-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
