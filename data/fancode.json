@@ -3,56 +3,14 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/18/2026, 3:57:27 PM IST",
+  "last_updated": "11/18/2026, 11:55:54 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 35,
+  "total_matches": 36,
   "live_matches": 0,
   "matches": [
-    {
-      "match_id": 4250384,
-      "title": "Kathmandu Gorkhas vs Chitwan Rhinos (Nepal Premier League Season 3, 2026)",
-      "match_name": "Kathmandu Gorkhas vs Chitwan Rhinos",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250374_53124_CWR_KMG_fc-Web_1793616701562.jpg",
-      "event_category": "Cricket",
-      "event_name": "Nepal Premier League Season 3, 2026",
-      "language": "English",
-      "startTime": "04:45:00 PM 18-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250896,
-      "title": "Muscat Thunders Women vs Muscat Shaheens  Women (Oman Women's D20, 2026)",
-      "match_name": "Muscat Thunders Women vs Muscat Shaheens  Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
-      "event_category": "Cricket",
-      "event_name": "Oman Women's D20, 2026",
-      "language": "English",
-      "startTime": "04:00:00 PM 18-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
     {
       "match_id": 4250412,
       "title": "Hobart Hurricanes Women vs Perth Scorchers Women (Women's Big Bash League, 2026)",
@@ -75,14 +33,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250897,
-      "title": "OCA Strikers Women vs OCA Invincibles Women (Oman Women's D20, 2026)",
-      "match_name": "OCA Strikers Women vs OCA Invincibles Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
+      "match_id": 4250413,
+      "title": "Brisbane Heat Women vs Sydney Thunder Women (Women's Big Bash League, 2026)",
+      "match_name": "Brisbane Heat Women vs Sydney Thunder Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250413_53125_BH-W_ST-W_fc-web_1793352701339.jpg",
       "event_category": "Cricket",
-      "event_name": "Oman Women's D20, 2026",
+      "event_name": "Women's Big Bash League, 2026",
       "language": "English",
-      "startTime": "08:30:00 PM 18-11-2026",
+      "startTime": "01:40:00 PM 19-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -96,35 +54,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4249504,
-      "title": "BK Häcken Women vs Manchester City Women (UEFA Women's Champions League 2026-27)",
-      "match_name": "BK Häcken Women vs Manchester City Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249504_53078_BKH-W_MCI-W_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "UEFA Women's Champions League 2026-27",
+      "match_id": 4250385,
+      "title": "Sudurpaschim Royals vs Chitwan Rhinos (Nepal Premier League Season 3, 2026)",
+      "match_name": "Sudurpaschim Royals vs Chitwan Rhinos",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250365_53124_SPR_CWR_fc-Web_1793616701602.jpg",
+      "event_category": "Cricket",
+      "event_name": "Nepal Premier League Season 3, 2026",
       "language": "English",
-      "startTime": "11:15:00 PM 18-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4249505,
-      "title": "Real Madrid Women vs Inter Women (UEFA Women's Champions League 2026-27)",
-      "match_name": "Real Madrid Women vs Inter Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249505_53078_RM-W_INT-W_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "UEFA Women's Champions League 2026-27",
-      "language": "English",
-      "startTime": "11:15:00 PM 18-11-2026",
+      "startTime": "04:45:00 PM 19-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -180,69 +117,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250413,
-      "title": "Brisbane Heat Women vs Sydney Thunder Women (Women's Big Bash League, 2026)",
-      "match_name": "Brisbane Heat Women vs Sydney Thunder Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250413_53125_BH-W_ST-W_fc-web_1793352701339.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
-      "language": "English",
-      "startTime": "01:40:00 PM 19-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250385,
-      "title": "TBC vs TBC (Nepal Premier League Season 3, 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "Nepal Premier League Season 3, 2026",
-      "language": "English",
-      "startTime": "04:45:00 PM 19-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250728,
-      "title": "Men's Doubles vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Men's Doubles",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
-      "event_category": "Tennis",
-      "event_name": "Nitto ATP Finals 2026",
-      "language": "English",
-      "startTime": "04:00:00 PM 18-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250952,
       "title": "Europe vs Sub Saharan Africa (Test Twenty Championship 2026)",
       "match_name": "Europe vs Sub Saharan Africa",
@@ -285,90 +159,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250936,
-      "title": "C. Alcaraz vs D. Medvedev vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "C. Alcaraz vs D. Medvedev",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Alcaraz-vs-Medvedev_FC-WEB.jpg",
-      "event_category": "Tennis",
-      "event_name": "Nitto ATP Finals 2026",
-      "language": "English",
-      "startTime": "06:30:00 PM 18-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250937,
-      "title": "Men's Doubles vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Men's Doubles",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
-      "event_category": "Tennis",
-      "event_name": "Nitto ATP Finals 2026",
-      "language": "English",
-      "startTime": "10:30:00 PM 18-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250938,
-      "title": "F. Cobolli vs F. Tiafoe vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "F. Cobolli vs F. Tiafoe",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cobolli-vs-Tiafoe_FC-WEB.jpg",
-      "event_category": "Tennis",
-      "event_name": "Nitto ATP Finals 2026",
-      "language": "English",
-      "startTime": "01:00:00 AM 19-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250634,
-      "title": "Round of 16 vs Hong Kong (BWF Super 500 - LI-NING Hong Kong Open 2026)",
-      "match_name": "Round of 16",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Hong-Kong-Open_BWF-Super-500_fc-web.jpg",
-      "event_category": "Badminton",
-      "event_name": "BWF Super 500 - LI-NING Hong Kong Open 2026",
-      "language": "English",
-      "startTime": "06:30:00 AM 19-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250899,
       "title": "OCA Strikers Women vs Danube Titans  Women (Oman Women's D20, 2026)",
       "match_name": "OCA Strikers Women vs Danube Titans  Women",
@@ -377,27 +167,6 @@
       "event_name": "Oman Women's D20, 2026",
       "language": "English",
       "startTime": "08:30:00 PM 19-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250729,
-      "title": "Match 5 vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Match 5",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
-      "event_category": "Tennis",
-      "event_name": "Nitto ATP Finals 2026",
-      "language": "English",
-      "startTime": "04:00:00 PM 19-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -440,27 +209,6 @@
       "event_name": "UEFA Women's Champions League 2026-27",
       "language": "English",
       "startTime": "11:15:00 PM 19-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250939,
-      "title": "Nitto ATP Finals 2026 vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Nitto ATP Finals 2026",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
-      "event_category": "Tennis",
-      "event_name": "Nitto ATP Finals 2026",
-      "language": "English",
-      "startTime": "06:30:00 PM 19-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -537,6 +285,90 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4250938,
+      "title": "F. Cobolli vs F. Tiafoe vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "F. Cobolli vs F. Tiafoe",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Cobolli-vs-Tiafoe_FC-WEB.jpg",
+      "event_category": "Tennis",
+      "event_name": "Nitto ATP Finals 2026",
+      "language": "English",
+      "startTime": "01:00:00 AM 19-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250634,
+      "title": "Round of 16 vs Hong Kong (BWF Super 500 - LI-NING Hong Kong Open 2026)",
+      "match_name": "Round of 16",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Hong-Kong-Open_BWF-Super-500_fc-web.jpg",
+      "event_category": "Badminton",
+      "event_name": "BWF Super 500 - LI-NING Hong Kong Open 2026",
+      "language": "English",
+      "startTime": "06:30:00 AM 19-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250729,
+      "title": "Match 5 vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Match 5",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
+      "event_category": "Tennis",
+      "event_name": "Nitto ATP Finals 2026",
+      "language": "English",
+      "startTime": "04:00:00 PM 19-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250939,
+      "title": "Nitto ATP Finals 2026 vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Nitto ATP Finals 2026",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
+      "event_category": "Tennis",
+      "event_name": "Nitto ATP Finals 2026",
+      "language": "English",
+      "startTime": "06:30:00 PM 19-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4250733,
       "title": "Day 1 vs St. Simons Island, Georgia (The RSM Classic 2026)",
       "match_name": "Day 1",
@@ -579,48 +411,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4251121,
-      "title": "Race 1 - Trofeo Pirelli vs Barcelona, Spain (Ferrari Challenge Series 2026)",
-      "match_name": "Race 1 - Trofeo Pirelli",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Ferrari-Challenge-Series-Suzuka-2026-old_1794390200647.-psd.png",
-      "event_category": "Motorsports",
-      "event_name": "Ferrari Challenge Series 2026",
-      "language": "English",
-      "startTime": "05:15:00 PM 19-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4251083,
-      "title": "Day 1 - Featured Groups vs St. Simons Island, Georgia (The RSM Classic 2026)",
-      "match_name": "Day 1 - Featured Groups",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/The-RSM-Classic-2026_Web_1080_x_810_1794325334537.jpg",
-      "event_category": "Golf",
-      "event_name": "The RSM Classic 2026",
-      "language": "English",
-      "startTime": "07:00:00 PM 19-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250941,
       "title": "Nitto ATP Finals 2026 vs Turin, Italy (Nitto ATP Finals 2026)",
       "match_name": "Nitto ATP Finals 2026",
@@ -629,27 +419,6 @@
       "event_name": "Nitto ATP Finals 2026",
       "language": "English",
       "startTime": "01:00:00 AM 20-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4251122,
-      "title": "Race 1 - Coppa Shell vs Barcelona, Spain (Ferrari Challenge Series 2026)",
-      "match_name": "Race 1 - Coppa Shell",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Ferrari-Challenge-Series-Suzuka-2026-old_1794390200647.-psd.png",
-      "event_category": "Motorsports",
-      "event_name": "Ferrari Challenge Series 2026",
-      "language": "English",
-      "startTime": "07:45:00 PM 19-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -705,6 +474,69 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4251121,
+      "title": "Race 1 - Trofeo Pirelli vs Barcelona, Spain (Ferrari Challenge Series 2026)",
+      "match_name": "Race 1 - Trofeo Pirelli",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Ferrari-Challenge-Series-Suzuka-2026-old_1794390200647.-psd.png",
+      "event_category": "Motorsports",
+      "event_name": "Ferrari Challenge Series 2026",
+      "language": "English",
+      "startTime": "05:15:00 PM 19-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4251083,
+      "title": "Day 1 - Featured Groups vs St. Simons Island, Georgia (The RSM Classic 2026)",
+      "match_name": "Day 1 - Featured Groups",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/The-RSM-Classic-2026_Web_1080_x_810_1794325334537.jpg",
+      "event_category": "Golf",
+      "event_name": "The RSM Classic 2026",
+      "language": "English",
+      "startTime": "07:00:00 PM 19-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4251122,
+      "title": "Race 1 - Coppa Shell vs Barcelona, Spain (Ferrari Challenge Series 2026)",
+      "match_name": "Race 1 - Coppa Shell",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Ferrari-Challenge-Series-Suzuka-2026-old_1794390200647.-psd.png",
+      "event_category": "Motorsports",
+      "event_name": "Ferrari Challenge Series 2026",
+      "language": "English",
+      "startTime": "07:45:00 PM 19-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 139517,
       "title": "Practice 1 vs Las Vegas Strip Circuit (F1 HEINEKEN LAS VEGAS GRAND PRIX 2026)",
       "match_name": "Practice 1",
@@ -734,6 +566,195 @@
       "event_name": "Oman Women's D20, 2026",
       "language": "English",
       "startTime": "11:30:00 AM 20-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250414,
+      "title": "Adelaide Strikers Women vs Melbourne Renegades Women (Women's Big Bash League, 2026)",
+      "match_name": "Adelaide Strikers Women vs Melbourne Renegades Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250414_53125_AS-W_MR-W_fc-web_1793352702100.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
+      "language": "English",
+      "startTime": "01:40:00 PM 20-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250681,
+      "title": "TBC vs TBC (ICC Women's Emerging Nations Trophy, 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/ICC_Womens_Emerging_2026_FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
+      "language": "English",
+      "startTime": "02:45:00 PM 20-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250635,
+      "title": "Quarter-Final 1 vs Hong Kong (BWF Super 500 - LI-NING Hong Kong Open 2026)",
+      "match_name": "Quarter-Final 1",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Hong-Kong-Open_BWF-Super-500_fc-web.jpg",
+      "event_category": "Badminton",
+      "event_name": "BWF Super 500 - LI-NING Hong Kong Open 2026",
+      "language": "English",
+      "startTime": "08:30:00 AM 20-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 139518,
+      "title": "Practice 2 vs Las Vegas Strip Circuit (F1 HEINEKEN LAS VEGAS GRAND PRIX 2026)",
+      "match_name": "Practice 2",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/F1-HEINEKEN-LAS-VEGAS-GRAND-PRIX--web-card_1793794537926.png",
+      "event_category": "Formula 1",
+      "event_name": "F1 HEINEKEN LAS VEGAS GRAND PRIX 2026",
+      "language": "English",
+      "startTime": "09:30:00 AM 20-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250901,
+      "title": "Muscat Shaheens  Women vs Ghubra Giants Women (Oman Women's D20, 2026)",
+      "match_name": "Muscat Shaheens  Women vs Ghubra Giants Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
+      "event_category": "Cricket",
+      "event_name": "Oman Women's D20, 2026",
+      "language": "English",
+      "startTime": "04:00:00 PM 20-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 139700,
+      "title": "Practice Session vs Las Vegas (F1 ACADEMY LAS VEGAS 2026)",
+      "match_name": "Practice Session",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Motorsports-1440-x-360_2.jpg",
+      "event_category": "Motorsports",
+      "event_name": "F1 ACADEMY LAS VEGAS 2026",
+      "language": "English",
+      "startTime": "07:30:00 AM 20-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4249858,
+      "title": "Western Sydney Wanderers vs Adelaide United (A-League 2026-27)",
+      "match_name": "Western Sydney Wanderers vs Adelaide United",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249858_53101_SYW_ADL_fc-Web_1792223294112.jpg",
+      "event_category": "Football",
+      "event_name": "A-League 2026-27",
+      "language": "English",
+      "startTime": "02:10:00 PM 20-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 139984,
+      "title": "Day 1 vs Portimao (REPSOL GRAND PRIX OF PORTUGAL 2026)",
+      "match_name": "Day 1",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/REPSOL-GRAND-PRIX-OF-PORTUGAL_fc-web.jpg",
+      "event_category": "Motogp",
+      "event_name": "REPSOL GRAND PRIX OF PORTUGAL 2026",
+      "language": "English",
+      "startTime": "02:30:00 PM 20-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 139701,
+      "title": "Qualifying Session vs Las Vegas (F1 ACADEMY LAS VEGAS 2026)",
+      "match_name": "Qualifying Session",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Motorsports-1440-x-360_2.jpg",
+      "event_category": "Motorsports",
+      "event_name": "F1 ACADEMY LAS VEGAS 2026",
+      "language": "English",
+      "startTime": "11:00:00 AM 20-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
