@@ -3,7 +3,7 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/18/2026, 7:21:14 AM IST",
+  "last_updated": "11/18/2026, 7:50:23 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -327,14 +327,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250936,
-      "title": "C. Alcaraz vs D. Medvedev vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "C. Alcaraz vs D. Medvedev",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Alcaraz-vs-Medvedev_FC-WEB.jpg",
-      "event_category": "Tennis",
-      "event_name": "Nitto ATP Finals 2026",
+      "match_id": 4250413,
+      "title": "Brisbane Heat Women vs Sydney Thunder Women (Women's Big Bash League, 2026)",
+      "match_name": "Brisbane Heat Women vs Sydney Thunder Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250413_53125_BH-W_ST-W_fc-web_1793352701339.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
       "language": "English",
-      "startTime": "06:30:00 PM 18-11-2026",
+      "startTime": "01:40:00 PM 19-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -348,14 +348,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250413,
-      "title": "Brisbane Heat Women vs Sydney Thunder Women (Women's Big Bash League, 2026)",
-      "match_name": "Brisbane Heat Women vs Sydney Thunder Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250413_53125_BH-W_ST-W_fc-web_1793352701339.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
+      "match_id": 4250936,
+      "title": "C. Alcaraz vs D. Medvedev vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "C. Alcaraz vs D. Medvedev",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Alcaraz-vs-Medvedev_FC-WEB.jpg",
+      "event_category": "Tennis",
+      "event_name": "Nitto ATP Finals 2026",
       "language": "English",
-      "startTime": "01:40:00 PM 19-11-2026",
+      "startTime": "06:30:00 PM 18-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
