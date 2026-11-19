@@ -3,7 +3,7 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/19/2026, 6:09:07 AM IST",
+  "last_updated": "11/19/2026, 6:36:26 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -390,14 +390,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250941,
-      "title": "A. Zverev vs A. Fils vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "A. Zverev vs A. Fils",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
-      "event_category": "Tennis",
-      "event_name": "Nitto ATP Finals 2026",
+      "match_id": 4250414,
+      "title": "Adelaide Strikers Women vs Melbourne Renegades Women (Women's Big Bash League, 2026)",
+      "match_name": "Adelaide Strikers Women vs Melbourne Renegades Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250414_53125_AS-W_MR-W_fc-web_1793352702100.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
       "language": "English",
-      "startTime": "01:00:00 AM 20-11-2026",
+      "startTime": "01:40:00 PM 20-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -411,14 +411,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250414,
-      "title": "Adelaide Strikers Women vs Melbourne Renegades Women (Women's Big Bash League, 2026)",
-      "match_name": "Adelaide Strikers Women vs Melbourne Renegades Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250414_53125_AS-W_MR-W_fc-web_1793352702100.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
+      "match_id": 4250941,
+      "title": "A. Zverev vs A. Fils vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "A. Zverev vs A. Fils",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
+      "event_category": "Tennis",
+      "event_name": "Nitto ATP Finals 2026",
       "language": "English",
-      "startTime": "01:40:00 PM 20-11-2026",
+      "startTime": "01:00:00 AM 20-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
