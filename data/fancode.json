@@ -3,56 +3,14 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/20/2026, 9:45:10 AM IST",
+  "last_updated": "11/20/2026, 1:05:21 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 38,
+  "total_matches": 36,
   "live_matches": 0,
   "matches": [
-    {
-      "match_id": 4250679,
-      "title": "Scotland Women vs Netherlands Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "Scotland Women vs Netherlands Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/ICC_Womens_Emerging_2026_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
-      "language": "English",
-      "startTime": "10:30:00 AM 20-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250680,
-      "title": "Sri Lanka Women vs Zimbabwe Women (ICC Women's Emerging Nations Trophy, 2026)",
-      "match_name": "Sri Lanka Women vs Zimbabwe Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/ICC_Womens_Emerging_2026_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
-      "language": "English",
-      "startTime": "10:30:00 AM 20-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
     {
       "match_id": 4250414,
       "title": "Adelaide Strikers Women vs Melbourne Renegades Women (Women's Big Bash League, 2026)",
@@ -117,14 +75,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250900,
-      "title": "Muscat Thunders Women vs Sohar Smashers Women (Oman Women's D20, 2026)",
-      "match_name": "Muscat Thunders Women vs Sohar Smashers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
+      "match_id": 4250416,
+      "title": "Sydney Sixers Women vs Perth Scorchers Women (Women's Big Bash League, 2026)",
+      "match_name": "Sydney Sixers Women vs Perth Scorchers Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250416_53125_SS-W_PS-W_fc-web_1793352702120.jpg",
       "event_category": "Cricket",
-      "event_name": "Oman Women's D20, 2026",
+      "event_name": "Women's Big Bash League, 2026",
       "language": "English",
-      "startTime": "11:30:00 AM 20-11-2026",
+      "startTime": "10:00:00 AM 21-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -264,14 +222,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250416,
-      "title": "Sydney Sixers Women vs Perth Scorchers Women (Women's Big Bash League, 2026)",
-      "match_name": "Sydney Sixers Women vs Perth Scorchers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250416_53125_SS-W_PS-W_fc-web_1793352702120.jpg",
+      "match_id": 4250643,
+      "title": "Australia vs England (England tour of Australia, 2026)",
+      "match_name": "Australia vs England",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/wevb.png",
       "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
+      "event_name": "England tour of Australia, 2026",
       "language": "English",
-      "startTime": "10:00:00 AM 21-11-2026",
+      "startTime": "01:45:00 PM 21-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -306,27 +264,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250643,
-      "title": "Australia vs England (England tour of Australia, 2026)",
-      "match_name": "Australia vs England",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/wevb.png",
-      "event_category": "Cricket",
-      "event_name": "England tour of Australia, 2026",
-      "language": "English",
-      "startTime": "01:45:00 PM 21-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250903,
       "title": "Muscat Shaheens  Women vs Sohar Smashers Women (Oman Women's D20, 2026)",
       "match_name": "Muscat Shaheens  Women vs Sohar Smashers Women",
@@ -348,14 +285,35 @@
       "auto_streams": {}
     },
     {
-      "match_id": 139701,
-      "title": "Qualifying Session vs Las Vegas (F1 ACADEMY LAS VEGAS 2026)",
-      "match_name": "Qualifying Session",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/F1-ACADEMY-LAS-VEGAS-2026_web.jpg",
-      "event_category": "Motorsports",
-      "event_name": "F1 ACADEMY LAS VEGAS 2026",
+      "match_id": 4250386,
+      "title": "Lumbini Lions vs Sudurpaschim Royals (Nepal Premier League Season 3, 2026)",
+      "match_name": "Lumbini Lions vs Sudurpaschim Royals",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250355_53124_LBL_SPR_fc-Web_1793616702288.jpg",
+      "event_category": "Cricket",
+      "event_name": "Nepal Premier League Season 3, 2026",
       "language": "English",
-      "startTime": "11:00:00 AM 20-11-2026",
+      "startTime": "04:45:00 PM 21-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250953,
+      "title": "South Asia vs Sub Saharan Africa (Test Twenty Championship 2026)",
+      "match_name": "South Asia vs Sub Saharan Africa",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Test_Twenty_2026FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "Test Twenty Championship 2026",
+      "language": "English",
+      "startTime": "02:30:00 PM 21-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -418,7 +376,7 @@
       "event_category": "Motorsports",
       "event_name": "Ferrari Challenge Series 2026",
       "language": "English",
-      "startTime": "02:45:00 PM 20-11-2026",
+      "startTime": "02:30:00 PM 20-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -454,8 +412,8 @@
     },
     {
       "match_id": 4250730,
-      "title": "Match 6 vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Match 6",
+      "title": "Men's Doubles vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Men's Doubles",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
       "event_category": "Tennis",
       "event_name": "Nitto ATP Finals 2026",
@@ -496,13 +454,34 @@
     },
     {
       "match_id": 4250942,
-      "title": "Nitto ATP Finals 2026 vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Nitto ATP Finals 2026",
+      "title": "C. Alcaraz vs F. Cobolli vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "C. Alcaraz vs F. Cobolli",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
       "event_category": "Tennis",
       "event_name": "Nitto ATP Finals 2026",
       "language": "English",
       "startTime": "06:30:00 PM 20-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4251084,
+      "title": "Day 2 - Featured Groups vs St. Simons Island, Georgia (The RSM Classic 2026)",
+      "match_name": "Day 2 - Featured Groups",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/The-RSM-Classic-2026_Web_1080_x_810_1794325334537.jpg",
+      "event_category": "Golf",
+      "event_name": "The RSM Classic 2026",
+      "language": "English",
+      "startTime": "07:00:00 PM 20-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -538,8 +517,8 @@
     },
     {
       "match_id": 4250943,
-      "title": "Nitto ATP Finals 2026 vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Nitto ATP Finals 2026",
+      "title": "Men's Doubles vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Men's Doubles",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
       "event_category": "Tennis",
       "event_name": "Nitto ATP Finals 2026",
@@ -558,9 +537,30 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4250904,
+      "title": "OCA Strikers Women vs Muscat Thunders Women (Oman Women's D20, 2026)",
+      "match_name": "OCA Strikers Women vs Muscat Thunders Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
+      "event_category": "Cricket",
+      "event_name": "Oman Women's D20, 2026",
+      "language": "English",
+      "startTime": "04:00:00 PM 21-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4250944,
-      "title": "Nitto ATP Finals 2026 vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Nitto ATP Finals 2026",
+      "title": "D. Medvedev vs F. Tiafoe vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "D. Medvedev vs F. Tiafoe",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
       "event_category": "Tennis",
       "event_name": "Nitto ATP Finals 2026",
@@ -579,35 +579,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250386,
-      "title": "Lumbini Lions vs Sudurpaschim Royals (Nepal Premier League Season 3, 2026)",
-      "match_name": "Lumbini Lions vs Sudurpaschim Royals",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250355_53124_LBL_SPR_fc-Web_1793616702288.jpg",
+      "match_id": 4251136,
+      "title": "Brescia Lions vs Napoli Knights (Italia T10 2026)",
+      "match_name": "Brescia Lions vs Napoli Knights",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251136_53165_BL_NP_fc-web.jpg",
       "event_category": "Cricket",
-      "event_name": "Nepal Premier League Season 3, 2026",
+      "event_name": "Italia T10 2026",
       "language": "English",
-      "startTime": "04:45:00 PM 21-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250953,
-      "title": "South Asia vs Sub Saharan Africa (Test Twenty Championship 2026)",
-      "match_name": "South Asia vs Sub Saharan Africa",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Test_Twenty_2026FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "Test Twenty Championship 2026",
-      "language": "English",
-      "startTime": "02:30:00 PM 21-11-2026",
+      "startTime": "04:30:00 PM 21-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -684,35 +663,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250904,
-      "title": "OCA Strikers Women vs Muscat Thunders Women (Oman Women's D20, 2026)",
-      "match_name": "OCA Strikers Women vs Muscat Thunders Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
-      "event_category": "Cricket",
-      "event_name": "Oman Women's D20, 2026",
+      "match_id": 4250011,
+      "title": "Millwall F.C. vs Queens Park Rangers F.C. (EFL Championship 2026-27)",
+      "match_name": "Millwall F.C. vs Queens Park Rangers F.C.",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250011_52993_MLW_QPR_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "EFL Championship 2026-27",
       "language": "English",
-      "startTime": "04:00:00 PM 21-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4251136,
-      "title": "Brescia Lions vs Napoli Knights (Italia T10 2026)",
-      "match_name": "Brescia Lions vs Napoli Knights",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251136_53165_BL_NP_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "Italia T10 2026",
-      "language": "English",
-      "startTime": "04:30:00 PM 21-11-2026",
+      "startTime": "06:00:00 PM 21-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -768,14 +726,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4249860,
-      "title": "Central Coast Mariners vs Perth Glory (A-League 2026-27)",
-      "match_name": "Central Coast Mariners vs Perth Glory",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249860_53101_CCM_PG_fc-Web_1792223292229.jpg",
+      "match_id": 4247697,
+      "title": "Deportivo Alaves vs Deportivo de La Coruna (LALIGA 2026-27)",
+      "match_name": "Deportivo Alaves vs Deportivo de La Coruna",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247697_53004_ALA_COR_FC-Web.png",
       "event_category": "Football",
-      "event_name": "A-League 2026-27",
+      "event_name": "LALIGA 2026-27",
       "language": "English",
-      "startTime": "11:30:00 AM 21-11-2026",
+      "startTime": "06:30:00 PM 21-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -789,14 +747,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250011,
-      "title": "Millwall F.C. vs Queens Park Rangers F.C. (EFL Championship 2026-27)",
-      "match_name": "Millwall F.C. vs Queens Park Rangers F.C.",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250011_52993_MLW_QPR_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "EFL Championship 2026-27",
+      "match_id": 4251137,
+      "title": "Milan Icons vs Venice Livewires (Italia T10 2026)",
+      "match_name": "Milan Icons vs Venice Livewires",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251137_53165_MI_VL_fc-web.jpg",
+      "event_category": "Cricket",
+      "event_name": "Italia T10 2026",
       "language": "English",
-      "startTime": "06:00:00 PM 21-11-2026",
+      "startTime": "06:45:00 PM 21-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
