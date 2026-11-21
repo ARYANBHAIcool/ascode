@@ -3,12 +3,12 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/21/2026, 11:59:01 PM IST",
+  "last_updated": "11/22/2026, 3:35:54 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 35,
+  "total_matches": 38,
   "live_matches": 0,
   "matches": [
     {
@@ -201,27 +201,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4247691,
-      "title": "Real Madrid vs RC Celta (LALIGA 2026-27)",
-      "match_name": "Real Madrid vs RC Celta",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247691_53004_RM_CEV_FC-Web_1792660540658.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "01:30:00 AM 22-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250954,
       "title": "Australasia vs Europe (Test Twenty Championship 2026)",
       "match_name": "Australasia vs Europe",
@@ -390,6 +369,27 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4247695,
+      "title": "CA Osasuna vs Malaga (LALIGA 2026-27)",
+      "match_name": "CA Osasuna vs Malaga",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247695_53004_OSN_MAG_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA 2026-27",
+      "language": "English",
+      "startTime": "11:00:00 PM 22-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4250771,
       "title": "Birmingham City F.C. Women vs Manchester United Women (Barclays Women's Super League 2026-27)",
       "match_name": "Birmingham City F.C. Women vs Manchester United Women",
@@ -419,27 +419,6 @@
       "event_name": "Barclays Women's Super League 2026-27",
       "language": "English",
       "startTime": "05:30:00 PM 22-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4247695,
-      "title": "CA Osasuna vs Malaga (LALIGA 2026-27)",
-      "match_name": "CA Osasuna vs Malaga",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247695_53004_OSN_MAG_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "11:00:00 PM 22-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -516,27 +495,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250751,
-      "title": "Tenerife vs RCD Mallorca (LALIGA Hypermotion 2026-27)",
-      "match_name": "Tenerife vs RCD Mallorca",
-      "src": "https://images.fancode.com/aig/match/v1794380803724/4250751_CASACARDS_APP.png",
-      "event_category": "Football",
-      "event_name": "LALIGA Hypermotion 2026-27",
-      "language": "English",
-      "startTime": "01:30:00 AM 22-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4247694,
       "title": "Getafe CF vs Atletico de Madrid (LALIGA 2026-27)",
       "match_name": "Getafe CF vs Atletico de Madrid",
@@ -558,14 +516,35 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250947,
-      "title": "Zverev vs Medvedev vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Zverev vs Medvedev",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/NittoATPFinalswebplayervsplayer1.png",
-      "event_category": "Tennis",
-      "event_name": "Nitto ATP Finals 2026",
+      "match_id": 4249675,
+      "title": "Western Australia vs Tasmania (Sheffield Shield, 2026/27)",
+      "match_name": "Western Australia vs Tasmania",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249675_53087_WAU_TAS_FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "Sheffield Shield, 2026/27",
       "language": "English",
-      "startTime": "01:00:00 AM 22-11-2026",
+      "startTime": "08:00:00 AM 23-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250752,
+      "title": "Sporting de Gijón vs Las Palmas (LALIGA Hypermotion 2026-27)",
+      "match_name": "Sporting de Gijón vs Las Palmas",
+      "src": "https://images.fancode.com/aig/match/v1794380803724/4250752_CASACARDS_APP.png",
+      "event_category": "Football",
+      "event_name": "LALIGA Hypermotion 2026-27",
+      "language": "English",
+      "startTime": "08:45:00 PM 22-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -663,6 +642,27 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4250753,
+      "title": "Girona FC vs Eibar (LALIGA Hypermotion 2026-27)",
+      "match_name": "Girona FC vs Eibar",
+      "src": "https://images.fancode.com/aig/match/v1794380803722/4250753_CASACARDS_APP.png",
+      "event_category": "Football",
+      "event_name": "LALIGA Hypermotion 2026-27",
+      "language": "English",
+      "startTime": "11:00:00 PM 22-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4251125,
       "title": "Coppa Shell AM World Final Race vs Barcelona, Spain (Ferrari Challenge Series 2026)",
       "match_name": "Coppa Shell AM World Final Race",
@@ -708,7 +708,7 @@
       "match_id": 4251168,
       "title": "Auction vs New Delhi (Super T10 Auction 2026)",
       "match_name": "Auction",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Live-Event-old.jpg",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/WEBMini.jpeg",
       "event_category": "Live events",
       "event_name": "Super T10 Auction 2026",
       "language": "English",
@@ -726,14 +726,77 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250752,
-      "title": "Sporting de Gijón vs Las Palmas (LALIGA Hypermotion 2026-27)",
-      "match_name": "Sporting de Gijón vs Las Palmas",
-      "src": "https://images.fancode.com/aig/match/v1794380803724/4250752_CASACARDS_APP.png",
-      "event_category": "Football",
-      "event_name": "LALIGA Hypermotion 2026-27",
+      "match_id": 4250732,
+      "title": "Match 8 vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Match 8",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
+      "event_category": "Tennis",
+      "event_name": "Nitto ATP Finals 2026",
       "language": "English",
-      "startTime": "08:45:00 PM 22-11-2026",
+      "startTime": "04:00:00 PM 22-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4251126,
+      "title": "Coppa Shell World Final Race vs Barcelona, Spain (Ferrari Challenge Series 2026)",
+      "match_name": "Coppa Shell World Final Race",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Ferrari-Challenge-Series-Suzuka-2026-old_1794390200647.-psd.png",
+      "event_category": "Motorsports",
+      "event_name": "Ferrari Challenge Series 2026",
+      "language": "English",
+      "startTime": "04:30:00 PM 22-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250948,
+      "title": "Nitto ATP Finals 2026 vs Turin, Italy (Nitto ATP Finals 2026)",
+      "match_name": "Nitto ATP Finals 2026",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
+      "event_category": "Tennis",
+      "event_name": "Nitto ATP Finals 2026",
+      "language": "English",
+      "startTime": "06:30:00 PM 22-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4251127,
+      "title": "Trofeo Pirelli World Final Race vs Barcelona, Spain (Ferrari Challenge Series 2026)",
+      "match_name": "Trofeo Pirelli World Final Race",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Ferrari-Challenge-Series-Suzuka-2026-old_1794390200647.-psd.png",
+      "event_category": "Motorsports",
+      "event_name": "Ferrari Challenge Series 2026",
+      "language": "English",
+      "startTime": "06:45:00 PM 22-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
