@@ -3,35 +3,14 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/22/2026, 3:35:54 AM IST",
+  "last_updated": "11/22/2026, 5:03:41 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 38,
+  "total_matches": 39,
   "live_matches": 0,
   "matches": [
-    {
-      "match_id": 4249674,
-      "title": "New South Wales vs Queensland (Sheffield Shield, 2026/27)",
-      "match_name": "New South Wales vs Queensland",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249674_53087_NSW_QUN_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "Sheffield Shield, 2026/27",
-      "language": "English",
-      "startTime": "05:00:00 AM 22-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
     {
       "match_id": 4250417,
       "title": "Brisbane Heat Women vs Adelaide Strikers Women (Women's Big Bash League, 2026)",
@@ -432,6 +411,48 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4247694,
+      "title": "Getafe CF vs Atletico de Madrid (LALIGA 2026-27)",
+      "match_name": "Getafe CF vs Atletico de Madrid",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247694_53004_GEF_ATM_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA 2026-27",
+      "language": "English",
+      "startTime": "01:30:00 AM 23-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 139703,
+      "title": "Feature Race vs Las Vegas (F1 ACADEMY LAS VEGAS 2026)",
+      "match_name": "Feature Race",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/F1-ACADEMY-LAS-VEGAS-2026_web.jpg",
+      "event_category": "Motorsports",
+      "event_name": "F1 ACADEMY LAS VEGAS 2026",
+      "language": "English",
+      "startTime": "05:50:00 AM 22-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4250773,
       "title": "Charlton Athletic F.C Women vs Aston Villa Women (Barclays Women's Super League 2026-27)",
       "match_name": "Charlton Athletic F.C Women vs Aston Villa Women",
@@ -495,27 +516,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4247694,
-      "title": "Getafe CF vs Atletico de Madrid (LALIGA 2026-27)",
-      "match_name": "Getafe CF vs Atletico de Madrid",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247694_53004_GEF_ATM_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
-      "language": "English",
-      "startTime": "01:30:00 AM 23-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4249675,
       "title": "Western Australia vs Tasmania (Sheffield Shield, 2026/27)",
       "match_name": "Western Australia vs Tasmania",
@@ -558,14 +558,35 @@
       "auto_streams": {}
     },
     {
-      "match_id": 139703,
-      "title": "Feature Race vs Las Vegas (F1 ACADEMY LAS VEGAS 2026)",
-      "match_name": "Feature Race",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/F1-ACADEMY-LAS-VEGAS-2026_web.jpg",
-      "event_category": "Motorsports",
-      "event_name": "F1 ACADEMY LAS VEGAS 2026",
+      "match_id": 4250753,
+      "title": "Girona FC vs Eibar (LALIGA Hypermotion 2026-27)",
+      "match_name": "Girona FC vs Eibar",
+      "src": "https://images.fancode.com/aig/match/v1794380803722/4250753_CASACARDS_APP.png",
+      "event_category": "Football",
+      "event_name": "LALIGA Hypermotion 2026-27",
       "language": "English",
-      "startTime": "05:50:00 AM 22-11-2026",
+      "startTime": "11:00:00 PM 22-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250685,
+      "title": "Sri Lanka Women vs Pakistan Women (ICC Women's Emerging Nations Trophy, 2026)",
+      "match_name": "Sri Lanka Women vs Pakistan Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/ICC_Womens_Emerging_2026_FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "ICC Women's Emerging Nations Trophy, 2026",
+      "language": "English",
+      "startTime": "10:30:00 AM 23-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -629,27 +650,6 @@
       "event_name": "BWF Super 500 - LI-NING Hong Kong Open 2026",
       "language": "English",
       "startTime": "11:30:00 AM 22-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250753,
-      "title": "Girona FC vs Eibar (LALIGA Hypermotion 2026-27)",
-      "match_name": "Girona FC vs Eibar",
-      "src": "https://images.fancode.com/aig/match/v1794380803722/4250753_CASACARDS_APP.png",
-      "event_category": "Football",
-      "event_name": "LALIGA Hypermotion 2026-27",
-      "language": "English",
-      "startTime": "11:00:00 PM 22-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -797,6 +797,27 @@
       "event_name": "Ferrari Challenge Series 2026",
       "language": "English",
       "startTime": "06:45:00 PM 22-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250736,
+      "title": "Day 4 - World Feed vs St. Simons Island, Georgia (The RSM Classic 2026)",
+      "match_name": "Day 4 - World Feed",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/The-RSM-Classic-2026_Web_1080_x_810_1794325334537.jpg",
+      "event_category": "Golf",
+      "event_name": "The RSM Classic 2026",
+      "language": "English",
+      "startTime": "11:30:00 PM 22-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
