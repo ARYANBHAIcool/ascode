@@ -3,35 +3,14 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/22/2026, 5:25:48 PM IST",
+  "last_updated": "11/22/2026, 10:55:42 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 29,
+  "total_matches": 32,
   "live_matches": 0,
   "matches": [
-    {
-      "match_id": 4251139,
-      "title": "Brescia Lions vs Rome Gladiators (Italia T10 2026)",
-      "match_name": "Brescia Lions vs Rome Gladiators",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251139_53165_BL_RG_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "Italia T10 2026",
-      "language": "English",
-      "startTime": "06:45:00 PM 22-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
     {
       "match_id": 4249675,
       "title": "Western Australia vs Tasmania (Sheffield Shield, 2026/27)",
@@ -41,27 +20,6 @@
       "event_name": "Sheffield Shield, 2026/27",
       "language": "English",
       "startTime": "08:00:00 AM 23-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250013,
-      "title": "Burnley vs Blackburn Rovers F.C. (EFL Championship 2026-27)",
-      "match_name": "Burnley vs Blackburn Rovers F.C.",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250013_52993_BUR_BLK_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "EFL Championship 2026-27",
-      "language": "English",
-      "startTime": "05:30:00 PM 22-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -117,90 +75,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250771,
-      "title": "Birmingham City F.C. Women vs Manchester United Women (Barclays Women's Super League 2026-27)",
-      "match_name": "Birmingham City F.C. Women vs Manchester United Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250771_53038_BIR-W_MUN-W_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "Barclays Women's Super League 2026-27",
-      "language": "English",
-      "startTime": "05:30:00 PM 22-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250772,
-      "title": "Manchester City Women vs Tottenham Hotspur Women (Barclays Women's Super League 2026-27)",
-      "match_name": "Manchester City Women vs Tottenham Hotspur Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250772_53038_MCI-W_TOT-W_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "Barclays Women's Super League 2026-27",
-      "language": "English",
-      "startTime": "05:30:00 PM 22-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4251051,
-      "title": "Dubai Capitals vs Abu Dhabi Knight Riders (DP World ILT20 2026)",
-      "match_name": "Dubai Capitals vs Abu Dhabi Knight Riders",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251051_53162_DC_ADKR_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "DP World ILT20 2026",
-      "language": "English",
-      "startTime": "08:00:00 PM 22-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250907,
-      "title": "Danube Titans  Women vs Ghubra Giants Women (Oman Women's D20, 2026)",
-      "match_name": "Danube Titans  Women vs Ghubra Giants Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
-      "event_category": "Cricket",
-      "event_name": "Oman Women's D20, 2026",
-      "language": "English",
-      "startTime": "08:30:00 PM 22-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250686,
       "title": "Ireland Women vs Netherlands Women (ICC Women's Emerging Nations Trophy, 2026)",
       "match_name": "Ireland Women vs Netherlands Women",
@@ -243,14 +117,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4247688,
-      "title": "FC Barcelona vs Villarreal CF (LALIGA 2026-27)",
-      "match_name": "FC Barcelona vs Villarreal CF",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247688_53004_BAR_VIL_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
+      "match_id": 4251140,
+      "title": "Rome Gladiators vs Venice Livewires (Italia T10 2026)",
+      "match_name": "Rome Gladiators vs Venice Livewires",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251140_53165_RG_VL_fc-web.jpg",
+      "event_category": "Cricket",
+      "event_name": "Italia T10 2026",
       "language": "English",
-      "startTime": "06:30:00 PM 22-11-2026",
+      "startTime": "04:30:00 PM 23-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -264,14 +138,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4247696,
-      "title": "Racing Club de Santander vs Real Sociedad (LALIGA 2026-27)",
-      "match_name": "Racing Club de Santander vs Real Sociedad",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247696_53004_RAC_RS_FC-Web.png",
-      "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
+      "match_id": 4251141,
+      "title": "Milan Icons vs Napoli Knights (Italia T10 2026)",
+      "match_name": "Milan Icons vs Napoli Knights",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251141_53165_MI_NP_fc-web.jpg",
+      "event_category": "Cricket",
+      "event_name": "Italia T10 2026",
       "language": "English",
-      "startTime": "08:45:00 PM 22-11-2026",
+      "startTime": "06:45:00 PM 23-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -285,12 +159,12 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4247695,
-      "title": "CA Osasuna vs Malaga (LALIGA 2026-27)",
-      "match_name": "CA Osasuna vs Malaga",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247695_53004_OSN_MAG_FC-Web.png",
+      "match_id": 4250753,
+      "title": "Girona FC vs Eibar (LALIGA Hypermotion 2026-27)",
+      "match_name": "Girona FC vs Eibar",
+      "src": "https://images.fancode.com/aig/match/v1794380803722/4250753_CASACARDS_APP.png",
       "event_category": "Football",
-      "event_name": "LALIGA 2026-27",
+      "event_name": "LALIGA Hypermotion 2026-27",
       "language": "English",
       "startTime": "11:00:00 PM 22-11-2026",
       "status": "UPCOMING",
@@ -327,153 +201,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4251140,
-      "title": "Rome Gladiators vs Venice Livewires (Italia T10 2026)",
-      "match_name": "Rome Gladiators vs Venice Livewires",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251140_53165_RG_VL_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "Italia T10 2026",
-      "language": "English",
-      "startTime": "04:30:00 PM 23-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250773,
-      "title": "Charlton Athletic F.C Women vs Aston Villa Women (Barclays Women's Super League 2026-27)",
-      "match_name": "Charlton Athletic F.C Women vs Aston Villa Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250773_53038_CHL-W_AST-W_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "Barclays Women's Super League 2026-27",
-      "language": "English",
-      "startTime": "07:30:00 PM 22-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250774,
-      "title": "Everton Women vs Brighton and Hove Albion Women (Barclays Women's Super League 2026-27)",
-      "match_name": "Everton Women vs Brighton and Hove Albion Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250774_53038_EVE-W_BHA-W_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "Barclays Women's Super League 2026-27",
-      "language": "English",
-      "startTime": "07:30:00 PM 22-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250775,
-      "title": "Arsenal Women vs West Ham United Women (Barclays Women's Super League 2026-27)",
-      "match_name": "Arsenal Women vs West Ham United Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250775_53038_ARS-W_WHU-W_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "Barclays Women's Super League 2026-27",
-      "language": "English",
-      "startTime": "08:00:00 PM 22-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250752,
-      "title": "Sporting de Gijón vs Las Palmas (LALIGA Hypermotion 2026-27)",
-      "match_name": "Sporting de Gijón vs Las Palmas",
-      "src": "https://images.fancode.com/aig/match/v1794380803724/4250752_CASACARDS_APP.png",
-      "event_category": "Football",
-      "event_name": "LALIGA Hypermotion 2026-27",
-      "language": "English",
-      "startTime": "08:45:00 PM 22-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250753,
-      "title": "Girona FC vs Eibar (LALIGA Hypermotion 2026-27)",
-      "match_name": "Girona FC vs Eibar",
-      "src": "https://images.fancode.com/aig/match/v1794380803722/4250753_CASACARDS_APP.png",
-      "event_category": "Football",
-      "event_name": "LALIGA Hypermotion 2026-27",
-      "language": "English",
-      "startTime": "11:00:00 PM 22-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4251141,
-      "title": "Milan Icons vs Napoli Knights (Italia T10 2026)",
-      "match_name": "Milan Icons vs Napoli Knights",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251141_53165_MI_NP_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "Italia T10 2026",
-      "language": "English",
-      "startTime": "06:45:00 PM 23-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4248744,
       "title": "PFC Neftchi vs Al Hilal SFC (AFC Champions League Elite 2026-27)",
       "match_name": "PFC Neftchi vs Al Hilal SFC",
@@ -482,90 +209,6 @@
       "event_name": "AFC Champions League Elite 2026-27",
       "language": "English",
       "startTime": "07:15:00 PM 23-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4251127,
-      "title": "Trofeo Pirelli World Final Race vs Barcelona, Spain (Ferrari Challenge Series 2026)",
-      "match_name": "Trofeo Pirelli World Final Race",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Ferrari-Challenge-Series-Suzuka-2026-old_1794390200647.-psd.png",
-      "event_category": "Motorsports",
-      "event_name": "Ferrari Challenge Series 2026",
-      "language": "English",
-      "startTime": "06:45:00 PM 22-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250732,
-      "title": "Men's Doubles Final vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Men's Doubles Final",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Nitto-ATP-Finals-Web.png",
-      "event_category": "Tennis",
-      "event_name": "Nitto ATP Finals 2026",
-      "language": "English",
-      "startTime": "07:30:00 PM 22-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4251052,
-      "title": "Sharjah Warriorz vs Desert Vipers (DP World ILT20 2026)",
-      "match_name": "Sharjah Warriorz vs Desert Vipers",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251052_53162_SW_DV_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "DP World ILT20 2026",
-      "language": "English",
-      "startTime": "08:00:00 PM 23-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250948,
-      "title": "Final: A. Zverev vs C. Alcaraz vs Turin, Italy (Nitto ATP Finals 2026)",
-      "match_name": "Final: A. Zverev vs C. Alcaraz",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/aa_1795339340096.png",
-      "event_category": "Tennis",
-      "event_name": "Nitto ATP Finals 2026",
-      "language": "English",
-      "startTime": "10:30:00 PM 22-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -600,6 +243,27 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4251052,
+      "title": "Sharjah Warriorz vs Desert Vipers (DP World ILT20 2026)",
+      "match_name": "Sharjah Warriorz vs Desert Vipers",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251052_53162_SW_DV_FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "DP World ILT20 2026",
+      "language": "English",
+      "startTime": "08:00:00 PM 23-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4248745,
       "title": "Al Ain vs Esteghlal FC (AFC Champions League Elite 2026-27)",
       "match_name": "Al Ain vs Esteghlal FC",
@@ -608,6 +272,405 @@
       "event_name": "AFC Champions League Elite 2026-27",
       "language": "English",
       "startTime": "09:30:00 PM 23-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4248746,
+      "title": "Tractor vs Al Wasl F.C. (AFC Champions League Elite 2026-27)",
+      "match_name": "Tractor vs Al Wasl F.C.",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248746_53053_TFC_AWS_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Elite 2026-27",
+      "language": "English",
+      "startTime": "09:30:00 PM 23-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4248747,
+      "title": "Al Shamal vs Al-Ahli Saudi FC (AFC Champions League Elite 2026-27)",
+      "match_name": "Al Shamal vs Al-Ahli Saudi FC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248747_53053_ALS_AAS_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Elite 2026-27",
+      "language": "English",
+      "startTime": "09:30:00 PM 23-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4248748,
+      "title": "Al-Ittihad vs Pakhtakor Tashkent (AFC Champions League Elite 2026-27)",
+      "match_name": "Al-Ittihad vs Pakhtakor Tashkent",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248748_53053_ITT_PT_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Elite 2026-27",
+      "language": "English",
+      "startTime": "11:45:00 PM 23-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4248749,
+      "title": "Air Force SC vs Al Gharafa (AFC Champions League Elite 2026-27)",
+      "match_name": "Air Force SC vs Al Gharafa",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248749_53053_AFSC_AGH_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Elite 2026-27",
+      "language": "English",
+      "startTime": "11:45:00 PM 23-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4247690,
+      "title": "Levante vs Elche CF (LALIGA 2026-27)",
+      "match_name": "Levante vs Elche CF",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247690_53004_LET_ELC_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA 2026-27",
+      "language": "English",
+      "startTime": "01:30:00 AM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4249676,
+      "title": "South Australia vs Victoria (Sheffield Shield, 2026/27)",
+      "match_name": "South Australia vs Victoria",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249676_53087_SAU_VCT_FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "Sheffield Shield, 2026/27",
+      "language": "English",
+      "startTime": "05:30:00 AM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250754,
+      "title": "Ceuta vs Almería (LALIGA Hypermotion 2026-27)",
+      "match_name": "Ceuta vs Almería",
+      "src": "https://images.fancode.com/aig/match/v1794380803724/4250754_CASACARDS_APP.png",
+      "event_category": "Football",
+      "event_name": "LALIGA Hypermotion 2026-27",
+      "language": "English",
+      "startTime": "01:00:00 AM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250644,
+      "title": "Australia vs England (England tour of Australia, 2026)",
+      "match_name": "Australia vs England",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/wevb.png",
+      "event_category": "Cricket",
+      "event_name": "England tour of Australia, 2026",
+      "language": "English",
+      "startTime": "01:45:00 PM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4248752,
+      "title": "Newcastle Jets vs Kashiwa Reysol (AFC Champions League Elite 2026-27)",
+      "match_name": "Newcastle Jets vs Kashiwa Reysol",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248752_53053_NJ_REY_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Elite 2026-27",
+      "language": "English",
+      "startTime": "01:15:00 PM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250955,
+      "title": "TBC vs TBC (Test Twenty Championship 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Test_Twenty_2026FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "Test Twenty Championship 2026",
+      "language": "English",
+      "startTime": "02:30:00 PM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4251142,
+      "title": "Milan Icons vs Rome Gladiators (Italia T10 2026)",
+      "match_name": "Milan Icons vs Rome Gladiators",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251142_53165_MI_RG_fc-web.jpg",
+      "event_category": "Cricket",
+      "event_name": "Italia T10 2026",
+      "language": "English",
+      "startTime": "04:30:00 PM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4248753,
+      "title": "Daejeon Hana Citizen FC vs Beijing Guoan (AFC Champions League Elite 2026-27)",
+      "match_name": "Daejeon Hana Citizen FC vs Beijing Guoan",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248753_53053_DAC_BEI_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Elite 2026-27",
+      "language": "English",
+      "startTime": "03:30:00 PM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4248754,
+      "title": "Kyoto Sanga vs Pohang Steelers (AFC Champions League Elite 2026-27)",
+      "match_name": "Kyoto Sanga vs Pohang Steelers",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248754_53053_KYS_PHG_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Elite 2026-27",
+      "language": "English",
+      "startTime": "03:30:00 PM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4251143,
+      "title": "Brescia Lions vs Venice Livewires (Italia T10 2026)",
+      "match_name": "Brescia Lions vs Venice Livewires",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251143_53165_BL_VL_fc-web.jpg",
+      "event_category": "Cricket",
+      "event_name": "Italia T10 2026",
+      "language": "English",
+      "startTime": "06:45:00 PM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4248755,
+      "title": "Shanghai Port vs Buriram United (AFC Champions League Elite 2026-27)",
+      "match_name": "Shanghai Port vs Buriram United",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248755_53053_SHG_BU_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Elite 2026-27",
+      "language": "English",
+      "startTime": "05:45:00 PM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4248756,
+      "title": "Ratchaburi vs Johor Darul Ta'zim (AFC Champions League Elite 2026-27)",
+      "match_name": "Ratchaburi vs Johor Darul Ta'zim",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248756_53053_RAT_JDT_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Elite 2026-27",
+      "language": "English",
+      "startTime": "05:45:00 PM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4248757,
+      "title": "Cong An Ha Noi vs Vissel Kobe (AFC Champions League Elite 2026-27)",
+      "match_name": "Cong An Ha Noi vs Vissel Kobe",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248757_53053_CAH_VIS_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Elite 2026-27",
+      "language": "English",
+      "startTime": "05:45:00 PM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4249023,
+      "title": "East Bengal FC vs Al Hussein (AFC Champions League Two 2026-27)",
+      "match_name": "East Bengal FC vs Al Hussein",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249023_53057_EBFC_HUS_fc-web_1789025065613.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Two 2026-27",
+      "language": "English",
+      "startTime": "07:15:00 PM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4251053,
+      "title": "Gulf Giants vs MI Emirates (DP World ILT20 2026)",
+      "match_name": "Gulf Giants vs MI Emirates",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251053_53162_GG_MIE_FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "DP World ILT20 2026",
+      "language": "English",
+      "startTime": "08:00:00 PM 24-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
