@@ -3,12 +3,12 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/22/2026, 10:55:42 PM IST",
+  "last_updated": "11/23/2026, 12:58:32 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 32,
+  "total_matches": 34,
   "live_matches": 0,
   "matches": [
     {
@@ -138,48 +138,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4251141,
-      "title": "Milan Icons vs Napoli Knights (Italia T10 2026)",
-      "match_name": "Milan Icons vs Napoli Knights",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251141_53165_MI_NP_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "Italia T10 2026",
-      "language": "English",
-      "startTime": "06:45:00 PM 23-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250753,
-      "title": "Girona FC vs Eibar (LALIGA Hypermotion 2026-27)",
-      "match_name": "Girona FC vs Eibar",
-      "src": "https://images.fancode.com/aig/match/v1794380803722/4250753_CASACARDS_APP.png",
-      "event_category": "Football",
-      "event_name": "LALIGA Hypermotion 2026-27",
-      "language": "English",
-      "startTime": "11:00:00 PM 22-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4247694,
       "title": "Getafe CF vs Atletico de Madrid (LALIGA 2026-27)",
       "match_name": "Getafe CF vs Atletico de Madrid",
@@ -201,14 +159,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4248744,
-      "title": "PFC Neftchi vs Al Hilal SFC (AFC Champions League Elite 2026-27)",
-      "match_name": "PFC Neftchi vs Al Hilal SFC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248744_53053_NB_AHS_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "AFC Champions League Elite 2026-27",
+      "match_id": 4251141,
+      "title": "Milan Icons vs Napoli Knights (Italia T10 2026)",
+      "match_name": "Milan Icons vs Napoli Knights",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251141_53165_MI_NP_fc-web.jpg",
+      "event_category": "Cricket",
+      "event_name": "Italia T10 2026",
       "language": "English",
-      "startTime": "07:15:00 PM 23-11-2026",
+      "startTime": "06:45:00 PM 23-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -222,14 +180,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250736,
-      "title": "Day 4 - World Feed vs St. Simons Island, Georgia (The RSM Classic 2026)",
-      "match_name": "Day 4 - World Feed",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/The-RSM-Classic-2026_Web_1080_x_810_1794325334537.jpg",
-      "event_category": "Golf",
-      "event_name": "The RSM Classic 2026",
+      "match_id": 4248744,
+      "title": "PFC Neftchi vs Al Hilal SFC (AFC Champions League Elite 2026-27)",
+      "match_name": "PFC Neftchi vs Al Hilal SFC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248744_53053_NB_AHS_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Elite 2026-27",
       "language": "English",
-      "startTime": "11:30:00 PM 22-11-2026",
+      "startTime": "07:15:00 PM 23-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -474,14 +432,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250955,
-      "title": "TBC vs TBC (Test Twenty Championship 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Test_Twenty_2026FC-WEB.jpg",
+      "match_id": 4251142,
+      "title": "Milan Icons vs Rome Gladiators (Italia T10 2026)",
+      "match_name": "Milan Icons vs Rome Gladiators",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251142_53165_MI_RG_fc-web.jpg",
       "event_category": "Cricket",
-      "event_name": "Test Twenty Championship 2026",
+      "event_name": "Italia T10 2026",
       "language": "English",
-      "startTime": "02:30:00 PM 24-11-2026",
+      "startTime": "04:30:00 PM 24-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -495,14 +453,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4251142,
-      "title": "Milan Icons vs Rome Gladiators (Italia T10 2026)",
-      "match_name": "Milan Icons vs Rome Gladiators",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251142_53165_MI_RG_fc-web.jpg",
+      "match_id": 4250955,
+      "title": "TBC vs TBC (Test Twenty Championship 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Test_Twenty_2026FC-WEB.jpg",
       "event_category": "Cricket",
-      "event_name": "Italia T10 2026",
+      "event_name": "Test Twenty Championship 2026",
       "language": "English",
-      "startTime": "04:30:00 PM 24-11-2026",
+      "startTime": "02:30:00 PM 24-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -671,6 +629,90 @@
       "event_name": "DP World ILT20 2026",
       "language": "English",
       "startTime": "08:00:00 PM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4248750,
+      "title": "Shabab Al Ahli vs Al Qadisiyah (AFC Champions League Elite 2026-27)",
+      "match_name": "Shabab Al Ahli vs Al Qadisiyah",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248750_53053_SAA_ALQ_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Elite 2026-27",
+      "language": "English",
+      "startTime": "09:30:00 PM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4249024,
+      "title": "Al Seeb Club vs Al Shorta (AFC Champions League Two 2026-27)",
+      "match_name": "Al Seeb Club vs Al Shorta",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249024_53057_ALS_SHR_fc-web_1789025065615.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Two 2026-27",
+      "language": "English",
+      "startTime": "09:30:00 PM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4248751,
+      "title": "Al-Nassr FC vs Al Sadd (AFC Champions League Elite 2026-27)",
+      "match_name": "Al-Nassr FC vs Al Sadd",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248751_53053_ANF_SDD_FC-WEB_1794374613612.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Elite 2026-27",
+      "language": "English",
+      "startTime": "11:45:00 PM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250014,
+      "title": "Wolverhampton Wanderers F.C. vs Derby County Football Club (EFL Championship 2026-27)",
+      "match_name": "Wolverhampton Wanderers F.C. vs Derby County Football Club",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250014_52993_WOL_DER_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "EFL Championship 2026-27",
+      "language": "English",
+      "startTime": "01:30:00 AM 25-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
