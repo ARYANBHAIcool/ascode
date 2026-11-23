@@ -3,35 +3,14 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/23/2026, 5:57:30 AM IST",
+  "last_updated": "11/23/2026, 8:42:04 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 39,
+  "total_matches": 38,
   "live_matches": 0,
   "matches": [
-    {
-      "match_id": 4249675,
-      "title": "Western Australia vs Tasmania (Sheffield Shield, 2026/27)",
-      "match_name": "Western Australia vs Tasmania",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249675_53087_WAU_TAS_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "Sheffield Shield, 2026/27",
-      "language": "English",
-      "startTime": "08:00:00 AM 23-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
     {
       "match_id": 4250685,
       "title": "Sri Lanka Women vs Pakistan Women (ICC Women's Emerging Nations Trophy, 2026)",
@@ -159,6 +138,27 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4249676,
+      "title": "South Australia vs Victoria (Sheffield Shield, 2026/27)",
+      "match_name": "South Australia vs Victoria",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249676_53087_SAU_VCT_FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "Sheffield Shield, 2026/27",
+      "language": "English",
+      "startTime": "05:30:00 AM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4251052,
       "title": "Sharjah Warriorz vs Desert Vipers (DP World ILT20 2026)",
       "match_name": "Sharjah Warriorz vs Desert Vipers",
@@ -251,27 +251,6 @@
       "event_name": "AFC Champions League Elite 2026-27",
       "language": "English",
       "startTime": "09:30:00 PM 23-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4249676,
-      "title": "South Australia vs Victoria (Sheffield Shield, 2026/27)",
-      "match_name": "South Australia vs Victoria",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249676_53087_SAU_VCT_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "Sheffield Shield, 2026/27",
-      "language": "English",
-      "startTime": "05:30:00 AM 24-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
