@@ -3,56 +3,14 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/24/2026, 3:58:29 PM IST",
+  "last_updated": "11/24/2026, 9:04:57 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 31,
+  "total_matches": 33,
   "live_matches": 0,
   "matches": [
-    {
-      "match_id": 4251142,
-      "title": "Milan Icons vs Rome Gladiators (Italia T10 2026)",
-      "match_name": "Milan Icons vs Rome Gladiators",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251142_53165_MI_RG_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "Italia T10 2026",
-      "language": "English",
-      "startTime": "04:30:00 PM 24-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4251143,
-      "title": "Brescia Lions vs Venice Livewires (Italia T10 2026)",
-      "match_name": "Brescia Lions vs Venice Livewires",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251143_53165_BL_VL_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "Italia T10 2026",
-      "language": "English",
-      "startTime": "06:45:00 PM 24-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
     {
       "match_id": 4250688,
       "title": "Sri Lanka Women vs Ireland Women (ICC Women's Emerging Nations Trophy, 2026)",
@@ -62,111 +20,6 @@
       "event_name": "ICC Women's Emerging Nations Trophy, 2026",
       "language": "English",
       "startTime": "10:30:00 AM 25-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4251053,
-      "title": "Gulf Giants vs MI Emirates (DP World ILT20 2026)",
-      "match_name": "Gulf Giants vs MI Emirates",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251053_53162_GG_MIE_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "DP World ILT20 2026",
-      "language": "English",
-      "startTime": "08:00:00 PM 24-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4248755,
-      "title": "Shanghai Port vs Buriram United (AFC Champions League Elite 2026-27)",
-      "match_name": "Shanghai Port vs Buriram United",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248755_53053_SHG_BU_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "AFC Champions League Elite 2026-27",
-      "language": "English",
-      "startTime": "05:45:00 PM 24-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4248756,
-      "title": "Ratchaburi vs Johor Darul Ta'zim (AFC Champions League Elite 2026-27)",
-      "match_name": "Ratchaburi vs Johor Darul Ta'zim",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248756_53053_RAT_JDT_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "AFC Champions League Elite 2026-27",
-      "language": "English",
-      "startTime": "05:45:00 PM 24-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4248757,
-      "title": "Cong An Ha Noi vs Vissel Kobe (AFC Champions League Elite 2026-27)",
-      "match_name": "Cong An Ha Noi vs Vissel Kobe",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248757_53053_CAH_VIS_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "AFC Champions League Elite 2026-27",
-      "language": "English",
-      "startTime": "05:45:00 PM 24-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4249023,
-      "title": "East Bengal FC vs Al Hussein (AFC Champions League Two 2026-27)",
-      "match_name": "East Bengal FC vs Al Hussein",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249023_53057_EBFC_HUS_fc-web_1789025065613.jpg",
-      "event_category": "Football",
-      "event_name": "AFC Champions League Two 2026-27",
-      "language": "English",
-      "startTime": "07:15:00 PM 24-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -222,27 +75,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4248751,
-      "title": "Al-Nassr FC vs Al Sadd (AFC Champions League Elite 2026-27)",
-      "match_name": "Al-Nassr FC vs Al Sadd",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248751_53053_ANF_SDD_FC-WEB_1794374613612.jpg",
-      "event_category": "Football",
-      "event_name": "AFC Champions League Elite 2026-27",
-      "language": "English",
-      "startTime": "11:45:00 PM 24-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250419,
       "title": "Melbourne Renegades Women vs Brisbane Heat Women (Women's Big Bash League, 2026)",
       "match_name": "Melbourne Renegades Women vs Brisbane Heat Women",
@@ -264,14 +96,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250014,
-      "title": "Wolverhampton Wanderers F.C. vs Derby County Football Club (EFL Championship 2026-27)",
-      "match_name": "Wolverhampton Wanderers F.C. vs Derby County Football Club",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250014_52993_WOL_DER_fc-web.jpg",
-      "event_category": "Football",
-      "event_name": "EFL Championship 2026-27",
+      "match_id": 4251144,
+      "title": "TBC vs TBC (Italia T10 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "Italia T10 2026",
       "language": "English",
-      "startTime": "01:30:00 AM 25-11-2026",
+      "startTime": "04:30:00 PM 25-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -285,14 +117,56 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4251144,
+      "match_id": 4251145,
       "title": "TBC vs TBC (Italia T10 2026)",
       "match_name": "TBC vs TBC",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
       "event_category": "Cricket",
       "event_name": "Italia T10 2026",
       "language": "English",
-      "startTime": "04:30:00 PM 25-11-2026",
+      "startTime": "06:45:00 PM 25-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4248751,
+      "title": "Al-Nassr FC vs Al Sadd (AFC Champions League Elite 2026-27)",
+      "match_name": "Al-Nassr FC vs Al Sadd",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4248751_53053_ANF_SDD_FC-WEB_1794374613612.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Elite 2026-27",
+      "language": "English",
+      "startTime": "11:45:00 PM 24-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250014,
+      "title": "Wolverhampton Wanderers F.C. vs Derby County Football Club (EFL Championship 2026-27)",
+      "match_name": "Wolverhampton Wanderers F.C. vs Derby County Football Club",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250014_52993_WOL_DER_fc-web.jpg",
+      "event_category": "Football",
+      "event_name": "EFL Championship 2026-27",
+      "language": "English",
+      "startTime": "01:30:00 AM 25-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -348,14 +222,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4251145,
-      "title": "TBC vs TBC (Italia T10 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "match_id": 4250908,
+      "title": "Ghubra Giants Women vs Muscat Thunders Women (Oman Women's D20, 2026)",
+      "match_name": "Ghubra Giants Women vs Muscat Thunders Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
       "event_category": "Cricket",
-      "event_name": "Italia T10 2026",
+      "event_name": "Oman Women's D20, 2026",
       "language": "English",
-      "startTime": "06:45:00 PM 25-11-2026",
+      "startTime": "04:00:00 PM 25-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -411,27 +285,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250908,
-      "title": "Ghubra Giants Women vs Muscat Thunders Women (Oman Women's D20, 2026)",
-      "match_name": "Ghubra Giants Women vs Muscat Thunders Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
-      "event_category": "Cricket",
-      "event_name": "Oman Women's D20, 2026",
-      "language": "English",
-      "startTime": "04:00:00 PM 25-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4249026,
       "title": "Persib Bandung vs Seoul (AFC Champions League Two 2026-27)",
       "match_name": "Persib Bandung vs Seoul",
@@ -440,27 +293,6 @@
       "event_name": "AFC Champions League Two 2026-27",
       "language": "English",
       "startTime": "05:45:00 PM 25-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250615,
-      "title": "ATL vs BOS vs Palm Beach Gardens, FL (WTGL 2026)",
-      "match_name": "ATL vs BOS",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4_web.png",
-      "event_category": "Golf",
-      "event_name": "WTGL 2026",
-      "language": "English",
-      "startTime": "06:30:00 AM 25-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -642,6 +474,27 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4250615,
+      "title": "ATL vs BOS vs Palm Beach Gardens, FL (WTGL 2026)",
+      "match_name": "ATL vs BOS",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4_web.png",
+      "event_category": "Golf",
+      "event_name": "WTGL 2026",
+      "language": "English",
+      "startTime": "06:30:00 AM 25-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4250015,
       "title": "Stoke City F.C. vs Millwall F.C. (EFL Championship 2026-27)",
       "match_name": "Stoke City F.C. vs Millwall F.C.",
@@ -650,6 +503,195 @@
       "event_name": "EFL Championship 2026-27",
       "language": "English",
       "startTime": "01:30:00 AM 26-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250420,
+      "title": "Sydney Thunder Women vs Adelaide Strikers Women (Women's Big Bash League, 2026)",
+      "match_name": "Sydney Thunder Women vs Adelaide Strikers Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250420_53125_ST-W_AS-W_fc-web_1793352701216.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
+      "language": "English",
+      "startTime": "10:10:00 AM 26-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4251085,
+      "title": "Muscat Thunderers vs Majees Titans (Oman D20 2026)",
+      "match_name": "Muscat Thunderers vs Majees Titans",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251085_53163_MUT_MAT_fc-web.jpg",
+      "event_category": "Cricket",
+      "event_name": "Oman D20 2026",
+      "language": "English",
+      "startTime": "11:30:00 AM 26-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250421,
+      "title": "Sydney Sixers Women vs Melbourne Stars Women (Women's Big Bash League, 2026)",
+      "match_name": "Sydney Sixers Women vs Melbourne Stars Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250421_53125_SS-W_MS-W_fc-web_1793352701240.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
+      "language": "English",
+      "startTime": "01:40:00 PM 26-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4251146,
+      "title": "TBC vs TBC (Italia T10 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "Italia T10 2026",
+      "language": "English",
+      "startTime": "04:30:00 PM 26-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4249029,
+      "title": "Tampines Rovers FC vs Shanghai Shenhua (AFC Champions League Two 2026-27)",
+      "match_name": "Tampines Rovers FC vs Shanghai Shenhua",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249029_53057_TAM_SHN_fc-web_1789025066882.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Two 2026-27",
+      "language": "English",
+      "startTime": "03:30:00 PM 26-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4249031,
+      "title": "Gangwon FC vs Kitchee SC (AFC Champions League Two 2026-27)",
+      "match_name": "Gangwon FC vs Kitchee SC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249031_53057_GW_KIT_fc-web_1789025066245.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Two 2026-27",
+      "language": "English",
+      "startTime": "03:30:00 PM 26-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4249032,
+      "title": "Kuching City FC vs Phnom Penh Crown (AFC Champions League Two 2026-27)",
+      "match_name": "Kuching City FC vs Phnom Penh Crown",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249032_53057_KFC_PPC_fc-web_1789025065868.jpg",
+      "event_category": "Football",
+      "event_name": "AFC Champions League Two 2026-27",
+      "language": "English",
+      "startTime": "03:30:00 PM 26-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4251086,
+      "title": "Royal Oman Stallions vs Mustafa Fragrance House Strikers (Oman D20 2026)",
+      "match_name": "Royal Oman Stallions vs Mustafa Fragrance House Strikers",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251086_53163_ROS_MFR_fc-web.jpg",
+      "event_category": "Cricket",
+      "event_name": "Oman D20 2026",
+      "language": "English",
+      "startTime": "04:00:00 PM 26-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4251147,
+      "title": "TBC vs TBC (Italia T10 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "Italia T10 2026",
+      "language": "English",
+      "startTime": "06:45:00 PM 26-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
