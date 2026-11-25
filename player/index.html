@@ -661,9 +661,132 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                 video.load();
                 var triedFallback = false;
                 var networkRetries = 0;
+                var vodSafetyMarginMs = 8000;
+
+                function extendStaleVodPlaylist(text) {
+                    if (!text || text.indexOf("#EXTINF:") === -1 || text.indexOf("#EXT-X-ENDLIST") !== -1) return text;
+                    var lines = text.split("\n");
+                    var entries = [];
+                    var headerLines = [];
+                    var inHeader = true;
+                    var curDur = "4.000";
+                    var curPdt = "";
+                    for (var i = 0; i < lines.length; i++) {
+                        var l = lines[i].trim();
+                        if (!l) continue;
+                        if (l.indexOf("#EXTINF:") === 0) {
+                            inHeader = false;
+                            var dm = l.match(/#EXTINF:([0-9.]+)/);
+                            if (dm) curDur = dm[1];
+                        } else if (l.indexOf("#EXT-X-PROGRAM-DATE-TIME:") === 0) {
+                            inHeader = false;
+                            curPdt = l.substring(25).trim();
+                        } else if (l.charAt(0) === "#") {
+                            if (inHeader && l.indexOf("#EXT-X-MEDIA-SEQUENCE:") !== 0) {
+                                headerLines.push(l);
+                            }
+                        } else {
+                            inHeader = false;
+                            entries.push({ dur: curDur, pdt: curPdt, uri: l });
+                            curPdt = "";
+                        }
+                    }
+                    if (!entries.length) return text;
+                    var last = entries[entries.length - 1];
+                    if (!last.pdt) return text;
+                    var lastMs = Date.parse(last.pdt);
+                    if (!lastMs || isNaN(lastMs)) return text;
+                    var segMatch = last.uri.match(/^(.*-)(\d+)(\.ts.*)$/i);
+                    if (!segMatch) return text;
+
+                    var prefix = segMatch[1];
+                    var lastSeq = parseInt(segMatch[2], 10);
+                    var suffix = segMatch[3];
+                    var segDurMs = Math.max(1000, Math.round((parseFloat(last.dur) || 4) * 1000));
+                    var elapsedSegs = Math.floor((Date.now() - lastMs - vodSafetyMarginMs) / segDurMs);
+                    if (elapsedSegs <= 0 || elapsedSegs > 450) return text;
+
+                    for (var k = 1; k <= elapsedSegs; k++) {
+                        var nextMs = lastMs + k * segDurMs;
+                        entries.push({
+                            dur: last.dur,
+                            pdt: new Date(nextMs).toISOString(),
+                            uri: prefix + (lastSeq + k) + suffix
+                        });
+                    }
+
+                    var windowSize = 75;
+                    var dropped = 0;
+                    if (entries.length > windowSize) {
+                        dropped = entries.length - windowSize;
+                        entries = entries.slice(dropped);
+                    }
+                    var seqMatch = text.match(/#EXT-X-MEDIA-SEQUENCE:(\d+)/);
+                    var baseSeq = seqMatch ? parseInt(seqMatch[1], 10) : 0;
+                    var out = headerLines.slice();
+                    out.push("#EXT-X-MEDIA-SEQUENCE:" + (baseSeq + dropped));
+                    for (var j = 0; j < entries.length; j++) {
+                        out.push("#EXTINF:" + entries[j].dur + ",");
+                        if (entries[j].pdt) out.push("#EXT-X-PROGRAM-DATE-TIME:" + entries[j].pdt);
+                        out.push(entries[j].uri);
+                    }
+                    return out.join("\n") + "\n";
+                }
+
+                function NoCachePlaylistLoader() {
+                    this.aborted = false;
+                    this.stats = {
+                        aborted: false,
+                        loaded: 0,
+                        total: 0,
+                        retry: 0,
+                        chunkCount: 0,
+                        bwEstimate: 0,
+                        loading: { start: 0, first: 0, end: 0 },
+                        parsing: { start: 0, end: 0 },
+                        buffering: { start: 0, end: 0 }
+                    };
+                }
+                NoCachePlaylistLoader.prototype.destroy = function() { this.aborted = true; };
+                NoCachePlaylistLoader.prototype.abort = function() { this.aborted = true; this.stats.aborted = true; };
+                NoCachePlaylistLoader.prototype.load = function(context, config, callbacks) {
+                    var self = this;
+                    var t0 = performance.now();
+                    self.stats.loading.start = t0;
+                    fetch(context.url, { cache: "no-store" }).then(function(res) {
+                        if (self.aborted) return;
+                        var t1 = performance.now();
+                        self.stats.loading.first = t1;
+                        if (!res.ok) {
+                            callbacks.onError({ code: res.status, text: res.statusText || "HTTP " + res.status }, context, res, self.stats);
+                            return;
+                        }
+                        return res.text().then(function(data) {
+                            if (self.aborted) return;
+                            var t2 = performance.now();
+                            var finalData = isDirectCorsHost(context.url) ? extendStaleVodPlaylist(data) : data;
+                            self.stats.loading.end = t2;
+                            self.stats.loaded = finalData.length;
+                            self.stats.total = finalData.length;
+                            self.stats.trequest = t0;
+                            self.stats.tfirst = t1;
+                            self.stats.tload = t2;
+                            callbacks.onSuccess({ url: context.url, data: finalData }, self.stats, context, res);
+                        });
+                    }).catch(function(err) {
+                        if (self.aborted) return;
+                        callbacks.onError({ code: 0, text: (err && err.message) || "Network error" }, context, null, self.stats);
+                    });
+                };
+
                 hlsInstance = new Hls({
                     enableWorker: true,
-                    lowLatencyMode: true,
+                    lowLatencyMode: false,
+                    liveSyncDurationCount: 3,
+                    liveMaxLatencyDurationCount: 10,
+                    maxBufferLength: 30,
+                    maxMaxBufferLength: 60,
+                    pLoader: NoCachePlaylistLoader,
                     xhrSetup: function(xhr) { xhr.withCredentials = false; }
                 });
                 hlsInstance.loadSource(url);
@@ -690,6 +813,9 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                     hideLoading();
                 });
                 hlsInstance.on(Hls.Events.ERROR, function(ev, data) {
+                    if (data && data.details === Hls.ErrorDetails.FRAG_LOAD_ERROR && data.response && data.response.code === 404) {
+                        vodSafetyMarginMs = Math.min(32000, vodSafetyMarginMs + 4000);
+                    }
                     if (data.fatal) {
                         if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
                             if (currentProxyIdx < PROXIES.length - 1) {
