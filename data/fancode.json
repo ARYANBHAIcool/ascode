@@ -3,88 +3,28 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/25/2026, 7:08:14 PM IST",
+  "last_updated": "11/25/2026, 8:48:01 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 35,
-  "live_matches": 0,
+  "total_matches": 31,
+  "live_matches": 3,
   "matches": [
     {
-      "match_id": 4250420,
-      "title": "Sydney Thunder Women vs Adelaide Strikers Women (Women's Big Bash League, 2026)",
-      "match_name": "Sydney Thunder Women vs Adelaide Strikers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250420_53125_ST-W_AS-W_fc-web_1793352701216.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
+      "match_id": "4251054",
+      "match_name": "Dubai Capitals Vs Desert Vipers [English]",
+      "title": "Dubai Capitals Vs Desert Vipers [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251054_53162_DC_DV_FC-APP.jpg",
       "language": "English",
-      "startTime": "10:10:00 AM 26-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4249017,
-      "title": "PFC Nasaf vs Al Khaldiya SC (AFC Champions League Two 2026-27)",
-      "match_name": "PFC Nasaf vs Al Khaldiya SC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249017_53057_NAS_ALK_fc-web_1789025066869.jpg",
-      "event_category": "Football",
-      "event_name": "AFC Champions League Two 2026-27",
-      "language": "English",
-      "startTime": "07:15:00 PM 25-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250421,
-      "title": "Sydney Sixers Women vs Melbourne Stars Women (Women's Big Bash League, 2026)",
-      "match_name": "Sydney Sixers Women vs Melbourne Stars Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250421_53125_SS-W_MS-W_fc-web_1793352701240.jpg",
       "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
-      "language": "English",
-      "startTime": "01:40:00 PM 26-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4251054,
-      "title": "Dubai Capitals vs Desert Vipers (DP World ILT20 2026)",
-      "match_name": "Dubai Capitals vs Desert Vipers",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251054_53162_DC_DV_FC-WEB.jpg",
-      "event_category": "Cricket",
+      "stream_url": "https://in-mc-vod.fancode.com/mumbai/4251054_english_hls_b961d4d41363338_1ta-di_h264/index.m3u8",
+      "status": "LIVE",
+      "startTime": "Live Now",
+      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\n240p.m3u8\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\n360p.m3u8\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\n480p.m3u8\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\n540p.m3u8\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\n720p.m3u8\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\n1080p.m3u8\n",
+      "team_1": "Sharjah Warriorz",
+      "team_2": "Dubai Capitals",
       "event_name": "DP World ILT20 2026",
-      "language": "English",
-      "startTime": "08:00:00 PM 25-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
@@ -96,16 +36,19 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250909,
-      "title": "OCA Invincibles Women vs Muscat Shaheens  Women (Oman Women's D20, 2026)",
-      "match_name": "OCA Invincibles Women vs Muscat Shaheens  Women",
+      "match_id": "4250909",
+      "match_name": "Oca Invincibles Women Vs Muscat Shaheens  Women [English]",
+      "title": "Oca Invincibles Women Vs Muscat Shaheens  Women [English]",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
-      "event_category": "Cricket",
-      "event_name": "Oman Women's D20, 2026",
       "language": "English",
-      "startTime": "08:30:00 PM 25-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
+      "event_category": "Cricket",
+      "stream_url": "https://in-mc-vod.fancode.com/mumbai/4250909_english_hls_7b385da82645198_1ta-di_h264/index.m3u8",
+      "status": "LIVE",
+      "startTime": "Live Now",
+      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\n240p.m3u8\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\n360p.m3u8\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\n480p.m3u8\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\n540p.m3u8\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\n720p.m3u8\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\n1080p.m3u8\n",
+      "team_1": "Sydney Thunder Women",
+      "team_2": "Adelaide Strikers Women",
+      "event_name": "Women's Big Bash League, 2026",
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
@@ -115,6 +58,18 @@
         "backup": {}
       },
       "auto_streams": {}
+    },
+    {
+      "match_id": "4249017",
+      "match_name": "Pfc Nasaf Vs Al Khaldiya Sc [English]",
+      "title": "Pfc Nasaf Vs Al Khaldiya Sc [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249017_53057_NAS_ALK_fc-web_1789025066869.jpg",
+      "language": "English",
+      "event_category": "Football",
+      "stream_url": "https://in-mc-vod.fancode.com/mumbai/4249017_english_hls_842772da4880049_1ta-di_h264/index.m3u8",
+      "status": "LIVE",
+      "startTime": "Live Now",
+      "master_m3u8": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH=446936,AVERAGE-BANDWIDTH=446936,CODECS=\"avc1.42e015,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=426x240,FRAME-RATE=25.000\n240p.m3u8\n#EXT-X-STREAM-INF:BANDWIDTH=702376,AVERAGE-BANDWIDTH=702376,CODECS=\"avc1.42e01e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=640x360,FRAME-RATE=25.000\n360p.m3u8\n#EXT-X-STREAM-INF:BANDWIDTH=1023224,AVERAGE-BANDWIDTH=1023224,CODECS=\"avc1.4d401e,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=854x480,FRAME-RATE=25.000\n480p.m3u8\n#EXT-X-STREAM-INF:BANDWIDTH=1278664,AVERAGE-BANDWIDTH=1278664,CODECS=\"avc1.4d401f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=960x540,FRAME-RATE=25.000\n540p.m3u8\n#EXT-X-STREAM-INF:BANDWIDTH=1789512,AVERAGE-BANDWIDTH=1789512,CODECS=\"avc1.64001f,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1280x720,FRAME-RATE=25.000\n720p.m3u8\n#EXT-X-STREAM-INF:BANDWIDTH=3322120,AVERAGE-BANDWIDTH=3322120,CODECS=\"avc1.640028,mp4a.40.2\",PROGRAM-ID=1,RESOLUTION=1920x1080,FRAME-RATE=25.000\n1080p.m3u8\n"
     },
     {
       "match_id": 4251146,
@@ -264,14 +219,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4251085,
-      "title": "Muscat Thunderers vs Majees Titans (Oman D20 2026)",
-      "match_name": "Muscat Thunderers vs Majees Titans",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251085_53163_MUT_MAT_fc-web.jpg",
+      "match_id": 4251147,
+      "title": "Brescia Lions vs Venice Livewires (Italia T10 2026)",
+      "match_name": "Brescia Lions vs Venice Livewires",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251147_53165_BL_VL_fc-web.jpg",
       "event_category": "Cricket",
-      "event_name": "Oman D20 2026",
+      "event_name": "Italia T10 2026",
       "language": "English",
-      "startTime": "11:30:00 AM 26-11-2026",
+      "startTime": "06:45:00 PM 26-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -285,14 +240,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4251147,
-      "title": "Brescia Lions vs Venice Livewires (Italia T10 2026)",
-      "match_name": "Brescia Lions vs Venice Livewires",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251147_53165_BL_VL_fc-web.jpg",
+      "match_id": 4251085,
+      "title": "Muscat Thunderers vs Majees Titans (Oman D20 2026)",
+      "match_name": "Muscat Thunderers vs Majees Titans",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251085_53163_MUT_MAT_fc-web.jpg",
       "event_category": "Cricket",
-      "event_name": "Italia T10 2026",
+      "event_name": "Oman D20 2026",
       "language": "English",
-      "startTime": "06:45:00 PM 26-11-2026",
+      "startTime": "11:30:00 AM 26-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -537,27 +492,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250910,
-      "title": "Sohar Smashers Women vs OCA Invincibles Women (Oman Women's D20, 2026)",
-      "match_name": "Sohar Smashers Women vs OCA Invincibles Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
-      "event_category": "Cricket",
-      "event_name": "Oman Women's D20, 2026",
-      "language": "English",
-      "startTime": "11:30:00 AM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250645,
       "title": "Australia vs England (England tour of Australia, 2026)",
       "match_name": "Australia vs England",
@@ -566,27 +500,6 @@
       "event_name": "England tour of Australia, 2026",
       "language": "English",
       "startTime": "01:45:00 PM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250422,
-      "title": "Perth Scorchers Women vs Hobart Hurricanes Women (Women's Big Bash League, 2026)",
-      "match_name": "Perth Scorchers Women vs Hobart Hurricanes Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250422_53125_PS-W_HB-W_fc-web_1793352701259.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
-      "language": "English",
-      "startTime": "03:40:00 PM 27-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -629,27 +542,6 @@
       "event_name": "Italia T10 2026",
       "language": "English",
       "startTime": "04:30:00 PM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250911,
-      "title": "Ghubra Giants Women vs OCA Invincibles Women (Oman Women's D20, 2026)",
-      "match_name": "Ghubra Giants Women vs OCA Invincibles Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
-      "event_category": "Cricket",
-      "event_name": "Oman Women's D20, 2026",
-      "language": "English",
-      "startTime": "04:00:00 PM 27-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -734,6 +626,27 @@
       "event_name": "Andalucia Costa Del Sol Open De Espana 2026",
       "language": "English",
       "startTime": "02:15:00 PM 27-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250969,
+      "title": "Al-Qadsiah FC vs Al-Fayha FC (Roshn Saudi League 2026-2027)",
+      "match_name": "Al-Qadsiah FC vs Al-Fayha FC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250969_53025_ALQ_ALF_FC-Web_1795077036138.png",
+      "event_category": "Football",
+      "event_name": "Roshn Saudi League 2026-2027",
+      "language": "English",
+      "startTime": "07:50:00 PM 27-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {

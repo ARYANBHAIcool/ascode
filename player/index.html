@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="referrer" content="no-referrer">
     <title>⚡ AryanStreams Player • FanCode Pro</title>
-    <!-- Monetag In-Market Popunder -->
-    <script data-cfasync="false" src="https://capitalhospitals.org/1/ec8caf215d92bd77dfa766d702a1ec0f"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -132,7 +130,8 @@
                     </button>
                     <span class="time-label"><span id="cur-time">0:00</span></span>
                     <div class="spacer"></div>
-                    <div class="menu-wrap">
+                    <div class="menu-wrap" style="display:flex;align-items:center;gap:4px;">
+                        <span id="q-badge" style="font-size:11px;font-weight:700;color:rgba(255,255,255,0.8);background:rgba(255,255,255,0.1);padding:3px 8px;border-radius:8px;cursor:pointer;">Auto</span>
                         <button id="q-btn" class="ctrl-btn" title="Quality">
                             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
                         </button>
@@ -169,10 +168,21 @@
         
 
         var PROXIES = [
-            "https://asp1.lovable.app/api/proxy?u=",
-            "https://stream-through-spark.lovable.app/api/proxy?u="
+            "https://stream-through-spark.lovable.app/api/proxy?u=",
+            "https://asp1.lovable.app/api/proxy?u="
         ];
         var currentProxyIdx = 0;
+
+        function isValidStreamUrl(u) {
+            var s = cleanStreamUrl(u);
+            if (!s || !/^https?:\/\//i.test(s)) return false;
+            if (/unavailable|null|undefined/i.test(s)) return false;
+            return isUrlNotExpired(s);
+        }
+
+        function isDirectCorsHost(u) {
+            return /in-mc-vod\.fancode\.com|dai-fancode\.pages\.dev/i.test(String(u || ""));
+        }
 
         function unwrapProxiedUrl(u) {
             var cur = cleanStreamUrl(u);
@@ -208,7 +218,26 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
         var hlsInstance = null;
         var isDragging = false, controlsTimer = null, isQMenuOpen = false;
 
-        function showError(msg) { $error.textContent=msg; $error.style.display="block"; setTimeout(function(){$error.style.display="none"},6000); }
+        function showError(msg, allowRetry) {
+            $error.innerHTML = "";
+            var span = document.createElement("span");
+            span.textContent = msg;
+            $error.appendChild(span);
+            if (allowRetry) {
+                var btn = document.createElement("button");
+                btn.textContent = "Retry";
+                btn.style.cssText = "margin-left:10px;background:#fff;color:#ef4444;border:none;border-radius:6px;padding:3px 10px;font-weight:800;font-size:11px;cursor:pointer;";
+                btn.onclick = function(e) {
+                    e.stopPropagation();
+                    $error.style.display = "none";
+                    if (lastPlayArgs) playStream.apply(null, lastPlayArgs);
+                    else location.reload();
+                };
+                $error.appendChild(btn);
+            }
+            $error.style.display = "block";
+            if (!allowRetry) setTimeout(function(){ $error.style.display = "none"; }, 6000);
+        }
         function hideLoading() { $loading.classList.add("hidden"); setTimeout(function(){$loading.style.display="none"},300); }
         function showLoading() { $loading.style.display="flex"; $loading.classList.remove("hidden"); }
 
@@ -312,16 +341,15 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                 return m.language && k.toLowerCase().indexOf(String(m.language).toLowerCase().slice(0, 3)) !== -1;
             }) || Object.keys(autoStreamsMap)[0];
             var autoLangStreams = (autoLangKey && autoStreamsMap[autoLangKey] && autoStreamsMap[autoLangKey].streams) ? autoStreamsMap[autoLangKey].streams : {};
-            var baseStream = cleanStreamUrl(
-                m.dai_url ||
-                m.adfree_url ||
-                m.stream_url ||
-                kajjuStreams.primary ||
-                autoLangStreams["1080p"] ||
-                autoLangStreams["720p"] ||
-                kajjuStreams.fancode_cdn ||
-                ""
-            );
+            var baseStream = [
+                m.dai_url,
+                m.adfree_url,
+                m.stream_url,
+                kajjuStreams.primary,
+                autoLangStreams["1080p"],
+                autoLangStreams["720p"],
+                kajjuStreams.fancode_cdn
+            ].map(cleanStreamUrl).find(function(u) { return isValidStreamUrl(u); }) || "";
 
             // Check DRM
             var cdn = m.STREAMING_CDN || {};
@@ -367,21 +395,22 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
             if (primaryList.length > 0) {
                 primaryList.forEach(function(q) {
                     var alt = secondaryList.find(function(s) { return s.res === q.res; });
-                    if (alt && alt.url !== q.url) q.fallbackUrl = alt.url;
-                    else if (kajjuStreams.fancode_cdn && kajjuStreams.fancode_cdn !== q.url) q.fallbackUrl = cleanStreamUrl(kajjuStreams.fancode_cdn);
+                    if (alt && alt.url !== q.url && isValidStreamUrl(alt.url)) q.fallbackUrl = alt.url;
+                    else if (isValidStreamUrl(kajjuStreams.fancode_cdn) && cleanStreamUrl(kajjuStreams.fancode_cdn) !== q.url) q.fallbackUrl = cleanStreamUrl(kajjuStreams.fancode_cdn);
                 });
                 return primaryList;
             }
 
             // Fallback to baseStream
-            if (baseStream && baseStream.startsWith("http")) {
+            if (baseStream && isValidStreamUrl(baseStream)) {
                 var list = [];
+                var validFallback = isValidStreamUrl(kajjuStreams.fancode_cdn) ? cleanStreamUrl(kajjuStreams.fancode_cdn) : undefined;
                 standardRes.forEach(function(r) {
                     var qUrl = baseStream;
                     if (/(\d+p\d*|\d+)\.m3u8/i.test(qUrl)) {
                         qUrl = qUrl.replace(/(index__|\/)(\d+p\d*|\d+)\.m3u8/i, "$1" + r + ".m3u8");
                     }
-                    list.push({ res: r, url: qUrl, targetRes: r, fallbackUrl: kajjuStreams.fancode_cdn ? cleanStreamUrl(kajjuStreams.fancode_cdn) : undefined });
+                    list.push({ res: r, url: qUrl, targetRes: r, fallbackUrl: validFallback });
                 });
                 return list;
             }
@@ -562,23 +591,36 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
             });
         }
 
+        var lastPlayArgs = null;
+
+        function updateQBadge(txt) {
+            var b = document.getElementById("q-badge");
+            if (b) b.textContent = txt || currentRes || "Auto";
+        }
+
         function playStream(rawUrl, targetRes, fallbackUrl, isDrm, kid, key) {
+            lastPlayArgs = [rawUrl, targetRes, fallbackUrl, isDrm, kid, key];
             showLoading();
+            $error.style.display = "none";
             if (hlsInstance) { hlsInstance.destroy(); hlsInstance = null; }
             if (shakaInstance) { shakaInstance.destroy(); shakaInstance = null; }
 
             var clean = unwrapProxiedUrl(rawUrl);
             var activeSource = clean;
-            var cleanFallback = fallbackUrl ? unwrapProxiedUrl(fallbackUrl) : "";
+            var cleanFallback = (fallbackUrl && isValidStreamUrl(unwrapProxiedUrl(fallbackUrl))) ? unwrapProxiedUrl(fallbackUrl) : "";
             var isMpd = isDrm || clean.indexOf(".mpd") !== -1;
             if (isMpd) {
                 playDrmStream(clean, kid || params.get("kid") || "", key || params.get("key") || "", targetRes);
                 return;
             }
 
-            currentProxyIdx = 0;
-            var url = toProxiedUrl(activeSource, currentProxyIdx);
             var desired = targetRes || reqRes || "Auto";
+            updateQBadge(currentRes || desired);
+            buildQMenu();
+
+            var tryDirectFirst = isDirectCorsHost(activeSource);
+            currentProxyIdx = tryDirectFirst ? -1 : 0;
+            var url = tryDirectFirst ? activeSource : toProxiedUrl(activeSource, 0);
             var isNativeHls = !!video.canPlayType("application/vnd.apple.mpegurl");
 
             if (isNativeHls) {
@@ -591,17 +633,17 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                     } else if (!nativeTriedFallback && cleanFallback && cleanFallback !== activeSource) {
                         nativeTriedFallback = true;
                         activeSource = cleanFallback;
-                        currentProxyIdx = 0;
-                        video.src = toProxiedUrl(activeSource, 0);
+                        currentProxyIdx = isDirectCorsHost(activeSource) ? -1 : 0;
+                        video.src = currentProxyIdx === -1 ? activeSource : toProxiedUrl(activeSource, 0);
                         video.play().catch(function(){});
                     } else {
                         video.removeEventListener("error", onNativeErr);
                         hideLoading();
-                        showError("Stream unavailable or blocked by upstream CDN.");
+                        showError("Stream unavailable or blocked by upstream CDN.", true);
                     }
                 };
                 video.addEventListener("error", onNativeErr);
-                video.src = url;
+                video.src = tryDirectFirst ? activeSource : url;
                 video.play().catch(function(){});
                 video.addEventListener("loadedmetadata", function() {
                     video.removeEventListener("error", onNativeErr);
@@ -649,15 +691,13 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                             if (currentProxyIdx < PROXIES.length - 1) {
                                 currentProxyIdx++;
                                 var altPxUrl = toProxiedUrl(activeSource, currentProxyIdx);
-                                console.warn("Proxy failed, trying backup proxy:", altPxUrl);
                                 hlsInstance.loadSource(altPxUrl);
                                 hlsInstance.startLoad();
                             } else if (!triedFallback && cleanFallback && activeSource !== cleanFallback) {
                                 triedFallback = true;
                                 activeSource = cleanFallback;
-                                currentProxyIdx = 0;
-                                var fbUrl = toProxiedUrl(activeSource, 0);
-                                console.warn("Trying fallback stream URL:", fbUrl);
+                                currentProxyIdx = isDirectCorsHost(activeSource) ? -1 : 0;
+                                var fbUrl = currentProxyIdx === -1 ? activeSource : toProxiedUrl(activeSource, 0);
                                 hlsInstance.loadSource(fbUrl);
                                 hlsInstance.startLoad();
                             } else if (networkRetries < 1) {
@@ -665,13 +705,13 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                                 hlsInstance.startLoad();
                             } else {
                                 hideLoading();
-                                showError("Stream unavailable or blocked by upstream CDN (HTTP 403/Offline).");
+                                showError("Stream unavailable or blocked by upstream CDN.", true);
                             }
                         } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
                             hlsInstance.recoverMediaError();
                         } else {
                             hideLoading();
-                            showError("Stream playback error. Please try another quality or reload.");
+                            showError("Stream playback error.", true);
                         }
                     }
                 });
@@ -704,6 +744,10 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                     cur.language = langMatch ? langMatch[1] : "English";
                 } else if (line.startsWith("http") && cur) {
                     var streamUrl = cleanStreamUrl(line);
+                    if (!isValidStreamUrl(streamUrl)) {
+                        cur = null;
+                        continue;
+                    }
                     cur.stream_url = streamUrl;
                     cur.dai_url = streamUrl;
                     cur.adfree_url = streamUrl;
@@ -718,10 +762,10 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
         function fetchM3uMatches() {
             var m3uMap = {};
             var urls = [
-                M3U_API + "?t=" + Date.now(),
-                "./data/fancode.m3u?t=" + Date.now(),
                 BACKUP_M3U_API + "?t=" + Date.now(),
                 "https://raw.githubusercontent.com/sportlive18/Fancode-New-Auto-Update/main/fancode2.m3u?t=" + Date.now(),
+                M3U_API + "?t=" + Date.now(),
+                "./data/fancode.m3u?t=" + Date.now(),
                 "https://raw.githubusercontent.com/sportlive18/Fancode-New-Auto-Update/main/fancode.m3u?t=" + Date.now(),
                 "https://raw.githubusercontent.com/sportlive18/Fancode-New-Auto-Update/main/fancode3.m3u?t=" + Date.now()
             ];
@@ -745,7 +789,8 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                 var list = Object.values(m3uMap);
                 return Promise.all(list.map(function(item) {
                     if (item.stream_url && item.stream_url.includes(".m3u8")) {
-                        return fetch(toProxiedUrl(item.stream_url, 0), { cache: "no-store" })
+                        var fetchUrl = isDirectCorsHost(item.stream_url) ? item.stream_url : toProxiedUrl(item.stream_url, 0);
+                        return fetch(fetchUrl, { cache: "no-store" })
                             .then(function(r) { return r.ok ? r.text() : ""; })
                             .then(function(mText) {
                                 if (mText && mText.includes("#EXT-X-STREAM-INF")) {
@@ -763,10 +808,10 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
         function fetchJsonMatches() {
             var jsonMap = {};
             var urls = [
-                JSON_API + "?t=" + Date.now(),
-                "./data/fancode.json?t=" + Date.now(),
                 BACKUP_JSON_API + "?t=" + Date.now(),
-                "https://raw.githubusercontent.com/kajju027/Fancode-Events-Json/refs/heads/main/fancode.json?t=" + Date.now()
+                "https://raw.githubusercontent.com/kajju027/Fancode-Events-Json/refs/heads/main/fancode.json?t=" + Date.now(),
+                JSON_API + "?t=" + Date.now(),
+                "./data/fancode.json?t=" + Date.now()
             ];
 
             return Promise.allSettled(urls.map(function(u) {
@@ -1002,8 +1047,11 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
         video.addEventListener("dblclick", function() { if(!document.fullscreenElement){document.documentElement.requestFullscreen();} else{document.exitFullscreen();} });
 
         // Quality menu
-        qBtn.addEventListener("click", function(e) { e.stopPropagation(); qMenu.classList.toggle("open"); isQMenuOpen=qMenu.classList.contains("open"); resetAutoHide(); });
-        document.addEventListener("click", function(e) { if(isQMenuOpen&&!qMenu.contains(e.target)&&e.target!==qBtn) { qMenu.classList.remove("open"); isQMenuOpen=false; } });
+        var qBadge = document.getElementById("q-badge");
+        function toggleQMenu(e) { e.stopPropagation(); qMenu.classList.toggle("open"); isQMenuOpen=qMenu.classList.contains("open"); resetAutoHide(); }
+        qBtn.addEventListener("click", toggleQMenu);
+        if (qBadge) qBadge.addEventListener("click", toggleQMenu);
+        document.addEventListener("click", function(e) { if(isQMenuOpen&&!qMenu.contains(e.target)&&e.target!==qBtn&&e.target!==qBadge) { qMenu.classList.remove("open"); isQMenuOpen=false; } });
 
         function buildQMenu() {
             if (shakaInstance) {
@@ -1095,43 +1143,6 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
 
         document.addEventListener("touchstart", function unmute() { video.muted=false; document.removeEventListener("touchstart",unmute); }, {once:true});
 
-    })();
-    </script>
-
-    <!-- Monetag / Smartlink Ad Integration (2 ads max, 60s cooldown, exempting Telegram / Discord) -->
-    <script>
-    (function() {
-        var SMARTLINK_URL = "https://budgetezy.org/4/6da983d7e115700ad4dc612c0e107ec8";
-        var MAX_ADS = 2;
-        var COOLDOWN = 60000;
-        var adCount = 0;
-        var lastAdTime = 0;
-
-        function triggerAd(e) {
-            if (adCount >= MAX_ADS) return;
-            var now = Date.now();
-            if (now - lastAdTime < COOLDOWN) return;
-            if (e && e.target && e.target.closest) {
-                var anchor = e.target.closest('a');
-                if (anchor) {
-                    var href = (anchor.getAttribute('href') || '').toLowerCase();
-                    if (href.includes('t.me') || href.includes('discord')) return;
-                }
-            }
-            adCount++;
-            lastAdTime = now;
-            try {
-                window.open(SMARTLINK_URL, '_blank', 'noopener,noreferrer');
-            } catch(err){}
-        }
-
-        document.addEventListener('click', function(e) {
-            if (adCount >= MAX_ADS) return;
-            if (e.target && e.target.closest) {
-                if (e.target.closest('.bottom-bar') || e.target.closest('#back-btn') || e.target.closest('a[href*="t.me"]') || e.target.closest('a[href*="discord"]')) return;
-                triggerAd(e);
-            }
-        }, true);
     })();
     </script>
 </body>

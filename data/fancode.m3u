@@ -1,5 +1,11 @@
 #EXTM3U
 # ⚡ ARYANSTREAMS • FANCODE PRO LIVE HUB ⚡
 # Official Telegram: https://t.me/aryanstreams
-# Verified: 11/25/2026, 7:08:14 PM IST
+# Verified: 11/25/2026, 8:48:01 PM IST
 
+#EXTINF:-1 tvg-id="4251054" tvg-name="Dubai Capitals Vs Desert Vipers [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4251054_53162_DC_DV_FC-APP.jpg" tvg-language="English" group-title="Cricket",ENG | Dubai Capitals Vs Desert Vipers [English]
+https://in-mc-vod.fancode.com/mumbai/4251054_english_hls_b961d4d41363338_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250909" tvg-name="Oca Invincibles Women Vs Muscat Shaheens  Women [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg" tvg-language="English" group-title="Cricket",ENG | Oca Invincibles Women Vs Muscat Shaheens  Women [English]
+https://in-mc-vod.fancode.com/mumbai/4250909_english_hls_7b385da82645198_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4249017" tvg-name="Pfc Nasaf Vs Al Khaldiya Sc [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4249017_53057_NAS_ALK_fc-web_1789025066869.jpg" tvg-language="English" group-title="Football",ENG | Pfc Nasaf Vs Al Khaldiya Sc [English]
+https://in-mc-vod.fancode.com/mumbai/4249017_english_hls_842772da4880049_1ta-di_h264/index.m3u8

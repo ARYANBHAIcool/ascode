@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
     <title>⚡ AryanStreams • FanCode Live Sports Hub</title>
-    <!-- Monetag In-Market Popunder -->
-    <script data-cfasync="false" src="https://capitalhospitals.org/1/ec8caf215d92bd77dfa766d702a1ec0f"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
@@ -327,10 +325,21 @@
         
 
         var PROXIES = [
-            "https://asp1.lovable.app/api/proxy?u=",
-            "https://stream-through-spark.lovable.app/api/proxy?u="
+            "https://stream-through-spark.lovable.app/api/proxy?u=",
+            "https://asp1.lovable.app/api/proxy?u="
         ];
         var currentProxyIdx = 0;
+
+        function isValidStreamUrl(u) {
+            var s = cleanStreamUrl(u);
+            if (!s || !/^https?:\/\//i.test(s)) return false;
+            if (/unavailable|null|undefined/i.test(s)) return false;
+            return isUrlNotExpired(s);
+        }
+
+        function isDirectCorsHost(u) {
+            return /in-mc-vod\.fancode\.com|dai-fancode\.pages\.dev/i.test(String(u || ""));
+        }
 
         function unwrapProxiedUrl(u) {
             var cur = cleanStreamUrl(u);
@@ -373,6 +382,10 @@ function cleanCategory(cat) {
             return new Date(Date.UTC(yr, mon - 1, day, hh - 5, mm - 30, ss));
         }
 
+        function formatIstDateKey(d) {
+            return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+        }
+
         function formatMatchTime(dateStr, isLive) {
             if (isLive) return '🔴 Live Now';
             var d = parseFanCodeDate(dateStr);
@@ -382,14 +395,14 @@ function cleanCategory(cat) {
             var istOptions = { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', hour12: true };
             var timeFormatted = d.toLocaleTimeString('en-US', istOptions);
             
-            var isToday = d.toDateString() === now.toDateString();
-            var tomorrow = new Date(now.getTime() + 24 * 3600 * 1000);
-            var isTomorrow = d.toDateString() === tomorrow.toDateString();
+            var dKey = formatIstDateKey(d);
+            var todayKey = formatIstDateKey(now);
+            var tomorrowKey = formatIstDateKey(new Date(now.getTime() + 24 * 3600 * 1000));
             
-            if (isToday) return 'Today at ' + timeFormatted + ' IST';
-            if (isTomorrow) return 'Tomorrow at ' + timeFormatted + ' IST';
+            if (dKey === todayKey) return 'Today at ' + timeFormatted + ' IST';
+            if (dKey === tomorrowKey) return 'Tomorrow at ' + timeFormatted + ' IST';
             
-            var day = String(d.getDate()).padStart(2, '0');
+            var day = new Intl.DateTimeFormat('en-US', { day: '2-digit', timeZone: 'Asia/Kolkata' }).format(d);
             var month = d.toLocaleString('en-US', { month: 'short', timeZone: 'Asia/Kolkata' });
             return day + ' ' + month + ', ' + timeFormatted + ' IST';
         }
@@ -470,7 +483,23 @@ function cleanCategory(cat) {
 
         function hasStream(m) {
             if (!m) return false;
-            return !!(m.dai_url || m.adfree_url || m.stream_url || (m.STREAMING_CDN && m.STREAMING_CDN.Primary_Playback_URL) || (m.streams && (m.streams.primary || m.streams.fancode_cdn)) || m.auto_streams || m.google_m3u8_hex || m.master_m3u8);
+            if (isValidStreamUrl(m.dai_url) || isValidStreamUrl(m.adfree_url) || isValidStreamUrl(m.stream_url)) return true;
+            if (m.STREAMING_CDN && isValidStreamUrl(m.STREAMING_CDN.Primary_Playback_URL)) return true;
+            if (m.streams && (isValidStreamUrl(m.streams.primary) || isValidStreamUrl(m.streams.fancode_cdn))) return true;
+            if (m.master_m3u8 && m.master_m3u8.includes("#EXT-X-STREAM-INF")) return true;
+            if (m.google_m3u8_hex) {
+                const decoded = decodeHex(m.google_m3u8_hex);
+                const firstUrl = (decoded.split("\n").find(l => l.trim().startsWith("http")) || "").trim();
+                if (firstUrl && isValidStreamUrl(firstUrl)) return true;
+            }
+            if (Array.isArray(m.auto_streams) && m.auto_streams.length > 0 && m.auto_streams[0].auto) return true;
+            if (m.auto_streams && typeof m.auto_streams === "object" && !Array.isArray(m.auto_streams)) {
+                for (const k of Object.keys(m.auto_streams)) {
+                    const s = m.auto_streams[k] && m.auto_streams[k].streams;
+                    if (s && Object.values(s).some(u => isValidStreamUrl(u))) return true;
+                }
+            }
+            return false;
         }
 
         function parseQualities(m) {
@@ -479,16 +508,15 @@ function cleanCategory(cat) {
             const autoStreamsMap = (m.auto_streams && typeof m.auto_streams === "object" && !Array.isArray(m.auto_streams)) ? m.auto_streams : {};
             const autoLangKey = Object.keys(autoStreamsMap).find(k => m.language && k.toLowerCase().includes(String(m.language).toLowerCase().slice(0, 3))) || Object.keys(autoStreamsMap)[0];
             const autoLangStreams = (autoLangKey && autoStreamsMap[autoLangKey] && autoStreamsMap[autoLangKey].streams) ? autoStreamsMap[autoLangKey].streams : {};
-            const baseStream = cleanStreamUrl(
-                m.dai_url ||
-                m.adfree_url ||
-                m.stream_url ||
-                kajjuStreams.primary ||
-                autoLangStreams["1080p"] ||
-                autoLangStreams["720p"] ||
-                kajjuStreams.fancode_cdn ||
-                ""
-            );
+            const baseStream = [
+                m.dai_url,
+                m.adfree_url,
+                m.stream_url,
+                kajjuStreams.primary,
+                autoLangStreams["1080p"],
+                autoLangStreams["720p"],
+                kajjuStreams.fancode_cdn
+            ].map(cleanStreamUrl).find(u => isValidStreamUrl(u)) || "";
 
             // 1. Check DRM first
             const cdn = m.STREAMING_CDN || {};
@@ -814,6 +842,13 @@ function cleanCategory(cat) {
 
             const live = groupMatches(filtered.filter(m => (m.status||"").toUpperCase() === "LIVE" && hasStream(m)));
             const upcoming = groupMatches(filtered.filter(m => (m.status||"").toUpperCase() !== "LIVE" || !hasStream(m)));
+            upcoming.sort((a, b) => {
+                const da = parseFanCodeDate(a.startTime);
+                const db = parseFanCodeDate(b.startTime);
+                const ta = (da && da !== 'LIVE') ? da.getTime() : Number.MAX_SAFE_INTEGER;
+                const tb = (db && db !== 'LIVE') ? db.getTime() : Number.MAX_SAFE_INTEGER;
+                return ta - tb;
+            });
 
             const ls = document.getElementById("live-section"), us = document.getElementById("upcoming-section");
             const es = document.getElementById("empty-state");
@@ -908,6 +943,10 @@ function cleanCategory(cat) {
                     }
                 } else if (line.startsWith("http") && cur) {
                     const streamUrl = cleanStreamUrl(line);
+                    if (!isValidStreamUrl(streamUrl)) {
+                        cur = null;
+                        continue;
+                    }
                     cur.stream_url = streamUrl;
                     cur.dai_url = streamUrl;
                     cur.adfree_url = streamUrl;
@@ -936,10 +975,10 @@ function cleanCategory(cat) {
         async function fetchM3uMatches() {
             const m3uMap = new Map();
             const urls = [
-                M3U_API + "?t=" + Date.now(),
-                "./data/fancode.m3u?t=" + Date.now(),
                 BACKUP_M3U_API + "?t=" + Date.now(),
                 "https://raw.githubusercontent.com/sportlive18/Fancode-New-Auto-Update/main/fancode2.m3u?t=" + Date.now(),
+                M3U_API + "?t=" + Date.now(),
+                "./data/fancode.m3u?t=" + Date.now(),
                 "https://raw.githubusercontent.com/sportlive18/Fancode-New-Auto-Update/main/fancode.m3u?t=" + Date.now(),
                 "https://raw.githubusercontent.com/sportlive18/Fancode-New-Auto-Update/main/fancode3.m3u?t=" + Date.now()
             ];
@@ -968,7 +1007,8 @@ function cleanCategory(cat) {
             await Promise.allSettled(list.map(async (item) => {
                 if (item.stream_url && item.stream_url.includes(".m3u8")) {
                     try {
-                        const r = await fetch(toProxiedUrl(item.stream_url), { cache: "no-store" });
+                        const fetchUrl = isDirectCorsHost(item.stream_url) ? item.stream_url : toProxiedUrl(item.stream_url);
+                        const r = await fetch(fetchUrl, { cache: "no-store" });
                         if (r.ok) {
                             const mText = await r.text();
                             if (mText && mText.includes("#EXT-X-STREAM-INF")) {
@@ -984,10 +1024,10 @@ function cleanCategory(cat) {
         async function fetchJsonMatches() {
             const jsonMap = new Map();
             const urls = [
-                JSON_API + "?t=" + Date.now(),
-                "./data/fancode.json?t=" + Date.now(),
                 BACKUP_JSON_API + "?t=" + Date.now(),
-                "https://raw.githubusercontent.com/kajju027/Fancode-Events-Json/refs/heads/main/fancode.json?t=" + Date.now()
+                "https://raw.githubusercontent.com/kajju027/Fancode-Events-Json/refs/heads/main/fancode.json?t=" + Date.now(),
+                JSON_API + "?t=" + Date.now(),
+                "./data/fancode.json?t=" + Date.now()
             ];
 
             await Promise.allSettled(urls.map(async (u) => {
@@ -1040,7 +1080,7 @@ function cleanCategory(cat) {
 
                 if (combinedMap.has(targetKey)) {
                     const existing = combinedMap.get(targetKey);
-                    if (!existing.startTime && jm.startTime) existing.startTime = jm.startTime;
+                    if (jm.startTime && (!existing.startTime || existing.startTime === "Live Now")) existing.startTime = jm.startTime;
                     if (!existing.team_1 && jm.team_1) existing.team_1 = jm.team_1;
                     if (!existing.team_2 && jm.team_2) existing.team_2 = jm.team_2;
                     if (!existing.event_name && (jm.event_name || jm.tournament)) existing.event_name = jm.event_name || jm.tournament;
@@ -1050,7 +1090,7 @@ function cleanCategory(cat) {
                     if (jm.auto_streams && !existing.auto_streams) existing.auto_streams = jm.auto_streams;
                     if ((jm.dai_url || jm.adfree_url) && !existing.json_dai_url) existing.json_dai_url = jm.dai_url || jm.adfree_url;
                     if (!existing.src && jm.src) existing.src = jm.src;
-                    existing.status = "LIVE";
+                    if (hasStream(existing)) existing.status = "LIVE";
                 } else {
                     combinedMap.set(targetKey, jm);
                 }
@@ -1142,45 +1182,6 @@ function cleanCategory(cat) {
                 render(currentFilter);
             } catch (e) {}
         }, 60 * 1000);
-    })();
-    </script>
-
-    <!-- Monetag / Smartlink Ad Integration (2 ads max, 60s cooldown, exempting Telegram / Discord) -->
-    <script>
-    (function() {
-        var SMARTLINK_URL = "https://budgetezy.org/4/6da983d7e115700ad4dc612c0e107ec8";
-        var MAX_ADS = 2;
-        var COOLDOWN = 60000;
-        var adCount = 0;
-        var lastAdTime = 0;
-
-        function triggerAd(e) {
-            if (adCount >= MAX_ADS) return;
-            var now = Date.now();
-            if (now - lastAdTime < COOLDOWN) return;
-            if (e && e.target && e.target.closest) {
-                var anchor = e.target.closest('a');
-                if (anchor) {
-                    var href = (anchor.getAttribute('href') || '').toLowerCase();
-                    if (href.includes('t.me') || href.includes('discord')) return;
-                }
-            }
-            adCount++;
-            lastAdTime = now;
-            try {
-                window.open(SMARTLINK_URL, '_blank', 'noopener,noreferrer');
-            } catch(err){}
-        }
-
-        document.addEventListener('click', function(e) {
-            if (adCount >= MAX_ADS) return;
-            if (e.target && e.target.closest) {
-                if (e.target.closest('a[href*="t.me"]') || e.target.closest('a[href*="discord"]')) return;
-                if (e.target.closest('.match-card') || e.target.closest('#player-modal') || e.target.closest('#btn-continue-stream') || e.target.closest('#quality-list')) {
-                    triggerAd(e);
-                }
-            }
-        }, true);
     })();
     </script>
 </body>
