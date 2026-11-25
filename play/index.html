@@ -662,9 +662,11 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                 var triedFallback = false;
                 var networkRetries = 0;
                 var vodSafetyMarginMs = 8000;
+                var vodExtendDisabled = false;
+                var vod404Count = 0;
 
                 function extendStaleVodPlaylist(text) {
-                    if (!text || text.indexOf("#EXTINF:") === -1 || text.indexOf("#EXT-X-ENDLIST") !== -1) return text;
+                    if (vodExtendDisabled || !text || text.indexOf("#EXTINF:") === -1 || text.indexOf("#EXT-X-ENDLIST") !== -1) return text;
                     var lines = text.split("\n");
                     var entries = [];
                     var headerLines = [];
@@ -704,31 +706,36 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                     var suffix = segMatch[3];
                     var segDurMs = Math.max(1000, Math.round((parseFloat(last.dur) || 4) * 1000));
                     var elapsedSegs = Math.floor((Date.now() - lastMs - vodSafetyMarginMs) / segDurMs);
-                    if (elapsedSegs <= 0 || elapsedSegs > 450) return text;
+                    if (elapsedSegs <= 0 || elapsedSegs > 10800) return text;
 
-                    for (var k = 1; k <= elapsedSegs; k++) {
+                    var windowSize = 75;
+                    var seqMatch = text.match(/#EXT-X-MEDIA-SEQUENCE:(\d+)/);
+                    var baseSeq = seqMatch ? parseInt(seqMatch[1], 10) : 0;
+
+                    var startOffset = Math.max(1, elapsedSegs - (windowSize - 1));
+                    var totalVirtual = entries.length + elapsedSegs;
+                    var newBaseSeq = baseSeq + Math.max(0, totalVirtual - windowSize);
+                    var finalEntries = [];
+
+                    if (startOffset === 1) {
+                        var keepFromOrig = Math.max(0, entries.length - (windowSize - elapsedSegs));
+                        finalEntries = entries.slice(keepFromOrig);
+                    }
+                    for (var k = startOffset; k <= elapsedSegs; k++) {
                         var nextMs = lastMs + k * segDurMs;
-                        entries.push({
+                        finalEntries.push({
                             dur: last.dur,
                             pdt: new Date(nextMs).toISOString(),
                             uri: prefix + (lastSeq + k) + suffix
                         });
                     }
 
-                    var windowSize = 75;
-                    var dropped = 0;
-                    if (entries.length > windowSize) {
-                        dropped = entries.length - windowSize;
-                        entries = entries.slice(dropped);
-                    }
-                    var seqMatch = text.match(/#EXT-X-MEDIA-SEQUENCE:(\d+)/);
-                    var baseSeq = seqMatch ? parseInt(seqMatch[1], 10) : 0;
                     var out = headerLines.slice();
-                    out.push("#EXT-X-MEDIA-SEQUENCE:" + (baseSeq + dropped));
-                    for (var j = 0; j < entries.length; j++) {
-                        out.push("#EXTINF:" + entries[j].dur + ",");
-                        if (entries[j].pdt) out.push("#EXT-X-PROGRAM-DATE-TIME:" + entries[j].pdt);
-                        out.push(entries[j].uri);
+                    out.push("#EXT-X-MEDIA-SEQUENCE:" + newBaseSeq);
+                    for (var j = 0; j < finalEntries.length; j++) {
+                        out.push("#EXTINF:" + finalEntries[j].dur + ",");
+                        if (finalEntries[j].pdt) out.push("#EXT-X-PROGRAM-DATE-TIME:" + finalEntries[j].pdt);
+                        out.push(finalEntries[j].uri);
                     }
                     return out.join("\n") + "\n";
                 }
@@ -810,11 +817,14 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                 });
                 hlsInstance.on(Hls.Events.FRAG_LOADED, function() {
                     networkRetries = 0;
+                    vod404Count = 0;
                     hideLoading();
                 });
                 hlsInstance.on(Hls.Events.ERROR, function(ev, data) {
                     if (data && data.details === Hls.ErrorDetails.FRAG_LOAD_ERROR && data.response && data.response.code === 404) {
-                        vodSafetyMarginMs = Math.min(32000, vodSafetyMarginMs + 4000);
+                        vod404Count++;
+                        vodSafetyMarginMs = Math.min(60000, vodSafetyMarginMs + 8000);
+                        if (vod404Count >= 5) vodExtendDisabled = true;
                     }
                     if (data.fatal) {
                         if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
