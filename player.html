@@ -622,8 +622,9 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
             currentProxyIdx = tryDirectFirst ? -1 : 0;
             var url = tryDirectFirst ? activeSource : toProxiedUrl(activeSource, 0);
             var isNativeHls = !!video.canPlayType("application/vnd.apple.mpegurl");
+            var isSafariOrIos = (/iPad|iPhone|iPod/i.test(navigator.userAgent) && !window.MSStream) || (/Safari/i.test(navigator.userAgent) && !/Chrome|Chromium|Edg|OPR|Firefox/i.test(navigator.userAgent));
 
-            if (isNativeHls) {
+            if (isSafariOrIos && isNativeHls) {
                 var nativeTriedFallback = false;
                 var onNativeErr = function() {
                     if (currentProxyIdx < PROXIES.length - 1) {
@@ -655,6 +656,8 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
             }
 
             if (window.Hls && Hls.isSupported()) {
+                video.removeAttribute("src");
+                video.load();
                 var triedFallback = false;
                 var networkRetries = 0;
                 hlsInstance = new Hls({
@@ -715,6 +718,17 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
                         }
                     }
                 });
+                return;
+            }
+
+            if (isNativeHls) {
+                video.src = tryDirectFirst ? activeSource : url;
+                video.play().catch(function(){});
+                video.addEventListener("loadedmetadata", function() {
+                    hideLoading();
+                    video.play().catch(function(){});
+                    buildQMenu();
+                }, { once: true });
                 return;
             }
 
@@ -989,7 +1003,19 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
         var qBtn = document.getElementById("q-btn"), qMenu = document.getElementById("q-menu");
         var fsBtn = document.getElementById("fs-btn");
 
-        function togglePlay() { if(video.paused) video.play(); else video.pause(); }
+        function togglePlay() {
+            if (video.paused) {
+                var p = video.play();
+                if (p && p.catch) {
+                    p.catch(function(err) {
+                        console.warn("Resume failed, reloading stream:", err);
+                        if (lastPlayArgs) playStream.apply(null, lastPlayArgs);
+                    });
+                }
+            } else {
+                video.pause();
+            }
+        }
         function updatePlayIcons() {
             var playing = !video.paused;
             iPlay.classList.toggle("hidden", playing); iPause.classList.toggle("hidden", !playing);
