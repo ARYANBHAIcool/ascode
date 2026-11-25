@@ -625,7 +625,7 @@ var rawUrl = cleanStreamUrl(params.get("url") || params.get("play") || "");
             var isNativeHls = !!video.canPlayType("application/vnd.apple.mpegurl");
             var isSafariOrIos = (/iPad|iPhone|iPod/i.test(navigator.userAgent) && !window.MSStream) || (/Safari/i.test(navigator.userAgent) && !/Chrome|Chromium|Edg|OPR|Firefox/i.test(navigator.userAgent));
 
-            if (isSafariOrIos && isNativeHls) {
+            if (isSafariOrIos && isNativeHls && !(tryDirectFirst && window.Hls && Hls.isSupported())) {
                 var nativeTriedFallback = false;
                 var onNativeErr = function() {
                     if (currentProxyIdx < PROXIES.length - 1) {
