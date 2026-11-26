@@ -3,7 +3,7 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/26/2026, 7:30:41 AM IST",
+  "last_updated": "11/26/2026, 9:59:38 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -11,27 +11,6 @@
   "total_matches": 38,
   "live_matches": 0,
   "matches": [
-    {
-      "match_id": 4250420,
-      "title": "Sydney Thunder Women vs Adelaide Strikers Women (Women's Big Bash League, 2026)",
-      "match_name": "Sydney Thunder Women vs Adelaide Strikers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250420_53125_ST-W_AS-W_fc-web_1793352701216.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
-      "language": "English",
-      "startTime": "10:10:00 AM 26-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
     {
       "match_id": 4250421,
       "title": "Sydney Sixers Women vs Melbourne Stars Women (Women's Big Bash League, 2026)",
@@ -201,6 +180,48 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4251055,
+      "title": "Abu Dhabi Knight Riders vs MI Emirates (DP World ILT20 2026)",
+      "match_name": "Abu Dhabi Knight Riders vs MI Emirates",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251055_53162_ADKR_MIE_FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "DP World ILT20 2026",
+      "language": "English",
+      "startTime": "08:00:00 PM 26-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4251087,
+      "title": "IAS Invincibles vs Yalla Shabab Giants (Oman D20 2026)",
+      "match_name": "IAS Invincibles vs Yalla Shabab Giants",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251087_53163_IAI_YSG_fc-web.jpg",
+      "event_category": "Cricket",
+      "event_name": "Oman D20 2026",
+      "language": "English",
+      "startTime": "08:30:00 PM 26-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4249027,
       "title": "BG Pathum United vs Lion City Sailors (AFC Champions League Two 2026-27)",
       "match_name": "BG Pathum United vs Lion City Sailors",
@@ -264,48 +285,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4251055,
-      "title": "Abu Dhabi Knight Riders vs MI Emirates (DP World ILT20 2026)",
-      "match_name": "Abu Dhabi Knight Riders vs MI Emirates",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251055_53162_ADKR_MIE_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "DP World ILT20 2026",
-      "language": "English",
-      "startTime": "08:00:00 PM 26-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4251087,
-      "title": "IAS Invincibles vs Yalla Shabab Giants (Oman D20 2026)",
-      "match_name": "IAS Invincibles vs Yalla Shabab Giants",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251087_53163_IAI_YSG_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "Oman D20 2026",
-      "language": "English",
-      "startTime": "08:30:00 PM 26-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4251203,
       "title": "Doncaster Rovers F.C. vs Huddersfield Town A.F.C. (League One 2026-27)",
       "match_name": "Doncaster Rovers F.C. vs Huddersfield Town A.F.C.",
@@ -314,27 +293,6 @@
       "event_name": "League One 2026-27",
       "language": "English",
       "startTime": "01:30:00 AM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250886,
-      "title": "Day 1 vs Málaga, Spain (Andalucia Costa Del Sol Open De Espana 2026)",
-      "match_name": "Day 1",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Andalucia-Costa-Del-Sol-Open-De-Espana_1080_x_810.jpg",
-      "event_category": "Golf",
-      "event_name": "Andalucia Costa Del Sol Open De Espana 2026",
-      "language": "English",
-      "startTime": "02:15:00 PM 26-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -398,6 +356,27 @@
       "event_name": "Women's Big Bash League, 2026",
       "language": "English",
       "startTime": "03:40:00 PM 27-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250886,
+      "title": "Day 1 vs Málaga, Spain (Andalucia Costa Del Sol Open De Espana 2026)",
+      "match_name": "Day 1",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Andalucia-Costa-Del-Sol-Open-De-Espana_1080_x_810.jpg",
+      "event_category": "Golf",
+      "event_name": "Andalucia Costa Del Sol Open De Espana 2026",
+      "language": "English",
+      "startTime": "02:15:00 PM 26-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -808,6 +787,18 @@
         "backup": {}
       },
       "auto_streams": {}
+    },
+    {
+      "match_id": "4250420",
+      "title": "Sydney Thunder Women vs Adelaide Strikers Women",
+      "match_name": "Sydney Thunder Women vs Adelaide Strikers Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250420_53125_ST-W_AS-W_fc-web_1793352701216.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
+      "language": "ENGLISH",
+      "startTime": "10:10:00 AM 26-11-2026",
+      "status": "UPCOMING",
+      "stream_url": ""
     }
   ]
 }
