@@ -3,35 +3,14 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/26/2026, 9:59:38 AM IST",
+  "last_updated": "11/26/2026, 4:15:23 PM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 38,
+  "total_matches": 33,
   "live_matches": 0,
   "matches": [
-    {
-      "match_id": 4250421,
-      "title": "Sydney Sixers Women vs Melbourne Stars Women (Women's Big Bash League, 2026)",
-      "match_name": "Sydney Sixers Women vs Melbourne Stars Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250421_53125_SS-W_MS-W_fc-web_1793352701240.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
-      "language": "English",
-      "startTime": "01:40:00 PM 26-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
     {
       "match_id": 4251146,
       "title": "Rome Gladiators vs Napoli Knights (Italia T10 2026)",
@@ -62,111 +41,6 @@
       "event_name": "Italia T10 2026",
       "language": "English",
       "startTime": "06:45:00 PM 26-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4251085,
-      "title": "Muscat Thunderers vs Majees Titans (Oman D20 2026)",
-      "match_name": "Muscat Thunderers vs Majees Titans",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251085_53163_MUT_MAT_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "Oman D20 2026",
-      "language": "English",
-      "startTime": "11:30:00 AM 26-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4251086,
-      "title": "Royal Oman Stallions vs Mustafa Fragrance House Strikers (Oman D20 2026)",
-      "match_name": "Royal Oman Stallions vs Mustafa Fragrance House Strikers",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251086_53163_ROS_MFR_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "Oman D20 2026",
-      "language": "English",
-      "startTime": "04:00:00 PM 26-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4249029,
-      "title": "Tampines Rovers FC vs Shanghai Shenhua (AFC Champions League Two 2026-27)",
-      "match_name": "Tampines Rovers FC vs Shanghai Shenhua",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249029_53057_TAM_SHN_fc-web_1789025066882.jpg",
-      "event_category": "Football",
-      "event_name": "AFC Champions League Two 2026-27",
-      "language": "English",
-      "startTime": "03:30:00 PM 26-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4249031,
-      "title": "Gangwon FC vs Kitchee SC (AFC Champions League Two 2026-27)",
-      "match_name": "Gangwon FC vs Kitchee SC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249031_53057_GW_KIT_fc-web_1789025066245.jpg",
-      "event_category": "Football",
-      "event_name": "AFC Champions League Two 2026-27",
-      "language": "English",
-      "startTime": "03:30:00 PM 26-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4249032,
-      "title": "Kuching City FC vs Phnom Penh Crown (AFC Champions League Two 2026-27)",
-      "match_name": "Kuching City FC vs Phnom Penh Crown",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249032_53057_KFC_PPC_fc-web_1789025065868.jpg",
-      "event_category": "Football",
-      "event_name": "AFC Champions League Two 2026-27",
-      "language": "English",
-      "startTime": "03:30:00 PM 26-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -285,27 +159,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4251203,
-      "title": "Doncaster Rovers F.C. vs Huddersfield Town A.F.C. (League One 2026-27)",
-      "match_name": "Doncaster Rovers F.C. vs Huddersfield Town A.F.C.",
-      "src": "https://images.fancode.com/aig/match/v1795506739477/4251203_CASACARDS_APP.png",
-      "event_category": "Football",
-      "event_name": "League One 2026-27",
-      "language": "English",
-      "startTime": "01:30:00 AM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250645,
       "title": "Australia vs England (England tour of Australia, 2026)",
       "match_name": "Australia vs England",
@@ -314,27 +167,6 @@
       "event_name": "England tour of Australia, 2026",
       "language": "English",
       "startTime": "01:45:00 PM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250910,
-      "title": "Sohar Smashers Women vs OCA Invincibles Women (Oman Women's D20, 2026)",
-      "match_name": "Sohar Smashers Women vs OCA Invincibles Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
-      "event_category": "Cricket",
-      "event_name": "Oman Women's D20, 2026",
-      "language": "English",
-      "startTime": "11:30:00 AM 27-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -369,14 +201,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250886,
-      "title": "Day 1 vs Málaga, Spain (Andalucia Costa Del Sol Open De Espana 2026)",
-      "match_name": "Day 1",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Andalucia-Costa-Del-Sol-Open-De-Espana_1080_x_810.jpg",
-      "event_category": "Golf",
-      "event_name": "Andalucia Costa Del Sol Open De Espana 2026",
+      "match_id": 4251148,
+      "title": "Rome Gladiators vs Venice Livewires (Italia T10 2026)",
+      "match_name": "Rome Gladiators vs Venice Livewires",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251148_53165_RG_VL_fc-web.jpg",
+      "event_category": "Cricket",
+      "event_name": "Italia T10 2026",
       "language": "English",
-      "startTime": "02:15:00 PM 26-11-2026",
+      "startTime": "04:30:00 PM 27-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -390,14 +222,35 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4251148,
-      "title": "Rome Gladiators vs Venice Livewires (Italia T10 2026)",
-      "match_name": "Rome Gladiators vs Venice Livewires",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251148_53165_RG_VL_fc-web.jpg",
+      "match_id": 4250910,
+      "title": "Sohar Smashers Women vs OCA Invincibles Women (Oman Women's D20, 2026)",
+      "match_name": "Sohar Smashers Women vs OCA Invincibles Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
       "event_category": "Cricket",
-      "event_name": "Italia T10 2026",
+      "event_name": "Oman Women's D20, 2026",
       "language": "English",
-      "startTime": "04:30:00 PM 27-11-2026",
+      "startTime": "11:30:00 AM 27-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4251203,
+      "title": "Doncaster Rovers F.C. vs Huddersfield Town A.F.C. (League One 2026-27)",
+      "match_name": "Doncaster Rovers F.C. vs Huddersfield Town A.F.C.",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Doncaster-Rovers-F.C.-vs-Huddersfield-Town-A.F.C-web..png",
+      "event_category": "Football",
+      "event_name": "League One 2026-27",
+      "language": "English",
+      "startTime": "01:30:00 AM 27-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -432,6 +285,27 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4251149,
+      "title": "Brescia Lions vs Napoli Knights (Italia T10 2026)",
+      "match_name": "Brescia Lions vs Napoli Knights",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251149_53165_BL_NP_fc-web.jpg",
+      "event_category": "Cricket",
+      "event_name": "Italia T10 2026",
+      "language": "English",
+      "startTime": "06:45:00 PM 27-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4250911,
       "title": "Ghubra Giants Women vs OCA Invincibles Women (Oman Women's D20, 2026)",
       "match_name": "Ghubra Giants Women vs OCA Invincibles Women",
@@ -453,14 +327,77 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4251149,
-      "title": "Brescia Lions vs Napoli Knights (Italia T10 2026)",
-      "match_name": "Brescia Lions vs Napoli Knights",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251149_53165_BL_NP_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "Italia T10 2026",
+      "match_id": 4250886,
+      "title": "Day 1 vs Málaga, Spain (Andalucia Costa Del Sol Open De Espana 2026)",
+      "match_name": "Day 1",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Andalucia-Costa-Del-Sol-Open-De-Espana_1080_x_810.jpg",
+      "event_category": "Golf",
+      "event_name": "Andalucia Costa Del Sol Open De Espana 2026",
       "language": "English",
-      "startTime": "06:45:00 PM 27-11-2026",
+      "startTime": "06:30:00 PM 26-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4251056,
+      "title": "Sharjah Warriorz vs Dubai Capitals (DP World ILT20 2026)",
+      "match_name": "Sharjah Warriorz vs Dubai Capitals",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251056_53162_SW_DC_FC-WEB.jpg",
+      "event_category": "Cricket",
+      "event_name": "DP World ILT20 2026",
+      "language": "English",
+      "startTime": "08:00:00 PM 27-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250969,
+      "title": "Al-Qadsiah FC vs Al-Fayha FC (Roshn Saudi League 2026-2027)",
+      "match_name": "Al-Qadsiah FC vs Al-Fayha FC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250969_53025_ALQ_ALF_FC-Web_1795077036138.png",
+      "event_category": "Football",
+      "event_name": "Roshn Saudi League 2026-2027",
+      "language": "English",
+      "startTime": "07:50:00 PM 27-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250912,
+      "title": "Wadi Kabir Royals Women vs Muscat Shaheens  Women (Oman Women's D20, 2026)",
+      "match_name": "Wadi Kabir Royals Women vs Muscat Shaheens  Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
+      "event_category": "Cricket",
+      "event_name": "Oman Women's D20, 2026",
+      "language": "English",
+      "startTime": "08:30:00 PM 27-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -516,77 +453,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250887,
-      "title": "Day 2 vs Málaga, Spain (Andalucia Costa Del Sol Open De Espana 2026)",
-      "match_name": "Day 2",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Andalucia-Costa-Del-Sol-Open-De-Espana_1080_x_810.jpg",
-      "event_category": "Golf",
-      "event_name": "Andalucia Costa Del Sol Open De Espana 2026",
-      "language": "English",
-      "startTime": "02:15:00 PM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250969,
-      "title": "Al-Qadsiah FC vs Al-Fayha FC (Roshn Saudi League 2026-2027)",
-      "match_name": "Al-Qadsiah FC vs Al-Fayha FC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250969_53025_ALQ_ALF_FC-Web_1795077036138.png",
+      "match_id": 4250970,
+      "title": "Al-Ittihad vs Neom SC (Roshn Saudi League 2026-2027)",
+      "match_name": "Al-Ittihad vs Neom SC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250970_53025_ITT_NEOM_FC-Web_1795077036094.png",
       "event_category": "Football",
       "event_name": "Roshn Saudi League 2026-2027",
       "language": "English",
-      "startTime": "07:50:00 PM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4251056,
-      "title": "Sharjah Warriorz vs Dubai Capitals (DP World ILT20 2026)",
-      "match_name": "Sharjah Warriorz vs Dubai Capitals",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251056_53162_SW_DC_FC-WEB.jpg",
-      "event_category": "Cricket",
-      "event_name": "DP World ILT20 2026",
-      "language": "English",
-      "startTime": "08:00:00 PM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250912,
-      "title": "Wadi Kabir Royals Women vs Muscat Shaheens  Women (Oman Women's D20, 2026)",
-      "match_name": "Wadi Kabir Royals Women vs Muscat Shaheens  Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
-      "event_category": "Cricket",
-      "event_name": "Oman Women's D20, 2026",
-      "language": "English",
-      "startTime": "08:30:00 PM 27-11-2026",
+      "startTime": "11:00:00 PM 27-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -621,14 +495,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250970,
-      "title": "Al-Ittihad vs Neom SC (Roshn Saudi League 2026-2027)",
-      "match_name": "Al-Ittihad vs Neom SC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250970_53025_ITT_NEOM_FC-Web_1795077036094.png",
-      "event_category": "Football",
-      "event_name": "Roshn Saudi League 2026-2027",
+      "match_id": 4250887,
+      "title": "Day 2 vs Málaga, Spain (Andalucia Costa Del Sol Open De Espana 2026)",
+      "match_name": "Day 2",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Andalucia-Costa-Del-Sol-Open-De-Espana_1080_x_810.jpg",
+      "event_category": "Golf",
+      "event_name": "Andalucia Costa Del Sol Open De Espana 2026",
       "language": "English",
-      "startTime": "11:00:00 PM 27-11-2026",
+      "startTime": "06:30:00 PM 27-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -650,27 +524,6 @@
       "event_name": "F1 QATAR AIRWAYS QATAR GRAND PRIX 2026",
       "language": "English",
       "startTime": "07:00:00 PM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 139659,
-      "title": "Qualifying Session vs Lusail International Circuit (F2 QATAR 2026)",
-      "match_name": "Qualifying Session",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/F2-QATAR_fc-web.jpg",
-      "event_category": "Motorsports",
-      "event_name": "F2 QATAR 2026",
-      "language": "English",
-      "startTime": "08:30:00 PM 27-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -726,10 +579,31 @@
       "auto_streams": {}
     },
     {
+      "match_id": 139659,
+      "title": "Qualifying Session vs Lusail International Circuit (F2 QATAR 2026)",
+      "match_name": "Qualifying Session",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/F2-QATAR_fc-web.jpg",
+      "event_category": "Motorsports",
+      "event_name": "F2 QATAR 2026",
+      "language": "English",
+      "startTime": "08:30:00 PM 27-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4251117,
       "title": "Leganes vs CE Sabadell (LALIGA Hypermotion 2026-27)",
       "match_name": "Leganes vs CE Sabadell",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Football-old-copy.jpg",
+      "src": "https://images.fancode.com/aig/match/v1795678540541/4251117_CASACARDS_APP.png",
       "event_category": "Football",
       "event_name": "LALIGA Hypermotion 2026-27",
       "language": "English",
@@ -789,16 +663,46 @@
       "auto_streams": {}
     },
     {
-      "match_id": "4250420",
-      "title": "Sydney Thunder Women vs Adelaide Strikers Women",
-      "match_name": "Sydney Thunder Women vs Adelaide Strikers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250420_53125_ST-W_AS-W_fc-web_1793352701216.jpg",
+      "match_id": 4251088,
+      "title": "Majees Titans vs Mustafa Fragrance House Strikers (Oman D20 2026)",
+      "match_name": "Majees Titans vs Mustafa Fragrance House Strikers",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251104_53163_MAT_MFR_fc-web.jpg",
+      "event_category": "Cricket",
+      "event_name": "Oman D20 2026",
+      "language": "English",
+      "startTime": "11:30:00 AM 28-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250424,
+      "title": "Sydney Thunder Women vs Sydney Sixers Women (Women's Big Bash League, 2026)",
+      "match_name": "Sydney Thunder Women vs Sydney Sixers Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250424_53125_ST-W_SS-W_fc-web_1793352702043.jpg",
       "event_category": "Cricket",
       "event_name": "Women's Big Bash League, 2026",
-      "language": "ENGLISH",
-      "startTime": "10:10:00 AM 26-11-2026",
+      "language": "English",
+      "startTime": "01:40:00 PM 28-11-2026",
       "status": "UPCOMING",
-      "stream_url": ""
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "fancode_bd_cdn": "UNAVAILABLE",
+        "fancode_np_cdn": "UNAVAILABLE",
+        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
     }
   ]
 }
