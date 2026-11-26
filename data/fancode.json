@@ -3,12 +3,12 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/27/2026, 1:25:45 AM IST",
+  "last_updated": "11/27/2026, 4:35:30 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 38,
+  "total_matches": 39,
   "live_matches": 0,
   "matches": [
     {
@@ -25,9 +25,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -46,9 +43,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -67,9 +61,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -88,9 +79,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -109,9 +97,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -130,9 +115,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -151,9 +133,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -172,30 +151,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250969,
-      "title": "Al-Qadsiah FC vs Al-Fayha FC (Roshn Saudi League 2026-2027)",
-      "match_name": "Al-Qadsiah FC vs Al-Fayha FC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250969_53025_ALQ_ALF_FC-Web_1795077036138.png",
-      "event_category": "Football",
-      "event_name": "Roshn Saudi League 2026-2027",
-      "language": "English",
-      "startTime": "07:50:00 PM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -214,9 +169,24 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250969,
+      "title": "Al-Qadsiah FC vs Al-Fayha FC (Roshn Saudi League 2026-2027)",
+      "match_name": "Al-Qadsiah FC vs Al-Fayha FC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250969_53025_ALQ_ALF_FC-Web_1795077036138.png",
+      "event_category": "Football",
+      "event_name": "Roshn Saudi League 2026-2027",
+      "language": "English",
+      "startTime": "07:50:00 PM 27-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -235,9 +205,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -256,9 +223,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -277,9 +241,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -298,156 +259,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 139987,
-      "title": "Day 1 vs Cheste (MOTUL GRAND PRIX OF VALENCIA 2026)",
-      "match_name": "Day 1",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Moto-GP-Valencia_Web.jpg",
-      "event_category": "Motogp",
-      "event_name": "MOTUL GRAND PRIX OF VALENCIA 2026",
-      "language": "English",
-      "startTime": "01:30:00 PM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4249863,
-      "title": "Macarthur vs Melbourne City (A-League 2026-27)",
-      "match_name": "Macarthur vs Melbourne City",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249863_53101_MAC_MLC_fc-Web_1792223292524.jpg",
-      "event_category": "Football",
-      "event_name": "A-League 2026-27",
-      "language": "English",
-      "startTime": "02:10:00 PM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 139658,
-      "title": "Practice Session vs Lusail International Circuit (F2 QATAR 2026)",
-      "match_name": "Practice Session",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/F2-QATAR_fc-web.jpg",
-      "event_category": "Motorsports",
-      "event_name": "F2 QATAR 2026",
-      "language": "English",
-      "startTime": "04:30:00 PM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250887,
-      "title": "Day 2 vs Málaga, Spain (Andalucia Costa Del Sol Open De Espana 2026)",
-      "match_name": "Day 2",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Andalucia-Costa-Del-Sol-Open-De-Espana_1080_x_810.jpg",
-      "event_category": "Golf",
-      "event_name": "Andalucia Costa Del Sol Open De Espana 2026",
-      "language": "English",
-      "startTime": "06:30:00 PM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 139522,
-      "title": "Practice 1 vs Lusail International Circuit (F1 QATAR AIRWAYS QATAR GRAND PRIX 2026)",
-      "match_name": "Practice 1",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/F1-QATAR_fc-web_1795503370459.jpg",
-      "event_category": "Formula 1",
-      "event_name": "F1 QATAR AIRWAYS QATAR GRAND PRIX 2026",
-      "language": "English",
-      "startTime": "07:00:00 PM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 139659,
-      "title": "Qualifying Session vs Lusail International Circuit (F2 QATAR 2026)",
-      "match_name": "Qualifying Session",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/F2-QATAR_fc-web.jpg",
-      "event_category": "Motorsports",
-      "event_name": "F2 QATAR 2026",
-      "language": "English",
-      "startTime": "08:30:00 PM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 139523,
-      "title": "Practice 2 vs Lusail International Circuit (F1 QATAR AIRWAYS QATAR GRAND PRIX 2026)",
-      "match_name": "Practice 2",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/F1-QATAR_fc-web_1795503370459.jpg",
-      "event_category": "Formula 1",
-      "event_name": "F1 QATAR AIRWAYS QATAR GRAND PRIX 2026",
-      "language": "English",
-      "startTime": "10:30:00 PM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -466,30 +277,132 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
     },
     {
-      "match_id": 4251088,
-      "title": "Majees Titans vs Mustafa Fragrance House Strikers (Oman D20 2026)",
-      "match_name": "Majees Titans vs Mustafa Fragrance House Strikers",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251104_53163_MAT_MFR_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "Oman D20 2026",
+      "match_id": 139987,
+      "title": "Day 1 vs Cheste (MOTUL GRAND PRIX OF VALENCIA 2026)",
+      "match_name": "Day 1",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Moto-GP-Valencia_Web.jpg",
+      "event_category": "Motogp",
+      "event_name": "MOTUL GRAND PRIX OF VALENCIA 2026",
       "language": "English",
-      "startTime": "11:30:00 AM 28-11-2026",
+      "startTime": "01:30:00 PM 27-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4249863,
+      "title": "Macarthur vs Melbourne City (A-League 2026-27)",
+      "match_name": "Macarthur vs Melbourne City",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249863_53101_MAC_MLC_fc-Web_1792223292524.jpg",
+      "event_category": "Football",
+      "event_name": "A-League 2026-27",
+      "language": "English",
+      "startTime": "02:10:00 PM 27-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 139658,
+      "title": "Practice Session vs Lusail International Circuit (F2 QATAR 2026)",
+      "match_name": "Practice Session",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/F2-QATAR_fc-web.jpg",
+      "event_category": "Motorsports",
+      "event_name": "F2 QATAR 2026",
+      "language": "English",
+      "startTime": "04:30:00 PM 27-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250887,
+      "title": "Day 2 vs Málaga, Spain (Andalucia Costa Del Sol Open De Espana 2026)",
+      "match_name": "Day 2",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Andalucia-Costa-Del-Sol-Open-De-Espana_1080_x_810.jpg",
+      "event_category": "Golf",
+      "event_name": "Andalucia Costa Del Sol Open De Espana 2026",
+      "language": "English",
+      "startTime": "06:30:00 PM 27-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 139522,
+      "title": "Practice 1 vs Lusail International Circuit (F1 QATAR AIRWAYS QATAR GRAND PRIX 2026)",
+      "match_name": "Practice 1",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/F1-QATAR_fc-web_1795503370459.jpg",
+      "event_category": "Formula 1",
+      "event_name": "F1 QATAR AIRWAYS QATAR GRAND PRIX 2026",
+      "language": "English",
+      "startTime": "07:00:00 PM 27-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 139659,
+      "title": "Qualifying Session vs Lusail International Circuit (F2 QATAR 2026)",
+      "match_name": "Qualifying Session",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/F2-QATAR_fc-web.jpg",
+      "event_category": "Motorsports",
+      "event_name": "F2 QATAR 2026",
+      "language": "English",
+      "startTime": "08:30:00 PM 27-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 139523,
+      "title": "Practice 2 vs Lusail International Circuit (F1 QATAR AIRWAYS QATAR GRAND PRIX 2026)",
+      "match_name": "Practice 2",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/F1-QATAR_fc-web_1795503370459.jpg",
+      "event_category": "Formula 1",
+      "event_name": "F1 QATAR AIRWAYS QATAR GRAND PRIX 2026",
+      "language": "English",
+      "startTime": "10:30:00 PM 27-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -508,9 +421,24 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4251088,
+      "title": "Majees Titans vs Mustafa Fragrance House Strikers (Oman D20 2026)",
+      "match_name": "Majees Titans vs Mustafa Fragrance House Strikers",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251104_53163_MAT_MFR_fc-web.jpg",
+      "event_category": "Cricket",
+      "event_name": "Oman D20 2026",
+      "language": "English",
+      "startTime": "11:30:00 AM 28-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -529,9 +457,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -550,9 +475,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -571,9 +493,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -592,30 +511,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 139988,
-      "title": "Day 2 vs Cheste (MOTUL GRAND PRIX OF VALENCIA 2026)",
-      "match_name": "Day 2",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Moto-GP-Valencia_Web.jpg",
-      "event_category": "Motogp",
-      "event_name": "MOTUL GRAND PRIX OF VALENCIA 2026",
-      "language": "English",
-      "startTime": "01:10:00 PM 28-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -634,9 +529,24 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 139988,
+      "title": "Day 2 vs Cheste (MOTUL GRAND PRIX OF VALENCIA 2026)",
+      "match_name": "Day 2",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Moto-GP-Valencia_Web.jpg",
+      "event_category": "Motogp",
+      "event_name": "MOTUL GRAND PRIX OF VALENCIA 2026",
+      "language": "English",
+      "startTime": "01:10:00 PM 28-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -655,9 +565,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -676,9 +583,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -697,9 +601,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -718,9 +619,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -739,9 +637,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -760,9 +655,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -781,9 +673,6 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
@@ -802,9 +691,24 @@
       "streams": {
         "primary": "",
         "fancode_cdn": "UNAVAILABLE",
-        "fancode_bd_cdn": "UNAVAILABLE",
-        "fancode_np_cdn": "UNAVAILABLE",
-        "fancode_lk_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4250888,
+      "title": "Day 3 vs Málaga, Spain (Andalucia Costa Del Sol Open De Espana 2026)",
+      "match_name": "Day 3",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Andalucia-Costa-Del-Sol-Open-De-Espana_1080_x_810.jpg",
+      "event_category": "Golf",
+      "event_name": "Andalucia Costa Del Sol Open De Espana 2026",
+      "language": "English",
+      "startTime": "06:30:00 PM 28-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
         "backup": {}
       },
       "auto_streams": {}
