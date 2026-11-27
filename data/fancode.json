@@ -3,13 +3,13 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/27/2026, 4:35:30 AM IST",
+  "last_updated": "11/27/2026, 8:16:00 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 39,
-  "live_matches": 0,
+  "total_matches": 40,
+  "live_matches": 1,
   "matches": [
     {
       "match_id": 4250645,
@@ -246,6 +246,24 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4250423,
+      "title": "Melbourne Renegades Women vs Melbourne Stars Women (Women's Big Bash League, 2026)",
+      "match_name": "Melbourne Renegades Women vs Melbourne Stars Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250423_53125_MR-W_MS-W_fc-web_1793352702065.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
+      "language": "English",
+      "startTime": "10:10:00 AM 28-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 4251117,
       "title": "Leganes vs CE Sabadell (LALIGA Hypermotion 2026-27)",
       "match_name": "Leganes vs CE Sabadell",
@@ -264,14 +282,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250423,
-      "title": "Melbourne Renegades Women vs Melbourne Stars Women (Women's Big Bash League, 2026)",
-      "match_name": "Melbourne Renegades Women vs Melbourne Stars Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250423_53125_MR-W_MS-W_fc-web_1793352702065.jpg",
+      "match_id": 4250424,
+      "title": "Sydney Thunder Women vs Sydney Sixers Women (Women's Big Bash League, 2026)",
+      "match_name": "Sydney Thunder Women vs Sydney Sixers Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250424_53125_ST-W_SS-W_fc-web_1793352702043.jpg",
       "event_category": "Cricket",
       "event_name": "Women's Big Bash League, 2026",
       "language": "English",
-      "startTime": "10:10:00 AM 28-11-2026",
+      "startTime": "01:40:00 PM 28-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -372,6 +390,24 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4251088,
+      "title": "Majees Titans vs Mustafa Fragrance House Strikers (Oman D20 2026)",
+      "match_name": "Majees Titans vs Mustafa Fragrance House Strikers",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251104_53163_MAT_MFR_fc-web.jpg",
+      "event_category": "Cricket",
+      "event_name": "Oman D20 2026",
+      "language": "English",
+      "startTime": "11:30:00 AM 28-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 139659,
       "title": "Qualifying Session vs Lusail International Circuit (F2 QATAR 2026)",
       "match_name": "Qualifying Session",
@@ -398,42 +434,6 @@
       "event_name": "F1 QATAR AIRWAYS QATAR GRAND PRIX 2026",
       "language": "English",
       "startTime": "10:30:00 PM 27-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4250424,
-      "title": "Sydney Thunder Women vs Sydney Sixers Women (Women's Big Bash League, 2026)",
-      "match_name": "Sydney Thunder Women vs Sydney Sixers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250424_53125_ST-W_SS-W_fc-web_1793352702043.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
-      "language": "English",
-      "startTime": "01:40:00 PM 28-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4251088,
-      "title": "Majees Titans vs Mustafa Fragrance House Strikers (Oman D20 2026)",
-      "match_name": "Majees Titans vs Mustafa Fragrance House Strikers",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251104_53163_MAT_MFR_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "Oman D20 2026",
-      "language": "English",
-      "startTime": "11:30:00 AM 28-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -534,24 +534,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 139988,
-      "title": "Day 2 vs Cheste (MOTUL GRAND PRIX OF VALENCIA 2026)",
-      "match_name": "Day 2",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Moto-GP-Valencia_Web.jpg",
-      "event_category": "Motogp",
-      "event_name": "MOTUL GRAND PRIX OF VALENCIA 2026",
-      "language": "English",
-      "startTime": "01:10:00 PM 28-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 4250017,
       "title": "Preston North End F.C. vs Norwich City F.C. (EFL Championship 2026-27)",
       "match_name": "Preston North End F.C. vs Norwich City F.C.",
@@ -578,6 +560,24 @@
       "event_name": "LALIGA 2026-27",
       "language": "English",
       "startTime": "06:30:00 PM 28-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 139988,
+      "title": "Day 2 vs Cheste (MOTUL GRAND PRIX OF VALENCIA 2026)",
+      "match_name": "Day 2",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Moto-GP-Valencia_Web.jpg",
+      "event_category": "Motogp",
+      "event_name": "MOTUL GRAND PRIX OF VALENCIA 2026",
+      "language": "English",
+      "startTime": "01:10:00 PM 28-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -696,14 +696,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250888,
-      "title": "Day 3 vs Málaga, Spain (Andalucia Costa Del Sol Open De Espana 2026)",
-      "match_name": "Day 3",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/Andalucia-Costa-Del-Sol-Open-De-Espana_1080_x_810.jpg",
-      "event_category": "Golf",
-      "event_name": "Andalucia Costa Del Sol Open De Espana 2026",
+      "match_id": 4247703,
+      "title": "Elche CF vs Atletico de Madrid (LALIGA 2026-27)",
+      "match_name": "Elche CF vs Atletico de Madrid",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247703_53004_ELC_ATM_FC-Web.png",
+      "event_category": "Football",
+      "event_name": "LALIGA 2026-27",
       "language": "English",
-      "startTime": "06:30:00 PM 28-11-2026",
+      "startTime": "11:00:00 PM 28-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -712,6 +712,42 @@
         "backup": {}
       },
       "auto_streams": {}
+    },
+    {
+      "match_id": "4249676",
+      "match_name": "South Australia Vs Victoria [English]",
+      "title": "South Australia Vs Victoria [English]",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249676_53087_SAU_VCT_FC-WEB.jpg",
+      "language": "English",
+      "event_category": "Cricket",
+      "stream_url": "https://in-mc-vod.fancode.com/mumbai/4249676_english_hls_fffac9b5e066432_1ta-di_h264/720p.m3u8",
+      "status": "LIVE",
+      "startTime": "Live Now",
+      "streams": {
+        "primary": "https://in-mc-vod.fancode.com/mumbai/4249676_english_hls_fffac9b5e066432_1ta-di_h264/index.m3u8",
+        "fancode_cdn": "https://in-mc-vod.fancode.com/mumbai/4249676_english_hls_fffac9b5e066432_1ta-di_h264/index.m3u8",
+        "backup": {}
+      },
+      "auto_streams": {
+        "ENGLISH": {
+          "streams": {
+            "240p": "https://in-mc-vod.fancode.com/mumbai/4249676_english_hls_fffac9b5e066432_1ta-di_h264/240p.m3u8",
+            "360p": "https://in-mc-vod.fancode.com/mumbai/4249676_english_hls_fffac9b5e066432_1ta-di_h264/360p.m3u8",
+            "480p": "https://in-mc-vod.fancode.com/mumbai/4249676_english_hls_fffac9b5e066432_1ta-di_h264/480p.m3u8",
+            "540p": "https://in-mc-vod.fancode.com/mumbai/4249676_english_hls_fffac9b5e066432_1ta-di_h264/540p.m3u8",
+            "720p": "https://in-mc-vod.fancode.com/mumbai/4249676_english_hls_fffac9b5e066432_1ta-di_h264/720p.m3u8",
+            "1080p": "https://in-mc-vod.fancode.com/mumbai/4249676_english_hls_fffac9b5e066432_1ta-di_h264/1080p.m3u8"
+          },
+          "sonu_px": "https://akamaii.lovable.app/api/public/px/fancode?url=https%3A%2F%2Fin-mc-vod.fancode.com%2Fmumbai%2F4249676_english_hls_fffac9b5e066432_1ta-di_h264%2F720p.m3u8",
+          "expires": "",
+          "expire_date": "",
+          "headers": {
+            "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
+            "Referer": "https://fancode.com/"
+          },
+          "source": "derived_from_link"
+        }
+      }
     }
   ]
 }
