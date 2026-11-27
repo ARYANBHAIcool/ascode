@@ -1,19 +1,15 @@
 #EXTM3U
 # ⚡ ARYANSTREAMS • FANCODE PRO LIVE HUB ⚡
 # Official Telegram: https://t.me/aryanstreams
-# Verified: 11/27/2026, 5:05:45 PM IST
+# Verified: 11/27/2026, 8:18:52 PM IST
 
-#EXTINF:-1 tvg-id="4250645" tvg-name="Australia Vs England [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/wevb.png" tvg-language="English" group-title="Cricket",ENG | Australia Vs England [English]
-https://in-mc-vod.fancode.com/mumbai/4250645_english_hls_388d64605956269_1ta-di_h264/index.m3u8
 #EXTINF:-1 tvg-id="4250422" tvg-name="Perth Scorchers Women Vs Hobart Hurricanes Women [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250422_53125_PS-W_HB-W_fc-web_1793352701259.jpg" tvg-language="English" group-title="Cricket",ENG | Perth Scorchers Women Vs Hobart Hurricanes Women [English]
 https://in-mc-vod.fancode.com/mumbai/4250422_english_hls_67b5a84f4627685_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4250911" tvg-name="Ghubra Giants Women Vs Oca Strikers Women [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg" tvg-language="English" group-title="Cricket",ENG | Ghubra Giants Women Vs Oca Strikers Women [English]
-https://in-mc-vod.fancode.com/mumbai/4250911_english_hls_2db5d051f869631_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4251148" tvg-name="Rome Gladiators Vs Venice Livewires [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4251148_53165_RG_VL_fc-app.jpg" tvg-language="English" group-title="Cricket",ENG | Rome Gladiators Vs Venice Livewires [English]
-https://in-mc-vod.fancode.com/mumbai/4251148_english_hls_35f56b44af61919_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4250957" tvg-name="Sub Saharan Africa Vs Europe [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Test_Twenty_2026FC-WEB.jpg" tvg-language="English" group-title="Cricket",ENG | Sub Saharan Africa Vs Europe [English]
-https://in-mc-vod.fancode.com/mumbai/4250957_english_hls_2c0a75389979817_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="139987" tvg-name="Day 1 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Moto-GP-Valencia_Web.jpg" tvg-language="English" group-title="Motogp",ENG | Day 1 [English]
-https://in-mc-vod.fancode.com/mumbai/139987_english_hls_d24b6feeea4926_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="139658" tvg-name="Practice Session [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/F2-QATAR_fc-web.jpg" tvg-language="English" group-title="Motorsports",ENG | Practice Session [English]
-https://in-mc-flive.fancode.com/mumbai/139658_english_dash_66854_1drmta-di_h264/index.mpd
+#EXTINF:-1 tvg-id="4251056" tvg-name="Sharjah Warriorz Vs Dubai Capitals [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4251056_53162_SW_DC_FC-APP.jpg" tvg-language="English" group-title="Cricket",ENG | Sharjah Warriorz Vs Dubai Capitals [English]
+https://in-mc-vod.fancode.com/mumbai/4251056_english_hls_012c5e0d0159881_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250969" tvg-name="Al Qadsiah Fc Vs Al Fayha Fc [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250969_53025_ALQ_ALF_FC-App_1795077050712.png" tvg-language="English" group-title="Football",ENG | Al Qadsiah Fc Vs Al Fayha Fc [English]
+https://in-mc-vod.fancode.com/mumbai/4250969_english_hls_b5ac3c348099958_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250887" tvg-name="Day 2 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Andalucia-Costa-Del-Sol-Open-De-Espana_1080_x_810.jpg" tvg-language="English" group-title="Golf",ENG | Day 2 [English]
+https://in-mc-vod.fancode.com/mumbai/4250887_english_hls_b929dd0f7222378_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="139522" tvg-name="[DRM] ENG | Practice 1 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/F1-QATAR_fc-web_1795503370459.jpg" tvg-language="English" group-title="Formula 1",ENG | [DRM] ENG | Practice 1 [English]
+https://in-mc-flive.fancode.com/mumbai/139522_english_dash_74118_1drmta-di_h264/index.mpd
