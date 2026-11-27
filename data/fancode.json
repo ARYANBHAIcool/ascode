@@ -3,13 +3,13 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/28/2026, 1:49:54 AM IST",
+  "last_updated": "11/28/2026, 4:30:58 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
   },
-  "total_matches": 39,
-  "live_matches": 3,
+  "total_matches": 40,
+  "live_matches": 0,
   "matches": [
     {
       "match_id": 4250423,
@@ -232,14 +232,14 @@
       }
     },
     {
-      "match_id": 4250972,
-      "title": "Al-Ettifaq vs Al Hilal SFC (Roshn Saudi League 2026-2027)",
-      "match_name": "Al-Ettifaq vs Al Hilal SFC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250972_53025_ETT_AHS_FC-Web_1795077036853.png",
-      "event_category": "Football",
-      "event_name": "Roshn Saudi League 2026-2027",
+      "match_id": 4250914,
+      "title": "Muscat Thunders Women vs OCA Invincibles Women (Oman Women's D20, 2026)",
+      "match_name": "Muscat Thunders Women vs OCA Invincibles Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
+      "event_category": "Cricket",
+      "event_name": "Oman Women's D20, 2026",
       "language": "English",
-      "startTime": "07:50:00 PM 28-11-2026",
+      "startTime": "08:30:00 PM 28-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -252,14 +252,14 @@
       }
     },
     {
-      "match_id": 4250914,
-      "title": "Muscat Thunders Women vs OCA Invincibles Women (Oman Women's D20, 2026)",
-      "match_name": "Muscat Thunders Women vs OCA Invincibles Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/IMG_7278.jpeg",
-      "event_category": "Cricket",
-      "event_name": "Oman Women's D20, 2026",
+      "match_id": 4250972,
+      "title": "Al-Ettifaq vs Al Hilal SFC (Roshn Saudi League 2026-2027)",
+      "match_name": "Al-Ettifaq vs Al Hilal SFC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250972_53025_ETT_AHS_FC-Web_1795077036853.png",
+      "event_category": "Football",
+      "event_name": "Roshn Saudi League 2026-2027",
       "language": "English",
-      "startTime": "08:30:00 PM 28-11-2026",
+      "startTime": "07:50:00 PM 28-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -372,6 +372,26 @@
       }
     },
     {
+      "match_id": 4250425,
+      "title": "Brisbane Heat Women vs Perth Scorchers Women (Women's Big Bash League, 2026)",
+      "match_name": "Brisbane Heat Women vs Perth Scorchers Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250425_53125_BH-W_PS-W_fc-web_1793352701220.jpg",
+      "event_category": "Cricket",
+      "event_name": "Women's Big Bash League, 2026",
+      "language": "English",
+      "startTime": "06:30:00 AM 29-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": null,
+        "fancode_cdn": null,
+        "fancode_bd_cdn": null,
+        "fancode_np_cdn": null,
+        "fancode_lk_cdn": null,
+        "backup": {}
+      }
+    },
+    {
       "match_id": 4251118,
       "title": "Eibar vs Burgos CF (LALIGA Hypermotion 2026-27)",
       "match_name": "Eibar vs Burgos CF",
@@ -392,14 +412,14 @@
       }
     },
     {
-      "match_id": 4250425,
-      "title": "Brisbane Heat Women vs Perth Scorchers Women (Women's Big Bash League, 2026)",
-      "match_name": "Brisbane Heat Women vs Perth Scorchers Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250425_53125_BH-W_PS-W_fc-web_1793352701220.jpg",
+      "match_id": 4250426,
+      "title": "Adelaide Strikers Women vs Hobart Hurricanes Women (Women's Big Bash League, 2026)",
+      "match_name": "Adelaide Strikers Women vs Hobart Hurricanes Women",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250426_53125_AS-W_HB-W_fc-web_1793352701264.jpg",
       "event_category": "Cricket",
       "event_name": "Women's Big Bash League, 2026",
       "language": "English",
-      "startTime": "06:30:00 AM 29-11-2026",
+      "startTime": "10:00:00 AM 29-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -520,26 +540,6 @@
       "event_name": "F1 QATAR AIRWAYS QATAR GRAND PRIX 2026",
       "language": "English",
       "startTime": "11:30:00 PM 28-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": null,
-        "fancode_cdn": null,
-        "fancode_bd_cdn": null,
-        "fancode_np_cdn": null,
-        "fancode_lk_cdn": null,
-        "backup": {}
-      }
-    },
-    {
-      "match_id": 4250426,
-      "title": "Adelaide Strikers Women vs Hobart Hurricanes Women (Women's Big Bash League, 2026)",
-      "match_name": "Adelaide Strikers Women vs Hobart Hurricanes Women",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250426_53125_AS-W_HB-W_fc-web_1793352701264.jpg",
-      "event_category": "Cricket",
-      "event_name": "Women's Big Bash League, 2026",
-      "language": "English",
-      "startTime": "10:00:00 AM 29-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -732,105 +732,83 @@
       }
     },
     {
-      "match_id": "4250970",
-      "match_name": "Al Ittihad Vs Neom Sc [English]",
-      "title": "Al Ittihad Vs Neom Sc [English]",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250970_53025_ITT_NEOM_FC-App_1795077050706.png",
-      "language": "English",
+      "match_id": 4247702,
+      "title": "Deportivo de La Coruna vs FC Barcelona (LALIGA 2026-27)",
+      "match_name": "Deportivo de La Coruna vs FC Barcelona",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4247702_53004_COR_BAR_FC-Web.png",
       "event_category": "Football",
-      "stream_url": "https://in-mc-vod.fancode.com/mumbai/4250970_english_hls_5c8f2d6b0231805_1ta-di_h264/index.m3u8",
-      "status": "LIVE",
-      "startTime": "Live Now",
+      "event_name": "LALIGA 2026-27",
+      "language": "English",
+      "startTime": "08:45:00 PM 29-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
       "streams": {
-        "primary": "https://in-mc-vod.fancode.com/mumbai/4250970_english_hls_5c8f2d6b0231805_1ta-di_h264/1080p.m3u8",
-        "fancode_cdn": "https://in-mc-vod.fancode.com/mumbai/4250970_english_hls_5c8f2d6b0231805_1ta-di_h264/index.m3u8",
+        "primary": null,
+        "fancode_cdn": null,
         "fancode_bd_cdn": null,
         "fancode_np_cdn": null,
         "fancode_lk_cdn": null,
         "backup": {}
-      },
-      "auto_streams": {
-        "ENGLISH": {
-          "streams": {
-            "240p": "https://in-mc-vod.fancode.com/mumbai/4250970_english_hls_5c8f2d6b0231805_1ta-di_h264/240p.m3u8",
-            "360p": "https://in-mc-vod.fancode.com/mumbai/4250970_english_hls_5c8f2d6b0231805_1ta-di_h264/360p.m3u8",
-            "480p": "https://in-mc-vod.fancode.com/mumbai/4250970_english_hls_5c8f2d6b0231805_1ta-di_h264/480p.m3u8",
-            "540p": "https://in-mc-vod.fancode.com/mumbai/4250970_english_hls_5c8f2d6b0231805_1ta-di_h264/540p.m3u8",
-            "720p": "https://in-mc-vod.fancode.com/mumbai/4250970_english_hls_5c8f2d6b0231805_1ta-di_h264/720p.m3u8",
-            "1080p": "https://in-mc-vod.fancode.com/mumbai/4250970_english_hls_5c8f2d6b0231805_1ta-di_h264/1080p.m3u8"
-          },
-          "cookie": null,
-          "expires": null,
-          "expire_date": null
-        }
       }
     },
     {
-      "match_id": "4250016",
-      "match_name": "Southampton F.c. Vs Middlesbrough F.c. [English]",
-      "title": "Southampton F.c. Vs Middlesbrough F.c. [English]",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250016_52993_SOU_MIDD_fc-web.jpg",
+      "match_id": 139661,
+      "title": "Feature Race vs Lusail International Circuit (F2 QATAR 2026)",
+      "match_name": "Feature Race",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/F2-QATAR_fc-web.jpg",
+      "event_category": "Motorsports",
+      "event_name": "F2 QATAR 2026",
       "language": "English",
-      "event_category": "Football",
-      "stream_url": "https://in-mc-vod.fancode.com/mumbai/4250016_english_hls_5eff8faf9639865_1ta-di_h264/index.m3u8",
-      "status": "LIVE",
-      "startTime": "Live Now",
+      "startTime": "05:30:00 PM 29-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
       "streams": {
-        "primary": "https://in-mc-vod.fancode.com/mumbai/4250016_english_hls_5eff8faf9639865_1ta-di_h264/1080p.m3u8",
-        "fancode_cdn": "https://in-mc-vod.fancode.com/mumbai/4250016_english_hls_5eff8faf9639865_1ta-di_h264/index.m3u8",
+        "primary": null,
+        "fancode_cdn": null,
         "fancode_bd_cdn": null,
         "fancode_np_cdn": null,
         "fancode_lk_cdn": null,
         "backup": {}
-      },
-      "auto_streams": {
-        "ENGLISH": {
-          "streams": {
-            "240p": "https://in-mc-vod.fancode.com/mumbai/4250016_english_hls_5eff8faf9639865_1ta-di_h264/240p.m3u8",
-            "360p": "https://in-mc-vod.fancode.com/mumbai/4250016_english_hls_5eff8faf9639865_1ta-di_h264/360p.m3u8",
-            "480p": "https://in-mc-vod.fancode.com/mumbai/4250016_english_hls_5eff8faf9639865_1ta-di_h264/480p.m3u8",
-            "540p": "https://in-mc-vod.fancode.com/mumbai/4250016_english_hls_5eff8faf9639865_1ta-di_h264/540p.m3u8",
-            "720p": "https://in-mc-vod.fancode.com/mumbai/4250016_english_hls_5eff8faf9639865_1ta-di_h264/720p.m3u8",
-            "1080p": "https://in-mc-vod.fancode.com/mumbai/4250016_english_hls_5eff8faf9639865_1ta-di_h264/1080p.m3u8"
-          },
-          "cookie": null,
-          "expires": null,
-          "expire_date": null
-        }
       }
     },
     {
-      "match_id": "4251117",
-      "match_name": "Leganes Vs Ce Sabadell [English]",
-      "title": "Leganes Vs Ce Sabadell [English]",
-      "src": "https://images.fancode.com/aig/match/v1795678540541/4251117_CASACARDS_SPORTY_APP.png",
-      "language": "English",
+      "match_id": 4251119,
+      "title": "RCD Mallorca vs Castellón (LALIGA Hypermotion 2026-27)",
+      "match_name": "RCD Mallorca vs Castellón",
+      "src": "https://images.fancode.com/aig/match/v1795678540543/4251119_CASACARDS_APP.png",
       "event_category": "Football",
-      "stream_url": "https://in-mc-vod.fancode.com/mumbai/4251117_english_hls_6f273266e857483_1ta-di_h264/index.m3u8",
-      "status": "LIVE",
-      "startTime": "Live Now",
+      "event_name": "LALIGA Hypermotion 2026-27",
+      "language": "English",
+      "startTime": "08:45:00 PM 29-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
       "streams": {
-        "primary": "https://in-mc-vod.fancode.com/mumbai/4251117_english_hls_6f273266e857483_1ta-di_h264/1080p.m3u8",
-        "fancode_cdn": "https://in-mc-vod.fancode.com/mumbai/4251117_english_hls_6f273266e857483_1ta-di_h264/index.m3u8",
+        "primary": null,
+        "fancode_cdn": null,
         "fancode_bd_cdn": null,
         "fancode_np_cdn": null,
         "fancode_lk_cdn": null,
         "backup": {}
-      },
-      "auto_streams": {
-        "ENGLISH": {
-          "streams": {
-            "240p": "https://in-mc-vod.fancode.com/mumbai/4251117_english_hls_6f273266e857483_1ta-di_h264/240p.m3u8",
-            "360p": "https://in-mc-vod.fancode.com/mumbai/4251117_english_hls_6f273266e857483_1ta-di_h264/360p.m3u8",
-            "480p": "https://in-mc-vod.fancode.com/mumbai/4251117_english_hls_6f273266e857483_1ta-di_h264/480p.m3u8",
-            "540p": "https://in-mc-vod.fancode.com/mumbai/4251117_english_hls_6f273266e857483_1ta-di_h264/540p.m3u8",
-            "720p": "https://in-mc-vod.fancode.com/mumbai/4251117_english_hls_6f273266e857483_1ta-di_h264/720p.m3u8",
-            "1080p": "https://in-mc-vod.fancode.com/mumbai/4251117_english_hls_6f273266e857483_1ta-di_h264/1080p.m3u8"
-          },
-          "cookie": null,
-          "expires": null,
-          "expire_date": null
-        }
+      }
+    },
+    {
+      "match_id": 4250889,
+      "title": "Day 4 vs Málaga, Spain (Andalucia Costa Del Sol Open De Espana 2026)",
+      "match_name": "Day 4",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/Andalucia-Costa-Del-Sol-Open-De-Espana_1080_x_810.jpg",
+      "event_category": "Golf",
+      "event_name": "Andalucia Costa Del Sol Open De Espana 2026",
+      "language": "English",
+      "startTime": "06:30:00 PM 29-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": null,
+        "fancode_cdn": null,
+        "fancode_bd_cdn": null,
+        "fancode_np_cdn": null,
+        "fancode_lk_cdn": null,
+        "backup": {}
       }
     }
   ]
