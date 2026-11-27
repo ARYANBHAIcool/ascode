@@ -1,15 +1,11 @@
 #EXTM3U
 # ⚡ ARYANSTREAMS • FANCODE PRO LIVE HUB ⚡
 # Official Telegram: https://t.me/aryanstreams
-# Verified: 11/27/2026, 8:18:52 PM IST
+# Verified: 11/28/2026, 1:49:54 AM IST
 
-#EXTINF:-1 tvg-id="4250422" tvg-name="Perth Scorchers Women Vs Hobart Hurricanes Women [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250422_53125_PS-W_HB-W_fc-web_1793352701259.jpg" tvg-language="English" group-title="Cricket",ENG | Perth Scorchers Women Vs Hobart Hurricanes Women [English]
-https://in-mc-vod.fancode.com/mumbai/4250422_english_hls_67b5a84f4627685_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4251056" tvg-name="Sharjah Warriorz Vs Dubai Capitals [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4251056_53162_SW_DC_FC-APP.jpg" tvg-language="English" group-title="Cricket",ENG | Sharjah Warriorz Vs Dubai Capitals [English]
-https://in-mc-vod.fancode.com/mumbai/4251056_english_hls_012c5e0d0159881_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4250969" tvg-name="Al Qadsiah Fc Vs Al Fayha Fc [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250969_53025_ALQ_ALF_FC-App_1795077050712.png" tvg-language="English" group-title="Football",ENG | Al Qadsiah Fc Vs Al Fayha Fc [English]
-https://in-mc-vod.fancode.com/mumbai/4250969_english_hls_b5ac3c348099958_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="4250887" tvg-name="Day 2 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/Andalucia-Costa-Del-Sol-Open-De-Espana_1080_x_810.jpg" tvg-language="English" group-title="Golf",ENG | Day 2 [English]
-https://in-mc-vod.fancode.com/mumbai/4250887_english_hls_b929dd0f7222378_1ta-di_h264/index.m3u8
-#EXTINF:-1 tvg-id="139522" tvg-name="[DRM] ENG | Practice 1 [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/F1-QATAR_fc-web_1795503370459.jpg" tvg-language="English" group-title="Formula 1",ENG | [DRM] ENG | Practice 1 [English]
-https://in-mc-flive.fancode.com/mumbai/139522_english_dash_74118_1drmta-di_h264/index.mpd
+#EXTINF:-1 tvg-id="4250970" tvg-name="Al Ittihad Vs Neom Sc [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250970_53025_ITT_NEOM_FC-App_1795077050706.png" tvg-language="English" group-title="Football",ENG | Al Ittihad Vs Neom Sc [English]
+https://in-mc-vod.fancode.com/mumbai/4250970_english_hls_5c8f2d6b0231805_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4250016" tvg-name="Southampton F.c. Vs Middlesbrough F.c. [English]" tvg-logo="https://www.fancode.com/skillup-uploads/cms-media/4250016_52993_SOU_MIDD_fc-web.jpg" tvg-language="English" group-title="Football",ENG | Southampton F.c. Vs Middlesbrough F.c. [English]
+https://in-mc-vod.fancode.com/mumbai/4250016_english_hls_5eff8faf9639865_1ta-di_h264/index.m3u8
+#EXTINF:-1 tvg-id="4251117" tvg-name="Leganes Vs Ce Sabadell [English]" tvg-logo="https://images.fancode.com/aig/match/v1795678540541/4251117_CASACARDS_SPORTY_APP.png" tvg-language="English" group-title="Football",ENG | Leganes Vs Ce Sabadell [English]
+https://in-mc-vod.fancode.com/mumbai/4251117_english_hls_6f273266e857483_1ta-di_h264/index.m3u8
