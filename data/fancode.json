@@ -3,7 +3,7 @@
   "Brand": "AryanStreams",
   "Telegram": "https://t.me/aryanstreams",
   "name": "AryanStreams FanCode Live API",
-  "last_updated": "11/27/2026, 8:16:00 AM IST",
+  "last_updated": "11/27/2026, 10:27:38 AM IST",
   "headers": {
     "User-Agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1",
     "Referer": "https://fancode.com/"
@@ -300,6 +300,42 @@
       "auto_streams": {}
     },
     {
+      "match_id": 4251088,
+      "title": "Majees Titans vs Mustafa Fragrance House Strikers (Oman D20 2026)",
+      "match_name": "Majees Titans vs Mustafa Fragrance House Strikers",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251104_53163_MAT_MFR_fc-web.jpg",
+      "event_category": "Cricket",
+      "event_name": "Oman D20 2026",
+      "language": "English",
+      "startTime": "11:30:00 AM 28-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
+      "match_id": 4251150,
+      "title": "TBC vs TBC (Italia T10 2026)",
+      "match_name": "TBC vs TBC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
+      "event_category": "Cricket",
+      "event_name": "Italia T10 2026",
+      "language": "English",
+      "startTime": "03:30:00 PM 28-11-2026",
+      "status": "UPCOMING",
+      "stream_url": "",
+      "streams": {
+        "primary": "",
+        "fancode_cdn": "UNAVAILABLE",
+        "backup": {}
+      },
+      "auto_streams": {}
+    },
+    {
       "match_id": 139987,
       "title": "Day 1 vs Cheste (MOTUL GRAND PRIX OF VALENCIA 2026)",
       "match_name": "Day 1",
@@ -390,24 +426,6 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4251088,
-      "title": "Majees Titans vs Mustafa Fragrance House Strikers (Oman D20 2026)",
-      "match_name": "Majees Titans vs Mustafa Fragrance House Strikers",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4251104_53163_MAT_MFR_fc-web.jpg",
-      "event_category": "Cricket",
-      "event_name": "Oman D20 2026",
-      "language": "English",
-      "startTime": "11:30:00 AM 28-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
       "match_id": 139659,
       "title": "Qualifying Session vs Lusail International Circuit (F2 QATAR 2026)",
       "match_name": "Qualifying Session",
@@ -444,14 +462,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4251150,
+      "match_id": 4251151,
       "title": "TBC vs TBC (Italia T10 2026)",
       "match_name": "TBC vs TBC",
       "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
       "event_category": "Cricket",
       "event_name": "Italia T10 2026",
       "language": "English",
-      "startTime": "03:30:00 PM 28-11-2026",
+      "startTime": "06:00:00 PM 28-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -470,24 +488,6 @@
       "event_name": "DP World ILT20 2026",
       "language": "English",
       "startTime": "03:30:00 PM 28-11-2026",
-      "status": "UPCOMING",
-      "stream_url": "",
-      "streams": {
-        "primary": "",
-        "fancode_cdn": "UNAVAILABLE",
-        "backup": {}
-      },
-      "auto_streams": {}
-    },
-    {
-      "match_id": 4251151,
-      "title": "TBC vs TBC (Italia T10 2026)",
-      "match_name": "TBC vs TBC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
-      "event_category": "Cricket",
-      "event_name": "Italia T10 2026",
-      "language": "English",
-      "startTime": "06:00:00 PM 28-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -588,14 +588,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4249864,
-      "title": "Central Coast Mariners vs Auckland (A-League 2026-27)",
-      "match_name": "Central Coast Mariners vs Auckland",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249864_53101_CCM_AFC_fc-Web_1792223292223.jpg",
+      "match_id": 4250972,
+      "title": "Al-Ettifaq vs Al Hilal SFC (Roshn Saudi League 2026-2027)",
+      "match_name": "Al-Ettifaq vs Al Hilal SFC",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250972_53025_ETT_AHS_FC-Web_1795077036853.png",
       "event_category": "Football",
-      "event_name": "A-League 2026-27",
+      "event_name": "Roshn Saudi League 2026-2027",
       "language": "English",
-      "startTime": "02:10:00 PM 28-11-2026",
+      "startTime": "07:50:00 PM 28-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -606,14 +606,14 @@
       "auto_streams": {}
     },
     {
-      "match_id": 4250972,
-      "title": "Al-Ettifaq vs Al Hilal SFC (Roshn Saudi League 2026-2027)",
-      "match_name": "Al-Ettifaq vs Al Hilal SFC",
-      "src": "https://www.fancode.com/skillup-uploads/cms-media/4250972_53025_ETT_AHS_FC-Web_1795077036853.png",
+      "match_id": 4249864,
+      "title": "Central Coast Mariners vs Auckland (A-League 2026-27)",
+      "match_name": "Central Coast Mariners vs Auckland",
+      "src": "https://www.fancode.com/skillup-uploads/cms-media/4249864_53101_CCM_AFC_fc-Web_1792223292223.jpg",
       "event_category": "Football",
-      "event_name": "Roshn Saudi League 2026-2027",
+      "event_name": "A-League 2026-27",
       "language": "English",
-      "startTime": "07:50:00 PM 28-11-2026",
+      "startTime": "02:10:00 PM 28-11-2026",
       "status": "UPCOMING",
       "stream_url": "",
       "streams": {
@@ -720,7 +720,7 @@
       "src": "https://www.fancode.com/skillup-uploads/cms-media/4249676_53087_SAU_VCT_FC-WEB.jpg",
       "language": "English",
       "event_category": "Cricket",
-      "stream_url": "https://in-mc-vod.fancode.com/mumbai/4249676_english_hls_fffac9b5e066432_1ta-di_h264/720p.m3u8",
+      "stream_url": "https://in-mc-vod.fancode.com/mumbai/4249676_english_hls_fffac9b5e066432_1ta-di_h264/index.m3u8",
       "status": "LIVE",
       "startTime": "Live Now",
       "streams": {
